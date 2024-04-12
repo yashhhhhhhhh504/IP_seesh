@@ -1,0 +1,96 @@
+SUMMARY
+$
+The arm (part) of the mixing drum, which is connected to the drive wheel, rotates (physical phenomenon). This is due to the torque (input) applied by the drive wheel, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the arm and the drive wheel (organ).
+
+The mixing drum (part) rotates (physical phenomenon). This is due to the torque (input) applied by the arm connected to the drive wheel, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the presence of zero degree of freedom between the drum and the arm (organ).
+
+ The other arm of drum (part) rotates (physical phenomenon).
+This is due to the toque (input) applied by the drum, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the arm and the drum (organ).
+
+The cylindrical cam (part) that is etched on the other arm of the drum rotates (physical phenomenon). This is due to the torque applied by the drum (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the drum and the cylindrical cam (organ).
+
+The mixing drum assembly (part) reciprocates horizontally as it rotates (physical phenomenon). This is due to the cylindrical cam profile (input), which activates the law “no two bodies can occupy the same space at the same time “ (physical effect) and requires the presence of a fixed follower (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism paints, food and candy can be mixed.
+$
+}
+STATE
+{
+$
+Absence of input torque at the drive wheel.
+$
+Presence of input torque at the drive wheel.
+$
+}
+PHYPHENOMENON
+{
+$
+The arm of mixing drum that is connected to the drive wheel rotates continuously.
+$
+The mixing drum rotates continuously.
+$ 
+The other arm of the drum having the cylindrical cam rotates continuously.
+$
+The mixing drum assembly reciprocates horizontally as it rotates.
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+No two bodies can occupy the same space at the same time.
+$
+
+$
+}
+
+INPUT
+{
+$
+Torque applied by the drive wheel.
+$
+Torque applied by the arm connected to the drive wheel.
+$
+Torque applied by the mixing drum.
+$
+Profile of the cylindrical cam.
+
+$
+}
+
+ORGAN
+{
+$
+Zero degree of freedom between the arm connected to the drive wheel and drive wheel.
+$
+Zero degree of freedom between the arm connected to the drive wheel and mixing drum.
+$
+Zero degree of freedom between the mixing drum and the other arm.
+$
+Presence of a fixed follower.
+$
+
+}
+
+STUCTURE1
+{
+$
+The arm connected to the drive wheel forms a cylindrical pair with the frame.
+$
+The mixing drum forms a cylindrical pair with the frame.
+$
+The other arm of the drum also forms a cylindrical pair with the frame.
+$
+The cylindrical cam forms a cam pair with the follower that is fixed on to the frame.
+$
+
+$
+}

@@ -1,0 +1,96 @@
+MACTION
+{
+A1 $ V < reverse > A < rotary > N < direction > $
+}
+MSTATE
+{
+S1 $ V < X > A < clockwise > N < rotation >  $
+S2 $ V < X > A < counter clockwise > N < rotation >  $
+S3 $ V < X > A < X > N < X >  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < input-gear > A < counter-clockwise > $
+PP2 $ V < rotate > N < right-follower-gear > A < counter-clockwise > $
+PP3 $ V < rotate > N < left-follower-gear > A < clockwise > $
+PP4 $ V < rotate > N < ratchet-clutch > A < counter-clockwise > $
+PP5 $ V < rotate > N < drive-shaft > A < counter-clockwise > $
+PP6 $ V < rotate > N < output-gear > A < clockwise > $
+PP7 $ V < rotate > N < striking-pin > A < clockwise > $
+PP8 $ V < rotate > N < reversing-lever > A < clockwise > $
+PP9 $ V < displace > N < ratchet-clutch > A < leftward > $
+PP10 $ V < rotate > N < ratchet-clutch > A < clockwise > $
+PP11 $ V < rotate > N < drive-shaft > A < clockwise > $
+PP12 $ V < rotate > N < output-gear > A < counter-clockwise > $
+PP13 $ V < rotate > N < striking-pin > A < counter-clockwise > $
+PP14 $ V < rotate > N < reversing-lever > A < counter-clockwise > $
+PP15 $ V < displace > N < ratchet-clutch > A < sideward > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ hookes law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > $
+I2 $ V < rotate > N < input-gear > A < counter-clockwise > $
+I3 $ V < rotate > N < right-follower-gear > A < counter-clockwise > $
+I4 $ V < rotate > N < ratchet-clutch > A < counter-clockwise > $
+I5 $ V < rotate > N < drive-shaft > A < counter-clockwise > $
+I6 $ V < rotate > N < output-gear > A < clockwise > $
+I7 $ V < apply > N < force > $
+I8 $ V < apply > N < spring-force > $
+I9 $ V < rotate > N < left-follower-gear > A < clockwise > $
+I10 $ V < rotate > N < ratchet-clutch > A < clockwise > $
+I11 $ V < rotate > N < drive-shaft > A < clockwise > $
+I12 $ V < rotate > N < output-gear > A < counter-clockwise > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ 0 dof $
+O3 $ spring stiffness $
+}
+
+MPART
+{
+P1 $ input-gear $
+P2 $ frame $
+P3 $ right-follower-gear  $
+P4 $ left-follower-gear $
+P5 $ ratchet-clutch $
+P6 $ drive-shaft $
+P7 $ output-gear $
+P8 $ striking-pin $
+P9 $ reversing-lever $
+P10 $ revolute pair $
+P11 $ gear pair $
+P12 $ prismatic pair $
+P13 $ fixed pair $
+P14 $ ? pair $
+P15 $ flexible pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P10
+A1 - PP2 - PE2 - I2 - O2 - P1 - P3 - P11
+A1 - PP3 - PE2 - I2 - O2 - P1 - P4 - P11
+A1 - PP4 - PE2 - I3 - O2 - P3 - P5 - P11
+A1 - PP5 - PE2 - I4 - O2 - P5 - P6 - P12
+A1 - PP6 - PE2 - I5 - O2 - P6 - P7 - P11
+A1 - PP7 - PE1 - I6 - O1 - P7 - P8 - P13
+A1 - PP8 - PE2 - I7 - O2 - P8 - P9 - P14
+A1 - PP9 - PE3 - I8 - O3 - P9 - P5 - P15
+A1 - PP10 - PE2 - I9 - O2 - P4 - P5 - P11
+A1 - PP11 - PE2 - I10 - O2 - P5 - P6 - P12
+A1 - PP12 - PE2 - I11 - O2 - P6 - P7 - P11
+A1 - PP13 - PE1 - I12 - O1 - P7 - P8 - P13
+A1 - PP14 - PE2 - I7 - O2 - P8 - P9 - P14
+A1 - PP15 - PE3 - I8 - O3 - P9 - P5 - P15
+}

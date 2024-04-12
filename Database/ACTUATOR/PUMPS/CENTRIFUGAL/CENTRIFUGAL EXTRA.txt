@@ -1,0 +1,12 @@
+Centrifugal pumps are classified into three general categories: 
+
+Radial flow 
+a centrifugal pump in which the pressure is developed wholly by centrifugal force.
+
+Mixed flow 
+a centrifugal pump in which the pressure is developed partly by centrifugal force and partly by the lift of the vanes of the impeller on the liquid.
+
+Axial flow 
+a centrifugal pump in which the pressure is developed by the propelling or lifting action of the vanes of the impeller on the liquid.
+
+In axial flow centrifugal pumps the rotor is a propeller. Fluid flows parallel to the axis as illustrated in the figure. Diffusion vanes are located in the discharge port of the pump to eliminate the rotational velocity of the fluid imparted by the propeller. Axial flow compressors are also used to pump gases. In mixed flow pumps, fluid is discharged both radially and axially into a volute-type casing.

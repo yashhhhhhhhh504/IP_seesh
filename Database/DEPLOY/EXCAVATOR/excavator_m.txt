@@ -1,0 +1,87 @@
+MACTION
+{
+A1 $ V < dig > N < x > A < X > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < expose > A < less > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < expose > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from less exposed area to large exposed area. $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < apply > N < force > A < X > $
+PP2 $ V < displace > N < soil > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < point > $
+I2 $ V < x > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of sharp claw like structure. $
+O2 $ Presence of cup like structure. $
+}
+
+MPART
+{
+P1 $ claws. $
+P2 $ cup shaped structure. $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

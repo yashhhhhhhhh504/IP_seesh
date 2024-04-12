@@ -1,0 +1,209 @@
+MACTION
+{
+A1 $ V < lift > N < objects > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N  < weight level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < X > A < high > N  < weight level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from low level to high level $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move >  N < rope > A < X > $
+PP2 $ V < rotate >  N < pulley > A < X > $
+PP3 $ V < lift >  N < weight > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ Lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < force > A < pull > $
+I2 $ V < move >  N < rope > A < X > $
+I3 $ V < rotate >  N < pulley > A < X > $
+}
+
+MORGAN
+{
+O1 $ rope has some inertia $
+O2 $ friction surface in between the pulley and the rope $
+O3 $ pulley to be fixed at its center $
+
+}
+
+MPART
+{
+P1 $ rope $
+P2 $ pulley $
+P3 $ sliding-pair $
+P4 $ support  $
+P5 $ revolute-pair $
+P6 $ weight $
+P7 $ fixed-pair $
+
+
+
+}
+LINK
+{
+
+< IS1 OS1 CS1 A1 PP1 PE1 I1 O1 P1 P2 P3 >
+< IS1 OS1 CS1 A1 PP1 PE1 I1 O1 P2 P4 P5 >
+< IS1 OS1 CS1 A1 PP1 PE1 I1 O1 P1 P6 P7 >
+}
+
+
+FUNCTION
+
+$
+A pulley is a wheel that carries a flexible rope, cord, cable, chain, or belt on its rim. Pulleys are used singly or in combination to transmit energy and motion. 
+$
+
+
+STRUCTURE
+
+$
+A pulley is a circular disk. The circumferential periphery that carries the belt is called the rim. Pulleys with grooved rims are called sheaves. In belt drives, pulleys are affixed to shafts at their axes. 
+Pulleys can either be fixed or movable. Pulleys are also used in combination in order to increase the mechanical advantage. A combination pulley is shown in the figure.
+$
+
+
+BEHAVIOUR
+
+$
+A pulley makes work easier by changing direction of the force applied. When force is exerted downward, the object moves up or across.
+Pulleys can be classified as fixed and movable pulleys.
+A fixed pulley has a fixed axle and is used to redirect the rope (called a belt when it goes in a full circle). A fixed pulley has a mechanical advantage of 1
+A movable pulley has a free axle, and is used to transform forces - when stationary the total force on the axle balances the total force provided by the tension in the rope (which is constant in magnitude in each segment). A movable pulley has a mechanical advantage of 2.
+
+
+Power can also be transmitted between the shafts by means of endless (ends joined together) belts running over the pulleys. One or more independently rotating pulleys can be used to gain mechanical advantage, especially for lifting weights. The shafts about which the pulleys turn may affix them to frames or blocks, and a combination of pulleys, blocks, and rope or other flexible material is referred to as a block and tackle. Archimedes (3rd century BC) is reported to have used compound pulleys to pull a ship onto dry land. Together with the lever, wedge, wheel and axle, and screw, the pulley is considered one of the five simple machines. 
+$
+
+
+PICTURE
+
+{
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/pulley1.jpg		$ 01.Pulley	  $
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/pulley2.jpg		$ 02.Pulley	  $
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/pulleytypes.jpg		$ 03.Pulley Types $
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/pulley3.jpg		$ 04.Pulley	  $
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/combopulleys.jpg	$ 05.Combination Pulleys $ 
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/groovedpulley.jpg	$ 06.Grooved Pulley 	 $
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/diffsizepulley.jpg	$ 07.Pulley Sizes	 $
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/03.Pulley/steppedpulley.jpg	$ 08.Stepped Pulley	 $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This can be used to reduce the effort required to lift objects. This can be described as follows:
+
+The rope (part) that wraps over the pulley moves (physical phenomenon). This is due to the pull force applied to one of its end (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the rope has some inertia (organ).
+
+The pulley (part) rotates (physical phenomenon). This is due to the movement of the rope (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the rope (organ).
+
+The weight (part) is lifted with less effort (physical phenomenon). This is due to the rotation of the pulley (input), which activates the lever effect (physical effect) and requires the pulley to be fixed at its center (organ).
+
+ 
+$
+
+ACTION
+$
+ 
+ To lift weights efficiently.
+
+$
+STATE
+$
+
+The weight is at a low level.
+
+The weight is at a higher level.
+
+$
+PHYPHENOMENON
+$
+
+The rope that wraps over the pulley moves.
+
+The pulley rotates.
+
+The weight is lifted with less effort.
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+Lever effect.
+
+$
+
+INPUT
+$
+
+The pull force applied to one of its end.
+
+The movement of the rope.
+
+The movement of the rope.
+
+$
+
+ORGAN
+$
+
+Requires that the rope have some inertia.
+
+Presence of friction surface in between the pulley and the rope.
+
+Requires the pulley to be fixed at its center.
+
+
+$
+
+PARTS
+$
+
+The rope forms a sliding pair with the pulley surface.
+
+The pulley forms a revolute pair with the support.
+
+The weight forms a fixed pair with the rope.
+
+
+
+$
+
+
+

@@ -1,0 +1,151 @@
+
+MACTION
+{
+A1 $ V < reduce > N < space > A < X > $
+A2 $ V < deploy > N < part > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < monitor > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+}
+
+MORGAN
+{
+O1 $ hinged joint between the monitor and the keyboard. $
+}
+
+MPART
+{
+P1 $ laptop $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+FUNCTION
+
+$
+This is compact form of the normal personal computer. This can be folded and can reduced in the area that it occupies when not in use and it can be deployed for use.
+$
+
+
+STRUCTURE
+
+$
+It consists of two parts. One of the parts is monitor and the other is keyboard. 
+$
+
+
+BEHAVIOUR
+
+$
+The monitor is made to open by making it rotate with respect to the keyboard and this is assisted by the presence of a hinged joint between the monitor and the keyboard.
+
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/LAPTOP/01.JPG	$ Laptop $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This is a portable form of personal computer. 
+$
+
+ACTION
+
+$ 
+ To reduce space occupied when not in use.
+$
+
+STATE
+
+$
+The laptop is in folded form.
+
+The laptop is in unfolded form.
+
+$
+
+PHYPHENOMENON
+
+$
+The monitor of the laptop is deployed to use the computer.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a hinged joint between the monitor and the keyboard.
+
+
+$
+
+
+
+PARTS
+$
+Laptop.
+
+
+$

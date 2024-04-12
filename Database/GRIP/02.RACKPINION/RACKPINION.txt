@@ -1,0 +1,198 @@
+MACTION
+{
+A1 $ V < release > A < X > N < object > $
+A2 $ V < hold deploy > A < X > N < object > $
+}
+
+MINPUTSTATE
+{	
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < outward > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < outward > N  < rotation > $
+OS2 $ V < x > A < inward > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to outward rotation $
+CS2 $ from outward rotation to inward rotation $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < pinions > $
+PP2 $ V < move > N < jaws > A < close > $
+PP3 $ V < move > N < jaws > A < apart > $
+}
+
+MPHYEFFECT
+{
+PE1 $ no two bodies can occupy the same space at the same time $
+PE2 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V < push > N < rack > A < forward > $
+I2 $ V < rotate > A < X > N < pinion > $
+I3 $ V < pull > N < rack > A < backward > $
+}
+
+MORGAN
+{
+O1 $ contact : rack pinion $
+O2 $ eccentricity $
+}
+
+MPART
+{
+P1 $ rack $
+P2 $ pinion $
+P3 $ gear pair $
+P4 $ jaw $
+P5 $ revolute pair $
+P6 $ fixed pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P4  P6 >
+< A2 IS2  OS2  CS2  PP1  PE1  I3  O1  P1  P2  P3 >
+< A2 IS2  OS2  CS2  PP2  PE2  I2  O2  P2  P4  P6 >
+}
+
+
+FUNCTION
+
+$
+This is a Rack & Pinion mechanism that is used to grasp and release objects. The objects that this mechanism can hold depend on the shape of the jaws, which may be altered to suit the requirements. The shape of the jaws, shown in the figure, enables this mechanism to hold round or cylindrical objects. 
+$
+
+
+STRUCTURE
+
+$
+As shown in the figure, the device contains only 4 links. Link 2 is a base plate. Link 1 is an actuator, which reciprocates in the base plate and one end it contains a rack. Links 3 and 4, which are hinged to base plate, have one pinion on each and these are connected to a rack on link 1.  
+$
+
+
+BEHAVIOUR
+
+$
+Whenever link 1 gets actuated, links 3 and 4 rotate about the hinges because the rack will drive the pinions on these links on an actuator link. If the actuator moves away from the base plate, the jaws come closer and they can grip any object in between them. If the actuator moves towards the base plate the two jaws move away to each other and they release the object between them. 
+$
+
+
+PICTURE
+
+{
+ADB/GRIP/02.RACKPINION/rackpinion.jpg		$ Rack & Pinion Gripper $
+}
+
+
+CLIP
+
+{
+ADB/GRIP/02.RACKPINION/rackpinion.avi		$ Rack & Pinion Gripper $
+}
+VERB
+$
+Grip
+$
+
+SUMMARY
+$
+This mechanism can be used for grasping and releasing objects. This mechanism can be described as follows:
+
+
+
+The rack (part) being connected to the actuator moves away and towards the base plate alternately (physical phenomenon). This is due reciprocating motion of the actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of zero degree of freedom between the rack and actuator (organ).
+
+The links 3 and 4 (part) move outwards (physical phenomenon). This is due to the movement of the rack away from the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the meshing of the pinions of the links with the rack (organ).
+
+
+The links 3 and 4 (part) move inwards (physical phenomenon). This is due to the movement of the rack towards the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the meshing of the pinions of the links with the rack (organ).
+$
+
+
+
+
+
+ACTION
+$
+ 
+ Using this mechanism objects can be held and released as and when required.
+
+$
+STATE
+$
+
+Absence of force at the actuator.
+
+Presence of force at the actuator
+
+$
+PHYPHENOMENON
+$
+
+The rack being connected to the actuator moves away and towards the base plate alternately.
+
+The links 3 and 4 move outwards.
+ 
+The links 3 and 4 move inwards
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+
+$
+
+INPUT
+$
+
+Reciprocating motion of the actuator.
+
+Movement of the rack away from the base plate.
+
+Movement of the rack towards the base plate.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the rack and actuator.
+
+The meshing of the gears of the links with the rack.
+
+
+
+
+
+
+$
+
+PARTS
+$
+
+The actuator forms sliding pair with the base plate.
+
+The pinions of the links 3 and 4 form a rack and pinion pair with the rack.
+
+The pinions are mounted on either side of the base plate.
+
+
+
+
+
+$

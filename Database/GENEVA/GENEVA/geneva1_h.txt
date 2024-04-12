@@ -1,0 +1,81 @@
+SUMMARY
+$
+This mechanism can be used to generate intermittent rotation. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The wheel A (part) rotates continuously (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and wheel A (organ).
+
+The wheel B (part) rotates intermittently (physical phenomenon). This is due to the rotation of pin mounted on the wheel A (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the smooth sliding surface between the slot on the wheel B and the pin on the wheel A (organ).
+
+$
+
+ACTION
+
+$ 
+ To generate intermittent rotation.
+$
+
+STATE
+
+$
+The wheel A is at rest.
+
+The wheel B is rotates through 90 degrees.
+
+$
+
+PHYPHENOMENON
+
+$
+The wheel A rotates continuously.
+
+The wheel B rotates intermittently.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of pin mounted on the wheel A.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and wheel A.
+
+Requires the smooth sliding surface between the slot on the wheel B and the pin on the wheel A.
+
+$
+
+
+
+PARTS
+$
+The wheel A forms a revolute pair with the frame.
+
+The wheel B forms a revolute pair with the frame.
+
+
+$
+
+
+
+

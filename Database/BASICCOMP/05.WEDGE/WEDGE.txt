@@ -1,0 +1,170 @@
+MACTION
+{	
+A1 $ V < split > N < material  > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < outside > N  < wedge material > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < inside > N  < wedge material > $
+} 
+MCHANGESTATE
+{
+CS1 $ from outside the material to inside material $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < apply > N < force > A < impact > $
+PP2 $ V < pierce > N < wedge material > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < force > A < x > $
+I2 $ V < move >  N < wedge > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ requires that the wedge falls from a suitable height $
+O2 $ requires that the wedge is harder than the material $
+
+}
+
+MPART
+{
+P1 $ material $
+P2 $ ground-surface $
+P3 $ fixed-pair $
+P4 $ wedge $
+P5 $ sliding-pair $
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+
+}
+
+
+FUNCTION
+$
+Wedge is used for splitting, lifting, or tightening, as to secure a hammerhead onto its handle. Along with the lever, wheel and axle, pulley and screw, the wedge is considered one of the five simple machines.
+$
+
+
+STRUCTURE
+$
+A wedge is an inclined plane, usually made of metal or wood, which tapers to a sharp edge, or two inclined planes attached to each other. The wedge makes work easier by splitting something when force is applied. Often, wedges are used in conjunction with levers.
+$
+
+
+BEHAVIOUR
+$
+The wedge was used in prehistoric times to split logs and rocks. For rocks, wooden wedges, caused to swell by wetting, were employed. In terms of its mechanical function, the screw may be thought of as a wedge wrapped around a cylinder.
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/05.Wedge/wedge.jpg	$ Wedge $
+}
+
+
+CLIP
+{
+ADB/BASICCOMP/05.Wedge/wedge.avi	$ Wedge $
+}
+
+SUMMARY
+$
+This can be used for splitting. This can be described as follows:
+
+The wedge (part) exerts an impact force on to the material (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the wedge to fall from a suitable height (organ).
+
+The wedge (part) pierces into the materials (physical phenomenon). This is due to the motion of the wedge (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the wedge is harder than the material (organ).
+
+$
+
+ACTION
+$
+ 
+ To split material.
+
+$
+STATE
+$
+
+The wedge is outside the material.
+
+The wedge is inside the material.
+
+$
+PHYPHENOMENON
+$
+
+ The wedge exerts an impact force on to the material.
+
+The wedge pierces into the materials.
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+Force applied on it.
+
+Motion of the wedge.
+
+$
+
+ORGAN
+$
+
+Requires that the wedge falls from a suitable height.
+
+Requires that the wedge is harder than the material.
+
+
+
+$
+
+PARTS
+
+$
+
+The material forms a fixed pair with the ground.
+
+The wedge forms a sliding pair with the material.
+
+
+$
+
+
+

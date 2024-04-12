@@ -1,0 +1,174 @@
+MACTION
+{
+A1 $ V < provide > N < space > A < X > $
+A2 $ V < occupy > N < space > A < less > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < less > N < space > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < space > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from less space to large space $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < pushing > $
+}
+
+MORGAN
+{
+O1 $ Presence of a sliding surface between the shutter and the network box $
+}
+
+MPART
+{
+P1 $ Network box $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+}
+
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to provide space for connection when in use and to close the space when not it use. This is accomplished by employing a sliding door.
+$
+
+
+STRUCTURE
+
+$
+It consists of a plastic door, which slides with respect to the plastic box. 
+$
+
+
+BEHAVIOUR
+
+$
+When connection has to be established then the cable has to be inserted into the space provided in the box. For this to be done the plastic door of the box is lifted with the help of the projection given to it.
+$
+
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+To close the space that provides the network connection.
+$
+
+ACTION
+
+$ 
+ To close the space when not in use.
+
+To open the space when in use.
+$
+
+STATE
+
+$
+Occupying large space when not in use.
+
+Occupying less space.
+
+$
+
+PHYPHENOMENON
+
+$
+Open the shutter of the network box.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Pushing force.
+
+$
+
+
+ORGAN
+
+$
+Presence of a sliding surface between the shutter and the network box.
+
+
+$
+
+
+
+PARTS
+$
+Network box
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

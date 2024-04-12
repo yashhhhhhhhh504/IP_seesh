@@ -1,0 +1,232 @@
+MACTION
+{
+A1 $ V < punch > N < strip > A < metal > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < move > A < linearly > N < strip > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion of the metal strip  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < roller > A < X > $
+PP2 $ V < move > N < strip > A < linearly > $
+PP3 $ V < dwell > N < strip > A < x > $
+PP4 $ V < press > N < punch > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ Punching effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < roller > A < x > $
+I3 $ V < move > N < shaft > A < linearly > $
+I4 $ V < move > N < punch > A < downward > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shaft and the roller $
+O2 $ friction surface between the steel strip and the roller $
+O3 $ the shaft of the second roller is allowed to slide smoothly along the guide ways $
+O4 $ the steel strip dwells for an appropriate amount time $
+}
+
+MPART
+{
+P1 $ roller $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ steel strip $
+P5 $ wrapping pair $
+P6 $ punch $
+P7 $ sliding pair $
+P8 $ guide way $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P6 P7 P8 >
+
+}
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to punch on steel strips, which roll on rollers.
+
+$
+
+
+STRUCTURE
+
+$
+
+It consists of two rollers on which the steel strips moves linearly.
+$
+BEHAVIOUR
+
+$
+The linear movement of the shaft causes the steel strip to dwell and during this time the punch is forced against the steel strip.
+$
+
+PICTURE
+
+{
+ADB/CAMMECH/CAMROLLER_DWELL_MECH/01.JPG	         $ Cam Mech roller dwell mechanism  $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to punch on a steel strip that is moving over two rotating rollers. This can be interpreted as a change of state from rest to reciprocating motion. This can be described as follows:
+
+The rollers (part) rotate (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the shaft and the roller (organ).
+
+The steel strip (part) moves linearly over the rollers (physical phenomenon). This is due to the rotation of the rollers (input), which activates the friction effect (physical effect) and it requires the presence of friction surface between the steel strip and the roller (organ).
+
+The steel strip (part) dwells as it moves linearly over the rollers (physical phenomenon). This is due to the linear motion of the shaft of the second roller (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the shaft of the second roller is allowed to slide smoothly along the guide ways (organ).
+ 
+The punch (part) presses against the steel strip (physical phenomenon). This is due to the downward motion of the punch (input), which activates the punching effect (physical effect) and is necessary that the steel strip dwells for an appropriate amount time (organ).
+$
+
+ACTION
+
+$ 
+ To punch on steel strips.
+$
+
+STATE
+
+$
+The steel strip is at rest.
+
+The steel strip is moving linearly.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+The rollers rotate.
+
+The steel strip moves linearly over the roller.
+
+ The steel strip dwells as it moves linearly over the rollers.
+
+The punch presses against the steel strip.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Friction effect.
+
+Punching effect.
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the input shaft.
+
+The rotation of the rollers.
+
+The linear motion of the shaft of the second roller.
+
+The downward motion of the punch.
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the shaft and the roller.
+
+Presence of friction surface between the steel strip and the roller.
+
+Necessary that the shaft of the second roller is allowed to slide smoothly along the guide ways.
+
+Necessary that the steel strip dwells for an appropriate amount time.
+
+
+$
+
+
+
+PARTS
+$
+The roller forms a revolute pair with the frame.
+
+The steel strip forms a wrapping pair with the rollers.
+
+The punch forms a sliding pair with the guide ways.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

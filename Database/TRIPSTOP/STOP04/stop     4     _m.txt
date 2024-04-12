@@ -1,0 +1,102 @@
+
+
+MACTION
+{
+A1 $ V < stop > N < material > A < X > $
+A2 $ V < pack > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rotation ratchet > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest ratchet > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rotation of the ratchet to rest of the ratchet $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > N < pawl finger > A < X > $
+PP2 $ V < rotate > N < ratchet > A < X > $
+PP3 $ V < stop > N < ratchet > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Friction effect $
+
+}
+
+MINPUT
+{
+I1 $ V < oscillate > N < lever > A < x > $
+I2 $ V < move > N < pawl finger > A < x > $
+I3 $ V < x > N < shortage force > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of a counter weight $
+O2 $ Presence of contact between the ratchet and the pawl $
+O3 $ the force delivered by the pawl previously is just enough to cause only one revolution and it also requires the presence of frictional losses $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ lever $
+P5 $ spring $
+P6 $ pawl finger $
+P7 $ ratchet pawl pair $
+P8 $ ratchet $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P6 P7 P8 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P4 P5 >
+< A2 IS1 OS1 CS1 PP3 PE2 I3 O3 P6 P7 P8 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

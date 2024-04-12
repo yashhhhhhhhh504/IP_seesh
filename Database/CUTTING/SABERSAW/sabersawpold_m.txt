@@ -1,0 +1,58 @@
+MACTION
+{
+A1 $ V < cut > A < X > N < material > $
+}
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < reciprocating > N < motion > $
+
+}
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < gear > $
+PP2 $ V < revolve > A < X > N < pin > $
+PP3 $ V < reciprocate > A < X > N < blade > $
+}
+
+MPHYEFFECT
+{
+PE1 $ ? $
+PE2 $ Newtonial laws of motion $
+PE3 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < supply A < electrical N < energy $
+I2 $ V < rotate > A < X > N < gear > $
+I3 $ V < revolve > A < X > N < pin > $ 
+}
+
+MORGAN
+{
+O1 $ ? $
+O2 $ eccentricity of the pin $
+O3 $ zero degree of freedom in the direction of motion $
+}
+
+MPART
+{
+P1 $ motor-shaft $
+P2 $ gear $
+P3 $ fixed pair $
+P4 $ pin $
+P5 $ drive-shaft $
+P6 $ sliding pair $
+P7 $ channel $
+P8 $ prismatic pair $
+P9 $ blade $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P2 - P4 - P3
+A1 - PP3 - PE3 - I3 - O3 - P4 - P5 - P6
+A1 - PP3 - PE3 - I3 - O3 - P5 - P7 - P8
+A1 - PP3 - PE3 - I3 - O3 - P5 - P9 - P3
+}

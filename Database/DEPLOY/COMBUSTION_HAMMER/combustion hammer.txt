@@ -1,0 +1,30 @@
+FUNCTION
+
+$
+These portable guns generate hammering power with internal combustion, the same force that keeps your car going
+$
+
+
+STRUCTURE
+
+$
+They have a long blade attached to a sliding piston, which is moved by an imbalance in atmospheric pressure.
+$
+BEHAVIOUR
+
+$
+At the most basic level, combustion guns are a lot like pneumatic nailers. The piston moves downward when there is greater pressure above it, and it moves upward when there is greater pressure below it. 
+
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}

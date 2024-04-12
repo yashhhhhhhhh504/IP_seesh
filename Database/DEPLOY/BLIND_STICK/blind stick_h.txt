@@ -1,0 +1,83 @@
+SUMMARY
+$
+This can be used by blind people for predicting the flatness of the path ahead of them.
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The stick is occupying less space.
+
+The stick is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The stick is enlarged in length.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Moment.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of smooth sliding surface between the various small sticks.
+
+
+
+$
+
+
+
+PARTS
+$
+Blind stick.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

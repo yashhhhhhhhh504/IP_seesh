@@ -1,0 +1,180 @@
+MACTION
+{
+A1 $ V < lock close > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < closed > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < open > $
+} 
+MCHANGESTATE
+{
+CS1 $ from closed to open $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < insert > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < inserting > $
+I2 $ V < x > N < movement > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth sliding surface between the key and the slot provided $
+O2 $ contact between the key and the various links $
+}
+
+MPART
+{
+P1 $ key $
+P2 $ clock $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This can be used to lock doors to prevent the opening of doors. 
+$
+
+
+STRUCTURE
+
+$
+This consists of a set of levers that are responsible for the opening and closing of locks.
+$
+
+
+BEHAVIOUR
+
+$
+This lock can be operated by a key, which is very unique, to that particular lock.
+$
+
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to operate the clocks that are meant for closing the doors.
+$
+
+ACTION
+
+$ 
+To lock the doors.
+
+$
+
+STATE
+
+$
+The door is closed.
+
+The door is open.
+
+$
+
+PHYPHENOMENON
+
+$
+The key inserted in the slot provided for it in the lock and turned appropriately to open the clock.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Movement of the key.
+
+$
+
+
+ORGAN
+
+$
+Presence of contact between the key and the various links.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Key.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

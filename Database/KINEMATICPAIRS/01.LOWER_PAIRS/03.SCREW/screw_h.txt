@@ -1,0 +1,83 @@
+SUMMARY
+$	
+The member (part) rotates as well as translates along the other fixed member (physical phenomenon). This is due to the torque applied on to it (input), which activates the Newtonian laws of motion and also the law “no two bodies can occupy the same space at the same time“ (physical effect) and requires the presence of thread profile on the moving as well as the fixed member (organ).
+$
+
+ACTION
+{
+$ 
+ Using this a moving member can be made to translate and rotate simultaneously on another fixed member. 
+$
+}
+STATE
+{
+$
+Absence of torque at the moving member. 
+$
+Presence of torque at the moving member
+$
+}
+PHYPHENOMENON
+{
+$
+Translation accompanied by rotation of the moving member over the fixed member. 
+$
+
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Torque applied on to it.
+$
+
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of thread profile on the moving as well as the fixed member.
+$
+
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The moving member forms a screw pair with the fixed member.
+$
+
+$
+
+$
+
+$
+
+$
+}
+

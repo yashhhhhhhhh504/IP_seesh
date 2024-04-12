@@ -1,0 +1,43 @@
+STUCTURE1
+$
+Input link (x) forms a revolute pair with the frame
+Input link (y) forms a revolute pair with the frame
+Input link (x) forms a revolute pair with link 1
+Link 1 forms a revolute pair with Link 2
+Link 2 forms a revolute pair with the output link (z)
+Link 2 forms a revolute pair with Link 3
+Link 3 forms a revolute pair with input link (y)
+Output link (z) forms a revolute pair with the frame
+$
+
+
+ACTION
+$
+Perform addition and subtraction
+$
+
+
+PHYPHENOMENON
+$
+a. Oscillation of links 1, 2, 3
+b. Rotation of output link (z)
+$
+
+
+ORGAN
+$
+a. The revolute joints
+$
+
+
+PHYEFFECT
+$
+a. Force
+b. Force
+$
+
+
+INPUT
+$
+a. Rotation of Input link (x & y)
+$

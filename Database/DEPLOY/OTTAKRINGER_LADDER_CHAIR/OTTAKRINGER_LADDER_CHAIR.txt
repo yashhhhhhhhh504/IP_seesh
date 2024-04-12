@@ -1,0 +1,161 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of one degree of freedom at the hinge $
+}
+
+MPART
+{
+P1 $ Backrest $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+The ottakringer ladder-chair was inspired by a 19 Th century model found in monastery library in tryol, Austria. It has two purposes functions, as ladder and as chair.
+$
+
+
+STRUCTURE
+
+$
+It is made up of wooden pieces. In of the one of the corners of the rectangle the wooden pieces are hinged.
+$
+BEHAVIOUR
+
+$
+The structure occupies less space when it is used to as a chair and occupies more space when it is used as a ladder. 
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/OTTAKRINGER_LADDER_CHAIR/01.jpg $ 01.ottakringer ladder chair $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This mechanism can be used to serve two purposes one as a chair and one as a staircase. This can be interpreted as a change of state from occupying less area to occupying large area. This can be discussed as follows:
+
+The backrest (part) is rotated about the hinge (physical phenomenon). This is due to the moment applied (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom at the hinge (organ).
+
+$
+
+ACTION
+
+$ 
+
+To deploy.
+ 
+$
+
+STATE
+
+$
+It is occupying less area.
+
+It is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The backrest is rotated about the hinge.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+The moment applied.
+
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom at the hinge.
+
+
+$
+
+
+
+PARTS
+$
+Backrest.
+
+
+$
+
+
+
+
+
+

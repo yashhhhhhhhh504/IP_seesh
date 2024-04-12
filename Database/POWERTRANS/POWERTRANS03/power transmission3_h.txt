@@ -1,0 +1,99 @@
+SUMMARY
+$
+This device is used to transmit power from one shaft to another shaft, whose axes are perpendicular to each other. This device can be described as follows:
+
+The driver pulley (part) being mounted on the input shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver pulley (organ).
+
+The rope (part) wrapped around the driver pulley moves in the linear direction (physical phenomenon). This is due to the rotation of the pulley (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the rope (organ).
+
+
+The drum (part) whose axis is at 90 degrees to the axis of the driver pulley rotates (physical phenomenon). This is due to the movement of the rope (input), which activates the friction effect (physical effect) and requires the presence of tension in the rope (organ).
+
+
+$
+
+ACTION
+{
+$ 
+This device is used to transmit power from one shaft to another shaft, whose axes are perpendicular to each other.
+$
+}
+STATE
+{
+$
+Absence of torque at the input shaft.
+$
+Presence of torque at the input shaft.
+$
+}
+PHYPHENOMENON
+{
+$
+The driver pulley being mounted on the input shaft rotates.
+$
+The rope wrapped around the driver pulley moves in the linear direction.
+$ 
+The drum whose axis is at 90 degrees to the axis of the driver pulley rotates.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+The rotation of the input shaft.
+$
+The rotation of the pulley.
+$
+The movement of the rope.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the input shaft and the driver pulley.
+$
+Presence of friction surface between the pulley and the rope.
+$
+Presence of tension in the rope.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The driver pulley along with the input shaft forms a revolute pair with the frame.
+$
+The rope forms a sliding pair with the pulley surfaces.
+
+$
+The drum along with the out put shaft forms a revolute pair with the frame.
+$
+
+$
+
+$
+}
+
+
+
+
+
+
+

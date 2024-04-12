@@ -1,0 +1,201 @@
+MACTION
+{
+A1 $ V < sort > N < object > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < free-falling > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to free-falling motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < plane > A < horizontal > $
+PP2 $ V < pass > N < bar > A < X > $
+PP3 $ V < x > N < object > A < free-fall > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < carrier > A < x > $
+I3 $ V < contact > N < object bar > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the carrier $
+O2 $ the height of the object be lesser than that of the lowest bar $
+O3 $ the height of the object be more that the heights of any of the 3 bars $
+}
+
+MPART
+{
+P1 $ carrier $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ barrier $
+P5 $ fixed pair $
+P6 $ frame $
+P7 $ object $
+P8 $ free pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 P7 P8 >
+
+}
+
+
+
+
+FUNCTION
+
+$
+This device sorts work pieces according to their height.
+$
+
+
+STRUCTURE
+
+$
+This device consists of a cross platform and three bars attached to the frame of the structure. The three bars are set at decreasing heights.
+$
+
+
+BEHAVIOUR
+
+$
+The work piece is placed on the crossbar, which is made to rotate slowly. Bar 1 is the highest bar while Bar 3 is the lowest. If the height of the work piece is lesser than the height at which Bar 1 is fixed above the crossbar, then is will pass under Bar 1. However depending on its height it might be knocked down by Bar 2 or Bar 3. 
+Thus a work piece will be knocked off the platform at either station 1, 2, or 3 depending on its height.  
+$
+
+
+PICTURE
+
+{
+ADB/SORT/SORT03/SORT03.JPG	$ Sorting Mechanism - 3 $
+}
+
+
+CLIP
+
+{
+ADB/SORT/SORT03/SORT03.AVI	$ Sorting Mechanism - 3 $
+}
+
+SUMMARY
+$
+Using this device objects can be sorted out based on their heights. This device can be described as follows:
+
+The carrier (part) rotates in the horizontal plane (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the carrier (organ).
+
+The object (part) placed on the carrier passes through the bars of decreasing heights (physical phenomenon). This is due to the rotation of the carrier (input), which activates the friction effect (physical effect) and requires that the height of the object be lesser than the lowest bar (organ).
+
+The object (part) placed on the carrier falls down from the carrier (physical phenomenon). This is due to the contact between the object and the any one of the 3 bars (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the height of the object be more than that of  the heights of any of the 3 bars (organ).
+$
+
+
+
+ACTION
+$
+ 
+ Using this device objects can be sorted out based on their heights.
+
+$
+STATE
+$
+
+rest
+
+free-falling motion.
+
+$
+PHYPHENOMENON
+$
+
+The carrier rotates in the horizontal plane.
+
+The object placed on the carrier passes through the bars.
+ 
+The object placed on the carrier falls down from the carrier.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+Rotation of the input shaft.
+
+Rotation of the carrier.
+
+The contact between the object and the any one of the 3 bars.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the carrier.
+
+Requires that the height of the object be lesser than that of the lowest bar.
+
+Requires that the height of the object be more that the heights of any of the 3 bars.
+
+
+
+
+$
+
+PARTS
+$
+
+The carrier along with the input shaft forms a revolute pair with the frame.
+
+The 3 bars are fixed at different heights. The bar 1 being the highest and the bar 3 being the shortest. 
+
+The object is simply supported on the carrier plate.
+
+
+
+
+
+$
+
+

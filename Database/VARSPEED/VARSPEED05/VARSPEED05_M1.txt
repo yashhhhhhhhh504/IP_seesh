@@ -1,0 +1,72 @@
+MACTION
+{
+A1 $ V < change > A < rapidly > N < speed > $
+A2 $ V < transmit > A < x > N < power > $
+A3 $ V < reverse > A < rotating > N < direction > $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < roller > $
+PP2 $ V < rotate > A < x > N < disk1 > $
+PP3 $ V < rotate > A < x > N < output > $
+PP4 $ V < rotate > A < x > N < disk2 > $
+PP5 $ V < change > A < rotating > N < speed > $
+PP6 $ V < lose > A < x > N < contact > $
+PP7 $ V < stop > A < x > N < rotation > $
+PP8 $ V < change > A < rotating > N < direction > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < maintain > A < x > N < contact > $
+I3 $ V < rotate > A < x > N < disk1 > $
+I4 $ V < rotate > A < x > N < output > $
+I5 $ V < change > A < x > N < position > $
+I6 $ V < apply > A < x > N < force > $
+I7 $ V < lose > A < x > N < contact > $
+I8 $ V < change > A < input > N < contact > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ friction material $
+O3 $ 0 dof of motion in the dir of motion $
+O4 $ x $
+O5 $ diameter at the point of contact $
+O6 $ direction of rotation of the disk $
+}
+
+MPART
+{
+P1 $ roller $
+P2 $ frame $
+P3 $ disk1 $
+P4 $ output $
+P5 $ revolute pair $
+P6 $ fixed pair $
+P7 $ contact $
+P8 $ disk2 $
+P9 $ screw pair $
+P10 $ cylindrical pair $
+P11 $ no contact $
+}
+
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P5
+A2 - PP2 - PE2 - I2 - O2 - P1 - P3 - P7
+A2 - PP3 - PE1 - I3 - O3 - P3 - P4 - P6
+A2 - PP4 - PE1 - I4 - O3 - P8 - P4 - P6
+A1 - PP5 - PE1 - I5 - O5 - P1 - P2 - P9
+A2 - PP6 - PE1 - I6 - O4 - P3 - P2 - P10
+A2 - PP6 - PE1 - I6 - O4 - P8 - P2 - P10
+A2 - PP7 - PE1 - I7 - O4 - P1 - P3 - P11
+A2 - PP7 - PE1 - I7 - O4 - P1 - P8 - P11
+A1 - PP8 - PE1 - I8 - O6 - P1 - P8 - P7

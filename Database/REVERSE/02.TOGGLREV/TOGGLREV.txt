@@ -1,0 +1,294 @@
+MACTION
+{
+A1 $ V < reverse > A < rotary > N < motion > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < clockwise > N  < rotation > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < counter-clockwise > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from clockwise rotation to counter-clockwise rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < input-gear > A < counter-clockwise > $
+PP2 $ V < rotate > N < right-follower-gear > A < counter-clockwise > $
+PP3 $ V < rotate > N < left-follower-gear > A < clockwise > $
+PP4 $ V < rotate > N < ratchet-clutch > A < counter-clockwise > $
+PP5 $ V < rotate > N < drive-shaft > A < counter-clockwise > $
+PP6 $ V < rotate > N < output-gear > A < clockwise > $
+PP7 $ V < rotate > N < striking-pin > A < clockwise > $
+PP8 $ V < rotate > N < reversing-lever > A < clockwise > $
+PP9 $ V < displace > N < ratchet-clutch > A < leftward > $
+PP10 $ V < rotate > N < ratchet-clutch > A < clockwise > $
+PP11 $ V < rotate > N < drive-shaft > A < clockwise > $
+PP12 $ V < rotate > N < output-gear > A < counter-clockwise > $
+PP13 $ V < rotate > N < striking-pin > A < counter-clockwise > $
+PP14 $ V < rotate > N < reversing-lever > A < counter-clockwise > $
+PP15 $ V < displace > N < ratchet-clutch > A < sideward > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ hooke's law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < input-gear > A < counter-clockwise > $
+I3 $ V < rotate > N < right-follower-gear > A < counter-clockwise > $
+I4 $ V < rotate > N < ratchet-clutch > A < counter-clockwise > $
+I5 $ V < rotate > N < drive-shaft > A < counter-clockwise > $
+I6 $ V < rotate > N < output-gear > A < clockwise > $
+I7 $ V < apply > N < force > A < x > $
+I8 $ V < apply > N < spring-force > A < x > $
+I9 $ V < rotate > N < left-follower-gear > A < clockwise > $
+I10 $ V < rotate > N < ratchet-clutch > A < clockwise > $
+I11 $ V < rotate > N < drive-shaft > A < clockwise > $
+I12 $ V < rotate > N < output-gear > A < counter-clockwise > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ zero degree of freedom $
+O3 $ spring stiffness $
+}
+
+MPART
+{
+P1 $ input-gear $
+P2 $ frame $
+P3 $ right-follower-gear  $
+P4 $ left-follower-gear $
+P5 $ ratchet-clutch $
+P6 $ drive-shaft $
+P7 $ output-gear $
+P8 $ striking-pin $
+P9 $ reversing-lever $
+P10 $ revolute pair $
+P11 $ gear pair $
+P12 $ prismatic pair $
+P13 $ fixed pair $
+P14 $ kinematic-pair $
+P15 $ flexible pair $
+}
+LINK
+{
+< A1 IS1 OS1  CS1  PP1  PE1  I1  O1  P1  P2  P10 >
+< A1 IS1 OS1  CS1  PP2  PE2  I2  O2  P1  P3  P11 >
+< A1 IS1 OS1  CS1  PP3  PE2  I2  O2  P1  P4  P11 >
+< A1 IS1 OS1  CS1  PP4  PE2  I3  O2  P3  P5  P11 >
+< A1 IS1 OS1  CS1  PP5  PE2  I4  O2  P5  P6  P12 >
+< A1 IS1 OS1  CS1  PP6  PE2  I5  O2  P6  P7  P11 >
+< A1 IS1 OS1  CS1  PP7  PE1  I6  O1  P7  P8  P13 >
+< A1 IS1 OS1  CS1  PP8  PE2  I7  O2  P8  P9  P14 >
+< A1 IS1 OS1  CS1  PP9  PE3  I8  O3  P9  P5  P15 >
+< A1 IS1 OS1  CS1  PP10 PE2  I9  O2  P4  P5  P11 >
+< A1 IS1 OS1  CS1  PP11 PE2  I10 O2  P5  P6  P12 >
+< A1 IS1 OS1  CS1  PP12 PE2  I11 O2  P6  P7  P11 >
+< A1 IS1 OS1  CS1  PP13 PE1  I12 O1  P7  P8  P13 >
+< A1 IS1 OS1  CS1  PP14 PE2  I7  O2  P8  P9  P14 >
+< A1 IS1 OS1  CS1  PP15 PE3  I8  O3  P9  P5  P15 > 
+}
+
+FUNCTION
+
+$
+The mechanism is called as Toggle-link Reverser. The mechanism is used to transmit power between two parallel shafts. The distance between the shafts can be small to medium. The direction of the output shaft reverses for every 360 degree of rotation of the input cycle. 
+$
+
+
+STRUCTURE
+
+$
+Two bevel gears are mounted, one each on the input and output shafts. There is another shaft called the drive shaft, at one end of which two bevel gears are mounted, which are free to move on the shaft and are connected to the bevel gear on the input shaft. The ratchet clutch however, is connected by a spline to the shaft-although free to linearly traverse. The other end of the drive shaft accommodates a bevel gear, which in turn is connected to the output shaft. This mechanism employs a striking pin that is located on the output member. 
+$
+
+
+BEHAVIOUR
+
+$
+The input bevel gear drives two following bevels, which are free to rotate on their common shaft. As shown in the figure, it is the right follower gear that is locked to the drive shaft. Hence the output gear rotates clockwise until the pin strikes the reversing level to shift the toggle to the left. Once past its center, the toggle spring snaps the ratchet to the left to engage the left follower gear. This instantly reverses the output, which now rotates counterclockwise until the pin again strikes the reversing level. Thus the mechanism reverses itself for every 360 degree of rotation of the input cycle.
+$
+
+
+PICTURE
+
+{
+ADB/REVERSE/02.TOGGLREV/togglrev.jpg		$ Toggle Link Reverser $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+The mechanism is called as Toggle-link reverser. The mechanism can be used to transmit power between two parallel shafts, which are separated small to medium distances. This can be described as follows:
+
+The input gear (part) being mounted on the input shaft rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the gear and the input shaft (organ).
+
+The right follower gear (part) mounted the drive shaft rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the input gear (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of meshing of the gears (organ).
+
+The drive shaft (part) rotates (physical phenomenon). This is due to the rotation of the right follower gear (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the right follower gear (organ), which is accomplished by the engagement of the ratchet clutch with the gear.
+
+
+The bevel gear (part) mounted on the drive shaft rotates (physical phenomenon). This is due to the rotation of the drive shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the drive shaft and the gear (organ).
+
+The output gear (part) being mounted on the output shaft rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the bevel gear (input), which activates the Newtonian laws of motion (physical effect) and requires the meshing of two gears (organ).
+
+The striking pin (part), which is mounted on the output gear, strikes against the reversing lever and displaces it (physical phenomenon). This is due to the rotation of the output gear (input), which activates the law “no two bodies can occupy the same space at the same time “ (Physical effect) and requires that the striking pin is longer than the gap between the out put gear and the reversing link (organ).
+
+The toggle link (part) operates that is it moves to the left (physical phenomenon). This is due to the movement of the reversing link (input), which activates the law “no two bodies can occupy the same space “ (physical effect) and requires that the toggle link be hinged to a certain point (organ).
+
+
+The ratchet clutch (part) now engages with the left follower gear (physical phenomenon). This is due to the movement of the toggle link and the spring (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the ratchet clutch form a sliding pair with the drive shaft and it also requires that the spring has some stiffness (organ).
+
+
+
+The output gear (part) along with the out put shaft rotates in the opposite direction (physical phenomenon). This is due to the rotation of the drive shaft (input), which activates the law “no two bodies can occupy the same space” (physical effect) and requires that the ratchet clutch engage with the left follower gear (organ).
+$
+
+
+
+ 
+
+
+
+
+
+ACTION
+$
+ 
+Using this mechanism the direction of rotation the out gear can be changed after every one revolution of the input gear.
+
+$
+STATE
+$
+
+clockwise rotation
+
+counter-clockwise.
+
+$
+PHYPHENOMENON
+$
+
+The input gear being mounted on the input shaft rotates in the counter clockwise direction.
+
+The right follower gear mounted the drive shaft rotates in the counter clockwise direction.
+ 
+The drive shaft rotates.
+
+The bevel gear mounted on the drive shaft rotates.
+
+The output gear being mounted on the output shaft rotates in the clockwise direction.
+
+The striking pin, which is mounted on the output gear, strikes against the reversing lever and displaces it.  
+
+The toggle link operates that is it moves to the left.
+
+The ratchet clutch now engages with the left follower gear.
+
+
+The output gear rotates in the opposite direction.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the input shaft.
+
+Rotation of the input gear.
+
+Rotation of the right follower gear.
+
+Rotation of the drive shaft.
+
+Rotation of the bevel gear.
+
+Rotation of the output gear.
+
+Movement of the reversing link.
+
+Movement of the toggle link and the spring.
+
+Rotation of the drive shaft.
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the gear and the input shaft.
+
+Presence of meshing of the gears.
+
+Presence of zero degree of freedom between the shaft and the right follower gear.
+
+Presence of zero degree of freedom between the drive shaft and the gear.
+
+Requires the meshing of two gears.
+
+Requires that the striking pin is longer than the gap between the out put gear and the reversing link.
+
+Requires that the ratchet clutch form a sliding pair with the drive shaft and it also requires that the spring have some stiffness.
+
+Requires that the ratchet clutch engage with the left follower gear.
+
+
+
+$
+
+PARTS
+
+$
+
+The input gear along with the input shaft forms a revolute pair with the frame.
+
+The two bevel gears along with the shaft forms a revolute pair with the frame.
+
+The ratchet clutch forma a sliding pair with the drive shaft.
+
+The toggle link forms a revolute pair with the  frame.
+
+The gears form a gear pair with each other.
+
+The output gear forms a revolute pair with the frame.
+
+
+$
+
+
+
+

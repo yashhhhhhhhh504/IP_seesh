@@ -1,0 +1,104 @@
+
+
+MACTION
+{
+A1 $ V < stop > N < machine > A < X > $
+A2 $ V < prevent > N < damage > A < X >
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < motion > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from motion to rest $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < reel > A < beamer > $
+PP2 $ V < maintain > N < gap > A < X > $
+PP3 $ V < rotate > N < package > A < yarn > $
+PP4 $ V < stop > N < rotation reel > A < beamer > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ Gravitational effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < x > A < x > $
+I2 $ V < x > N < tension > A < x > $
+I3 $ V < x > N < friction > A < x > $
+I4 $ V < break > N < thread > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the beamer reel $
+O2 $ tensile force that is greater than the gravitational force $
+O3 $ friction surface between the pulley and the thread $
+O4 $ contact between the contact bar and the electronic relay system $
+}
+
+MPART
+{
+P1 $ beamer reel $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ yarn package $
+P5 $ link $
+P6 $ electronic relay $
+P7 $ wrapping pair $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P5 P6 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P4 P7 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

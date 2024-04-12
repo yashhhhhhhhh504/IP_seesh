@@ -1,0 +1,79 @@
+SUMMARY
+$
+This is mainly used by drafters to draw.
+$
+
+ACTION
+
+$ 
+To aid the process of drawing.
+
+To occupy less space when not in use.
+$
+
+STATE
+
+$
+Occupy less area when not in use.
+
+Occupy large area when in use.
+
+$
+
+PHYPHENOMENON
+
+$
+The scales are unfolded and thus increasing the area occupied.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+$
+
+
+ORGAN
+
+$
+Presence of a hinged joint between the links.
+
+
+$
+
+
+
+PARTS
+$
+Drafter.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

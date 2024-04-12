@@ -1,0 +1,42 @@
+STUCTURE1
+$
+Input gear forms a revolute pair with the frame
+Input gear forms a gear pair with the slotted cam
+The follower pin forms a sliding pair with the slotted cam
+The follower pin forms a cylindrical pair with the frame
+$
+
+
+ACTION
+$
+Convert a number into its reciprocal
+$
+
+
+PHYPHENOMENON
+$
+ Rotation of input gear
+a. Rotation of slotted cam
+b. Reciprocation of follower
+$
+
+
+ORGAN
+$
+a. Interface of gear teeth
+b. Surface between the follower and the slot
+$
+
+
+PHYEFFECT
+$
+a. Force
+b. Force
+$
+
+
+INPUT
+$
+a. Rotation of Input gear
+b. Rotation of slotted cam
+$

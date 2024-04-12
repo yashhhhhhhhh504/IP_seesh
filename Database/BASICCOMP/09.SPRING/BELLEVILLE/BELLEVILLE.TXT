@@ -1,0 +1,188 @@
+MACTION
+{
+A1 $ V < absorb > N < energy > A < recoverable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < state > $
+IS2 $ V < x > A < deformed > N < state > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed > N < state > $
+OS2 $ V < x > A < original > N < state > $
+} 
+MCHANGESTATE
+{
+CS1 $ from original state to deformed state $
+CS2 $ from deformed state to original state $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < deform > N < spring > A < X > $
+PP2 $ V < regain > N < shape > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ hooks law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < load > A < x > $
+I2 $ V < remove > N < load > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of stiffness in the spring $
+O2 $ Necessary that the spring is loaded within the elastic limit $
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ flexible pair $
+P3 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P3 >
+}
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+Belleville washers are a unique type of compression spring.  These springs provide high load capabilities in limited space, and through variations in stacking they can be adjusted to provide either larger deflections or loads or both. Belleville washers can be used in various applications to apply a load upon a surface or provide some form of vibration absorption system. 
+Their use in radio controlled model cars, though, extends to such things as Adjustable Differentials and Clutches.
+$
+
+
+STRUCTURE
+
+$
+A Belleville washer or ‘disc spring’ is a compact type of spring in the shape of a washer that has been pressed into a dished shape and then hardened and tempered.
+Belleville washers are characterised by short axial lengths and relatively small deformations, and are often used in stacks as illustrated. Their geometry can be engineered to produce highly non-linear characteristics, which may display negative stiffness. 
+Belleville spring washers are especially suited for high loads in small spaces. 
+Since the deflection in a single Belleville spring washer is relatively small, it is often necessary to combine a number of washers. By combining them in varying sequence, each size gives numerous load-carrying possibilities. Stacking them in series increases the deflection in proportion to the number of washers, the load remaining the same as with a single washer. In order to increase the load, the washers may be stacked in parallel as shown in the figure. Theoretically, this increases the load in proportion to the number of washers. However, friction between the washers causes extra deflection, which occurs due to imperfect nesting of the washers.
+ 
+A stack of washers may be installed either on a rod or in a cylinder. For dynamic applications the guides should be hardened to Rockwell C48 minimum. Also hardened flat end plates may be added to prevent indenting adjacent parts. 
+Belleville washers are usually made from high carbon steel, spring-tempered phosphor bronze, beryllium copper or stainless steel.
+$
+
+
+BEHAVIOUR
+
+$
+Belleville washers have the highest load capacity of all spring washers. This type of washer is used to solve spring problems of high loads, limited space and small deflections.
+Belleville washers are used singly or in stacks to achieve desired load and travel. In general, they function best under conditions requiring very high load in confined space or short travel. Under these design constraints it is often not practical or even possible to use a coil spring. 
+A further advantage of Belleville springs results from the various characteristics performance due to height: thickness ratio employed. The curve of the spring is non-linear (as distinguished from normal coil springs, which are linear) and may be progressive, regressive, or even exhibit a constant load over a significant portion of its useful deflection. 
+Belleville washers used in parallel stack arrangements may be useful as load damping devices. The friction of the surface generates heat and dissipates energy under load releases - a useful hysteresis effect under certain conditions. 
+
+When properly designed and used, Belleville washers have a long life, superior performance, and may result in significant cost reduction. 
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/09.Spring/BELLEVILLE/belleville.gif	$ 01.Belleville Washer  $
+ADB/BASICCOMP/09.Spring/BELLEVILLE/series_parallel.jpg	$ 02.Series & Parallel  $
+ADB/BASICCOMP/09.Spring/BELLEVILLE/belleville1.jpg	$ 03.Belleville Washers $
+ADB/BASICCOMP/09.Spring/BELLEVILLE/belleville2.jpg	$ 04.Belleville Washers $
+}
+
+
+CLIP
+{
+}
+SUMMARY
+$
+This can be used to absorb recoverable energy. This can be interpreted as a change of state from rest to compression. This can be described as follows:
+
+The spring (part) deforms (physical phenomenon). This is due to the load applied (input), which activates the hooks law (physical effect) and requires the presence of stiffness in the spring (organ).
+
+The spring (part) regains its original shape and thus does some work (physical phenomenon). This is due to the removal of the load (input), which activates hooks law (physical effect) and is necessary that the spring is loaded within the elastic limit (organ).
+
+$
+
+ACTION
+
+$ 
+ To absorb recoverable energy.
+$
+
+STATE
+
+$
+The spring is in its original form.
+
+The spring is deformed.
+
+The spring is in its original form.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring deforms.
+
+The spring regains its original shape and thus does some work.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+Load applied.
+
+The removal of the load.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of stiffness in the spring.
+
+Necessary that the spring is loaded within the elastic limit.
+
+
+$
+
+
+
+PARTS
+$
+The spring forms a flexible pair with the frame.
+
+$
+
+

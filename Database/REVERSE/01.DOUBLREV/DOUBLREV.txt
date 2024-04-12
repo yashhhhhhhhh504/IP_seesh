@@ -1,0 +1,219 @@
+
+MACTION
+{
+A1 $ V < reverse > N < direction > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < rotate > A < output counter-clockwise > N < link > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < rotate > A < output clockwise > N < link > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from output link rotating in the counter-clockwise direction to clockwise direction $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < input > $
+PP2 $ V < rotate > N < link > A < clockwise > $
+PP3 $ V < rotate > N < link > A < counter-clockwise > $
+PP4 $ V < slip > N < pin > A < x > $
+PP5 $ V < rotate > N < link > A < clockwise > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < pin > A < x > $
+I3 $ V < rotate > N < gear > A < x > $
+I4 $ V < rotate > N < disk > A < X > $
+I5 $ V < rotate > N < pin > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input disk and the input shaft $
+O2 $ contact between the pin and the link A $
+O3 $ contact between the Gears $
+O4 $ the length of the link A is lesser than the distance between the pin and the center $
+O5 $ zero degree of freedom between the link B and the pin $
+}
+
+MPART
+{
+P1 $ disk $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ link $
+P5 $ striking pin $
+P6 $ fixed pair $
+P7 $ disk $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P5 P6 P7 >
+< A1 IS1 OS1 CS1 PP5 PE2 I5 O5 P2 P3 P4 >
+
+
+}
+
+
+FUNCTION
+
+$
+The mechanism is called 'Double Link Reverser' and is used to transmit power between two parallel shafts, with a small center distance. 
+But this mechanism automatically reverses the output drive for every 180 degrees rotation of the input cycle. 
+$
+
+
+STRUCTURE
+
+$
+In the mechanism one disk is attached to the input shaft. As shown in the first figure, link A and B have extended projections. The link A is mounted on an idle shaft, which rotates freely in either direction. The link B is attached to the output shaft and is also connected to link A by a gear pair. The input disk has a press-fit pin which strikes link A to drive it clockwise for 180 degrees and then it strikes link B to drive it clockwise for another 180 degrees of rotation.
+$
+
+
+BEHAVIOUR
+
+$
+From the configuration shown in Figure 1, the pin on the input disk strikes link A to drive it clockwise. Link A in turn drives link B counter clockwise with its gear segments (or gears pinned to the links). The output shaft and the output link (which can be the working member) are connected to link B. After approximately 180 degrees of rotation, the pin slides past link A to strike link B coming to meet it--and thus reverses the direction of link B (and of the output). Then after another 180 degrees of rotation the pin slips past link B to strike link A and starts the cycle all over again. The input and output rotations with respect to time per cycle are shown in the Figures 2 & 3. 
+$
+
+
+PICTURE
+
+{ 
+ADB/REVERSE/01.DOUBLREV/doublrev1.jpg		$ Double Link Reverser $ 
+ADB/REVERSE/01.DOUBLREV/doublrev2.jpg		$ characteristics $ 
+}
+
+
+CLIP
+
+{ 
+}
+SUMMARY
+$
+The mechanism is called 'Double Link Reverser' and is used to transmit power between two parallel shafts, with a small center distance. It can be interpreted as a change of state from counter clockwise rotation to clockwise rotation. This can be described as follows:
+
+The input disk (part) rotates continuously in the clockwise direction (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input disk and the input shaft (organ).
+
+The link A (part) rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the pin mounted on the input disk (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the pin and the link A (organ).
+
+The link B (part) rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the gear (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of contact between the Gears (organ).
+
+Now the striking pin (part) slips over the link A and now strikes the link B (physical phenomenon). This is due to the rotation of the disk (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the length of the link A is lesser than the distance between the pin and the center (organ).
+
+The link B (part) now rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the pin on the disk (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence zero degree of freedom between the link B and the pin (organ).
+
+$
+
+ACTION
+
+$ 
+ To reverse direction for every 180 degree of revolution.
+$
+
+STATE
+
+$
+The output link is rotating in the counter-clockwise direction.
+
+The output link is rotating in the clockwise direction.
+$
+
+PHYPHENOMENON
+
+$
+The input disk rotates continuously in the clockwise direction.
+
+The link A rotates in the clockwise direction.
+ 
+The link B rotates in the counter clockwise direction.
+
+Now the striking pin slips over the link A and now strikes the link B.
+
+The link B now rotates in the clockwise direction.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The torque applied on it.
+
+The rotation of the pin mounted on the input disk.
+
+The rotation of the gear.
+
+The rotation of the disk.
+
+The rotation of the pin on the disk.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input disk and the input shaft.
+
+Presence of contact between the pin and the link A.
+
+Presence of contact between the Gears.
+
+Necessary that the length of the link A is lesser than the distance between the pin and the center.
+
+Presence zero degree of freedom between the link B and the pin.
+$
+
+
+
+PARTS
+$
+The disk forms a revolute pair with the frame.
+
+The link A forms a revolute pair with the frame.
+
+The link B forms a revolute pair with the frame.
+
+The striking pin forms a fixed pair with the disk.
+
+
+
+$
+
+
+

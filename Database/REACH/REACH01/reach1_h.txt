@@ -1,0 +1,96 @@
+SUMMARY
+$
+This mechanism can be used for reaching different positions in a three dimension. This mechanism can be described as follows:
+ 
+
+The link 2 (part) rotates partially (not complete rotation) with respect to the fixed link 1 (Physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link 2 and the input shaft and it also requires the presence of one degree of freedom between the link 2 and link 1 (organ). This motion of the link 2 is called pitch.
+
+The link 3 (part) rotates partially (not complete rotation) with respect to the link 2 (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the link 3 and it also requires the presence of one degree of freedom between the link3 and the link 2 (organ). This is motion is called yaw.
+
+
+The link 4 (part) rotates completely with respect to the link 3 (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) requires the presence zero degree of freedom between the link 4 and the input shaft and it also requires the presence of one degree of freedom between the link 4 and the link 3 (organ). This motion is called roll.
+$
+
+ACTION
+{
+$ 
+ Using this mechanism different positions can be reached in a three dimension.
+$
+}
+STATE
+{
+$
+The absence of torque at all the three input shafts.
+$
+The presence of torque at the shaft of the link 2.
+$
+The presence of torque at the shaft of the link 3.
+$
+The presence of torque at the shaft of the link 4. 
+$
+}
+PHYPHENOMENON
+{
+$
+The link 2 rotates partially with respect to the fixed link 1.
+$
+The link 3 rotates partially with respect to the link 2.
+$ 
+The link 4 rotates completely with respect to the link 3.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+The rotation of the input shaft of link 2.
+$
+The rotation of the input shaft of link 3
+$
+The rotation of the input shaft of link 4.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the link 2 and the input shaft and also the presence of one degree of freedom between the link 1 and link 2.
+$
+Presence of zero degree of freedom between the shaft and the link 3 and also the presence of one degree of freedom between the link3 and the link2.
+$
+Presence zero degree of freedom between the link 4 and the input shaft and also the presence of one degree of freedom between the link 4 and the link 3
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The link 2 along with the input shaft forms a revolute pair with the frame.
+$
+The link 3 along with the input shaft forms a revolute pair with the link 2.
+$
+The link 4 along with the input shaft forms a revolute pair with the link 3.
+
+$
+
+$
+
+$
+}
+

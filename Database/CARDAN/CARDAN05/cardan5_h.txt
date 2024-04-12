@@ -1,0 +1,87 @@
+SUMMARY
+$
+This mechanism can be used to generate straight-line motion. This can be interpreted as a change of state from rest to straight-line motion. This can be described as follows:
+
+The rod 1 (part) rotates eccentrically about the hinged point (physical phenomenon). This is due to the torque applied (input) by the input shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the rod (organ).
+
+The circular segment (part) rocks on another circular surface (physical phenomenon). This is due to the rotation of the input rod (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the rod and the circular segment (organ).
+
+The ends (part) of the circular segment move along a straight-line motion (physical phenomenon). This is due to the rocking motion of the circular segment (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the radius of the circular segment is half of the circular surface (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To generate straight-line motion.
+$
+
+STATE
+
+$
+The end connected to the output link moves along a straight-line motion.
+
+The end connected to the input link moves along a straight-line motion
+
+$
+
+PHYPHENOMENON
+
+$
+The rod 1 rotates eccentrically about the hinged point.
+
+The circular segment rocks on another circular surface.
+ 
+The ends of the circular segment move along a straight-line motion.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of the input rod.
+
+The rocking motion of the circular segment.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the rod.
+
+Presence of one degree of freedom between the rod and the circular segment.
+
+Necessary that the radius of the circular segment is half of the circular surface.
+
+$
+
+
+
+PARTS
+$
+The input rod forms a revolute pair with the frame.
+
+The circular segment forms a revolute pair with the input rod.
+
+The end connected to output link forms a sliding pair with the guide.
+
+$
+
+
+
+

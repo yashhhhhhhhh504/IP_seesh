@@ -1,0 +1,260 @@
+MACTION
+{
+A1 $ V < drive > N < transmission > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < flow > A < air-fuel > $
+PP2 $ V < move > N < part > A < X > $
+PP3 $ V < compress > N < pa > A < x > $
+PP4 $ V < ignite > N < mixture > A < air-fuel > $
+PP5 $ V < release > N < gases > A < hot > $
+PP6 $ V < push > N < piston > A < X > $
+PP7 $ V < rotate > N < crankshaft > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+PE4 $ Ignition effect $ 
+PE5 $ Chemical effect $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < differential > A < pressure > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < move > N < part > A < x > $
+I4 $ V < x > N < arc > A < electric > $
+I5 $ V < X > N < energy > A < chemical > $
+I6 $ V < X > N < pressure > A < X > $
+I7 $ V < X > N < motion > A < reciprocating > $
+
+}
+
+MORGAN
+{
+O1 $ pressure inside the cylinder is lesser than the pressure outside the cylinder $
+O2 $ smooth surface between the piston and the cylinder walls $
+O3 $ air fuel mixture is a compressible fluid $
+O4 $ temperature reached is at least equal to the ignition temperature of the fuel $
+O5 $ air-fuel mixture is burnt completely $
+O6 $ gap between the piston and the cylinder is as small as possible $
+O7 $ crank to convert reciprocating motion into rotary motion $
+
+}
+
+MPART
+{
+P1 $ air fuel mixture $
+P2 $ sliding pair $
+P3 $ cylinder $
+P4 $ piston $
+P5 $ flexible pair $
+P6 $ spark plug $
+P7 $ fixed pair $
+P8 $ chemical mixture $
+P9 $ hot gases $
+P10 $ crank shaft $
+P11 $ revolute pair $
+P12 $ frame $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P3 P6 P7 >
+< A1 IS1 OS1 CS1 PP5 PE5 I5 O5 P1 P8 >
+< A1 IS1 OS1 CS1 PP6 PE2 I6 O6 P4 P5 P9 >
+< A1 IS1 OS1 CS1 PP7 PE2 I7 O7 P10 P11 P12 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+A car engine has one goal in mind: to convert gasoline and air into motion. The engine does this by burning the gasoline in thousands of tiny explosions, a process called internal combustion.
+
+$
+
+
+STRUCTURE
+
+$
+The engine consists of a piston cylinder arrangement. There is a spark plug to ignite the fuel air mixture. The piston rings are provided around the piston to prevent leaking of the fuel air mixture into the crankcase.
+$
+BEHAVIOUR
+
+$
+The entire process is accomplished in four stages and these four stages are as follows: intake stroke, the compression stroke, the combustion stroke and the exhaust stroke.
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/GASOLINE-ENGINE/01.GIF	$ GASOLINE ENGINE $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used to drive transmission. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The air fuel mixture (part) enters the engine cylinder (physical phenomenon). This is due to the pressure differential (input), which activates the Bernoulli’s law (physical effect) and is necessary that the pressure inside the cylinder is lesser than the pressure outside the cylinder (organ).
+
+The piston (part) moves towards the inner dead center (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of smooth surface between the piston and the cylinder walls (organ).
+
+The air-fuel mixture (part) is compressed (physical phenomenon). This is due to the movement of the piston (input), which activates the “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the air fuel mixture is a compressible fluid (organ).
+
+
+The spark plug (part) ignites the air fuel mixture (physical phenomenon). This is due to the electric arc that is struck (input) which activates the ignition effect (physical effect) and is necessary that the temperature reached is at least equal to the ignition temperature of the fuel (organ).
+
+The air-fuel mixture (part) burns and thus release large amount of gases (physical phenomenon). This is due to the chemical energy of the fuel (input), which activates the chemical effect (physical effect) and is necessary that the air-fuel mixture is burnt completely (organ).
+
+The hot gases (part) thus produced pushes the piston towards the outer dead center (physical phenomenon). This is due to the pressure exerted by the hot gases (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the gap between the piston and the cylinder is as small as possible (organ).
+
+The crankshaft (part) rotates and thus drives the transmission (physical phenomenon). This is due to the reciprocating motion of the piston (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a crank to convert reciprocating motion into rotary motion (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To drive the transmission.
+$
+
+STATE
+
+$
+The transmission is at rest.
+
+The transmission is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The air fuel mixture enters the engine cylinder.
+
+The piston moves towards the inner dead center.
+
+The air-fuel mixture is compressed.
+
+The spark plug ignites the air fuel mixture.
+
+The air-fuel mixture burns and thus release large amount of gases.
+
+The hot gases thus produced pushes the piston towards the outer dead center.
+
+The crankshaft rotates and thus drives the transmission.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Ignition effect.
+
+Chemical effect.
+
+
+$
+
+
+INPUT
+
+$
+The pressure differential.
+
+The rotation of the crank.
+
+The movement of the piston.
+
+The electric arc that is struck.
+
+The chemical energy of the fuel.
+
+The pressure exerted by the hot gases.
+
+The reciprocating motion of the piston.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pressure inside the cylinder is lesser than the pressure outside the cylinder.
+
+Presence of smooth surface between the piston and the cylinder walls.
+
+Necessary that the air fuel mixture is a compressible fluid.
+
+Necessary that the temperature reached is at least equal to the ignition temperature of the fuel.
+
+Necessary that the air-fuel mixture is burnt completely.
+
+Necessary that the gap between the piston and the cylinder is as small as possible.
+
+Presence of a crank to convert reciprocating motion into rotary motion.
+
+$
+
+
+
+PARTS
+$
+The air fuel mixture forms a sliding pair with the cylinder.
+
+The piston forms sliding pair with the cylinder.
+
+The air fuel mixture forms a flexible pair with the piston.
+
+The spark plug forms a fixed pair with the cylinder.
+
+The air-fuel forms chemical mixture.
+
+The hot gases form flexible pair with the piston.
+
+The crankshaft forms a revolute pair with the frame.
+$

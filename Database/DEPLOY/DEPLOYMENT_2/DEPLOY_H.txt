@@ -1,0 +1,80 @@
+
+SUMMARY
+$
+This mechanism can be used to deploy. This can be described as follows:
+
+The hollow solid object (part) is folded (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the force is large enough to overcome the elastic force (organ).
+
+
+The hollow solid object (part) unfolds (physical phenomenon). This is due to the elastic force (input) which activates the hooks law (physical effect) and requires the presence of elastic material within the hollow solid material (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+It has less area.
+
+It has large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The hollow solid object is folded.
+
+The hollow solid object folds and unfolds.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Elastic force.
+
+$
+
+
+ORGAN
+
+$
+
+Necessary that the force is large enough to overcome the elastic force.
+
+Presence of elastic material within the hollow solid material.
+$
+
+
+
+PARTS
+$
+The part that folds forms a revolute pair with the fixed part.
+
+
+$
+
+
+
+
+
+
+

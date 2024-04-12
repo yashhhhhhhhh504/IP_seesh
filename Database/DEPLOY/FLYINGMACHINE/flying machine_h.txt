@@ -1,0 +1,101 @@
+SUMMARY
+$
+It can be used to provide transportation from one place to another through air.
+$
+
+ACTION
+
+$ 
+ To provide transportation.
+$
+
+STATE
+
+$
+The flying machine is at rest.
+
+The flying machine is flying.
+
+$
+
+PHYPHENOMENON
+
+$
+Pedal the cycle.
+
+Rotate the fan.
+
+Generate lift.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Torque.
+
+Rotate the fan.
+
+$
+
+
+ORGAN
+
+$
+Presence of a crank that is connected to the shaft.
+
+Presence of some kind of connection between the pedal and the fan.
+
+Necessary that the speed of rotation of the fan is sufficient to generate the lift.
+
+
+$
+
+
+
+PARTS
+$
+Pedal.
+
+
+Fan.
+
+Air.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

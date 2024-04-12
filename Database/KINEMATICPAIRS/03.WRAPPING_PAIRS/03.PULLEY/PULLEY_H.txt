@@ -1,0 +1,90 @@
+SUMMARY
+$
+This can be used to reduce the effort required to lift objects. This can be described as follows:
+
+The rope (part) that wraps over the pulley moves (physical phenomenon). This is due to the pull force applied to one of its end (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the rope has some inertia (organ).
+
+The pulley (part) rotates (physical phenomenon). This is due to the movement of the rope (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the rope (organ).
+
+The weight (part) is lifted with less effort (physical phenomenon). This is due to the rotation of the pulley (input), which activates the lever effect (physical effect) and requires the pulley to be fixed at its center (organ).
+
+ 
+$
+
+ACTION
+{
+$ 
+ To lift weights efficiently.
+$
+}
+STATE
+{
+$
+The weight is at a low level.
+
+The weight is at a higher level.
+$
+}
+PHYPHENOMENON
+{
+$
+The rope that wraps over the pulley moves.
+
+The pulley rotates.
+
+The weight is lifted with less effort.
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+
+Friction effect.
+
+Lever effect.
+$
+}
+
+INPUT
+{
+$
+The pull force applied to one of its end.
+
+The movement of the rope.
+
+The movement of the rope.
+$
+}
+
+ORGAN
+{
+$
+Requires that the rope have some inertia.
+
+Presence of friction surface in between the pulley and the rope.
+
+Requires the pulley to be fixed at its center.
+$
+
+}
+
+PARTS
+{
+$
+The rope forms a sliding pair with the pulley surface.
+
+The pulley forms a revolute pair with the support.
+
+The weight forms a fixed pair with the rope.
+
+
+$
+}
+
+
+
+
+

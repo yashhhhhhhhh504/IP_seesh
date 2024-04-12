@@ -1,0 +1,187 @@
+
+MACTION
+{
+A1 $ V < store > N < energy > A < recoverable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < deformed > N  < shape > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < original > N  < shape > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from deformed shape to original shape $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < deform > N < spring > A < X > $
+PP2 $ V < regain > N < shape > A < original > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hooks law $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < load > A < X > $
+I2 $ V < remove > N < load > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ requires that the load applied is an axial compressive load $
+O2 $ requires that load applied is within the elastic limit $
+
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ fixed-pair $
+P3 $ frame $
+P4 $ load $
+P5 $ flexible-pair $
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P3 P4 P5 >
+
+}
+
+FUNCTION
+
+$
+A compression spring is an open-coil helical spring that offers resistance to a compressive force applied axially. They are found in a wide variety of applications ranging from automotive engines and large stamping presses to major appliances and lawn mowers. 
+$
+
+
+STRUCTURE
+
+$
+Springs are unlike other machine/structure components in that they undergo significant deformation when loaded - their compliance enables them to store readily recoverable mechanical energy.
+Compression Springs may be cylindrical, conical, tapered, concave or convex in shape and may have a constant or a variable pitch. Round wire is most commonly used because it is readily available and adaptable to standard coiler tooling. But square, rectangular and special-section wire is also available for special applications. Compression springs "end configuration" are either Open end, closed end, ground or plain.
+Compression springs are usually coiled as a constant diameter cylinder. Other common forms of compression springs, such as conical, concave (barrel), convex (hourglass), or various combinations of these are used as required by the application. The pitch can also be varied to provide different spring rates throughout the operating range of the spring. 
+
+Materials used for compression springs are spring steel, stainless steel, silicon-chrome, high carbon, beryllium-copper, inconnel, galvanised wire, mild steel, phosphor bronze, brass. 
+$
+
+
+BEHAVIOUR
+
+$
+The shortcoming of most metal springs is that they rely on either bending or torsion to obtain significant deformations; the stress therefore varies throughout the material so that the material does not all contribute uniformly to energy storage. Helical Compression Springs offer resistance to linear compressing forces, and are in fact one of the most efficient energy storage devices available. 
+Because compression springs can be of varied cross sections and shape they can be specifically tailored to applications that have, for instance, solid height restrictions or dynamic resonance conditions that need to be addressed. 
+
+
+The wire of a   helical compression spring is loaded mainly in torsion and is therefore usually of circular cross section. Helical Compression Springs represent the most common spring configuration utilized in today’s marketplace. 
+There are different types of compression springs. 
+Compression springs with reduced end coil diameter can be used for the same applications as cylindrical compression springs, but they offer an advantage in products such as thermostats and pressure regulators where high regulation accuracy is necessary. The characteristic of springs with reduced end coils is linear, from 10% to 90% of spring travel.
+
+Conical compression springs can be used for the same applications as cylindrical compression springs. The advantage with conical springs however is that the deflection is very small.
+$
+
+
+
+PICTURE
+{
+ADB/BASICCOMP/09.Spring/COMPRESSION/compression.jpg	$ 01.Compression Springs $
+ADB/BASICCOMP/09.Spring/COMPRESSION/compression1.jpg	$ 02.Compression Springs $
+ADB/BASICCOMP/09.Spring/COMPRESSION/comp.jpg		$ 03.Compression Springs $
+ADB/BASICCOMP/09.Spring/COMPRESSION/drawing.gif		$ 04.Compression Terms	 $
+ADB/BASICCOMP/09.Spring/COMPRESSION/compressionends.jpg $ 05.Compression Ends	 $
+ADB/BASICCOMP/09.Spring/COMPRESSION/conical.jpg		$ 06.Conical Compression $
+ADB/BASICCOMP/09.Spring/COMPRESSION/conicaldwg.gif	$ 07.Conical Compression $
+ADB/BASICCOMP/09.Spring/COMPRESSION/reducedendcoils.jpg	$ 08.Reduced End COils	 $
+}
+
+
+CLIP
+{
+ADB/BASICCOMP/09.Spring/COMPRESSION/compspring.mpeg	$ Compression Spring $
+}
+
+SUMMARY
+$
+This can be used to store readily recoverable mechanical energy; this can be described as follows:
+
+The spring (part) undergoes deformation that is its length decreases (physical phenomenon). This is due to load applied (input), which activates the hooks law (physical effect) and requires that the load applied is an axial compressive load (organ),
+
+The spring (part) regains its original shape (physical phenomenon). This is due to the absence of the load that was previously applied (input), which activates the hook’s law (physical effect) and requires that load applied is within the elastic limit (organ).
+
+$
+
+ACTION
+
+$ 
+ To store readily recoverable energy.
+
+$
+STATE
+$
+
+The spring is in a deformed shape.
+
+The spring is in its original shape.
+
+$
+PHYPHENOMENON
+$
+
+The spring undergoes deformation that is its length decreases.
+
+The spring regains its original shape.
+
+
+$
+
+PHYEFFECT
+$
+
+Hooks law.
+
+$
+
+INPUT
+$
+
+
+Load applied.
+
+Absence of the load.
+
+$
+
+ORGAN
+
+$
+
+Requires that the load applied is an axial compressive load.
+
+Requires that load applied is within the elastic limit.
+
+$
+
+PARTS
+$
+
+One end of the spring forms a fixed pair with the frame.
+
+The load forms a flexible pair with the frame.
+
+$
+

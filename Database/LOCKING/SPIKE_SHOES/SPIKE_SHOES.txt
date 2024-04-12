@@ -1,0 +1,176 @@
+MACTION
+{
+A1 $ V < provide > N < grip > A < X > $
+A2 $ V < lock > N < part > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < outside > N < soil > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < inside > N < soil > $
+} 
+MCHANGESTATE
+{
+CS1 $ from outside soil to inside soil $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < penetrate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Force concentration effect $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < load > A < point > $
+}
+
+MORGAN
+{
+O1 $ spikes have very sharp and pointed tips $
+}
+
+MPART
+{
+P1 $ Spiked shoes $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+These can be used to gain enough grip while running. Sportsmen usually use this.
+$
+
+
+STRUCTURE
+
+$
+This consists of a normal shoe, which has spikes below it.
+$
+
+
+BEHAVIOUR
+
+$
+The grip is basically provided by the spikes, which penetrate into the soil while running.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/SPIKE_SHOES/01.JPG		$ 01.Spike Shoes $
+ADB/LOCKING/SPIKE_SHOES/02.JPG		$ 02.Spike Shoes $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+The main function of this is that it provides sufficient grip for sprinters since they run very fast.
+$
+
+ACTION
+
+$ 
+To provide grip.
+
+To lock on to soil.
+$
+
+STATE
+
+$
+The spikes are outside the soil.
+
+The spikes are inside the soil.
+
+$
+
+PHYPHENOMENON
+
+$
+The spike penetrates into the soil.
+
+$
+
+
+PHYEFFECT
+
+$
+Force concentration effect.
+
+$
+
+
+INPUT
+
+$
+Point load.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spikes have very sharp and pointed tips.
+
+$
+
+
+
+PARTS
+$
+Spiked shoes.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

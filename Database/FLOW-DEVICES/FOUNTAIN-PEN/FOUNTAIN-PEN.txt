@@ -1,0 +1,236 @@
+
+MACTION
+{
+A1 $ V < write > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < pen > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < write > A < x > N < pen > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ ink on paper from pen $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < enter > N < gap > A < narrow > $
+PP2 $ V < fill > N < nib > A < narrow > $
+PP3 $ V < write > N < paper > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Capillary action $
+PE3 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < force > N < ink > A < gravitational > $
+I2 $ V < force > N < nib > A < adhesive > $
+I3 $ V < move > N < pen > A < x > $
+}
+
+MORGAN
+{
+O1 $ Vent to be provided $
+O2 $ Proper dimensions of the narrow slit $
+O3 $ Smooth motion of pen on the paper $
+}
+
+MPART
+{
+P1 $ Ink $
+P2 $ Nib $
+P3 $ Paper $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+}
+
+
+FUNCTION
+
+$
+Fountain pen is used to write on paper with liquid ink.
+$
+
+
+STRUCTURE
+
+$
+It has a small ink reservoir filled with link, nib, nib holder and cap as the key components. It uses the principle of capillary action for the flow of ink.
+$ 
+
+
+BEHAVIOUR
+
+$
+Ink enters the narrow gap between nib and nib holder. This is due to gravitational force acting on the ink, which actuates the Newtonian laws of motion and requires vent to be provided. The narrow slit in the nib is filled with the ink. This is due adhesive force between ink and the nib, which actuates laws of capillary action and requires the proper dimensions of the narrow slit. Paper and ink get in contact with each other and the writing job is done. This is due to movement of pen on the paper, which actuates Newtonian laws of motion and requires smooth motion of pen on the paper.
+
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/FOUNTAIN-PEN/FOUNTAIN-PEN01.JPG	$ 01.FOUNTAIN-PEN $
+
+ADB/FLOW-DEVICES/FOUNTAIN-PEN/FOUNTAIN-PEN02.JPG	$ 02.FOUNTAIN-PEN $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Fountain pen is used to write on paper with liquid ink. It has a small ink reservoir filled with link, nib, nib holder and cap as the key components. It works as follows,
+
+Ink (part) enters the narrow gap between nib and nib holder (physical phenomenon). This is due to gravitational force (input) acting on the ink, which actuates the Newtonian laws of motion (physical effect) and requires vent to be provided (organ).
+
+The narrow slit in the nib (part) is filled with the ink (physical phenomenon). This is due adhesive force (input) between ink and the nib, which actuates laws of capillary action (physical effect) and requires the proper dimensions of the narrow slit  (organ).
+
+Paper (part) and ink get in contact with each other and the writing job is done (physical phenomenon). This is due to movement of pen (input) on the paper, which actuates Newtonian laws of motion (physical effect) and requires smooth motion of pen on the paper (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To write.
+$
+
+STATE
+
+$
+Ink in the pen.
+Ink on the paper and the writing job is done.
+$
+
+
+
+PHYPHENOMENON
+
+$
+Ink enters the narrow gap between nib and nib holder
+
+The narrow slit in the nib is filled with the ink
+ 
+Paper and ink get in contact with each other and the writing job is done
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+Capillary action
+
+Newtonian laws of motion
+
+$
+
+
+INPUT
+
+$
+
+Gravitational force acting on the ink
+
+Adhesive force between ink and the nib
+
+Movement of pen
+
+$
+
+
+ORGAN
+
+$
+
+Vent to be provided
+
+Proper dimensions of the narrow slit  
+
+Smooth motion of pen on the paper
+
+$
+
+
+
+PARTS
+$
+
+Ink
+
+Nib
+
+Paper
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+MACTION
+{
+A1 $ V=reciprocate N=member $
+A2 $ V=translate N=member $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=move N=member $
+PP2 $ V=transfer N=motion $
+PP3 $ V=restrain N=motion $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V=apply N=force $
+I2 $ V=move N=member $
+I3 $ V=set N=boundary $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+O2 $ shape $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P3 $ rotation not possible $
+P4 $ prismatic pair $
+P5 $ fixed pair $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A1 - PP2 - PE1 - I2 - O1 - P1 - P1 - P5
+A1 - PP3 - PE2 - I3 - O2 - P1 - P2 - P3
+
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A2 - PP2 - PE1 - I2 - O1 - P1 - P1 - P5
+A2 - PP3 - PE2 - I3 - O2 - P1 - P2 - P3

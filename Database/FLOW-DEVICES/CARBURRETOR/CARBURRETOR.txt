@@ -1,0 +1,250 @@
+
+MACTION
+{
+A1 $ V < mix > N < petrol > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < separate > A < x > N < air > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < mixture > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from unmixed to mixed $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < flow > N < pipe > A < induction > $
+PP2 $ V < create > N < pressure > A < low > $
+PP3 $ V < come > N < petrol > A < x > $
+PP4 $ V < make > N < mixture > A < homogeneous > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli's law $
+PE2 $ Bernoulli's law $
+PE3 $ Newtonian laws of motion $
+PE4 $ Laws of heat transfer $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < motion > A < x > $
+I2 $ V < x > N < velocity > A < increased > $
+I3 $ V < act > N < pressure > A < atmospheric > $
+I4 $ V < evaporate > N < heat > A < X > $
+}
+
+MORGAN
+{
+O1 $ Induction pipe open to atmosphere $
+O2 $ Area of venturi to be smaller than that of the induction pipe $
+O3 $ Pressure in venturi part to be smaller than the atmospheric pressure $
+O4 $ the temperature of neighboring parts to be on higher side $
+
+}
+
+MPART
+{
+P1 $ Air $
+P2 $ Venturi $
+P3 $ Petrol $
+P4 $ Petrol air mixture $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+
+
+}
+
+
+FUNCTION
+
+$
+Carburetor is a device, which makes homogenous mixture of petrol and air in case of petrol engines.
+$
+
+
+STRUCTURE
+
+$
+
+It makes homogenous mixture of petrol and air in case of petrol engines. It is installed in induction manifold. It has venturi part having reduced cross sectional area, choke tube, throttle valve, float chamber.
+$
+BEHAVIOUR
+
+$
+Air flows through induction pipe. This is due to motion of piston from TDC to BDC during suction stroke, which actuates Bernoulli's law and requires induction pipe open to atmosphere. Venturi of the induction pipe creates low-pressure zone.  This is due to increased velocity (input) of air through venturi part, which actuates Bernoulli's law and requires area of venturi to be smaller than that of the induction pipe. Petrol comes in to air through choke tube. This is due to atmospheric pressure acting on the petrol, which actuates Newtonian laws of motion and requires pressure in venturi part to be smaller than the atmospheric pressure. Petrol air mixture becomes homogeneous. This is due to evaporation of petrol by absorbing heat from the neighboring parts, which actuates the laws of heat transfer and requires the temperature of neighboring parts to be on higher side.
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/CARBURRETOR/CARBURRETOR01.JPG		$ 01.CARBURRETOR $
+ADB/FLOW-DEVICES/CARBURRETOR/CARBURRETOR02.JPG		$ 02.CARBURRETOR $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+Carburetor is a device, which makes homogenous mixture of petrol and air in case of petrol engines. It is installed in induction manifold. It has venturi part having reduced cross sectional area, choke tube, throttle valve, float chamber. Its working is as below,
+
+Air (part) flows through induction pipe (physical phenomenon). This is due to motion (input) of piston from TDC to BDC during suction stroke, which actuates Bernoulli's law (physical effect) and requires induction pipe open to atmosphere (organ).
+
+Venturi (part) of the induction pipe creates low-pressure zone (physical phenomenon).  This is due to increased velocity (input) of air through venturi part, which actuates Bernoulli's law (physical effect) and requires area of venturi to be smaller than that of the induction pipe (organ).
+
+Petrol (part) comes in to air through choke tube (physical phenomenon). This is due to atmospheric pressure (input) acting on the petrol, which actuates Newtonian laws of motion (physical effect) and requires pressure in venturi part to be smaller than the atmospheric pressure (organ).
+
+Petrol air mixture (part) becomes homogeneous (physical phenomenon). This is due to evaporation (input) of petrol by absorbing heat from the neighboring parts which actuates the laws of heat transfer (physical effect) and requires the temperature of neighboring parts to be on higher side (organ).
+
+$
+
+ACTION
+
+$ 
+ To make mixture of petrol and air.
+$
+
+STATE
+
+$
+Petrol and air separate.
+
+Mixture of petrol and air.
+$
+
+
+
+PHYPHENOMENON
+
+$
+Air flows through induction pipe
+
+Venturi of the induction pipe creates low-pressure zone
+ 
+Petrol comes in to air through choke tube
+
+Petrol air mixture becomes homogeneous
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli's law
+
+Bernoulli's law
+
+Newtonian laws of motion
+
+Laws of heat transfer
+$
+
+
+INPUT
+
+$
+
+Motion of piston from TDC to BDC during suction stroke
+
+Increased velocity of air through venturi part
+
+Atmospheric pressure acting on the petrol
+
+Evaporation of petrol by absorbing heat
+
+$
+
+
+ORGAN
+
+$
+
+Induction pipe open to atmosphere
+
+Area of venturi to be smaller than that of the induction pipe
+
+Pressure in venturi part to be smaller than the atmospheric pressure
+
+The temperature of neighboring parts to be on higher side
+
+$
+
+
+
+PARTS
+$
+
+Air
+
+Venturi
+
+Petrol
+
+Petrol air mixture
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

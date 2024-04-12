@@ -1,0 +1,191 @@
+
+MACTION
+{
+A1 $ V < circulate > N < air > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < circulate > A < x > N < air > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to circulation of air $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < push > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Torque > A < x > $
+I2 $ V < rotate > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the fan $
+O2 $ fan has the necessary stiffness to cause the movement of the air $
+}
+
+MPART
+{
+P1 $ Fan $
+P2 $ Fan blades $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This is used to circulate air. 
+$
+
+
+STRUCTURE
+
+$
+This consists of fans that are attached to rotor.
+$
+
+
+BEHAVIOUR
+
+$
+as the rotor rotates the blades circulate the air.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/FAN/01.jpg $ 01.Fan $
+ADB/DEPLOY/FAN/02.jpg $ 02.Fan $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to circulate air.
+$
+
+ACTION
+
+$ 
+ To circulate air.
+$
+
+STATE
+
+$
+The air is at rest.
+
+The air is being circulated.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate fan.
+
+Push air.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+Torque.
+
+Rotation of the fan.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the fan.
+
+Necessary that the fan has the necessary stiffness to cause the movement of the air.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Fan.
+
+Fan blades.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

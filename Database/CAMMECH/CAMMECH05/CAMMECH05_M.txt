@@ -1,0 +1,72 @@
+MACTION
+{
+A1 $ V < generate > A < reciprocating > N < motion > $
+A2 $ V < control > A < reciprocating > N < motion > $
+
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < constant > A < x > N < stroke > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N  < motion > $
+OS2 $ V < variable > A < x > N < stroke > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ From rest to reciprocating motion $
+CS2 $ $
+}
+
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < reciprocating > N < motion > $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < cam > $
+PP2 $ V < reciprocate > A < X > N < follower > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+
+I1 $ V < provide > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < cam > $
+I3 $ V < adjust > A < radial > N < position > $
+}
+
+MORGAN
+{
+O1 $ 0 degree of freedom of motion in direction of motion $
+O2 $ angular setting of the cam $
+O3 $ radial distance of the follower from the centre of the cam $
+}
+
+MPART
+{
+P1 $ shaft $
+P2 $ cam $
+P3 $ fixed pair $
+P4 $ follower $
+P5 $ cam pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1   PP1   PE1   I1   O1   P1   P2   P3 >
+< A1  IS1  OS1  CS1  PP2   PE2   I2   O2   P2   P4   P5 >
+< A2  IS2  OS2  CS2  PP2   PE2   I2   O2   P2   P4   P5 >
+< A2  IS2  OS2  CS2  PP2   PE2   I3   O3   P2   P4   P5 >
+
+}

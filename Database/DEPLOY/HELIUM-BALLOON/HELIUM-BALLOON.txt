@@ -1,0 +1,213 @@
+
+MACTION
+{
+A1 $ V < act > N <force > A < buoyancy > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rest > N < balloon > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < buoyancy > N < force > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to buoyancy force acting on the balloon and the balloon lifted up $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < force > N < helium > A < X > $
+PP2 $ V < lift > N < balloon > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli's law $
+PE2 $ Archimedes principle $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < helium > A < x > $
+I2 $ V < force > N < balloon > A < buoyancy > $
+}
+
+MORGAN
+{
+O1 $ Outside pressure higher than the inside pressure $
+O2 $ Weight of the balloon with helium inside it smaller than the weight of the air displaced by he balloon $
+}
+
+MPART
+{
+P1 $ Helium $
+P2 $ Balloon $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+
+
+FUNCTION
+
+$
+helium balloons are used to lift the balloons up by using buoyancy force. Helium balloons are filled with helium, which is lighter than the air. If the weight of the balloon and the helium gas inside it is lesser than the weight of air displaced, balloon is buoyed up.
+$
+
+
+STRUCTURE
+
+$
+Helium balloons are filled with helium, which is lighter than the air. If the weight of the balloon and the helium gas inside it is lesser than the weight of air displaced, balloon is buoyed up.
+
+$
+
+BEHAVIOUR
+
+$
+Helium is forced in the balloon. This is due to pressure difference between outside and inside and the force applied to push helium in which actuates Bernoulli's law and requires that outside pressure higher than the inside pressure. Balloon is buoyed up. This is due to buoyancy force acting on the balloon by the air which actuates Archimedes principle and requires that weight of the balloon with helium inside it smaller than the weight of the air displaced by he balloon.
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/HELIUM-BALLOON/HELIUM-BALLOON01.GIF	  $ 01.HELIUM-BALLOON $
+ADB/DEPLOY/HELIUM-BALLOON/HELIUM-BALLOON02.GIF	  $ 02.HELIUM-BALLOON $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Helium balloons are filled with helium, which is lighter than the air. If the weight of the balloon and the helium gas inside it is lesser than the weight of air displaced, balloon is buoyed up. It is explained below,
+
+Helium (part) is forced in the balloon (physical phenomenon). This is due to pressure difference between outside and inside and the force applied to push helium in (input) which actuates Bernoulli's law (physical effect) and requires that outside pressure higher than the inside pressure (organ).
+
+Balloon (part) is buoyed up (physical phenomenon). This is due to buoyancy force (input) acting on the balloon by the air which actuates Archimedes principle (physical effect) and requires that weight of the balloon with helium inside it smaller than the weight of the air displaced by he balloon (organ).
+
+$
+
+
+
+ACTION
+
+$ 
+ Buoyancy force acting on the balloon.
+$
+
+STATE
+
+$
+No buoyancy force acting on the balloon.
+Balloon lifted up due to buoyancy force.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Helium is forced in the balloon
+
+Balloon is buoyed up 
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli's law
+
+Archimedes principle
+
+$
+
+
+INPUT
+
+$
+
+Force applied to push helium in
+
+Buoyancy force (input) acting on the balloon
+
+$
+
+
+ORGAN
+
+$
+Outside pressure higher than the inside pressure
+
+Weight of the balloon with helium inside it smaller than the weight of the air displaced by he balloon
+
+$
+
+
+
+PARTS
+$
+Helium
+
+Balloon
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

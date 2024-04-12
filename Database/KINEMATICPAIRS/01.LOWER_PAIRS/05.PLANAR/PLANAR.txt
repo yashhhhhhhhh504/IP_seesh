@@ -1,0 +1,181 @@
+
+MACTION
+{
+A1 $ V < produce > N < motion > A < plane > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < plane > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to plane motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < slide > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < apply > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of a smooth sliding surface between the two parts $
+O2 $ Presence of a smooth surface $
+}
+
+MPART
+{
+P1 $ part 1 $
+P2 $ sliding pair $
+P3 $ part 2 $
+P4 $ revolute pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P3 P4 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+A planar pair allows only a relative rotation between two elements, which can be expressed by three coordinates. Thus, a planar pair has a two degrees of freedom.
+$
+
+
+STRUCTURE
+
+$
+Lower pairs are differentiated from higher pairs by the type of contact between the two bodies of the pair. Lower pairs have a surface contact, whereas two bodies of a Higher pair have a line or a point contact. An example of a planar pair is shown in the figure.
+$
+
+
+BEHAVIOUR
+$
+A planar pair keeps the surfaces of two rigid bodies together. To visualize this, imagine a block lying on a table where it can move in any direction except off the table. Two rigid bodies connected by this kind of pair will have two independent translational motions in the plane, and a rotary motion around the axis that is perpendicular to the plane. Therefore, a planar pair removes three degrees of freedom in spatial mechanism. In our example, the block would not be able to raise off the table or to rotate into the table. Thus a planar pair has three degrees of freedom.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/05.PLANAR/planar1.jpg		$ Planar Pair $
+}
+
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/05.PLANAR/planar1.avi		$ Planar Pair $
+}
+SUMMARY
+$
+This mechanism can be used to provide plane motion. This mechanism can be interpreted as a change of state from rest to plane motion. This can be described as follows:
+
+The block (part) slides over the other part (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) requires the presence of a smooth sliding surface between the two parts (organ).
+
+The block (part) also rotates over the other part (physical phenomenon). This is due to the torque applied on it (input) which activates the lever effect (physical effect) and requires the presence of a smooth surface (organ).
+
+$
+
+ACTION
+
+$ 
+ To plane motion.
+$
+
+STATE
+
+$
+The part is at rest.
+
+The part is undergoing a plane motion
+
+$
+
+PHYPHENOMENON
+
+$
+The block slides over the other part.
+
+The block also rotates over the other part.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Lever effect.
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The torque applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the two parts.
+
+Presence of a smooth surface.
+
+$
+
+
+
+PARTS
+$
+The part forms a sliding pair with the other part.
+
+The part forms a revolute pair with the other part
+
+
+
+
+
+
+
+
+$
+
+
+
+

@@ -1,0 +1,98 @@
+
+
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < increase > N < area > A < exposed > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small exposed > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large exposed > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from exposed area to large exposed area $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < member > A < linearly > $
+PP2 $ V < increase > N < diagonal length > A < X > $
+PP3 $ V < move > N < member center > A < toward > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force member > A < x > $
+I2 $ V < move > N < member > A < translating > $
+I3 $ V < increase > N < length > A < diagonal > $
+}
+
+MORGAN
+{
+O1 $ the straight-line motion of the member  $
+O2 $ the length of the links forming the sides of the loop being equal $
+O3 $ the member x opposite to the member x should move along a straight $
+}
+
+MPART
+{
+P1 $ translating member $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ link $
+P5 $ revolute pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P2 P3>
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

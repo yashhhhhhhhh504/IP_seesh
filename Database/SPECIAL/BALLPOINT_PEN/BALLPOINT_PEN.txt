@@ -1,0 +1,286 @@
+MACTION
+{
+A1 $ V < extend > N < ink-tube > A < X > $
+A2 $ V < retract > N < ink-tube > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < normal > N < ink-tube > $
+IS2 $ V < x > A < extended > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < extended > N < ink-tube > $
+OS2 $ V < x > A < retracted > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from normal to extension $
+CS2 $ from extension to retraction $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < depress > N < push-button > A < X > $
+PP2 $ V < move > N < splines > A < bevel-pointed > $
+PP3 $ V < move > N < guide > A < rotatable > $
+PP4 $ V < move > N < ink-tube > A < X > $
+PP5 $ V < rotate > N < guide > A < rotatable > $
+PP6 $ V < rotate > N < ink-tube > A < x > $
+PP7 $ V < mesh > N < rotatable-guide short-barrel-slots > A < X > $
+PP8 $ V < mesh > N < rotatable-guide long-barrel-slots > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Friction effect $
+PE4 $ hooks law $ 
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < depress> N < push-button > A < x > $
+I3 $ V < move > N < splines > A < bevel-pointed > $
+I4 $ V < move > N < guide > A < rotatable > $
+I5 $ V < x > N < force > A < clockwise > $
+I6 $ V < rotate > N < guide > A < rotatable > $
+I7 $ V < apply > N < force spring > A < upward > $
+}
+
+MORGAN
+{
+O1 $ Zero degree of freedom between the finger and the push button $
+O2 $ Presence of contact between the splines and the push button $
+O3 $ Presence of contact between the bevel pointed splines and the rotatable guide $
+O4 $ Presence of contact between the ink tube and the rotatable guide $
+O5 $ requires that the splines have cleared the slots $
+O6 $ Presence of friction surface between the ink tube and the rotatable guide $
+O7 $ Presence of stiffness in the spring $
+
+
+}
+
+MPART
+{
+P1 $ push-button $
+P2 $ barrel $
+P3 $ sliding-pair $
+P4 $ plunger $
+P5 $ fixed-pair $
+P6 $ bevel pointed splines $
+P7 $ rotatable guide $
+P8 $ sliding pair $
+P9 $ ink tube $
+P10 $ fixed-pair $
+P11 $ revolute pair $
+P12 $ revolute pair $
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P1 P5 P6 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 P7 P8 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P2 P8 P9 >
+< A1 IS1 OS1 CS1 PP6 PE3 I6 O6 P2 P7 P11 >
+< A1 IS1 OS1 CS1 PP7 PE4 I7 O7 P2 P9 P11 >
+
+
+< A2 IS2 OS2 CS2 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS2 OS2 CS2 PP2 PE2 I2 O2 P1 P4 P5 >
+< A2 IS2 OS2 CS2 PP3 PE2 I3 O3 P1 P5 P6 >
+< A2 IS2 OS2 CS2 PP4 PE2 I4 O4 P2 P7 P8 >
+< A2 IS2 OS2 CS2 PP5 PE1 I5 O5 P2 P8 P9 >
+< A2 IS2 OS2 CS2 PP6 PE3 I6 O6 P2 P7 P11 >
+< A2 IS2 OS2 CS2 PP8 PE4 I7 O7 P2 P9 P11 >
+}
+
+
+FUNCTION
+
+$
+The main function of the ball-point pen is obviously to write. However, the retractable ball-point pen makes use of a spring mechanism in order to retract the ball-point when not in use.
+$
+
+
+STRUCTURE
+
+$
+Unlike the simple ball-point, retractable model employs a replaceable ink tube and a retraction mechanism. Bodies of both the simple and retractable "ball-points" house a plastic or metal ink tube with a 1/8-inch bore. Open at the top, the tube is filled with ink of a gooey consistency. The ink feeds down the tube and opens into a ball and socket assembly that forms the "point" of the pen. The socketed ball "point" is usually made of steel or tungsten-carbide and measures about 1/25 inch in diameter. The hard ball is porous and, when viewed through a microscope, it resembles a round sponge. Fig 03 shows a partially "exploded" view of the extension/retraction mechanism employed by a number of pen manufacturers. In order to picture the mechanism assembled, one should imagine that an invisible pen barrel forms a cylinder around the parts shown. The ink tube fits into the rotatable guide held in place by pressure from the coil spring. The guide in this illustration has already been inserted into the sleeve of the one-piece plunger. The parts slide up the invisible pen barrel until the splines on the rotatable guide rest against the tops of either the long or the short set of barrel slots. With the splines in the short slots, the pen's point is extended, ready to write. The long slots allow the mechanism and the spring-loaded pen point to retract.
+$
+
+
+BEHAVIOUR
+
+$
+The ink feeds down the tube, primarily pulled by gravity with the help from atmospheric pressure, and opens into a ball and socket assembly that forms the "point" of the pen. As the pen "writes," the ball's pores feed the ink to the writing surface.
+
+When the ink tube is fully retracted, the splines of the rotatable guide are held against the top of the longer set of slots inside the barrel. The coil spring in the lower part of the pen applies steady upward pressure. When the push button is depressed, the plunger's bevel-pointed splines drive the rotatable guide downward while the meshing of bevel points on both sets of splines exerts a clockwise force on the guide. (Fig 04 a)
+The guide cannot rotate within the barrel slots and continues straight downward until its splines clear the slots. Immediately, the assembly "clicks" as the clockwise force on the rotatable guide serves to engage the bevel points of the guide splines with those of the barrel ridges. (Fig 04 b)
+When the push button is released, the coil spring drives the ink tube and the guide upward, causing the guide to rotate as its bevel points mesh with the bevel points of the barrel ridges. When the guide splines come in line with the short set of barrel slots, the spring rams the assembly upward. This leaves the pen point extended and ready to write. The next depression of the push button will repeat the process here illustrated except that the rotatable guide splines will be rammed into the long set of barrel slots, retracting the pen point. (Fig 04 c)
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/BALLPOINT_PEN/BALLPOINTPEN.jpg		$ 01. Ball-point pen $
+ADB/SPECIAL/BALLPOINT_PEN/BALLPOINT.jpg		$ 02. Ball-point $
+ADB/SPECIAL/BALLPOINT_PEN/EXTENDER.jpg		        $ 03. Extension - Retraction $
+ADB/SPECIAL/BALLPOINT_PEN/WORKING.jpg		        $ 04. Working $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+However, the retractable ballpoint pen makes use of a spring mechanism in order to retract the ballpoint when not in use. 
+
+The push button (part) is depressed (physical phenomenon). This is due to the force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the finger and the push button (organ).
+
+The plunger’s bevel pointed splines (part) moves downwards (physical phenomenon). This is due to the depression of the push button (input), which activates the law  “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the splines and the push button (organ).
+
+The rotatable guide (part) moves downward (physical phenomenon). This is due to the downward movement of the plunger’s bevel pointed splines (input) which activates the law “ no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the bevel pointed splines and the rotatable guide (organ).
+
+The ink tube (part) moves downward (physical phenomenon). This is due to the downward motion of the rotatable guide (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the ink tube and the rotatable guide (organ).
+
+The rotatable guide (part) rotates in the clockwise direction (physical phenomenon).  This is due to the clockwise force on the rotatable guide (input), which activates the Newtonian laws of motion (physical phenomenon) and requires that the splines have cleared the slots (organ).
+ 
+The ink tube (part) rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the rotatable guide (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the ink tube and the rotatable guide (organ).
+
+The ink tube along with the guide (part) moves upward and may mesh with the short set of barrel slots (physical phenomenon). Now the ink tube is extended and is ready to write.   This is due to the upward force exerted by the spring (input), which activates the hooks law (physical effect) and requires the presence of stiffness in the spring (organ).
+
+The ink tube along with the guide (part) moves upward and may mesh with the longer set of barrel slots  (physical phenomenon). Now the ink tube is retracted. This is due to the upward force exerted by the spring (input), which activates the hooks law (physical effect) and requires the presence of stiffness in the spring (organ).
+
+
+$
+
+ACTION
+$
+
+ To extend and to retract the ink tube of the ballpoint pen.
+
+$
+STATE
+$
+
+The ink tube is extended.
+
+The ink tube is retracted.
+
+$
+PHYPHENOMENON
+$
+
+The push button is depressed.
+
+The plunger’s bevel pointed splines moves downwards.
+ 
+The rotatable guide moves downward.
+
+The ink tube moves downward.
+
+The rotatable guide rotates in the clockwise direction.
+
+The ink tube rotates in the clockwise direction.
+
+The ink tube along with the guide moves upward and may mesh with the short set of barrel slots
+
+The ink tube along with the guide moves upward and may mesh with the longer set of barrel slots.
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Friction effect.
+
+Hooks law.
+
+$
+
+INPUT
+$
+
+Force applied on to it.
+
+Depression of the push button.
+
+Downward movement of the bevel pointed splines.
+
+Downward motion of the rotatable guide.
+
+Clockwise force on the rotatable guide.
+
+Rotation of the rotatable guide.
+
+Upward force exerted by the spring.
+
+$
+
+ORGAN
+$
+
+Zero degree of freedom between the finger and the push button.
+
+Presence of contact between the splines and the push button.
+
+Presence of contact between the bevel pointed splines and the rotatable guide.
+
+Presence of contact between the ink tube and the rotatable guide.
+
+Requires that the splines have cleared the slots.
+
+Presence of friction surface between the ink tube and the rotatable guide.
+
+Presence of stiffness in the spring.
+
+
+$
+
+PARTS
+$
+
+The push button forms a sliding pair with the barrel.
+
+The plunger forms a fixed pair with the push button.
+
+The bevel pointed splines forms fixed pair with the plunger. 
+
+The rotatable guide forms a sliding pair with the barrel.
+
+The ink tube forms a sliding pair with the barrel.
+
+The rotatable guide forms a revolute pair with the barrel.
+
+The ink tube forms a revolute pair with the barrel.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+

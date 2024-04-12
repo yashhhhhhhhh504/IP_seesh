@@ -1,0 +1,87 @@
+SUMMARY
+$
+The oscillating drive arm (part) having mounted on the input shaft oscillates, with the maximum operating angle being 40 degrees (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the oscillating drive arm (organ).
+
+One of the ends of the output link (part) reciprocates along a straight line (physical phenomenon). This is due to the oscillation of the drive arm (input), which activates the Newtonian laws of motion (physical effect) and requires the slide connected to the other end of the output link to slide along the slot (organ).
+The slide in the slot can be replaced by a link to achieve straight-line motion.
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism rotary motion can be converted into straight-line motion.
+$
+}
+STATE
+{
+$
+Absence of torque at the input shaft.
+$
+Presence of torque at the input shaft.
+
+$
+}
+PHYPHENOMENON
+{
+$
+The drive arm oscillates continuously.
+$	
+one of the ends of the output link reciprocates along a straight line.
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+The torque applied by the input shaft.
+$
+The oscillation of the drive arm.
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the input shaft and the oscillating drive arm.
+$
+The slide connected to the other end of the output link should slide along the short slot.
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The drive arm along with the input shaft forms revolute pair with the frame.
+$
+The slide on one of the ends of the output arm forms sliding pair with the slot.
+$
+
+$
+
+$
+
+$
+}

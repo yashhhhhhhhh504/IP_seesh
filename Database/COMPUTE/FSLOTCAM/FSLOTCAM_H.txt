@@ -1,0 +1,45 @@
+STUCTURE1
+$
+Input link (x) forms a prismatic pair with the frame
+Input link (y) forms a prismatic pair with the frame
+Link 1 forms a revolute pair with Input link (x)
+Link 2 forms a revolute pair with Input link (y)
+Link 1 forms a revolute pair with Link 2
+The function slot forms a fixed pair with the frame
+The revolute joint of Link 1 and Link 2 form a sliding pair with the slot
+$
+
+
+ACTION
+$
+Perform complex functions involving one variable. 
+$
+
+
+PHYPHENOMENON
+$
+a. Oscillation of Link 1
+b. Oscillation of Link 2
+c. Movement of revolute joint of link 1 and link 2 in the function slot 
+$
+
+
+ORGAN
+$
+a. Interface of gear teeth
+b. Surface between the follower and the slot
+$
+
+
+PHYEFFECT
+$
+a. Force
+b. Force
+$
+
+
+INPUT
+$
+a. Reciprocation of input links (x & y)
+b. Combined oscillations of link 1 and link 2
+$

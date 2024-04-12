@@ -1,0 +1,86 @@
+SUMMARY
+$	
+This can be used to support shafts. This can be described as follows:
+
+The inner race (part) rotates (physical phenomenon). This is due to the torque applied by the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the inner race (organ).
+
+The ball (part) in the bearing rotates and revolves (physical phenomenon). This is due to the rotation of the inner race (input) which friction effect (physical effect) and requires the presence of friction surface between the balls and the inner race (organ).
+
+The outer race (part) remains at rest (physical phenomenon). This is due to the presence of balls in between the inner race and the outer race (input) which activates ? and requires the presence of a smooth rolling surface between the balls and the inner race (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ To support the shaft.
+$
+}
+STATE
+{
+$
+The inner race is at rest.
+
+The inner race is rotating.
+$
+}
+PHYPHENOMENON
+{
+$
+The inner race rotates.
+
+The ball in the bearing rotates and revolves.
+
+The outer race remains at rest.
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+
+Friction effect.
+
+?
+$
+
+}
+
+INPUT
+{
+$
+Torque applied by the shaft.
+
+Rotation of the inner race.
+
+The presence of balls in between the inner race and the outer race.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the shaft and the inner race.
+
+Presence of friction surface between the balls and the inner race.
+
+Presence of a smooth rolling surface between the balls and the inner race.
+$
+
+}
+
+PARTS
+{
+$
+The inner race forms a revolute pair with the bearing.
+
+The balls form a revolute pair with the inner race.
+
+The balls form a rolling pair with the inner race.
+
+The outer race is fixed.
+$
+}
+

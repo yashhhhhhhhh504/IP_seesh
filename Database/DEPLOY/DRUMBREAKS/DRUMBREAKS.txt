@@ -1,0 +1,207 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < stop > N < object > A < X > $
+
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < bushes > A < rubber > $
+PP2 $ V < stop > N < disc > A < rotating > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Friction effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < pressure > A < liquid > $
+I2 $ V < x > N < force > A < friction > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the piston and the cylinder $
+O2 $ friction surface between the rubber bushing and the rotating disk $
+}
+
+MPART
+{
+P1 $ Piston-cylinder $
+P2 $ Rubber-bush $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 >
+
+
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to stop vehicles from moving. This can also serve as a deployment structure. This mechanism is usually used in two wheelers.
+$
+
+
+STRUCTURE
+
+$
+This mechanism consists of a piston cylinder arrangement and rubber bushings.
+$
+
+
+BEHAVIOUR
+
+$
+The liquid flows into the cylinder, which in turn will activate the piston in the cylinder and cause the rubber bushings to move apart and also away from the center. 
+
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/DRUMBREAKS/01.GIF	$ Drum Breaks $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to stop the vehicles. This can be interpreted as a change of state from rest to outward motion. This can be described as follows:
+
+The piston (part) in the cylinder moves and also pushes the rubber bushes away from the center (physical phenomenon). This is due to the liquid pressure which acting on one inner side of the piston (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth surface between the piston and the cylinder (organ).
+
+The rubber shoes (part) stops the rotating disc (physical phenomenon). This is due to the friction force (input) between the rubber bushes, which activates the friction effect (physical effect) and requires the presence of a friction surface between the rubber bushing and the rotating disk (organ).
+
+$
+
+ACTION
+
+$ 
+To stop motion.
+
+To deploy.
+$
+
+STATE
+
+$
+The rubber shoes are close to the center.
+
+The rubber shoes are away from the center.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston in the cylinder moves and also pushes the rubber bushes away from the center.
+
+
+The rubber bushes stops the rotating disc.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Friction effect.
+
+
+$
+
+
+INPUT
+
+$
+Liquid pressure which acting on one inner side of the piston.
+
+Friction force.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the piston and the cylinder.
+
+
+Presence of a friction surface between the rubber bushing and the rotating disk.
+
+
+
+$
+
+
+
+PARTS
+$
+Piston cylinder arrangement.
+
+shoes.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

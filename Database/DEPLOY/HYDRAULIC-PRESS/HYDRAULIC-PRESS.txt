@@ -1,0 +1,235 @@
+
+
+MACTION
+{
+A1 $ V < compress > N < shape > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < undeformed > N < Work piece > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed > N < Work piece > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from undeformed to deformed condition $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < exert > N < fluid > A < larger > $
+PP2 $ V < travel > N < direction > A < downward > $
+PP3 $ V < deform > N < Work piece > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Pascal' law $
+PE2 $ Newtonian laws of motion $
+PE3 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < act > N < fluid > A < x > $
+I2 $ V < force > N < ram > A < x > $
+I3 $ V < exert > N < force > A < x > $
+}
+
+MORGAN
+{
+O1 $ Ram surface, which is in contact with power transmitting fluids to be greater than that of power transmitting input piston $
+O2 $ Smooth guide ways for ram and one degree of freedom $
+O3 $ Energy given by the ram to work piece greater than that required for starting deformation $
+}
+
+MPART
+{
+P1 $ Fluid $
+P2 $ Ram $
+P3 $ Work piece $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+FUNCTION
+
+$
+
+Hydraulic press has a function of compressing and shaping the components.
+$
+
+
+STRUCTURE
+
+$
+Hydraulic press has a function of compressing and shaping the components. It transmits power through fluids. It cylinder and piston arrangement, ram, worktable on which work piece is mounted. Due to fluid pressure ram goes down and gives an impact on work piece, which gets deformed.
+$
+
+BEHAVIOUR
+
+$
+Fluid exerts larger force on the ram. This is due to fluid pressure acting on the upper ram surface which actuates Pascal' law which requires ram surface which is in contact with power transmitting fluids to be greater than that of power transmitting input piston. Ram travels in downward direction. This is due to force acting on it, which actuates the Newtonian laws of motion and requires smooth guide ways for ram and one degree of freedom. Work piece gets deformed. This is due to force exerted by the ram, which actuates the Newtonian laws of motion and requires energy given by the ram to work piece greater than that required for starting deformation.
+
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/HYDRAULIC-PRESS/HYDRAULIC-PRESS01.GIF		$ 01.HYDRAULIC-PRESS $
+ADB/DEPLOY/HYDRAULIC-PRESS/HYDRAULIC-PRESS02.JPG		$ 02.HYDRAULIC-PRESS $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+
+Hydraulic press has a function of compressing and shaping the components. It transmits power through fluids. It cylinder and piston arrangement, ram, worktable on which work piece is mounted. Due to fluid pressure ram goes down and gives an impact on work piece, which gets deformed. It is explained below,
+
+Fluid (part) exerts larger force on the ram (physical phenomenon). This is due to fluid pressure (input) acting on the upper ram surface which actuates Pascal' law (physical effect) which requires ram surface which is in contact with power transmitting fluids to be greater than that of power transmitting input piston (organ).
+
+Ram (part) travels in downward direction (physical phenomenon). This is due to force acting on it (input), which actuates the Newtonian laws of motion (physical effect) and requires smooth guide ways for ram and one degree of freedom (organ).
+
+Work piece (part) gets deformed (physical phenomenon). This is due to force exerted (input) by the ram, which actuates the Newtonian laws of motion (physical effect) and requires energy given by the ram to work piece greater than that required for starting deformation (organ).
+
+$
+
+ACTION
+
+$ 
+
+To compress and shape the components.
+ 
+$
+
+STATE
+
+$
+Work piece in undeformed state.
+
+Work piece in deformed condition to get the desired shape
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Fluid exerts larger force on the ram
+
+ Ram travels in downward direction
+
+Work piece gets deformed
+
+$
+
+
+PHYEFFECT
+
+$
+
+Pascal' law
+
+Newtonian laws of motion
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+Fluid pressure acting on the upper ram surface
+
+Force acting on ram
+
+Force exerted by the ram
+$
+
+
+ORGAN
+
+$
+
+Ram surface, which is in contact with power transmitting fluids to be greater than that of power transmitting input piston
+
+Smooth guide ways for ram and one degree of freedom
+
+Energy given by the ram to work piece greater than that required for starting deformation
+
+$
+
+
+
+PARTS
+$
+
+Fluid
+
+Ram
+
+Work piece
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

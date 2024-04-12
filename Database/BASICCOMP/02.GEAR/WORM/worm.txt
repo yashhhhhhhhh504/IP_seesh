@@ -1,0 +1,173 @@
+MACTION
+{
+A1 $ V < transmit > N < motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < X > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate >  N < worm > A < X > $
+PP2 $ V < rotate >  N < worm-wheel > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < torque > A < X > $
+I2 $ V < rotate >  N < worm > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom in the direction of motion $
+O2 $ worm wheel meshes with the worm $
+
+}
+
+MPART
+{
+P1 $ worm $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ worm-wheel $
+P5 $ gear-pair $
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+
+
+}
+
+
+
+FUNCTION
+$
+Nonparallel, nonintersecting shafts are usually connected by a worm and gear. Worm gears are used when large gear reductions are needed. It is common for worm gears to have reductions of 20:1, and even up to 300:1 or greater. 
+$
+
+
+BEHAVIOUR
+$
+Many worm gears have an interesting property that no other gear set has: the worm can easily turn the gear, but the gear cannot turn the worm. This is because the angle on the worm is so shallow that when the gear tries to spin it, the friction between the gear and the worm holds the worm in place.
+Like the crossed helical gears, the worm and worm wheel transmit torque and rotary motion through a right angle. Because it is basically a screw, a worm gear may have only one thread (tooth), whereas to maintain continuous contact with parallel shaft gears (spur and helical), the pinion must have at least five teeth. For this reason, to obtain a large speed ratio in a single gear pair, a worm and gear are well suited.
+This feature is useful for machines such as conveyor systems, in which the locking feature can act as a brake for the conveyor when the motor is not turning. One other very interesting usage of worm gears is in the Torsen differential, which is used on some high-performance cars and trucks.
+$
+
+
+STRUCTURE
+$
+A worm wheel meshes with the worm. Because it is basically a screw, a worm gear may have only one thread (tooth). The worm resembles a screw, and the gear resembles a quarter section of a long nut that has been bent around a cylinder. The most common angle between non-parallel shafts, either intersecting or nonintersecting, is a right angle (90°).
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/02.GEAR/WORM/01worm.jpg  		$ 01.Worm Gear		$
+ADB/BASICCOMP/02.GEAR/WORM/02worm.gif		$ 02.Worm Gear 		$
+ADB/BASICCOMP/02.GEAR/WORM/03worm.gif		$ 03.Worm Gear 		$
+}
+
+
+CLIP
+{
+ADB/BASICCOMP/02.GEAR/WORM/worm.avi		$ Worm Gear 	$
+}
+SUMMARY
+$
+To transmit motion between two non-parallel and non-intersecting shafts. This can be described as follows:
+
+The worm (part) rotates about its axis (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom in the direction of motion (organ).
+
+The worm wheel mounted on the output shaft (part) rotates (physical phenomenon). This is due to the rotation of the worm (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the worm wheel meshes with the worm (organ).
+$
+
+ACTION
+$
+ 
+ To transmit motion between two non-parallel and non-intersecting shafts.
+
+$
+STATE
+$
+
+The worm wheel is at rest.
+
+The worm wheel is rotating. 
+
+
+$
+PHYPHENOMENON
+$
+
+The worm rotates about its axis.
+
+The worm wheel mounted on the output shaft rotates.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+The torque applied on it.
+
+The rotation of the worm.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom in the direction of motion.
+
+Necessary that the worm wheel meshes with the worm.
+
+
+$
+
+PARTS
+$
+
+The worm forms a revolute pair with the frame.
+
+The worm forms a gear pair with the worm wheel.
+
+The wheel forms a revolute pair with the frame.
+
+$
+

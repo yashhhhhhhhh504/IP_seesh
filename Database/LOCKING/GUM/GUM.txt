@@ -1,0 +1,190 @@
+MACTION
+{
+A1 $ V < join > N < parts > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < separate > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < joined > $
+} 
+MCHANGESTATE
+{
+CS1 $ from separate to joined $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < apply > N < part > A < X > $
+PP2 $ V < apply > N < pressure > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Gravity effect $
+PE2 $ Adhesive effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Pressure > A < x > $
+I2 $ V < x > N < weight > A < self > $
+}
+
+MORGAN
+{
+O1 $ pressure applied is high enough to cause the movement of the gum outside the tube $
+O2 $ weight of the object is sufficient enough to apply the required pressure $
+}
+
+MPART
+{
+P1 $ Gum $
+P2 $ Two objects to be joined $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+
+
+FUNCTION
+
+$
+To join two different materials.
+$
+
+
+STRUCTURE
+
+$
+It made up of an adhesive material and it is necessary that the two different materials are made up of suitable material so the joining is possible.
+$
+
+
+BEHAVIOUR
+
+$
+Gum is applied on to the two materials to be joined and the two materials are kept in contact and a weight is applied on it.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/GUM/00.JPG  	$ 01.Gum $
+ADB/LOCKING/GUM/01.JPG  	$ 02.Gum $
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used to join tow separate materials.
+$
+
+ACTION
+
+$ 
+ To join two materials.
+$
+
+STATE
+
+$
+Two parts are not joined.
+
+Two parts are joined.
+
+$
+
+PHYPHENOMENON
+
+$
+Apply gum in the regions of the parts that have to be joined.
+
+Apply pressure on the region in which the gum has been applied.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Gravity effect.
+
+Adhesive effect.
+
+
+$
+
+
+INPUT
+
+$
+Pressure applied.
+
+Weight of the object that is placed on it.
+
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pressure applied is high enough to cause the movement of the gum outside the tube.
+
+Necessary that the weight of the object is sufficient enough to apply the required pressure.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Gum.
+
+Two objects to be joined.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

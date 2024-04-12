@@ -1,0 +1,245 @@
+MACTION
+{
+A1 $ V < pump > N < fluid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < lower > N < fluid level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < higher > N < fluid level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from water at lower level to water at higher level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < rotor > A < X > $
+PP2 $ V < rotate > N < roller > A < X > $
+PP3 $ V < displace > N < fluid > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ No two bodies can occupy the same space at the space time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < x > N < force > A < friction > $
+I3 $ V < move > N < roller > A < x > $
+}
+
+MORGAN
+{
+O1 $ Zero degree of freedom between the rotor and the input shaft $
+O2 $ Presence of frictional surface between the tube and the rollers $
+O3 $ the force exerted due the movement of the rollers is sufficient enough to cause displacement of the fluid $
+}
+
+MPART
+{
+P1 $ rotor $
+P2 $ revolute pair $
+P3 $ shaft $
+P4 $ roller $
+P5 $ arm $
+P6 $ fluid $
+P7 $ sliding pair $
+P8 $ tube $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 P7 P8 >
+
+
+}
+
+FUNCTION
+
+$
+Peristaltic pump is a type of positive displacement pump, generally used for pumping a variety of fluids. These pumps are generally used for pumping clean or sterile fluids. This pump pumps the fluid even without coming in direct contact with it.
+$
+
+
+STRUCTURE
+
+$
+The pump consists of a pump head, drive and the flexible tube.
+$
+BEHAVIOUR
+
+$
+The pump head consists of a shaft on which is mounted a rotor with three arms, which have rollers at the end and these rollers press against the tube. 
+
+When the rotor rotates, the roller at the end of the arm presses against the tube and thus drawing the fluid simultaneously. Immediately the next roller presses against it and the fluid between the two rollers moves forward and this process continues.
+$
+
+PICTURE
+
+{
+ADB/ACTUATOR/PUMPS/PERISTALTICPUMP/01.gif      $ Peristaltic Pump $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+It is used to pump fluid from a lower level to a higher level. This can also be interpreted as a change of state from fluid at lower level to fluid at higher level. 
+
+The rotor is fixed or mounted on the input shaft, which in turn is attached to the motor. Thus the rotor forms a revolute pair with the shaft (part). The rotor rotates (physical phenomenon). This is due to the torque applied by the motor (input), which activates the Newtonian laws of motion (Physical effect) and it requires the presence of zero degree of freedom between the shaft and the rotor (organ).
+
+The rollers are mounted on the arms and each roller forms a revolute pair with the arm (part). The rollers at the end of the arms rotate, when pressed against the tube (physical phenomenon). This is due to frictional force between the tube and the rollers (input), which activates the friction effect (physical effect) and it requires the presence of friction surface between the tube and the rollers (organ).
+
+The fluid in the tube (part) is displaced to a higher level (physical phenomenon). This due to the movement of the rollers at the end of the arms (input), which activates the law no two bodies can occupy the same space at the same time (physical effect) and is necessary that the force exerted due the movement of the rollers is sufficient enough to cause displacement of the fluid (organ).
+$
+
+ACTION
+
+$ 
+ The fluid is pumped to a higher level.
+$
+
+STATE
+
+$
+The fluid is at lower level.
+
+The fluid is at higher level.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+The rotor rotates
+
+The roller rotates.
+
+The fluid is displaced to a higher level.
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Friction effect.
+
+No two bodies can occupy the same space at the space time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The torque applied by the motor.
+
+The frictional force between the tube surface and the roller.
+
+The Movement of the rollers at the end of the arms.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Zero degree of freedom between the rotor and the input shaft.
+
+Presence of frictional surface between the tube and the rollers.
+
+The force exerted due the movement of the rollers is sufficient enough to cause displacement of the fluid.
+$
+
+
+
+PARTS
+$
+The rotor forms a revolute pair with the shaft.
+
+The roller forms a revolute pair with the arm.
+
+The fluid forms a sliding pair with the tube.
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+MACTION
+{
+A1 $ V < generate > A < reciprocating > N < motion > $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < cam > $
+PP2 $ V < reduce > A < X > N < friction > $
+PP3 $ V < maintain > A < X > N < contact > $
+PP4 $ V < reciprocate > A < X > N < follower > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ Hooke's Law $
+PE4 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < roller > $
+I3 $ V < apply > A < X > N < spring force > $
+I4 $ V < apply > A < radial > N < force > $
+}
+
+MORGAN
+{
+O1 $ 1 degree of freedom of motion in direction of motion $
+O2 $ contact : roller cam $
+O3 $ spring stiffness $
+O4 $ cam profile $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ input-shaft $
+P3 $ fixed pair $
+P4 $ roller $
+P5 $ cam pair $
+P6 $ follower $
+P7 $ revolute pair $
+P8 $ frame $
+P9 $ flexible pair $
+P10 $ slide guides $
+P11 $ prismatic pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P1 - P4 - P5
+A1 - PP2 - PE2 - I2 - O2 - P4 - P6 - P7
+A1 - PP3 - PE3 - I3 - O3 - P6 - P8 - P9
+A1 - PP4 - PE4 - I4 - O4 - P1 - P6 - P5
+A1 - PP4 - PE4 - I4 - O4 - P6 - P10 - P11
+}

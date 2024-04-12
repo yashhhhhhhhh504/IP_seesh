@@ -1,0 +1,66 @@
+MACTION
+{
+A1 $ V=transmit N=motion $
+A2 $ V=transmit N=power $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V=rotate N=driver $
+PP2 $ V=increase A=friction $
+PP3 $ V=pull N=belt $
+PP4 $ V=deliver N=belt $
+PP5 $ V=reverse A=rotating N=direction $
+PP6 $ V=rotate N=driven $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=rotate N=driver $
+I3 $ V=increase N=contact $
+I4 $ V=select N=configuration $
+I5 $ V=apply A=tangential N=force $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ tension in the belt $
+O3 $ surface area $
+O4 $ crossed arrangement of the belt $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ driver $
+P3 $ revolute pair $
+P4 $ driven $
+P5 $ belt $
+P6 $ belt pair $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I3 - O3 - P2 - P5 - P6
+A1 - PP2 - PE2 - I3 - O3 - P4 - P5 - P6
+A1 - PP3 - PE2 - I2 - O2 - P2 - P5 - P6
+A1 - PP4 - PE2 - I2 - O2 - P2 - P5 - P6
+A1 - PP5 - PE1 - I4 - O4 - P2 - P5 - P6
+A1 - PP5 - PE1 - I4 - O4 - P4 - P5 - P6
+A1 - PP6 - PE2 - I5 - O2 - P4 - P5 - P6
+
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A2 - PP2 - PE2 - I3 - O3 - P2 - P5 - P6
+A2 - PP2 - PE2 - I3 - O3 - P4 - P5 - P6
+A2 - PP3 - PE2 - I2 - O2 - P2 - P5 - P6
+A2 - PP4 - PE2 - I2 - O2 - P2 - P5 - P6
+A2 - PP5 - PE1 - I4 - O4 - P2 - P5 - P6
+A2 - PP5 - PE1 - I4 - O4 - P4 - P5 - P6
+A2 - PP6 - PE2 - I5 - O2 - P4 - P5 - P6

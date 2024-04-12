@@ -1,0 +1,96 @@
+SUMMARY
+$
+This can be used to transmit power between the two shafts whose axes are perpendicular each other. This can be described as follows:
+
+
+The pulley 1 (part) rotates in a vertical plane (phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the pulley (organ)
+
+
+The belt or the rope (part) moves in a linear direction (physical phenomenon). This is due to the friction between the pulley surface and the belt (input), which activates the friction effect (physical effect) and requires the presence of tight surface contact between the pulley surface and the belt (organ), which is accomplished by the use of idler pulleys 2 and 3.
+
+The pulley 4 (part) rotates in a horizontal plane (physical phenomenon). This is due to the movement of the belt (input), which activates friction effect (physical effect) and requires the presence of tension in the belt (organ).
+
+
+
+$
+
+ACTION
+{
+$
+This can be used to transmit power between the two shafts whose axes are perpendicular each other.
+
+$
+}
+STATE
+{
+$
+
+$
+Presence of torque at the input shaft.
+$
+}
+PHYPHENOMENON
+{
+$
+The pulley 1 rotates in a vertical plane.
+$
+The belt or the rope moves in a linear direction.
+$ 
+The pulley 4 rotates in a horizontal plane.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+Friction between the pulley surface and the belt.
+$
+The movement of the belt.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the input shaft and the pulley.
+$
+Presence of tight surface contact between the pulley surface and the belt.
+$
+Presence of tension in the belt.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The pulley 1 along with the input shaft forms a revolute pair with the frame.
+$
+The belt forms a wrapping pair with the pulleys.
+$
+The pulleys 2 and 3 form a revolute pair with the frame.
+$
+The pulley 4 along with the output shaft forms a revolute pair with the frame.
+$
+
+$
+}
+
+

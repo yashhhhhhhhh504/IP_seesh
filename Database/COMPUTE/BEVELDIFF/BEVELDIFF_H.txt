@@ -1,0 +1,45 @@
+STUCTURE1
+$
+Spur gear (x) forms a revolute pair with the frame
+Spur gear (x) forms a gear pair with the bevel gear (1)
+Bevel gear (1) forms a gear pair with the Bevel gear (z)
+Bevel gear (z) forms a gear pair with the bevel gear (2)
+Bevel gear (2) forms a gear pair with the spur gear (y)
+Spur gear (y) forms a revolute pair with the frame
+$
+
+ACTION
+$
+Perform addition and subtraction
+$
+
+PHYPHENOMENON
+$
+a. Rotation of spur gear x (input)
+b. Rotation of spur gear y (input)
+c. Rotation / revolution of bevel gear z (output)
+$
+
+
+ORGAN
+$
+a. Interface of gear teeth
+b. Interface of gear teeth
+c. Interface of gear teeth
+$
+
+
+PHYEFFECT
+$
+a. Force
+b. Force
+c. Force
+$
+
+
+INPUT
+$
+a. Torque to input gear (x)
+b. Torque to input gear (y)
+c. Torque to spur gears (x & y)
+$

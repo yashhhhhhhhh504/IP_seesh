@@ -1,0 +1,184 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < increase > N < area > A < exposed > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small exposed > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large exposed > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from exposed area to large exposed area $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < member > A < linearly > $
+PP2 $ V < increase > N < diagonal length > A < X > $
+PP3 $ V < move > N < member center > A < toward > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force member > A < x > $
+I2 $ V < move > N < member > A < translating > $
+I3 $ V < increase > N < length > A < diagonal > $
+}
+
+MORGAN
+{
+O1 $ the straight-line motion of the member $
+O2 $ the length of the links forming the sides of the loop being equal $
+O3 $ the member x opposite to the member x should move along a straight $
+}
+
+MPART
+{
+P1 $ translating member $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ link $
+P5 $ revolute pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P2 P3 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Variable motion can be produced with this arrangement. 
+$
+
+
+STRUCTURE
+
+$
+The device consists four equal links connected together by revolute pairs to make a loop. There are four other links that are guided to translate. Each of these links are connected at each joint of the four bar loop. 
+$
+
+
+BEHAVIOUR
+
+$
+In position (A), the 'Y' member moves faster than the 'X' member. In position (B), the speeds of both the members are equal at any instant. If the motion is continued in the same direction, the speed of X will increase.
+The animation showed alongside illustrates the working of this mechanism.
+The animation showed alongside illustrates the working of this mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/EXPGRILLE03/expgrille3.jpg   $ Expanding Grilles - 3 $
+}
+
+
+CLIP
+
+{
+ADB/DEPLOYMENT/EXPGRILLE03/expgrille3.avi	$ Expanding Grilles - 3 $
+ADB/DEPLOYMENT/EXPGRILLE03/expgrille31.avi	$ Expanding Grilles - 3 $
+}
+
+
+
+SUMMARY
+$
+This can be used to increase distance in horizontal or vertical direction. This mechanism can be described as follows:
+
+The member x (part) moves towards the center of the center of the loop formed by the rotating links of the mechanism (physical phenomenon). This is due to the force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires that the member x move along a straight line (organ), which is accomplished by the use of guide ways.
+
+The length of the diagonal increases in a direction perpendicular to the direction of motion of the member x and thus the translating members (part) that are connected to the ends of the diagonal moves away from the center of the loop (physical phenomenon). This is due to the movement of the translating member x (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the length of the links forming the sides of the loop are equal (organ).
+
+The member directly opposite to the member x (part) moves towards the center of the loop (physical phenomenon). This is due to the increase in the length of the diagonal (input), which activates the newtonian laws of motion (physical effect) and requires that the member opposite to the member x moves along a straight line (organ).
+$
+
+
+
+ACTION
+$
+ 
+Using this mechanism objects can be pulled and simultaneously pushed.
+
+$
+STATE
+$
+from small vertical distance to large vertical distance.
+
+from large vertical distance to small vertical distance.
+
+
+$
+PHYPHENOMENON
+$
+
+The member moves along a straight line towards the center of the loop.
+
+The length of the diagonal increases and the translating members that are connected to the ends of the diagonal moves away from the center of the loop.
+ 
+The member directly opposite to the member x moves towards the center of the loop.
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+INPUT
+$
+
+The force applied on to the member x.
+
+The movement of the translating member x.
+
+The increase in the length of the diagonal.
+
+$
+
+ORGAN
+$
+The straight-line motion of the member x.
+
+The length of the links forming the sides of the loop being equal.
+
+The member x opposite to the member x should move along a straight.
+$
+
+PARTS
+$
+
+the translating members form sliding pairs with the guide ways.
+
+The links forming the sides of the loop form revolute pairs with each other and the translating pairs.
+$

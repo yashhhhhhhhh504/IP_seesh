@@ -1,0 +1,97 @@
+SUMMARY
+$
+Using this mechanism rotation can be restricted to one direction can be obtained. This can be interpreted as a change of state from rotation to rest. This can be described as follows:
+
+The ratchet (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the ratchet (organ).
+
+The pawl (part) is in contact with the ratchet (physical phenomenon). This is due to the inward force (input) applied by the spring which activates the hook’s law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The pawl (part) oscillates about its center (physical phenomenon). This is due to the unidirectional rotation of the ratchet (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the pawl to be hinged at a suitable point (organ).
+
+
+The ratchet (part) rotates only in one direction (physical phenomenon). This is due to the blocking caused by the pawl (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the pawl to be strong enough to prevent the rotation in the other direction (organ).
+
+$
+
+ACTION
+$ 
+ To restrict rotation to one direction.
+
+$
+STATE
+$
+
+The ratchet is rotating.
+
+The ratchet is at rest.
+
+$
+PHYPHENOMENON
+$
+
+The ratchet rotates.
+
+The pawl is in contact with the ratchet.
+ 
+The pawl oscillates about its center.
+
+The ratchet rotates only in one direction.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Hook’s law.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+The torque applied by the input shaft.
+
+The inward force applied by the spring.
+
+Unidirectional rotation of the ratchet.
+
+ Blocking caused by the pawl.
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the ratchet.
+
+Necessary that the spring has some stiffness.
+
+Requires the pawl to be hinged at a suitable point.
+
+Requires the pawl to be strong enough to prevent the rotation in the other direction.
+
+
+
+
+$
+
+PARTS
+$
+
+The ratchet forms a revolute pair with the frame.
+
+Pawl forms a flexible pair with the spring.
+
+The pawl forms a revolute pair with the frame.
+
+The ratchet forms a gear pair with the pawl.
+
+
+$

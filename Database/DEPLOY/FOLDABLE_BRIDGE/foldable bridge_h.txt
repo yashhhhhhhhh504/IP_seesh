@@ -1,0 +1,96 @@
+SUMMARY
+$
+This is mainly used in situations where heavy materials have to be moved from one place to another, places being separated by a river or trenches.
+$
+
+ACTION
+
+$ 
+To aid transportation.
+
+To deploy the bridge.
+$
+
+STATE
+
+$
+The bridge is occupying less space when in folded state.
+
+The bridge occupies large space when in use.
+
+
+
+$
+
+PHYPHENOMENON
+
+$
+To unfold.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of hinged joints between the various links in the bridge.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Bridge.
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

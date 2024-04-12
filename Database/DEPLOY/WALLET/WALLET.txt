@@ -1,0 +1,171 @@
+MACTION
+{
+A1 $ V < store > N < material > A < object > $
+A2 $ V < deploy close > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < small > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+}
+
+MORGAN
+{
+O1 $ Presence of a soft and flexible material between the two parts $
+
+}
+
+MPART
+{
+P1 $ Wallet $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+It is object that is commonly used for carrying important material. It also is an example of deployment.
+$
+
+
+STRUCTURE
+
+$
+This consists of a single flexible compartment, which includes many small compartments.
+$
+
+
+BEHAVIOUR
+
+$
+One of the parts of the wallet is unfolded from its folded position and later on materials can moved.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/WALLET/01.jpg $ 01.Wallet $
+ADB/DEPLOY/WALLET/02.jpg $ 02.Wallet $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This is used to store important things. This can be described as follows:
+
+One of the overlapping parts of the wallet (part) is unfolded (physical phenomenon). This is due to the unwrapping force applied on it (input), which activates the newtonian laws of motion (physical effect) and requires the presence of a soft and flexible material between the two parts (organ).
+$
+
+ACTION
+
+$ 
+To store important materials.
+
+To deploy.
+$
+
+STATE
+
+$
+The two parts are occupying less area.
+
+The two parts are occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+One of the overlapping parts of the wallet is unfolded.
+
+
+$
+
+
+PHYEFFECT
+
+$
+newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Unwrapping force applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a soft and flexible material between the two parts.
+
+$
+
+
+
+PARTS
+$
+Wallet.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

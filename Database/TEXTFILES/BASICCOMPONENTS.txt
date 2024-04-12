@@ -1,0 +1,94 @@
+LABEL
+$ Cam $
+{
+ADB/BASICCOMP/01.CAM/CAM/CAM.txt	$ Cam $
+}
+LABEL
+$ Follower $
+{
+ADB/BASICCOMP/FOLLOWER/FOLLOWER.txt	$ Follower $
+}
+
+
+LABEL
+$ Gear $
+{
+ADB/BASICCOMP/02.GEAR/SPUR/SPUR.txt			$ Spur Gear 	$
+ADB/BASICCOMP/02.GEAR/HELICAL/HELICAL.txt		$ Helical Gear 	$
+ADB/BASICCOMP/02.GEAR/BEVEL/BEVEL.txt			$ Bevel Gear 	$
+ADB/BASICCOMP/02.GEAR/WORM/WORM.txt			$ Worm Gear 	$
+ADB/BASICCOMP/02.GEAR/RACK_PINION/RACK_PINION.txt	$ Rack & Pinion	$
+}
+
+
+LABEL
+$ Pulley $
+{
+ADB/BASICCOMP/03.PULLEY/PULLEY.txt	$ Pulley $
+}
+
+
+
+LABEL
+$ Wedge $
+{
+ADB/BASICCOMP/05.WEDGE/WEDGE.TXT	$ Wedge	$
+}
+
+
+LABEL
+$ Belt $
+{
+ADB/BASICCOMP/06.BELT/BELT.TXT		$ Belt $
+}
+
+
+
+
+LABEL
+$ Rope $
+{
+ADB/BASICCOMP/08.ROPE/ROPE.TXT		$ Rope $
+}
+
+
+LABEL
+$ Spring $
+{
+ADB/BASICCOMP/09.SPRING/COMPRESSION/COMPRESSION.TXT	$ Compression Spring $
+ADB/BASICCOMP/09.SPRING/EXTENSION/EXTENSION.TXT		$ Extension Spring   $
+
+}
+
+
+LABEL
+$ Tierod $
+{
+ADB/BASICCOMP/13.TIEROD/TIEROD.TXT	$ Tierod $
+
+
+}
+LABEL
+$ Ratchet Pawl $
+{
+ADB/BASICCOMP/11.RATCHETPAWL/RATCHET.txt	$ Ratchet $
+}
+
+
+LABEL
+$ Chain $
+{
+ADB/BASICCOMP/07.CHAIN/CHAIN.TXT	$ Chain	$
+}
+
+
+
+
+
+LABEL
+$ Magnet $
+{
+ADB/BASICCOMP/10.MAGNET/MAGNET.TXT	$ Magnet $
+}
+
+

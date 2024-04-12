@@ -1,0 +1,82 @@
+SUMMARY
+$
+This can be used to produce sound in doorbells. This can be used as follows:
+
+The iron striker (part) gets magnetized (physical phenomenon). This is due to the flow of electricity in the coils that are wound around it (input), which activates magnetic effect (physical effect) and requires that the grains in the iron core are oriented towards it (organ).
+
+The iron striker (part) strikes against the bell (physical phenomenon). This is due to the magnetic force between the striker and the bell (input), which activates the magnetic effect (physical effect) and is necessary that the bell lies within the magnetic field (organ).
+
+
+The iron striker (part) comes back to its original position (physical phenomenon). This is due to the restoring force applied by the spring, which in turn is due to the break in the circuit (input), which activates the hook’s law (physical effect) 
+and is necessary that the spring has some stiffness (organ).
+$
+
+ACTION
+{
+$ 
+ To produce sound in bells.
+$
+}
+STATE
+{
+$
+The circuit is closed.
+
+The circuit is broken.
+$
+}
+PHYPHENOMENON
+{
+$
+The iron striker gets magnetized.
+
+ Iron striker strikes against the ball.
+
+The iron striker comes back to its original position.
+$
+}
+
+PHYEFFECT
+{
+$
+ Magnetic effect.
+
+Hook’s law.
+$
+}
+
+INPUT
+{
+$
+The flow of electricity in the coils that are wound around it.
+
+Magnetic force between the striker and the bell.
+
+The restoring force applied by the spring, which in turn is due to the break in the circuit.
+$
+}
+
+ORGAN
+{
+$
+Requires that the grains in the iron core are oriented towards it.
+
+Is necessary that the spring has some stiffness.
+
+Necessary that the bell lays within the magnetic field.
+$
+
+}
+
+PARTS
+{
+$
+The coil forms a wrapping pair with the iron striker.
+
+The iron striker forms a revolute pair with respect to the frame.
+
+The iron striker forms a flexible pair with the spring.
+$
+}
+
+

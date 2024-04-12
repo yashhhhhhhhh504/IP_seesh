@@ -1,0 +1,193 @@
+MACTION
+{
+A1 $ V < generate > N < motion > A < straight-line > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < input > $
+PP2 $ V < oscillate > N < link > A < output > $
+PP3 $ V < X > N < motion link > A < straight-line output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < X > $
+I2 $ V < rotate > N < link > A < input > $
+
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ one degree of freedom between the input link and the output link $
+O3 $ zero degree of freedom between the output link and the input link $
+}
+
+MPART
+{
+P1 $ input link $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ output link $
+P5 $ sliding pair $
+P6 $ flat surface $
+
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I2 O3 P4 P5 P6 >
+
+}
+
+FUNCTION
+
+$
+This mechanism is called Oscillating chain mechanism and it converts rotary motion to reciprocating motion. 
+$
+
+
+STRUCTURE
+
+$
+This mechanism consists of only two links. It is a three link open loop mechanism of which one link is a ground link. Link 2 is connected to link 1 and link 1 is connected to ground link. 
+$
+
+
+BEHAVIOUR
+
+$
+The rotary motion of the input arm is translated in to linear motion of the linkage end. The linkage is fixed to the smaller sprocket, and the larger sprocket is fixed to the frame.
+$
+
+
+PICTURE
+
+{
+ADB/ROTREC/02.OSCILCHAIN/oscillchain.JPG	$ Oscillating Chain $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to generate straight-line motion. This can be interpreted as a change of state from rest to straight-line motion. This can be described as follows:
+
+The input link (part) rotates in the vertical plane (physical phenomenon). This is due to the force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the large sprocket and the input link (organ).
+
+The output link (part) oscillates (physical phenomenon). This is due to the rotation of the input link (input), which activates the Newtonian laws of motion (Physical effect) and requires the presence of one degree of freedom between the input link and the output link (organ).
+
+One of the ends of the output link (part) moves along a straight line (physical phenomenon). This is due to the rotation of the input link (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the output link and the input link (organ).
+
+
+$
+
+ACTION
+$
+ 
+ To generate straight-line motion.
+
+$
+STATE
+$
+
+The output link is at rest.
+
+The output link moves along a straight-line.
+
+
+$
+PHYPHENOMENON
+$
+
+The input link rotates in the vertical plane.
+
+The output link oscillates.
+ 
+One of the ends of the output link moves along a straight line.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+
+
+
+
+$
+
+INPUT
+$
+
+Force applied on to it.
+
+Rotation of the input link.
+
+Rotation of the input link.
+
+$
+
+ORGAN
+$
+
+Presence of one degree of freedom between the large sprocket and the input link.
+
+Presence of one degree of freedom between the input link and the output link.
+
+Presence of zero degree of freedom between the output link and the input link.
+
+
+
+
+$
+
+PARTS
+
+$
+
+The input link forms a revolute pair with the frame.
+
+The output link forms a revolute pair with the input link.
+
+The output link forms a sliding pair with the surface.
+
+
+
+$
+
+

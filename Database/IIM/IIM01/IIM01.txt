@@ -1,0 +1,182 @@
+
+MACTION
+{
+A1 $ V < transmit > A < intermittent > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < diskA > $
+PP2 $ V < make > A < x > N < contact > $
+PP3 $ V < rotate > A < intermittently > N < diskB > $
+PP4 $ V < lock > A < x > N < diskB > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < diskA > $
+I3 $ V < apply > A < x > N < force > $
+}
+
+MORGAN
+{
+O1 $ one degree of motion $
+O2 $ zero degree of motion in the direction of motion $
+O3 $ length of the angular section $
+O4 $ distance between the groove $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ disk $
+P3 $ revolute pair $
+P4 $ disk $
+P5 $ cam pair $
+P6 $ fixed pair $
+}
+LINK
+{
+< A1  IS1  OS1  CS1  PP1   PE1   I1   O1   P1   P2   P3 >
+< A1  IS1  OS1  CS1  PP2   PE2   I2   O2   P2   P4   P5 >
+< A1  IS1  OS1  CS1  PP3   PE2   I3   O3   P2   P4   P5 >
+< A1  IS1  OS1  CS1  PP4   PE2   I4   O4   P2   P4   P5 >
+
+}
+
+FUNCTION
+
+$
+The mechanism transmits intermittent motion between two shafts, which are perpendicular to each other. 
+$
+
+
+STRUCTURE
+
+$
+The mechanism consists a disk 'A' that has a groove on its periphery. This disk is mounted on the input shaft. There is another disk 'B' that has teeth and is similar to a gear. This disk B is mounted on the output shaft. The disks A and B are connected to each other. The teeth on disk B traverses in the groove of the disk A.
+$
+
+
+BEHAVIOUR
+
+$
+This mechanism transmits intermittent motion between two skewed shafts. The shafts need not be at right angles to one another. Angular displacement of the output shaft per revolution of input shaft equals the circular pitch of the output gear wheel divided by its pitch radius. The duration of the motion period depends on the length of the angular joint 'a' of the locking disk 'A'
+$
+
+
+PICTURE
+
+{
+ADB/IIM/IIM01/intermittent01.JPG	$ Intermittent Drive $
+}
+
+
+CLIP
+{
+ADB/IIM/IIM01/intermittent01.avi  	$ Intermittent Drive $
+}
+SUMMARY
+$
+This mechanism can be used to generate intermittent motion. This can be interpreted as a change of state from rest to small angular rotation. This can be described as follows:
+
+The disk A (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the disk A (organ).
+
+The disk B (part) oscillates intermittently about the hinged point (physical phenomenon). This is due to the rotation of the disk A (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a groove on the disk A (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To generate intermittent rotation.
+$
+
+STATE
+
+$
+The disk B is at rest.
+
+The disk B rotates through a small angle about the hinged point.
+
+$
+
+PHYPHENOMENON
+
+$
+The disk A rotates.
+
+The disk B oscillates intermittently about the hinged point.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+
+Torque applied by the input shaft.
+
+The rotation of the disk A.
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the disk A.
+
+Presence of a groove on the disk A.
+
+$
+
+
+
+PARTS
+$
+The disk A forms a revolute pair with the frame.
+
+The disk B forms a revolute pair with the frame.
+
+
+
+
+
+$
+
+
+
+

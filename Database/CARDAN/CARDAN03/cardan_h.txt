@@ -1,0 +1,97 @@
+ SUMMARY
+$
+This can be used to generate straight line motion. This can be interpreted as a change of state from rest to straight line motion. This can be described as follows:
+
+The spur gear 2 (part) revolves around the fixed gear (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a link which maintains a fixed distance of between the center of the spur gear and the fixed gear (organ).
+
+The spur gear 3 (part) also revolves around the fixed gear (physical phenomenon). This is due to the revolution of the spur gear 2 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that there is contact between the spur gears 2 and 3 (organ).
+
+The link 5 (part) oscillates with respect to the fixed gear (physical phenomenon). This is due to the rotation of the link 4 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a hinged joint between the link 5 and link 4 (organ).
+
+The link 6 (part) moves along a straight line (physical phenomenon). This is due to the oscillation of the link 5 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a hinged joint between the links (organ).
+
+$
+
+ACTION
+
+$ 
+ To generate straight line motion.
+$
+
+STATE
+
+$
+The output link is at rest.
+
+The output link moves along a straight line motion.
+
+$
+
+PHYPHENOMENON
+
+$
+The spur gear 2 revolves around the fixed gear.
+
+The spur gear 3 also revolves around the fixed gear.
+ 
+The link 5 oscillates with respect to the fixed gear.
+
+The link 6 moves along a straight line.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The revolution of the spur gear 2.
+
+The rotation of the link 4.
+
+The oscillation of the link 5.
+$
+
+
+ORGAN
+
+$
+Presence of a link which maintains a fixed distance of between the center of the spur gear and the fixed gear.
+
+Necessary that there is contact between the spur gears 2 and 3.
+
+Presence of a hinged joint between the link 5 and link 4.
+
+Presence of a hinged joint between the links.
+$
+
+
+
+PARTS
+$
+The spur gear 2 forms a revolute pair with the frame,
+
+The spur gear 3 forms a higher pair with the spur gear 2
+
+The link 4 forms a revolute pair with the frame.
+
+The link 6 forms a sliding pair with the frame.
+
+$
+
+
+
+
+
+ 

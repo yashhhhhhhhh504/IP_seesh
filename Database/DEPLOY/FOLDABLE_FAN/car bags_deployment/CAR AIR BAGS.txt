@@ -1,0 +1,215 @@
+MACTION
+{
+A1 $ V < reduce > N < speed > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < high > N < speed > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < low > N < speed > $
+} 
+MCHANGESTATE
+{
+CS1 $ from high speed to low speed $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < reaction > A < chemical > $
+PP2 $ V < inflate > N < bag > A < air > 
+PP3 $ V < stop > N < passenger > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Ignition effect $
+PE2 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < energy > A < electrical > $
+I2 $ V < generate > N < gas > A < nitrogen > $
+I3 $ V < decrease > N < space > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the temperature produced is at least equal to the ignition temperature $
+O2 $ Necessary that the air bag is made up of flexible material $
+O3 $ Necessary that the inflated air bag is stiff enough to the stop the passenger $
+}
+
+MPART
+{
+P1 $ Sodium azide $
+P2 $ Sodium nitrate $
+P3 $ Air bag $
+P4 $ Inflated air bag $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+The goal of an air bag is to safely stop a moving object. Moving objects have momentum and the passengers in a car are objects with momentum of their own. Passengers continue moving at whatever speed the car is traveling.
+$
+
+
+STRUCTURE
+
+$
+To accomplish its magic, an air bag needs three parts:
+
+BAG: the bag itself is made of a thin nylon fabric that is folded into the steering wheel.
+SENSORS: the sensor tells the bag to inflate.
+INFLATION SYSTEM: the air bags inflation system used the raped pulse of hot nitrogen gas from the chemical reaction of the sodium azide and the potassium nitrate to inflate the bag.
+
+
+
+
+$
+BEHAVIOUR
+
+$
+The air bag system ignites a solid propellant and it burns rapidly to create a large volume of gas to inflate the bag. The bag then literally bursts from its compartment at up to 200 mph.
+
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This system can be used to reduce the speed of the passenger or the driver to zero. This can interpreted as a change of high speed to low speed. This can also be described as follows:
+
+The sodium azide (part) reacts with sodium nitrate and liberates nitrogen gas (physical phenomenon). This is due to the electrical energy (input), which activates the ignition effect (physical effect) and is necessary that the temperature produced is at least equal to the ignition temperature (organ).
+
+The air bag (part) inflates (physical phenomenon). This is due to the generation of nitrogen gas (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the air bag is made up of flexible material (organ).
+
+The inflated air bag (part) stops the passenger (physical phenomenon). This is due to the decrease in the space between the passenger and the dashboard (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the inflated air bag is stiff enough to the stop the passenger (organ).
+$
+
+ACTION
+
+$ 
+ To reduce the speed 
+$
+
+STATE
+
+$
+The passenger is at a high speed.
+
+The passenger is at a low speed.
+
+$
+
+PHYPHENOMENON
+
+$
+The sodium azide reacts with sodium nitrate and liberates nitrogen gas.
+
+The air bag inflates.
+ 
+The inflated air bag stops the passenger.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Ignition effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The electrical energy.
+
+Generation of nitrogen gas.
+
+The decrease in the space between the passenger and the dashboard.
+$
+
+
+ORGAN
+
+$
+Necessary that the temperature produced is at least equal to the ignition temperature.
+
+Necessary that the air bag is made up of flexible material.
+
+Necessary that the inflated air bag is stiff enough to the stop the passenger.
+
+
+$
+
+
+
+PARTS
+$
+Sodium azide.
+
+Sodium nitrate.
+
+Air bag.
+
+Inflated air bag.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

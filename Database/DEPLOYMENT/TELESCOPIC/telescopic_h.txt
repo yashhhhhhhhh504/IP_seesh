@@ -1,0 +1,92 @@
+SUMMARY
+$
+This mechanism can be used for expansion and contraction. The above mechanism can be described as follows:
+
+
+The link 2 (part) slides with respect to the link 1 (physical phenomenon). This is due to the force applied on to the link 2 (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth sliding surface between the slides 1 and 2 (organ).
+
+The link 3 (part) slides with respect to the link 2 (physical 
+Phenomenon). This is due to the sliding of the link 2  (input), which activates the inertia effect (physical effect) and requires the presence of a smooth sliding surface between the links 2 and 3.
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism expansion and contraction can be achieved.
+$
+}
+STATE
+{
+$
+The absence of force at the link 2.
+$
+The presence of force at the link 2.
+
+$
+}
+PHYPHENOMENON
+{
+$
+The link 2 slides with respect to the link 1.
+$
+The link 3 slides with respect to the link 2.
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Inertia effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+Force applied on to the link 2.
+$
+The sliding of the link 2.
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of a smooth sliding surface between the slides 1 and 2
+$
+Presence of a smooth sliding surface between the links 2 and 3.
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The link 1 is fixed.
+$
+The link 2 forms a cylindrical pair with the slide 1.
+$
+The link 3 forms a cylindrical pair with the slide 2.
+$	
+
+$
+
+$
+}
+

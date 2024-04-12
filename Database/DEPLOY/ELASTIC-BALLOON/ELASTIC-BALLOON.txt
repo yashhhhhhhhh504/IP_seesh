@@ -1,0 +1,222 @@
+
+MACTION
+{
+A1 $ V < deploy > N < balloon > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < undeployed > N < balloon > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deployed > N < balloon > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ Balloon deployed from undeployed state $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < force > N < air > A < X > $
+PP2 $ V < stretch > N < balloon > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli's law $
+PE2 $ hooks law $
+
+}
+
+MINPUT
+{
+I1 $ V < move > N < air > A < x > $
+I2 $ V < apply > N < pressure > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ requires pressure difference between outside and inside of the balloon with outside pressure higher $
+O2 $ ultimate strength of wall is not reached $
+}
+
+MPART
+{
+P1 $ Air $
+P2 $ Balloon $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+
+FUNCTION
+
+$
+Elastic balloons can be filled with air. The material of which it is made is elastic in nature. Hence without rupturing it can sustain air pressure.
+$
+
+
+STRUCTURE
+
+$
+The wall of these balloons is generally made from elastic rubber. When air is filled inside, wall gets stretched and balloon gets deployed.
+$
+
+
+BEHAVIOUR
+
+$
+Air forced in the balloon through its mouth. This is due to movement of air due to pressure difference, which actuates Bernoulli's law, which requires pressure difference between outside and inside of the balloon with outside pressure higher. The wall of balloon gets stretched. This is due to pressure applied on balloon wall material, which actuates the law that states stress is proportional to strain up to elastic limit, which requires that the ultimate strength of wall is not reached.
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/ELASTIC-BALLOON/ELASTIC-BALLOON01.JPG	$ 01.ELASTIC-BALLOON $
+ADB/DEPLOY/ELASTIC-BALLOON/ELASTIC-BALLOON02.GIF	$ 02.ELASTIC-BALLOON $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+
+SUMMARY
+$
+Elastic balloons can be filled with air. The material of which it is made is elastic in nature. Hence without rupturing it can sustain air pressure. It is explained below,
+
+Air (part) is forced in the balloon through its mouth (physical phenomenon). This is due to movement of air (input) due to pressure difference, which actuates Bernoulli's law (physical effect), which requires pressure difference between outside and inside of the balloon with outside pressure higher (organ).
+
+The wall of balloon (part) gets stretched (physical phenomenon). This is due to pressure applied on balloon wall material (input) which actuates the law that states stress is proportional to strain up to elastic limit (physical effect), which requires that the ultimate strength of wall is not reached (organ).
+
+$
+
+ACTION
+
+$ 
+ To fill air and deploy the balloon.
+$
+
+
+STATE
+
+$
+Balloon undeployed.
+Balloon deployed.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Air is forced in the balloon through its mouth
+
+The wall of balloon gets stretched 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli's law
+
+stress is proportional to strain up to elastic limit
+
+$
+
+
+INPUT
+
+$
+
+Movement of air
+
+pressure applied on balloon wall material
+$
+
+
+ORGAN
+
+$
+Requires pressure difference between outside and inside of the balloon with outside pressure higher
+
+ultimate strength of wall is not reached
+
+
+
+
+$
+
+
+
+PARTS
+$
+
+Air
+
+Balloon
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

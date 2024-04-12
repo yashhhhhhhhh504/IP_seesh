@@ -1,0 +1,93 @@
+SUMMARY
+$
+This mechanism can be used to open and close the covering of the calculator, which is provided to protect the calculator.
+$
+
+ACTION
+
+$ 
+To operate the covering of the calculator.
+ 
+$
+
+STATE
+
+$
+The cover is occupying less area.
+
+The cover is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Press button.
+
+The cover of the calculator rotates with respect to the calculator.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+$
+
+
+INPUT
+
+$
+Pressing force.
+
+Torque.
+
+$
+
+
+ORGAN
+
+$
+Presence of a button.
+
+Presence of an actuating mechanism.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Button.
+
+Actuating mechanism.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

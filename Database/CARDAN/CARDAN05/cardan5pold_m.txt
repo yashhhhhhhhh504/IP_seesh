@@ -1,0 +1,65 @@
+MACTION
+{
+A1 $ V < generate > A < straight-line > N < motion > $
+A2 $ V < generate > A < reciprocating > N < motion > $
+A2 $ V < generate > A < rocking > N < motion > $
+}
+
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < straight-line > N < motion > $
+S3 $ V < X > A < reciprocating > N < motion > $
+
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > A < X > N < link-1 > $
+PP2 $ V < rock > A < X > N < segment > $
+PP3 $ V < reciprocte > A < X > N < valve > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian Laws of motion $
+PE2 $ two bodies cannot occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < provide > A < X > N < torque > $
+I2 $ V < oscillate > A < X > N < link-1 > $
+I3 $ V < rock > A < X > N < segment > $
+}
+
+MORGAN
+{
+O1 $ eccentricity of the drive $
+O2 $ line contact: segment fixed-circle $
+O3 $ ? $
+}
+
+MPART
+{
+P1 $ input-shaft $
+P2 $ link-1 $
+P3 $ segment $
+P4 $ fixed pair $
+P5 $ revolute pair $
+P6 $ fixed-circle $
+P7 $ cam pair $
+P8 $ gear ratio 1:2 $
+P9 $ valve-rod $
+P10 $ prismatic pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A1 - PP2 - PE2 - I2 - O2 - P2 - P3 - P5
+A1 - PP2 - PE2 - I2 - O2 - P3 - P6 - P7
+A1 - PP3 - PE2 - I3 - O2 - P3 - P6 - P8
+A1 - PP3 - PE2 - I3 - O3 - P6 - P9 - P10
+}

@@ -1,0 +1,83 @@
+SUMMARY
+$
+The sliding link (part) slides over the fixed link (physical phenomenon). This is due to the force applied on to it (input) that activates the Newtonian laws of motion (physical effect) and requires the presence of friction free surface between the sliding link and the fixed link (organ).
+$
+
+ACTION
+{
+$ 
+ Using this the movable member can be made to slide with respect to the fixed member.
+$
+}
+STATE
+{
+$
+Absence of force at the movable member.
+$
+Presence of force at the movable member.
+$
+}
+PHYPHENOMENON
+{
+$
+The sliding of link with respect to the fixed link.
+$
+
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Force applied on to it.
+$
+
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of friction free surface between the sliding link and the fixed link.
+$
+
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The link forms prismatic pair with the fixed link.
+$
+
+$
+
+$
+
+$
+
+$
+}
+

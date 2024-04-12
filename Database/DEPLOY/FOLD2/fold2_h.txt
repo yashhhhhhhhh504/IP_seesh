@@ -1,0 +1,95 @@
+SUMMARY
+$
+This mechanism can be used as a deployment mechanism.
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The mechanism is occupying less area.
+
+The mechanism is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Apply force at the ends of the structure.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Push force.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the links have one degree of freedom between them.
+
+$
+
+
+
+PARTS
+$
+Links that form the structure in between the end plates.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+1    PT		$ Power transmission 				$       5
+2    LM		$ Lifting mechanisms 				$	5
+3    IIM	$ Indexing or intermittent transmission		$	5
+4    TSM	$ Tripping or stop mechanism			$	5
+5    REVERSE	$ Reversing mechanism				$	3
+6    OLRM	$ Over load relief mechanism			$	5
+7    ILM	$ Interlocking mechanism			$	5
+8    SC		$ Speed changing				$	5
+9    CS		$ Conveyor systems				$	5
+10   DM		$ Differential motion				$	5
+11   SLG	$ Straight line motion generation		$	5
+12   AF		$ Automatic feeding mechanism			$	5
+13   GRIP	$ Gripping mechanisms				$	5
+14   REACH	$ Reaching mechanisms				$	5
+15   CM		$ Cutting mechanisms				$	5
+16   TRANSPORT	$ Transportation mechanisms			$	5
+17   MOTTRAN	$ Motion transmission mechanisms		$	5
+18   FT		$ Force transmission mechanisms			$	5
+19   SEP	$ Separating devices				$	5
+20   SORT	$ Sorting devices				$	5
+21   MT		$ Machine tools					$	5
+22   FLIP	$ Flipping mechanisms				$	5
+23   SEL	$ Selectors 					$	5
+24   GENEVA	$ Geneva mechanisms				$	5
+25   ADJSPD	$ Adjustable speed drives			$	5
+26   ROTREC	$ Rotary to reciprocating and Dwell mechanisms	$	5
+27   RECROT	$ Reciprocating to reciprocating mechanisms	$	5
+28   EXPCON	$ Expanding and contracting devices		$	6
+29   CGM	$ Cardan Gear mechanisms			$	5
+30   COMP	$ Computing devices				$	4
+31   CAM	$ Cam mechanisms				$	5
+32   VARSPD	$ Variable speed drive without gears		$	5
+33   GEARSHIFT	$ Gear shift mechanism 				$	5
+34   COUPLE	$ Coupling devices				$	5
+35   DEPLOY	$ Deployment mechanisms				$	5
+36   SOM	$ Supporting cum orientation mechanisms		$	5

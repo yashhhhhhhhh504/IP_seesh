@@ -1,0 +1,223 @@
+MACTION
+
+{
+A1 $ V < decelerate > N < wheel-rotation > A < quickly > $
+}
+
+MINPUTSTATE
+
+{
+IS1 $ V < x > A < present > N < wheel-rotation > $
+}
+
+MOUTPUTSTATE
+
+{
+OS1 $ V < x > A < absent > N < wheel-rotation > $
+} 
+
+MCHANGESTATE
+
+{
+CS1 $ from motion to rest $
+}
+
+MPHYPHENOMENON
+
+{
+PP1 $ V < move > N < piston > A < inside > $
+PP2 $ V < force > N < fluid > A < x > $
+PP3 $ V < move > N < piston > A < x > $
+PP4 $ V < stop > N < rotation > A < x > $
+}
+
+MPHYEFFECT
+
+{
+PE1 $ Newton’s second law of motion $
+PE2 $ Bernoulli’s law $
+PE3 $ Newton’s second law of motion $
+PE4 $ Frictional effect $
+}
+
+MINPUT
+
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < x > N < pressure-difference > A < x > $
+I3 $ V < apply > N < pressure > A < x > $
+I4 $ V < apply > N < frictional-force > A < x > $
+}
+
+MORGAN
+
+{
+O1 $ Force applied by the lever is greater than the fluid pressure inside the master cylinder $
+O2 $ Fluid pressure outside is greater than fluid pressure inside $
+O3 $ Presence of flow path $
+O4 $ Absence of clearance $
+O5 $ Fluid pressure is high enough to overcome the frictional force between the piston the caliper $
+O6 $ Frictional force is high enough to overcome the angular velocity of the rotor $
+}
+
+MPART
+
+{
+P1 $ Piston $
+P2 $ Fluid $
+P3 $ Piston $
+P4 $ Rotor $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 O3 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O4 O5 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O6 P4 >
+}
+
+
+FUNCTION
+
+$
+The function of the hydraulic braking system is to decelerate or completely stop the vehicle.
+$
+
+STRUCTURE
+
+$
+The hydraulic braking system consists of a brake pedal, a master cylinder, hydraulic lines, a slave cylinder and the braking unit. The brake pedal is a simple lever. It is attached at one point to the framework of the automobile, a rod extends from a point along its length to the master cylinder, and the pedal is at the end of the lever. The piston of the master cylinder is connected to the lever. The master cylinder and the caliper are connected through hoses. The caliper consists of a piston and two pads, one on each side of the rotor.
+$
+
+BEHAVIOUR
+
+$
+Hydraulic brake is an arrangement of braking mechanism which uses hydraulic fluid, typically some type of light-viscosity petroleum oil, to transfer pressure from the controlling unit to the actual brake mechanism.
+
+When the brake pedal is depressed, the leverage multiplies the force applied from the pedal to a piston in the master cylinder. As the force is applied to this piston, pressure in the hydraulic system rises, forcing the fluid through the lines to the caliper. In the caliper, the fluid pushes the piston out of the slave cylinder, which in turn pushes the pad fixed to it, against the rotor and thus decelerating the wheel. 
+$
+
+ATTRIBUTE
+
+$
+Common features of hydraulic brakes include zero backlash, wash down capable, and clutch or brake combination.  Zero backlash is a feature in which there is no play or backlash in the engagement of the load, no load disengagement during a direction reversal.  Wash down capable brakes are rated for wash-down cleaning.  Clutch-brake combinations include a clutch and a brake in the same package.  Shaft configurations for hydraulic brakes can be inline, parallel, and right angle. 
+
+The operation of the braking system depends on the integrity of the hydraulic system, the master cylinder must be capable of generating several hundred pounds per square inch of pressure and the rest of the system must maintain the pressure without leaking.
+
+Brake fluid in hydraulic brakes is a special oil that has specific properties. It is designed to withstand cold temperatures without thickening as well as very high temperatures without boiling. (If the brake fluid should boil, it will cause you to have a spongy pedal and the car will be hard to stop.) Brake fluid must meet standards that are set by the Department of Transportation (DOT). The current standard is DOT-3 which has a boiling point of 460º F.  
+$
+
+
+
+
+PICTURE
+
+{
+ADB/BRAKES/HYDRAULIC_BRAKES/01.BMP                    $ HYDRAULIC BRAKES $
+}
+
+
+CLIP
+
+{
+ADB/BRAKES/HYDRAULIC_BRAKES/01.avi                    $ HYDRAULIC BRAKES $
+
+}
+
+SUMMARY
+
+$
+Hydraulic brakes are used to decelerate or stop the rotation of the wheel by applying frictional force on the rotors of the wheels. This can be interpreted as change of state from presence of wheel rotation to absence of wheel rotation and is explained in steps as follows:
+
+When the brake pedal is pressed down, it moves the lever attached to it which causes the piston to move inside the master cylinder.
+
+The piston (Part) moves inside the master cylinder (Physical phenomenon). This is due to the force applied by the lever (Input) which activates Newton’s second law of motion and is necessary that the force applied by the lever is greater than the fluid pressure inside the master cylinder (Organ).
+
+The fluid (Part) flows from the cylinder to the caliper through the hoses (Physical phenomenon). This is due to the pressure difference (Input) which activates Bernoulli’s law (Physical Effect) and is necessary that the fluid pressure is greater than the pressure inside the caliper and also there is a presence of flow path (Organ).
+
+The piston inside the caliper (Part) moves towards the rotor (Physical phenomenon). This is due to the pressure applied by the fluid (Input) which activates Newton’s second law of motion (Physical Effect) and is necessary that there should not be any clearance between the piston and caliper and also the fluid pressure is high enough to overcome the frictional force between the piston the caliper (Organ).
+
+As the pad is attached to the piston, it also moves along with the piston and presses against the rotor.
+
+The rotor attached to the wheel (Part) comes to rest (Physical phenomenon). This is due to the frictional force applied by the pads (Input) which activates frictional effect (Physical Effect) and is necessary that the frictional force is high enough to overcome the angular velocity of the rotor (Organ).
+$
+
+ACTION
+
+$ 
+To decelerate or stop the rotation of the wheel 
+$
+
+STATE
+
+$
+Presence of wheel rotation to the absence of wheel rotation
+$
+
+PHYPHENOMENON
+
+$
+The piston moves inside the master cylinder
+
+The fluid flows from the cylinder to the caliper through the hoses
+
+The piston inside the caliper moves towards the rotor
+
+The rotor comes to rest
+$
+
+PHYEFFECT
+
+$
+Newton’s second law of motion
+
+Bernoulli’s law
+
+Newton’s second law of motion
+
+Frictional effect
+$
+
+INPUT
+
+$
+The force applied by the lever
+
+The pressure difference
+
+The pressure applied by the fluid
+
+The frictional force applied by the pads
+$
+
+ORGAN
+
+$
+The force applied by the lever is greater than the fluid pressure inside the master cylinder
+
+The fluid pressure is greater than the pressure inside the caliper and also there is a presence of flow path
+
+
+There should not be any clearance between the piston and caliper and also the fluid pressure is high enough to overcome the frictional force between the piston the caliper
+
+The frictional force is high enough to overcome the angular velocity of the rotor
+$
+
+PARTS
+$
+The piston
+
+The fluid 
+
+The piston inside the caliper
+
+The rotor attached to the wheel
+$
+
+REFERENCES 
+
+$
+http://en.wikipedia.org/wiki/Hydraulic_brake#searchInput
+http://www.tpub.com/fluid/ch1j.htm
+$

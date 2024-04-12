@@ -1,0 +1,221 @@
+
+MACTION
+{
+A1 $ V < pack > N < bag > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < outside mating > N < latch part > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < inside mating > N < latch part > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from latch outside the mating part to inside the mating part $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < latch part > A < inside > $
+PP2 $ V < bend > N < end > A < latch > $
+PP3 $ V < regain > N < position > A < original > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bending effect $
+PE3 $ Spring effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < latch part > A < mating > $
+I3 $ V < x > N < energy > A < stored > $
+}
+
+MORGAN
+{
+O1 $ the latch is made up a flexible material $
+O2 $ the width of the latch is greater than that of the mating parts $
+O3 $ the ends of the latch are made up of flexible material $
+}
+
+MPART
+{
+P1 $ latch $
+P2 $ sliding pair $
+P3 $ mating part $
+P4 $ latch end $
+P5 $ flexible $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P4 P5 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to open and close the bag.
+$
+
+
+STRUCTURE
+
+$
+It is made up of a flexible material and in one piece.
+$
+
+
+BEHAVIOUR
+
+$
+The two ends of the latch are made up of a flexible material; they bend and then regain their original shape.
+
+$
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/BACK_PACK_LATCH/01.JPG		$ BACK PACK LATCH $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+
+$
+This mechanism can be used to pack bags. This can be interpreted as a change of state from latch outside its mating part to latch inside its mating part. This can be described as follows:
+
+The latch (part) is moved inside the mating part (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the latch is made up a flexible material (organ).
+
+The two ends of the latch (part) bend (physical phenomenon). This is due to the movement of the latch into the mating part (input), which activates the bending effect (physical effect) and is necessary that the width of the latch is greater than that of the mating parts (organ).
+
+The two ends of the latch (part) regain their original position thus locking it (physical phenomenon). This is due to the energy stored (input), which activates the spring effect (physical effect) and is necessary that the ends of the latch are made up of flexible material (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To pack bags.
+$
+
+STATE
+
+$
+The latch is outside its mating part.
+
+The latch is inside its mating part.
+
+$
+
+PHYPHENOMENON
+
+$
+The latch is moved inside the mating part.
+
+The two ends of the latch bend.
+
+The two ends of the latch regain their original position thus locking it.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bending effect.
+
+Spring effect.
+
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the latch into the mating part.
+
+The energy stored.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the latch is made up a flexible material.
+
+Necessary that the width of the latch is greater than that of the mating parts.
+
+Necessary that the ends of the latch are made up of flexible material.
+
+
+
+$
+
+
+
+PARTS
+$
+The latch forms a sliding pair with its mating part.
+
+The ends of the latch are flexible.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

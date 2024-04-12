@@ -1,0 +1,222 @@
+MACTION
+{
+A1 $ V < reduce > N < speed > A < falling > $
+A2 $ V < deploy close > N < x > A < tough > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from less area to large area $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < press > N < part > A < X > $
+PP2 $ V < expand > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < pressing > $
+I2 $ V < x > N < pressure > A < gas > $
+}
+
+MORGAN
+{
+O1 $ Presence of a button $
+O2 $ Necessary that the balloon material is flexible $
+}
+
+MPART
+{
+P1 $ Button $
+P2 $ Balloon $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+It is used to reduce the speed of fall from a certain height. It mainly used by pilots in the airplanes in case of emergency.
+$
+
+
+STRUCTURE
+
+$
+It actually consists of a balloon, which is actually flattened so that is it occupies less space.
+$
+
+
+BEHAVIOUR
+
+$
+The balloon kind of structures is filled with air, which in turn is achieved by the press of a button during fall. The balloon in inflated state reduces the speed of fall.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/PARACHUTE/01.JPG	$ 01.Parachute $
+ADB/DEPLOY/PARACHUTE/02.JPG	$ 02.Parachute $
+ADB/DEPLOY/PARACHUTE/03.JPG	$ 03.Parachute $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This is mainly used to reduce the speed of fall.
+$
+
+ACTION
+
+$ 
+ To reduce the speed of fall.
+$
+
+STATE
+
+$
+Occupy less space.
+
+Occupy large space.
+
+$
+
+PHYPHENOMENON
+
+$
+Press button.
+
+Open the balloon.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Pressing force.
+
+Gas pressure.
+
+$
+
+
+ORGAN
+
+$
+Presence of a button.
+
+Necessary that the balloon material is flexible.
+
+
+$
+
+
+
+PARTS
+$
+Button.
+
+Balloon.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

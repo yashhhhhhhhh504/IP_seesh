@@ -1,0 +1,209 @@
+MACTION
+{
+A1 $ V < displace > N < liquid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < level liquid > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at lower level to liquid higher level $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < piston > A < X > $
+PP2 $ V < operate > N < valve > A < X > $
+PP3 $ V < pressurize > N < liquid > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+PE3 $ No two bodies can the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < crank > A < x > $
+I2 $ V < x > N < difference > A < pressure > $
+I3 $ V < x > N < motion > A < reciprocating > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the piston and the cylinder $
+O2 $ valves are one-way valves $
+O3 $ piston has enough strength to displace the liquid $
+}
+
+MPART
+{
+P1 $ Double piston $
+P2 $ Valve $
+P3 $ Liquid $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+This pump is more efficient that a single-acting force pump such as a simple Lift Pump or a hand-operated Bilge Pump.
+$
+
+
+STRUCTURE
+
+$
+It consists of a double acting piston that reciprocates within the cylinder and there are four valves, which are one-way valves.
+$
+BEHAVIOUR
+
+$
+Each stroke of the piston fills one chamber and empties another, which nearly doubles the flow rate (less the volume of the piston rod) over a single-acting force pump. It also smoothens the flow. From the outside this pump can take many forms, but the basic principal of operation will be identical
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/FORCE_PUMP/01.GIF		$ 01.FORCE PUMP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to displace liquid from a lower level to higher level. This can be interpreted as a change of state from liquid at a lower level to a higher level. This can be discussed as follows:
+
+The double piston (part) reciprocates in the cylinder (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the piston and the cylinder (organ).
+
+The valves (part) operate (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the valves are one-way valves (organ).
+
+The liquid (part) within the cylinder is pressurized (physical phenomenon). This is due to the reciprocating motion (input) of the piston, which activates the “no two bodies can the same space at the same time”, (physical effect) and it is necessary that the piston have enough strength to displace the liquid (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To displace liquid.
+$
+
+STATE
+
+$
+The liquid is at a lower level.
+
+The liquid is at a higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The double piston reciprocates in the cylinder.
+
+The valves operate.
+
+The liquid within the cylinder is pressurized.
+
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s effect.
+
+No two bodies can the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Rotation of the crank.
+
+Pressure difference.
+
+Reciprocating motion.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the piston and the cylinder.
+
+Necessary that the valves are one-way valves.
+
+Necessary that the piston has enough strength to displace the liquid.
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Double piston.
+
+Valve.
+
+Liquid.
+
+
+$
+
+
+
+
+
+
+
+
+
+

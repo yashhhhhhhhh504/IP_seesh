@@ -1,0 +1,175 @@
+MACTION
+{
+A1 $ V < separate > N < iron ore > A < X > $
+A2 $ V < lock > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < ore > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < X > N  < iron > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from ore to iron $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < attract > N < iron > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Magnetic effect $
+
+}
+
+MINPUT
+{
+I1 $ V < X > N < force > A < magnetic > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of the material within the magnetic field of the magnet $
+
+}
+
+MPART
+{
+P1 $ magnet $
+P2 $ frame $
+P3 $ fixed-pair $
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+}
+
+
+FUNCTION
+
+$
+Magnets have an innate property by which they attract objects made of steel or iron. Magnets are widely used in motors, generators, material seperators, electro magnets, etc.
+Magnets can also be used for sorting magnetic and non-magnetic materials. Examples of magnets being used as separators are in separating metals from ore. Also, vending machines sort nonmagnetic coins from magnetic slugs and washers.
+$
+
+STRUCTURE
+
+$
+The simplest form of a permanent magnet is a bar that has two poles (North and South) which can have any cross section. Opposite poles of a magnet attract each other and like poles repel (North attracts South, North repels North). Magnets come in varying sizes, shapes and cross-sections as can be seen from the figures. A common shape for magnets is the 'horse shoe' shape.
+The following figures show different shapes and configurations of magnets:-
+Fig 1 : Bar Magnet
+Fig 2 : 'U' or 'C' shaped permanent magnets are cast in order to bring both of the pole faces into the same plane.
+Fig 3 shows how A cylindrical magnet can be magnetised with as many pairs of poles as desired on the outside diameter as in (A) or the inner diameter as in (B).
+Fig 4 shows a magnetic roll for material seperators made from magnets and steel pole pieces that supply an equal magnetic field on 360 degrees of the pole surface.
+Fig 5 shows how different magnets for generators can be assembled from multiple magnets with laminated (A) or solid pole pieces (E), cast with inserts for pressing in shafts, nonsalient (B) or salient (C) or cast for assemblies on shafts (D).
+Fig 6 is a stator or internal pole assemblies using steel pole faces and magnets are made in various ways depending on the mechanical space, magnetic and physical characteristics required.
+Fig 7 shows a 4 pole magnet with steel pole pieces, but it is possible to incorporate as many poles as are required (A) using bar magnets. In style (B) it is possible to obtain several poles by using one two pole magnet.
+$
+
+
+BEHAVIOUR
+
+$
+A magnet contains a north-seeking pole (north pole) and a south-seeking pole (south pole). Similar magnetic poles repel and opposite magnetic poles attract. This is known as The Law of Magnetic Poles. A magnetic field is a region in space where a magnetic force can be detected. This magnetic field is strongest at the poles of a magnet. Magnetic lines of force are used as a way of representing a magnetic field. By convention, magnetic lines of force point from north to south outside a magnet (and from south to north inside a magnet). Magnetic lines of force form complete loops. They never cross.
+
+An electromagnet is a "temporary" magnet, the magnetic field only exists when an electric current is flowing. This can be achieved by coiling a wire around any metallic rod and passing electricity through it. As long as the current passes, the rod or bar functions as a magnet. Electromagnets are used for various purposes like seperation devices and picking up devices as in cranes.
+
+The animation shows the magnetic field configuration around a conducting non-magnet ring (e.g. copper) as it falls under gravity in the magnetic field of a fixed permanent magnet. The current in the ring is indicated by the moving small spheres in the ring. In this case the ring is light and has zero resistance, and levitates above the magnet.
+$
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/10.Magnet/magnet.jpg		$ Magnet $
+ADB/BASICCOMP/10.Magnet/magnets1.jpg		$ Magnet Types	$
+ADB/BASICCOMP/10.Magnet/magnets2.jpg		$ MagnetTypes	$
+ADB/BASICCOMP/10.Magnet/magnets3.jpg		$ MagnetTypes	$
+ADB/BASICCOMP/10.Magnet/horseshoe.jpg		$ Horse Shoe Magnet $
+ADB/BASICCOMP/10.Magnet/magnetshapes1.gif	$ Magnet Shapes	$
+ADB/BASICCOMP/10.Magnet/magnetshapes2.gif	$ Magnet Shapes	$
+}
+
+
+CLIP
+
+{
+ADB/BASICCOMP/10.Magnet/FallingRing.mpeg	$ Magnetic lines $
+}
+
+SUMMARY
+$
+This can be used to separate iron or steel materials from its ore. This can be described as follows:
+
+Iron or steel material (part) is attracted towards magnet (physical phenomenon).  This is due to the magnetic force applied by the magnet (input), which activates the Law of Magnetic Poles (physical effect) and requires the presence of the material within the magnetic field of the magnet (organ).
+
+
+ACTION
+$
+ 
+ To separate iron or steel from its ore.
+
+$
+STATE
+$
+
+Iron or steel is along with its ore.
+
+Iron is separated from its ore.
+
+$
+PHYPHENOMENON
+$
+
+The iron or steel material is attracted towards magnet.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Magnetic effect.
+
+
+$
+
+INPUT
+$
+
+The magnetic force applied by the magnet.
+
+$
+
+ORGAN
+$
+
+Presence of the material within the magnetic field of the magnet.
+
+
+
+$
+PARTS
+
+$
+
+The magnet forms a fixed pair with the frame.
+
+
+$

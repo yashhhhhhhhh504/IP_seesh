@@ -1,0 +1,86 @@
+MACTION
+{
+A1 $ V < operate > N < door > A < X > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < cylinder > A < X > $
+PP2 $ V < operate > N < door > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < object > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of smooth surface between the piston and the cylinder. $
+O2 $ Presence of contact of one degree of freedom between the doors and the piston.  $
+}
+
+MPART
+{
+P1 $ Piston $
+P2 $ Cylinder $
+P3 $ Doors $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 >
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

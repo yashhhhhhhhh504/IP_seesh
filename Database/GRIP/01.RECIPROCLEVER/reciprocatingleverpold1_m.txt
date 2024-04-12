@@ -1,0 +1,57 @@
+MACTION
+{
+A1 $ V <  hold > A < X > N <  object > $
+A2 $ V <  release > A < X > N <  object > $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V <  move > N <  link > A <  apart > $
+PP2 $ V <  move > N <  jaws > A <  together > $
+PP3 $ V <  move > N <  link > A <  together > $
+PP4 $ V <  move > N <  jaws > A <  apart > $
+}
+
+MPHYEFFECT
+{
+PE1 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V <  push > N <  link > A <  forward > $
+I2 $ V <  move > N <  link > A <  apart > $
+I3 $ V <  pull > N <  link > A <  backward > $
+I4 $ V <  move > N <  link > A <  together > $
+}
+
+MORGAN
+{
+O1 $ contact : link6 link4 $
+O2 $ contact : link7 link5 $
+O3 $ contact : link3 link4 $
+O4 $ contact : link3 link5 $
+}
+
+MPART
+{
+P1 $ link6 $
+P2 $ link4 $
+P3 $ link7 $
+P4 $ link5 $
+P5 $ revolute pair $
+P6 $ link3 $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P5
+A1 - PP1 - PE1 - I1 - O2 - P3 - P4 - P5
+A1 - PP2 - PE1 - I2 - O3 - P2 - P6 - P5
+A1 - PP2 - PE1 - I2 - O4 - P4 - P6 - P5
+
+A2 - PP3 - PE1 - I3 - O1 - P1 - P2 - P5
+A2 - PP3 - PE1 - I3 - O2 - P3 - P4 - P5
+A2 - PP4 - PE1 - I4 - O3 - P2 - P6 - P5
+A2 - PP4 - PE1 - I4 - O4 - P4 - P6 - P5
+}

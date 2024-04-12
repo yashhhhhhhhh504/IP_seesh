@@ -1,0 +1,79 @@
+MACTION
+{
+A1 $ V < provide > AV < X > N < rotation > AJ < uni-directional  > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rotation > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < uni-directional > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rotation to uni-directional rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > AV < X > N < ratchet > AJ < X > $
+PP2 $ V < contact > AV < X > N < ratchet pawl  > AJ < X > $
+PP3 $ V < oscillate > AV < X > N < pawl > AJ < > $
+PP4 $ V < x > AV < X > N < rotation > AJ < uni-directional  > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ Hook’s law. $
+PE3 $ No two bodies can occupy the same space at the same time. $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > AV < X > N < torque > AJ < > $
+I2 $ V < > AV < X > N < spring-force > AJ < > $
+I3 $ V < > AV < X > N < rotation > AJ < uni-directional  > $
+I4 $ V < block > AV < X > N < ratchet > AJ < X > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the input shaft and the ratchet.  $
+O2 $ Necessary that the spring has some stiffness $
+O3 $ requires the pawl to be hinged at a suitable point. $
+O4 $ requires the pawl to be strong enough to prevent the rotation in the other direction. $
+
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < ratchet > AJ < > $
+P2 $ V < X > AV < X > N < frame > AJ < > $
+P3 $ V < X > AV < X > N < revolute-pair > AJ < > $
+P4 $ V < X > AV < X > N < pawl > AJ < X > $
+P5 $ V < X > AV < X > N < gear-pair > AJ < > $
+P6 $ V < X > AV < X > N < pair > AJ < flexible > $
+P7 $ V < X > AV < X > N < spring > AJ < X > $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P6 P7 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P1 P4 P5 >
+
+}
+

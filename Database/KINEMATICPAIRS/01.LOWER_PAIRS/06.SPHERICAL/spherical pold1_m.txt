@@ -1,0 +1,46 @@
+MACTION
+{
+A1 $ V=rotate N=member $
+A2 $ V=revolve N=member $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=turn N=member $
+PP2 $ V=transfer N=torque $
+PP3 $ V=translate N=member $
+PP4 $ V=transfer N=motion $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=turn N=member $
+I3 $ V=apply N=force $
+I4 $ V=translate N=member $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P4 $ cylindrical pair $
+P5 $ fixed pair $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A1 - PP2 - PE1 - I2 - O1 - P1 - P1 - P5
+
+A2 - PP3 - PE1 - I3 - O1 - P1 - P2 - P4
+A2 - PP4 - PE1 - I4 - O1 - P1 - P1 - P5

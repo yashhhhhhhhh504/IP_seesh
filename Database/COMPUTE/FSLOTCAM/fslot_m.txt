@@ -1,0 +1,68 @@
+MACTION
+{
+A1 $ V < perform > N < computation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < slide > N < slide-x > A < X > $
+PP2 $ V < rotate > N < link-1 > A < X > $
+PP3 $ V < slide > N < joint > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < x > $
+I2 $ V < x > N < motion > A < Sliding > $
+I3 $ V < x > N < movement link1 link2 > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of frictionless surface between the slide and the guide ways. $
+O2 $ Presence of a hinged joint between the link 1 and the slide x. $
+O3 $ Necessary that the slide y slides in the guide ways provided for it.$
+}
+
+MPART
+{
+P1 $ slide x $
+P2 $ guide ways $
+P3 $ sliding pair $
+P4 $ link 1 $
+P5 $ revolute pair $
+P6 $ joint of the links 1 and 2 $
+P7 $ slot $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 p6 P7 >
+
+
+}
+
+

@@ -1,0 +1,220 @@
+MACTION
+{
+
+A1 $ V < transmit > A < X > N < motion tough > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > A < X > N < forward > $
+PP2 $ V < join > A < X > N < surface > $
+PP3 $ V < rotate > A < X > N < driven-shaft > $
+}
+
+MPHYEFFECT
+{
+PE1 $ no two bodies can occupy the same space at the same time $
+PE2 $ friction effect $
+}
+
+MINPUT
+{
+I1 $ V < lift > A < X > N < control-arm > $
+I2 $ V < apply > A < X > N < force > $
+I3 $ V < apply > A < X > N < torque > $
+I4 $ V < join > A < X > N < surface > $ 
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between in the direction of motion $
+O2 $ surface of friction material $
+O3 $ one degree of freedom between in the direction of motion $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ control-arm $
+P3 $ revolute pair $
+P4 $ driving-shaft $
+P5 $ cone $
+P6 $ cone $
+P7 $ prismatic pair $
+P8 $ friction-material $
+P9 $ fixed pair $
+P10 $ driven-shaft $
+P11 $ kinematic-pair $
+P12 $ cylindrical pair $
+}
+LINK
+{
+< A1 IS1  OS1 CS1 PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1 CS1 PP1  PE1  I1  O1  P4  P5  P7 >
+< A1 IS1  OS1 CS1 PP2  PE2  I2  O2  P5  P8  P11 >
+< A1 IS1  OS1 CS1 PP2  PE2  I2  O2  P6  P8  P9 >
+< A1 IS1  OS1 CS1 PP3  PE2  I3  O3  P4  P5  P7 >
+< A1 IS1  OS1 CS1 PP3  PE2  I4  O2  P5  P8  P9 >
+< A1 IS1  OS1 CS1 PP3  PE2  I4  O2  P6  P4  P12 >
+
+}
+
+
+FUNCTION
+
+$
+Cone clutches transmit motion between two separate shafts through the friction of contact. Clutches are extensively used in the automobile industry, functioning as the device that helps in the changing of gears.
+$
+
+
+STRUCTURE
+
+$
+Cone clutches are similar to plate clutches excepting that their friction surfaces that are slightly tapered and coaxial with the shaft. Friction material is usualy applied to only one of the mating conical surfaces. The free member is mounted to resist axial thrust.
+$
+
+
+BEHAVIOUR
+
+$
+Cone clutches, like plate clutches, requires axial movement for engagement, but less axial force is required because of the increased friction between mating cones. Cone clutches have light engagement forces and high power transmitting capabilities, but are difficult to disengage. Cone units are not extensively used in modern power transmission systems.
+$
+
+
+PICTURE
+
+{
+ADB/CLUTCHES/CONE/cone.jpg	$ Cone Clutch	$
+}
+
+
+CLIP
+
+{
+ADB/CLUTCHES/CONE/cone.avi	$ Cone Clutch	$
+}
+
+
+SUMMARY
+$
+
+This mechanism can be used to transmit motion between two shafts . It can also be interpreted as a change of state from rest to rotation.
+
+The smaller cone (part) engages with the bigger cone (physical phenomenon). This is due to the force of the spring (input), which activates elastic effect (physical effect) of the spring and requires the spring to have some stiffness (organ). 
+
+The smaller cone (part), which is mounted on the input shaft, rotates (physical phenomenon). This due to the torque applied by the input shaft (input), which activates Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the input shaft and the smaller cone (organ).
+
+The bigger cone (part) when engaged with the smaller cone rotates (physical phenomenon). This is due to the rotation of the smaller cone (input), which activates the friction effect (physical effect) and requires the presence of friction surfaces between the two cones (organ).
+ 
+The gear (part) that is mounted on the bigger cone rotates (physical phenomenon). This is due to the rotation of the bigger cone (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the bigger cone and the gear (organ).
+
+The gear that is mounted on the output shaft (part) rotates (physical phenomenon). This is due to the rotation of the meshing gear (input), which activates the law “no two bodies can occupy the same place at the same time” (physical effect) and requires the meshing of teeth between the two gears (organ).
+$
+
+
+
+ACTION
+$
+ 
+Using this mechanism motion can be transmitted between two separate shafts. 
+
+
+$
+STATE
+$
+
+Rest.
+
+Rotation.
+
+
+$
+PHYPHENOMENON
+$
+
+The smaller cone that is mounted on the input shaft engages with the larger cone.
+
+ Smaller cone that is mounted on the input shaft rotates continuously.
+ 
+The larger cone to which the smaller cone is engaged rotates continuously.
+
+The gear that is mounted on the larger cone rotates continuously.
+
+Rotation of the gear that is mounted on the output shaft.
+
+
+$
+
+
+PHYEFFECT
+$
+
+Elastic effect of the spring, which is connected to the smaller cone –input shaft assembly.
+
+Newtonian laws of motion.
+
+Friction effect between the surfaces two cones.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+INPUT
+$
+
+Spring force applied to the input shaft-smaller cone assembly.
+
+Torque applied to the input shaft by the engine.
+
+Rotation of the smaller cone.
+
+Rotation of the larger cone into which the smaller cone is engaged.
+
+Rotation of the gear mounted on the larger cone.
+
+$
+
+ORGAN
+$
+
+Stiffness of the spring.
+
+Zero degree of freedom between the input shaft and the smaller cone.
+
+Friction surface between the two cones.
+
+Zero degree of freedom between the larger cone and the gear.
+
+Meshing of teeth between the gear that is mounted on the larger cone and the one that is mounted on the output shaft.
+$
+
+PARTS
+$
+
+The spring is connected to the input shaft-smaller cone assembly.
+
+The input shaft and the smaller cone form a revolute pair with the frame.
+
+The larger cone and the larger gear that is mounted on it form a revolute pair with the frame.
+
+The smaller gear and the output shaft form a revolute pair with the 
+
+
+
+$

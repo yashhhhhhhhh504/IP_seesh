@@ -1,0 +1,104 @@
+MACTION
+{
+A1 $ V < make > AV < X > N < one revolution minute > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N < rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > AV < X > N < weight > AJ < X > $
+PP2 $ V < rotate > AV < X > N < pulley > AJ < X > $
+PP3 $ V < rotate > AV < X > N < escape wheel > AJ < > $
+PP4 $ V < oscillate > AV < X > N < anchor > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Gravitational effect. $
+PE2 $ Friction effect. $
+PE3 $ Newtonian laws of motion.  $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < > AV < X > N < force > AJ < gravitational > $
+I2 $ V < > AV < X > N < force > AJ < tangential > $
+I3 $ V < rotate > AV < X > N < pulley > AJ < > $
+I4 $ V < oscillate > AV < X > N < pendulum > AJ < X > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ the weight is held at a suitable height from the ground level.    $
+O2 $ Presence of friction surface between the pulley and the chord   $
+O3 $ Presence of zero degree of freedom between the pulley and the escape wheel in the direction of motion.  $
+O4 $ Presence of zero degree of freedom between the anchor and the pendulum in the direction of motion. $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < weight > AJ < > $
+P2 $ V < X > AV < X > N < space > AJ < > $
+P3 $ V < X > AV < X > N < free-pair > AJ < > $
+P4 $ V < X > AV < X > N < pulleys > AJ < X > $
+P5 $ V < X > AV < X > N < chord > AJ < X >
+P6 $ V < X > AV < X > N < pair > AJ < wrapping >
+P7 $ V < X > AV < X > N < escape-wheel > AJ < X > $
+P8 $ V < X > AV < X > N < pair > AJ < fixed >
+
+P9 $ V < X > AV < X > N < frame > AJ < > $
+P10 $ V < X > AV < X > N < revolute-pair > AJ < X > $
+P11 $ V < X > AV < X > N < escape-wheel > AJ < X > $
+P12 $ V < X > AV < X > N < anchor > AJ < X > 
+
+$
+
+}
+
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 > 
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 > 
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P4 P7 P8 > 
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P9 P10 P12 > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

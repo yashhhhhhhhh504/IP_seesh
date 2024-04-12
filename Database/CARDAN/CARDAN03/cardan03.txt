@@ -1,0 +1,211 @@
+
+MACTION
+{
+A1 $ V < generate > N < motion > A < straight-line > $
+A2 $ V < generate > N < motion > A < reciprocating > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < revolve > N < gear > A < spur fixed > $
+PP2 $ V < revolve > N < gear > A < spur > $
+PP3 $ V < oscillate > N < link > A < fixed > $
+PP4 $ V < move > N < link > A < linearly > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < revolve > N < gear > A < spur > $
+I3 $ V < rotate > N < link > A < x > $
+I4 $ V < oscillate > N < link > A < X > $
+}
+
+MORGAN
+{
+O1 $ a link which maintains a fixed distance of between the center of the spur gear and the fixed gear $
+O2 $ there is contact between the spur gears 2 and 3 $
+O3 $ a hinged joint between the link 5 and link 4 $
+O4 $ a hinged joint between the links $
+}
+
+MPART
+{
+P1 $ spur gear $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ higher pair $
+P5 $ link $
+P6 $ sliding pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P3 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P2 P3 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P5 P3 P6 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P3 >
+< A2 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P2 P3 >
+< A2 IS1 OS1 CS1 PP4 PE1 I4 O4 P5 P3 P6 >
+
+}
+
+
+FUNCTION
+
+$
+Invented by Girolamo Cardano in the 16th century the Cardan gear is a way of converting rotary motion into straight line motion. This drive delivers a large stroke for the comparative size of its gears.
+$
+
+
+STRUCTURE
+
+$
+A simplified Cardan mechanism eliminates the need for the relatively expensive internal gear. Here, only spur gears are used, and the basic requirements must be met, that is, the 1:2 ratio and the proper direction of rotation. Also, the length of link 5 must be equal to the distance between the center of the input shaft and the center of the gear 3. The rotation requirement is met by introducing an idler gear of appropriate size. Spur gear (1) is fixed to the frame of the mechanism and does not rotate but meshes with the idler gear (2). The input shaft is coupled to the idler gear (2) with the help of the triangular link (4). Finally idler gear (2) meshes with gear 3, which is fixed to link 5. Link 5 is connected to the output link (6) by a revolute joint.
+
+$
+
+
+BEHAVIOUR
+
+$
+As the input shaft rotates, the idler gear (2) is compelled to move around the fixed gear (1) due to the triangular link (4). Since the idler gear (2) meshes with gear 3, gear 3 rotates around the idler gear (2) drawing the output link connected to it. Due to the direction of rotation, and more importantly, the gear ratio, the output link (6) traces a straight line and reciprocates. If the length of link 5 is 'D', then the stroke length will be equal to 4D, or four times the length of the output link.
+$
+
+
+PICTURE
+
+{
+ADB/CARDAN/CARDAN03/cardan03.jpg	$ Cardan Gear	$
+}
+
+
+CLIP
+
+{
+ADB/CARDAN/CARDAN03/cardan03.avi	$ Cardan Gear	$
+}
+
+ SUMMARY
+$
+This can be used to generate straight line motion. This can be interpreted as a change of state from rest to straight line motion. This can be described as follows:
+
+The spur gear 2 (part) revolves around the fixed gear (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a link which maintains a fixed distance of between the center of the spur gear and the fixed gear (organ).
+
+The spur gear 3 (part) also revolves around the fixed gear (physical phenomenon). This is due to the revolution of the spur gear 2 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that there is contact between the spur gears 2 and 3 (organ).
+
+The link 5 (part) oscillates with respect to the fixed gear (physical phenomenon). This is due to the rotation of the link 4 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a hinged joint between the link 5 and link 4 (organ).
+
+The link 6 (part) moves along a straight line (physical phenomenon). This is due to the oscillation of the link 5 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a hinged joint between the links (organ).
+
+$
+
+ACTION
+
+$ 
+ To generate straight line motion.
+$
+
+STATE
+
+$
+The output link is at rest.
+
+The output link moves along a straight line motion.
+
+$
+
+PHYPHENOMENON
+
+$
+The spur gear 2 revolves around the fixed gear.
+
+The spur gear 3 also revolves around the fixed gear.
+ 
+The link 5 oscillates with respect to the fixed gear.
+
+The link 6 moves along a straight line.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The revolution of the spur gear 2.
+
+The rotation of the link 4.
+
+The oscillation of the link 5.
+$
+
+
+ORGAN
+
+$
+Presence of a link which maintains a fixed distance of between the center of the spur gear and the fixed gear.
+
+Necessary that there is contact between the spur gears 2 and 3.
+
+Presence of a hinged joint between the link 5 and link 4.
+
+Presence of a hinged joint between the links.
+$
+
+
+
+PARTS
+$
+The spur gear 2 forms a revolute pair with the frame,
+
+The spur gear 3 forms a higher pair with the spur gear 2
+
+The link 4 forms a revolute pair with the frame.
+
+The link 6 forms a sliding pair with the frame.
+
+$
+
+
+
+
+
+ 

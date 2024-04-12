@@ -1,0 +1,97 @@
+SUMMARY
+$
+This is used to store waste material and also to cover it.
+$
+
+ACTION
+
+$ 
+ To open and close the lid of the dustbin.
+
+The increase the area the lid occupies.
+$
+
+STATE
+
+$
+The lid is occupying less area.
+
+The lid is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Press the pedal.
+
+Rotate the lid with respect to the bin.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Pressing force.
+
+torque
+$
+
+
+ORGAN
+
+$
+Presence of a pedal, which in turn is connected to the actuating mechanism.
+
+Presence of a hinged joint between the lid and the bin.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Pedal.
+
+Lid.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < change > N < area > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < expand > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the material of the cylinder $
+}
+
+MPART
+{
+P1 $ Expansion grill $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+}
+
+FUNCTION
+
+$
+This mechanism can be used to increase and decrease the space occupied by the cylinder. 
+$
+
+
+STRUCTURE
+
+$
+It consists of a cylinder, which is surrounded by a number of grills.
+$
+
+
+BEHAVIOUR
+
+$
+The expansion grills increase and decrease in size.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/COLLAPSABLE_GATE_1/01.JPG	$ Collapsable gate $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to vary the space occupied by the 
+Cylinder.
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+To change area.
+$
+
+STATE
+
+$
+It is occupying less area.
+
+It is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Expand the expansion grills and hence increase the area occupied by the cylinder.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+This is due to the force applied on it.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the material of the cylinder.
+
+$
+
+
+
+PARTS
+$
+Expansion grill.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

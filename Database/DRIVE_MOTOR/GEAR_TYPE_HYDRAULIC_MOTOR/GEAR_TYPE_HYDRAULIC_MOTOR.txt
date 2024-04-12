@@ -1,0 +1,220 @@
+MACTION
+
+{
+A1 $ V < convert > N < energy > A < X > $
+}
+
+MINPUTSTATE
+
+{
+IS1 $ V < rest > A < x > N < gear > $
+}
+
+MOUTPUTSTATE
+
+{
+OS1 $ V < rotate > A < x > N < gear > $
+} 
+
+MCHANGESTATE
+
+{
+CS1 $ from rest to motion $
+}
+
+MPHYPHENOMENON
+
+{
+PP1 $ V < flow > N < fluid > A < inside > $
+PP2 $ V < rotate > N < gear > A < X > $
+PP3 $ V < rotate > N < shaft > A < x > $
+PP4 $ V < flow > N < fluid > A < outside > $
+}
+
+MPHYEFFECT
+
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Newton’s second law of motion $
+PE3 $ Bernoulli’s law $
+PE4 $ Newton’s second law of motion $
+}
+
+MINPUT
+
+{
+I1 $ V < x > N < pressure-difference > A < x > $
+I2 $ V < apply > N < torque > A < x > $
+I3 $ V < apply > N < torque > A < x > $
+I4 $ V < x > N < pressure-difference > A < x > $
+
+
+}
+
+MORGAN
+
+{
+O1 $ Presence of flow path $
+O2 $ Torque is high enough to rotate the gears $
+O3 $ Presence of zero degree of freedom of rotation $
+O4 $ Presence of flow path $
+}
+
+MPART
+
+{
+P1 $ Fluid $
+P2 $ Gear $
+P3 $ Shaft $
+P4 $ Fluid $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+}
+FUNCTION
+
+$
+Gear type hydraulic motor is a device that converts fluid power energy to rotary motion and force.
+$
+
+
+STRUCTURE
+
+$
+Gear type hydraulic motor consists of a casing which houses two spur gears and contains one inlet and one outlet port. Two gears are of driven types and only one gear is connected to the output shaft. 
+$
+
+BEHAVIOUR
+
+$
+When the fluid under pressure enters the chamber A, it takes the path of least resistance and flows around the inside surface of the housing, forcing the gears to rotate. The flow continues through the outlet port to the return. This rotary motion of the gears is transmitted through the attached shaft to the work unit.
+$
+
+ATTRIBUTE
+$
+This is generally a fixed capacity imbalanced motor. The hydraulic imbalance in a gear motor is caused by gear teeth un meshing. Meaning all teeth subjected to system pressure are hydraulically balanced except for one side of one tooth on one gear. This is the point where the torque is developed. The larger the gear tooth or higher the pressure, more is the torque produced.
+•	Externals (head, casing, bracket) - Iron, ductile iron, steel, stainless steel. 
+•	Internals (rotor, idler) - Steel, stainless steel. 
+•	Bushing - Carbon, bronze, silicon carbide. 
+•	Shaft Seal - Packing, lip seal, component mechanical seal, magnetically-driven pump.
+
+Motors are broken into two segments: high-speed, low-torque (HSLT) motors and low-speed, high-torque (LSHT) motors. Generally, a LSHT motor’s speed can range between 0.1 and 1,000 rpm depending on the motor and control system, while HSLT motors range between 1,000 to 5,000 rpm. 
+$
+
+
+
+PICTURE
+
+{
+ADB/DRIVE_MOTOR/GEAR_TYPE_HYDRAULIC_MOTOR/01.GIF              $ 01.GEAR TYPE HYDRAULIC MOTOR $
+ADB/DRIVE_MOTOR/GEAR_TYPE_HYDRAULIC_MOTOR/02.GIF              $ 02.GEAR TYPE HYDRAULIC MOTOR $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+
+$
+Gear type hydraulic motor is used to convert fluid power energy to rotary motion. This can be interpreted as change of state of gears from absence of rotation to presence of rotation and is explained in steps as follows:
+
+The pressurized fluid (Part) flows into the motor (Physical Phenomenon) and takes the path of least resistance and flows around the inside surface of the motor. This is due to the pressure difference (Input) which activates Bernoulli’s law (Physical Effect) and it is necessary that there is a flow path (Organ).
+
+The gears (Part) inside the motor rotate (Physical Phenomenon). This is due to the torque applied by the fluid (Input) which activates Newton’s second law of motion (Physical Effect) and it is necessary that the torque is high enough to rotate the gears (Organ).
+
+The output shaft (Part) rotates. This is due to the torque applied by the gear (Input) which activates Newton’s second law of motion (Physical Effect) and is necessary that there is zero degree of freedom of rotation between the gear and the shaft (Organ).
+
+The fluid (Part) flows out of the motor to the return line (Physical Phenomenon). This is due to the pressure difference (Input) which activates Bernoulli’s law (Physical Effect) and it is necessary that there is a flow path (Organ).
+
+Thus the liquid power energy is converted into rotary motion.
+$
+
+ACTION
+
+$ 
+Converts fluid power to rotary motion
+$
+
+STATE
+
+$
+Absence of gear rotation to presence of gear rotation
+$
+
+PHYPHENOMENON
+
+$
+The pressurized fluid flows into the motor
+
+The gears inside the motor rotate
+
+The output shaft rotates
+
+The fluid flows out of the motor
+$
+
+PHYEFFECT
+
+$
+Bernoulli’s law
+
+Newton’s second law of motion
+
+Newton’s second law of motion
+
+Bernoulli’s law
+$
+
+INPUT
+
+$
+Pressure difference
+
+Torque applied by the fluid
+
+Torque applied by the gear
+
+Pressure difference
+$
+
+ORGAN
+
+$
+There is a flow path
+
+Torque is high enough to rotate the gears
+
+There is zero degree of freedom of rotation between the gear and the shaft
+
+There is a flow path
+$
+
+PARTS
+
+$
+Fluid
+
+Gears
+
+Shaft
+
+Fluid
+$
+
+REFERENCES 
+
+$
+http://www.tpub.com/content/engine/14105/css/14105_160.htm
+$
+
+

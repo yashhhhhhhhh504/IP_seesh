@@ -1,0 +1,92 @@
+SUMMARY
+$
+To move on uneven surfaces.
+$
+
+ACTION
+
+$ 
+ To provide balance even in uneven surfaces.
+$
+
+STATE
+
+$
+The crawler is at rest.
+
+The crawler is moving.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the wheel.
+
+Move the strap.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Torque.
+
+Rotation the wheels.
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the wheel and the input shaft.
+
+Presence of contact between the wheel and the strap.
+
+
+
+$
+
+
+
+PARTS
+$
+Wheel.
+
+Metal strap.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

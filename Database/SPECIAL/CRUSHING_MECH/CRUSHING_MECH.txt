@@ -1,0 +1,225 @@
+MACTION
+{
+A1 $ V < crush amplify > N < rock force > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < sliding > N < rest block > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion block > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion of the sliding block $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < rotate > N < link > A < X > $
+PP3 $ V < rotate > N < link > A < x > $
+PP4 $ V < slide > N < block > A < x > $
+PP5 $ V < crush > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Crushing effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < rotate > N < link > A < x > $
+I4 $ V < rotate > N < link > A < X > $
+I5 $ V < move > N < part > A < sliding > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the crank $
+O2 $ one degree of freedom between the crank and the link $
+O3 $ one degree of freedom between the links $
+O4 $ one degree of freedom between the link 3 and the sliding block $
+O5 $ the force applied by the sliding block is greater than the crushing strength of the rock $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ link $
+P5 $ rock $
+P6 $ fixed pair $
+P7 $ sliding block $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P4 P1 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P4 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P2 P4 P7 >
+< A1 IS1 OS1 CS1 PP5 PE2 I5 O5 P3 P5 P6 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Combination of solid, usually metallic links (bars), connected by pin (hinge) joints that are so arranged that a small force applied at one point can create a much larger force at another point
+$
+
+
+STRUCTURE
+
+$
+In the Figure, showing a toggle mechanism at work in a rock-crushing machine, the numbered links are pin-connected at A, B, C, D, and E
+$
+BEHAVIOUR
+
+$
+Rotation of link 1 about the fixed pivot A causes the block to slide back and forth. The relation between the force in link 2 acting at C and the force W exerted on the block at D, and thus on the rock, depends on the angle symbolized by the Greek letter theta, (; the smaller the angle, the greater is W in terms of F. For ( equal to one degree, W is nearly 29 times F. Toggle mechanisms are used to obtain large force amplification in such applications as sheet metal punching and forming machines.  
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/CRUSHING_MECH/01.GIF		$ 01.CRUSHING MECH $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to amplify force and thus to crush stones. This can be described as follows:
+
+The crank (part) rotates about the pivoted point (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the input shaft and the crank (organ).
+
+The link 2 (part) rotates with respect to the crank (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the crank and the link 2 (organ).
+
+The link 3 (part) rotates with respect to the link 2 (physical phenomenon). This is due to the rotation of the link 2 (input) which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the link 2 and the link 3 (organ).
+
+The sliding block (part) slides along the horizontal plane (physical phenomenon). This is due to the rotation of the link 3 (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the link 3 and the sliding block (organ).
+
+The rock (part) is crushed (physical phenomenon). This is due to the movement of the sliding block (input), which activates the crushing effect (physical effect) and is necessary that the force applied by the sliding block is greater than the crushing strength of the rock (organ).
+
+
+ 
+
+
+$
+
+ACTION
+
+$ 
+ To crush rocks by amplifying the force.
+$
+
+STATE
+
+$
+The sliding block is at rest.
+
+The sliding block is sliding along the horizontal plane.
+
+$
+
+PHYPHENOMENON
+
+$
+The crank rotates about the pivoted point.
+
+The link 2 rotates with respect to the crank.
+
+The link 3 rotates with respect to the link 2.
+
+The sliding block slides along the horizontal plane.
+
+The rock is crushed.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Crushing effect.
+
+
+
+$
+
+
+INPUT
+
+$
+Torque applied on it.
+
+The rotation of the crank.
+
+The rotation of the link 2.
+
+The rotation of the link 3.
+
+Movement of the sliding block.
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the crank.
+
+Presence of one degree of freedom between the crank and the link 2.
+
+Presence of one degree of freedom between the link 2 and the link 3.
+
+Presence of one degree of freedom between the link 3 and the sliding block.
+
+Necessary that the force applied by the sliding block is greater than the crushing strength of the rock.
+$
+
+
+
+PARTS
+$
+Crank forms a revolute pair with the frame.
+
+Link 2 forms a revolute pair with the link crank.
+
+Link 3 forms a revolute pair with the link 2.
+
+Sliding block forms a revolute pair with the link 3.
+
+Rock forms a fixed pair with the frame.
+
+
+
+
+
+
+$
+
+
+

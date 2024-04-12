@@ -1,0 +1,80 @@
+MACTION
+{
+A1 $ V < use > N < chair > A < foldable > $
+A2 $ V < deploy > N < chair > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < chair > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unfolding > $
+}
+
+MORGAN
+{
+O1 $ Presence of hinged joints between the links $
+}
+
+MPART
+{
+P1 $ Foldable chair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+SUMMARY
+$
+This mechanism can be used to deploy. This mechanism is used in shutters to provide shade. This can be described as follows:
+
+
+The slider (part) slides on the guide (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the slider and the guide (organ).
+
+The output links (part) moves away from the guide and thus increases the area occupied (physical phenomenon). This is due to the movement of the slider (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a hinged joint between the links and also between the links and the guide (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+To provide shade.
+$
+
+STATE
+
+$
+The shutter is occupying less space.
+
+The shutter is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The slider slides on the guide.
+
+The output links moves away from the guide and thus increases the area occupied.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Movement of the slider.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the slider and the guide.
+
+Presence of a hinged joint between the links and also between the links and the guide.
+
+
+$
+
+
+
+PARTS
+$
+Slider.
+
+Output links.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

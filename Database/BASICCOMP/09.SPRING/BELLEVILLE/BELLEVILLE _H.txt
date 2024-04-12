@@ -1,0 +1,74 @@
+SUMMARY
+$
+This can be used to absorb recoverable energy. This can be interpreted as a change of state from rest to compression. This can be described as follows:
+
+The spring (part) deforms (physical phenomenon). This is due to the load applied (input), which activates the hooks law (physical effect) and requires the presence of stiffness in the spring (organ).
+
+The spring (part) regains its original shape and thus does some work (physical phenomenon). This is due to the removal of the load (input), which activates hooks law (physical effect) and is necessary that the spring is loaded within the elastic limit (organ).
+
+$
+
+ACTION
+
+$ 
+ To absorb recoverable energy.
+$
+
+STATE
+
+$
+The spring is in its original form.
+
+The spring is deformed.
+
+The spring is in its original form.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring deforms.
+
+The spring regains its original shape and thus does some work.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+Load applied.
+
+The removal of the load.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of stiffness in the spring.
+
+Necessary that the spring is loaded within the elastic limit.
+
+
+$
+
+
+
+PARTS
+$
+The spring forms a flexible pair with the frame.
+
+$
+

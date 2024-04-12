@@ -1,0 +1,91 @@
+SUMMARY
+$
+This mechanism can be used to hold and release objects. This mechanism can be described as follows:
+
+The movable jaw (part) rotates about the hinge thus moving away from the fixed jaw (physical phenomenon). This is due to the outward movement of the piston of the hydraulic actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the cylinder of the hydraulic actuator to be fixed (organ). 
+
+The movable jaw (part) rotates about the hinge thus moving towards the fixed jaw (physical phenomenon). This is due to the inward movement of the piston of the hydraulic actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the cylinder of the hydraulic actuator to be fixed (organ).
+
+
+
+$
+
+ACTION
+$
+ 
+ Using this mechanism objects can be grasped and released as and when required.
+
+$
+STATE
+$
+
+Absence of force at the piston in the cylinder of the actuator.
+
+Presence of force at the piston in the cylinder of the actuator
+
+$
+PHYPHENOMENON
+$
+
+The rotation of the movable jaw away from the fixed jaw.
+
+The rotation of the movable jaw towards the fixed jaw
+ 
+
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+
+$
+
+INPUT
+$
+
+The outward movement of the piston of the hydraulic actuator.
+
+The inward movement of the piston of the hydraulic actuator.
+
+
+
+$
+
+ORGAN
+$
+
+Requirement of the cylinder of the hydraulic actuator to be fixed.
+
+
+
+
+
+
+
+
+$
+
+PARTS
+$
+
+The piston forms a sliding pair with the cylinder of the actuator.
+
+The movable jaw forms revolute pair with the base plate.
+
+
+
+
+
+
+
+$
+
+

@@ -1,0 +1,174 @@
+MACTION
+{
+A1 $ V < provide close > N < shelter > A < X > $
+A2 $ V < deploy > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < spread > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the material of the tent is flexible enough $
+
+}
+
+MPART
+{
+P1 $ Tent material $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This is usually used to provide shelter. The advantage with this is that it can be folded as it occupies very less space when folded it can easily carried to any place.
+$
+
+
+STRUCTURE
+
+$
+It consists of a flexible material. It also consists of rods to support the tent and also provide the required height. The material usually used is canvas and at each end of the material loops provided that can be bolted on to the ground.
+$
+
+
+BEHAVIOUR
+
+$
+The tent as in the folded state occupies less space and occupies a lot space when it is spread to provide shelter.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/TENT/01.JPG	$ 01.Tent $
+ADB/DEPLOY/TENT/02.JPG	$ 02.Tent $
+
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This is used to provide shelter. 
+$
+
+ACTION
+
+$ 
+ To provide shelter.
+$
+
+STATE
+
+$
+Occupying less area.
+
+Occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Spread out the canvas material.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+$
+
+
+ORGAN
+
+$
+Necessary that the material of the tent is flexible enough.
+
+
+
+$
+
+
+
+PARTS
+$
+Tent material.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

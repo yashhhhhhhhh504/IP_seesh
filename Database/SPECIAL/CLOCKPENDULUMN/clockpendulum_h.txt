@@ -1,0 +1,106 @@
+SUMMARY
+$
+The pendulum is employed in a clock in order to enable the second hand make exactly one revolution per minute. This can be interpreted as a change of state from rest to rotation. This mechanism can be described as follows:
+
+The weight (part) moves downward (physical phenomenon). This is due to gravitational force exerted on it (input), which activates the gravity effect (physical effect) and requires that the weight be held at a suitable height from the ground level (organ).
+
+
+The pulley (part) rotates (physical phenomenon). This is due to the tangential force exerted by the unwinding cord (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the chord (organ).
+
+
+The escape wheel (part) rotates (physical phenomenon). This is due to the rotation of the pulley (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the pulley and the escape wheel in the direction of motion (organ).
+
+The anchor (part) oscillates about its center (physical phenomenon). This is due to the oscillation of the pendulum (input), which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the anchor and the pendulum in the direction of motion (organ). 
+
+
+
+$
+
+ACTION
+{
+$ 
+ To enable the second hand make exactly one revolution per minute.
+$
+}
+STATE
+{
+$
+Rest
+$
+Small angular rotation.
+$
+}
+PHYPHENOMENON
+{
+$
+The weight moves downward.
+$
+The pulley rotates.
+$ 
+The escape wheel rotates.
+$
+The anchor oscillates about its center.
+$
+}
+
+PHYEFFECT
+{
+$
+Gravitational effect.
+$
+Friction effect.
+$
+Newtonian laws of motion.
+$
+}
+
+INPUT
+{
+$
+Gravitational force exerted on it.
+$
+Tangential force exerted by the unwinding cord.
+$
+The rotation of the pulley.
+$
+The oscillation of the pendulum.
+$
+
+$
+}
+
+ORGAN
+{
+$
+The weight is held at a suitable height from the ground level.
+$
+Presence of friction surface between the pulley and the chord.
+$
+Presence of zero degree of freedom between the pulley and the escape wheel in the direction of motion.
+$
+Presence of zero degree of freedom between the anchor and the pendulum in the direction of motion.
+$
+
+}
+
+STUCTURE1
+{
+$
+The weight forms a free pair with the space.
+$
+The pulley forms a revolute pair with the frame.
+$
+The escape wheel forms a revolute pair with the frame.
+$
+The anchor forms a revolute pair with the frame.
+$
+
+$
+}
+
+
+
+
+
+
+

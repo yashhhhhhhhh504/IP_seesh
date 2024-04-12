@@ -1,0 +1,191 @@
+MACTION
+{
+A1 $ V < transmit > A < intermittent > N < motion > $
+
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < driver > $
+PP2 $ V < make > A < X > N < contact > $
+PP3 $ V < rotate > A < intermittently > N < driven > $
+PP4 $ V < lock > A < X > N < driven > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < driver > $
+I3 $ V < apply > A < X > N < force > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ zero degree of freedom in the direction of motion $
+O3 $ contact : pin mutilated-tooth $
+O4 $ contact : cutout full-tooth $
+O5 $ contact : driven full-tooth $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ driver $
+P3 $ revolute pair $
+P4 $ driven $
+P5 $ gear pair $
+P6 $ pin $
+P7 $ cutout $
+P8 $ mutilated-tooth $
+P9 $ full-tooth $
+
+}
+LINK
+{
+< A1  IS1 OS1 CS1 PP1  PE1  I1  O1  P1  P2  P3 >
+< A1  IS1 OS1 CS1 PP2  PE2  I2  O2  P2  P4  P5 >
+< A1  IS1 OS1 CS1 PP3  PE2  I3  O3  P6  P8  P5 >
+< A1  IS1 OS1 CS1 PP3  PE2  I3  O4  P7  P9  P5 >
+< A1  IS1 OS1 CS1 PP4  PE3  I4  O5  P4  P9  >
+
+
+}
+
+
+FUNCTION
+
+$
+This mechanism is called "mutilated tooth" intermittent drive. It transmits intermittent motion between two shafts that are parallel to each other. 
+$
+
+
+STRUCTURE
+
+$
+Gear 'a' has alternately arranged full and half-width (mutilated) teeth. Drive 'b' is a circular disk of width 'w' with a cutout 'd' on its circumference. It carries a pin 'c' close to the cutout. The pin 'c' drives the full teeth, while the cutout 'd' drives the mutilated teeth. The driven gear, 'a', of width '2w' has an even number of standard spur gear teeth.
+$
+
+
+BEHAVIOUR
+
+$
+During the dwell period, two full-width teeth are in contact with the circumference of the driving disk, thus locking it. The mutilated tooth between them is behind the driver. At the end of the dwell period, pin 'c' contacts the mutilated tooth and turns the driven gear one circular pitch. Then, the full-width tooth engages the cutout 'd', and the driven gear moves one more pitch. Then the dwell period starts again and the cycle is repeated.
+$
+
+
+PICTURE
+{
+ADB/IIM/MUTILTOOTH/mutiltooth.JPG   	$ Mutilated Tooth Drive $
+}
+
+
+CLIP
+
+{
+ADB/IIM/MUTILTOOTH/mutiltooth.avi   	$ Mutilated Tooth Drive $
+}
+SUMMARY
+$
+This mechanism can be used to generate intermittent motion. This can be interpreted as a change of state from rest to small angular motion. This can be 
+described as follows:
+
+The driver (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver (organ).
+
+The driven (part) rotates through a small angle (physical phenomenon). This is due to the tangential force applied by the pin mounted on the driver (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the pin and the half tooth on the driven (organ).
+
+The driven (part) rotates through a small angle (physical phenomenon). This is also due to the tangential force applied by the cut on the driver (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the size of the cut is appropriate (organ).
+$
+
+ACTION
+
+$ 
+ To generate intermittent motion.
+$
+
+STATE
+
+$
+From rest to small angular rotation.
+
+$
+
+PHYPHENOMENON
+
+$
+The driven rotates through a small angle.
+
+The driven rotates through a small angle.
+ 
+The driven rotates through a small angle.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Torque applied by the input shaft.
+
+The tangential force applied by the pin mounted on the driver.
+
+The tangential force applied by the cut on the driver.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the driver.
+
+Presence of contact between the pin and the half tooth on the driven.
+
+Necessary that the size of the cut is appropriate.
+
+
+$
+
+
+
+PARTS
+$
+The driver forms a revolute pair with the frame.
+
+The driven forms a revolute pair with the frame
+
+$
+
+
+

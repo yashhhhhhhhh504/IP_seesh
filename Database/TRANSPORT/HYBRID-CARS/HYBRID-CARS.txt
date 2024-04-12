@@ -1,0 +1,171 @@
+MACTION
+{
+A1 $ V < reduce > N < weight > A < dead > $
+A2 $ V < propel > N < car > A < x > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < propel > A < x > N < car > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to propelling the car $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < drive > N < transmission > A < X > $
+PP2 $ V < provide > N < power > A < extra > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < power > A < output > $
+I2 $ V < x > N < energy > A < electrical > $
+}
+
+MORGAN
+{
+O1 $ differential that drives the car is connected to the engine $
+O2 $ connection between the electric motor and the transmission $
+}
+
+MPART
+{
+P1 $ gasoline engine $
+P2 $ fixed pair $
+P3 $ car frame $
+P4 $ electric motor $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Hybrid vehicles are all around us. Most of the locomotives we see pulling trains are diesel electric hybrids. A hybrid cars tries to combine the best of both the worlds. Gasoline engines have a range of speeds where they operate best and another range where they are inefficient. 
+$
+
+
+STRUCTURE
+
+$
+A hybrid car consists of a gasoline engine, generator and a battery. It also has a fuel tank to store the fuel.
+$
+BEHAVIOUR
+
+$
+In series hybrid cars, the gasoline engine turns a generator, and the generator can either charge the batteries or power an electric motor that drives the transmission. Another type of hybrid, parallel hybrid car, has a gasoline engine hooked to the transmission as usual. But it also has a set of batteries that supply power to an electric motor that is also connected to the transmission.
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/HYBRID-CARS/01.JPG	$ Hybrid Cars $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+These types of cars can be used to reduce the dead weight that usually is the cars in normal cars. This can be interpreted as a change of state from rest to movement. This can be described as follows:
+
+The gasoline engine (part) drives the transmission (physical phenomenon). This is due to the power output of the gasoline engine (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the differential that drives the car is connected to the engine (organ).
+
+The electric motor (part) provides the extra power that is needed to drive the transmission during up hills (physical phenomenon). This is due to the electric energy provided by the battery (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of connection between the electric motor and the transmission (organ).
+
+ACTION
+
+$ 
+ To reduce the dead weight.
+
+To propel the car.
+$
+
+STATE
+
+$
+The transmission is at rest.
+
+The transmission propels the car.
+
+$
+
+PHYPHENOMENON
+
+$
+The gasoline engine drives the transmission.
+
+The electric motor provides the extra power that is needed to drive the transmission during up hills.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+The power output of the gasoline engine.
+
+The electric energy provided by the battery.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the differential that drives the car is connected to the engine.
+
+Presence of connection between the electric motor and the transmission.
+
+
+$
+
+
+
+PARTS
+$
+The gasoline engine forms a fixed pair with the frame of the car.
+
+The electric motor forms a fixed pair with the frame.
+
+
+
+$
+

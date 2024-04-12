@@ -1,0 +1,105 @@
+SUMMARY
+$
+This mechanism can be used for stopping of machines when there are certain unsealed packages. This can be described as follows:
+
+The pawl finger (part) oscillates (physical phenomenon). This is due to the oscillation of the lever which in turn is due to the rotation of the crank (input) to which the lever is attached through a spring, which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a counter weight (organ).
+
+
+
+When the package is sealed, the ratchet (part) mounted on the drive shaft rotates (Physical phenomenon). This is due to the movement of the pawl finger (input) which activates the law ‘no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the ratchet and the pawl (organ).
+
+
+When the package is unsealed, the ratchet along with the out put shaft on which it is mounted (part) stops rotating (physical phenomenon). This is due to the lack of force on the ratchet, which in turn is due to the motion of the pawl away from the ratchet and towards the tube (input) which activates the friction effect (physical effect) and requires that the force delivered by the pawl previously is just enough to cause only one revolution and it also requires the presence of frictional losses (organ).
+
+
+
+
+
+ 
+$
+
+ACTION
+{
+$ 
+ Using this mechanism the machine can be stopped to seal the unsealed packages.
+$
+}
+STATE
+{
+$
+The presence of torque at the input shaft.
+$
+The rotation of the ratchet.
+$
+The resting of the ratchet.
+
+$
+}
+PHYPHENOMENON
+{
+$
+The pawl finger oscillates.
+$
+When the package is sealed, the ratchet mounted on the drive shaft rotates.
+$ 
+When the package is unsealed, the ratchet along with the out put shaft on which it is mounted stops rotating.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+No two bodies can occupy the same space at the same time.
+$
+Friction effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+ Oscillation of the lever, which in turn is due to the rotation of the crank.
+$
+The movement of the pawl finger.
+$
+Lack of force on the ratchet, which in turn is due to the motion of the pawl away from the ratchet and towards the tube.
+$
+}
+
+ORGAN
+{
+$
+Presence of a counter weight.
+$
+ Presence of contact between the ratchet and the pawl.
+$
+Requires that the force delivered by the pawl previously is just enough to cause only one revolution and it also requires the presence of frictional losses.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The crank along with the crankshaft forms a revolute pair.
+$
+The lever forms a revolute pair with the spring.
+$
+The pawl finger forms a ratchet pawl pair with the ratchet.
+$
+
+The ratchet along with the shaft forms a revolute pair with the frame. 
+
+$
+
+$
+}
+
+
+

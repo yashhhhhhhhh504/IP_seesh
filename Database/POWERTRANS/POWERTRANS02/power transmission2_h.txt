@@ -1,0 +1,103 @@
+SUMMARY
+$
+This device can be used to transmit power from one shaft to another by using simple pulleys and a belt or rope, and is called a crossed belt drive. This can be described as follows:
+
+The driver pulley (part) rotates (physical phenomenon). This is due to the rotation of the input shaft (input) which 
+activates the Newtonian laws of motion (physical effect) and requires the presence of zero degrees of freedom between the pulley and the input shaft (organ).
+
+The rope or the belt wrapped around the pulley (part) moves in the linear direction (physical phenomenon). This is due to the rotation of the pulley (input), which activates the friction effect (physical effect) and requires the presence of friction between the pulley and the belt and the rope (organ).
+
+
+The driven pulley (part) rotates in the opposite direction as that of the driven pulley (physical phenomenon). This is due to the movement of the belt (input), which activates the friction effect (physical effect) and requires the presence of tension in the belt (organ).
+
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism power and motion can be transmitted from one shaft to the other shaft.
+$
+}
+STATE
+{
+$
+Absence of torque at the input shaft.
+$
+Presence of torque at the input shaft.
+$
+}
+PHYPHENOMENON
+{
+$
+The driver pulley rotates.
+$
+The rope or the belt wrapped around the pulley moves in the linear direction.
+$ 
+The driven pulley rotates in the opposite direction as that of the driver pulley.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+The driver pulley rotates.
+$
+The movement of the belt.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degrees of freedom between the pulley and the input shaft.
+$
+Presence of friction between the pulley and the belt and the rope.
+$
+Presence of tension in the belt.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The driver pulley along with the input shaft forms a revolute pair with the frame.
+$
+The belt or the rope forms a sliding pair with the pulley surfaces.
+$
+The driven pulley along with the output shaft forms revolute pair with the frame.
+$
+
+$
+
+$
+}
+
+
+
+
+
+
+
+
+
+

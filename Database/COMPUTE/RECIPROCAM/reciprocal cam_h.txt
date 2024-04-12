@@ -1,0 +1,80 @@
+SUMMARY
+$
+This mechanism can be used to calculate the reciprocal of a number. This can be interpreted as a change of state from rest to reciprocating motion. This can be described as follows:
+
+The slotted cam (part) rotates (physical phenomenon). This is due to the rotation of the input gear (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of meshing between the input gear and the slotted cam (organ0.
+
+The follower pin (part) reciprocates as well as slides in the slot of the cam (physical phenomenon). This is due to the rotation of cam (input) which activates the law “no two bodies can same occupy the same space at the same time” (physical effect) and requires the presence of zero degree of freedom between the slot and the follower pin (organ).
+
+The distance between the center of the cam and the center of the pin gives the reciprocal of the number to which the cam is pointing.
+
+
+
+
+$
+
+ACTION
+
+$ 
+ To calculate the reciprocal of a number.
+$
+
+STATE
+
+$
+The follower pin is at rest.
+
+The follower pin is reciprocating.
+
+$
+
+PHYPHENOMENON
+
+$
+The slotted cam rotates.
+
+The follower pin reciprocates as well as slides in the slot of the cam.
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The rotation of the input gear.
+
+The rotation of cam.
+$
+
+
+ORGAN
+
+$
+
+Presence of meshing between the input gear and the slotted cam.
+
+Presence of zero degree of freedom between the slot and the follower pin.
+
+
+
+$
+
+
+
+PARTS
+$
+The cam forms a revolute pair with the frame.
+
+The follower pin forms a sliding pair with respect to the cam.
+
+
+$
+

@@ -1,0 +1,209 @@
+MACTION
+{
+A1 $ V < generate > A < oscillating > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < rotary > N  < motion  > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < oscillating > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rotary motion to oscillating motion $
+
+}
+
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < input-crank > $
+PP2 $ V < oscillate > A < x > N < rack > $
+PP3 $ V < oscillate > A < x > N < link4 > $
+PP4 $ V < rotate > A < x > N < gear3 > $
+PP5 $ V < oscillate > A < x > N < link5 > $
+PP6 $ V < oscillate > A < x > N < link6 > $
+PP7 $ V < reciprocate > A < x > N < piston > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < input-gear > $
+I3 $ V < rotate > A < x >  N < gear2 > $
+I4 $ V < oscillate > A < x >  N < gear3 > $
+I5 $ V < rotate > A < x > N < gear3 > $
+I6 $ V < oscillate > A < x >  N < link6 > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ zero degree of freedom $
+O3 $ eccentricity of link4 on gear2 $
+O4 $ eccentricity of link4 on gear2 $
+O5 $ eccentricity of link6 on gear3 $
+}
+
+MPART
+{
+P1 $ input-crank $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ rack $
+P5 $ support $
+P6 $ gear pair $
+P7 $ gear-segment $
+P8 $ prismatic pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P1  P4  P5 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P7  P4  P3 >
+< A1 IS1  OS1  CS1  PP4  PE1  I3  O1  P4  P6  P5 >
+< A1 IS1  OS1  CS1  PP5  PE2  I3  O4  P8  P2  P3 >
+< A1 IS1  OS1  CS1  PP5  PE2  I3  O4  P8  P4  P3 >
+< A1 IS1  OS1  CS1  PP6  PE2  I4  O5  P6  P9  P3 >
+< A1 IS1  OS1  CS1  PP6  PE2  I5  O5  P6  P9  P3 >
+< A1 IS1  OS1  CS1  PP7  PE2  I6  O6  P9  P10  P3  >
+< A1 IS1  OS1  CS1  PP7  PE2  I6  O6  P10  P2  P11 >
+
+
+}
+
+
+FUNCTION
+
+$
+This mechanism is called a Rack and gear sector and it converts rotary motion to oscillating motion. 
+$
+
+
+STRUCTURE
+
+$
+The mechanism consists of a crank, rack, rack support, and an output link with an eccentric gear segment. The crank is connected to the link which accommodates the rack. This rack is connected to the eccentric gear segment of the output shaft.
+$
+
+
+BEHAVIOUR
+
+$
+The rotary motion of the input shaft is translated into an oscillating motion of the output gear segment. The rack support and gear sector are pinned at C but the gear itself oscillates around B.
+$
+
+
+PICTURE
+
+{
+ADB/ROTREC/04.RACKGEAR/rackgear.JPG   $ Rack & Gear Sector $
+}
+
+
+CLIP
+
+{
+ADB/ROTREC/04.RACKGEAR/rackgear.avi   $ Rack & Gear Sector $
+}
+SUMMARY
+$
+This mechanism is called the rack and gear sector and is used to convert the rotary motion of the crank into oscillating motion of the gear segment. This mechanism can be described as follows:
+
+The rack (part) oscillates (physical phenomenon). This is due to the rotation of the crank (input), which in turn is mounted on the input shaft. This activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the rack and the crank in the direction of motion (organ).
+
+The rack support (part) slides along the rack and also oscillates (physical phenomenon). The other end of the rack support is mounted on the output shaft.  This is due to the oscillation of the rack (input) and requires the presence of sliding contact between the rack and rack support (organ).
+
+The eccentric gear segment (part) that is mounted on the output shaft oscillates (physical phenomenon). This is due to the oscillation of the rack (input) and which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of meshing between the gear sector and the rack and also the presence of zero degree of freedom between the gear segment and the output shaft (organ).
+  
+$
+
+
+ACTION
+$
+ 
+ Using this mechanism rotary motion can be converted into oscillating motion.
+
+$
+STATE
+$
+
+Absence of torque at the input shaft.
+
+Presence of torque at the input shaft.
+
+$
+PHYPHENOMENON
+$
+
+The crank rotates continuously.
+
+The rack oscillates continuously.
+ 
+The rack support slides along the rack and also oscillates. 
+
+The gear segment being mounted on the output shaft oscillates. 
+
+$
+
+PHYEFFECT
+$
+
+The Newtonian laws of motion.
+
+No two bodies can occupy the e same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the crank.
+
+Oscillation of the rack.
+
+
+
+$
+
+ORGAN
+$
+
+One degree of freedom between the crank and the rack.
+
+Sliding contact between the rack and the rack support.
+
+Meshing of the gear segment with the rack.
+
+
+
+
+$
+PARTS
+$
+
+The crank forms a revolute pair with the frame.
+
+The rack support forms a sliding pair with the rack.
+
+The rack also forms gear pair with the gear segment.
+
+The gear segment forms a revolute pair with the pair. 
+
+
+
+$
+

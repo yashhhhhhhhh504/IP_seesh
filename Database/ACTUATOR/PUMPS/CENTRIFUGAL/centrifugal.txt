@@ -1,0 +1,218 @@
+MACTION
+{
+A1 $ V < pump > N < water > A < x > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < water level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < water level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from low level to high level $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < suck >  N < water > A < X > $
+PP2 $ V < rotate >  N < impeller > A < X > $
+PP3 $ V < push >  N < water > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < create >  N < vacuum > A < partial > $
+I2 $ V < rotate >  N < shaft > A < input > $
+I3 $ V < rotate >  N < impeller > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ impeller to rotate at a high speed $
+O2 $ zero degree of freedom between the input shaft and the impeller $
+O3 $ impeller be offset in the volute $
+
+}
+
+MPART
+{
+P1 $ water $
+P2 $ suction-pipe $
+P3 $ sliding pair $
+P4 $ impeller $
+P5 $ casing $
+P6 $ revolute-pair $
+P7 $ vanes $
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P1 P3 P7 >
+}
+
+
+
+FUNCTION
+
+$
+To displace water from a lower level to a higher level.
+$
+
+
+STRUCTURE
+
+$
+The two main components of a centrifugal pump are the impeller and the volute.
+The impeller consists of a series of curved vanes so shaped that the flow within the pump is as smooth as possible. The greater the number of vanes on the impeller, the greater is the control over the direction of motion of liquid and hence smaller are the losses due to turbulence and circulation between the vanes.
+Volute centrifugal pumps are robust and relatively inexpensive, quiet, and dependable, and their performance is relatively unaffected by corrosion and erosion. They are compact, simple in construction, and do not require inlet and outlet check valves.
+$
+
+
+BEHAVIOUR
+
+$
+In Volute-type pumps, the impeller discharges into a progrissively expanding spiral casing, proportioned to gradually reduce liquid velocity. Fluid enters the pump near the axis of an impeller rotating at high speed. The fluid is thrown radially outward into the pump casing. A partial vacuum is created that continuously draws more fluid into the pump. The impeller produces liquid velocity and the volute forces the liquid to discharge from the pump converting velocity to pressure. This is accomplished by offsetting the impeller in the volute and by maintaining a close clearance between the impeller and the volute at the cut-water. A centrifugal pump impeller slings the liquid out of the volute. It does not cup the liquid.
+Volute centrifugal pumps can pump liquids containing solid particles, but, when pumping liquids containing more than a small amount of vapour, their suction is broken by cavitation. Volute centrifugal pumps operate best when pumping relatively nonviscous liquids, and their capacity is greatly reduced when used to pump viscous liquids.
+A volute is a curved funnel increasing in area to the discharge port. It is often used with impeller pumps. As the area of the cross-section increases, the volute reduces the speed of the liquid and increases the pressure of the liquid. 
+One of the main purposes of a volute casing is to help balance the hydraulic pressure on the shaft of the pump. However, this occurs best at the manufacturer's recommended capacity. Running volute-style pumps at a lower capacity than the manufacturer recommends can put lateral stress on the shaft of the pump, increasing wear-and-tear on the seals and bearings, and on the shaft itself. 
+This cutaway of a 'high-end' magnetic drive pump shows the volute wrapping around the impeller at the top and bottom. The ring to the left of the upper part of the volute is for lifting the pump and is located at the balance point. 
+
+
+
+Stationary guide vanes surround the runner in a diffuser-type pump. After the fluid has left the impeller, it is passed through the ring of fixed vanes that diffuse the liquid, providing a more controlled flow and a more efficient conversion of velocity head into pressure head. 
+
+Liquid in a turbine pump is picked up by the impeller's vanes and whirled at a high velocity for nearly one revolution in an annular channel in which the impeller turns. Energy is added to the liquid in a number of impulses, so it enters the discharge at a high velocity.
+A regenerative pump is also called a turbine, or peripheral, pump. The impeller has vanes on both sides of the rim that rotate in a ringlike channel in the pump's casing. The fluid does not discharge freely from the tip of the impeller but is recirculated back to a lower point on the impeller diameter. This recirculation, or regeneration, increases the head developed. Because of close clearances, regenerative pumps cannot be used to pump liquids containing solid particles. They can pump liquids containing vapours and gases, and in fact they can pump gases provided that they contain sufficient liquid to seal the close clearances. Regenerative pumps are suitable only for pumping mobile liquids.
+
+Mixed-flow pumps deelop their head partly by centrifugal force and partly by the lift of the vanes on the liquid. 
+
+Propeller pumps develop most of their head by the propelling or lifting action of the vanes on the liquid.
+$
+
+
+PICTURE
+
+{
+ADB/ACTUATOR/PUMPS/CENTRIFUGAL/01.JPG	$ Axial flow Centrifugal Pump $
+ADB/ACTUATOR/PUMPS/CENTRIFUGAL/02.GIF	$ Centrifugal Pump $
+}
+
+
+CLIP
+
+{
+
+}
+
+SUMMARY
+$
+This mechanism can be used to displace water from a lower level to a higher level. This can be interpreted as a change of state from liquid at a lower level to a higher level. This can be described as follows:
+
+The water (part) enters the pump (physical phenomenon). This is due to the partial vacuum created (input) which activates the Bernoulli’s law (physical effect) and requires the impeller to rotate at a high speed (organ).
+
+
+The impeller (part) rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the impeller (organ). 
+
+The water (part) rushes out of the casing with a high pressure (physical phenomenon). This is due to the rotation of the impeller at a high speed (input), which activates the law “no two bodies can occupy the same space at the same time”(physical effect) and requires that the impeller be offset in the volute and it also require that there is small clearance between the volute and the impeller at the cut water (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To displace water from a lower level to a higher level.
+$
+
+STATE
+
+$
+Water is at a low level.
+
+Water is at a high level.
+$
+
+PHYPHENOMENON
+
+$
+The water enters the pump.
+
+The impeller rotates.
+ 
+The water rushes out of the casing with a high pressure.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+
+The partial vacuum created.
+
+Rotation of the input shaft.
+
+Rotation of the impeller at a high speed.
+
+$
+
+
+ORGAN
+
+$
+
+Requires the impeller to rotate at a high speed.
+
+Presence of zero degree of freedom between the input shaft and the impeller.
+
+The impeller be offset in the volute and it also require that there is small clearance between the volute and the impeller at the cut water
+
+$
+
+
+
+PARTS
+$
+Water forms a sliding pair with the suction pipe.
+
+The impeller forms a revolute pair with the casing.
+
+Water forms a sliding pair with the vanes of the impeller.
+
+
+
+
+
+$

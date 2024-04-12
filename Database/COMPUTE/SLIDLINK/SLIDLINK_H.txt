@@ -1,0 +1,47 @@
+STUCTURE1
+$
+Input link (x) forms a cylindrical pair with the frame
+Input link (y) forms a cylindrical pair with the	frame
+Input link (x) forms a sliding pair with the horizontal link (a)
+Input link (y) forms a sliding pair with the horizontal link (a)
+Horizontal link (a) forms a revolute pair with the output link (z)
+Output link (z) forms a cylindrical pair with the frame
+The horizontal link (a) forms a flexible pair with the frame
+$
+
+
+ACTION
+$
+Perform addition and subtraction
+$
+
+PHYPHENOMENON
+$
+a. Oscillation of the horizontal link (a)
+b. Transverse motion of the output link (z)
+c. Returning motion due to spring
+$
+
+
+ORGAN
+$
+a. Contact of surface of the horizontal link and the two input links
+b. Revolute joint between horizontal link and output link (z)
+c. Spring – output link interface
+$
+
+
+PHYEFFECT
+$
+a. Force
+b. Force
+c. Spring tension
+$
+
+
+INPUT
+$
+a. Displacement of Input link (x & y)
+b. Displacement of horizontal link (a)
+c. Spring force
+$

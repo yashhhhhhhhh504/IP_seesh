@@ -1,0 +1,82 @@
+MACTION
+{
+A1 $ V < aid > N < process > A < drawing > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying small space to large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+}
+
+MORGAN
+{
+O1 $ Presence of a hinged joint between the links. $
+}
+
+MPART
+{
+P1 $ Drafter. $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

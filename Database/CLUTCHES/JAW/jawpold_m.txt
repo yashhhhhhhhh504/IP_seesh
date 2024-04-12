@@ -1,0 +1,67 @@
+MACTION
+{
+A1 $ V < connect > A < X > N < shaft > $
+A2 $ V < transmit > A < X > N < motion > $
+}
+
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < x > N < rotaion > $
+
+}
+MPHYPHENOMENON
+{
+PP1 $ V < move > A < X > N < forward > $
+PP2 $ V < lock > A < X > N < object > $
+PP3 $ V < rotate > A < X > N < driven-shaft > $
+}
+
+MPHYEFFECT
+{
+PE1 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < lift > A < X > N < control-arm > $
+I2 $ V < apply > A < X > N < force > $
+I3 $ V < apply > A < X > N < torque > $
+I4 $ V < lock > A < X > N < object > $ 
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom in the direction of motion $
+O2 $ one degree of freedom in the direction of motion $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ control-arm $
+P3 $ revolute pair $
+P4 $ driving-shaft $
+P5 $ jaw1 $
+P6 $ prismatic pair $
+P7 $ jaw2 $
+P8 $ fixed pair $
+P9 $ cylindrical pair $
+P10 $ gear pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP1 - PE1 - I1 - O1 - P4 - P5 - P6
+A1 - PP2 - PE1 - I2 - O1 - P5 - P7 - P10
+A1 - PP3 - PE1 - I3 - O2 - P4 - P5 - P6
+A1 - PP3 - PE1 - I4 - O1 - P5 - P7 - P10
+A1 - PP3 - PE1 - I4 - O1 - P4 - P7 - P9
+
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A2 - PP1 - PE1 - I1 - O1 - P4 - P5 - P6
+A2 - PP2 - PE1 - I2 - O1 - P5 - P7 - P10
+A2 - PP3 - PE1 - I3 - O2 - P4 - P5 - P6
+A2 - PP3 - PE1 - I4 - O1 - P5 - P7 - P10
+A2 - PP3 - PE1 - I4 - O1 - P4 - P7 - P9
+}

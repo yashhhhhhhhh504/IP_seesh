@@ -1,0 +1,203 @@
+MACTION
+{
+A1 $ V < expand > A < X > N < x > $
+A2 $ V < contract > A < X > N < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < short > N < length > $
+IS2 $ V < x > A < long > N < length > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < long > N < length > $
+OS2 $ V < x > A < short > N < length > $
+} 
+MCHANGESTATE
+{
+CS1 $ from short length to long length $
+CS2 $ from long length to short length $
+}
+
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link > A < apart > $
+PP2 $ V < increase > A < X > N < distance > $
+PP3 $ V < slide > N < member > A < X > $
+PP5 $ V < move > N < link > A < together > $
+PP6 $ V < decrease > N < distance > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < X > $
+I2 $ V < move > N < link > A < apart > $
+I3 $ V < move > N < link > A < together > $
+}
+
+MORGAN
+{
+O1 $ empty space $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ link $
+P4 $ cylindrical-pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P2  P3  P4 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O1  P2  P3  P4 >
+< A1 IS1  OS1  CS1  PP3  PE1  I2  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP3  PE1  I2  O1  P2  P3  P4 >
+
+< A2 IS2  OS2  CS2  PP5  PE1  I1  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2  PP5  PE1  I1  O1  P2  P3  P4 >
+< A2 IS2  OS2  CS2  PP6  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2  PP6  PE1  I3  O1  P2  P3  P4 >
+< A2 IS2  OS2  CS2  PP3  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2  PP3  PE1  I3  O1  P2  P3  P4 >
+}
+
+
+
+FUNCTION
+
+$
+Telescoping cylinders, as shown in the figure, are the basis for many expanding and contracting mechanisms.
+$
+
+
+STRUCTURE
+
+$
+Telescoping cylinders consists of three or more links. These links are connected to each other by cylindrical pairs. 
+$
+
+
+BEHAVIOUR
+
+$
+In the arrangement shown, nested tubes can be sealed and filled with a highly temperature responsive medium such as a volatile liquid. In doing so, one link slides over the other. In nested tubes rotation between links also allowed. The animation shown alongside illustrates the working of a telescopic cylinder.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/TELESCOPIC/telescopic.jpg	$ Telescopic Cylinders $
+}
+
+
+CLIP
+{
+ADB/DEPLOYMENT/TELESCOPIC/telescopic.avi	$ Telescopic Cylinders $
+
+}
+
+SUMMARY
+$
+This mechanism can be used for expansion and contraction. The above mechanism can be described as follows:
+
+
+The link 2 (part) slides with respect to the link 1 (physical phenomenon). This is due to the force applied on to the link 2 (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth sliding surface between the slides 1 and 2 (organ).
+
+The link 3 (part) slides with respect to the link 2 (physical 
+Phenomenon). This is due to the sliding of the link 2  (input), which activates the inertia effect (physical effect) and requires the presence of a smooth sliding surface between the links 2 and 3.
+
+
+$
+
+ACTION
+$
+ 
+ Using this mechanism expansion and contraction can be achieved.
+
+$
+STATE
+$
+
+The absence of force at the link 2.
+
+The presence of force at the link 2.
+
+
+$
+PHYPHENOMENON
+$
+
+The link 2 slides with respect to the link 1.
+
+The link 3 slides with respect to the link 2.
+ 
+
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Inertia effect.
+
+
+
+$
+
+INPUT
+$
+
+Force applied on to the link 2.
+
+The sliding of the link 2.
+
+
+
+$
+
+ORGAN
+$
+
+Presence of a smooth sliding surface between the slides 1 and 2
+
+Presence of a smooth sliding surface between the links 2 and 3.
+
+
+
+
+
+
+$
+
+PARTS
+$
+
+The link 1 is fixed.
+
+The link 2 forms a cylindrical pair with the slide 1.
+
+The link 3 forms a cylindrical pair with the slide 2.
+	
+
+
+
+
+$
+

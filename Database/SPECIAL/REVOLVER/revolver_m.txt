@@ -1,0 +1,108 @@
+MACTION
+{
+A1 $ V < fire > N < X > AJ < bullet > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < projectile > N  < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to projectile motion $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > AV < X > N < trigger > AJ < x > $
+PP2 $ V < move > AV < X > N < hammer > AJ < backward > $
+PP3 $ V < compress > AV < X > N < spring > AJ < X > $
+PP4 $ V < rotate > AV < X > N < pawl > AJ < X > $
+PP5 $ V < rotate > AV < X > N < ratchet > AJ < X > $
+PP6 $ V < rotate > AV < X > N < cylinder > AJ < X > $
+PP7 $ V < stop > AV < X > N < cylinder > AJ < X > $
+PP8 $ V < expand > AV < X > N < spring > AJ < X > $
+PP9 $ V < hit > AV < X > N < primer > AJ < X > $
+PP10 $ V < move > AV < X > N < bullet > AJ < ahead > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time.  $
+PE2 $ Hooks law. $
+PE3 $ Newtonian laws of motion. $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < apply > AV < X > N < force
+ > AJ < X > $
+I2 $ V < move > AV < X > N < trigger > AJ < X > $
+I3 $ V < move > AV < X > N < hammer > AJ < X > $
+I4 $ V < move > AV < X > N < pawl > AJ < X > $
+I5 $ V < rotate > AV < X > N < ratchet > AJ < X > $
+I6 $ V < move > AV < X > N < pawl > AJ < X > $
+I7 $ V < move > AV < X > N < trigger > AJ < X > $
+I8 $ V < expand > AV < X > N < spring > AJ < X > $
+I9 $ V < develop > AV < X > N < pressure > AJ < gas > $
+}
+
+MORGAN
+{
+01 $ Necessary that the trigger forms a revolute pair with the frame.  $
+O2 $ Presence of contact between the hammer and the trigger.  $
+O3 $ Requires that the spring have some stiffness. $
+04 $ Presence of one degree of freedom between the trigger and the pawl.$
+O5 $ presence of contact between the ratchet and the pawl. $
+O6 $ Presence of zero degree of freedom between the ratchet and the cylinder. $
+O7 $ requires that the pawl should lodge a small depression in the cylinder $
+O8 $ Presence of stiffness in the spring. $
+O9 $ requires that the firing pin on the hammer extends through the body of the gun. $
+O10 $ requires the gas pressure to act in the forward direction $
+
+
+
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < trigger > AJ < X > $
+P2 $ V < X > AV < X > N < hammer > AJ < X > $
+P3 $ V < X > AV < X > N < pawl > AJ < X > $
+P4 $ V < X > AV < X > N < ratchet > AJ < X > $
+P5 $ V < X > AV < X > N < cylinder > AJ < X > $
+P6 $ V < X > AV < X > N < bullet > AJ < X > $
+P7 $ V < X > AV < X > N < revolute-pair > AJ < X > $
+P8 $ V < X > AV < X > N < sliding-pair > AJ < X > $
+P9 $ V < X > AV < X > N < frame > AJ < X > $
+P10 $ V < X > AV < X > N < spring > AJ < X > $
+P11 $ V < X > AV < X > N < pair > AJ < fixed > $
+P12 $ V < X > AV < X > N < pair > AJ < ratchet-pawl > $
+P13 $ V < X > AV < X > N < barrel > AJ < > $
+
+
+}
+LINKS
+
+ < A1 IS1 OS1 CS1 PP1 PE3 I1 O1 P1 P7 P9 >
+ < A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P7 >
+ < A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P2 P10 P11 >
+ < A1 IS1 OS1 CS1 PP4 PE1 I2 O4 P1 P3 P7 >
+ < A1 IS1 OS1 CS1 PP5 PE1 I4 O5 P3 P4 P12 >
+ < A1 IS1 OS1 CS1 PP6 PE3 I5 O6 P4 P5 P11 >
+ < A1 IS1 OS1 CS1 PP7 PE1 I6 O7 P3 P7 P9 >
+ < A1 IS1 OS1 CS1 PP8 PE2 I7 O8 P9 P10 P11 >
+ < A1 IS1 OS1 CS1 PP9 PE1 I8 O9 P2 P7 P9 >
+ < A1 IS1 OS1 CS1 PP10 PE3 I9 O10 P6 P8 P13 >
+
+
+

@@ -1,0 +1,84 @@
+
+SUMMARY
+$
+This type of keyboard can be rolled like a paper. In rolled or collapsed state it occupies small space. Also it can be cleaned in hot water of 60 degree Celsius. Basically it is designed for workshops, laboratories, and clinical workshops. It is made up of rubber, which is flexible. The way by which it is rolled is explained below,
+
+Rubber keyboard (part) gets rolled to a collapsed state (physical phenomenon). This is due to force applied at one side (input), which actuates Newtonian laws of motion (physical effect) and requires presence of flexible material (organ).
+
+$
+
+ACTION
+
+$ 
+ To make a roll from deployed state.
+$
+
+STATE
+
+$
+Keyboard in deployed state.
+Keyboard in collapsed or rolled state.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Rubber keyboard gets rolled to a collapsed state.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Force applied at one side
+$
+
+
+ORGAN
+
+$
+
+Presence of flexible material
+
+$
+
+
+
+PARTS
+$
+Rubber keyboard
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

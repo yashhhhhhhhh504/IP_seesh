@@ -1,0 +1,191 @@
+MACTION
+{
+A1 $ V < deploy close > N < x > A < X > $
+A2 $ V < provide > N < shade > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < small > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < slider > A < X > $
+PP2 $ V < move > N < links > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < slider > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the slider and the guide $
+O2 $ hinged joint between the links and also between the links and the guide $
+}
+
+MPART
+{
+P1 $ slider $
+P2 $ output links $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+
+FUNCTION
+
+$
+this mechanism can be used to provide shade for shops.this does so by deploying.
+$
+
+
+STRUCTURE
+
+$
+the mechanism consists of a slider and a guide to direct the motion of the slider. it consists of output links.
+$
+
+
+BEHAVIOUR
+
+$
+this mechanism can be operated by giving a small input to the slider as movement.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/SHOP_SHUTTER/01.jpg $ Shop shutter $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to deploy. This mechanism is used in shutters to provide shade. This can be described as follows:
+
+
+The slider (part) slides on the guide (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the slider and the guide (organ).
+
+The output links (part) moves away from the guide and thus increases the area occupied (physical phenomenon). This is due to the movement of the slider (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a hinged joint between the links and also between the links and the guide (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+To provide shade.
+$
+
+STATE
+
+$
+The shutter is occupying less space.
+
+The shutter is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The slider slides on the guide.
+
+The output links moves away from the guide and thus increases the area occupied.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Movement of the slider.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the slider and the guide.
+
+Presence of a hinged joint between the links and also between the links and the guide.
+
+
+$
+
+
+
+PARTS
+$
+Slider.
+
+Output links.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

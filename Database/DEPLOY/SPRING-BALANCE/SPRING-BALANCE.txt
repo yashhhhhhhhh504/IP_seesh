@@ -1,0 +1,236 @@
+
+MACTION
+{
+A1 $ V < measure > N < mass > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < unextended > N < length > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < extended > N < position > $
+} 
+MCHANGESTATE
+{
+CS1 $ from unextended to extended position to measure mass $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < attach > N < spring > A < X > $
+PP2 $ V < extend > N < spring > A < X > $
+PP3 $ V < move > N < pointer > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies occupy the same space at the same time $  
+}
+
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < exert > N < spring > A < x > $
+I3 $ V < move > N < spring > A < x > $
+}
+
+MORGAN
+{
+O1 $ spring has to be vertical in the gravity field $
+O2 $ stiffness of the spring must be proper $
+O3 $ smooth sliding motion of the pointer on the scale $
+}
+
+MPART
+{
+P1 $ body $
+P2 $ spring $
+P3 $ pointer $
+
+}
+
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+}
+
+
+FUNCTION
+
+$
+Spring balance is used to measure mass of object. The deflection of spring, when object is attached to it, is the measure of mass of object. A pointer attached to the spring moves on a calibrated scle.
+$
+
+
+STRUCTURE
+
+$
+Spring balance has a spring to which a pointer is attached. This pointer can slide on a calibrated scale. A body whise mass is to be measured can be attached to free end of the spring
+$
+
+
+BEHAVIOUR
+
+$
+A body, whose mass is to be measured is attached to one end of vertical spring. The object applies the force on the spring by gravity, which actuates Newtonian laws of motion. For this spring has to be vertical in the gravity field. Spring gets extended.  The increase in length is due to force exerted on the spring, which actuates Newtonian laws of motion. The stiffness of the spring must be proper. A pointer attached to the spring moves on the scale. The movement of the spring is required which actuates the law that no two bodies occupy the same space at the same time. There has to be smooth sliding motion of the pointer on the scale.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/SPRING-BALANCE/SPRING-BALANCE01.JPG		$ 01.SPRING-BALANCE $
+ADB/DEPLOY/SPRING-BALANCE/SPRING-BALANCE02.JPG		$ 02.SPRING-BALANCE $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Spring balance is used to measure mass of object. The deflection of spring, when object is attached to it, is the measure of mass of object. It is as follows,
+
+A body (part), whose mass is to be measured is attached to one end of vertical spring (physical phenomenon). The force (input) is applied by the object on the spring by gravity, which actuates Newtonian laws of motion (physical effect). For this spring has to be vertical in the gravity field (organ).
+
+Spring (part) gets extended (physical phenomenon).  The increase in length is due to force (input) exerted on the spring, which actuates Newtonian laws of motion (physical effect). The stiffness of the spring must be proper (organ).
+
+A pointer (part) attached to the spring moves on the scale (physical phenomenon). The movement (input) of the spring is required which actuates the law that no two bodies occupy the same space at the same time (physical effect). There has to be smooth sliding motion of the pointer on the scale (organ).
+
+$
+
+ACTION
+
+$ 
+ To measure mass.
+$
+
+STATE
+
+$
+Spring in its unextended length.
+Spring in extended position and measuring the mass.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+A body, whose mass is to be measured is attached to one end of vertical spring.
+
+Spring gets extended
+
+ A pointer attached to the spring moves on the scale
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+Newtonian laws of motion
+
+No two bodies occupy the same space at the same time
+$
+
+
+
+INPUT
+
+$
+
+The force, applied by the object
+Force exerted on the spring
+The movement of the spring
+
+$
+
+
+
+
+
+ORGAN
+
+$
+
+For this spring has to be vertical in the gravity field
+
+The stiffness of the spring must be proper
+
+There has to be smooth sliding motion of the pointer on the scale
+
+$
+
+
+
+PARTS
+$
+
+A body
+
+Spring
+
+A pointer
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

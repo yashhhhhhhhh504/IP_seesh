@@ -1,0 +1,87 @@
+MACTION
+{
+A1 $ V < lock > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < closed > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < open > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from closed to open $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < insert > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < inserting > $
+I2 $ V < x > N < movement > A < x > $
+}
+
+MORGAN
+{
+O1 $ presence of a smooth sliding surface between the key and the slot provided $
+O2 $ Presence of contact between the key and the various links $
+}
+
+MPART
+{
+P1 $ key $
+P2 $ clock $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

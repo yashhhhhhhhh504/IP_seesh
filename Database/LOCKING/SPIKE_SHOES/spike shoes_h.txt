@@ -1,0 +1,83 @@
+SUMMARY
+$
+The main function of this is that it provides sufficient grip for sprinters since they run very fast.
+$
+
+ACTION
+
+$ 
+To provide grip.
+
+To lock on to soil.
+$
+
+STATE
+
+$
+The spikes are outside the soil.
+
+The spikes are inside the soil.
+
+$
+
+PHYPHENOMENON
+
+$
+The spike penetrates into the soil.
+
+$
+
+
+PHYEFFECT
+
+$
+Force concentration effect.
+
+$
+
+
+INPUT
+
+$
+Point load.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spikes have very sharp and pointed tips.
+
+$
+
+
+
+PARTS
+$
+Spiked shoes.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

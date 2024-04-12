@@ -1,0 +1,67 @@
+MACTION
+{
+A1 $ V < generate > A < approximate straight-line > N < motion > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate >  A < x > N < input-link > $
+PP2 $ V < oscillate > A < x > N < arm 2 > $
+PP3 $ V < describe > A < straight N < line > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < input-link > $
+I3 $ V < oscillate > A < x > N < arm2 > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ 0 dof $
+O3 $ connecting link $
+O4 $ ratio of the links $
+}
+
+MPART
+{
+P1 $ input-link $
+P2 $ arm2 $
+P3 $ revolute pair $
+P4 $ output-link $
+P5 $ frame $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O3  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O3  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O4  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O4  P2  P5  P3 >
+}

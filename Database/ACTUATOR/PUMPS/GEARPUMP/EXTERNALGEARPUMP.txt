@@ -1,0 +1,204 @@
+MACTION
+{
+A1 $ V < pump > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < water low level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < water high level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from low level to higher level $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < suck >  N < water > A < X > $
+PP2 $ V < rotate >  N < rotor > A < X > $
+PP3 $ V < rotate >  N < gear > A < driven > $
+PP4 $ V < rush >  N < water > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x >  N < partial vacuum > A < x > $
+I2 $ V < apply >  N < torque > A < x > $
+I3 $ V < apply >  N < force > A < tangential > $
+I4 $ V < x >  N < force  > A < centrifugal > $
+
+}
+
+MORGAN
+{
+O1 $ low pressure within the casing $
+O2 $ zero degree of freedom between the rotor and the input shaft $
+O3 $ meshing of the gears $
+O4 $ gap between the gears and the casing is small enough $
+
+}
+
+MPART
+{
+P1 $ water $
+P2 $ suction pipe $
+P3 $ sliding pair $
+P4 $ rotor $
+P5 $ casing $
+P6 $ revolute-pair $
+P7 $ gear $
+P8 $ gear-pair $
+P9 $ teeth $
+P10 $ sliding pair $
+
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P4 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P1 P9 P10 >
+}
+
+FUNCTION
+$
+Pump (mechanics), device used to raise, transfer, or compress liquids and gases.
+$
+BEHAVIOUR
+$
+External Gear Pump
+A variety of positive-displacement pumps are also available, generally consisting of a rotating member with a number of lobes that move in a close-fitting casing.
+A common device of this type is the gear pump, which consists of a pair of meshing gears. The lobes in this case are the gear teeth.
+The most common type of gear pump is illustrated in figure(external gear pump). One of the gears is driven and the other runs free. A partial vacuum, created by the unmeshing of the rotating gears, draws fluid into the pump. This fluid is then transferred to the other side of the pump between the rotating gear teeth and the fixed casing. As the rotating gears mesh together, they generate an increase in pressure that forces the fluid into the outlet line. A gear pump can discharge fluid in either direction, depending on the direction of the gear rotation.
+This pump will pump in the reverse direction if you reverse the direction of rotation of the gears. 
+$
+STRUCTURE
+$
+The teeth on Gear Pumps can be spur (straight), helical (slanted), herringbone, etc. There can be two, or more teeth on each gear -- twenty is not uncommon. The diameter of the gears and their thickness varies widely
+$
+PICTURE
+{
+ADB/ACTUATOR/PUMPS/GEARPUMP/01.JPG   $ 01. External Gear pump $
+ADB/ACTUATOR/PUMPS/GEARPUMP/02.JPG   $ 02. External Gear pump $
+}
+CLIP
+{
+ADB/ACTUATOR/PUMPS/GEARPUMP/01.MPG   $ 01. External Gear pump $
+}
+
+
+SUMMARY
+$
+This device can be used to displace water from a low level to a higher level. This can be interpreted as a change of state from water at a low level to a higher level. This can be described as follows:
+
+The water (part) enters the casing (physical phenomenon). This is due to the partial vacuum, created by the unmeshing of the rotating gears (input), which activates the Bernoulli’s law (physical effect) and requires the presence of a low pressure within the casing (organ).
+
+The rotor (input) rotates (physical phenomenon). This is due to the torque applied at the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the rotor and the input shaft (organ).
+
+The driven gear (part) rotates (physical phenomenon). This is due to the tangential force applied by the input gear (input), which activates the “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the two gears. (organ).
+
+The water (part) rushes out of the casing with high pressure (physical phenomenon). This is due to the centrifugal force applied the gears (input) which activates the law “no two bodies can occupy the same space at the same time” meshing of the gears (physical effect) and is necessary that the gap between the gears and the casing is small enough (organ).
+
+
+ACTION
+
+$ 
+ To displace water from a low level to a higher level.
+$
+
+STATE
+
+$
+The water is at a low level.
+
+The water is at a high level.
+$
+
+PHYPHENOMENON
+
+$
+The liquid enters the casing.
+
+The rotor rotates.
+ 
+The driven gear rotates.
+
+The water rushes out of the casing with high pressure.
+
+$
+
+
+PHYEFFECT
+
+$
+Pressure differential effect.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+Partial vacuum, created by the unmeshing of the rotating gears.
+
+Torque applied at the input shaft.
+
+The tangential force applied by the input gear.
+
+Centrifugal force applied the gears.
+
+$
+
+
+ORGAN
+
+$
+Presence of a low pressure within the casing.
+
+Presence of contact between the two gears.
+
+Presence of zero degree of freedom between the rotor and the input shaft.
+
+Requires the meshing of the gears.
+
+
+$
+
+
+PARTS
+
+
+$
+Water forms a sliding pair with the suction pipe.
+
+The rotor forms a revolute pair with the casing.
+
+The gear meshing with the rotor forms a gear pair with the rotor.
+
+Water forms sliding pair with the teeth of the gears.
+
+$
+
+

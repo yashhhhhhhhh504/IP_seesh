@@ -1,0 +1,199 @@
+MACTION
+{
+A1 $ V < measure > N < time > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < change > N < shape > A < crystal > $
+PP2 $ V < develop > N < voltage > A < X > $
+PP3 $ V < vibrate > N < crystal > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Piezoelectric effect $
+PE2 $ Simple harmonic effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < voltage > A < x > $
+I2 $ V < restore > N < shape > A < x > $
+I3 $ V < change > N < shape > A < continuous > $
+}
+
+MORGAN
+{
+O1 $ the crystal have the property of piezoelectricity $
+O2 $ the crystal have the property of piezoelectricity $
+O3 $ a closed circuit, which can feed the voltage, developed back to the quartz $
+}
+
+MPART
+{
+P1 $ Quartz crystal $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P1 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Quartz oscillators are used in all sorts of places that need a precise frequency base. One common place is in radio transmitters, where the transmitter needs to send radio waves at a very precise frequency. Quartz is also found them in music synthesizers, where they control the frequency of the notes produced. They are also found in microprocessors, where they control the speed of the microprocessors operation. Another common use of quartz oscillators is in quartz watches.
+$
+
+
+STRUCTURE
+
+$
+In a quartz watch, the quartz crystal takes advantage of both of the effects of piezoelectric materials. A sliver of quartz is ground to a very precise shape and plated with two electrodes. A voltage is applied so that the crystal changes shape, and then the voltage is released so that the crystal snaps back. In the process of snapping back, the crystal generates a voltage because it is changing shape. This generated voltage can be fed back to cause the crystal to change shape again, and so on. Through this process, the crystal resonates at a frequency that is controlled by its thickness. Essentially it rings like a bell, but at a very high frequency.
+In a quartz watch, the circuit that makes the crystal oscillate generates a digital signal tram the oscillations. For example, the crystal might oscillate very precisely a million times per second. A digital counter divides that signal by 1 million to create a once-a-second heartbeat for the watch. The heartbeat either drives a small motor that makes the second and move once each second, or it drives a chain of digital counters that create a numeric display on a liquid crystal display.
+$
+
+
+BEHAVIOUR
+
+$
+Quartz, which is silicon dioxide like most sand, is unaffected by most solvents and remains crystalline to hundreds of degrees Fahrenheit. The property that makes it an electronic miracle is the fact that, when compressed or bent, it generates a charge or voltage on its surface. This is a fairly common phenomenon called the piezoelectric effect. In the same way, if a voltage is applied, quartz will bend or change its shape very slightly. 
+The best shapes are a straight bar or a disk. A bar has the advantage of keeping the same frequency provided the ratio of length to width remains the same. A quartz bar can be tiny and oscillate at a relatively low frequency - 32 kilohertz (KHz) is usually chosen for watches not only for size, but also because the circuits that divide down from the crystal frequency to the few pulses per second for the display need more power for higher frequencies. Power was a big problem for early watches, and the Swiss spent millions trying to bring forward integrated-circuit technology to divide down from the 1 to 2 MHz the more stable disk crystals generate. 
+Modern quartz watches now use a low frequency bar or tuning-fork-shaped crystal. Often, these crystals are made from thin sheets of quartz plated like an integrated circuit and etched chemically to shape. The major difference between good and indifferent time keeping is the initial frequency accuracy and the precision of the angle of cut of the quartz sheet with respect to the crystalline axis. The amount of contamination that is allowed to get through the encapsulation to the crystal surface inside the watch can also affect the accuracy. 
+
+The electronics of the watch initially amplifies noise at the crystal frequency. This builds or regenerates into oscillation - it starts the crystal ringing. The output of the watch crystal oscillator is then converted to pulses suitable for the digital circuits. These divide the crystal's frequency down and then translate it into the proper format for the display.
+
+Or, in a quartz watch with hands, the dividers create one-second pulses that drive a tiny electric motor, and this motor is connected to standard gears to drive the hands. 
+
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/QUARTZ/quartzcrystal.jpg	$ 01. Quartz Crystal	$
+ADB/SPECIAL/QUARTZ/quartz.jpg		$ 02. Quartz Crystal	$
+ADB/SPECIAL/QUARTZ/watch.jpg		$ 03. Quartz Watch	$
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used to measure time. This can be described as follows:
+
+The quartz crystal (part) changes its shape (physical phenomenon). This is due to the voltage applied on to it (input), which activates the piezoelectric effect (physical effect) and requires that the quartz have the property of piezoelectricity (organ).
+
+The quartz crystal (part) develops voltage (physical phenomenon). This is due to the restoration of the shape of the quartz (input), which activates the piezoelectric effect (physical effect) and requires that quartz have the piezoelectric property (organ).
+
+The crystal (part) continues to vibrate at a high frequency or resonates (physical phenomenon). This is due to the continuous change shape (input), which activates the simple harmonic effect (Physical effect) and requires the presence of a closed circuit, which can feed the voltage, developed back to the quartz (organ).   
+
+The high frequency produced is used for the working of the clock.
+$
+
+ACTION
+
+$ 
+ To measure time.
+$
+
+STATE
+
+$
+
+X
+$
+
+PHYPHENOMENON
+$
+
+The quartz crystal changes its shape.
+
+The quartz develops voltage.
+ 
+The crystal continues to vibrate at a high frequency or resonates.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Piezoelectric effect.
+
+Simple harmonic effect.
+
+
+
+$
+
+INPUT
+$
+
+Voltage applied on to it.
+
+Restoration of the shape of the quartz.
+
+The continuous change shape.
+
+$
+
+ORGAN
+$
+
+Requires that the quartz have the property of piezoelectricity.
+
+Requires that quartz have the piezoelectric property.
+
+Presence of a closed circuit, which can feed the voltage, developed back to the quartz.
+
+
+
+
+$
+
+PARTS
+$
+Quartz crystal.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+

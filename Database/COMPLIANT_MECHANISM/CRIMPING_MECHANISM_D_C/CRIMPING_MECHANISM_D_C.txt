@@ -1,0 +1,192 @@
+
+
+MACTION
+{
+A1 $ V < hold > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < output > N < rest port > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < rotate > A < output > N < port > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the output ports $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < handgrip > A < close > $
+PP2 $ V < rotate > N < port > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+I2 $ V < rotate > N < handgrip > A < x > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom between the handgrip and the hinged joint $
+O2 $ the hinged joint forms the fulcrum $
+}
+
+MPART
+{
+P1 $ handgrip $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ output port $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+This is a crimping mechanism wherein a large portion of the structure deforms.
+$
+
+
+STRUCTURE
+
+$
+If a larger portion of the structure deforms, then it is called distributed compliance.
+$
+BEHAVIOUR
+
+$
+The bending moment is applied at the tips of the handle.
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/CRIMPING_MECHANISM_D_C/01.JPG		$  CRIMPING MECHANISM WITH DISTRIBUTED COMPLIANCE $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to hold materials. This can be described as a change of state from rest to rotation of the output ports. This can be discussed as follows:
+
+The hand grip (part) is brought close to each other (physical phenomenon). This is due to the moment applied (input) on it which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the hand grip and the hinged joint (organ).
+
+The output port (part) rotates about the hinged joint and thus holds the material tightly (physical phenomenon). This rotation of the hand grips (input) which activates the lever effect (physical effect) and it is necessary that the hinged joint forms the fulcrum (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To hold materials.
+$
+
+STATE
+
+$
+The output ports are at rest.
+
+The output ports rotate.
+$
+
+
+
+PHYPHENOMENON
+
+$
+The handgrip is brought close to each other.
+
+The output port rotates about the hinged joint and thus holds the material tightly.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+Lever effect.
+
+
+
+$
+
+
+INPUT
+
+$
+Moment applied.
+
+Rotation of the handgrips.
+
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the handgrip and the hinged joint.
+
+Necessary that the hinged joint forms the fulcrum.
+
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+The handgrips form a revolute pair with the frame.
+
+The output ports forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$

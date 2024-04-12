@@ -1,0 +1,150 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < tough > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ an elastic material between the two plates $
+
+}
+
+MPART
+{
+P1 $  elastic-material $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This mechanism can be used as a deployment structure.
+$
+
+
+STRUCTURE
+
+$
+This consists of a number of flat plates, which are connected, with the help of elastic material.
+$
+BEHAVIOUR
+
+$
+The plates are deployed thus increasing the area occupied by it.
+$
+
+PICTURE
+{
+ADB/DEPLOY/DEPLOYMENT_1/01.JPG		$ 01.Deployment $
+ADB/DEPLOY/DEPLOYMENT_1/02.JPG		$ 02.Deployment $
+}
+CLIP
+{
+}
+
+SUMMARY
+$
+The plates are unfolded and thus increased in the area that is occupied by the plates.
+$
+
+ACTION
+
+$ 
+ to deploy.
+$
+
+STATE
+
+$
+Occupying less area.
+
+Occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The plates are unfolded.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+$
+
+
+INPUT
+
+$
+Moment.
+
+$
+
+
+ORGAN
+
+$
+Presence of an elastic material between the two plates.
+
+
+
+$
+
+
+
+PARTS
+$
+Two parts of the deployable structure.
+$
+
+
+
+

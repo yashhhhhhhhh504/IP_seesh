@@ -1,0 +1,77 @@
+MACTION
+{
+A1 $ V < transmit > A < X >  N < motion > $
+
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=rotate N=driver $
+PP2 $ V=increase A=friction $
+PP3 $ V=pull N=rope $
+PP4 $ V=deliver N=rope $
+PP5 $ V=change A=axial N=direction $
+PP6 $ V=rotate N=driven $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=rotate N=driver $
+I3 $ V=increase N=contact $
+I4 $ V=select N=configuration $
+I5 $ V=apply A=tangential N=force $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ tension in the rope $
+O3 $ surface area $
+O4 $ arrangement of the rope $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ driver $
+P3 $ revolute pair $
+P4 $ driven $
+P5 $ rope $
+P6 $ rope pair $
+P7 $ right angle $
+P8 $ idler-pulley $
+}
+LINK
+{
+< A1 IS1 OS1  CS1 PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1 OS1  CS1 PP2  PE2  I3  O3  P2  P5  P6 >
+< A1 IS1 OS1  CS1 PP2  PE2  I3  O3  P4  P5  P6 >
+< A1 IS1 OS1  CS1 PP3  PE2  I2  O2  P2  P5  P6 >
+< A1 IS1 OS1  CS1 PP4  PE2  I2  O2  P2  P5  P6 >
+< A1 IS1 OS1  CS1 PP5  PE1  I4  O4  P2  P4  P7 >
+< A1 IS1 OS1  CS1 PP5  PE1  I4  O4  P5  P8  P6 >
+< A1 IS1 OS1  CS1 PP6  PE2  I5  O2  P4  P5  P6 >
+}

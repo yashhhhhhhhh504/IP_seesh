@@ -1,0 +1,207 @@
+
+MACTION
+{
+A1 $ V < hold > N < chip > A < silicon > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < output away > N < port > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < output close > N < port > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from ports away from each other to ports close to each other $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < bring > N < handgrip > A < close > $
+PP2 $ V < bring > N < port > A < close output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+I2 $ V < rotate > N < handgrip > A < x > $
+}
+
+MORGAN
+{
+O1 $ one end of the handgrips is hinged $
+O2 $ the hinged joint acts as a fulcrum $
+}
+
+MPART
+{
+P1 $ handgrip $
+P2 $ revolute pair $
+P3 $ hinged joint $
+P4 $ output port $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+The compliant gripper mechanism is used to grip silicon chips in various solutions.
+$
+
+
+STRUCTURE
+
+$
+These grippers are constructed of polytetrafluoroethylene so that it is inert to chemicals to which it is exposed.
+$
+BEHAVIOUR
+
+$
+The cantilever spring is used to provide adequate return force.
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/DIE_GRIPPERS/01.JPG		$ DIE GRIPPERS $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to grip silicon chips. This can be interpreted as a change of state from rest to rotation of the output ports. This can be described as follows:
+
+The handgrips (part) are brought close each other (physical phenomenon). This is due to the moment applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that one end of the handgrips are hinged (organ).
+
+The output ports (part) come close each other and hold the material (physical phenomenon). This is due to rotation of the handgrips (input), which activates the lever effect (physical effect) and is necessary that the hinged joint acts as a fulcrum (organ).
+
+
+
+
+
+$
+
+ACTION
+
+$ 
+ To hold silicon chips.
+$
+
+STATE
+
+$
+The output ports are away from each other.
+
+The output ports are close each other.
+
+$
+
+PHYPHENOMENON
+
+$
+The handgrips are brought close each other.
+
+The output ports come close each other and hold the material.
+
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Lever effect.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The moment applied on it.
+
+Rotation of the handgrips.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that one end of the handgrips is hinged.
+
+Necessary that the hinged joint acts as a fulcrum.
+
+$
+
+
+
+PARTS
+$
+The handgrips form a revolute pair with the hinged joint.
+
+The output ports forms a revolute pair with the hinged joint.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

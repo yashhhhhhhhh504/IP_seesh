@@ -1,0 +1,182 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < hold > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less space to large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < part > A < X > $
+PP2 $ V < pull > N < part > A < X > $
+PP3 $ V < extend > N < part > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+I2 $ V < apply > N < force > A < pulling > $
+I3 $ V < apply > N < force > A < extending > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the wooden pieces are hinged to the vertical rod $
+O2 $ Presence of a smooth surface between the cylinders $
+O3 $ Presence of one degree of freedom at each hinge $
+}
+
+MPART
+{
+P1 $ three thin long wooden pieces $
+P2 $ small diameter cylinder $
+P3 $ lazy tongs $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P3 >
+
+
+}
+
+
+FUNCTION
+
+$
+This collapsible sheet music stand is suitable for woodwinds and strings. 
+$
+
+
+STRUCTURE
+
+$
+It is height adjustable from 44 to 132 centimeters. Apart from hinging, it also applies the principles of assembling and sliding.
+$
+BEHAVIOUR
+
+$
+The mechanism occupies less space when not in use and occupies large space when in use. This is a combination of two mechanisms: lazy tongs and telescopic. The telescopic is used for adjusting for the height and the lazy tongs for the holding the paper.
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/SHEET_MUSIC_STAND/01.JPG	$ 01.SHEET MUSIC STAND $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This sheet music stand occupies less space when not in use and occupies large space when in use. This can be interpreted as a change of state from occupying less area to occupying large area. This can be discussed as follows:
+
+The three thin long wooden pieces (part) are moved away from the center of the vertical rod to form a tripod (physical phenomenon). This is due to the moment applied on to the pieces (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the wooden pieces are hinged to the vertical rod (organ).
+
+The smaller diameter cylinder (part) within the vertical hollow cylinder is pulled out thus increasing the height of the stand (physical phenomenon). This is due to the pulling force (input) applied along the axis of the vertical rod, which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the cylinders (organ).
+
+The lazy tongs (part) are extended to hold the music sheet (physical phenomenon). This is due to the pulling force (input), which activates the  
+Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom at each hinge (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+To hold sheet.
+$
+
+STATE
+
+$
+The structure is occupying less space.
+
+The structure is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The three thin long wooden pieces are moved away from the center of the vertical rod to form a tripod.
+
+The smaller diameter cylinder within the vertical hollow cylinder is pulled out thus increasing the height of the stand.
+ 
+The lazy tongs are extended to hold the music sheet.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+The moment applied on to the pieces.
+
+The pulling force applied along the axis of the vertical rod.
+
+The pulling force.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the wooden pieces are hinged to the vertical rod.
+
+Presence of a smooth surface between the cylinders.
+
+Presence of one degree of freedom at each hinge.
+
+$
+
+
+
+PARTS
+$
+Three thin long wooden pieces.
+
+Smaller diameter cylinder.
+
+Lazy tongs.
+$
+
+
+

@@ -1,0 +1,212 @@
+MACTION
+{
+
+A1 $ V < transmit > A < x > N < power > $
+A2 $ V < change > A < rapidly > N < speed > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < constant > N < speed > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < variable > N < speed > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ from constant speed to variable speed $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < disk1 > $
+PP2 $ V < rotate > A < x > N < roller > $
+PP3 $ V < rotate > A < x > N < shaft > $
+PP4 $ V < rotate > A < x > N < disk2 > $
+PP5 $ V < rotate > A < x > N < output > $
+PP6 $ V < change > A < x > N < position > $
+PP7 $ V < change > A < x > N < speed > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < maintain > A < x > N < contact > $
+I3 $ V < rotate > A < x > N < roller > $
+I4 $ V < apply > A < x > N < force > $
+I5 $ V < change > A < x > N < position > $
+I6 $ V < rotate > A < x > N < disk2 > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ friction material $
+O3 $ zero degree of freedom in the direction of motion $
+O4 $ presence of a smooth sliding surface between the roller and the shaft $
+O5 $ ratio of diameters $
+}
+
+MPART
+{
+P1 $ disk $
+P2 $ frame $
+P3 $ roller $
+P4 $ shaft $
+P5 $ revolute pair $
+P6 $ prismatic pair $
+P7 $ contacted-part $
+P8 $ disk $
+P9 $ output-part $
+P10 $ fixed pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P5 >
+< A1 IS1  OS1  CS1  PP2  PE3  I2  O2  P1  P3  P7 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P3  P4  P6 >
+< A1 IS1  OS1  CS1  PP4  PE3  I2  O2  P8  P3  P7 >
+< A1 IS1  OS1  CS1  PP5  PE1  I6  O1  P8  P9  P10 >
+< A1 IS1  OS1  CS1  PP6  PE1  I4  O4  P3  P4  P6 >
+< A2 IS2  OS2  CS2  PP7  PE1  I5  O5  P1  P3  P7 >
+< A2 IS2  OS2  CS2  PP7  PE1  I5  O5  P8  P3  P7 >
+}
+
+
+FUNCTION
+
+$
+This disk and roller variable speed friction drive can be used to transmit both high torque, as on industrial machines, and low torque, as in laboratory instruments. This mechanism performs best if it is used to reduce and not increase speed. 
+$
+
+
+STRUCTURE
+
+$
+This drive consists of two disks with a free-spinning movable roller between them. In this case, the axes of the shafts of the two disks and that of the roller lie in mutually perpendicular planes.
+$
+
+
+BEHAVIOUR
+
+$
+This drive can change speed rapidly because the operating diameters of the disks change in an inverse ratio.
+All friction drives have a certain amount of slip due to imperfect rolling of the friction members, but with effective design the slip can be held constant, resulting in constant speed of the driven member. Compensation for variations in load can be achieved by placing inertia masses on the driven end. Springs or similar elastic members can be used to keep the friction parts in constant contact and to exert the force necessary to create the friction. In some cases, gravity will take the place of such members. Custom made friction materials are generally recommended, but neoprene or rubber can be satisfactory. Normally only one of the friction members is made or lined with this material, while the other is metal.
+The animation shown along side demonstrates the functioning of this variable speed drive.
+$
+
+
+PICTURE
+
+{
+ADB/VARSPEED/VARSPEED04/VARSPEED04.jpg	$ Friction Drive 2	$
+}
+
+
+CLIP
+{
+ADB/VARSPEED/VARSPEED04/VARSPEED04.avi	$ Friction Drive 2	$
+}
+
+SUMMARY
+$
+This mechanism transmits power and allows variable output speed in the following steps:
+
+The first friction disk is fixed on the input shaft, which in turn is attached to the motor. Thus the first friction disk forms a revolute pair with the frame (part). The motor applies a torque to the shaft (Input) which activates Newtonian laws of motion (Physical effect), and rotates the first friction disk (Physical Phenomenon). This requires a 1 degree of freedom of motion between the shaft and the first friction disk in the direction of rotation (Organ).
+
+The first friction disk is in contact with the adjustable roller (part). As the first friction disk rotates (Input), the adjustable roller rotates as well (Physical Phenomenon) due to the friction (Physical Effect) developed between the contacting friction surfaces (Organ)
+
+The adjustable roller forms a prismatic pair with the shaft (part). The rotation of the adjustable roller (Input) causes the shaft to rotate (Physical Phenomenon) as well, because the basic law that no two bodies can occupy the same space at the same time (Physical Effect) has to be obeyed. The rotation requires a zero degree of freedom of motion in the direction of motion to exist between the two bodies (organ).
+
+The second friction disk is also in contact with the adjustable roller (part). As the adjustable roller rotates (Input), the second friction disk rotates as well (Physical Phenomenon) due to the friction (Physical Effect) developed between the contacting friction surfaces (Organ)
+
+The second friction disk is fixed on the output shaft. Thus the second friction disk and the output shaft forms a revolute pair with the frame (part). The rotation of the second friction disk (Input) activates Newtonian laws of motion (Physical effect), and rotates first the output shaft (Physical Phenomenon). This requires 1 degree of freedom of motion between the output shaft and the second friction disk in the direction of rotation (Organ).
+
+Since the adjustable roller is connected to the shaft by a prismatic joint (part), the position of the roller on the shaft can be changed (Physical Phenomenon). This is achieved by applying a force on the roller (Input) which slides it along the spline, obeying the Newtonian Laws of motion (Physical Effect) and requires the presence of a smooth sliding surface between the roller and the shaft (organ).
+
+There is frictional contact between the two friction disks and the adjustable roller (part). Thus, as the position of the adjustable roller on the shaft is changed (Input), there is a difference in the ratio of diameters of the disks at the point of contact with the adjustable roller (Organ). Newtonian Laws of motion (Physical Effect) apply and thus the speed of the output shaft is altered (Physical Phenomenon).
+$
+
+ACTION
+$
+ Using this drive, the output speed can be changed rapidly and easily 
+ 
+This drive also transmits power from the motor to the output shaft 
+$
+
+PHYPHENOMENON
+$
+ The rotation of the first friction disk which is attached to the motor shaft 
+ 
+The rotation of the adjustable roller which is in contact with the first friction disk 
+ 
+The rotation of the shaft on which the roller is splined 
+
+ The rotation of the second friction disk which is in contact with the roller 
+
+ The rotation of the output shaft on which the second friction disk is mounted 
+
+ The position of the adjustable roller is altered according to the speed requirement 
+
+ The speed is changed depending on the position of the adjustable roller 
+$
+
+PHYEFFECT
+$
+ Newtonian laws of motion 
+
+ The basic law that no two bodies can occupy the same space at the same time 
+
+ It is the friction generated between the bodies in contact that results in the motion being transferred 
+$
+
+INPUT
+$
+ The motor applies a torque to the shaft which in turn rotates the friction disk 
+
+ For rotation of the adjustable roller to be possible, contact between itself and the disk must be maintained 
+
+ The rotation of the adjustable roller which is in contact with the friction disk 
+
+ A force is applied to the adjustable roller in order to change its position on the shaft it is splined on 
+
+ The position of the adjustable is altered according to the speed requirement 
+
+ The position of the adjustable roller must be set on the other side of the center of the disk 
+$
+
+ORGAN
+$
+ one degree of freedom of motion between the shaft and the first cone in the direction of motion 
+ 
+The friction material on the surface of the components 
+
+zero degree of freedom of motion between the adjustable wheel and the splined shaft in the direction of motion 
+ 
+presence of a smooth sliding surface between the roller and the shaft
+
+The ratio of diameters of the disks at the point of contact of the adjustable roller and the disks 
+$
+PARTS
+$
+ The first friction disk forms a revolute pair with the frame 
+ 
+The first friction disk is in contact with the adjustable roller 
+
+ The adjustable roller forms a prismatic pair with the shaft 
+
+ The second friction disk is in contact with the adjustable roller 
+
+ The second friction disk forms a fixed pair with the output shaft 
+$

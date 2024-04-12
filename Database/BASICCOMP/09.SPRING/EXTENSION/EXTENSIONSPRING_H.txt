@@ -1,0 +1,73 @@
+SUMMARY
+$
+ These springs can be used to store readily recoverable energy. This can be interpreted as follows:
+ 
+The spring (part) extends in length (physical phenomenon). This is due to the load applied (input), which activates the hook’s law (physical effect) and requires that the load applied is an axial tensile force (organ). 
+
+
+The spring (part) regains its original shape and size (physical phenomenon). This is due to the absence of load (input), which activates the hook’s law (physical effect) and requires that the load applied be within the elastic limit (organ).
+
+$
+
+ACTION
+{
+$ 
+ To store readily recoverable energy. 
+$
+}
+STATE
+{
+$
+The spring is in a deformed shape.
+
+The spring is in its original position.
+$
+}
+PHYPHENOMENON
+{
+$
+The spring extends in length.
+
+The spring regains its original size.
+ 
+$
+}
+
+PHYEFFECT
+{
+$
+Hook’s law
+
+$
+}
+
+INPUT
+{
+$
+Load applied.
+
+Absence of load.
+$
+}
+
+ORGAN
+{
+$
+Requires that the load applied is an axial tensile force.
+
+Requires that the load applied is within the elastic limit.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The one end of the spring forms a fixed pair with the frame.
+
+The load forms a flexible pair with the spring.
+
+$
+}
+

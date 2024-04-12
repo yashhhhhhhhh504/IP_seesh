@@ -1,0 +1,190 @@
+MACTION
+{	
+A1 $ V < transmit > N < motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < shaft > A < input > $
+PP2 $ V < rotate  > N < crosspiece > A < X > $
+PP3 $ V < rotate > N < member > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < member > A < input > $
+I3 $ V < rotate > N < cross-piece > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom $
+O2 $ zero degree of freedom $
+O3 $ zero degree of freedom $
+}
+
+MPART
+{
+P1 $ input member $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ cross-piece  $
+P5 $ output member $
+}
+LINK
+{
+<  A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+<  A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P3 P4 >
+<  A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P3 P4 P5 >
+}
+
+
+FUNCTION
+
+$
+Universal joints, or u-joints are flexible mechanical connectors used to transmit rotary motion from one shaft to another shaft that is not in line with the first, or when alignment varies during service. Universal joints have various forms. They are used in nearly all types and classes of machinery. Typical applications include: articulating mechanisms, food processing equipment, replacement for expensive gearboxes, and drives where motor position must be moved angularly off centreline of the driven unit.
+A frequent application of the Helical flexured u-joint (Fig 05) is the direct replacement for a 90° bevel gearbox. Gearboxes are expensive, and usually need lubrication for their meshing gear surfaces and bearings.
+$
+
+
+STRUCTURE
+
+$
+An elementary universal joint, sometimes called a Hooke joint (Fig 04), consists of two U-shaped yokes fastened to the ends of the shafts to be connected. Within these yokes is a cross-shaped part that holds the yokes together and allows each yoke to bend, or pivot, in relation to the other. With this arrangement, one shaft can drive the other even though the angle between the two is as great as 25° from alignment.
+$
+
+
+BEHAVIOUR
+
+$
+There are two types of universal joints, defined by their number of bending joints.  The first, the single joint, has only one bending aspect.  As a result, it is capable of operating at up to a 45-degree angle.  The second style is the double joint style.  By utilizing two bending joints, the double u-joint can operate at angles up to 90 degrees.  Additionally, it also accommodate parallel offset between 2 shafts with an operating angle of the central section from 0 to 45 degrees. 
+Universal joints vary based on their material composition, hub type and the applications for which they are designed.  Steel is the most common material used, either in stainless form; or alloyed with other metals to handle greater torque and temperature.  Plastics and thermoplastics are often used in constructing universal joints, as this lends greater rust and corrosion resistance, as well as electrical and magnetic insulation in applications where this is required.
+
+The disadvantages of a single Hooke's joint (Video 01) is that the velocity of the driven shaft varies. Its maximum velocity can be found by multiplying the driving-speed by the secant of the shaft angle; for minimum speed, multiply by the cosine. When the output speed is high, output torque is low, and vice versa. This is an objectionable feature in some mechanisms. 
+
+However, two universal joints connected by an intermediate shaft (Video 02) solve this speed-torque objection. They must have equal input and output angles to work correctly. Also, the forks must be assembled so that they will always be in the same plane. The shaft-alignment angle can be double that for a single joint.
+
+The "HELI-CAL Flexure" (Fig 05) is an advanced and unique u-joint solution that generally exceeds the capabilities of common u-joint designs. A Helical u-joint is really a flexure capable of over 5° of angular misalignment. It may accommodate up to 90° of angular misalignment in certain circumstances. This type of u-joint will also compensate for axial and parallel misalignment.
+$
+
+
+PICTURE
+
+{
+ADB/COUPLING/UNIVJOINT/univjoint01.jpg		$ 01.Universal Joint	$
+ADB/COUPLING/UNIVJOINT/univjoint02.jpg		$ 02.Universal Joint	$
+ADB/COUPLING/UNIVJOINT/univjoint03.jpg		$ 03.Universal Joint	$
+ADB/COUPLING/UNIVJOINT/hookes.jpg		$ 04.Hookes Joint	$
+ADB/COUPLING/UNIVJOINT/helicalflex.jpg		$ 05.Helical Flexure	$
+ADB/COUPLING/UNIVJOINT/needlebearing.jpg	$ 06.Needle Bearing U-Joint $
+}
+
+
+CLIP
+
+{
+ADB/COUPLING/UNIVJOINT/univjoint01.mpeg		$ Single Universal Joint $
+ADB/COUPLING/UNIVJOINT/univjoint02.mpeg		$ Constant Velocity Coupling $
+}
+
+SUMMARY
+$
+This is can be used to transmit power between the two parallel shafts which have an offset. This mechanism can be interpreted as change of state from rest to rotation 
+of the output shaft. 
+
+The member (part) mounted on the input shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the member mounted on it (organ).
+
+
+The cross piece (part) rotates (physical phenomenon). This is due to the rotation of the member mounted on the input shaft (input), which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the member and the cross piece (organ).
+ 
+
+The member (part) mounted on the output shaft rotates (physical phenomenon). This is due to the rotation of cross piece (input), which activates the Newtonian laws of motion (physical effect) and require the presence of zero degree of freedom between the crosspiece and the member mounted on the output shaft (organ).
+$
+
+ACTION
+
+$ 
+ To transmit motion between two parallel shafts, which are misaligned. 
+$
+
+STATE
+
+$
+The output member is at rest.
+
+The output member is rotating.
+$
+
+PHYPHENOMENON
+
+$
+The member mounted on the input shaft rotates.
+
+The cross piece rotates.
+ 
+The member mounted on the output shaft rotates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Rotation of the input shaft.
+
+Rotation of the member mounted on the input shaft.
+
+Rotation of cross piece.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the member mounted on it.
+
+Presence of zero degree of freedom between the member and the crosspiece.
+
+Presence of zero degree of freedom between the crosspiece and the member mounted on the output shaft.
+$
+
+
+PARTS
+
+$
+The member mounted on the input shaft forms a revolute pair with the frame.
+
+The crosspiece forms a revolute pair with the member mounted on the input shaft.
+
+The member mounted on the output shaft forms a revolute pair with the crosspiece.
+$
+
+
+
+
+

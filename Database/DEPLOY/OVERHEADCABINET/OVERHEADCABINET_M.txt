@@ -1,0 +1,74 @@
+MACTION
+{
+A1 $ V < open > N < cabinet > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < closed > A < x > N < cabinet > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < open > A < x > N < cabinet > $
+} 
+MCHANGESTATE
+{
+CS1 $ from closed cabinet to open cabinet $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < oscillate > N < cabinet > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < move > N < crank > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of the zero degree of freedom between the input shaft and the crank $
+O2 $ Presence of one degree of freedom between the crank and connecting rod $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute pair$
+P3 $ frame $
+P4 $ connecting rod $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

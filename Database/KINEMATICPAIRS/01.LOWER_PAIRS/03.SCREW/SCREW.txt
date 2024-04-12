@@ -1,0 +1,153 @@
+MACTION
+{
+A1 $ V < rotate > N < member > A < X > $
+A2 $ V < translate > N < member > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < small angular > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+OS2 $ V < x > A < translation > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+CS2 $ from small angular rotation to translation motion $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < turn > N < member > A < X > $
+PP2 $ V < transfer > N < motion > A < X > $
+PP3 $ V < restrain > N < motion > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < move > N < member > A < X > $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+O2 $ thread profile $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P3 $ screw pair $
+P4 $ fixed pair $
+}
+LINK
+{
+< A1 IS1 OS1 CS1  PP1  PE1  I1  O1  P1  P2  P4 >
+< A1 IS1 OS1 CS1  PP2  PE1  I2  O1  P1  P1  P5 >
+< A1 IS1 OS1 CS1  PP3  PE2  I3  O2  P1  P2  P3 >
+
+< A2 IS2 OS2 CS2  PP1  PE1  I1  O1  P1  P2  P4 >
+< A2 IS2 OS2 CS2  PP2  PE1  I2  O1  P1  P1  P5 >
+< A2 IS2 OS2 CS2  PP3  PE2  I3  O2  P1  P2  P3 >
+}
+
+
+
+
+FUNCTION
+
+$
+A Screw pair allows only a relative rotation between two elements, which can be expressed by any one  coordinates. Thus, a screw pair has a single degree of freedom.
+$
+
+
+STRUCTURE
+
+$
+Lower pairs are differentiated from higher pairs by the type of contact between the two bodies of the pair. Lower pairs have a surface contact, whereas two bodies of a Higher pair have a line or a point contact. An example of a screw pair is shown in the figure.
+$
+
+
+BEHAVIOUR
+$
+A screw pair keeps two axes of two rigid bodies aligned and allows a relative screw motion. Two rigid bodies constrained by a screw pair a motion which is a composition of a translational motion along the axis and a corresponding rotary motion around the axis. Therefore, a screw pair removes five degrees of freedom in spatial mechanism. 
+As can be seen from the figure, the screw can rotate as well as traverse linearally within the threaded housing. Thus this pair has only one degree of freedom.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/03.SCREW/screw1.jpg	$ Screw Pair $
+}
+
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/03.SCREW/screw1.avi	$ Screw Pair $
+}
+
+SUMMARY
+$	
+The member (part) rotates as well as translates along the other fixed member (physical phenomenon). This is due to the torque applied on to it (input), which activates the Newtonian laws of motion and also the law “no two bodies can occupy the same space at the same time“ (physical effect) and requires the presence of thread profile on the moving as well as the fixed member (organ).
+$
+
+ACTION
+$
+ 
+ Using this a moving member can be made to translate and rotate simultaneously on another fixed member. 
+
+$
+STATE
+$
+
+Absence of torque at the moving member. 
+
+Presence of torque at the moving member
+
+$
+PHYPHENOMENON
+$
+
+Translation accompanied by rotation of the moving member over the fixed member. 
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+$
+
+INPUT
+$
+
+Torque applied on to it.
+
+$
+
+ORGAN
+$
+
+Presence of thread profile on the moving as well as the fixed member.
+
+$
+PARTS
+$
+
+The moving member forms a screw pair with the fixed member.
+
+$
+

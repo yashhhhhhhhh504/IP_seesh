@@ -1,0 +1,235 @@
+
+MACTION
+{
+A1 $ V < pump > N < fluid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < lower > N < pressure > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < higher > N < pressure > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ fluid pressure is increased $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < suck > N < part > A < inlet > $
+PP2 $ V < push > N < impeller > A < sucked > $
+PP3 $ V < increase > N < diffuser > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli's law $
+PE2 $ Newtonian laws of motion $
+PE3 $ Bernoulli's law $
+}
+
+MINPUT
+{
+I1 $ V < create > N < pressure > A < low > $
+I2 $ V < rotate > N < impeller > A < x > $
+I3 $ V < increase > N < area > A < x > $
+}
+
+MORGAN
+{
+O1 $ There has to be sufficient pressure difference $
+O2 $ high rotation speed of impeller $
+O3 $ gradual increase in area $
+}
+
+MPART
+{
+P1 $ Fluid $
+P2 $ Impeller $
+P3 $ Diffuser and volute casing $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+}
+
+
+FUNCTION
+
+$
+Centrifugal pumps are used to pump fluids and to transport them. They have impeller keyed to drive shaft. The diffuser that is fixed to casing surrounds impeller. Casing is volute type.
+$
+
+
+STRUCTURE
+
+$
+They have impeller keyed to drive shaft. The diffuser that is fixed to casing surrounds impeller. Casing is volute type. Impeller has vanes mounted on a plate, which is keyed to drive shaft. Diffuser and volute casing increase cross sectional area.
+$
+
+BEHAVIOUR
+
+$
+Fluid is sucked in the inlet part of the pump. This is due to low pressure created by the impeller, which actuates the Bernoulli's law. There has to be sufficient pressure difference. Impeller pushes the sucked fluid. This is due to rotation of the impeller, which actuates Newtonian laws of motion and requires high rotation speed of impeller. Diffuser and volute casing increases the fluid pressure. This is due to increase in area, which increases pressure, which actuates the Bernoulli's law and requires gradual increase in area.
+
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/CENTRIFUGAL-PUMP/CENTRIFUGAL-PUMP01.JPG	$ 01.CENTRIFUGAL-PUMP $
+ADB/FLOW-DEVICES/CENTRIFUGAL-PUMP/CENTRIFUGAL-PUMP02.GIF	$ 02.CENTRIFUGAL-PUMP $
+
+}
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Centrifugal pumps are used to pump fluids and to increase the pressure head. They have impeller keyed to drive shaft. The diffuser that is fixed to casing surrounds impeller. Casing is volute type. Its working is explained below,
+
+Fluid (part) is sucked in the inlet part of the pump (physical phenomenon). This is due to low pressure (input) created by the impeller, which actuates the Bernoulli's law (physical effect). There has to be sufficient pressure difference (organ).
+
+Impeller (part) pushes the sucked fluid (physical phenomenon). This is due to rotation (input) of the impeller, which actuates Newtonian laws of motion (physical effect) and requires high rotation speed of impeller (organ).
+
+Diffuser and volute casing (part) increases the fluid pressure (physical phenomenon). This is due to increase in area, which increases pressure (input), which actuates the Bernoulli's law (physical effect) and requires gradual increase in area (organ).
+
+$
+
+
+
+ACTION
+
+$ 
+To pump the fluid
+ 
+$
+
+STATE
+
+$
+
+Fluid at lower level.
+Fluid pumped at put at the higher level or other desired location.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+Fluid is sucked in the inlet part of the pump
+
+Impeller pushes the sucked fluid
+
+Diffuser and volute casing increases the fluid pressure
+ 
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli's law
+
+Newtonian laws of motion
+
+Bernoulli's law
+$
+
+
+INPUT
+
+$
+low pressure created by the impeller
+
+rotation (input) of the impeller
+
+increase in area, which increases pressure
+$
+
+
+ORGAN
+
+$
+
+There has to be sufficient pressure difference
+
+high rotation speed of impeller
+
+gradual increase in area
+
+
+$
+
+
+
+PARTS
+$
+
+Fluid
+
+Impeller
+
+Diffuser and volute casing
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

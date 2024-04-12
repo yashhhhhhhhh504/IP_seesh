@@ -1,0 +1,70 @@
+MACTION
+{
+A1 $ V < change > A < x > N < speed > $
+A2 $ V < transmit > A < x > N < power > $
+A3 $ V < reverse > A < rotating > N < direction > $
+}
+
+MSTATE
+{
+S1 $ V < break > A <  > N < contact > $
+S2 $ V < make contact > A <  > N < contact > $
+S3 $ V < change > A <  > N < position > $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < disk > $
+PP2 $ V < rotate > A < x > N < roller > $
+PP3 $ V < rotate > A < x > N < shaft > $
+PP4 $ V < change > A < x > N < position > $
+PP5 $ V < change > A < x > N < speed > $
+PP6 $ V < reverse > A < rotating > N < direction > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < maintain > A < x > N < contact > $
+I3 $ V < rotate > A < x > N < roller > $
+I4 $ V < apply > A < x > N < force > $
+I5 $ V < change > A < x > N < position > $
+I6 $ V < move > A < past > N < center > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ friction material $
+O3 $ 0 dof of motion in the dir of motion $
+O4 $ position of roller on disc $
+O5 $ ratio of diameters $
+O6 $ position of roller depending on the center $
+}
+
+MPART
+{
+P1 $ disk $
+P2 $ frame $
+P3 $ roller $
+P4 $ shaft $
+P5 $ revolute pair $
+P6 $ prismatic pair $
+P7 $ contact $
+}
+LINK
+{
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P5
+A2 - PP2 - PE3 - I2 - O2 - P1 - P3 - P7
+A2 - PP3 - PE2 - I3 - O3 - P3 - P4 - P6
+A1 - PP4 - PE1 - I4 - O4 - P3 - P4 - P6
+A1 - PP5 - PE1 - I5 - O5 - P1 - P3 - P7
+A3 - PP6 - PE1 - I6 - O6 - P1 - P3 - P7
+}

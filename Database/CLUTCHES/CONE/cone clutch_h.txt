@@ -1,0 +1,110 @@
+SUMMARY
+$
+
+This mechanism can be used to transmit motion between two shafts . It can also be interpreted as a change of state from rest to rotation.
+
+The smaller cone (part) engages with the bigger cone (physical phenomenon). This is due to the force of the spring (input), which activates elastic effect (physical effect) of the spring and requires the spring to have some stiffness (organ). 
+
+The smaller cone (part), which is mounted on the input shaft, rotates (physical phenomenon). This due to the torque applied by the input shaft (input), which activates Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the input shaft and the smaller cone (organ).
+
+The bigger cone (part) when engaged with the smaller cone rotates (physical phenomenon). This is due to the rotation of the smaller cone (input), which activates the friction effect (physical effect) and requires the presence of friction surfaces between the two cones (organ).
+ 
+The gear (part) that is mounted on the bigger cone rotates (physical phenomenon). This is due to the rotation of the bigger cone (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the bigger cone and the gear (organ).
+
+The gear that is mounted on the output shaft (part) rotates (physical phenomenon). This is due to the rotation of the meshing gear (input), which activates the law “no two bodies can occupy the same place at the same time” (physical effect) and requires the meshing of teeth between the two gears (organ).
+
+
+$
+
+ACTION
+{
+$ 
+Using this mechanism motion can be transmitted between two separate shafts. 
+$
+
+}
+STATE
+{
+$
+Rest.
+$
+Rotation.
+$
+
+}
+PHYPHENOMENON
+{
+$
+The smaller cone that is mounted on the input shaft engages with the larger cone.
+$
+ Smaller cone that is mounted on the input shaft rotates continuously.
+$ 
+The larger cone to which the smaller cone is engaged rotates continuously.
+$
+The gear that is mounted on the larger cone rotates continuously.
+$
+Rotation of the gear that is mounted on the output shaft.
+$
+
+}
+
+
+PHYEFFECT
+{
+$
+Elastic effect of the spring, which is connected to the smaller cone –input shaft assembly.
+$
+Newtonian laws of motion.
+$
+Friction effect between the surfaces two cones.
+$
+Newtonian laws of motion.
+$
+No two bodies can occupy the same space at the same time.
+$
+
+}
+
+INPUT
+{
+$
+Spring force applied to the input shaft-smaller cone assembly.
+$
+Torque applied to the input shaft by the engine.
+$
+Rotation of the smaller cone.
+$
+Rotation of the larger cone into which the smaller cone is engaged.
+$
+Rotation of the gear mounted on the larger cone.
+$
+}
+
+ORGAN
+{
+$
+Stiffness of the spring.
+$
+Zero degree of freedom between the input shaft and the smaller cone.
+$
+Friction surface between the two cones.
+$
+Zero degree of freedom between the larger cone and the gear.
+$
+Meshing of teeth between the gear that is mounted on the larger cone and the one that is mounted on the output shaft.
+}
+
+STUCTURE1
+{
+$
+The spring is connected to the input shaft-smaller cone assembly.
+$
+The input shaft and the smaller cone form a revolute pair with the frame.
+$
+The larger cone and the larger gear that is mounted on it form a revolute pair with the frame.
+$
+The smaller gear and the output shaft form a revolute pair with the frame.
+$
+
+$
+}

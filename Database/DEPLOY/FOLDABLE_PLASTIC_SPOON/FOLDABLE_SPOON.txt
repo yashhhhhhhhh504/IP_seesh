@@ -1,0 +1,166 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < handle > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the handle should rotate through 180 degrees only $
+}
+
+MPART
+{
+P1 $ Handle $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+The foldable plastic spoon that is given along with cookies and coffee short haul flights is collapsible structure.
+$
+
+
+STRUCTURE
+
+$
+The plastic spoon has a handle that is divided into two parts. The part that is rigidly fixed to the bowl has an extension to prevent the overturning of the movable part.
+$
+BEHAVIOUR
+
+$
+This can spoon when in use occupies large space and occupies less space when not in use.
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/FOLDABLE_PLASTIC_SPOON/01.JPG	$ 01.foldable plastic spoon $
+ADB/DEPLOY/FOLDABLE_PLASTIC_SPOON/02.JPG	$ 02.foldable plastic spoon $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+It is a good example of deployment structure. It occupies less area when folded and more area when in use. This can be interpreted as a change of state from occupying less area to large area. This can be discussed as follows:
+
+The handle (part) of the spoon is rotated about the hinge and is made in line with the other part of the handle (physical phenomenon). This is due to the moment applied (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the handle should rotate through 180 degrees only (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+To deploy.
+
+$
+
+STATE
+
+$
+It is occupying less area.
+
+It is occupying large area.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+The handle of the spoon is rotated about the hinge and is made in line with the other part of the handle.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Moment applied.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the handle should rotate through 180 degrees only.
+
+$
+
+
+
+PARTS
+$
+Handle.
+
+
+
+
+$
+
+

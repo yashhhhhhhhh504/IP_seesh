@@ -1,0 +1,192 @@
+MACTION
+{
+A1 $ V < perform > N < computation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < oscillating > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to oscillating motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > N < link-x > A < X > $
+PP2 $ V < oscillate > N < link-y > A < X > $
+PP3 $ V < oscillate > N < link-z > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < x > $
+I2 $ V < oscillate > N < link-x > A < x > $
+I3 $ V < oscillate > N < link-y > A < x > $
+}
+
+MORGAN
+{
+O1 $ link x is hinged to the surface $
+O2 $ link y is hinged to the surface $
+O3 $ link z is hinged to the surface $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ link $
+P4 $ frame $
+P5 $ revolute pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O3 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 P4 P5 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Analog computing mechanisms are capable of almost instantaneous response to minute variations in input. This mechanism is capable of performing addition and subtraction, based on the differential principle.
+$
+
+
+STRUCTURE
+
+$
+This computing mechanism consists of 7 links, all connected by revolute joints. Links ‘x’ and ‘y’ are the input links while ‘z’ is the output link. The longitudinal axis of ‘z’ and those of ‘x’ and ‘y’ lie in the same plane, and are parallel to each other. The output shaft ‘z’ is pivoted at the center of link 2, by a revolute joint.
+$
+
+
+BEHAVIOUR
+
+$
+This mechanism is of the type where the inputs displace links angularly. This mechanism can solve the equation z = c(x ± y), where 'c' is the scale factor, 'x' and 'y' are inputs and 'z' is the output. The motion of 'x' and 'y' in the same direction performs addition, while in the opposite direction it performs subtraction. Consider ‘x’ and ‘y’ both moving by 5 units in the clockwise direction. Therefore even ‘z’ moves clockwise by a certain amount. Or z  =  c(5 + 5), where the ‘c’ is the scaling factor.
+Similarly if ‘x’ moves by 5 units in the clockwise direction and ‘y’ moves in the anti-clockwise direction by 5 units, then the position of ‘z’ remains unaffected, z = 0 = c(5 – 5).
+The value of the scaling factor ‘c’ depends on the ratio of the links of the mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/COMPUTE/ROTATLINK/ROTATLINK.jpg	$ Rotating Link Differential	$
+}
+
+
+CLIP
+{
+ADB/COMPUTE/ROTATLINK/ROTATLINK.avi	$ Rotating Link Differential	$
+}
+
+SUMMARY
+$
+This can be used to perform computation. This can be interpreted as a change of state from rest to oscillating motion. This can be described as follows:
+
+The link x (part) oscillates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link x is hinged to the surface (organ).
+
+The link y (part) oscillates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link y is hinged to the surface (organ).
+
+The link z (part) oscillates (physical phenomenon). This is due to the oscillation of the links x and y (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the link z is hinged to the surface (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To perform computation.
+$
+
+STATE
+
+$
+The link z is at rest.
+
+The link z oscillates.
+
+$
+
+PHYPHENOMENON
+
+$
+
+The link x oscillates.
+
+The link y oscillates.
+
+The link z oscillates.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The oscillation of the links x and y.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the link x is hinged to the surface.
+
+Necessary that the link y is hinged to the surface.
+
+Necessary that the link z is hinged to the surface.
+
+
+$
+
+
+
+PARTS
+$
+The link x forms a revolute pair with the frame.
+
+The link y forms a revolute pair with the frame.
+
+The link z forms a revolute pair with the frame.
+
+
+
+$
+
+

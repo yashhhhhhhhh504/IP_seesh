@@ -1,0 +1,44 @@
+LABEL
+$ Electric Motors $
+{
+ADB/ACTUATOR/ELECTRIC_MOTOR/ELECTRIC_MOTOR.TXT		$ Electric Motor $
+}
+
+
+
+
+
+
+
+
+
+LABEL
+$ Solenoids $
+{
+ADB/ACTUATOR/SOLENOID/SOLENOID.TXT              $ Solenoid $
+}
+
+
+LABEL
+$ Servo motors $
+{
+}
+
+
+LABEL
+$ Stepper motors $
+{
+}
+
+
+LABEL
+$ Piezoelectric materials $
+{
+ADB/ACTUATOR/PIEZO/piezoelectric.txt		$ Piezoelectric	$
+}
+
+
+LABEL
+$ Bimetallic strip $
+{
+}

@@ -1,0 +1,228 @@
+MACTION
+{
+A1 $ V < spray > < liquid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < liquid-state > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < gaseous-state > $
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid to gas state $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < push-button > A < X > $
+PP2 $ V < move > N < stem-opening > A < x > $
+PP3 $ V < move > N < liquid > A < X > $
+PP4 $ V < spray > N < liquid > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ bernoulli's effect $
+PE4 $ vaporisation effect $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < push-button > A < X > $
+I3 $ V < x > N < pressure-gradient > A < x > $
+I4 $ V < decrease > N < boiling-point > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of sliding contact between the valve push button and the valve stem $
+02 $ necessary that the stem opening is just above the valve $
+O3 $ Presence of sliding contact between the valve push button and the valve stem $
+O4 $ Presence of low pressure outside the dispenser $
+
+}
+
+MPART
+{
+P1 $ push-button $
+P2 $ nozzle $
+P3 $ fixed pair $
+P4 $ nozzle-stem $
+P5 $ gasket $
+P6 $ sliding-pair $
+P7 $ dispensable material $
+P8 $ dispenser $
+P9 $ liquid $
+P10 $ gas $
+P11 $ atmosphere $
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P7 P8 P9 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P7 P10 P11 >
+}
+
+
+
+FUNCTION
+
+$
+An aerosol dispenser is a device designed to produce a fine spray of liquid or solid particles that can be suspended in a gas such as the atmosphere. 
+$
+
+
+STRUCTURE
+
+$
+The word aerosol means "a suspension of colloidal particles in a gas." The most common natural aerosols are clouds, fog, and air pollution. All hold in suspension tiny particles so small that it would take billions to fill a teaspoon. On a more practical level, aerosols can be paints, deodorants, shaving creams, and any material that can be atomized or foamed.
+An aerosol dispenser is usually cylindrical. It has a concave bottom, which will withstand high internal pressure, and a bell-shaped top. The inner mechanism consists of a spring-loaded push-button valve and a dip tube that extends down from the valve into a liquid or powder called the "dispensable" that is mixed with the propellant.
+$
+
+
+BEHAVIOUR
+
+$
+The propellant is always a substance that goes from liquid to gas at a low temperature. In other words, the liquid has a low boiling point. This boiling-point temperature is measured relative to atmospheric pressure at sea level (14.69 pounds per square inch) and an atmospheric temperature of about 700 F. High pressure inside the dispenser raises the propellant's boiling point, allowing it to remain a liquid at room temperatures. 
+One common propellant is Freon-12, a man-made fluorocarbon. In manufacture, a quantity of Freon-12 is mixed under pressure with a dispensable (paint, deodorant. air freshener). The pressure holds the propellant's boiling point high so that it enters the can as a liquid. With a specific amount of space left above the liquid Freon, the can is sealed. Soon, the temperature outside the dispenser causes some of the Freon to bailout of the mixture, forming a pressure pocket of gas above the mixture. At a specific pressure, which may be several times normal atmospheric pressure, the boiling point of the mixture rises to a point higher than the outside temperature. This halts gas production. The dispenser is then in a state of thermal equilibrium (temperature balance). Freon was the most common aerosol propellant, but its use has been banned because it is believed to contribute to destruction of the ozone layer of the stratosphere; common propellants now include propane, butane, and other hydrocarbons.
+
+Pressing the valve push-button breaks the airtight seal between a rubber gasket and a tiny opening in the valve stem. The opening drops into the expansion chamber that is fed by the dip tube. Essentially, this action allows the liquid to respond to two forces: the high pressure of the gas pocket within the dispenser and the relatively low pressure outside. Internal gas pressure forces some of the dispensable up the dip tube, through the expansion chamber, into the valve, and out through atomizing nozzle where it becomes a fine-mist "spray." Escape of the dispensable drops the fluid level within the can. This creates increased space above the liquid and drops internal pressure as well as the boiling point of the Freon. Immediately, the propellant boils and re-pressurizes the gas space. This process yields a fairly consistent spraying pressure until the dispenser's contents are exhausted.
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/AEROSOL/aerosol.jpg		$ Aerosol Dispenser	$
+ADB/SPECIAL/AEROSOL/aerodisp.jpg	$ Aerosol Dispenser	$
+ADB/SPECIAL/AEROSOL/nozzle.jpg		$ Dispenser Nozzle	$
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+An aerosol dispenser is a device designed to produce a fine spray of liquid or solid particles that can be suspended in a gas such as the atmosphere. This is can be interpreted as a change of state from liquid to gas follows:
+
+The push-button (part) moves down (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a gap between the valve push button and the surface of the bottle (organ).
+
+The stem opening (part) moves down into the expansion chamber (physical phenomenon). This is due to the downward motion of the valve push button (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the stem opening is just above the valve (organ).
+
+
+The liquid (part) in the expansion chamber moves in to the valve through the stem opening (physical phenomenon). This is due to the pressure gradient (input), which activates bernoulli's effect (Physical effect) and requires the presence of high pressure within the dispenser (organ).
+
+The liquid (part) now comes out of the atomizing nozzle and becomes a fine spray (physical phenomenon). This is due to decrease in the boiling point of the liquid (input), which activates vaporisation effect (Physical effect) and requires the presence of low pressure outside the dispenser (organ).
+$
+
+ACTION
+$
+ 
+ To produce a fine spray of liquid or solid particles that can be suspended in a gas such as the atmosphere.
+
+$
+STATE
+$
+
+Dispensable in the form of liquid inside the dispenser.
+
+Dispensable in the form of gas outside the dispenser.
+
+
+$
+PHYPHENOMENON
+$
+
+The push-button moves down into the expansion chamber.
+
+The stem opening moves down into the expansion chamber.
+
+
+The liquid in the expansion chamber moves in to the valve through the opening.
+ 
+The liquid now comes out of the atomizing nozzle and becomes a fine spray.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time.
+
+bernoulli's effect.
+
+vaporisation effect.
+
+$
+
+INPUT
+$
+
+Force applied on it.
+
+The downward motion of the valve push button.
+
+Pressure gradient.
+
+Decrease in the boiling point of the liquid.
+
+$
+
+ORGAN
+$
+
+
+Presence of a gap between the valve push button and the surface of the bottle.
+
+Necessary that the stem opening is just above the valve.
+
+
+Presence of high pressure within the dispenser.
+
+Presence of low pressure outside the dispenser.
+
+
+
+
+$
+
+PARTS
+
+$
+
+The push button forms a fixed pair with the nozzle.
+
+The stem forms a sliding pair with the gasket.
+
+The dispensable is in the form of liquid inside the dispenser.
+
+The dispensable is in the form of gas outside the dispenser.
+
+
+
+$
+
+
+

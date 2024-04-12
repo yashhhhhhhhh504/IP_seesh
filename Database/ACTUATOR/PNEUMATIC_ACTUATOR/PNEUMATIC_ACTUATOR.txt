@@ -1,0 +1,240 @@
+
+
+MACTION
+{
+A1 $ V < control > N < valve > A < X > $
+A1 $ V < actuate > N < X > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < open > N < valve > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < closed > N < valve > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from open to closed $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rest > N < diaphragm > A < X > $
+PP2 $ V < move > N < air > A < x > $
+PP3 $ V < move > N < diaphragm > A < down > $
+PP4 $ V < move > N < stem > A < down > $
+}
+
+MPHYEFFECT
+{
+PE1 $ spring effect $
+PE2 $ Bernoulli’s law $
+PE3 $ Newton’s second law of motion $
+}
+
+MINPUT
+{
+I1 $ V < act > N < spring-force > A < x > $
+I2 $ V < x > N < pressure-difference > A < x > $
+I3 $ V < x > N < air-pressure > A < x > $
+I4 $ V < move > N < diaphragm > A < down > $
+}
+
+MORGAN
+{
+O1 $ Spring force must be greater than the fluid pressure $
+O2 $ Fluid pressure outside is greater than fluid pressure inside $
+O3 $ Valve is open $
+O4 $ Fluid pressure is high enough to overcome the spring force $
+O5 $ Presence of zero degree of freedom of motion $
+}
+
+MPART
+{
+P1 $ diaphragm $
+P2 $ air $
+P3 $ stem $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 O3 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O4 P1 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O5 P3 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 O3 P2 >
+< A2 IS1 OS1 CS1 PP3 PE3 I3 O4 P1 >
+< A2 IS1 OS1 CS1 PP4 PE3 I4 O5 P3 >
+}
+
+FUNCTION
+
+$
+Pneumatic valve actuators are devices that adjust the position of the valve by converting air pressure into linear or rotary motion.
+$
+
+
+STRUCTURE
+
+$
+The valve consists of a rubber diaphragm that separates the actuator housing into two air chambers. The upper chamber receives supply air through an opening at the top of the housing. The bottom chamber contains a spring that forces the diaphragm against the mechanical stops in the upper chamber. A local indicator is connected to the stem, whose one end is connected to the control valve and the other end pushes the diaphragm.
+If the supply air pressure is decreased, the spring begins to force the diaphragm upward and open the control valve. When the supply air pressure is held constant at some value between zero and maximum, the valve will position at an intermediate position.
+$
+
+BEHAVIOUR
+
+$
+Initially when there is no air supply, the spring forces the diaphragm upward against the mechanical stops and holds the valve fully open. As the supply air pressure is increased from zero, its force on top of the diaphragm begins to overcome the opposing force of the spring. This causes the diaphragm to move downward and the control valve to close. The indicator shows the position of the diaphragm. 
+$
+
+ATTRIBUTE
+
+$
+Pneumatic rotary actuators use pressurized air to rotate mechanical components. They are used in applications such as machine loading and unloading, material handling, product assembly, welding, packing, testing and quality control. There are several types of pneumatic rotary actuators. Single rack-and-pinion actuators drive a single rack that rotates the pinion. Double or four piston rack-and-pinion actuators drive racks on both sides of the pinion. Single rotary vane devices are actuated directly by pressurized air. Double rotary vane devices use two chambers of pressurized air to produce increased torque. Multi-motion rotary vane actuators are also available. Indexing or multi-position devices allow multiple position stops along strokes. Rotation angle, the angle to which an actuator can rotate before reaching its travel limit, varies widely among pneumatic rotary actuators. Common rotation angles are 45°, 90°, 120°, 135°, 180°, 225°, 270°, 325°, and 360°. Pneumatic rotary actuators with rotation angles less than 45° or greater than 360° are also available.
+Specifications for pneumatic rotary actuators include operating pressure range, operating temperature, maximum torque, rotational element type, axial load capacity, radial load capacity, and linear stroke. Operating pressure range and operating temperature are expressed as full-required ranges. Maximum torque, the required range of torque output, if often measured in inch-pounds (in-lbs). Rotational elements for pneumatic rotary actuators include shafts and tables.
+PNEUMATIC ROTARY ACTUATORS
+• Bore Æ 40, 50, 63, 75, 100, 125, and 150 mm.
+• Double and single acting.
+• Rotation 900 to 3600.
+• Working Pressure 2 to 15 bar.
+$
+
+PICTURE
+
+{
+ADB/ACTUATOR/PNEUMATIC_ACTUATOR/01.GIF         $ PNEUMATIC ACTUATOR $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+
+$
+Pneumatic valve actuators are devices that adjust the position of the valve by converting air pressure into linear or rotary motion. Working of a linear pneumatic actuator is explained in steps as follows.
+
+Diaphragm (part) is resting against the mechanical stops and the control valve is open (physical phenomenon). This is due to the spring force acting on the other side of the diaphragm (input), which activates the spring effect (physical effect) and it requires that the spring force is greater than the air pressure (organ).
+
+Air (part) moves into the upper chamber through the opening at the top (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli’s law (physical effect) and it requires that pressure inside the upper chamber is less than that of the air entering it and it also requires that the control valve is open (organ).
+
+Diaphragm (part) moves vertically down (physical phenomenon). This is due to the pressure of the air in the upper chamber (input), which activates the Newton’s second law of motion (physical effect) and it requires that the pressure applied by the air on the diaphragm is more than that of the spring force acting on the other side of the diaphragm (organ).
+
+Stem (part) moves down and closes the control valve opening (physical phenomenon). This is due to the downward movement of the diaphragm (input), which activates the Newton’s second law of motion (physical effect) and it requires the presence of zero degree of freedom between the stem and the valve closure element (organ).
+$
+
+ACTION
+
+$ 
+To control the valve
+$
+
+STATE
+
+$
+Valve opened
+
+Valve closed
+$
+
+
+
+PHYPHENOMENON
+
+$
+Diaphragm is resting against the mechanical stops 
+
+Air moves into the upper chamber through the opening at the top
+
+Diaphragm moves vertically down
+
+Stem moves down 
+$
+
+
+PHYEFFECT
+
+$
+Spring effect
+
+Bernoulli’s law
+
+Newton’s second law of motion
+
+Newton’s second law of motion
+$
+
+
+INPUT
+
+$
+Spring force acting on the other side of the diaphragm
+
+The pressure difference
+
+Pressure of the air in the upper chamber
+
+Downward movement of the diaphragm
+$
+
+
+ORGAN
+
+$
+Spring force must be greater than the air pressure
+
+Pressure inside the upper chamber must be less than that of the air entering it 
+
+Control valve must be open
+
+Pressure applied by the air on the diaphragm must be greater than the spring force acting on the other side of the diaphragm
+
+Presence of zero degree of freedom between the stem and the valve closure element
+$
+
+
+
+PARTS
+
+$
+Diaphragm
+
+Air
+
+Diaphragm
+
+Stem
+$
+
+REFERENCES 
+
+$
+http://www.engineersedge.com/hydraulic/pneumatic_actuator.htm
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

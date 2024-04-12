@@ -1,0 +1,237 @@
+
+
+MACTION
+{
+A1 $ V < travel > N < power > A < muscular > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rest > N < cycle > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < move > A < x > N < cycle > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < sprocket > A < front > $
+PP2 $ V < transmit > N < chain > A < X > $
+PP3 $ V < rotate > N < wheel > A < rear > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < human > $
+I2 $ V < pull > N < sprocket > A < front > $
+I3 $ V < transmit > N < power > A < x > $
+}
+
+MORGAN
+{
+O1 $ Torque applied to be sufficient to overcome resistance  $
+O2 $ meshing of chain and rear sprocket  $
+O3 $ Sufficient strength of chain and torque of value to overcome the inertia of cycle $
+}
+
+MPART
+{
+P1 $ Front sprocket $
+P2 $ Chain $
+P3 $ Rear sprocket and the rear wheel  $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+
+FUNCTION
+
+$
+A bicycle is used to go from one location to other by using muscle power.
+$
+
+
+STRUCTURE
+
+$
+It has two wheels, an arrangement to transmit power from front sprocket to rear sprocket, which is mounted on rear wheel. Torque is applied on the front sprocket. The power is transmitted to rear wheel through chain.
+$
+
+BEHAVIOUR
+
+$
+
+Front sprocket rotates. This is due to torque applied by human leg on it, which actuates Newtonian laws of motion and requires torque applied to be sufficient to overcome resistance. Chain mounted on both sprocket wheels transmits power to rear sprocket. This is due to pull by front sprocket on the chain, which actuates the law that no two bodies occupy the same space at the same time. Rear sprocket and the rear wheel rotate. This is due to power transmitted by the chain, which actuates Newtonian laws of motion and requires sufficient strength of chain and torque of value to overcome the inertia of cycle.
+
+
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/BICYCLE/BICYCLE01.GIF		$ 01.BICYCLE $
+ADB/TRANSPORT/BICYCLE/BICYCLE02.JPG		$ 02.BICYCLE $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+SUMMARY
+$
+A bicycle is used to go from one location to other by using muscle power. It has two wheels, an arrangement to transmit power from front sprocket to rear sprocket, which is mounted on rear wheel. Its working is as follows,
+
+Front sprocket (part) rotates (physical phenomenon). This is due to torque applied (input) by human leg on it, which actuates Newtonian laws of motion (physical effect) and requires torque applied to be sufficient to overcome resistance (organ).
+
+Chain (part) mounted on both sprocket wheels transmits power to rear sprocket (physical phenomenon). This is due to pull by front sprocket on the chain (input), which actuates the law that no two bodies occupy the same space at the same time (physical effect) and requires that meshing of chain and rear sprocket (organ).
+
+Rear sprocket and the rear wheel (part) rotates (physical phenomenon). This is due to power transmitted (input) by the chain, which actuates Newtonian laws of motion (physical effect) and requires sufficient strength of chain and torque of value to overcome the inertia of cycle (organ).
+
+$
+
+ACTION
+
+$ 
+ To travel from one location to other by using muscle power.
+$
+
+STATE
+
+$
+Cycle at rest.
+
+Cycle in motion.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Front sprocket rotates
+
+Chain mounted on both sprocket wheels transmits power to rear sprocket
+
+Rear sprocket and the rear wheel rotates
+
+$
+
+
+PHYEFFECT
+
+$
+
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+
+Torque applied by human leg
+
+Pull by front sprocket on the chain
+
+Power transmitted by the chain
+
+$
+
+
+ORGAN
+
+$
+Torque applied to be sufficient to overcome resistance
+
+meshing of chain and rear sprocket
+
+Sufficient strength of chain and torque of value to overcome the inertia of cycle
+
+
+$
+
+
+
+PARTS
+$
+
+Front sprocket
+
+Chain
+
+Rear sprocket and the rear wheel
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

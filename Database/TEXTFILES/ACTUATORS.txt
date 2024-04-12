@@ -1,0 +1,42 @@
+LABEL
+$ Electromagnets $
+{
+ADB/ACTUATOR/ELECTROMAGNET/ELECTROMAGNET.TXT		$ Electromagnet $
+}
+
+
+LABEL
+$ Hydraulic Pumps $
+{
+ADB/ACTUATOR/PUMPS/CENTRIFUGAL/centrifugal.TXT			$ Centrifugal Pumps $
+ADB/ACTUATOR/PUMPS/GEARPUMP/EXTERNALGEARPUMP.TXT		$ External Gear Pump $
+ADB/ACTUATOR/PUMPS/PERISTALTICPUMP/PERISTALTICPUMP.TXT        	$ Peristaltic Pump $  
+ADB/ACTUATOR/PUMPS/JETPUMP/JETEJECTORPUMP.TXT			$ Jet Ejector Pump $
+ADB/ACTUATOR/DOOR-CLOSING-DEVICES/DOOR-CLOSING-DEVICES.TXT	$ Door Closing Devices $
+}
+
+
+LABEL
+$ Magnetostriction $
+{
+ADB/ACTUATOR/MAGNETOSTRICTION/MAGNETOSTRICTION.TXT	$ Terfenol Actuator	$
+}
+
+
+LABEL
+$ Piezo $
+{
+ADB/ACTUATOR/PIEZO/PIEZO.TXT	                        $ Piezoactuator	$
+}
+
+LABEL
+$ Pneumatic $
+{
+ADB/ACTUATOR/PNEUMATIC_ACTUATOR/PNEUMATIC_ACTUATOR.TXT     $ Pneumatic Actuator $
+}
+
+LABEL
+$ Potentiometer $
+{
+ADB/ACTUATOR/POTENTIOMETER/POTENTIOMETER.TXT       $ Potentiometer $
+}

@@ -1,0 +1,75 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < cover > N < object > A < X > $
+A3 $ V < increase > N < area > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < small > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < expand > N < roof > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < actuating > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the force applied on it sufficient to spread the roof on the top of the car. $
+}
+
+MPART
+{
+P1 $ folded roof $
+P2 $ Car frame. $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A3 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

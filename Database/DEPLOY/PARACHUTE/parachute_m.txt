@@ -1,0 +1,90 @@
+MACTION
+{
+A1 $ V < reduce > N < speed > A < falling > $
+A2 $ V < deploy > N < x > A < x > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from less area to large area $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < press > N < part > A < X > $
+PP2 $ V < expand > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < pressing > $
+I2 $ V < x > N < pressure > A < gas > $
+}
+
+MORGAN
+{
+O1 $ Presence of a button. $
+O2 $ Necessary that the balloon material is flexible. $
+}
+
+MPART
+{
+P1 $ Button. $
+P2 $ Balloon. $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

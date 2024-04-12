@@ -1,0 +1,110 @@
+
+SUMMARY
+$
+
+Rockets are used to go from one point to other by using thrust caused by the mass, which is coming out of the rocket. The working can be explained as bellows,
+
+The fuel (part) inside the rocket is burned (physical phenomenon). This is due to the raise in temp (input), which activates the ignition effect (physical effect) and is necessary that the temperature achieved is at least equal to the ignition temperature of the fuel used (organ). 
+
+The hot gases (part) are ejected out of the rocket through a nozzle (physical phenomenon).  This is due to the combustion of the fuel (input), which activates the Bernoulli's law (physical effect) and requires the presence of pressure difference for the flow of gases (organ).
+
+The rocket (part) moves ahead (physical phenomenon). This is due to thrust (input) produced by the flow of hot gases (input) which activates the Newton's third law (physical effect) and is necessary that the thrust produce is enough to counter act the resistance (organ).
+
+
+
+$ 
+ACTION
+
+$ 
+ To get motion.
+$
+
+STATE
+
+$
+Rocket is at rest.
+
+Rocket is in motion.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+The fuel inside the rocket is burned.
+
+The hot gases are ejected out of the rocket through a nozzle.
+
+The rocket moves ahead.
+$
+
+
+PHYEFFECT
+
+$
+Ignition effect.
+
+Bernoulli's law.
+
+Newton's third law of motion.
+
+$
+
+
+INPUT
+
+$
+The raise in temp.
+
+The combustion of the fuel.
+
+Thrust.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the temperature achieved is at least equal to the ignition temperature of the fuel used.
+
+Presence of pressure difference for the flow of gases.
+
+Necessary that the thrust produce is enough to counter act the resistance.
+
+
+$
+
+
+
+PARTS
+$
+
+Fuel.
+
+Hot gases.
+
+Rocket.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

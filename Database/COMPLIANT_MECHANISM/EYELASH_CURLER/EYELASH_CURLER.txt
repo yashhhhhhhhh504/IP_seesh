@@ -1,0 +1,220 @@
+
+
+MACTION
+{
+A1 $ V < curl > N < eyelash > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest slider > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion slider > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion of slider $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < compress > N < spring > A < X > $
+PP2 $ V < slide > N < slider > A < X > $
+PP3 $ V < curl > N < eyelash > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hooks law $
+PE2 $ Newtonian laws of motion $
+PE3 $ Gripping effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < compressing > $
+I2 $ V < rotate > N < link > A < x > $
+I3 $ V < x > N < motion slider > A < sliding > $
+}
+
+MORGAN
+{
+O1 $ the spring has some stiffness $
+O2 $ smooth surface between the slider and the guide ways $
+O3 $ the slider is blocked at the end of its travel $
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ fixed pair $
+P3 $ frame $
+P4 $ connecting link $
+P5 $ revolute pair $
+P6 $ guide ways $
+P7 $ slider $
+P8 $ sliding pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 P7 P8 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+This device is used to curl the eyelashes.
+$
+
+
+STRUCTURE
+
+$
+It consists of sliding part and a guide ways.
+$
+BEHAVIOUR
+
+$
+The flat portion is pressed downwards and the sliding part slides in the guide ways thus curling the eyelashes.
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/EYELASH_CURLER/01.JPG		$ EYELASH CURLER $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to curl the eyelashes. This can be interpreted as a change of state from rest to sliding motion of the slider. This can be discussed as follows:
+
+The spring (part) is compressed (physical phenomenon). This is due to the compressing force (input) applied on it, which activates the hooks law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The slider (part) slides along the guide ways (physical phenomenon). This is due to the rotation of the link (input) connecting the slider and the spring top, which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the slider and the guide ways (organ).
+
+ The eyelashes (part) are curled (physical phenomenon). This is due to the sliding motion (input) of the slider, which activates the gripping effect (physical effect) and is necessary that the slider is blocked at the end of its travel (organ).
+
+$
+
+ACTION
+
+$ 
+ To curl eyelashes.
+$
+
+STATE
+
+$
+The slider is at rest.
+
+The slider slides along the guide ways.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring is compressed.
+
+The slider slides along the guide ways.
+
+The eyelashes are curled.
+
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+Newtonian laws of motion.
+
+Gripping effect.
+
+
+$
+
+
+INPUT
+
+$
+The compressing force.
+
+The rotation of the link.
+
+The sliding motion of the slider.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spring has some stiffness.
+
+Presence of a smooth surface between the slider and the guide ways.
+
+Necessary that the slider is blocked at the end of its travel.
+
+
+$
+
+
+
+PARTS
+$
+The spring forms a fixed pair with the frame.
+
+The connecting link forms a revolute pair with the frame.
+
+The slider forms a sliding pair with guide ways.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

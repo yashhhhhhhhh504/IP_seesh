@@ -1,0 +1,183 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from less space to large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < X > $
+PP2 $ V < rotate > N < object > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < apply > N < force > A < x > $
+}
+
+MORGAN
+{
+O1 $ hinged joint between the link and the handle of the chair $
+O2 $ one degree of freedom between the links attached to the handle and the pad $
+}
+
+MPART
+{
+P1 $ Links attached to the handle of the chair $
+P2 $ Writing pad $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+}
+
+FUNCTION
+
+$
+This can be used to for writing purposes. This is foldable thus occupies less area in folded position.
+$
+
+
+STRUCTURE
+
+$
+It consists of a flat smooth surface, which actually is the writing pad.
+$
+
+
+BEHAVIOUR
+
+$
+The link that carries the rotating shaft attached to the pad.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/CHAIRPAD/01.JPG		$ Chair pad folding $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to accommodating the writing pad even without occupying large space. This can be described as follows: 
+
+The link (part) that is attached to the handle of the chair rotated through 180 degrees from its folded position (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of hinged joint between the link and the handle of the chair (organ).
+
+The writing pad (part) rotated through 90 degrees (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the link attached to the handle and the pad (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The writing pad is occupying less space.
+
+The writing pad is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The link that is attached to the handle of the chair rotated through 180 degrees from its folded position.
+
+The writing pad rotated through 90 degrees.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Force applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of hinged joint between the link and the handle of the chair.
+
+
+Presence of one degree of freedom between the links attached to the handle and the pad.
+
+
+
+$
+
+
+
+PARTS
+$
+Links attached to the handle of the chair.
+
+Writing pad.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

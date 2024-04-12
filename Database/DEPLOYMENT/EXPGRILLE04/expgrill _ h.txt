@@ -1,0 +1,119 @@
+SUMMARY
+$
+This mechanism finds application in gates and shutters. This can be interpreted as change of from small horizontal distance to large horizontal distance and vice versa. This can be described as follows:
+
+The link 1 (part) moves towards the other links and it also remains parallel to it (physical phenomenon). This due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of guide ways for the movement of link (organ).
+
+The pin of the link 9 (part) slides in the slot provided in the link 2 (physical phenomenon). This is due to the movement of the link 1 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth sliding surface between the pin on the link 9 and the slot in the link 2 (organ).
+
+
+The pin of the link 10 (part) slides in the slot of the link 4 (physical phenomenon). This is due to the movement of the link 9 (input), which activates the lever effect (physical effect) and requires the presence of a hinged joint between the links 9 and 10 (organ).
+
+The link 1 (part) moves away from the other links (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of guide ways (organ).
+
+The pin of the link 9 (part) slides in the slot provided on the link 2 (physical phenomenon). This is due to the movement of the link 1 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth sliding surface between the pin of the link 9 and the slot of the link 2 (organ).
+
+The pin of the link 10 (part) slides in the slot of the link 4 (physical phenomenon). This is due to the movement of the link 9 (input), which activates the lever effect (physical effect) and requires the presence of a hinged joint between the link 9 and link 10 (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To increase the horizontal length.
+
+To decrease the horizontal length.
+$
+
+STATE
+
+$
+From large horizontal distance to small horizontal distance.
+
+From small horizontal distance to large horizontal distance.
+
+$
+
+PHYPHENOMENON
+
+$
+The link 1 moves towards the other links and it also remains parallel to it.
+
+The pin of the link 9 slides in the slot provided in the link 2.
+ 
+The pin of the link 10 slides in the slot of the link 4.
+
+The link 1 moves away from the other links.
+
+The pin of the link 9 slides in the slot provided on the link 2.
+
+The pin of the link 10 slides in the slot of the link 4.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The movement of the link 1.
+
+The movement of the link 9.
+
+The force applied on it.
+
+The movement of the link 1.
+
+The movement of the link 9.
+$
+
+
+ORGAN
+
+$
+Presence of guide ways for the movement of link.
+
+Presence of a smooth sliding surface between the pin on the link 9 and the slot in the link 2.
+
+Presence of a hinged joint between the links 9 and 10.
+
+Presence of guide ways.
+
+Presence of a smooth sliding surface between the pin of the link 9 and the slot of the link 2.
+
+Presence of a hinged joint between the link 9 and link 10.
+$
+
+
+
+PARTS
+$
+The link 1 forms a sliding pair with the guide ways.
+
+The pin of the link 9 forms a sliding pair with the slot provided on the link 2.
+
+The pin of the link 10 forms a sliding pair with the slot of the link 4 and the link 10 forms a revolute pair with the link 9.
+
+The link 1 forms a sliding pair with the guide ways.
+
+The pin of the link 9 forms a sliding pair with the slot provided on the link 2.
+
+The pin of the link 10 forms a sliding pair with the slot of the link 4 and the link 10 forms a revolute pair with the link 9.
+
+$
+
+
+

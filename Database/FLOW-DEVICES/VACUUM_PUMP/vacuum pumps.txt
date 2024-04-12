@@ -1,0 +1,9 @@
+function
+$
+Pump (mechanics), device used to raise, transfer, or compress liquids and gases.
+Vacuum pumps are used in the manufacture of many items, including light bulbs and electronic components. They are also used in metal production, in the atomic energy industry, and as part of freeze-drying in the medical, biological, and food industries. 
+
+$
+behaviour
+$
+Vacuum Pump, device that removes air or other gases from a sealed chamber.

@@ -1,0 +1,192 @@
+MACTION
+{
+A1 $ V < lock close > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < open > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < closed > $
+} 
+MCHANGESTATE
+{
+CS1 $ from open to closed $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Couple > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of rotational inertia of the rings $
+
+}
+
+MPART
+{
+P1 $ lock $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+This is used to lock doors. 
+$
+
+
+STRUCTURE
+
+$
+It consists of a lock, which has an inbuilt mechanism for number locking.
+$
+
+
+BEHAVIOUR
+
+$
+The lock is given a particular number and the lock is operated based on the number given to it.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/NUMBERLOCK/4.JPG  	$ 01.Number Lock $	
+ADB/LOCKING/NUMBERLOCK/5.JPG  	$ 02.Number Lock $	
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to lock the door.
+$
+
+ACTION
+
+$ 
+ To lock the door
+$
+
+STATE
+
+$
+The door is open.
+
+The door is locked.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the ring, which has numbers on it.
+
+
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Couple.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of rotational inertia of the rings.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+lock.
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

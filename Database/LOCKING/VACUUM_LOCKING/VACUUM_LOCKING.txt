@@ -1,0 +1,180 @@
+MACTION
+{
+A1 $ V < operate > N < door > A < X > $
+A2 $ V < change > N < area > A < X > $
+A3 $ V < increase > N < area > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < closed > N < door > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < open > N < door > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from closed to open door $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Pressure-difference > A < x > $
+}
+
+MORGAN
+{
+O1 $ pressure difference is sufficient to cause the opening of the door $
+}
+
+MPART
+{
+P1 $ Door $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A3 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+This kind of locking can be used to lock chambers.
+$
+
+
+STRUCTURE
+
+$
+this consists of a chamber that has to be closed with a door.
+$
+
+
+BEHAVIOUR
+
+$
+The vacuum locking functions with the help of the vacuum itself.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/VACUUM_LOCKING/01.JPG	 $ 01.Vaccum Locking $
+ADB/LOCKING/VACUUM_LOCKING/02.JPG	 $ 02.Vaccum Locking $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+The vacuum locking can be employed when there is pressure difference between the outside atmosphere and the chamber.
+$
+
+ACTION
+
+$ 
+ To operate the door of the chamber.
+$
+
+STATE
+
+$
+The door is closed.
+
+The door is opened.
+
+$
+
+PHYPHENOMENON
+
+$
+The door rotates with respect to the hinged joint, which connects the door to the chamber.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s effect
+
+$
+
+
+INPUT
+
+$
+Pressure difference.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pressure difference is sufficient to cause the opening of the door.
+
+
+
+$
+
+
+
+PARTS
+$
+Door of the chamber.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

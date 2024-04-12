@@ -1,0 +1,67 @@
+MACTION
+{
+A1 $ V < perform > N < computation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < oscillating > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to oscillating motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > N < link-x > A < X > $
+PP2 $ V < oscillate > N < link-y > A < X > $
+PP3 $ V < oscillate > N < link-z > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < x > $
+I2 $ V < oscillate > N < link-x > A < x > $
+I3 $ V < oscillate > N < link-y > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the link x is hinged to the surface. $
+O2 $ Necessary that the link y is hinged to the surface.  $
+O3 $ Necessary that the link z is hinged to the surface. $
+}
+
+MPART
+{
+P1 $ link x $
+P2 $ link y $
+P3 $ link z $
+P4 $ frame. $
+P5 $ revolute pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O3 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 P4 P5 >
+
+
+}
+
+

@@ -1,0 +1,289 @@
+MACTION
+{
+A1 $ V < punch > N < nail > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < outside > N < nail wall > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < inside > N < nail wall > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from nail outside the wall to nail inside the wall $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < press > N < barrel > A < X > $
+PP2 $ V < open > N < valve > A < inlet > $
+PP3 $ V < flow > N < gas > A < inflammable > $
+PP4 $ V < press > N < trigger > A < x > $
+PP5 $ V < ignite > N < gas zone > A < combustion > $
+PP6 $ V < reciprocate > N < piston > A < X > $
+PP7 $ V < punch > N < nail > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+PE3 $ Ignition effect $
+PE4 $ No two bodies can occupy the same space at the same time $ 
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < barrel > A < x > $
+I3 $ V < x > N < difference > A < pressure > $
+I4 $ V < apply > N < force > A < X > $
+I5 $ V < generate > N < spark > A < electric > $
+I6 $ V < exert > N < pressure > A < X > $
+I7 $ V < reciprocate > N < piston > A < X > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the barrel and the guide ways  $
+O2 $ smooth sliding surface between the valve and the guide ways $
+O3 $ the pressure outside the cylinder is higher than the pressure inside the cylinder $
+O4 $ the force applied is sufficient enough to cause the motion $
+O5 $ the temperature produced is greater than or equal to the ignition temperature of the gas $
+O6 $ smooth surface between the piston and the cylinder $
+O7 $ the force applied is sufficient enough to penetrate into the wall $
+
+
+}
+
+MPART
+{
+P1 $ barrel $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ inlet valve $
+P5 $ Inflammable gas $
+P6 $ Trigger $
+P7 $ Gas $
+P8 $ piston $
+P9 $ frame $
+P10 $ nail $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P5 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P6 >
+< A1 IS1 OS1 CS1 PP5 PE3 I5 O5 P7 >
+< A1 IS1 OS1 CS1 PP6 PE1 I6 O6 P2 P8 P9 >
+< A1 IS1 OS1 CS1 PP7 PE4 I7 O7 P10 P2 P9 >
+}
+
+
+
+
+
+
+
+FUNCTION
+
+$
+These portable guns generate hammering power with internal combustion, the same force that keeps your car going
+$
+
+
+STRUCTURE
+
+$
+They have a long blade attached to a sliding piston, which is moved by an imbalance in atmospheric pressure.
+$
+BEHAVIOUR
+
+$
+At the most basic level, combustion guns are a lot like pneumatic nailers. The piston moves downward when there is greater pressure above it, and it moves upward when there is greater pressure below it. 
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/COMBUSTION_HAMMER/01.jpg	$ COMBUSTION HAMMER $
+ADB/DEPLOY/COMBUSTION_HAMMER/02.jpg	$ COMBUSTION HAMMER1 $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to punch nails into the walls. This can be interpreted as a change of state from nail outside the wall to nail inside the wall. This can be discussed as follows:
+
+The barrel (part) is pressed against the wall surface (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of smooth surface between the barrel and the guide ways (organ).
+
+The inlet valve (part) opens (physical phenomenon). This is due to the movement of the barrel (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of smooth sliding surface between the valve and the guide ways (organ).
+
+The inflammable gas (part) flows into the combustion zone (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli's effect (physical effect) and is necessary that the pressure outside the cylinder is higher than the pressure inside the cylinder (organ).
+
+The trigger (part) is pressed (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied is sufficient enough to cause the motion (organ).
+
+The gas (part) in the combustion zone is ignited (physical phenomenon). This is due to the electric spark generated (input), which activates the ignition effect (physical effect) and is necessary that the temperature produced is greater than or equal to the ignition temperature of the gas (organ).
+
+The piston (part) reciprocates within the cylinder (physical phenomenon). This is due to the pressure exerted by the expanding gases (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of smooth surface between the piston and the cylinder (organ).
+
+The nail (part) is punched into the wall (physical phenomenon). This is due to the reciprocating motion of the piston (input), which activates the law "no two bodies can occupy the same space at the same time", (physical effect) and is necessary that the force applied is sufficient enough to penetrate into the wall (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To punch nails into the walls.
+$
+
+STATE
+
+$
+The nail is outside the wall.
+
+The nail is inside the wall.
+
+$
+
+PHYPHENOMENON
+
+$
+The barrel is pressed against the wall surface.
+
+The inlet valve opens.
+
+The inflammable gas flows into the combustion zone
+
+The trigger is pressed.
+
+The gas in the combustion zone is ignited.
+
+The piston reciprocates within the cylinder.
+
+The nail is punched into the wall.
+
+
+$
+
+
+PHYEFFECT
+
+$
+
+Newtonian laws of motion.
+
+Bernoulli's effect.
+
+Ignition effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the barrel.
+
+The pressure difference.
+
+The force applied on it.
+
+The electric spark generated.
+
+The pressure exerted by the expanding gases.
+
+The reciprocating motion of the piston.
+
+$
+
+
+ORGAN
+
+$
+Presence of smooth surface between the barrel and the guide ways.
+
+Presence of smooth sliding surface between the valve and the guide ways.
+
+Necessary that the pressure outside the cylinder is higher than the pressure inside the cylinder.
+
+Necessary that the force applied is sufficient enough to cause the motion.
+
+Necessary that the temperature produced is greater than or equal to the ignition temperature of the gas.
+
+Presence of smooth surface between the piston and the cylinder.
+
+Necessary that the force applied is sufficient enough to penetrate into the wall.
+
+
+
+
+$
+
+
+
+PARTS
+$
+The barrel forms a sliding pair with the guide ways.
+
+The inlet valve forms a sliding pair with the guide ways.
+
+Inflammable gas.
+
+Trigger.
+
+Gas.
+
+The piston forms a sliding pair with the frame.
+
+The nail forms a sliding pair with the frame.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+MACTION
+{
+A1 $ V < open > N < car-hood > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < closed > A < x > N < hood > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < open > A < x > N < hood > $
+} 
+MCHANGESTATE
+{
+CS1 $ from closed hood to open hood $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < oscillate > N < connecting-rod > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < crank > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the input shaft and the crank $
+O2 $ Presence of one degree of freedom between the crank and the connecting rod $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ connecting rod $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P4 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+SUMMARY
+$
+This mechanism is used to convert rotary motion of the cam into reciprocating motion of the follower. This is achieved in the following method. 
+
+The cam forms a fixed pair with the input shaft (Structure). This structure creates 0 degree of freedom (Organ) between the input-shaft and the cam. When torque is applied to the input shaft (Input) due to Newtonian laws of motion (Physical Effect) the cam rotates (Physical Phenomenon).
+
+The roller forms a cam pair with the cam as well as a revolute pair with the follower (Structure). Thus there is a contact between the cam and the roller (Organ). Since the roller rotates (Input) due to friction (Physical Effect) it results in the reduction of friction (Physical Phenomenon) between the cam and the follower. That is, the friction would be much greater in case the roller were not present.
+
+The follower forms a flexible pair with the frame (structure). As the follower moves upward, the spring is compressed. When there is a depression on the cam’s surface, the spring exerts a force on the follower (Input) causing the follower to return downwards. This is achieved due to the spring stiffness (Organ) and Hooke's Law (Physical Effect). Thus contact is maintained between the follower and the cam (Physical Phenomenon).
+
+The follower forms a prismatic pair with the slide guides and a cam pair with the cam (Structure). When the cam is rotated (Input) due to the cam profile (Organ), the follower is forced to move upward or downward depending on the profile. This is due to the basic law that two bodies cannot occupy the same space at the same time (Physical Effect). This results in the reciprocating motion of the follower within the slide guides (Physical Phenomenon)
+$
+
+ACTION
+{
+$
+Convert rotary motion into reciprocating motion
+$
+}
+PHYPHENOMENON
+{
+$
+The cam rotates continuously.
+$
+Friction is reduced by the use of a roller follower.
+$
+Contact between the cam and the follower is maintained by the use of a spring.
+$
+The follower reciprocates due to the force imparted by the profile of the cam.
+$
+}
+PHYEFFECT
+{
+$
+Newtonian Laws of motion
+$
+Friction
+
+$
+Hooke's Law
+$
+The basic fact that two bodies cannot occupy the same space at the same time.
+$
+}
+INPUT
+{
+$
+
+Torque provided to the input shaft is used to rotate the cam continuously.
+$
+The rotation of the cam causes the roller to rotate
+$
+The spring forces the follower back downward to keep contact with the cam.
+$
+The radial force offered by the cam tends to reciprocate the follower.
+$
+}
+ORGAN
+$
+1 degree of freedom of motion in the direction of motion.
+$
+Contact between the roller and the cam.
+$
+The spring stiffness.
+$
+The profile of the cam.
+$
+
+STUCTURE1
+$
+The cam forms a fixed pair with the input shaft. 
+$
+The cam forms a cam pair with the follower.
+$
+The roller forms a revolute pair with the follower.
+$
+The spring forms a flexible pair with the follower.
+$
+The follower forms a prismatic pair with the slide guides
+$

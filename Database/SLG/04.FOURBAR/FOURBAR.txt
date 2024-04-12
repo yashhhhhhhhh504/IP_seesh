@@ -1,0 +1,151 @@
+MACTION
+{
+A1 $ V < generate > A < approximate straight-line > N < motion > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < partially > N < drive-arm > $
+PP2 $ V < rotate > A < partially > N < arm2 > $
+PP3 $ V < oscillate > A < x > N < stylus > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < partially > N < drive-arm > $
+I3 $ V < move > A < partially > N < arm2 > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ the stylus $
+04 $ ratio of lengths of the links $
+O3 $ zero degree of freedom $
+}
+
+MPART
+{
+P1 $ drive-arm $
+P2 $ arm $
+P3 $ revolute pair $
+P4 $ stylus $
+P5 $ frame $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O3  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O4  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O4  P2  P5  P3 >
+}
+
+FUNCTION
+
+$
+This mechanism converts rotary to straight-line motion without the need for guides.
+$
+
+
+STRUCTURE
+
+$
+This is a simple four bar planar mechanism in which all revolute pairs connect the links.  
+$
+
+
+BEHAVIOUR
+
+$
+This four-bar linkage produces an approximate straight-line motion. This arrangement provides motion for the stylus on self-registering measuring instruments. A comparatively small drive displacement results in a long, almost straight line.
+$
+
+
+PICTURE
+
+{
+ADB/SLG/04.FOURBAR/fourbar.jpg		$ Four-bar Planar $
+}
+
+
+CLIP
+
+{
+ADB/SLG/04.FOURBAR/fourbar.avi		$ Four-bar Planar $
+}
+
+SUMMARY
+$
+This mechanism generates an approximate straight line motion  in the following steps:
+
+The drive arm is connected to the frame by a revolute pair (Structure). The drive arm is made to rotate partially (Physical Phenomenon) by applying a torque to it (Input), activating Newtonian Laws of Motion (Physical Effect). This partial rotation occurs as there exists the zero degree of freedom of motion in the direction of motion (Organ)
+
+All the links in this mechanism are connected to each other by revolute joints (Structure). The rotation of the drive arm (Input) activates Newtonian Laws of motion (Physical Effect) resulting oscillatory motion of Arm 2 (Physical Phenomenon) made possible due to connecting stylus (Organ).
+
+All the links in this mechanism are connected to each other by revolute joints (Structure). The partial rotation of arm 2 (Input) activates Newtonian Laws of motion (Physical Effect) straight-line motion of the stylus (Physical Phenomenon) made possible due to ratio of lengths of the links (Organ) and the single degree of freedom of motion of the links of the mechanism (Organ)
+$
+
+ACTION
+$
+ This mechanism generates straight line motion. 
+$
+STATE
+$
+From rest to Straight line motion
+$
+PHYPHENOMENON
+$
+ Rotation of input link.
+ Oscillation of Link 2. 
+ Straight-line motion of the stylus. 
+$
+
+PHYEFFECT
+$
+ Newtonian laws of motion. 
+ Lever action. 
+$
+
+INPUT
+$
+ Torque to input crank. 
+ The oscillation of Arm 1. 
+$
+
+ORGAN
+$
+zero degree of freedom of motion between the two bodies in the direction of motion.
+the stylus. 
+ratio of lengths of the links. 
+single degree of freedom of motion between the links in the mechanism.
+$
+
+PARTS
+$
+ All the links are connected by revolute joints. 
+$

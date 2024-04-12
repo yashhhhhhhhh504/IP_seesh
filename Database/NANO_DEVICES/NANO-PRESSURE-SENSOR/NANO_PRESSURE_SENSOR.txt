@@ -1,0 +1,153 @@
+MACTION
+{
+A1 $ V < measure > N < pressure > A < nano > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ No voltage across the wire $
+CS2 $ Voltage across the wire $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < bend > N < wire > A < X > $
+PP2 $ V < displace > N < ion > A < X > $
+PP3 $ V < create > N < voltage > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ spring effect $ 
+PE2 $ piezoelectric effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < pressure > A < x > $
+I2 $ V < different > N < pressure > A < x > $
+I3 $ V < different > N < charges > A < x > $
+}
+
+MORGAN
+{
+O1 $ ZnO wire must be flexible $
+O2 $ Material must be piezoelectric $
+}
+
+MPART
+{
+P1 $ ZnO nano wire $
+P2 $ Zn and O ions $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I3 O2 P1 >
+}
+
+FUNCTION
+
+$
+Nano pressure sensor is a device which can measure extremely small forces in the nano to pico newton range, which is about force involved in interactions between two molecules. Being able to measure such small forces might lead to devices that could be implanted in the body to measure minute blood-pressure changes continuously.
+$
+
+
+STRUCTURE
+
+$
+The device consists of two electrodes which are connected together by a piezo-electric thin nano wire of very large length-to-diameter ratio. The thin nano wire is of Zinc-oxide crystalline materials with high surface to volume ratio.
+$
+
+BEHAVIOUR
+
+$
+The small changes in pressure from pulsing blood would bend the thin nano wire, which is connected between two electrodes. When nano wire bends, the stretched outer side of the bent wire becomes positively charged, while the compressed inner surface becomes negatively charged. Normally, the positive and negative charges of zinc and oxygen ions in the crystalline nanowires cancel each other out when they are not bent. When piezoelectric nano wire is bent, unbalancing of charges in wire occurs due to displacement of ions and produce current. By measuring changes in current flow through them, sensor can detect forces in the nano or even Pico-Newton range.
+$
+
+PICTURE
+
+{
+ADB\NANO_DEVICES\NANO-PRESSURE-SENSOR\01.bmp      $ 01.Nano Pressure Sensor $
+ADB\NANO_DEVICES\NANO-PRESSURE-SENSOR\02.bmp      $ 02.Nano Pressure Sensor $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+Bending of a zinc oxide nanostructure alters the distribution of electrical charges, providing control over the current flowing through it. By measuring changes in current flow through them, nano pressure sensors can detect forces in the nano- or even pico-Newton range. That can be describes as:
+ZnO nano wire (parts) bends (Physical Phenomena). This is due to pressure applied by blood (input) which activates spring effect (Physical Effect) and it requires that the ZnO wire must be flexible (Organ). Due to bending of the wire, Zn and O ions (parts) are displaced (physical Phenomena). This is due to pressure difference across the wire (input) which actives piezoelectric effect (Physical Effect) and it requires that the material must be piezoelectric (Organ). Across the Zno wire (parts) voltage difference is created (physical Phenomena). This is due to difference of polarity of charges on electrodes (input) which activates Ohm’s law (Physical Effect) it requires that the material must be piezoelectric (Organ). Depending on the voltage difference pressure variation can be measured.
+$
+
+ACTION
+
+$ 
+To measure pressure
+$
+
+STATE
+
+$
+Change in voltage difference across the wire
+$
+
+
+
+PHYPHENOMENON
+
+$
+ZnO nano wire bends
+Zn and O ions are displaced
+Across the Zno wire voltage difference is created
+$
+
+
+PHYEFFECT
+
+$
+Spring effect
+Piezoelectric effect
+$
+
+
+INPUT
+
+$
+Pressure applied by blood
+pressure difference across the wire
+difference of polarity of charges on electrodes
+$
+
+
+ORGAN
+
+$
+ZnO wire must be flexible
+Material must be piezoelectric
+$
+
+
+
+PARTS
+$
+ZnO nano wire
+Zn and O ions
+$

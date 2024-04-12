@@ -1,0 +1,108 @@
+
+
+MACTION
+{
+A1 $ V < reverse > N < direction > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < rotate > A < output counter-clockwise > N < link > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < rotate > A < output clockwise > N < link > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from output link rotating in the counter-clockwise direction to clockwise direction $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < input > $
+PP2 $ V < rotate > N < link > A < clockwise > $
+PP3 $ V < rotate > N < link > A < counter-clockwise > $
+PP4 $ V < slip > N < pin > A < x > $
+PP5 $ V < rotate > N < link > A < clockwise > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < pin > A < x > $
+I3 $ V < rotate > N < gear > A < x > $
+I4 $ V < rotate > N < disk > A < X > $
+I5 $ V < rotate > N < pin > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input disk and the input shaft $
+O2 $ contact between the pin and the link A $
+O3 $ contact between the Gears $
+O4 $ the length of the link A is lesser than the distance between the pin and the center $
+O5 $ zero degree of freedom between the link B and the pin $
+}
+
+MPART
+{
+P1 $ disk $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ link $
+P5 $ striking pin $
+P6 $ fixed pair $
+P7 $ disk $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P5 P6 P7 >
+< A1 IS1 OS1 CS1 PP5 PE2 I5 O5 P2 P3 P4 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

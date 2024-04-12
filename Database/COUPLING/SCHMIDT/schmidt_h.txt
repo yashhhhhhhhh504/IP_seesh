@@ -1,0 +1,106 @@
+SUMMARY
+$
+This can be used to transmit motion between two parallel misaligned shafts. This can be interpreted as a change of state from rest to rotation of the outer member mounted on the output shaft. This can be described as follows:
+
+The input member (part) mounted on output shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the outer member (organ).
+
+The floating member (part) rotates in the same direction and also with the same velocity as that of the input member (physical phenomenon). This is due to the rotation of the input member (input), which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input member and the floating member (organ), which is actually achieved by connecting the two with the help of links.
+
+
+The output member (part) that is mounted on the output shaft rotates in the same direction as that of the floating member (physical phenomenon). This is due to the rotation of the floating member (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the output member and the floating member (organ) which is actually achieved by connecting the two the with the help of links. 
+
+$
+
+ACTION
+{
+$ 
+ To transmit power between two parallel misaligned shafts.
+$
+}
+STATE
+{
+$
+The output member mounted on the output shaft is at rest.
+$
+The output member mounted on the output shaft rotates.
+$
+}
+PHYPHENOMENON
+{
+$
+The input member mounted on output shaft rotates.
+$
+The floating member rotates in the same direction and also with the same velocity as that of the input member.
+$ 
+The output member that is mounted on the output shaft rotates in the same direction as that of the floating member.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+Rotation of the input member.
+$
+Rotation of the floating member.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the shaft and the input member.
+$
+Presence of zero degree of freedom between the input member mounted on the input shaft and the floating member, which is actually achieved by connecting the two with the help of links.
+$
+Presence of zero degree of freedom between the output member mounted on the output shaft and the floating member, which is actually achieved by connecting the two with the help of links. 
+
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The input member mounted on the input member forms a revolute pair with the frame.
+$
+The floating member forms a revolute pair with the input member.
+$
+The output member forms a revolute pair with the frame.
+$
+
+$
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

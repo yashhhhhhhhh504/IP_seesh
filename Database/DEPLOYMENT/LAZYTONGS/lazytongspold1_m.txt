@@ -1,0 +1,71 @@
+MACTION
+{
+A1 $ V=expand $
+A2 $ V=contract $
+A3 $ V=open $
+A4 $ V=close $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V=move N=link A=apart $
+PP2 $ V=increase N=distance $
+PP3 $ V=slide N=member $
+PP5 $ V=move N=link A=together $
+PP6 $ V=decrease N=distance $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V=apply N=force $
+I2 $ V=move N=link A=apart $
+I3 $ V=move N=link A=together $
+}
+
+MORGAN
+{
+O1 $ empty space $
+}
+
+MPART
+{
+P1 $ link1 $
+P2 $ link2 $
+P3 $ link3 $
+P4 $ cylindrical pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A1 - PP1 - PE1 - I1 - O1 - P2 - P3 - P4
+A1 - PP2 - PE1 - I2 - O1 - P1 - P2 - P4
+A1 - PP2 - PE1 - I2 - O1 - P2 - P3 - P4
+A1 - PP3 - PE1 - I2 - O1 - P1 - P2 - P4
+A1 - PP3 - PE1 - I2 - O1 - P2 - P3 - P4
+
+A2 – PP5 - PE1 - I1 - O1 - P1 - P2 - P4
+A2 – PP5 - PE1 - I1 - O1 - P2 - P3 - P4
+A2 – PP6 - PE1 - I3 - O1 - P1 - P2 - P4
+A2 – PP6 - PE1 - I3 - O1 - P2 - P3 - P4
+A2 - PP3 - PE1 - I3 - O1 - P1 - P2 - P4
+A2 - PP3 - PE1 - I3 - O1 - P2 - P3 - P4
+
+A3 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A3 - PP1 - PE1 - I1 - O1 - P2 - P3 - P4
+A3 - PP2 - PE1 - I2 - O1 - P1 - P2 - P4
+A3 - PP2 - PE1 - I2 - O1 - P2 - P3 - P4
+A3 - PP3 - PE1 - I2 - O1 - P1 - P2 - P4
+A3 - PP3 - PE1 - I2 - O1 - P2 - P3 - P4
+
+A4 – PP5 - PE1 - I1 - O1 - P1 - P2 - P4
+A4 – PP5 - PE1 - I1 - O1 - P2 - P3 - P4
+A4 – PP6 - PE1 - I3 - O1 - P1 - P2 - P4
+A4 – PP6 - PE1 - I3 - O1 - P2 - P3 - P4
+A4 - PP3 - PE1 - I3 - O1 - P1 - P2 - P4
+A4 - PP3 - PE1 - I3 - O1 - P2 - P3 - P4
+}

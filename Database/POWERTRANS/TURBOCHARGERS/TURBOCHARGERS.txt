@@ -1,0 +1,207 @@
+MACTION
+{
+A1 $ V < increase > N < efficiency > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < pressure air > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < pressure air > $
+} 
+MCHANGESTATE
+{
+CS1 $ from low pressure air to high pressure air $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+PP3 $ V < compress > N < air > A < inlet > $
+PP4 $ V < increase > N < volume-intake > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+PE4 $ Boyle’s law $ 
+
+}
+
+MINPUT
+{
+I1 $ V < impinge > N < gas > A < exhaust > $
+I2 $ V < apply > N < torque > A < x > $
+I3 $ V < rotate > N < wheel > A < compressor > $
+I4 $ V < reduce > N < volume > A < air > $
+}
+
+MORGAN
+{
+O1 $ compressor wheel is in the path of the exhaust gases $
+O2 $ zero degree of freedom between the shaft and the turbine wheel $
+O3 $ gap between the vanes of the compressor wheel and the casing is very small $
+O4 $ same air-fuel ratio is maintained $
+}
+
+MPART
+{
+P1 $ turbine wheel $
+P2 $ revolute pair $
+P3 $ casing $
+P4 $ compressor wheel $
+P5 $ inlet air $
+P6 $ sliding pair $
+P7 $ fin $
+P8 $ engine $
+P9 $ fixed pair $
+P10 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P2 P3 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P5 P6 P7 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P8 P9 P10 >
+
+}
+
+FUNCTION
+
+$
+One of the best ways to get more power output of an engine is to increase the amount of fuel and air that it can burn.  A turbocharger can be a simpler, more compact way of adding power.
+$
+
+
+STRUCTURE
+
+$
+A typical boost that the turbocharger provides is 6 to 8 pounds per square inch. Because the normal atmospheric pressure is 14.7 psi at sea level, a turbocharger allows you to squeeze about 50% more air into the cylinder so that the power is 50% more. 
+$
+BEHAVIOUR
+
+$
+They use some very cool technology to make an engine more powerful but as you can see, the concept is simple. By packing a little more air into the cylinder, turbochargers can make small, lightweight engines perform like much bigger engines. A turbocharger enables the small v-8 engine engines used in champ cars to produce around 900 horse power that about triple the power of the v -8 engines.
+$
+
+PICTURE
+
+{
+ADB/POWERTRANS/TURBOCHARGERS/02.JPG	$ 01.Turbochagers $
+ADB/POWERTRANS/TURBOCHARGERS/01.JPG	$ 02.Turbochagers $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+Turbochargers are used to increase the efficiency of the engine even without increasing the weight of the engine. This can be interpreted as a change of state from low pressure to high-pressure air. This device can be described as follows:
+
+The turbine wheel (part) rotates (physical phenomenon). This is due to the impingement of the exhaust gases (input), which activates the law “no two bodies can occupy the same space at the same time,” (physical effect) and is necessary that the compressor wheel is in the path of the exhaust gases (organ).
+
+The compressor wheel (part) rotates (physical phenomenon). This is due to the torque (input) applied by the shaft that is connected to the turbine wheel, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the turbine wheel (organ).
+
+The inlet air (part) is compressed (physical phenomenon). This is due to the rotation of compressor wheel (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the gap between the vanes of the compressor wheel and the casing is very small (organ).
+
+Now the same engine (part) can take up more air-fuel mixture and produce more power (physical phenomenon). This is due to the reduction in the volume of the air (input), which activates the Boyle’s law (physical effect) is necessary that the same air-fuel ratio is maintained (organ).
+
+$
+
+ACTION
+$
+ 
+ To increase efficiency even without increasing the weight of the engine.
+
+$
+STATE
+$
+
+Low-pressure air.
+
+High-pressure air.
+
+$
+PHYPHENOMENON
+$
+
+The turbine wheel rotates.
+
+The compressor wheel rotates.
+ 
+The inlet air is compressed.
+
+Now the same engine can take up more air-fuel mixture and produce more power.
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time
+
+Boyle’s law.
+
+$
+
+INPUT
+$
+
+Impingement of the exhaust gases.
+
+Torque applied by the shaft that is connected to the turbine wheel.
+
+Rotation of compressor wheel.
+
+Reduction in the volume of the air.
+
+$
+
+ORGAN
+$
+
+Necessary that the compressor wheel is in the path of the exhaust gases.
+
+Presence of zero degree of freedom between the shaft and the turbine wheel.
+
+Necessary that the gap between the vanes of the compressor wheel and the casing is very small.
+
+Necessary that the same air-fuel ratio is maintained.
+
+
+$
+
+PARTS
+$
+
+The turbine wheel forms a revolute pair with the casing.
+
+The compressor wheel forms a revolute pair with the casing.
+
+The inlet air forms sliding pair forms a sliding pair with the fins of the compressor.
+
+The engine forms a fixed pair with the frame.
+
+
+
+$
+
+
+
+
+

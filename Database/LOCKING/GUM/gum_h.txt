@@ -1,0 +1,98 @@
+SUMMARY
+$
+This can be used to join tow separate materials.
+$
+
+ACTION
+
+$ 
+ To join two materials.
+$
+
+STATE
+
+$
+Two parts are not joined.
+
+Two parts are joined.
+
+$
+
+PHYPHENOMENON
+
+$
+Apply gum in the regions of the parts that have to be joined.
+
+Apply pressure on the region in which the gum has been applied.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Gravity effect.
+
+Adhesive effect.
+
+
+$
+
+
+INPUT
+
+$
+Pressure applied.
+
+Weight of the object that is placed on it.
+
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pressure applied is high enough to cause the movement of the gum outside the tube.
+
+Necessary that the weight of the object is sufficient enough to apply the required pressure.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Gum.
+
+Two objects to be joined.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

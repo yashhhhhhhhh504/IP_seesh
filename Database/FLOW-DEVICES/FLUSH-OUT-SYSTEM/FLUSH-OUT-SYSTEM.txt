@@ -1,0 +1,235 @@
+MACTION
+{
+A1 $ V < operate > N < toilet > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < open > N < part > A < X > $
+PP3 $ V < x > N < flow > A < water > $
+PP4 $ V < close > N < part > A < x > $
+PP5 $ V < x > N < flow > A < water > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < chain > A < x > $
+I3 $ V < x > N < differential > A < pressure > $
+I4 $ V < reduce > N < level > A < water > $
+I5 $ V < open > N < valve > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ one degree of freedom between the frame and the flush handle $
+O2 $ zero degree of freedom between the chain and the flapper $
+O3 $ water level is higher than the level of the valve $
+O4 $ level of water in the tank is well below the drain $
+O5 $ inlet valve is open $
+
+}
+
+MPART
+{
+P1 $ flush handle $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ flapper $
+P5 $ free pair $
+P6 $ water $
+P7 $ sliding pair $
+P8 $ pipes of the toilet $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP5 PE2 I5 O5 P6 P7 P8 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+The purpose of a tank is to act like a bucket of water. You have to get enough water into the bowl fast enough 
+to activate siphon. The tank holds several gallons of water. When you flush, all the water in the tank is dumped into the bowl in about 3 seconds.
+$
+
+
+STRUCTURE
+
+$
+Every toilet has three systems that work together. They are: the bowl system, the flush mechanism and the refill mechanism. 
+$
+BEHAVIOUR
+
+$
+A chain is attached to the handle on the side of the tank. When you push on the handle, it pulls the chain, which is connected to the valve. The chain lifts the flush valve, which then floats out of the way, revealing a drain hole that is approximately 3 inches in diameter.
+
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to operate toilets. This can be described as follows: 
+
+The flush handle (part) rotates about the hinge (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the frame and the flush handle (organ).
+
+The flapper (part) opens and allows the water to flow out of the tank (physical phenomenon). This is due to the movement of the chain (input) which in turn is due to the movement of the flush handle (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the chain and the flapper (organ).
+
+The water (part) flows out of the tank and into the bowl (physical phenomenon). This is due to the pressure differential between the tank and the bowl (input), which activates the Bernoulli’s law (physical effect) and is necessary that the water level is higher than the level of the valve (organ).
+
+The flapper (part) closes the valve (physical phenomenon). This is due to the reduction in the level of water (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the level of water in the tank is well below the drain (organ).
+
+The water (part) flows into the tank (physical phenomenon). This is due to the opening of the valve (input), which activates the Bernoulli’s law (physical effect) and is necessary that the inlet valve is open (organ).
+$
+
+ACTION
+
+$ 
+ To operate toilets.
+$
+
+STATE
+
+$
+
+$
+
+$
+
+PHYPHENOMENON
+
+$
+The flush handle rotates about the hinge.
+
+The flapper opens and allows the water to flow out of the tank.
+ 
+The water flows out of the tank and into the bowl.
+
+The flapper closes the valve.
+
+The water flows into the tank.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s law.
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the chain.
+
+The pressure differential between the tank and the bowl.
+
+The reduction in the level of water.
+
+The opening of the valve.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the frame and the flush handle.
+
+Presence of zero degree of freedom between the chain and the flapper.
+
+Necessary that the water level is higher than the level of the valve.
+
+Necessary that the level of water in the tank is well below the drain.
+
+Necessary that the inlet valve is open.
+$
+
+
+
+PARTS
+$
+The flush handle forms a revolute pair with the frame.
+
+The flapper forms a free pair frame.
+
+The water forms a sliding pair with the pipes of the toilet.
+
+The flapper forms a free pair with the frame.
+
+The water forms a sliding pair with the pipes of the toilet.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+

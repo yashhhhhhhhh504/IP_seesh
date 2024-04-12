@@ -1,0 +1,222 @@
+
+
+MACTION
+{
+A1 $ V < cut > N < nail > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rotatable > N < link rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < rotatable > N < link rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the rotatable link $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < rotatable > $
+PP2 $ V < oscillate > N < link > A < oscillating > $
+PP3 $ V < cut > N < nail > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Shearing effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+I2 $ V < rotate > N < link > A < rotatable > $
+I3 $ V < x > N < motion > A < relative > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom between the link and the fixed link $
+O2 $ the rotatable link is strong enough to move the oscillating link $
+O3 $ the force applied is greater than the strength of the nail $
+}
+
+MPART
+{
+P1 $ rotatable link $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ oscillating link $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P4 >
+
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This device is used to cut nails present on the fingers of lower and upper limbs.
+$
+
+
+STRUCTURE
+
+$
+It consists of two sharp edged gripping hands and a small rod passes through the holes present in the gripping hands. The rotating link rotates due to the force applied at its tip.
+$
+BEHAVIOUR
+
+$
+The force is applied at the tip of the rotating link, which is transferred on to the gripping hands, which cuts the nails.
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/NAIL_CLIPPER/01.JPG		$ NAIL CLIPPER $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This can be used to cut nails. This can be interpreted as a change of state from rest to rotation of the link. This can be discussed as follows:
+
+The rotatable link (part) is rotated (physical phenomenon). This is due to the moment applied on it (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the link and the fixed link (organ).
+
+The oscillating link (part) oscillates (physical phenomenon). This is due to the rotation of the rotatable link (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the rotatable link is strong enough to move the oscillating link (organ).
+
+The nail (part) is cut (physical phenomenon). This is due to the relative motion between the fixed link and oscillating link (input), which activates the shearing effect (physical effect) and is necessary that the force applied is greater than the strength of the nail (organ).
+$
+
+ACTION
+
+$ 
+ To cut nail.
+$
+
+STATE
+
+$
+The rotatable link is at rest.
+
+The rotatable link is rotating.
+
+
+
+$
+
+PHYPHENOMENON
+
+$
+The rotatable link is rotated.
+
+The oscillating link oscillates.
+
+The nail is cut.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Shearing effect.
+
+
+$
+
+
+INPUT
+
+$
+Moment applied on it.
+
+The rotation of the rotatable link.
+
+The relative motion between the fixed link and oscillating link.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the link and the fixed link.
+
+Necessary that the rotatable link is strong enough to move the oscillating link.
+
+Necessary that the force applied is greater than the strength of the nail.
+
+
+$
+
+
+
+PARTS
+$
+The rotatable link forms a revolute pair with the frame.
+
+The oscillating link forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

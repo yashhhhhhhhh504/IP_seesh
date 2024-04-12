@@ -1,0 +1,241 @@
+MACTION
+{
+A1 $ V < deliver > N < blow > A < rapid > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < linear > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < open > N < valve > A < inlet > $
+PP2 $ V < x > N < air-flow > A < compressed > $
+PP3 $ V < move > N < part > A < x > $
+PP4 $ V < tilt > N < valve > A < diaphragm > $
+PP5 $ V < move > N < piston > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Bernoulli’s law $
+PE3 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < move > N < lever > A < x > $
+I2 $ V < tilt > N < diaphragm > A < x > $
+I3 $ V < apply > N < force > A < upward > $
+I4 $ V < apply > N < force > A < downward > $
+I5 $ V < apply > N < pressure > A < X > $
+}
+
+MORGAN
+{
+O1 $ contact between the valve and the lever $
+O2 $ diaphragm valve is of convex type $
+O3 $ gap between the piston rod and the walls of the inner compartment $
+O4 $ upward force applied by the compressed air is greater than the downward force applied by the compressed air supplied by the hose $
+O5 $ smooth surface between the piston and the inner compartment walls $
+
+}
+
+MPART
+{
+P1 $ inlet valve $
+P2 $ sliding pair $
+P3 $ frame $
+P4 $ compressed air $
+P5 $ outer compartment $
+P6 $ piston $
+P7 $ inner compartment $
+P8 $ diaphragm valve $
+P9 $ revolute pair $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P6 P7 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P3 P8 P9 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P2 P6 P7 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+It delivers a large number of blows in rapid succession. These blows are delivered by the piston, which moves to and fro in a cylinder and is worked by compressed air. 
+$
+
+
+STRUCTURE
+
+$
+The device consists of control lever, diaphragm valve, piston, inner compartment, exhaust air compartment, air inlet and outer compartment. It also has a tool.
+$
+BEHAVIOUR
+
+$
+The compressed air is supplied through a hose from a compressor. When the inlet valve is opened by means of the lever mounted within the handle, the air flows through the diaphragm valve into the outer air compartment. The compressed air is thereby admitted to the top of the piston and forces it downwards, so that it strikes the upper end of the tool.
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to deliver large number of blows in rapid successions. This can be interpreted as a change of state from rest to reciprocating motion. This can be described as follows:
+
+The inlet valve (part) opens (physical phenomenon). This is due to the movement of the lever (input) mounted within the handle of the hammer, which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the valve and the lever (organ).
+
+The compressed air (part) enters the outer compartment (physical phenomenon). This is due to the tilting of the diaphragm valve (input), which in turn is due to the pressure applied by the compressed air on the other side of the diaphragm valve, which activates the Bernoulli’s law (physical effect) and is necessary that the diaphragm valve is of convex type (organ).
+
+The piston (part) moves in the upward direction thus compressing the air above the piston head (physical phenomenon). This is due to the upward force (input) applied by the compressed air, which activates the Newtonian laws of motion (physical effect) and it requires the presence of gap between the piston rod and the walls of the inner compartment (organ).
+
+The diaphragm valve (input) tilts and the inlet to the inner compartment is open and the inlet to the outer compartment is closed (physical phenomenon). This is due to the upward force applied by the compressed air (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the upward force applied by the compressed air is greater than the downward force applied by the compressed air supplied by the hose (organ).
+
+The piston (part) moves in the downward direction (physical phenomenon). This is due to the force applied by the compressed air (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth surface between the piston and the inner compartment walls (organ).
+$
+
+ACTION
+
+$ 
+ To deliver large number of blows in rapid successions. 
+$
+
+STATE
+
+$
+The tool is at rest.
+
+The tool is moves linearly.
+
+$
+
+PHYPHENOMENON
+
+$
+The inlet valve opens.
+
+The compressed air enters the outer compartment.
+
+The piston moves in the upward direction thus compressing the air above the piston head.
+
+The diaphragm valve tilts and the inlet to the inner compartment are open and the inlet to the outer compartment is closed.
+
+The piston moves in the downward direction.
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Bernoulli’s law.
+
+Newtonian laws of motion.
+
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+The movement of the lever.
+
+The tilting of the diaphragm valve.
+
+The upward force applied by the compressed air.
+
+The upward force applied by the compressed air.
+
+The force applied by the compressed air.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of contact between the valve and the lever.
+
+Necessary that the diaphragm valve is of convex type.
+
+Presence of gap between the piston rod and the walls of the inner compartment.
+
+Necessary that the upward force applied by the compressed air is greater than the downward force applied by the compressed air supplied by the hose.
+
+Presence of a smooth surface between the piston and the inner compartment walls.
+
+
+
+$
+
+
+
+PARTS
+$
+The inlet valve forms a sliding pair with the frame.
+
+The compressed air forms a sliding pair with the outer compartment.
+
+The piston forms a sliding pair with the inner compartment.
+
+The diaphragm valve forms a revolute pair with the frame.
+
+The piston forms a sliding pair with the inner compartment.
+
+
+
+
+
+
+
+
+$
+
+
+
+

@@ -1,0 +1,79 @@
+SUMMARY
+$
+This is used to store important things. This can be described as follows:
+
+One of the overlapping parts of the wallet (part) is unfolded (physical phenomenon). This is due to the unwrapping force applied on it (input), which activates the rotation effect (physical effect) and requires the presence of a soft and flexible material between the two parts (organ).
+$
+
+ACTION
+
+$ 
+To store important materials.
+
+To deploy.
+$
+
+STATE
+
+$
+The two parts are occupying less area.
+
+The two parts are occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+One of the overlapping parts of the wallet is unfolded.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Rotation effect.
+
+
+$
+
+
+INPUT
+
+$
+Unwrapping force applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a soft and flexible material between the two parts.
+
+$
+
+
+
+PARTS
+$
+Wallet.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

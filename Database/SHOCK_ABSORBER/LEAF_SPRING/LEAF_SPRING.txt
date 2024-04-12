@@ -1,0 +1,152 @@
+MACTION
+{
+A1 $ V < absorb > N < shock > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ without bending to bending of spring leaves $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < bend > N < spring-leaves > A < X > $
+PP2 $ V < store > N < energy > A < X > $
+PP3 $ V < release > N < force > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Elastic effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < bend > N < spring-leaves > A < x > $
+I3 $ V < release > N < force > A < x > $
+}
+
+MORGAN
+{
+O1 $ the applied force is within proportional limit of spring $
+}
+
+MPART
+{
+P1 $ spring leaves $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O1 P1 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O1 P1 >
+}
+FUNCTION
+
+$
+Leaf spring is a simple form of spring, commonly used for the suspension in wheeled vehicles.
+$
+
+
+STRUCTURE
+
+$
+It takes the form of a slender arc-shaped length of spring steel of rectangular cross-section. The center of the arc provides location for the axle, while tie holes are provided at either end for attaching to the vehicle body. For very heavy vehicles, a leaf spring can be made from several leaves stacked on top of each other in several layers, often with progressively shorter leaves.
+$
+
+BEHAVIOUR
+
+$
+A leaf spring can either be attached directly to the frame at both ends or attached directly at one end, usually the front, with the other end attached through a shackle, a short swinging arm. The shackle takes up the tendency of the leaf spring to elongate when compressed and thus makes for softer springiness.
+$
+
+PICTURE
+
+{
+ADB/SHOCK_ABSORBER/LEAF_SPRING/01.jpg     $ 01.LEAF_SPRING $
+ADB/SHOCK_ABSORBER/LEAF_SPRING/02.jpg     $ 02.LEAF_SPRING $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+Leaf spring is a simple form of spring, commonly used for the suspension in wheeled vehicles. This can be described as;
+Spring leaves (part) bends (physical phenomena). This is due to force applied on it (input) which activates elastic effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ). 
+
+Spring leaves (part) store energy (physical phenomena). This is due to bending of leaves (input) which activates elastic effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+
+Spring leaves (part) release energy (physical phenomena). This is due to releasing of applied force (input) which activates elastic effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+$
+
+ACTION
+
+$ 
+ To absorb shock
+$
+
+STATE
+
+$
+Without bending to bending of spring leaves
+$
+
+
+
+PHYPHENOMENON
+
+$
+Spring leaves bends
+
+Spring leaves stores energy
+
+Spring leaves release energy
+
+$
+
+
+PHYEFFECT
+
+$
+Elastic effect
+$
+
+
+INPUT
+
+$
+Force applied on spring leaves
+
+Bending of leaves
+
+Releasing of applied force
+$
+
+
+ORGAN
+
+$
+The applied force is within proportional limit of spring
+$
+
+
+
+PARTS
+$
+Spring leaves
+$

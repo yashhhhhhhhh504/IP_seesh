@@ -1,0 +1,236 @@
+
+MACTION
+{
+A1 $ V < propel > N < pin > A < striking  > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < forward > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to forward motion of striking pin $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < press > N < trigger > A < X > $
+PP2 $ V < move > N < pin > A < locking > $
+PP3 $ V < compress > N < spring > A < x > $
+PP4 $ V < propel > N < striker > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Wedge effect $
+PE3 $ Spring effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < trigger > A < x > $
+I3 $ V < move > N < pin > A < locking > $
+I4 $ V < x > N < force > A < spring > $
+}
+
+MORGAN
+{
+O1 $ the trigger has some inertia $
+O2 $ the guiding surface is inclined $
+O3 $ the spring has some stiffness $
+O4 $ the spring has some stiffness $
+}
+
+MPART
+{
+P1 $ trigger $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ locking pin $
+P5 $ sliding pair $
+P6 $ spring $
+P7 $ flexible pair $
+P8 $ frame $
+P9 $ striker $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P3 P5 P9 >
+
+
+}
+
+FUNCTION
+
+$
+ This mechanism is used in rifles. The striker cocking mechanism in a rifle keeps the energy locked in the compressed spring. 
+$
+
+
+STRUCTURE
+
+$
+This mechanism consists of a striker, spring, locking pin and trigger.
+$
+BEHAVIOUR
+
+$
+When the trigger is pulled to the right, it first compresses the spring even more. Then as a result of the inclined guiding surface, the locking pin is slid downwards so the striker can fly to the right, propelled by the force of the spring.
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/STRIKER_COCKING_MECH/01.jpg		$ STRIKER COCKING MECH $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism is used in rifles. This can be interpreted as a change of state from rest to linear motion of the striker. This can be described as follows:
+
+The trigger (part) is pressed (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the trigger has some inertia (organ).
+
+The looking pin (part) slides downward (physical phenomenon). This is due to the movement of the trigger (input), which activates the wedge effect (physical effect) and is necessary that the guiding surface is inclined (organ).
+
+The spring (part) is compressed (physical phenomenon). This is due to the movement of the locking pin (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The striker (part) propels in the forward direction (physical phenomenon). This is due to the spring force (input), which activates the spring effect (physical effect) and is necessary that the spring has some stiffness (organ).
+
+$
+
+ACTION
+
+$ 
+ To propel the striking pin.
+$
+
+STATE
+
+$
+The striker is at rest.
+
+The striker is propelled ahead.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The trigger is pressed.
+
+The locking pin slides downward.
+
+The spring is compressed.
+
+The striker propels in the forward direction.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Wedge effect.
+
+Spring effect.
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The movement of the trigger.
+
+The movement of the locking pin.
+
+The spring force.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the trigger has some inertia.
+
+Necessary that the guiding surface is inclined.
+
+Necessary that the spring has some stiffness.
+
+Necessary that the spring has some stiffness.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+The trigger forms a sliding pair with the guide ways.
+
+The locking pin forms a sliding pair with the guide ways.
+
+The spring forms a flexible pair with the frame.
+
+The striker forms a sliding pair with the guide ways.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

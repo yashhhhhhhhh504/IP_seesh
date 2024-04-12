@@ -1,0 +1,86 @@
+SUMMARY
+$
+This mechanism can be used to provide plane motion. This mechanism can be interpreted as a change of state from rest to plane motion. This can be described as follows:
+
+The block (part) slides over the other part (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) requires the presence of a smooth sliding surface between the two parts (organ).
+
+The block (part) also rotates over the other part (physical phenomenon). This is due to the torque applied on it (input) which activates the lever effect (physical effect) and requires the presence of a smooth surface (organ).
+
+$
+
+ACTION
+
+$ 
+ To plane motion.
+$
+
+STATE
+
+$
+The part is at rest.
+
+The part is undergoing a plane motion
+
+$
+
+PHYPHENOMENON
+
+$
+The block slides over the other part.
+
+The block also rotates over the other part.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Lever effect.
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The torque applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the two parts.
+
+Presence of a smooth surface.
+
+$
+
+
+
+PARTS
+$
+The part forms a sliding pair with the other part.
+
+The part forms a revolute pair with the other part
+
+
+
+
+
+
+
+
+$
+
+
+
+

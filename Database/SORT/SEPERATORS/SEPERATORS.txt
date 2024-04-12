@@ -1,0 +1,218 @@
+MACTION
+{
+A1 $ V < separate > N < object > A < spherical > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < roll > N < object > A < spherical > $
+PP2 $ V < reciprocate > N < part > A < sliding > $
+PP3 $ V < separate > N < object > A < spherical > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Gravity effect $
+PE2 $ Newtonian laws of motion $
+PE3 $ Resistance to motion effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < gravitational > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < reciprocate > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ the ball has some mass $
+O2 $ smooth surface between the guide ways and the reciprocator $
+O3 $ the projections are strong enough to resist the motion of the balls $
+}
+
+MPART
+{
+P1 $ ball $
+P2 $ rolling pair $
+P3 $ inclined path $
+P4 $ reciprocator $
+P5 $ sliding pair $
+P6 $ guide ways $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P4 P5 P6 >
+
+}
+
+
+
+
+FUNCTION
+
+$
+This device can be used to separate spherical balls two at a time or any number based on the length of the arm on the reciprocator.
+$
+
+
+STRUCTURE
+
+$
+It consists of an inclined tube which has an opening at the top and the bottom. The spherical balls are made to roll within this tube. It also has a reciprocator which reciprocates along the guide ways.
+$
+BEHAVIOUR
+
+$
+The reciprocator reciprocates within the guide ways and as the balls are rolled along the tube, they are separated. 
+
+$
+
+PICTURE
+
+{
+ADB/SORT/SEPERATORS/01.JPG	$ SEPERATORS $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to separate spherical objects. This can be described as follows:
+
+The balls (part) are rolled along the inclined path (physical phenomenon). This is due to the gravitational force (input), which activates the gravity effect (physical effect) and is necessary that the ball has some mass (organ).
+
+The reciprocator (part) reciprocates within the guide ways (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of smooth surface between the guide ways and the reciprocator (organ).
+
+The balls (part) are separated (physical phenomenon). This is due to the reciprocating motion of the reciprocator (input), which activates the resistance to motion effect (physical effect) and is necessary that the projections are strong enough to resist the motion of the balls (organ).
+
+$
+
+ACTION
+
+$ 
+ Separate spherical objects.
+$
+
+STATE
+
+$
+X
+
+$
+
+PHYPHENOMENON
+
+$
+The balls are rolled along the inclined path.
+
+The reciprocator reciprocates within the guide ways.
+
+The balls are separated.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Gravity effect.
+
+Newtonian laws of motion.
+
+Resistance to motion effect.
+
+
+
+$
+
+
+INPUT
+
+$
+The gravitational force.
+
+The rotation of the crank.
+
+The reciprocating motion of the reciprocator.
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the ball has some mass.
+
+Presence of smooth surface between the guide ways and the reciprocator.
+
+Necessary that the projections are strong enough to resist the motion of the balls.
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+The balls form a rolling pair with the inclined path.
+
+The reciprocator forms a sliding pair with the guide ways.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

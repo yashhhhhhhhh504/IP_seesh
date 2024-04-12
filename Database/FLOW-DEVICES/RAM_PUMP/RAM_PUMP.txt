@@ -1,0 +1,230 @@
+
+MACTION
+{
+A1 $ V < pump > N < liquid > A < X > $
+A2 $ V < displace > N < liquid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < level liquid > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at lower level to liquid at higher level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < flow > A < liquid > $
+PP2 $ V < enter compress > N < dome liquid air > A < X > $
+PP3 $ V < expand push > N < air liquid > A < compressed > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s effect $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < differential > A < pressure > $
+I2 $ V < x > N < momentum > A < liquid > $
+I3 $ V < x > N < force > A < opposing > $
+}
+
+MORGAN
+{
+O1 $ the reservoir is at a suitable height $
+O2 $ the escape valve remains closed $
+O3 $ the pressure in the outlet tube is lesser when compared to the pressure within the air dome $
+
+}
+
+MPART
+{
+P1 $ Liquid $
+P2 $ Liquid $
+P3 $ Compressed air $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A2 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+A device that expends energy in order to rise, transport or compress fluids.
+
+$
+
+
+STRUCTURE
+
+$
+it consists of an air dome, inclined and vertical pipes.
+$
+BEHAVIOUR
+
+$
+The hydraulic ram pump uses the energy of a downward-flowing stream of water to lift a proportion of the water to a higher level. Flowing water in the inlet pipe causes a check valve to close. As in a water hammer (in which a flow of water is suddenly stopped, producing a hammering action), kinetic energy is converted to pressure energy, and a second check valve is opened to allow some water into the air chamber and up the discharge pipe. The pressure falls in the inlet water pipe, and the first check valve reopens. The compressed air closes the check valve to the air chamber, and the whole cycle is repeated. Approximately 15 percent of the water flowing in the inlet pipe may be raised to a height of five times the fall in the inlet pipe. Hydraulic ram pumps were developed in the late 18th century and are still used in some domestic water systems.
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/RAM_PUMP/01.GIF		$ 01.RAM PUMP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This can be used to displace liquid from a lower level to a higher level. This can be interpreted as a change of state from liquid at lower level to liquid at higher level. This can be described as follows:
+
+The liquid (part) flows from the reservoir to the first chamber (physical phenomenon). This is due to the pressure differential (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the reservoir is at a suitable height (organ).
+
+The liquid (part) enters the air dome thus compressing the air within it  (physical phenomenon). This is due to the momentum of the flowing liquid (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary the escape valve remains closed (organ).
+
+The compressed air (part) within the air dome expands thus pushing the liquid up the discharge tube (physical phenomenon). This is due to the opposing force of the compressed air (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the pressure in the outlet tube is lesser when compared to the pressure within the air dome (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To pump liquid.
+
+To displace liquid.
+$
+
+STATE
+
+$
+
+The liquid is at lower level.
+
+The liquid is at higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The liquid flows from the reservoir to the first chamber.
+
+The liquid enters the air dome thus compressing the air within it. 
+
+The compressed air within the air dome expands thus pushing the liquid up the discharge tube.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+The pressure differential.
+
+The momentum of the flowing liquid.
+
+The opposing force of the compressed air.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the reservoir is at a suitable height.
+
+Necessary the escape valve remains closed.
+
+Necessary that the pressure in the outlet tube is lesser when compared to the pressure within the air dome.
+
+
+$
+
+
+
+PARTS
+$
+Liquid.
+
+Liquid.
+
+Compressed air.
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

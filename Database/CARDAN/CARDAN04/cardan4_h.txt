@@ -1,0 +1,92 @@
+SUMMARY
+$
+This can be used to generate parallel motion. This can be interpreted as a change of state from rest to parallel motion. This can be described as follows:
+
+The link 4 (part) rotates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link is hinged to the center of the fixed gear (organ).
+
+The spur gear 2 (part) revolves round the fixed gear (physical phenomenon). This is due to the rotation of the link 4 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link and the spur gear 2 (organ).
+
+The spur gear 3 (part) revolves round the fixed gear (physical phenomenon). This is due to the rotation of the link (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a fixed distance between the center of a spur gear and center of the fixed gear (organ).
+
+The arm 5 (part) revolves around the fixed circle and remains parallel (physical phenomenon). This is due to the revolution of the spur gear 3 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the spur gear 3 and the arm 5 (organ).
+$
+
+ACTION
+
+$ 
+ To generate parallel motion.
+$
+
+STATE
+
+$
+The arm is at rest.
+
+The arm revolves around the fixed gear and also remains parallel.
+
+$
+
+PHYPHENOMENON
+
+$
+The link 4 rotates.
+
+The spur gear 2 revolves round the fixed gear.
+ 
+The spur gear 3 revolves round the fixed gear.
+
+The arm 5 revolves around the fixed circle and remains parallel.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The rotation of the link 4.
+
+The rotation of the link.
+
+The revolution of the spur gear 3.
+$
+
+
+ORGAN
+
+$
+Necessary that the link is hinged to the center of the fixed gear.
+
+Presence of zero degree of freedom between the link and the spur gear 2.
+
+Presence of a fixed distance between the center of a spur gear and center of the fixed gear.
+
+Presence of one degree of freedom between the spur gear 3 and the arm 5.
+$
+
+
+
+PARTS
+$
+The link 4 forms a revolute pair with the frame.
+
+The spur gear 2 forms a gear pair with the fixed gear.
+
+The spur gear 3 forms a gear pair with the spur gear 2.
+
+The arm 5 forms a fixed pair with the link 4.
+
+
+
+
+$
+
+

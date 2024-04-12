@@ -1,0 +1,91 @@
+
+
+MACTION
+{
+A1 $ V < reach > N < positions > A < different > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rotation > N < small angular > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < rotation > N < large angular > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from small angular rotation to large angular rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < fixed > $
+PP2 $ V < rotate > N < link > A < partially > $
+PP3 $ V < rotate > N < link > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < shaft > A < input > $
+I3 $ V < rotate > N < shaft > A < input > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the link 2 and the input shaft and also the presence of one degree of freedom between the link 1 and link 2 $
+O2 $ zero degree of freedom between the shaft and the link 3 and also the presence of one degree of freedom between the link3 and the link2 $
+O3 $ zero degree of freedom between the link 4 and the input shaft and also the presence of one degree of freedom between the link 4 and the link 3 $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ revolute pair $
+P3 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

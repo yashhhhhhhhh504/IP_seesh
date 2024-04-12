@@ -1,0 +1,87 @@
+SUMMARY
+$
+This can mechanism can be used to the increase height of the table. This is can be interpreted as a change of state from small height to large height. This can be described as follows:
+
+The crank (part) rotates (physical phenomenon). This is due to torque applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of the zero degree of freedom between the input shaft and the crank (organ).
+
+The connecting rod (part) oscillates and thus increases in height (physical phenomenon). This is due to the movement of the crank (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the crank and connecting rod (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To increase height.
+$
+
+STATE
+
+$
+The table surface is at a lower level.
+
+The table surface is at a higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The crank rotates.
+
+The connecting rod oscillates and thus increases in height.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Torque applied on to it.
+
+Movement of the crank.
+
+$
+
+
+ORGAN
+
+$
+Presence of the zero degree of freedom between the input shaft and the crank.
+
+Presence of one degree of freedom between the crank and connecting rod.
+
+$
+
+
+
+PARTS
+$
+The crank forms a revolute pair with the frame.
+
+The oscillating rod forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

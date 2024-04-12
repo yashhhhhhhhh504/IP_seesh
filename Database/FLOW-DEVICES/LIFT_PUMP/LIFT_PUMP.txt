@@ -1,0 +1,223 @@
+
+MACTION
+{
+A1 $ V < lift > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < below > N < water ground-level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < above > N < water ground-level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from water below ground level to water above ground level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate create > N < piston vacuum > A < X > $
+PP2 $ V < x > N < flow > A < water > $
+PP3 $ V < enter > N < water piston > A < above > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+PE3 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < handle > A < x > $
+I2 $ V < x > N < difference > A < pressure > $
+I3 $ V < move > N < piston > A < downward > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the cylinder and the piston $
+O2 $ water pressure below the ground is higher than that in within the cylinder $
+O3 $ pressure of water is greater than the weight of the valve $
+}
+
+MPART
+{
+P1 $ piston $
+P2 $ sliding pair $
+P3 $ cylinder $
+P4 $ water $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P4 >
+
+}
+
+
+
+
+FUNCTION
+
+$
+This pump can still be found on farms everywhere. The maximum suction to the lower valve (shown in red here; called the foot valve is about 30 feet
+$
+
+
+STRUCTURE
+
+$
+It consists of a piston and cylinder arrangement. The piston has a valve through it. The piston rod is connected to the handle rod through a crank.
+$
+BEHAVIOUR
+
+$
+Water enters the lower chamber when the movable sealed plate is raised. The red valve is open and the green valve on the plate is closed. When the plate is pushed back down, the red valve closes, and the liquid in the lower chamber is forced through the green valve, which opens. On the next upstroke of the plate, the liquid, which passed through the green valve on the previous down stroke, is raised and spills out the spout. 
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/LIFT_PUMP/01.GIF		$ 01.LIFT PUMP $
+ADB/FLOW-DEVICES/LIFT_PUMP/02.GIF		$ 02.LIFT PUMP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to lift water that is below the ground level. 
+This can be interpreted as a change of state from water below the ground level to water above the ground level. This can be described as follows:
+
+The piston (part) reciprocates within the cylinder thus creating vacuum below it (physical phenomenon). This is due to the rotation of the handle (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the cylinder and the piston (organ).
+
+The water (part) enters the cylinder (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the water pressure below the ground is higher than that in within the cylinder (organ).
+
+The water (part) enters the above the piston (physical phenomenon). This is due to the downward motion (input) of the piston, which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that pressure of water is greater than the weight of the valve (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To lift water.
+$
+
+STATE
+
+$
+The water is below the ground level.
+
+The water is above the ground level.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston reciprocates within the cylinder thus creating vacuum below it.
+
+The water enters the cylinder.
+
+The water enters the above the piston.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the handle.
+
+Pressure difference.
+
+The downward motion of the piston.
+
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the cylinder and the piston.
+
+Necessary that the water pressure below the ground is higher than that in within the cylinder.
+
+Necessary that pressure of water is greater than the weight of the valve.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+The piston forms a sliding pair with the cylinder.
+
+The water forms a sliding pair with the cylinder.
+
+The water forms a sliding pair with the cylinder.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

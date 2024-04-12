@@ -1,0 +1,218 @@
+MACTION
+{
+A1 $ V < operate > N < window > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < open > N < window > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < closed > N < window > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from open window to closed window $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < worm > A < X > $
+PP2 $ V < rotate > N < worm-wheel > A < X > $
+PP3 $ V < rotate > N < gear-sector > A < x > $
+PP4 $ V < rotate > N < long-arm > A < x > $
+PP5 $ V < move > N < glass > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < input-shaft > A < x > $
+I2 $ V < rotate > N < worm > A < x > $
+I3 $ V < rotate > N < worm-wheel > A < x > $
+I4 $ V < move > N < glass > A < X > $
+I5 $ V < move > N < sector-gear > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the worm $
+O2 $ meshing between the wheel and the worm $
+O3 $ contact between the gear and the wheel $
+O4 $ hinged joint between the long arm and the sector gear $
+O5 $ one degree of freedom between the sector gear and the glass $
+}
+
+MPART
+{
+P1 $ worm $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ worm wheel $
+P5 $ worm worm- wheel pair $
+P6 $ sector gear $
+P7 $ gear pair $
+P8 $ long arm $
+P9 $ glass $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P4 P6 P7 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 P6 P8 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P2 P8 P9 >
+
+}
+
+
+FUNCTION
+
+$
+The window lift on most cars uses a really neat linkage to lift the window glass while keeping it level. A small electric motor is attached to a worm gear and several other spur gears to create a large gear reduction, giving it enough torque to lift the window. An important feature of power windows is that they cannot be forced open -- the worm gear in the drive mechanism takes care of this. Many worm gears have a self-locking feature because of the angle of contact between the worm and the gear. The worm can spin the gear, but the gear cannot spin the worm -- friction between the teeth causes the gears to bind. 
+
+$
+
+
+STRUCTURE
+
+$
+The linkage has a long arm, which attaches to a bar that holds the bottom of the window. The end of the arm can slide in a groove in the bar as the window rises. On the other end of the bar is a large plate that has gear teeth cut into it, and the motor turns a gear that engages these teeth. The same linkage is often used on cars with manual windows, but instead of a motor turning the gear, the crank handle turns it. In the next section we'll learn about some of the neat features some power windows have, including the child lockout and automatic-up. 
+
+$
+BEHAVIOUR
+
+$
+When the driver presses one of the switches, one of the two side contacts is disconnected from the ground and connected to the center power contact, while the other one remains grounded. This provides power to the window motor. If the switch is pressed the other way, then power runs through the motor in the opposite direction. 
+
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to operate the window automatically. This can be interpreted as a change of state from open window to closed window. This can be described as follows:
+
+The worm (part) rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the worm (organ).
+
+The worm wheel (part) rotates in the horizontal plane (physical phenomenon). This is due to the rotation of the worm (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of meshing between the wheel and the worm (organ).
+
+The sector gear (part) rotates through a small angle (physical phenomenon). This is due to the rotation of the worm wheel (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the gear and the wheel (organ).
+
+The long arm (part) rotates with respect to the gear sector (physical phenomenon). This is due to the downward movement of the glass (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of hinged joint between the long arm and the sector gear (organ).
+
+The glass (part) moves up and down (physical phenomenon). This is due to the movement of the sector gear (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the sector gear and the glass (organ).
+$
+
+ACTION
+
+$ 
+ To operate the window.
+$
+
+STATE
+
+$
+The window is open.
+
+The window is closed.
+
+$
+
+PHYPHENOMENON
+
+$
+The worm rotates.
+
+The worm wheel rotates in the horizontal plane.
+ 
+The sector gear rotates through a small angle.
+
+The long arm rotates with respect to the gear sector.
+
+The glass moves up and down.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The rotation of the input shaft.
+
+The rotation of the worm.
+
+The rotation of the worm wheel.
+
+The downward movement of the glass.
+
+The movement of the sector gear.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the worm.
+
+Presence of meshing between the wheel and the worm.
+
+Presence of contact between the gear and the wheel.
+
+Presence of hinged joint between the long arm and the sector gear.
+
+Presence of one degree of freedom between the sector gear and the glass.
+$
+
+
+
+PARTS
+$
+The worm forms a revolute pair with the frame.
+
+The wheel forms a worm worm-wheel pair with the worm.
+
+The sector gear forms a gear pair with the worm wheel.
+
+The long arm forms a revolute pair with the sector gear.
+
+The glass forms a revolute pair with the long arm.
+
+
+
+$
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+MACTION
+{
+A1 $ V < produce > AV < X > N < sound > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < > A < closed > N < circuit > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < open > N < circuit > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from closed to open circuit $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < magnetize > AV < X > N < striker > AJ < iron > $
+PP2 $ V < strike > AV < X > N < bell > AJ < X > $
+PP3 $ V < restore > AV < X > N < position > AJ < original > $
+PP4 $ V < > AV < X > N < > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Magnetic effect.  $
+PE2 $ Hook’s law. $
+PE3 $ $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < pass > AV < X > N < electricity > AJ < > $
+I2 $ V < > AV < X > N < force > AJ < magnetic > $
+I3 $ V < > AV < X > N < spring-force > AJ < > $
+I4 $ V < > AV < X > N < > AJ < X > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ requires that the grains in the iron core are oriented towards it.
+ $
+O2 $ necessary that the bell lies within the magnetic field $
+O3 $ is necessary that the spring has some stiffness. $
+O3 $ $
+O4 $ $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < striker > AJ < iron > $
+P2 $ V < X > AV < X > N < coils > AJ < X > $
+P3 $ V < X > AV < X > N < pair > AJ < wrapping > $
+P4 $ V < X > AV < X > N < frame > AJ < > $
+P5 $ V < X > AV < X > N < revolute-pair > AJ < > $
+P6 $ V < X > AV < X > N < spring > AJ < X > $
+P7 $ V < X > AV < X > N < pair > AJ < flexible > $
+P8 $ V < X > AV < X > N < > AJ < X > $
+
+
+}
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P1 P6 P7 >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

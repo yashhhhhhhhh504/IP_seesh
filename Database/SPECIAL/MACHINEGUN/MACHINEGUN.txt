@@ -1,0 +1,210 @@
+MACTION
+{
+A1 $ V < fire > N < bullets  > A < rapidly > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < projectile > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to projectile motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < revolve > N < barrels > A < X > $
+PP2 $ V < load > N < cartridges > A < X > $
+PP3 $ V < propel > N < cartridge > A <forward direction > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Gravity effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < x > $
+I2 $ V < x > N < gravitational-force > A < x > $
+I3 $ V < move > N < pin > A < firing > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shaft and the cylinder $
+O2 $ the barrels have an opening at the top $
+O3 $ a spring, which can apply a pull force on the firing pin $
+}
+
+MPART
+{
+P1 $ cylinder $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ sliding-pair $
+P5 $ cartridges $
+P6 $ barrels $
+P7 $ sliding pair $
+P8 $ hopper $
+
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P5 P7 P8 >
+< A1 IS1 OS1 CS1 PP3 PE1 I1 O3 P5 P6 P7 >
+}
+
+
+
+
+
+FUNCTION
+$
+A machine gun is a small-calibre "fully automatic" projectile weapon that is capable of firing bullets in rapid succession. Generally any machine gun with a calibre of more than 12.7mm (0.5 inch) is called an automatic cannon, even though it might operate the same way. 
+The machine gun's primary role in a ground-combat situation is to provide suppressing fire on an opposing force's position. 
+$
+
+
+STRUCTURE
+$
+A lot of these early machine guns combined several barrels and firing hammers into a single unit. Among the most popular designs was the Gatling gun, named after its inventor Richard Jordan Gatling. You can see how this weapon works in the animation shown alongside.
+(swf)
+This weapon, the first machine gun to gain widespread popularity, consists of six to 10 gun barrels positioned in a cylinder. Each barrel has its own breech and firing pin system. 
+$
+
+BEHAVIOUR
+$
+To operate the gun, you turn a crank, which revolves the barrels inside the cylinder. Each barrel passes under an ammunition hopper, or carrousel magazine, as it reaches the top of the cylinder. A new cartridge falls into the breech, and the barrel is loaded. 
+Each firing pin has a small cam head that catches hold of a slanted groove in the gun body. As each barrel revolves around the cylinder, the groove pulls the pin backward, pushing in on a tight spring. Just after a new cartridge is loaded into the breech, the firing-pin cam slides out of the groove, and the spring propels it forward. The pin hits the cartridge, firing the bullet down the barrel. When each barrel revolves around to the bottom of the cylinder, the spent cartridge shell falls out of an ejection port. 
+$
+
+
+PICTURE
+{
+ADB/SPECIAL/MACHINEGUN/machinegun01.jpg	        $ 01. Machine Gun $
+ADB/SPECIAL/MACHINEGUN/vickersmachine.jpg	$ 02. Vickers Machine Gun $
+ADB/SPECIAL/MACHINEGUN/machinbullet.jpg	        $ 03. Bullet	$
+}
+
+
+CLIP
+{
+}
+SUMMARY
+$
+A machine gun is a small-caliber "fully automatic" projectile weapon that is capable of firing bullets in rapid succession. It can be interpreted as a change of state from rest to projectile motion.
+
+The barrels (part) inside the cylinder revolve (physical phenomenon). This is due to the rotation of the shaft (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of zero degree of freedom between the shaft and the cylinder (organ).
+
+The cartridges (part) are loaded on to the barrels from the hopper (physical phenomenon). This is due to the gravitational force (input), which activates the gravity effect (physical effect) and requires that the barrels have an opening at the top (organ).  
+
+The cartridge propels in the forward direction (physical phenomenon). This is movement of the firing pin (input), which activates the law “ no two bodies can occupy the place at the same time” (physical effect) and requires the presence of a spring, which can apply a pull force on the firing pin (organ).
+
+
+$
+
+ACTION
+$
+
+ To fire bullets in rapid succession.
+
+$ 
+STATE
+$
+
+The cartridge is at rest.
+
+The cartridge is fired out of the barrel.
+
+$
+PHYPHENOMENON
+$
+
+The barrels inside the cylinder revolve.
+
+The cartridges are loaded on to the barrels from the hopper.
+ 
+The firing pin propels the cartridge in the forward direction.
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+Gravity effect.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the shaft.
+
+The gravitational force.
+
+Movement of the firing pin.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the shaft and the cylinder.
+
+Requires that the barrels have an opening at the top.
+
+Presence of a spring, which can apply a pull force on the firing pin.
+
+
+
+
+$
+
+PARTS
+$
+
+The cylinder along with the along with its shaft forms a revolute pair with the frame.
+
+The cartridges form a sliding pair with the hopper.
+
+The cartridges forms a sliding pair with the barrels.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

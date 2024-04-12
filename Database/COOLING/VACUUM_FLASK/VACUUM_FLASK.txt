@@ -1,0 +1,205 @@
+
+
+MACTION
+{
+A1 $ V < reduce > N < heat-transfer > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ X $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reduce > N < heat-conduction > A < X > $
+PP2 $ V < reduce > N < heat-convection > A < X > $
+PP3 $ V < reduce > N < heat-radiation > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Vacuum effect $
+PE2 $ law of radiation $
+}
+
+MINPUT
+{
+I1 $ V < absent > N < atom > A < x > $
+I2 $ V < reflect > N < heat-energy > A < x > $
+}
+
+MORGAN
+{
+O1 $ There is perfect vacuum in between two glasses $
+O2 $ Glass is silvered $
+}
+
+MPART
+{
+P1 $ heat $
+P2 $ glass $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O2 P2 >
+}
+
+
+
+FUNCTION
+
+$
+A vacuum flask is a bottle that reduces heat transfer from the inside to the outside and therefore keeps warm drinks warm and refrigerated drinks cold.
+$
+
+
+STRUCTURE
+
+$
+Vacuum flask consists of an outer case, two parallel glasses and in-between the two glasses there is perfect vacuum and the outside of inner glass is silvered.  
+$
+BEHAVIOUR
+
+$
+A vacuum is a perfect insulator. Conduction and convection can be eliminated by using vacuum as an insulator and silvered glass reduces heat radiation.  Therefore it reduces heat transfer and keeps warm drinks warm and refrigerated drinks cold.
+$
+
+ATTRIBUTE
+
+$
+With the vacuum flask, the food is cooked on the stove for 20 minutes and then kept hot for 6 hours. The energy saving can be 10 to 20 fold.
+
+The vacuum flask is a device for keeping liquids warm (or cold) in colder (or warmer) surroundings. It works by reducing all three modes of heat transfer. The flask consists of an insulated outer container containing the inner vacuum flask, which essentially consists of a double walled glass vessel, with an evacuated space between the walls. This reduces conduction through the vessel wall. The inner walls of the flask are coated with a thin layer of silver, acting as a mirror which reflects heat, thus reducing losses by radiation. The stopper reduces losses by convection.
+
+General specifications:
+1.Keep heat and cold 2.Available size:250ml,350ml,500ml,700ml,750ml,800ml,1000ml,1200ml,1500ml,1800ml,2000ml... 3. Thickness : 0.4mm,0.5mm,0.6mm...
+
+$
+
+
+PICTURE
+
+{
+ADB/COOLING/VACUUM_FLASK/01.JPG                     $ 01.VACUUM FLASK $
+ADB/COOLING/VACUUM_FLASK/02.JPG                     $ 02.VACUUM FLASK $
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+Vacuum flask is a device which reduces heat transfer. This process can be described as:
+
+Heat (part) convection and conduction is reduced (physical phenomenon). This is due to absence of atoms in-between two glasses (input) which activates vacuum effect (physical effect) and it is necessary that there is perfect vacuum in between two glasses (organ).
+
+Glass (part) reduces radiation (physical phenomenon). This is due to reflection of heat energy by the glass (input) which activates the law of radiation (physical effect) and it is necessary that the glass is silvered (organ).
+$
+
+ACTION
+
+$ 
+To reduce heat transfer
+$
+
+STATE
+
+$
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+Heat convection is reduced
+
+Heat conduction is reduced
+
+Glass reduces heat radiation
+$
+
+
+PHYEFFECT
+
+$
+Vacuum effect 
+
+Law of radiation
+$
+
+
+INPUT
+
+$
+Absence of atom
+
+Reflection of energy
+$
+
+
+ORGAN
+
+$
+There is perfect vacuum in between two glasses
+
+The glass is silvered 
+$
+
+
+
+PARTS
+
+$
+Vacuum
+
+Glass
+$
+
+REFERENCES 
+
+$
+http://en.wikipedia.org/wiki/Vacuum_flask
+http://home.howstuffworks.com/thermos.htm
+http://home.howstuffworks.com/thermos1.htm
+http://home.howstuffworks.com/thermos2.htm
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

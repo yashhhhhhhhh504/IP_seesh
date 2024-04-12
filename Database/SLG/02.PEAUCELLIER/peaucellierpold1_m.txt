@@ -1,0 +1,45 @@
+MACTION
+{
+A1 $ V < generate > A < straight-line > N < motion > $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < link > $
+PP2 $ V < expand > A < x > N < parallelogram > $
+PP3 $ V < contract > A < x > N < parallelogram > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < link > $
+}
+
+MORGAN
+{
+
+O1 $ 0 dof $
+O2 $ 1 dof $
+O3 $ ratio of length $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ revolute pair $
+P4 $ frame $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P4 - P3
+A1 - PP2 - PE1 - I2 - O2 - P1 - P2 - P3
+A1 - PP2 - PE1 - I2 - O3 - P1 - P2 - P3
+}

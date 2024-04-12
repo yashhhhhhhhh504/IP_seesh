@@ -1,0 +1,203 @@
+
+MACTION
+{
+A1 $ V < generate > N < motion > A < parallel > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < parallel > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to parallel motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < X > $
+PP2 $ V < revolve > N < gear > A < spur fixed > $
+PP3 $ V < revolve > N < gear > A < spur fixed > $
+PP4 $ V < revolve remain > N < arm circle parallel > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < rotate > N < link > A < x > $
+I3 $ V < rotate > N < link > A < x > $
+I4 $ V < revolve > N < gear > A < spur > $
+}
+
+MORGAN
+{
+O1 $ link is hinged to the center of the fixed gear $
+O2 $ zero degree of freedom between the link and the spur gear 2 $
+O3 $ a fixed distance between the center of a spur gear and center of the fixed gear $
+O4 $ one degree of freedom between the spur gear 3 and the arm 5 $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ spur gear $
+P5 $ gear pair $
+P6 $ fixed gear $
+P7 $ arm $
+P8 $ fixed pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P7 P8 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Invented by Girolamo Cardano in the 16th century the Cardan gear is a way of converting rotary motion into straight line motion.
+$
+
+
+STRUCTURE
+
+$
+This cardan mechanism consists basically of three gears and an output arm. Gears 1 and 3 must be in the ratio 1:1 in order for this mechanism to work. Gear 1 is a fixed sun gear, while gear 3 is a planet pinion. The fixed sun gear meshes with gear 2, which in turn meshes with the planet pinion. The output arm is fixed to the center of the planet pinion.
+$
+
+
+BEHAVIOUR
+
+$
+A rearrangement of gearing in the simplified Cardan mechanism results in another useful motion. If the fixed sun gear and planet pinion are in the ratio of 1:1, an arm fixed to the planet shaft will stay parallel to itself during rotation, while any point on the arm describes a circle of radius R. When arranged in conjugate pairs, the mechanism can punch holes on moving webs of paper.
+$
+
+
+PICTURE
+
+{
+ADB/CARDAN/CARDAN04/cardan04.jpg	$ Cardan Gear	$
+}
+
+
+CLIP
+
+{
+ADB/CARDAN/CARDAN04/cardan04.avi	$ Cardan Gear	$
+}
+
+
+SUMMARY
+$
+This can be used to generate parallel motion. This can be interpreted as a change of state from rest to parallel motion. This can be described as follows:
+
+The link 4 (part) rotates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link is hinged to the center of the fixed gear (organ).
+
+The spur gear 2 (part) revolves round the fixed gear (physical phenomenon). This is due to the rotation of the link 4 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link and the spur gear 2 (organ).
+
+The spur gear 3 (part) revolves round the fixed gear (physical phenomenon). This is due to the rotation of the link (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a fixed distance between the center of a spur gear and center of the fixed gear (organ).
+
+The arm 5 (part) revolves around the fixed circle and remains parallel (physical phenomenon). This is due to the revolution of the spur gear 3 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the spur gear 3 and the arm 5 (organ).
+$
+
+ACTION
+
+$ 
+ To generate parallel motion.
+$
+
+STATE
+
+$
+The arm is at rest.
+
+The arm revolves around the fixed gear and also remains parallel.
+
+$
+
+PHYPHENOMENON
+
+$
+The link 4 rotates.
+
+The spur gear 2 revolves round the fixed gear.
+ 
+The spur gear 3 revolves round the fixed gear.
+
+The arm 5 revolves around the fixed circle and remains parallel.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The rotation of the link 4.
+
+The rotation of the link.
+
+The revolution of the spur gear 3.
+$
+
+
+ORGAN
+
+$
+Necessary that the link is hinged to the center of the fixed gear.
+
+Presence of zero degree of freedom between the link and the spur gear 2.
+
+Presence of a fixed distance between the center of a spur gear and center of the fixed gear.
+
+Presence of one degree of freedom between the spur gear 3 and the arm 5.
+$
+
+
+
+PARTS
+$
+The link 4 forms a revolute pair with the frame.
+
+The spur gear 2 forms a gear pair with the fixed gear.
+
+The spur gear 3 forms a gear pair with the spur gear 2.
+
+The arm 5 forms a fixed pair with the link 4.
+
+
+
+
+$
+
+

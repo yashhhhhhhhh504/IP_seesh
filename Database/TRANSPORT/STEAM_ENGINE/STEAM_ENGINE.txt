@@ -1,0 +1,243 @@
+MACTION
+{
+A1 $ V < produce > N < motion > A < rotary > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < rotary > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotary motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < produce boil > N < steam water > A < X > $
+PP2 $ V < x > N < steam expansion cylinder > A < X > $
+PP3 $ V < rotate > N < crank > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Vaporization effect $
+PE2 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < vaporize > N < water > A < x > $
+I2 $ V < exert > N < pressure > A < x > $
+I3 $ V < x > N < motion piston > A < reciprocating > $
+}
+
+MORGAN
+{
+O1 $ the temperature achieved in the boiler is equal to the saturation temperature corresponding to that the saturation pressure  $
+O2 $ smooth surface between the piston and the cylinder $
+O3 $ one degree of freedom between the crank and the connecting link $
+}
+
+MPART
+{
+P1 $ Water $
+P2 $ High-pressure steam $
+P3 $ crank $
+P4 $ revolute pair $
+P5 $ frame $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 P4 P5 >
+
+}
+
+
+
+FUNCTION
+
+$
+Steam engines powered all early locomotives, steamboats and factories, and therefore acted as the foundation of the Industrial Revolution.
+
+$
+
+
+STRUCTURE
+
+$
+It consists of a boiler where the steam is generated and a piston cylinder arrangement where the high pressure expands thus producing power.
+$
+BEHAVIOUR
+
+$
+The slide valve is in charge of letting the high-pressure steam into either side of the cylinder. The control rod for the valve is usually hooked into a linkage attached to the crosshead, so that the motion of the crosshead slides the valve as well. (On a steam locomotive, this linkage also allows the engineer to put the train into reverse.) 
+The exhaust steam simply vents out into the air. This fact explains two things about steam locomotives: 
+* It explains why they have to take on water at the station -- the water is constantly being lost through the steam exhaust. 
+* It explains where the "choo-choo" sound comes from. When the valve opens the cylinder to release its steam exhaust, the steam escapes under a great deal of pressure and makes a "choo!" sound as it exits. When the train is first starting, the piston is moving very slowly, but then as the train starts rolling the piston gains speed. The effect of this is the "Choo..... Choo.... choo... choo choo-choo-choo" that we hear when it starts moving. 
+On a steam locomotive, the crosshead normally links to a drive rod, and from there to coupling rods that drive the locomotive's wheels. The arrangement often looks something like this: 
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/STEAM_ENGINE/01.GIF		$ 01.STEAM ENGINE $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Steam engine is an external combustion engine. Fuel burns outside the engine to create high-pressure steam, and the pressure drives the piston.
+This can be interpreted as a change of state from rest to rotary motion of the crank. This can be discussed as follows:
+
+The water (part) is boiled to produce steam (physical phenomenon). This is due to the vaporization of water (input), which activates the vaporization effect (physical effect) and is necessary that the temperature achieved in the boiler is equal to the saturation temperature corresponding to that the saturation pressure (organ).
+
+The high-pressure steam (part) produced expands in the cylinder thus pushing the piston (physical phenomenon). This is due to the pressure exerted by the steam (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of smooth surface between the piston and the cylinder (organ).
+
+The crank (part) rotates (physical phenomenon). This is due to the reciprocating motion of the piston (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the crank and the connecting link (organ).
+
+ 
+$
+
+ACTION
+
+$ 
+ To produce rotary motion.
+$
+
+STATE
+
+$
+The crank is at rest.
+
+The crank is rotating.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The water is boiled to produce steam.
+
+The high-pressure steam produced expands in the cylinder thus pushing the piston.
+
+The crank rotates.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Vaporization effect.
+
+Newtonian laws of motion.
+
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+The vaporization of water.
+
+The pressure exerted by the steam.
+
+The reciprocating motion of the piston.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the temperature achieved in the boiler is equal to the saturation temperature corresponding to that the saturation pressure.
+
+Presence of smooth surface between the piston and the cylinder.
+
+Presence of one degree of freedom between the crank and the connecting link.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Water.
+
+High-pressure steam.
+
+Crank forms a revolute pair with the frame. 
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

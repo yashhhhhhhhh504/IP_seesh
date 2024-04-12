@@ -1,0 +1,178 @@
+MACTION
+{
+A1 $ V < transmit > N < signals > A < television > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+PP2 $ V < transmit > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+PE2 $ transmission effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+I2 $ V < x > N < force > A < driving > $
+}
+
+MORGAN
+{
+O1 $ Presence of space for deployment $
+O2 $ presence of a suitable material for transmission of signals $
+}
+
+MPART
+{
+P1 $ Antenna $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 >
+
+}
+
+FUNCTION
+
+$
+This mainly used to for transmission of television signals. 
+$
+
+
+STRUCTURE
+
+$
+It consists of a number of rods that are placed parallel each other on common rod. The common rod is in turn connected to a vertical rod. The clarity of the relay depends on the accuracy with which common rod is pointing towards the relay station.
+$
+
+
+BEHAVIOUR
+
+$
+The antenna size is variable and it is also foldable. When not in use it can be folded and kept aside so that is doesn’t occupy large space. 
+$
+
+
+
+PICTURE
+
+{
+ADB/DEPLOY/ANTENACABLE/01.jpg	$ Antenna cable $
+ADB/DEPLOY/ANTENACABLE/02.jpg	$ Antenna cable $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This is usually used to receive television signals.
+$
+
+ACTION
+
+$ 
+ It can be used as a deployment structure.
+$
+
+STATE
+
+$
+The structure is occupying less space when folded.
+
+The structure is occupying large space when unfolded.
+
+$
+
+PHYPHENOMENON
+
+$
+Unfold the antenna.
+
+Transmit television signals.
+ 
+$
+
+
+PHYEFFECT
+
+$
+newtonian laws of motion.
+
+transmission effect.
+
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+driving force.
+$
+
+
+ORGAN
+
+$
+Presence of space for deployment.
+
+presence of a suitable material for transmission of signals.
+$
+
+
+
+PARTS
+$
+Antenna.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

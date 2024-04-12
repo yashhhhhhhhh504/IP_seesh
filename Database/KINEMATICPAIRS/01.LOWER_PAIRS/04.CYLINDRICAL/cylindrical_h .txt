@@ -1,0 +1,84 @@
+SUMMARY
+$
+The moving member (part) rotates and simultaneously slides along the other fixed member (physical phenomenon). This is due to the force and torque applied on to the moving member (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of friction free surface between the moving and the fixed member (organ).
+$
+
+ACTION
+{
+$ 
+ Using this the moving member can be made to rotate as well as translate along the fixed member.
+$
+}
+STATE
+{
+$
+Absence of force and torque at the moving member.
+$
+Presence of force and torque at the moving member
+$
+}
+PHYPHENOMENON
+{
+$
+The moving member slides and rotates simultaneously along the fixed member.
+$
+
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+The force and torque applied on to the moving member.
+$
+
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of friction free surface between the moving and the fixed member.
+$
+
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The moving pair forms a cylindrical pair with the fixed member.
+$
+
+$
+
+$
+
+$
+
+$
+}
+
+

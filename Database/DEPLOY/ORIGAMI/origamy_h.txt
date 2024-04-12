@@ -1,0 +1,80 @@
+SUMMARY
+$
+In this art of folding sheets for making decorative objects and the area occupied by the sheet is decreased when folded.
+$
+
+ACTION
+
+$ 
+ To fold paper sheet.
+$
+
+STATE
+
+$
+The paper occupies large area.
+
+The paper occupies less area.
+
+$
+
+PHYPHENOMENON
+
+$
+To fold paper sheet.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Folding force.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the sheet is flexible enough.
+
+$
+
+
+
+PARTS
+$
+Paper sheet.
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

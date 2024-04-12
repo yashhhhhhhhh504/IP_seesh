@@ -1,0 +1,86 @@
+MACTION
+{	
+A1 $ V < connect > AV < X > N < pulleys > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V <  > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < linear > N  < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < wrap > AV < X > N < pulleys > AJ < X > $
+PP2 $ V < move > AV < X > N < rope > AJ < X > $
+PP3 $ V < rotate > AV < X > N < pulley > AJ < > $
+PP4 $ V < > AV < X > N < > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hook’s law.   $
+PE2 $ $
+PE3 $ $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < > AV < X > N < force > AJ < tensile > $
+I2 $ V < > AV < X > N < force > AJ < tensile > $
+I3 $ V < > AV < X > N < force > AJ < frictional > $
+I4 $ V < > AV < X > N < > AJ < X > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ requires that the rope has the necessary tensile strength.
+ $
+O2 $ Presence of friction surface between the pulley and the rope  $
+O3 $ Presence of friction surface between the rope and the pulley and hence the absence of slip.
+ $
+O4 $ $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < x > N < rope > AJ < > $
+P2 $ V < X > AV < > N < pulley > AJ < input > $
+P3 $ V < X > AV < x> N < pair > AJ < sliding > $
+P4 $ V < X > AV < X > N < pulley > AJ < output > $
+P5 $ V < X > AV < X > N < pair > AJ < wrapping > $
+P6 $ V < X > AV < X > N < > AJ < X > $
+P7 $ V < X > AV < X > N < > AJ < X > $
+P8 $ V < X > AV < X > N < X > AJ < X > $
+
+
+}
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P4 P5  >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P3  >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P3 P4  >
+
+
+
+
+

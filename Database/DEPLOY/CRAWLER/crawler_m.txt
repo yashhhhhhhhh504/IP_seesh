@@ -1,0 +1,87 @@
+MACTION
+{
+A1 $ V < provide > N < balance > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < move > N < strap > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < torque > A < x > $
+I2 $ V < rotate > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the wheel and the input shaft. $
+O2 $ Presence of contact between the wheel and the strap. $
+}
+
+MPART
+{
+P1 $ Wheel $
+P2 $ Metal strap $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

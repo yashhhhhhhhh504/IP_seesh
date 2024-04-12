@@ -1,0 +1,216 @@
+MACTION
+{
+A1 $ V < generate > N < motion > A < straight-line > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight line motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < input > $
+PP2 $ V < rotate revolve > N < gear > A < internal > $
+PP3 $ V < move > N < pin > A < linearly > $
+PP4 $ V < x > N < motion scotch-yoke > A < straight-line > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < link > A < input > $
+I3 $ V < rotate > N < gear > A < internal > $
+I4 $ V < x > N < motion > A < straight-line > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the input link $
+O2 $ one degree of freedom between the input link and the internal gear $
+O3 $ zero degree of freedom between the internal gear and pin $
+O4 $ zero degree of freedom between the pin and the scotch yoke $
+
+}
+
+MPART
+{
+P1 $ input link $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ internal gear $
+P5 $ higher pair $
+P6 $ outer fixed pair $
+P7 $ pin $
+P8 $ fixed pair $
+P9 $ scotch yoke $
+P10 $ sliding pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P4 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P3 P9 P10 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Invented by Girolamo Cardano in the 16th century the Cardan gear is a way of converting rotary motion into straight line motion.
+$
+
+
+STRUCTURE
+
+$
+This Cardan gearing arrangement consists of a Cardan gear arrangement with a Scotch yoke. The internal gear has a pin positioned on its pitch circle, which fits in the slot of the Scotch yoke. The angular position of the outer gear is adjustable, and can be fixed in place by the means of three adjustment clamps provided.
+$
+
+
+BEHAVIOUR
+
+$
+A Cardan gearing and a Scotch yoke in combination provide an adjustable stroke. By adjusting the angle of the outer gear, the length of stroke can be altered. The  adjusted stroke equals the projection of the large diameter, along which the drive pin travels, on the Scotch-yoke's centerline. The yoke motion is simple harmonic. This animation illustrates the functioning of this mechanism. 
+$
+
+
+PICTURE
+
+{
+ADB/CARDAN/CARDAN02/cardan02.jpg	$ Cardan Gear	$
+}
+
+
+CLIP
+
+{
+ADB/CARDAN/CARDAN02/cardan02.avi	$ Cardan Gear	$
+}
+
+
+SUMMARY
+$
+This can be used to generate straight line motion. This can be interpreted as a change of state from rest to straight line motion. This can be described as follows:
+
+The input link (part) rotates (physical phenomenon). This is due to the rotation of input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input link (organ).
+
+The internal gear (part) rotates as well as revolves within the fixed outer gear (physical phenomenon). This is due to the rotation of the input link (input) which activates Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the input link and the internal gear (organ).
+
+The pin (part) mounted on the internal gear moves along a straight line (physical phenomenon). This is due to the rotation of the internal gear (input) which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the internal gear and pin (organ).
+
+The scotch yoke (part) moves along a straight line motion (physical phenomenon). This is due to the straight-line motion of the pin (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of zero degree of freedom between the pin and the scotch yoke (organ).
+  
+$
+
+ACTION
+
+$ 
+ To generate straight line motion.
+$
+
+STATE
+
+$
+The pin along with scotch yoke mechanism is at rest.
+
+The pin along with scotch yoke mechanism moves along a straight line.
+
+$
+
+PHYPHENOMENON
+
+$
+The input link rotates.
+
+The internal gear rotates as well as revolves within the fixed outer gear.
+ 
+The pin mounted on the internal gear moves along a straight line.
+
+The scotch yoke moves along a straight line motion.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The rotation of input shaft.
+
+The rotation of the input link.
+
+The rotation of the internal gear.
+
+The straight-line motion of the pin.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the input link.
+
+Presence of one degree of freedom between the input link and the internal gear.
+
+Presence of zero degree of freedom between the internal gear and pin.
+
+Presence of zero degree of freedom between the pin and the scotch yoke.
+$
+
+
+
+PARTS
+$
+The input link forms a revolute pair with the frame.
+
+The internal gear forms a higher pair with the outer fixed pair.
+
+The pin forms fixed pair with the internal gear.
+
+The scotch yoke forms a sliding pair with the frame.
+
+
+
+
+
+
+$
+
+
+
+
+

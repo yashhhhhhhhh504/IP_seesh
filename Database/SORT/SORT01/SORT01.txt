@@ -1,0 +1,159 @@
+MACTION
+{
+A1 $ V < sort > A < spherical > N < object > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A <  horizontal > N  < motion > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < vertical > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from horizontal motion to vertical motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < roll > A < spherical > N < object > $
+PP2 $ V < drop > A < spherical > N < object > $
+}
+
+MPHYEFFECT
+{
+PE1 $ gravitational laws $
+}
+
+MINPUT
+{
+I1 $ V < allow > A < X > N < motion > $
+I2 $ V < set > A < X > N < divergence > $
+}
+
+MORGAN
+{
+O1 $ slope of the rail $
+O2 $ diameter $
+}
+
+MPART
+{
+P1 $ object $
+P2 $ rail $
+P3 $ roller pair $
+P4 $ sphere-diameter $
+P5 $ rail-distance $
+P6 $ less $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O2  P4  P5  P6 >
+}
+
+
+FUNCTION
+
+$
+This device sorts spherical components according to their size.
+$
+
+
+STRUCTURE
+
+$
+The device consists of two inclined and slightly divergent rails placed over a box, which is divided into compartments along its length.
+$
+
+
+BEHAVIOUR
+
+$
+The balls are made to run down the divergent rails. The smallest balls, therefore, will fall into the left chamber, the middle-size ones into the middle-size chamber and the largest ones into the right chamber.
+$
+
+
+PICTURE
+
+{
+ADB/SORT/SORT01/SORT01.JPG	$ Sorting Mechanism - 1 $
+}
+
+
+CLIP
+
+{
+ADB/SORT/SORT01/SORT01.AVI	$ Sorting Mechanism - 1 $
+}
+
+
+SUMMARY
+$
+Using this device spherical objects can be sorted out based on their size. This can be described as follows:
+
+The spherical object (part) rolls down the slides, which are placed on the box having various compartments (physical phenomenon). This is due to the force applied on the object (input), which activates the Newtonian laws of motion (physical effect) and requires that slides are inclined (organ).
+
+The spherical objects (part) drop into different compartments based on their size (physical phenomenon). This is due to the gravitational force acting on the objects (input), which activates the gravitational effect (physical effect) and requires that the gap between the two slides increases (organ).
+$
+
+ACTION
+$
+ 
+ Using this device spherical objects can be sorted out based on their size.
+
+$
+STATE
+$
+
+Absence of force applied on to the spherical objects.
+
+Presence of force applied on to the spherical objects.
+
+$
+PHYPHENOMENON
+$
+
+The spherical object rolls down the diverging slides, which are placed on the box having various compartments.
+
+The spherical objects drop into different compartments based on their size.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Gravitational effect.
+$
+
+INPUT
+$
+
+The force applied on to the object.
+
+The gravitational force acting on the objects and also due to the decreasing gap between the two slides.
+
+$
+
+ORGAN
+$
+
+Requires that slides are inclined.
+
+Requires that the gap between the two slides increases.
+$
+
+PARTS
+$
+
+The object forms a rolling pair with the slides.
+
+$
+

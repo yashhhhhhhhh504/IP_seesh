@@ -1,0 +1,193 @@
+MACTION
+{
+A1 $ V < hold deploy fold > A < X > N < object > $
+A2 $ V < release > A < X > N < object > $
+}
+MINPUTSTATE
+{	
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < inward > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < inward > N  < rotation > $
+OS2 $ V < x > A < outward > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to inward rotation $
+CS2 $ from inward rotation to outward rotation $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link > A < apart > $
+PP2 $ V < move > N < jaws > A < together > $
+PP3 $ V < move > N < link > A < together > $
+PP4 $ V < move > N < jaws > A < apart > $
+}
+
+MPHYEFFECT
+{
+PE1 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V < push > N < link > A < forward > $
+I2 $ V < move > N < link > A < apart > $
+I3 $ V < pull > N < link > A < backward > $
+I4 $ V < move > N < link > A < together > $
+}
+
+MORGAN
+{
+O1 $ contact : link6 link4 $
+O2 $ contact : link7 link5 $
+O3 $ contact : link3 link4 $
+O4 $ contact : link3 link5 $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ link $
+P4 $ link $
+P5 $ revolute pair $
+P6 $ link $
+}
+LINK
+{
+< A1  IS1  OS1  CS1 PP1  PE1  I1  O1  P1  P2  P5 >
+< A1  IS1  OS1  CS1 PP1  PE1  I1  O2  P3  P4  P5 >
+< A1  IS1  OS1  CS1 PP2  PE1  I2  O3  P2  P6  P5 >
+< A1  IS1  OS1  CS1 PP2  PE1  I2  O4  P4  P6  P5 >
+
+< A2  IS2  OS2  CS2 PP3  PE1  I3  O1  P1  P2  P5 >
+< A2  IS2  OS2  CS2 PP3  PE1  I3  O2  P3  P4  P5 >
+< A2  IS2  OS2  CS2 PP4  PE1  I4  O3  P2  P6  P5 >
+< A2  IS2  OS2  CS2 PP4  PE1  I4  O4  P4  P6  P5 >
+}
+
+
+FUNCTION
+
+$
+This is a reciprocating lever mechanism that is used to grasp and release objects. The objects that this mechanism can hold depend on the shape of the jaws, which may be altered to suit the requirements.
+$
+
+
+STRUCTURE
+
+$
+As shown in the figure, this device contains 7 links, all of which are connected by lower pairs. The link 1 is a base plate. Link 2 is an actuator, which reciprocates in the base plate and link 3 is fixed to it at its end. Links 4, 5, 6, 7 are binary links. Link 4, 5 are connected to link 3 by a revolute pair at two different locations and at the other end points these are connected to links 6 and 7 respectively. Links 6 and 7 are connected to the base plate. 
+$
+
+
+BEHAVIOUR
+
+$
+Whenever link 2 gets actuated, link 3 will move either towards or away from the base plate. Link 3 always moves parallel to the base plate. In one direction of link 2 actuation link 3 moves closer to base plate and in turn the links 4 and 5 will rotate about hinges but in different directions. The jaws come closer and they can grip any object in between them. In the other direction of link 2 actuation of the link 3 moves it away from the base plate. At that time the two jaws move away from each other and they release the object between them. 
+$
+
+
+PICTURE
+
+{
+ADB/GRIP/01.RECIPROCLEVER/reciproclever.jpg	$ Reciprocating Lever Gripper $
+}
+
+
+CLIP
+
+{
+ADB/GRIP/01.RECIPROCLEVER/reciproclever.avi	$ Reciprocating Lever Gripper $
+}
+
+VERB
+$
+Grip
+$
+
+SUMMARY
+$
+This mechanism can be used to grasp and release objects. This mechanism can be described as follows:
+
+The link 3 (part) moves away from the base plate and towards the base plate alternately (physical phenomenon). This is due to the reciprocating motion of the actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and it requires the presence of zero degree of freedom between the actuator and the link 3 (organ).
+
+
+The links 4 and 5 (part) rotate outwards with respect to the links 6 and 7 respectively and simultaneously moves away from base plate (physical phenomenon). This is due to the movement of the link 3 away from the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links 4,5 and the links 6 and 7 (organ).
+
+The links 4 and 5 (part) rotate inwards with respect to the links 6 and 7 respectively and simultaneously moves towards the base plate (physical phenomenon). This is due to the movement of the link 3 towards the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links 4,5 and the links 6 and 7 (organ).
+$
+
+
+ACTION
+$
+ 
+ Using this mechanism objects can be gripped and released.
+
+$
+STATE
+$
+
+Absence of force at actuator.
+
+Presence of force at actuator
+
+$
+PHYPHENOMENON
+$
+
+The link 3 moves away from the base plate and towards the base plate alternately.
+
+The links 4 and 5 rotate with the respect to the links 6 and 7 respectively and simultaneously moves away from base plate.
+ 
+The links 4 and 5 rotate with the respect to the links 6 and 7 respectively and simultaneously moves towards the base plate.
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+$
+
+INPUT
+$
+
+The reciprocating motion of the actuator.
+
+The movement of the link 3 away from the base plate.
+
+The movement of the link 3 towards the base plate.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the actuator and the link 3.
+
+Presence of one degree of freedom between the links 4,5 and the links 6 and 7.
+$
+
+PARTS
+$
+
+The actuator forms a sliding pair with the base plate.
+
+The link 3 is fixed to the actuator.
+
+The links 6 and 7 form a revolute pair with the base plate. 
+
+The links 4 and 5 form a revolute pair with the links 6 and 7 respectively.
+
+
+
+$
+

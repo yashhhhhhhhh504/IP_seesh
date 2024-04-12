@@ -1,0 +1,164 @@
+MACTION
+{
+A1 $ V < convert > N < motion > A < reciprocating rotary > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to reciprocating motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > N < arm > A < drive > $
+PP2 $ V < reciprocate > N < link > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < oscillate > N < arm > A < drive > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the oscillating drive arm $
+O2 $ slide connected to the other end of the output link should slide along the short slot $
+}
+
+MPART
+{
+P1 $ drive arm $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ slide $
+P5 $ sliding pair $
+P6 $ slot $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+FUNCTION
+
+$
+This mechanism convert rotary to straight-line motion without the need for guides.
+$
+
+
+STRUCTURE
+
+$
+This is a simple four bar mechanism in which all the links are connected by revolute pairs. Replacing the output link with a slider can alter the mechanism structure. 
+$
+
+
+BEHAVIOUR
+
+$
+An Evan's linkage has an oscillating drive-arm that should have a maximum operating angle of about 40 degrees. For a relatively short guide way, the reciprocating output stroke is large. Output motion is on a true straight line in a true harmonic motion. If an exact straight-line motion is not required, a link can replace the slide. The longer this link, the closer the output motion approaches that of a true straight line. If the link-length equals the output stroke, deviation from straight-line motion is only 0.03% of the output stroke.  
+$
+
+
+PICTURE
+
+{
+ADB/SLG/03.EVANS/evans.jpg		$ Evan's Linkage $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+The oscillating drive arm (part) having mounted on the input shaft oscillates, with the maximum operating angle being 40 degrees (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the oscillating drive arm (organ).
+
+One of the ends of the output link (part) reciprocates along a straight line (physical phenomenon). This is due to the oscillation of the drive arm (input), which activates the Newtonian laws of motion (physical effect) and requires the slide connected to the other end of the output link to slide along the slot (organ).
+The slide in the slot can be replaced by a link to achieve straight-line motion.
+$
+
+
+ACTION
+$
+ 
+ Using this mechanism rotary motion can be converted into straight-line motion.
+
+$
+STATE
+$
+
+Absence of torque at the input shaft.
+
+Presence of torque at the input shaft.
+
+
+$
+PHYPHENOMENON
+$
+
+The drive arm oscillates continuously.
+	
+one of the ends of the output link reciprocates along a straight line.
+ 
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+$
+
+INPUT
+$
+
+The torque applied by the input shaft.
+
+The oscillation of the drive arm.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the oscillating drive arm.
+
+The slide connected to the other end of the output link should slide along the short slot.
+
+$
+
+PARTS
+$
+
+The drive arm along with the input shaft forms revolute pair with the frame.
+
+The slide on one of the ends of the output arm forms sliding pair with the slot.
+
+$

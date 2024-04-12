@@ -1,0 +1,226 @@
+MACTION
+{
+A1 $ V < provide > N < transportation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < flying > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to flying $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < pedal > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+PP3 $ V < generate > N < lift > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < torque > A < x > $
+I2 $ V < Rotate  > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ crank that is connected to the shaft $
+O2 $ some kind of connection between the pedal and the fan $
+O3 $ speed of rotation of the fan is sufficient to generate the lift $
+}
+
+MPART
+{
+P1 $ Pedal $
+P2 $ Fan $
+P3 $ Air $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+To provide transportation from one place to another through air.
+$
+
+
+STRUCTURE
+
+$
+It consists of a fan, which rotates, in a horizontal plane.
+$
+
+
+BEHAVIOUR
+
+$
+As the fan rotates the required lift is developed and the fan is operated using pedaling a cycle.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/FLYINGMACHINE/01.JPG	$ Flying Machine $
+ADB/DEPLOY/FLYINGMACHINE/02.JPG	$ Flying Machine $
+ADB/DEPLOY/FLYINGMACHINE/03.JPG	$ Flying Machine $
+ADB/DEPLOY/FLYINGMACHINE/04.JPG	$ Flying Machine $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+It can be used to provide transportation from one place to another through air.
+$
+
+ACTION
+
+$ 
+ To provide transportation.
+$
+
+STATE
+
+$
+The flying machine is at rest.
+
+The flying machine is flying.
+
+$
+
+PHYPHENOMENON
+
+$
+Pedal the cycle.
+
+Rotate the fan.
+
+Generate lift.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Torque.
+
+Rotate the fan.
+
+$
+
+
+ORGAN
+
+$
+Presence of a crank that is connected to the shaft.
+
+Presence of some kind of connection between the pedal and the fan.
+
+Necessary that the speed of rotation of the fan is sufficient to generate the lift.
+
+
+$
+
+
+
+PARTS
+$
+Pedal.
+
+
+Fan.
+
+Air.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

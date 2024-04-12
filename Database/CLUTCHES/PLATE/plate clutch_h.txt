@@ -1,0 +1,104 @@
+SUMMARY
+$
+This mechanism can be used to transmit motion between two shafts. This can also be used to change gears. This mechanism can be described as follows: 
+
+The friction disk  (part) that is mounted on the input shaft establishes contact with the freely rotating friction disk (physical phenomenon). This is due to the force (input) applied by on the lever, which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between lever and the input shaft-friction disk assembly (organ).
+
+    The friction disk (part) that is mounted on the input shaft rotates (Physical phenomenon). This is due to the torque (input) applied by the input shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between input shaft and the friction disk (organ).
+
+                      The stationary friction disk (part), when contacted by the friction disk that is mounted on the input shaft rotates (physical phenomenon). This is due to the rotational toque (input) applied by the friction disk that is mounted on the input shaft, which activates the friction effect (physical phenomenon) and requires the presence of friction material on the surface of the friction disks (organ).
+
+       The gear (part) that is mounted on the stationary friction disk rotates (physical phenomenon) in the same direction as that of the friction disk. This is due to the rotation of the friction disk (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the gear and the friction disk (organ).
+
+The gear that is mounted on the output shaft (part) rotates in a direction opposite to that of the gear mounted on the friction disk (physical phenomenon). This is due to the tangential force (input) exerted by the gear that is mounted the friction disk which activates the law “no two bodies scan occupy the same space at the same time “(physical effect) and requires the presence of contact between the two gears (organ).
+
+
+$
+
+ACTION
+{
+$ 
+Using this mechanism motion can be transmitted between two shafts.
+
+$
+Using this mechanism gears can be changed.
+$
+
+}
+STATE
+{
+$
+
+The absence of contact between the friction disk and the freely rotating friction disk.
+$
+The presence of contact between the friction disk that is mounted on the input shaft and the freely rotating friction disk. 
+
+$
+}
+PHYPHENOMENON
+{
+$
+The friction disk that is mounted on the input shaft engages with the stationary friction disk while it is rotating.
+$
+The friction disk that is mounted on the input shaft rotates continuously.
+$ 
+The stationary friction disk when contacted by other the friction disk also rotates.
+$
+The gear that is mounted the friction disk rotates in the same direction in which the friction disk rotates
+$
+The gear that is mounted on the output shaft rotates in a direction opposite to that of the gear that is mounted on the friction disk.
+
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+no two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+Force applied to the lever.
+$
+Torque applied by the input shaft.
+$
+Torque applied by the friction disk that is mounted on the input shaft.
+$
+Tangential force applied by the gear that is mounted on the friction disk.
+}
+
+ORGAN
+{
+$
+One degree of freedom between the lever and the input shaft-friction disk assembly.
+$
+Zero degree of freedom between the input shaft and the friction disk that is mounted on it.
+$
+Friction material on the surfaces of the friction disks.
+$
+Presence of contact between the two gears
+$
+
+}
+
+STRUCTURE1
+{
+$
+The lever forms a revolute pair with the input shaft-friction assembly.
+$
+The input shaft-friction disk assembly forms a revolute pair with the frame.
+$
+The freely rotating friction disk forms a friction pair with the friction disk that is mounted on the input shaft.
+$
+The gear mounted on the friction disk forms gear pair with the gear that is mounted on the output shaft.
+$
+The output shaft forms revolute pair with the frame.
+$
+}
+

@@ -1,0 +1,110 @@
+SUMMARY
+$
+This device can be used to displace water from a low level to a higher level. This can be interpreted as a change of state from water at a low level to a higher level. This can be described as follows:
+
+The water (part) enters the casing (physical phenomenon). This is due to the partial vacuum, created by the unmeshing of the rotating gears (input), which activates the Bernoulli’s law (physical effect) and requires the presence of a low pressure within the casing (organ).
+
+The rotor (input) rotates (physical phenomenon). This is due to the torque applied at the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the rotor and the input shaft (organ).
+
+The driven gear (part) rotates (physical phenomenon). This is due to the tangential force applied by the input gear (input), which activates the “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the two gears. (organ).
+
+The water (part) rushes out of the casing with high pressure (physical phenomenon). This is due to the centrifugal force applied the gears (input) which activates the law “no two bodies can occupy the same space at the same time” meshing of the gears (physical effect) and is necessary that the gap between the gears and the casing is small enough (organ).
+
+
+ACTION
+
+$ 
+ To displace water from a low level to a higher level.
+$
+
+STATE
+
+$
+The water is at a low level.
+
+The water is at a high level.
+$
+
+PHYPHENOMENON
+
+$
+The liquid enters the casing.
+
+The rotor rotates.
+ 
+The driven gear rotates.
+
+The water rushes out of the casing with high pressure.
+
+$
+
+
+PHYEFFECT
+
+$
+Pressure differential effect.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+Partial vacuum, created by the unmeshing of the rotating gears.
+
+Torque applied at the input shaft.
+
+The tangential force applied by the input gear.
+
+Centrifugal force applied the gears.
+
+$
+
+
+ORGAN
+
+$
+Presence of a low pressure within the casing.
+
+Presence of contact between the two gears.
+
+Presence of zero degree of freedom between the rotor and the input shaft.
+
+Requires the meshing of the gears.
+
+
+$
+
+
+
+STUCTURE1
+
+$
+Water forms a sliding pair with the suction pipe.
+
+The rotor forms a revolute pair with the casing.
+
+The gear meshing with the rotor forms a gear pair with the rotor.
+
+Water forms sliding pair with the teeth of the gears.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

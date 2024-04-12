@@ -1,0 +1,151 @@
+MACTION
+{
+A1 $ V < rotate > A < X  > N < member > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < member > A < movable > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+
+}
+
+MPART
+{
+P1 $ shaft $
+P2 $ frame $
+P3 $ revolute pair $
+
+
+}
+LINK
+{
+< A1 IS1 OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+
+}
+
+
+
+FUNCTION
+
+$
+A Revolute pair allows only a relative rotation between two elements, which can be expressed by a single coordinate. Thus, a revolute pair has a single degree of freedom.
+$
+
+
+STRUCTURE
+
+$
+Lower pairs are differentiated from higher pairs by the type of contact between the two bodies of the pair. Lower pairs have a surface contact, whereas two bodies of a Higher pair have a line or a point contact. An example of a revolute pair is shown in the figure where a shaft, with two collars, can rotate within a coupling.
+$
+
+
+BEHAVIOUR
+$
+A revolute pair keeps the axes of two rigid bodies together. Two rigid bodies constrained by a revolute pair have an independent rotary motion around their common axis. As can be seen from the first figure, the shaft can only rotate within the coupling. Linear motion of the shaft is constrained. Thus this pair has only one degree of freedom. The second figure shows a different kind of revolute joint commonly used in variour applications.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/01.REVOLUTE/revolute1.jpg	$ Revolute Pair	$
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/01.REVOLUTE/revolute2.gif	$ Revolute Pair	$
+}
+
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/01.REVOLUTE/revolute1.avi	$ Revolute Pair	$
+}
+
+SUMMARY
+$
+This kind of pair can be used to rotate the movable member with respect to the fixed member. This can be described as follows:
+
+The movable member (part) rotates with respect to the fixed member (physical phenomenon). This is due to the force applied (input) on to the movable member, which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the fixed member and the movable member (organ).
+$
+
+
+ACTION
+$
+ 
+ This kind of pair can be used to rotate the movable member with respect to the fixed member.
+
+$
+STATE
+$
+
+Absence of force at the movable member.
+
+Presence of force at the movable member.
+
+$
+PHYPHENOMENON
+$
+
+The movable member rotates with respect to the fixed member.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+$
+
+INPUT
+$
+
+Force applied on to the movable member.
+
+$
+
+ORGAN
+$
+
+Presence of one degree of freedom between the fixed member and the movable member.
+
+$
+
+PARTS
+$
+
+The movable member is joined to the fixed member through a hinged joint.
+
+$
+

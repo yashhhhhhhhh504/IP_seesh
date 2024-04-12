@@ -1,0 +1,202 @@
+
+
+MACTION
+{
+A1 $ V < vary > N < area > A < exposed > $
+A2 $ V < deploy > N < x > A < x > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small exposed > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large exposed > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from small exposed area to large exposed area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link > A < apart > $
+PP2 $ V < move > N < link > A < close > $
+PP3 $ V < move > N < link > A < close > $
+PP4 $ V < move > N < link > A < apart > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < link > A < x > $
+I3 $ V < move > N < links > A < x > $
+I4 $ V < move > N < links > A < X > $
+}
+
+MORGAN
+{
+O1 $ Parallel movement of the link 1 $
+O2 $ One degree of freedom between link 1 and the links 4 and 5 $
+O3 $ Zero degree of freedom between link 6,7 and the links 4,5 $
+O4 $ Parallel movement of the link 3 $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ revolute pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P2 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A2 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 >
+< A2 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P2 >
+< A2 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P2 >
+
+}
+
+
+
+
+FUNCTION
+
+$
+Expanding grilles are often put to work as a safety feature. The array of these grills can be used as lift doors. 
+$
+
+
+STRUCTURE
+
+$
+There are 7 links in this device. Links 4, 5, 6, 7 are binary links and are equal in length.  These 4 links make a loop. Links 1, 3 are similar, longer links and make up the main frame. Link 2 has two slots cut in it in order to constrain the motion of links 4, 5, 6, and 7. 
+Links 1, 4, 5 and 3, 6, 7 are connected by multiple joints respectively. The pins that are used to connect links 4, 7 and 5, 6 slide in the slots on link 2. 
+$
+
+
+BEHAVIOUR
+
+$
+The links 4, 5, 6, 7 acts as a parallelogram. If the distance between the points where 4, 5
+and 6, 7 are connected, is taken as a length of diagonal of the parallelogram, then this length will be changed by changing the angle between links 4, 5 or 6, 7 and vice-versa. The links 1, 2, 3 move parallel to each other when the angle between 4, 5 or 6, 7 changes.
+The animation shown alongside illustrates the working of this mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/EXPGRILLE01/expgrille1.jpg	 $ Expanding Grilles - 1  $
+}
+
+
+CLIP
+
+{
+ADB/DEPLOYMENT/EXPGRILLE01/expgrille1.avi	 $ Expanding Grilles - 1  $
+}
+
+SUMMARY
+$
+These grilles can be used for safety features and can also be used for lifting doors. This can describe as follows:
+
+There are 7 links in this system. The links 4,5,6 and 7 form a parallelogram.
+The link 1 (part) moves apart (physical phenomenon). This is due to the force (input) applied on it, which activates the Newtonian laws of motion (physical effect) and requires that the link 1 remains parallel to the link 2 as it moves (organ).
+
+The links 4 and 5 (part), which are hinged on to a point on the link1, moves towards each other in the slots provided on the fixed link 2 (physical phenomenon). This is due to the movement of the link 1 (input) and it requires the presence of one degree of freedom between the links 4, 5 and the link 1(organ).
+
+The links, 6 and 7, which are respectively, connected to the links 5 and 4 (part) moves towards each other (physical phenomenon). This is due to the movement of the links 4 and 5 (input) and requires the presence of zero degree of freedom between the respective links
+
+The link 3 (part) moves apart thus increasing the length of the diagonal of the parallelogram formed by the links 4,5,6 and 7 (physical phenomenon). This is due to the movement of the links 6 and 7 (input) and requires that the link 3 remains parallel with the link 2 (organ).
+$
+
+
+
+
+ACTION
+$
+ 
+ Using these doors can be opened and this can also be used as a means of safety measures.
+
+$
+STATE
+$
+
+from small diagonal length to large diagonal length.
+
+
+from large diagonal length to small diagonal length.
+
+$
+PHYPHENOMENON
+$
+
+The link 1 moves apart due to the application of force.
+
+The links 4 and 5 moves towards each other in the slots provided in the link 2.
+ 
+The links 6 and 7 moves towards each other in the slots provided in the link 2.
+
+The link 3 moves apart thus increasing the length of the diagonal of the parallelogram formed by the links 4,5,6 and 7.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+$
+
+INPUT
+$
+
+Force applied on to the link 1.
+
+Movement of the link 1.
+
+Movement of the links 4 and 5.
+
+Movement of the links 6 and 7.
+
+$
+
+ORGAN
+$
+
+Parallel movement of the link 1.
+
+One degree of freedom between link 1 and the links 4 and 5.
+
+Zero degree of freedom between link 6,7 and the links 4,5.
+
+Parallel movement of the link 3
+
+$
+
+PARTS
+$
+
+The link 1 is parallel to the fixed link 1.
+
+The links 4 and 5 forms a revolute pair with the link 1.
+
+The links 6 and 7 forms a revolute pair with the link 3.
+
+
+$

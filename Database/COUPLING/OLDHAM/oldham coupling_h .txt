@@ -1,0 +1,97 @@
+SUMMARY
+$
+This mechanism can be used to connect two parallel shafts and to transmit power between the two. It can be interpreted as a change of state from rest to rotation. It can be described as follows:
+
+
+The outer member (part) mounted on the input shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom (organ).
+
+The floating member (part) rotates in the same direction (physical phenomenon). This due to the rotation of the outer member (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the floating member and the outer member which is achieved by maintaining friction between the floating member and the outer member  (organ).
+
+
+The outer member (part) mounted on the output shaft rotates in the same direction as that of the floating member (physical phenomenon). This is due to the rotation of the floating member (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the floating member and the outer member (organ). 
+ 
+$
+
+ACTION
+{
+$ 
+ To transmit power between two parallel shafts.
+$
+}
+STATE
+{
+$
+The outer member mounted on the output shaft is at rest.
+$
+The outer member mounted on the output shaft rotates.
+$
+}
+PHYPHENOMENON
+{
+$
+The outer member mounted on the input shaft rotates.
+$
+The floating member rotates in the same direction.
+$ 
+The outer member mounted on the output shaft rotates in the same direction as that of the floating member.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+Rotation of the outer member.
+$
+Rotation of the floating member.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the shaft and the outer member.
+$
+Presence of zero degree of freedom between the floating member and the outer member which is achieved by maintaining friction between the floating member and the outer member.
+$
+Presence of zero degree of freedom between the floating member and the outer member.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The outer member along with the input shaft forms a revolute pair with the frame.
+$
+The floating member forms a sliding pair with both the outer member.
+$
+The floating member forms a revolute pair with the frame.
+$
+The outer member forms a revolute pair with the frame.
+
+$
+
+$
+}
+
+
+
+
+

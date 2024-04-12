@@ -1,0 +1,97 @@
+MACTION
+{
+A1 $ V < join > AV < X > N < sheets > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < separate > A < x > N  < sheets > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < join > A <  > N  < sheets > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from separate sheets to joined sheets $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < clamp > AV < X > N < mandrel-shank > AJ < X > $
+PP2 $ V < pull > AV < X > N < mandrel-shank > AJ < X > $
+PP3 $ V < balloon-out > AV < X > N < rivet-body > AJ < > $
+PP4 $ V < break > AV < X > N < rivet-head > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Lever effect. $
+PE2 $ Newtonian laws of motion. $
+PE3 $ No two bodies can occupy the same space at the same time.$
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < apply > AV < X > N < force handle > AJ < > $
+I2 $ V < apply > AV < X > N < force > AJ < upward > $
+I3 $ V < move > AV < X > N < rivet > AJ < upward > $
+I4 $ V < apply > AV < X > N < force > AJ < resisting > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ Requires that the mandrel shank be held tightly in the rivet tool. $
+O2 $ requires the upward force is greater than the gravitational force.  $
+O3 $ requires that the head is stronger enough to cause the bending of the hollow rivet body.  $
+O4 $ Presence of a weakened portion near the head region. $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < clamp > AJ < > $
+P2 $ V < X > AV < X > N < frame > AJ < > $
+P3 $ V < X > AV < X > N < pair > AJ < revolute > $
+P4 $ V < X > AV < X > N < shank > AJ < X > $
+P5 $ V < X > AV < X > N < material > AJ < > $
+P6 $ V < X > AV < X > N < pair > AJ < sliding > $
+P7 $ V < X > AV < X > N < rivet-body > AJ < hollow > $
+P8 $ V < X > AV < X > N < rivet-head > AJ < X > $
+P9 $ V < X > AV < X > N < pair > AJ < fixed > $
+
+}
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3  >
+< A1 IS1 OS1 CS1 PP2 PE2 I1 O2 P4 P5 P6  >
+< A1 IS1 OS1 CS1 PP3 PE3 I1 O3 P3 P5 P7  >
+< A1 IS1 OS1 CS1 PP4 PE2 I1 O4 P4 P8 P9  >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

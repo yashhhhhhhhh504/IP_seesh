@@ -1,0 +1,236 @@
+
+MACTION
+{
+A1 $ V < cut > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < flow > A < inert gas > $
+PP2 $ V < maintain > N < arc > A < X > $
+PP3 $ V < convert > N < inert gas plasma state > A < x > $
+PP4 $ V < cut > N < material > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Arc discharge effect $
+PE3 $ Ionization effect $
+PE4 $ Melting effect $ 
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < suction > $
+I2 $ V < x > N < flow > A < electricity > $
+I3 $ V < increase > N < temperature > A < x > $
+I4 $ V < melt > N < material > A < X > $
+}
+
+MORGAN
+{
+O1 $ the nozzle is of convergent type $
+O2 $ the electrode has contacted the metal at least once $
+O3 $ temperatures raise is sufficient enough to cause the ionization $
+O4 $ the melting point of the material is reached $
+}
+
+MPART
+{
+P1 $ inert gas $
+P2 $ sliding pair $
+P3 $ nozzle $
+P4 $ electrode $
+P5 $ fixed pair $
+P6 $ frame $
+P7 $ arc $
+P8 $ material $
+P9 $ work table $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P7 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P5 P8 P9 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Plasma cutters work like saws, which are able to cut through tough metals easily. They are used largely in custom auto shops as well as by car manufacturers to customize and create chassis and frames. Construction companies use plasma cutters in large-scale projects to cut and fabricate huge beams or metal-sheet goods. Locksmiths use plasma cutters to bore into safes and vaults when customers have been locked out.
+$
+
+
+STRUCTURE
+
+$
+If you boost a gas to extremely high temperatures, you get plasma. The energy begins to break apart the gas molecules, and the atoms begin to split. Normal atoms are made up of protons and neutrons in the nucleus surrounded by a cloud of electrons. In plasma, the electrons separate from the nucleus. Once the energy of heat releases the electrons from the atom, the electrons begin to move around quickly. The electrons are negatively charged, and they leave behind their positively charged nuclei. These positively charged nuclei are known as ions. 
+When the fast-moving electrons collide with other electrons and ions, they release vast amounts of energy. This energy is what gives plasma its unique status and unbelievable cutting power.
+Almost 99 percent of all matter in the universe is plasma. It's not common on Earth because of its extremely high temperatures; but somewhere like the sun, it's the norm. On Earth, you find it in lightning (Fig 05), among other places.
+$
+
+
+BEHAVIOUR
+
+$
+Many factories working on military aircraft adopted a new method of welding that involved the use of an inert gas fed through an electric arc. The breakthrough discovery was that charging the gas with an electric current formed a barrier around the weld, which protected it from oxidation. This new method made for much cleaner lines at the joints and much sturdier construction. 
+Also, temperatures could be boosted by speeding up the flow of gas and shrinking the release hole of the weld torch. The new system could reach higher temperatures than any other commercial welder. In fact, at these high temperatures, the tool no longer acted as a welder. Instead, it worked like a saw, cutting through tough metals. This introduction of the plasma arc revolutionized the speed, accuracy and types of cuts manufacturers could make in all types of metals.
+
+Plasma cutters work by sending an electric arc through a pressurized gas, such as nitrogen, argon, or oxygen, that is passing through a constricted opening, as shown in Fig 03 (B). In the center of this channel, you'll find a negatively charged electrode. When you apply power to the negative electrode, and you touch the tip of the nozzle to the metal, the connection creates a circuit. A powerful spark is generated between the electrode and the metal, as shown in Fig 04 (A). As the inert gas passes through the channel, the spark elevates the temperature of the gas until it reaches the fourth state of matter (plasma). This reaction creates a stream of directed plasma that reduces metal to molten slag, shown in Fig 04 (B).
+The plasma itself conducts electrical current. The cycle of creating the arc is continuous as long as power is supplied to the electrode and the plasma stays in contact with the metal that is being cut. In order to ensure this contact, protect the cut from oxidation and regulate the unpredictable nature of plasma, the cutter nozzle has a second set of channels. These channels release a constant flow of shielding gas around the cutting area. The pressure of this gas flow effectively controls the radius of the plasma beam.
+$
+
+
+PICTURE
+
+{
+ADB/CUTTING/PLASMA/plasma01.jpg		$ 01. Plasma Cutter	$
+ADB/CUTTING/PLASMA/plasma02.jpg		$ 02. CNC Plasma Cutter	$
+ADB/CUTTING/PLASMA/working01.jpg	$ 03. Working 	$
+ADB/CUTTING/PLASMA/working02.jpg	$ 04. Working 	$
+ADB/CUTTING/PLASMA/plasma03.jpg		$ 05. Cut shapes $
+ADB/CUTTING/PLASMA/plasma.jpg		$ 06. Lightning	$
+
+}
+
+
+CLIP
+
+{
+ADB/CUTTING/PLASMA/plasma01.avi		$ 03. Plasma Cutter	$
+ADB/CUTTING/PLASMA/plasma02.avi		$ 02. Plasma Cutter	$
+ADB/CUTTING/PLASMA/plasma03.avi		$ 01. Plasma Cutter	$
+}
+SUMMARY
+$
+This can be used for cutting of materials. This can be interpreted as a change of state from gaseous state to plasma state. This can be described as follows:
+
+The inert gas (part) flows through the nozzle with high pressure (physical phenomenon). This is due to the suction force applied on it (input), which activates the Bernoulli’s law (physical effect) and is necessary that the nozzle is of convergent type (organ).
+
+The electrode (part) maintains an arc between itself and the metal (physical phenomenon). This is due to the flow of electricity through the electrode (input), which activates the arc discharge effect (physical effect) and is necessary that the electrode has contacted the metal at least once (organ).
+
+The arc (part) converts the inert gas into the plasma state (physical phenomenon). This due to the increase in the temperature (input) of the inert gas, which activates the ionization effect (physical effect) and is necessary that the temperature rise is sufficient enough to cause the ionization (organ).
+
+The plasma (part) thus formed cuts the material (physical phenomenon). This is due to the melting of the material (input), which activates the melting effect (physical effect) and is necessary that the melting point of the material is reached (organ).
+
+$
+
+ACTION
+
+$ 
+To cut materials.
+ 
+$
+
+STATE
+
+$
+The inert gas is in the gaseous form.
+
+The inert gas is in the plasma state. 
+
+$
+
+PHYPHENOMENON
+
+$
+The inert gas flows through the nozzle with high pressure.
+
+The electrode maintains an arc between itself and the metal.
+ 
+The arc converts the inert gas into the plasma state.
+
+The plasma thus formed cuts the material.
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law.
+
+Arc discharge effect.
+
+Ionization effect.
+
+Melting effect.
+$
+
+
+INPUT
+
+$
+Suction force applied on it.
+
+The flow of electricity through the electrode.
+
+The increase in the temperature.
+
+The melting of the material.
+$
+
+
+ORGAN
+
+$
+Necessary that the nozzle is of convergent type.
+
+Necessary that the electrode has contacted the metal at least once.
+
+Necessary that the temperatures raise is sufficient enough to cause the ionization.
+
+Necessary that the melting point of the material is reached.
+$
+
+
+
+PARTS
+$
+The inert gas forms a sliding pair with the nozzle. 
+
+The electrode forms a fixed pair with the frame.
+
+The arc is in between the electrode and the metal.
+
+The material forms a fixed pair with the work table.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

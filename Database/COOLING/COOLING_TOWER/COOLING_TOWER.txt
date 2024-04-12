@@ -1,0 +1,241 @@
+
+MACTION
+{
+A1 $ V < reduce > N < temperature > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < flow > A < liquid > $
+PP2 $ V < x > N < flow > A < hot air > $
+PP3 $ V < evaporate > N < droplet > A < water > $
+PP4 $ V < cool > N < water > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s effect $
+PE2 $ Convection effect $
+PE3 $ Vaporization effect $
+PE4 $ Vaporization effect $ 
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < difference > A < Pressure > $
+I2 $ V < x > N < density > A < Lower > $
+I3 $ V < absorb > N < droplet > A < water > $
+I4 $ V < absorb > N < heat > A < X > $
+}
+
+MORGAN
+{
+O1 $ the liquid is stored at a higher altitude than the perforated plates $
+O2 $ the air is at a temperature higher than the atmospheric air $
+O3 $ the relative humidity of the hot air is less than hundred percent $
+O4 $ the water to be cooled is in contact with the water droplets $
+}
+
+MPART
+{
+P1 $ Liquid $
+P2 $ Hot air $
+P3 $ Water droplets $
+P4 $ Water $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+
+}
+
+
+
+FUNCTION
+
+$
+Cooling Tower, device for reducing the temperature of a liquid, usually water, by bringing it into contact with an air stream where a small portion of the liquid is evaporated and the major portion is cooled.
+Cooling towers are used for large-scale air-conditioning installations, in the chemical industry, for cooling steam condensers of inland power plants if sufficient lake or river water is not available, and in a number of other industrial applications.
+The large cooling towers often identified with nuclear power plants are separate from such plants' reactors and do not discharge radioactivity. Cooling towers are also used by power plants fueled by coal or petroleum. These towers add greatly to the cost of power plants; however, the alternative of discharging large volumes of heated water into lakes and rivers has been proved detrimental to the environment.
+$
+
+
+STRUCTURE
+
+$
+All primary cooling tower components, which include: Geareducer drives, Driveshafts, and Belt-drive components, Fans, and Fan Cylinders, Fill and Drift Eliminators, Nozzles, Valves and Distribution systems, Structural components.
+
+$
+BEHAVIOUR
+
+$
+The hot water is initially piped to the top of the cooling unit and then broken up into droplets by being passed through a perforated plate. In large towers, a series of such plates are arranged on top of each other; the water drips down and comes in contact with upward flowing air. In small towers, the water simply drops over a series of slats. The tendency for the heated air to rise provides the airflow for very small cooling towers; but larger units depend on having air blown over the plate arrangement, either by induced draft with a suction fan on the top or by forced draft with a blower on the bottom.
+
+Atmospheric air is normally not saturated with water and can absorb additional moisture until its relative humidity reaches 100 percent. This absorption process can be aided if the water is broken up into many small droplets, increasing the water surface area and thus the evaporation. The energy required for the evaporation into the air stream is provided by a fall in the temperature of the remaining water.
+$
+
+PICTURE
+
+{
+ADB/COOLING/COOLING_TOWER/01.JPG		$ 01.COOLING TOWER $
+ADB/COOLING/COOLING_TOWER/02.JPG		$ 02.COOLING TOWER $
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+These cooling towers can be used to reduce the temperature of the liquid. This can be described as follows:
+
+The liquid (part) flows through the perforated plates (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the liquid is stored at a higher altitude than the perforated plates (organ).
+
+The hot air (part) flows from the bottom towards the top (physical phenomenon). This is due to the lower density (input), which activates the convection effect (physical effect) and is necessary that the air is at a temperature higher than the atmospheric air (organ).
+
+The water droplets (input) evaporate (physical phenomenon). This is due to the absorption of water droplets by the hot air (input), which activates the vaporization effect (physical effect) and is necessary that the relative humidity of the hot air is less than hundred percent (organ).
+
+The water (part) in the tower cools down (physical phenomenon). This is due to the absorption of heat of vaporization (input) from the water, which activates the vaporization effect (physical effect) and is necessary that the water to be cooled is in contact with the water droplets (organ).
+$
+
+ACTION
+
+$ 
+ Reduce the temperature of the liquid.
+$
+
+STATE
+
+$
+
+x
+$
+
+PHYPHENOMENON
+
+$
+The liquid flows through the perforated plates.
+
+The hot air flows from the bottom towards the top.
+
+The water droplets evaporate.
+
+The water in the tower cools down.
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s effect.
+
+Convection effect.
+
+Vaporization effect.
+
+Vaporization effect.
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+Pressure difference.
+
+Lower density.
+
+Absorption of water droplets.
+
+Absorption of heat of vaporization.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the liquid is stored at a higher altitude than the perforated plates.
+
+Necessary that the air is at a temperature higher than the atmospheric air.
+
+Necessary that the relative humidity of the hot air is less than hundred percent
+
+Necessary that the water to be cooled is in contact with the water droplets.
+
+
+$
+
+
+
+PARTS
+$
+Liquid
+
+Hot air.
+
+Water droplets.
+
+Water.
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

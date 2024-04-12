@@ -1,0 +1,69 @@
+MACTION
+{
+A1 $ V < cut > N < materials > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link 1 > A < X > $
+PP2 $ V < slide > N < slider > A < X > $
+PP3 $ V < slide > N < knife 1 > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < apply > N < force > A < x > $
+I3 $ V < rotate > N < link 1 > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the link 1 is pivoted at one of its end. $
+O2 $ Presence of a smooth surface between the slider and the guide ways. $
+O3 $ Presence of one degree of freedom between the link 1 and the knife 1. $
+}
+
+MPART
+{
+P1 $ link 1 $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ slider $
+P5 $ sliding pair $
+P6 $ guide ways $
+P7 $ knife 1 $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P7 P5 P2 >
+
+
+}
+
+
+

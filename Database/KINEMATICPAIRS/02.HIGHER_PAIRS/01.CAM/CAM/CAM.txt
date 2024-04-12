@@ -1,0 +1,196 @@
+MACTION
+{
+A1 $ V < produce > N < rotation > A < eccentric > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < eccentric > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to eccentric rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < cam > A < X > $
+PP2 $ V < x > N < rotation > A < eccentric > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ offset effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < torque > A < x > $
+I2 $ V < x > N < eccentricity > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the cam $
+O2 $ center of the cam is offset from the center of the shaft $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ frame $
+P3 $ revolute pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P3 >
+
+}
+FUNCTION
+$
+A cam may be defined as a machine member having a curved outline or a curved groove, which, by its reciprocation or rotation motion, gives a predetermined specified motion to another element called the follower. A cam may also receive motion from such a roller or pin. Some cams do not move at all, but cause a change of motion in the contacting part.
+Cams are not ordinarily used to transmit power in the sense that gear trains are used. They are used to modify mechanical movement, the power for which is furnished through other means. They may control other mechanical units, or they may synchronize or lock together two or more engaging units.
+Cams are used to open and close the inlet and exhaust valves of an automotive engine, to index parts of automatic machinery for mass production, to operate a sequence of control switches in electrical equipment, and in many other machines. Complicated output motions, which are otherwise difficult to achieve, can easily be produced with the help of cams.
+$
+
+
+BEHAVIOUR
+
+$
+In any class of machinery in which automatic control and accurate timing are paramount, the cam is an indispensable part of the mechanism. Cam-follower mechanisms are particularly useful when a simple motion of one part of a machine is to be converted to a more complicated prescribed motion of another part, one that must be accurately timed with respect to the simple motion and may include periods of rest (dwells). 
+The motion of a cam depends not only on the shape and type of the cam profile but also on the configuration and arrangement of the follower.
+
+Depending on the shape and type of the cam and follower used, various motions can be obtained like
+1. Rotating cam - translating follower
+2. Rotating follower (The follower arm swings or oscillates in a circular arc with respect to the follower pivot)
+3. Translating cam - translating follower
+4. Stationary cam - rotating follower (The follower system revolves with respect to the center line of the vertical shaft)
+$
+
+
+STRUCTURE
+
+$
+If there is surface contact between two elements then the pair is called as a Higher pair. A Cam mechanism usually consists of two moving elements, the Cam and the follower, mounted on a fixed frame.The shape of the contacting surface of the cam is determined by the desired motion and the profile of the follower.
+
+Cams can be shaped in any number of ways and this is determined by the way the follower is to move. The shape of the cam is called the PROFILE. (PIC 2)
+
+PEAR : Pear shaped cams are used on the shafts of cars. The follower remains motionless for about half the cycle of the cam and during the second half it rises and falls.
+ 
+CIRCULAR : Circular cams or eccentric cams produce a smooth motion. These cams are used in steam engines.
+
+HEART : Heart shaped cams allow the follower to rise and fall with ‘uniform’ velocity. 
+
+DROP : In a drop cam, the follower remains motionless for most of the time, depending on the cut-away angle on the profile of the cam. Once the follower encounters the cut-away section, it drops.
+
+Cam Types (Fig 3)
+DISK cam : The follower moves in a plane perpendicular to the axis of rotation of the camshaft. A translating or a swing arm follower must be constrained to maintain contact with the cam profile. 
+
+CYLINDRICAL cam or BARREL cam : Cylindrical cams are used when motion has to be transmitted parallel to the axis of rotation of the cam. The roller follower operates in a groove cut on the periphery of a cylinder. As the cylinder cam profile rotates the follower moves upwards. When the follower reaches the top, the cylinder cam rotates in the opposite direction and follower moves back down. If the cylindrical surface is replaced by a conical one, a conical cam results.
+
+END cam : This cam has a rotating portion of a cylinder. The follower translates or oscillates, whereas the cam usually rotates. The end cam is rarely used because of the cost and the difficulty in cutting its contour. 
+
+LINEAR Cam: As the flat plate cam profile moves to the left the follower drops down the slope and then eventually rises up at the other end. The flat plate cam then reverses in the opposite direction and the follower drops and rises again.
+$
+
+PICTURE
+
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/01.CAM/CAM/cam.gif		$ 01.Cam	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/01.CAM/CAM/camgeometry.jpg	$ 02.Cam Geometry $
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/01.CAM/CAM/Camshapes.jpg		$ 03.Cam Shapes $
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/01.CAM/CAM/camtypes.jpg		$ 04.Cam Types $
+}
+
+CLIP
+
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/01.CAM/CAM/heartcam.avi		$ 01.Heart Shaped Cam $
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/01.CAM/CAM/cam.avi		$ 02.Cam $
+}
+
+SUMMARY
+$
+This can be used to produce eccentric rotation. This can be interpreted as a change of state from rest to eccentric rotation. This can be described as follows:
+
+The cam (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the cam (organ).
+
+The cam (part) rotates eccentrically (physical phenomenon). This is due to the eccentricity of the cam (input) which activates the offset effect (physical effect) and is necessary that the center of the cam is offset from the center of the shaft (organ).
+
+$
+
+ACTION
+
+$ 
+ To produce eccentric rotation.
+$
+
+STATE
+
+$
+From rest to eccentric rotation.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The cam rotates.
+
+The cam rotates eccentrically.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+
+Newtonian laws of motion.
+
+offset effect.
+
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+
+The eccentricity of the cam.
+
+$
+
+
+ORGAN
+
+$
+
+Presence of zero degree of freedom between the input shaft and the cam.
+
+
+The center of the cam is offset from the center of the shaft.
+
+$
+
+PART
+$
+The cam forms a revolute pair with the frame.
+$
+
+
+
+

@@ -1,0 +1,195 @@
+MACTION
+{	
+A1 $ V < support > N < shafts > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation revolution > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation accompanied by the revolution $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < inner-race > A < X > $
+PP2 $ V < rotate revolve > N < rollers > A < X > $
+PP3 $ V < fix > N < outer-race > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < rotate > N < inner-race > A < X > $
+I3 $ V < X > N < rollers > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shaft and the inner race $
+O2 $ friction surface between the inner race and the balls $
+O3 $ smooth surface between the outer race and the rollers $
+}
+
+MPART
+{
+P1 $ inner race $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ rollers $
+P5 $ outer race $
+P6 $ fixed pair $
+
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P5 P6 >
+
+}
+FUNCTION
+$
+Bearings typically have to deal with two kinds of loading, radial and thrust. Depending on where the bearing is being used, it may be all radial loading, all thrust loading or a combination of both. 
+Roller bearings are anti-friction bearings and were designed to eliminate sliding friction. Sliding friction takes place when one object slides against another. Roller bearings overcome frictional resistance by a rolling contact and are suited to large, heavy assemblies.
+$
+
+
+BEHAVIOUR
+$
+In these bearings, the roller is a cylinder, so the contact between the inner and outer race is not a point but a line. This spreads the load out over a larger area, allowing the bearing to handle much greater loads than a ball bearing. However, this type of bearing is not designed to handle much thrust loading. 
+A variation of this type of bearing, called a needle bearing, uses cylinders with a very small diameter. This allows the bearing to fit into tight places. 
+
+The other types of roller bearings are
+Tapered roller bearings: These bearings can support large radial and large thrust loads. Tapered roller bearings are used in car hubs, where they are usually mounted in pairs facing opposite directions so that they can handle thrust in both directions. 
+
+
+Roller thrust bearings: These can support large thrust loads. They are often found in gear sets like car transmissions between gears, and between the housing and the rotating shafts. The helical gears used in most transmissions have angled teeth -- this causes a thrust load that must be supported by a bearing. 
+$
+
+
+STRUCTURE
+$
+Roller bearings are either cylindrical or tapered (conical), depending upon the application; they overcome frictional resistance by a rolling contact and are suited to large, heavy assemblies. 
+In a basic rolling bearing, there are usually four parts: the outer ring, the inner ring, rolling elements, and the cage (see Figure 2).  The figure also shows two optional components: the seal and the guide ring.  These components are model-dependent.  Without the rolling elements, the inner and outer ring would be moving against each other and experiencing friction. The rolling elements sit in the cage between the outer and inner ring to eliminate friction and allow smooth circular motion. 
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.Bearing/Roller/roller1.gif		$ 01.Roller Bearing	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.Bearing/Roller/roller.jpg		$ 02.Roller Bearing	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.Bearing/Roller/taperedroller.jpg	$ 03.Tapered Roller Bearing $
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.Bearing/Roller/taperedroller1.gif	$ 04.Tapered Roller Bearing $
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.Bearing/Roller/taperedroller2.gif	$ 05.Tapered Roller Bearing $
+}
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.Bearing/Roller/roller.avi		$ Roller Bearing	$
+}
+
+SUMMARY
+$
+This can be used to support shafts. This can be described as follows:
+
+The inner race (part) rotates (physical phenomenon). This is due to the torque applied (input) by the shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the inner race (organ).
+
+The rollers (part) rotate and as well as revolve about the center of the shaft (physical phenomenon). This is due to the rotation of the Inner race (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the inner race and the balls (organ).
+
+The outer race (part) remains fixed (physical phenomenon). This is due to the presence of rollers between them and the rotating inner race (input) which activates the ? effect (physical effect) and requires the presence of a smooth  surface between the outer race and the rollers (organ).
+
+
+$
+
+ACTION
+$
+ 
+ To support shafts.
+
+$
+STATE
+$
+
+The rollers at rest.
+
+The rollers are rotating and as well as revolving.
+
+$
+PHYPHENOMENON
+$
+
+The inner race rotates.
+
+The rollers rotate and as well as revolve about the center of the shaft
+
+The outer race remains fixed.
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.	
+
+Friction effect.
+
+$
+
+INPUT
+$
+
+Torque applied by the shaft.
+
+Rotation of the inner race.
+
+Presence of rollers between them and the rotating inner race.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the shaft and the inner race.
+
+Presence of friction surface between the inner race and the rollers.
+
+Presence of a smooth surface between the outer race and the rollers.
+
+
+
+$
+PARTS
+
+$
+
+The inner race forms a revolute pair with the frame.
+
+The rollers form a revolute pair with the inner race.
+
+The outer race forms a fixed pair with the frame.
+
+$
+
+

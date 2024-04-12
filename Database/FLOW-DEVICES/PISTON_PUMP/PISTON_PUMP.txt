@@ -1,0 +1,205 @@
+MACTION
+{
+A1 $ V < pump > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < lower > N < water level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < higher > N < water level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from water at lower level to water at higher level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < piston > A < X > $
+PP2 $ V < x > N < flow > A < fluid > $
+PP3 $ V < pressurize > N < fluid > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+PE3 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < crank > A < x > $
+I2 $ V < create > N < vacuum > A < x > $
+I3 $ V < reciprocate > N < piston > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the piston and the cylinder $
+O2 $ valve is place well below the ground level $
+O3 $ chamber is not flexible $
+}
+
+MPART
+{
+P1 $ Piston $
+P2 $ Fluid $
+P3 $ Fluid $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+The basic Piston Pump is very simple having just two valves and one stuffing box.
+$
+
+
+STRUCTURE
+
+$
+This device consists of a piston, which reciprocates within the cylinder. The valves are operated on the basis of pressure difference.
+
+$
+BEHAVIOUR
+
+$
+In this example the reciprocating piston is driven back and forth by a rotating mechanism. This piston pump uses suction to raise water into the chamber. The lower valve can be placed below water level. The piston must be within about 25 feet of the water level, but the water can then be raised quite high.
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/PISTON_PUMP/01.GIF		$ 01.PISTON PUMP $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to displace water from a lower level to a higher level and this can be discussed as follows:
+
+The piston (part) reciprocates within the cylinder (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the piston and the cylinder (organ).
+
+The fluid (part) enters the chamber through the valve (physical phenomenon). This is due to the vacuum created within the cylinder (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the valve is place well below the ground level (organ).
+
+The fluid (part) is pressurized and displaced (physical phenomenon). This is due to the reciprocating motion (input) of the piston, which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that chamber is not flexible (organ).
+
+$
+
+ACTION
+
+$ 
+ To pump water.
+$
+
+STATE
+
+$
+The water is at a lower level.
+
+The water is at a higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston reciprocates within the cylinder.
+
+The fluid enters the chamber through the valve.
+
+The fluid is pressurized and displaced.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the crank.
+
+The vacuum created.
+
+The reciprocating motion of the piston.
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the piston and the cylinder.
+
+Necessary that the valve is place well below the ground level.
+
+Necessary that chamber is not flexible.
+
+
+$
+
+
+
+PARTS
+$
+Piston.
+
+Fluid.
+
+Fluid.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+

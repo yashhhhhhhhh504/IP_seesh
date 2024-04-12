@@ -1,0 +1,53 @@
+MACTION
+{
+A1 $ V < generate > A < reciprocating > N < motion > $
+}
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < reciprocating > N < motion > $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > A < X > N < cam > $
+PP2 $ V < reciprocate > A < X > N < slide > $
+}
+
+MPHYEFFECT
+{
+PE1 $ two bodies cannot occupy the same space at the same time $
+PE2 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > A < X > N < follower > $
+I2 $ V < oscillate > A < X > N < cam > $
+}
+
+MORGAN
+{
+O1 $ cam profile $
+O2 $ 1 degree of freedom of motion in direction of motion $
+}
+
+MPART
+{
+P1 $ follower $
+P2 $ cam $
+P3 $ cam pair $
+P4 $ frame $
+P5 $ revolute pair $
+P6 $ link $
+P7 $ slide $
+P8 $ slide guide $
+P8 $ prismatic pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP1 - PE1 - I1 - O2 - P2 - P4 - P5
+A1 - PP2 - PE2 - I2 - O2 - P2 - P6 - P5
+A1 - PP2 - PE2 - I2 - O2 - P6 - P7 - P5
+A1 - PP2 - PE2 - I2 - O2 - P7 - P8 - P9
+}

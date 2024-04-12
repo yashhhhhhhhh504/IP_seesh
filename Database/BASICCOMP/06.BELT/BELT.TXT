@@ -1,0 +1,203 @@
+MACTION
+{
+A1 $ V < connect > N < pulleys > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < linear > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < wrap > N < pulleys > A < X > $
+PP2 $ V < move > N < belt > A < X > $
+PP3 $ V < rotate > N < pulley > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ hooks law $
+PE2 $ friction effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < tension > A < initial> $
+I2 $ V < rotate > N < pulley > A < x > $
+I3 $ V < move > N < belt > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the belt has some stiffness $
+O2 $ Presence of friction surface between the input pulley and belt surface $
+O3 $ Presence of friction surface between the output pulley and the belt $
+}
+
+MPART
+{
+P1 $ belt $
+P2 $ pulleys $
+P3 $ wrapping pair $
+P4 $ input pulley $
+P5 $ frame $
+P6 $ revolute pair $
+P7 $ output pulley $
+
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P5 P6 P7 >
+
+}
+
+
+
+
+FUNCTION
+$
+Belts are used where the distance between the shafts is large. For small distances, gears are preferred.
+They help in the transmission of power between two shafts & can also change the direction of rotation.
+$
+
+
+STRUCTURE
+$
+Belts are flexible types of connectors, i.e. they are bent easily. The flexibility of belts is due to their property of their materials.
+
+A belt may be of rectangular section, known as flat belt, or of trapezoidal section, known as V-belt. In case of a flat belt, the rim of the pulley is slightly ‘crowned’ which helps to keep the belt running centrally on the pulley rim. The groove on the rim of the pulley of a V-belt drive is made deeper to take the advantage of the wedge action. The belt does not touch the bottom of the groove. Owing to wedging action, V-belts need little adjustment and transmit more power, without slip, as compared to flat belts. Also, a, multiple V-belt system using more than one belt in the two pulleys, can be used to increase the power transmitting capacity. Generally, these are more suitable for shorter center distances.
+
+The usual materials used for flat belts are leather, canvas, cotton and rubber. These belts are used to connect shafts upto 8 - 10m apart with speeds as high as 22 m/s.
+V-belts are usually made of rubber-impregnated fabric with an angle of V between 30 to 40 degrees. They are used to connect shafts upto 4m apart. Speed ratios can be upto 7:1 and belt speeds upto 24 m/s.
+$
+
+
+BEHAVIOUR
+$
+To transmit power from one shaft to another, pulleys are mounted on the two shafts. The pulleys are then connected by an endless belt passing over them. The connecting belt is kept in tension so that the motion of one pulley is transferred to the other without slip. Varying the diameters of the two pulleys can vary the speed of the driven shaft. However, there is slip involved, which prevents 100% transmission, & hence some power is lost. This means that belts are not positive type of drives, i.e. their velocity ratios are not constant.
+For an unstretched belt mounted on the pulleys, the outer and the inner faces become in tension and compression respectively. In between there is a neutral section that has no tension or compression. Usually this is considered at half the thickness of the belt.
+  
+Because of the wedging action of the belts in the grooves, V belts require less tension than do flat belts and are particularly suitable for connecting shafts that are close together.
+ 
+Flat and V belts slip when overloaded, and in some applications this condition may be more desirable than a rigid drive because it limits the transmitted torque and may prevent breakage of parts.
+Another type of belt used on some internal-combustion engines for connecting the crankshaft and camshafts is the toothed, or timing, belt. The positive drive these belts provide has many advantages but lacks overload protection
+With an open flat belt, both shafts rotate in the same direction; with a crossed belt they rotate in opposite directions.
+When flat belts are used to connect nonparallel shafts, the pulleys are located in such a way that the belt does not run off the pulleys; in some cases it may be necessary to use additional, or idler, pulleys to guide the belt. 
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/06.Belt/flatbelt.jpg		$ 01.Flat belt	$
+ADB/BASICCOMP/06.Belt/flatbelt1.jpg		$ 02.Flat belt	$
+ADB/BASICCOMP/06.Belt/flatbelt2.jpg		$ 03.Flat Belt	$
+ADB/BASICCOMP/06.Belt/VBelt.jpg			$ 04.V-Belt	$
+ADB/BASICCOMP/06.Belt/VBelt1.jpg		$ 05.V-Belt	$
+ADB/BASICCOMP/06.Belt/VBelt2.jpg		$ 06.V-Belt	$
+}
+
+
+CLIP
+{
+}
+
+
+SUMMARY
+$
+This can used to connect pulleys, which are mounted on shafts; those are far from each other. This can be interpreted as a change of state from rest to linear motion. This can be interpreted as follows:
+
+The belt (part) wraps the two pulleys (physical phenomenon). This is due to the initial tension in the belt (input), which activates hooks law (physical effect) and is necessary that the belt has some stiffness (organ).
+
+The belt (part) moves linearly (physical phenomenon). This is due to the rotation of the input pulley, which in turn is due to the rotation of the input shaft (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the input pulley and belt surface (organ). 
+
+The output pulley (part) rotates (physical phenomenon). This is due to the linear movement of the belt (input), which activates the friction effect (physical effect) and requires the presence of a friction surface between the output pulley and the belt (organ). 
+
+$
+
+ACTION
+
+$ 
+ To connect pulleys.
+$
+
+STATE
+
+$
+The belt is at rest that is it is wrapping the two pulleys.
+
+The belt is moving linearly.
+$
+
+PHYPHENOMENON
+
+$
+The belt wraps the two pulleys.
+
+The belt moves linearly.
+ 
+The output pulley rotates.
+
+
+$
+
+
+PHYEFFECT
+$
+Hooks law.
+
+Friction effect.
+
+
+$
+
+INPUT
+
+$
+Initial tension.
+
+Rotation of the input pulley.
+
+Linear movement of the belt.
+$
+
+
+ORGAN
+
+$
+Necessary that the belt has some stiffness.
+
+Presence of friction surface between the input pulley and belt surface.
+
+Presence of a friction surface between the output pulley and the belt.
+	
+
+$
+
+
+
+PARTS
+
+$
+The belt forms a wrapping pair with the pulleys.
+
+The input pulley forms a revolute pair with the frame.
+
+The output pulley forms a revolute pair with the frame.
+
+$
+
+

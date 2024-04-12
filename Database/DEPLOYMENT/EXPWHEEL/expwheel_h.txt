@@ -1,0 +1,96 @@
+SUMMARY
+$
+Using this mechanism, the diameter of the wheel can be increased or decreased. This can be described as follows:
+
+The base wheel (part) rotates in a vertical plane (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the base wheel (organ).
+
+The adjustable screw section (part) moves outward (physical phenomenon). This is due to the clockwise couple applied on to the screw  (input), which activates the Newtonian laws of motion (physical effect) and requires that the base wheel is stationary (organ).
+
+The adjustable screw section (part) moves inward (physical phenomenon). This is due to the anti clockwise couple applied on to the screw (input), which activates the Newtonian laws of motion (physical effect) and requires that the base wheel is stationary (organ).
+
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism, the diameter of the wheel can be increased or decreased.
+$
+}
+STATE
+{
+$
+rest.
+$
+expands.
+$
+rotation.
+$
+}
+PHYPHENOMENON
+{
+$
+The base wheel rotates in a vertical plane.
+$
+The adjustable screw section moves outward.
+$ 
+The adjustable screw section moves inward.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+ Clockwise couple applied on to the screw.
+$
+Anti clockwise couple applied on to the screw.
+$
+}
+
+ORGAN
+{
+$
+Zero degree of freedom between the shaft and the base wheel.
+$
+Requires that the base wheel is stationary.
+$
+Requires that the base wheel is stationary.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The base wheel forms a revolute pair with the frame.
+$
+The adjustable section forms a screw with the base wheel.
+$
+
+$
+
+$
+
+$
+}
+
+
+

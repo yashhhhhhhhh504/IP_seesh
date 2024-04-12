@@ -1,0 +1,100 @@
+SUMMARY
+$
+This is usually used in lift doors. This can be described as follows:
+
+The link 1 (part) moves away from its initial position (physical phenomenon). This is due to the force applied on to the link 1 (input) which activates the Newtonian laws motion (physical effect) and requires that the force applied perpendicular to the link 1 (organ).
+
+The diagonal of the parallelogram formed by the links 4,5,6 and 7 (part) increases (physical phenomenon). This is due to the movement of the link 1 (input) which activates the Newtonian laws of motion (physical effect) and requires that the link 1 move parallel to its original position (organ).
+ 
+The link 2 moves away from its initial position (physical phenomenon). This is due to the increase in the length of diagonal of the parallelogram formed by the links 4,5,6 and 7 (input).
+The diagonal of the parallelogram formed by the links 6,7,8 and 9 (part) increases (physical phenomenon). This is due to the movement of the link 2 (input) and requires that the link 2 move parallel to its original position (organ).
+
+The link 3 (part) moves away from its initial position (physical phenomenon), this is due to the increase in the length of diagonal of the parallelogram formed by the links 6,7,8 and 9 (input) and it requires that the link 3 moves parallel to its original position (organ).
+
+$
+
+ACTION
+{
+$ 
+ Using this system lifting doors can be operated.
+$
+}
+STATE
+{
+$
+Absence of force at link 1
+$
+Presence of force at link 1
+
+$
+}
+PHYPHENOMENON
+{
+$
+Movement of the link 1 away from its initial position.
+$
+Increase in the diagonal of the parallelogram formed by the links 4,5,6 and 7.
+$ 
+Increase in the diagonal of the parallelogram formed by the links 8,9,6 and 7.
+
+$
+Movement of the link 3 away from its initial position
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Force applied on to the link 1.
+$
+Movement of the link 1.
+$
+Increase in the length of the diagonal of the parallelogram formed by the links 4,5,6 and 7.
+$
+Movement of the link 2.
+$
+Increase in the length of the diagonal of the parallelogram formed by the links 8,9,6 and 7.
+$
+}
+
+ORGAN
+{
+$
+Force applied is perpendicular to the link 1.
+$
+Link 1 moves parallel to its initial position.
+$
+Link 2 moves parallel to its initial position.
+
+$
+Link 3 moves parallel to its initial position.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The link 1 is parallel to the links 2 and 3.
+$
+The links 4 and 5 are connected to the link 1.
+$
+The links 6 and 7 are connected to the link 2.
+$
+The links 8 and 9 are connected to the link 3.
+$
+
+$
+}

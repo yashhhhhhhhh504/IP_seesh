@@ -1,0 +1,231 @@
+
+
+MACTION
+{
+A1 $ V < fly > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < ground > N < helicopter > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < fly > A < x > N < helicopter > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest on ground to flying $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < blades > A < main > $
+PP2 $ V < lift > N < helicopter > A < up > $
+PP3 $ V < balance > N < helicopter > A < tail > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Laws of aerodynamics and Newtonian laws of motion $
+PE3 $ Laws of aerodynamics $
+}
+
+MINPUT
+{
+I1 $ V < transmit > N < power > A < x > $
+I2 $ V < lift > N < blades > A < main > $
+I3 $ V < apply > N < blades > A < reactive > $
+}
+
+MORGAN
+{
+O1 $ Mechanical connection capable of transmitting power between engine and rotor blade $
+O2 $ Correct angle of attack and speed of the rotor blades $
+O3 $ Correct magnitude force acting on the tail rotor blades $
+}
+
+MPART
+{
+P1 $ Main rotor blades $
+P2 $ Helicopter $
+P3 $ Tail rotor blades $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+
+FUNCTION
+
+$
+Main objective of helicopters is to fly in 3D space.
+$
+
+
+STRUCTURE
+
+$
+Helicopters are most versatile flying machines in existence today. A helicopter can give access to 3D space. To go up it uses the principles of aerodynamics i.e. lift; the same principle is used to turn, get stability. Angle of attack of main as well as tail rotor blades can be adjusted to get the required force acting on them.
+$
+
+BEHAVIOUR
+
+$
+Main rotor blades of helicopter rotate. This is due to power transmission from engine, which actuates Newtonian laws of motion and requires mechanical connection capable of transmitting power between engine and rotor blade. Helicopter gets lifted up. This is due to lift force acting in the rotor blades, which actuates the laws of aerodynamics and Newtonian laws of motion and requires the correct angle of attack and speed of the rotor blades. Tail rotor blades balance the helicopter. This is due to reactive force acting on tail rotor blades from air due to rotary motion of blade, which actuates the laws of aerodynamics and requires the correct magnitude force acting on the tail rotor blades.
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/HELICOPTOR/HELICOPTOR01.JPG		$ 01.HELICOPTOR $
+ADB/TRANSPORT/HELICOPTOR/HELICOPTOR02.JPG		$ 02.HELICOPTOR $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+
+Helicopters are most versatile flying machines in existence today. A helicopter can give access to 3D space. To go up it uses the principles of aerodynamics i.e. lift; the same principle is used to turn, get stability. Its upward travel is explained below,
+
+Main rotor blades (part) of helicopter rotate (physical phenomenon). This is due to power transmission (input) from engine, which actuates Newtonian laws of motion (physical effect) and requires mechanical connection capable of transmitting power between engine and rotor blade (organ). 
+
+Helicopter (part) gets lifted up (physical phenomenon). This is due to lift force (input) acting in the rotor blades, which actuates the laws of aerodynamics and Newtonian laws of motion (physical effect) and requires the correct angle of attack and speed of the rotor blades (organ). 
+
+Tail rotor blades (part) balance the helicopter (physical phenomenon). This is due to reactive force (input) acting on tail rotor blades from air due to rotary motion of blade, which actuates the laws of aerodynamics (physical effect) and requires the correct magnitude force acting on the tail rotor blades (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To fly.
+$
+
+STATE
+
+$
+Helicopter on the ground.
+Helicopter flying.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Main rotor blades of helicopter rotate
+
+Helicopter gets lifted up
+
+Tail rotor blades balance the helicopter
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+Laws of aerodynamics and Newtonian laws of motion
+
+Laws of aerodynamics
+$
+
+
+INPUT
+
+$
+Power transmission from engine
+
+Lift force acting in the rotor blades
+
+Reactive force acting on tail rotor blades from air
+$
+
+
+ORGAN
+
+$
+
+Mechanical connection capable of transmitting power between engine and rotor blade
+
+Correct angle of attack and speed of the rotor blades
+
+Correct magnitude force acting on the tail rotor blades
+
+$
+
+
+
+PARTS
+$
+
+Main rotor blades
+
+Helicopter
+
+Tail rotor blades
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

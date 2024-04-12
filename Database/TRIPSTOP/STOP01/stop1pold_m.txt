@@ -1,0 +1,66 @@
+MACTION
+{
+A1 $ V < stop > N < process > A < automatically > $
+}
+MSTATE
+{
+S1 $ V < operate > A < X > N < machine >  $
+S2 $ V < stop > A < X > N < machine >  $
+S3 $ V < X > A < X > N < X >  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < make > A < X > N < contact > $
+PP2 $ V < displace > A < X > N < dog > $
+PP3 $ V < displace > A < X > N < latch > $
+PP4 $ V < lose > A < X > N < contact > $
+PP5 $ V < release > A < X > N < clutch > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ hookes law $
+}
+
+MINPUT
+{
+I1 $ V < cross > A < X > N < limit > $
+I2 $ V < make > A < X > N < contact > $
+I3 $ V < displace > A < X > N < dog > $
+I4 $ V < displace > A < X > N < latch > $
+I5 $ V < lose > A < X > N < contact > $
+}
+
+MORGAN
+{
+O1 $ position of the dog $
+O2 $ pivot point $
+O3 $ contact : dog latch $
+O4 $ contact : latch clutch $
+O5 $ spring stiffness $
+}
+
+MPART
+{
+P1 $ dog $
+P2 $ latch $
+P3 $ frame $
+P4 $ clutch $
+P5 $ member $
+P6 $ revolute pair $
+P7 $ contact $
+P8 $ prismatic pair $
+P9 $ no contact $
+P10 $ flexible pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P5 - P7
+A1 - PP2 - PE2 - I2 - O2 - P1 - P3 - P8
+A1 - PP3 - PE2 - I3 - O3 - P1 - P2 - P7
+A1 - PP4 - PE1 - I4 - O4 - P2 - P4 - P9
+A1 - PP5 - PE3 - I5 - O5 - P4 - P3 - P10
+}

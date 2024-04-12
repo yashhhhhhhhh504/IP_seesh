@@ -1,0 +1,220 @@
+MACTION
+{
+A1 $ V < keep > N < temperature > A < constant > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < fluctuate > A < x > N < temperature > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < keep > A < constant > N < temperature > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ temperature fluctuates and it is kept constant $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < expand > N < strip > A < bimetallic > $
+PP2 $ V < break > N < temperature > A < constant > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Laws of heat transfer $
+PE2 $ some substances expand on heating $
+}
+
+MINPUT
+{
+I1 $ V < absorb > N < heat > A < x > $
+I2 $ V < change > N < length > A < x > $
+}
+
+MORGAN
+{
+O1 $ Surrounding temperature higher than bimetallic strip temperature $
+O2 $ Coefficient of linear expansion of one metal strip to be different than the other $
+}
+
+MPART
+{
+P1 $ Bimetallic strip $
+P2 $ Electric contact $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+
+
+FUNCTION
+
+$
+Thermostat keeps the temperature at the desired value. If the temperature changes from the set value it senses the deviation.
+$
+
+
+STRUCTURE
+
+$
+Bimetallic thermostat has two different kinds of metal strips bound to each other. The coefficients of thermal expansion of these two metals are different. Hence on heating it bends to form a curve.
+$
+
+
+BEHAVIOUR
+
+$
+Bimetallic strip expands. This is due to absorption of heat from its surroundings, which actuates the laws of heat transfer and requires that surrounding temperature higher than bimetallic strip temperature. The electric contact is broken and temperature is kept constant as the strip gets a curved shape. This is due to more change in length of one metal strip than the other which actuates the law that some substances expand on heating and requires that coefficient of linear expansion of one metal strip to be different than the other.
+
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/THERMOSTAT/THERMOSTAT01.JPG		$ 01.THERMOSTAT $
+ADB/SPECIAL/THERMOSTAT/THERMOSTAT02.JPG		$ 02.THERMOSTAT $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Thermostat keeps the temperature at the desired value. If the temperature changes from the set value it senses the deviation. Bimetallic thermostat has two different kinds of metal strips bound to each other. The coefficients of thermal expansion of these two metals are different. Hence on heating it bends to form a curve. It is explained below,
+
+Bimetallic strip (part) expands (physical phenomenon). This is due to absorption of heat (input) from its surroundings, which actuates the laws of heat transfer (physical effect) and requires that surrounding temperature higher than bimetallic strip temperature (organ).
+
+The electric contact (part) is broken and temperature is kept constant as the strip gets a curved shape (physical phenomenon). This is due to more change in length (input) of one metal strip than the other which actuates the law that some substances expand on heating (physical effect) and requires that coefficient of linear expansion of one metal strip to be different than the other (organ).
+
+$
+
+
+ACTION
+
+$ 
+To keep the temperature constant. 
+$
+
+
+STATE
+
+$
+
+Temperature fluctuates.
+Temperature kept constant.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Bimetallic strip expands
+
+The electric contact is broken and temperature is kept constant as the strip gets a curved shape
+
+$
+
+
+PHYEFFECT
+
+$
+
+Laws of heat transfer
+
+Some substances expand on heating
+
+$
+
+
+INPUT
+
+$
+
+Absorption of heat
+
+More change in length (input) of one metal strip than the other
+
+
+$
+
+
+ORGAN
+
+$
+
+Surrounding temperature higher than bimetallic strip temperature
+
+Coefficient of linear expansion of one metal strip to be different than the other
+
+$
+
+
+
+PARTS
+$
+
+Bimetallic strip
+
+Electric contact
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

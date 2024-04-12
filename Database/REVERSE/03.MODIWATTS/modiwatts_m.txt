@@ -1,0 +1,83 @@
+MACTION
+{
+A1 $ V < reverse > N < direction > A < rotational > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < rotate > A < counter clockwise > N < gear > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < rotate > A < clockwise > N < gear > $
+} 
+MCHANGESTATE
+{
+CS1 $ from counter clock wise rotation to clock wise rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > N < connecting rod > A < X > $
+PP2 $ V < rotate > N < input link > A < X > $
+PP3 $ V < oscillate > N < out put shaft > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < Move > N < slider > A < x > $
+I2 $ V < oscillate > N < connecting rod > A < x > $
+I3 $ V < revolve > N < idler gear > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of one degree of freedom between the connecting rod and the slider. $
+O2 $ Presence of one degree of freedom between the connecting rod and the input gear.  $
+O3 $ Presence of contact between the idler gear and the output gear. $
+}
+
+MPART
+{
+P1 $ connecting rod $
+P2 $ revolute pair $
+P3 $ slider $
+P4 $ input crank $
+P5 $ frame $
+P6 $ output gear $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P2 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P6 P2 P5 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

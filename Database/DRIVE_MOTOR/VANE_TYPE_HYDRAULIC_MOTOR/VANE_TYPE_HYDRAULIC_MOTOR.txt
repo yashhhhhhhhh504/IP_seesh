@@ -1,0 +1,247 @@
+
+
+MACTION
+{
+A1 $ V < convert > N < hydraulic-energy > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < stationary > N < rotor > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < rotating > N < rotor > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < flow > N < water > A < inside > $
+PP2 $ V < experience > N < torque > A < X > $
+PP3 $ V < rotate > N < rotor > A < x > $
+PP4 $ V < rotate > N < shaft > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Torque effect $
+PE3 $ Newton’s second law of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < pressure-difference > A < x > $
+I2 $ V < apply > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ Fluid pressure outside is greater than fluid pressure inside $
+O2 $ Rotor must be eccentric with respect to the casing $
+O3 $ Vanes must be initially held against the casing contour with the help of springs $
+O4 $ Presence of zero degree of freedom of rotation $
+}
+
+MPART
+{
+P1 $ water $
+P2 $ rotor $
+P3 $ shaft $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I2 O3 P2 >
+< A1 IS1 OS1 CS1 PP4 PE3 I2 O4 P3 >
+}
+
+FUNCTION
+
+$
+To convert hydraulic energy into mechanical energy.
+$
+
+
+STRUCTURE
+
+$
+Vane type hydraulic motor consists of a slotted rotor mounted inside the casing eccentrically. The rotor is mounted on the output shaft. The slots in the rotor have vanes that slide in the slots. The casing has inlet and exit ports.
+$
+
+BEHAVIOUR
+
+$
+Flow from the pump enters the inlet, forces the rotor and vanes to rotate, and passes out through the outlet. Motor rotation causes the output shaft to rotate. Since no centrifugal force exists until the motor begins to rotate, something, usually springs, must be used to initially hold the vanes against the casing contour.
+$
+
+ATTRIBUTE
+
+$
+
+The service life of a vane motor usually is shorter than that of a piston motor. Vane motors are available with displacements of 20 in.3/rev; some low-speed/high-torque models come with displacements to 756 in.3/rev. Except for the high-displacement, low-speed models, vane motors have limited low-speed capability.
+
+$
+
+
+
+PICTURE
+
+{
+ADB/DRIVE_MOTOR/VANE_TYPE_HYDRAULIC_MOTOR/01.GIF  $ 01.VANE TYPE HYDRAULIC MOTOR $    
+ADB/DRIVE_MOTOR/VANE_TYPE_HYDRAULIC_MOTOR/02.GIF  $ 02.VANE TYPE HYDRAULIC MOTOR $    
+
+}              
+
+CLIP
+
+{
+}
+
+SUMMARY
+
+$
+Hydraulic motors convert hydraulic energy into mechanical energy. Working of a vane type hydraulic motor is explained in steps as follows.
+
+Water (part) from the pump enters the casing through the inlet (physical phenomenon). This is due to pressure difference (input), which activates Bernoulli’s law (physical effect) and it is necessary that the pressure in the casing is lesser (organ).
+
+The rotor (part) experiences a torque (physical phenomenon). This is due to difference in pressure on either side of the vanes (input), which activates torque effect (input), and it is necessary that the rotor is eccentric with respect to the casing (organ).
+
+Rotor (part) rotates (physical phenomenon). This is due to the torque applied by the fluid (input), which activates Newton’s second law of motion (physical effect) and it is necessary that the vanes are initially held against the casing contour with the help of springs (organ).
+
+Output shaft (part) rotates (physical phenomenon). This is due to the torque applied by the rotor (input), which activates Newton’s second law of motion (physical effect) and it requires the presence of zero degree of freedom between the shaft and the rotor (organ).
+$
+
+ACTION
+
+$ 
+To convert hydraulic energy into mechanical energy 
+$
+
+STATE
+
+$
+Rotor is stationary
+
+Rotor is rotating
+$
+
+PHYPHENOMENON
+
+$
+Water enters the casing through the inlet
+
+Rotor experiences a torque
+
+Rotor rotates 
+
+Output shaft rotates
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law
+
+Torque effect
+
+Newton’s second law of motion
+$
+
+
+INPUT
+
+$
+Pressure difference
+
+Difference in pressure on either side of the vanes
+
+Torque applied by the fluid
+
+Torque applied by the rotor
+$
+
+ORGAN
+
+$
+Pressure in the casing is lesser
+
+Rotor must be eccentric with respect to the casing
+
+Vanes must be initially held against the casing contour with the help of springs
+
+Presence of zero degree of freedom between the shaft and the rotor
+$
+
+
+PARTS
+
+$
+Water
+
+Rotor
+
+Rotor
+
+Output-shaft
+$
+
+REFERENCES 
+
+$
+http://www.tpub.com/content/construction/14050/css/14050_235.htm
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+MACTION
+{
+A1 $ V < transmit > A < x > N < motion > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < driver > $
+PP2 $ V < pull > A < X > N < belt > $
+PP3 $ V < deliver > A < X > N < belt > $
+PP4 $ V < rotate > A < X > N < driven > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < driver > $
+I3 $ V < apply > A < tangential > N < force > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ tension in the belt $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ driver $
+P3 $ revolute pair $
+P4 $ driven $
+P5 $ belt $
+P6 $ belt pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P5  P6 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O2  P2  P5  P6 >
+< A1 IS1  OS1  CS1  PP4  PE2  I3  O2  P4  P5  P6 >
+
+
+}
+
+
+FUNCTION
+
+$
+The device can be used to transmit power from one shaft to another shaft by using simple pulleys and a belt or rope. In this case both the shafts rotate in the same direction.
+$
+
+
+STRUCTURE
+
+$
+This kinematic structure contains two pulleys and a belt or rope. The pulleys are mounted on two different shafts, which are parallel to each other. A flat pulley is used in case of belt drives and a grooved pulley in case of a rope drive or v-belt drive. The two pulleys are connected by a belt. As shown in the figure, links 1 & 2 are pulleys and link 3 is either a belt or a rope.
+$
+
+
+BEHAVIOUR
+
+$
+The pulley 1 gets torque from the shaft to which it is connected. The pulley pulls the belt wrapped around it because of the frictional force created between the shaft and the pulley. The belt in turn produces the tangential force at the rim of the second pulley. That tangential force creates a torque on the pulley so that the pulley rotates because of the torque and in turn it rotates the output shaft. The efficiency of the power transmitted depends on the angle of contact between the pulleys and the belt. 
+$
+
+
+PICTURE
+
+{
+ADB/POWERTRANS/POWERTRANS01/powertrans01.jpg		$ Simple Belt Drive $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+This device can be used to transmit power and motion from one shaft to another. This can be described as follows:
+
+The driver pulley (part) mounted on the input shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver pulley (organ).
+
+The belt or the rope (part) moves linearly (physical phenomenon). This is due to the rotation of the driver pulley (input), which activates the friction effect (physical effect) and requires the presence of friction between the belt or the rope and the pulley surface (organ).
+
+
+The driven pulley being mounted on the out put shaft  (part) rotates in the same direction as that of the driver pulley (physical phenomenon). This is due to the movement of the belt or rope (input), which activates the friction effect (physical effect) and requires the presence of tension in the belt and it also requires that the tight side of the belt is below and the slack side is above (organ).
+$
+
+
+
+
+ACTION
+$
+ 
+ This device can be used to transmit power and motion from one shaft to another.
+
+$
+STATE
+$
+
+rest
+
+rotation.
+
+$
+PHYPHENOMENON
+$
+
+The driver pulley mounted on the input shaft rotates.
+
+The belt or the rope moves linearly.
+ 
+The driven pulley rotates in the same direction as that of the driver pulley.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+
+
+$
+
+INPUT
+$
+
+The rotation of the input shaft.
+
+The rotation of the driver pulley.
+
+The movement of the belt or rope (input), which activates the friction effect.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the driver pulley.
+
+Presence of friction between the belt or the rope and the pulley surface.
+
+Presence of tension in the belt and it also requires that the tight side of the belt is below and the slack side is above.
+
+
+
+
+$
+
+PARTS
+$
+
+The driver pulley along with the input shaft forms a revolute pair with the frame.
+
+The belt or the rope forms a wrapping pair with the driver and driven pulleys 
+
+The driven pulley along with the out put shaft forms a revolute pair with the frame.
+
+
+
+
+
+$
+
+

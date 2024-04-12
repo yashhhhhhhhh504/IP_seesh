@@ -1,0 +1,239 @@
+
+
+MACTION
+{
+A1 $ V < scoop > N < ice-cream > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rotating > N < disk rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < rotating > N < disk rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the rotating disk $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < rack > A < X > $
+PP2 $ V < rotate > N < pinion > A < X > $
+PP3 $ V < rotate > N < shaft > A < x > $
+PP4 $ V < rotate > N < blade > A < rotating > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Newtonian laws of motion $
+PE4 $ Newtonian laws of motion $ 
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < rack > A < x > $
+I3 $ V < rotate > N < pinion > A < x > $
+I4 $ V < rotate > N < shaft > A < X > $
+}
+
+MORGAN
+{
+O1 $ the force applied enough to cause the motion $
+O2 $ the pitch of the rack and the pinion are appropriate $
+O3 $ zero degree of freedom between the shaft and the pinion $
+O4 $ zero degree of freedom between the shaft and the rotating blade $
+}
+
+MPART
+{
+P1 $ rack $
+P2 $ sliding pair $
+P3 $ frame $
+P4 $ pinion $
+P5 $ gear pair $
+P6 $ shaft $
+P7 $ rotating disk $
+P8 $ revolute pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 P6 P8 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P3 P7 P8 >
+}
+
+
+
+
+
+FUNCTION
+
+$
+This device is used to take portion of the ice cream from the mass and to put it on to the cone or cup.
+$
+
+
+STRUCTURE
+
+$
+It consists of a flexible beam and rack and pinion arrangement.
+$
+BEHAVIOUR
+
+$
+The force is applied on to the rack and pinion arrangement to operate which in turn rotates the rotating blade. 
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/ICE_CREAM_SCOOP/01.JPG		$ ICE CREAM SCOOP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to take a scoop of ice cream. This can be interpreted as a change of state from rest to rotation of the rotating blade. This can be described as follows:
+
+The rack (part) is moved (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied enough to cause the motion (organ).
+
+The pinion (part) rotates (physical phenomenon). This is due to the movement of the rack (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the pitch of the rack and the pinion are appropriate (organ).
+
+The shaft (part) rotates (physical phenomenon). This is due to the rotation of the pinion (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the shaft and the pinion (organ).
+
+The rotating blade (part) rotates (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the rotating blade (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To scoop ice cream.
+$
+
+STATE
+
+$
+The rotating disk is at rest.
+
+The rotating disk is rotating.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The rack is moved.
+
+The pinion rotates.
+
+The shaft rotates.
+
+The rotating blade rotates.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the rack.
+
+The rotation of the pinion.
+
+The rotation of the shaft.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the force applied enough to cause the motion.
+
+Necessary that the pitch of the rack and the pinion are appropriate.
+
+Presence of zero degree of freedom between the shaft and the pinion.
+
+Presence of zero degree of freedom between the shaft and the rotating blade.
+
+
+$
+
+
+
+PARTS
+$
+Rack forms a sliding pair with the frame.
+
+Pinion forms a gear pair with the rack.
+
+The shaft forms a revolute pair with the frame.
+
+The rotating disk forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

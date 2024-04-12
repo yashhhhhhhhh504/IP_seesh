@@ -1,0 +1,217 @@
+MACTION
+{
+A1 $ V < transmit > N < motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ output gear from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate >  N < gear > A < input > $
+PP2 $ V < push >  N < tooth > A < output > $
+PP3 $ V < rotate >  N < gear > A < output > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < torque > A < X > $
+I2 $ V < X >  N < inertia > A < rotational > $
+I3 $ V < X >  N < tooth movement > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the input gear $
+O2 $ tooth on the input gear engages with the tooth on the output gear $
+O3 $ teeth are cut on a cylindrical surface $
+
+}
+
+MPART
+{
+P1 $ input gear $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ input tooth $
+P5 $ output tooth $
+P6 $ higher pair $
+P7 $ output gear $
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >         
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P7 > 
+}
+
+
+
+
+FUNCTION
+
+$
+The gear wheel is a basic mechanism. Gears operate in pairs to transmit and modify, rotary motion and torque (turning force) without slip.
+$
+
+
+BEHAVIOUR
+
+$
+Spur gears are used to connect two shafts that are parallel to each other. When two spur gears of different sizes mesh together, the teeth of one gear engages with the teeth on a mating gear. The larger gear is called a wheel, and the smaller gear is called a pinion. When two spur gears are meshed the gears rotate in opposite directions. If the teeth on a pair of mating gears are arranged on circles, i.e., if the gears are toothed wheels, the ratios of the rotary speeds and torques of the shafts are constant. If the teeth are arranged on noncircular bodies the speed and torque ratios vary. It may be necessary to use several gear pairs in series (a train) to obtain a large ratio. In a simple gear train of two spur gears, the input motion and force are applied to the driver gear. The output motion and force are transmitted by the driven gear. The driver gear rotates the driven gear without slipping. 
+The wheel or the pinion can also be the driver gear. It depends on the exact function the designer wishes the mechanism to fulfill.  
+If the smaller of a gear pair (the pinion) is on the driving shaft, the pair acts to reduce speed and to amplify torque. Conversely if the pinion is on the driven shaft, the pair acts as a speed increaser and a torque reducer.
+If the driven gear has twice as many teeth as the pinion, the torque of the driven gear is twice the pinion torque, whereas the pinion speed is twice the speed of the driven gear.
+
+To transmit motion smoothly, without backlash, and with a non-varying speed ratio at every instant, the contacting surfaces of gear teeth must be carefully shaped to a specific profile. For each of these arrangements of the shafts, gears having appropriate capabilities can be made. 
+
+The second animation  illustrates a simple gear train being rotated and the detailed side view then shows the effects of backlash.
+$
+
+
+STRUCTURE
+
+$
+A gear is a wheel with accurately machined teeth around its edge. A shaft passes through its center and the gear may be geared to the shaft. Spur gears are gears with teeth that are straight lengthwise and parallel to the shaft axes. Gears are used in groups of two or more. A group of gears is called a gear train. Based on the manner in which the gears are meshed with each other, the gears train may be a simple gear train or a compound gear train. These two types of gear trains are shown alongside. The gears in a train are arranged so that their teeth closely interlock or mesh. The teeth on meshing gears are the same size so that they are of equal strength. Also, the spacing of the teeth is the same on each gear.
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/02.GEAR/SPUR/spur0.jpg 	  	$ 01.Spur gear 		$
+ADB/BASICCOMP/02.GEAR/SPUR/gearterms.jpg  	$ 02.Gear Terminology	$
+ADB/BASICCOMP/02.GEAR/SPUR/spur2.gif 	  	$ 03.Spur gear 		$
+ADB/BASICCOMP/02.GEAR/SPUR/driver_driven.gif   	$ 04.Spur gear 		$
+ADB/BASICCOMP/02.GEAR/SPUR/simple_train.gif	$ 05.Simple train	$
+ADB/BASICCOMP/02.GEAR/SPUR/compound_train.gif	$ 06.Compound train	$
+}
+
+
+CLIP
+
+{
+ADB/BASICCOMP/02.GEAR/SPUR/spur1.avi	 $ 01.Spur gear	$
+ADB/BASICCOMP/02.GEAR/SPUR/spur2.mpeg	 $ 02.Spur gear	$
+}
+
+SUMMARY
+$
+The transmit power between two parallel shafts. This can be interpreted as a change of state from rest to rotation of the output gear. This can be described as follows:
+
+The input gear (part) mounted on the input shaft rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input gear (organ).
+
+A tooth (part) on the input gear pushes the tooth on the output gear (physical phenomenon). This is due to the rotational inertia of the input gear (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the tooth on the input gear engages with the tooth on the output gear (organ).
+
+
+The output gear (part) mounted on the output shaft rotates (physical phenomenon). This is due to the movement of the tooth (input), which activates lever effect (physical effect) and is necessary that the teeth are cut on a cylindrical surface (organ).
+
+
+Now, the next pair of teeth engages and the same process repeats and this leads to the continuous rotation of output gear.
+$
+
+ACTION
+
+$ 
+ To transmit motion between two parallel shafts.
+$
+
+STATE
+
+$
+The output gear is at rest.
+
+The output gear is rotating.
+$
+
+PHYPHENOMENON
+
+$
+The input gear mounted on the input shaft rotates.
+
+A tooth on the input gear pushes the tooth on the output gear.
+
+The output gear mounted on the output shaft rotates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+Rotational inertia of the input gear.
+
+Movement of the tooth.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the input gear.
+
+Necessary that the tooth on the input gear engages with the tooth on the output gear.
+
+Necessary that the teeth are cut on a cylindrical surface.
+$
+
+
+
+PARTS
+
+$
+The input gear forms a revolute pair with the frame.
+
+The tooth on the input gear forms a higher pair with the tooth on the output gear.
+
+The output gear forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+

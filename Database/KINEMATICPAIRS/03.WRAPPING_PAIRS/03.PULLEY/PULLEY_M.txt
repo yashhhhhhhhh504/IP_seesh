@@ -1,0 +1,83 @@
+MACTION
+{
+A1 $ V < lift > AV < X > N < objects > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N  < weight level> $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < > A < high > N  < weight level > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from low level to high level.  $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > AV < X > N < rope > AJ < X > $
+PP2 $ V < rotate > AV < X > N < pulley > AJ < X > $
+PP3 $ V < lift  > AV < X > N < weight > AJ < > $
+PP4 $ V < > AV < X > N < > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion.   $
+PE2 $ Friction effect.  $
+PE3 $ Lever effect. $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < apply > AV < X > N < force> AJ < pull > $
+I2 $ V < move > AV < X > N < rope > AJ < > $
+I3 $ V < rotate > AV < X > N < pulley > AJ < > $
+I4 $ V < > AV < X > N < > AJ < X > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ necessary that the rope has some inertia. $
+O2 $ Presence of friction surface in between the pulley and the rope.  $
+O3 $ requires the pulley to be fixed at its center. $
+O4 $ $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < rope > AJ < > $
+P2 $ V < X > AV < X > N < pulley > AJ < > $
+P3 $ V < X > AV < X > N < sliding-pair > AJ < > $
+P4 $ V < X > AV < X > N < support > AJ < X > $
+P5 $ V < X > AV < X > N < revolute-pair > AJ < > $
+P6 $ V < X > AV < X > N < weight > AJ < X > $
+P7 $ V < X > AV < X > N < fixed-pair > AJ < X > $
+
+
+
+}
+LINKS
+
+< IS1 OS1 CS1 A1 PP1 PE1 I1 O1 P1 P2 P3 >
+< IS1 OS1 CS1 A1 PP1 PE1 I1 O1 P2 P4 P5 >
+< IS1 OS1 CS1 A1 PP1 PE1 I1 O1 P1 P6 P7  >
+
+
+
+

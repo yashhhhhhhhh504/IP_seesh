@@ -1,0 +1,83 @@
+SUMMARY
+$
+This mechanism can be used to vary the space occupied by the 
+Cylinder.
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+To change area.
+$
+
+STATE
+
+$
+It is occupying less area.
+
+It is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Expand the expansion grills and hence increase the area occupied by the cylinder.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+This is due to the force applied on it.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the material of the cylinder.
+
+$
+
+
+
+PARTS
+$
+Expansion grill.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

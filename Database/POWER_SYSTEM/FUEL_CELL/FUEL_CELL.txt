@@ -1,0 +1,235 @@
+
+
+MACTION
+{
+A1 $ V < convert > N < energy > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < chemical-energy > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < electrical-energy > $
+} 
+MCHANGESTATE
+{
+CS1 $ from chemical energy to electrical energy $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < form > N < carbon-ion > A < X > $
+PP2 $ V < form > N < oxygen-ion > A < X > $
+PP3 $ V < flow > N < current > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Chemical effect $
+PE2 $ Ohm’s law $
+}
+
+MINPUT
+{
+I1 $ V < x > N < chemical-reaction > A < x > $
+I2 $ V < x > N < potential-difference > A < x > $
+}
+
+MORGAN
+{
+O1 $ Temperature should be 1000-1100 deg C $
+O2 $ Wire should be conductive $
+}
+
+MPART
+{
+P1 $ Carbon ion $
+P2 $ Oxygen ion $
+P3 $ Current $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O1 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O2 P3 >
+}
+FUNCTION
+
+$
+Fuel cell is a device which converts chemical energy in to mechanical energy.
+$
+
+
+STRUCTURE
+
+$
+Fuel cell consists of a carbon rod, molten silver and soda.
+$
+BEHAVIOUR
+
+$
+When carbon rod is dissolved into soda and carbon ion is formed. Carbon leaves four electrons into carbon rod and dissolves in soda as carbon ion. Cathode consists of molten silver and oxygen is supplied from outside and oxygen takes two electron. Carbon rod is negatively charged and the silver is positively charged so there is some potential difference. If one wire connects the cathode and anode then current flows. Carbon ion reacts with oxygen ion and forms carbon di oxide.
+
+$
+
+ATTRIBUTE
+$
+A typical fuel cell produces about 0.86 volts. To create enough voltage, the cells are layered and combined in Series and parallel circuits to form a fuel cell stack. The number of cells used is usually greater than 45 and varies with design. A cell running at 0.6V has an efficiency of about 50%, meaning that 50% of the available energy content of the hydrogen is converted into electrical energy; the remaining 50% will be converted into heat. For a hydrogen cell the second law efficiency is equal to cell voltage divided by 1.23, when operating at standard conditions. This voltage varies with fuel used, and quality and temperature of the cell. The difference between enthalpy and Gibbs free energy (that cannot be recovered) will also appear as heat.
+Fuel cell vehicles running on compressed hydrogen may have a power-plant-to-wheel efficiency of 22% if the hydrogen is stored as high-pressure gas, and 17% if it is stored as liquid hydrogen.
+Fuel cells cannot store energy like a battery, but in some applications, such as stand-alone power plants based on discontinuous sources such as solar or wind power, they are combined with electrolyzers and storage systems to form an energy storage system. The overall efficiency (electricity to hydrogen and back to electricity) of such plants (known as round-trip efficiency) is between 30 and 50%, depending on conditions. Since fuel cells operate silently, they reduce noise pollution as well as air pollution and the waste heat from a fuel cell can be used to provide hot water or space heating for a home or office.
+$
+
+
+
+
+PICTURE
+
+{
+ADB/POWER_SYSTEM/FUEL_CELL/01.GIF            $ 01.FUEL CELL $
+ADB/POWER_SYSTEM/FUEL_CELL/02.GIF            $ 02.FUEL CELL $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Fuel cell is an electro chemical energy conversion device. It coverts chemical energy into electrical energy. This process can be described as:
+
+When carbon rod (anode) is dissolved into soda and carbon ion (part) is formed (physical phenomenon). This is due to chemical reaction between carbon and soda (input) which activates chemical effect (physical effect) and it requires that temperature should be 1000-1100 deg C (organ).
+
+Carbon leaves four electrons into carbon rod and dissolves in soda as carbon ion.
+
+Cathode consists of molten silver and oxygen is supplied from outside and oxygen (part) ion is formed (physical phenomenon). This is due to chemical reaction between oxygen and silver (input) which activates chemical effect (physical effect) and it requires that temperature should be 1000-1100 deg C (organ).
+
+Carbon rod is negatively charged and the silver is positively charged so there is some potential difference. If one wire connects the cathode and anode then current (part) flows (physical phenomenon). This is due to potential difference (input) which activates Ohm’s law (physical effect) and it requires that the wire should be conductive (organ). 
+
+Carbon ion reacts with oxygen ion and forms carbon di oxide.
+$
+
+ACTION
+
+$ 
+ To convert energy
+$
+
+STATE
+
+$
+Chemical energy
+
+Electrical energy
+$
+
+
+
+PHYPHENOMENON
+
+$
+Carbon rod is formed
+
+Oxygen ion is formed
+
+Current flows
+$
+
+
+PHYEFFECT
+
+$
+Chemical effect
+
+Ohm’s law
+$
+
+
+INPUT
+
+$
+
+Chemical reaction between carbon and soda
+
+Chemical reaction between oxygen and silver
+
+Potential difference
+$
+
+
+ORGAN
+
+$
+Temperature should be 1000-1100 deg C
+
+Wire should be conductive
+$
+
+
+
+PARTS
+
+$
+
+Carbon ion
+
+Oxygen ion
+
+Current
+$
+
+REFERENCES 
+
+$
+http://en.wikipedia.org/wiki/Fuel_cell
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

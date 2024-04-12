@@ -1,0 +1,85 @@
+SUMMARY
+$
+This mechanism can be used for deployment. This can be described as follows:
+
+The piston (part) reciprocates in the cylinder (physical phenomenon). This is due to the pneumatic force applied on it (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth sliding surface between the cylinder and the piston (organ).
+
+The links (part) connected to the piston rotates with respect to the piston (physical phenomenon). This is due to the movement of the piston (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links and the piston (organ). 
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The output links are occupying less space.
+
+The output links are occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston reciprocates in the cylinder.
+
+The links connected to the piston rotates with respect to the piston.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Pneumatic force applied on it.
+
+Movement of the piston.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the cylinder and the piston.
+
+Presence of one degree of freedom between the links and the piston.
+
+$
+
+
+
+PARTS
+$
+The piston forms a sliding pair with the cylinder.
+
+The output links forms a revolute pair with the piston.
+
+
+
+$
+
+
+
+
+
+
+

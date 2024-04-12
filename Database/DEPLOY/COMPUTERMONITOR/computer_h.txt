@@ -1,0 +1,72 @@
+SUMMARY
+$
+The orientation of the monitor is adjustable.
+$
+
+ACTION
+
+$ 
+To change the orientation of the monitor.
+$
+
+STATE
+
+$
+The orientation of the monitor is changed from one direction to another.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the monitor.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Torque.
+
+$
+
+
+ORGAN
+
+$
+Presence of a spherical joint between the monitor and its base.
+$
+
+
+
+PARTS
+$
+Monitor.
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

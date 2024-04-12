@@ -1,0 +1,103 @@
+SUMMARY
+$
+This device can be used to trim grass. It can be interpreted as a change of state from rest to oscillation. This device can be described as follows:
+
+The ½ inch pinion gear (part) rotates 
+(Physical phenomenon). This is due to rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the pinion gear and the input shaft (organ).
+
+The large spur gear (part) rotates (physical phenomenon). This is due to the rotation of the pinion gear (input), which activates the law “no bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the large spur gear and the Pinion gear (organ).
+
+The eccentric pin (part) on the large spur gear oscillates (physical phenomenon). This is due to the rotation of the spur gear (input), which activates the Newtonian law of motion (physical effect) and requires the presence of zero degree of freedom between the pin and the large spur gear (organ).
+
+
+The upper blade (part) oscillates (physical phenomenon). This is due to the oscillation of pin (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the pin and the upper blade (organ).
+
+$
+
+ACTION
+{
+$ 
+ To trim grass.
+$
+}
+STATE
+{
+$
+Rest
+$
+Oscillation.
+$
+}
+PHYPHENOMENON
+{
+$
+The ½ inch pinion gear rotates.
+
+$
+The large spur gear rotates.
+$ 
+The eccentric pin on the large spur gear oscillates.
+$
+The upper blade oscillates.
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+No bodies can occupy the same space at the same time.
+$
+
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+Rotation of the pinion gear.
+$
+Rotation of the spur gear.
+$
+Oscillation of pin.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the pinion gear and the input shaft.
+$
+Presence of contact between the large spur gear and the 
+Pinion gear.
+$
+Presence of zero degree of freedom between the pin and the large spur gear.
+$
+Presence of one degree of freedom between the pin and the upper blade.
+$
+
+}
+
+STUCTURE1
+{
+$
+The pinion gear forms a revolute pair with the frame.
+$
+The spur gear forms a higher pair with the pinion gear. 
+$
+The eccentric pin forms a fixed pair with spur gear.
+$
+The upper blade forms a revolute pair with the frame.
+$
+
+$
+}
+
+
+
+
+
+

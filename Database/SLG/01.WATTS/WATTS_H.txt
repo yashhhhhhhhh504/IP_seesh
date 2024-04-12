@@ -1,0 +1,48 @@
+Summary
+{
+This mechanism generates an approximate straight line motion  in the following steps:
+
+Arm 1 is connected to the frame by a revolute pair (Structure). Arm 1 is made to oscillate (Physical Phenomenon) by applying a torque to it (Input), activating Newtonian Laws of Motion (Physical Effect). This oscillation occurs as there exists a single degree of freedom of motion in the direction of motion (Organ)
+
+Arm 1 is attached to one end of the connecting link by a revolute joint, while the other end forms a revolute pair with Arm 2 (Structure). The oscillation of Arm 1 (Input) activates Newtonian Laws of motion (Physical Effect) resulting in the oscillation of Arm 2 (Physical Phenomenon) made possible due to the connecting link (Organ)
+
+This combined oscillation (Input) activated by Newtonian Laws of Motion (Physical Effect) result in the tracing point on the connecting link describing an almost straight line along the entire stroke (Physical Phenomenon). This is due to the position of the tracing point (Organ) and the fact that the two arms are of equal length (Structure)
+}
+
+ACTION
+{
+$ This mechanism generates an approximate straight line motion $
+}
+
+PHYPHENOMENON
+{
+$ The oscillation of Arm 1 $
+$ The oscillation of Arm 2 $
+$ The tracing point on the connecting link describes a straight line $
+}
+
+PHYEFFECT
+{
+$ Newtonian laws of motion $
+}
+
+INPUT
+{
+$ A torque is applied to Arm 1 $
+$ The oscillation of Arm 1 $
+}
+
+ORGAN
+{
+$ 1 degree of freedom of motion between the two bodies in the direction of motion $
+$ The connecting link $
+$ The position of the tracing point $
+}
+
+STUCTURE
+{
+$ Arm 1 forms a revolute pair with the frame $
+$ Connecting link forms a revolute joint with Arm 1 and Arm 2 $
+$ Arm 2 forms a revolute pair with the frame $
+$ If the two arms are of equal length, the tracing point describes a symmetrical figure 8 with an almost straight line throughout the stroke length $
+}

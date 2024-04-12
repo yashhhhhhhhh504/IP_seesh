@@ -1,0 +1,101 @@
+SUMMARY
+$
+The mechanism is called 'Double Link Reverser' and is used to transmit power between two parallel shafts, with a small center distance. It can be interpreted as a change of state from counter clockwise rotation to clockwise rotation. This can be described as follows:
+
+The input disk (part) rotates continuously in the clockwise direction (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input disk and the input shaft (organ).
+
+The link A (part) rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the pin mounted on the input disk (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the pin and the link A (organ).
+
+The link B (part) rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the gear (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of contact between the Gears (organ).
+
+Now the striking pin (part) slips over the link A and now strikes the link B (physical phenomenon). This is due to the rotation of the disk (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the length of the link A is lesser than the distance between the pin and the center (organ).
+
+The link B (part) now rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the pin on the disk (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence zero degree of freedom between the link B and the pin (organ).
+
+$
+
+ACTION
+
+$ 
+ To reverse direction for every 180 degree of revolution.
+$
+
+STATE
+
+$
+The output link is rotating in the counter-clockwise direction.
+
+The output link is rotating in the clockwise direction.
+$
+
+PHYPHENOMENON
+
+$
+The input disk rotates continuously in the clockwise direction.
+
+The link A rotates in the clockwise direction.
+ 
+The link B rotates in the counter clockwise direction.
+
+Now the striking pin slips over the link A and now strikes the link B.
+
+The link B now rotates in the clockwise direction.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The torque applied on it.
+
+The rotation of the pin mounted on the input disk.
+
+The rotation of the gear.
+
+The rotation of the disk.
+
+The rotation of the pin on the disk.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input disk and the input shaft.
+
+Presence of contact between the pin and the link A.
+
+Presence of contact between the Gears.
+
+Necessary that the length of the link A is lesser than the distance between the pin and the center.
+
+Presence zero degree of freedom between the link B and the pin.
+$
+
+
+
+PARTS
+$
+The disk forms a revolute pair with the frame.
+
+The link A forms a revolute pair with the frame.
+
+The link B forms a revolute pair with the frame.
+
+The striking pin forms a fixed pair with the disk.
+
+
+
+$
+
+

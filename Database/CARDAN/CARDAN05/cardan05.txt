@@ -1,0 +1,194 @@
+MACTION
+{
+A1 $ V < generate > A < straight-line > N < motion > $
+
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > A < X > N < link-1 > $
+PP2 $ V < rock > A < X > N < segment > $
+PP3 $ V < reciprocte > A < X > N < valve > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian Laws of motion $
+PE2 $ two bodies cannot occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < provide > A < X > N < torque > $
+I2 $ V < oscillate > A < X > N < link-1 > $
+I3 $ V < rock > A < X > N < segment > $
+}
+
+MORGAN
+{
+O1 $ eccentricity of the drive $
+O2 $ line contact: segment fixed-circle $
+O3 $ the radius of the circular segment is half of the circular surface $
+}
+
+MPART
+{
+P1 $ input-shaft $
+P2 $ link $
+P3 $ segment $
+P4 $ fixed pair $
+P5 $ revolute pair $
+P6 $ fixed-circle $
+P7 $ cam pair $
+P8 $ gear  $
+P9 $ valve-rod $
+P10 $ prismatic pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P3  P5 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P3  P6  P7 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O2  P3  P6  P8 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P6  P9  P10 >
+}
+
+
+
+FUNCTION
+
+$
+Invented by Girolamo Cardano in the 16th century the Cardan gear is a way of converting rotary motion into straight line motion. This mechanism can be used to provide reciprocating motion along a straight line to operate a valve.
+$
+
+
+STRUCTURE
+
+$
+An eccentric drive gives rotation to the input rod, which is connected to it. The end of this rod is connected to a circular segment. The segment rocks on another circular surface. The radius of the circular segment is half that of the radius of the circular surface on which it rocks. The input and output rods are each attached to points on the small circle, that is, the ends of the small circular segment. The output rod, which has a valve attached to it, reciprocates in a slot cut in the larger circular segment.
+$
+
+
+BEHAVIOUR
+
+$
+A valve drive demonstrates how the Cardan principle can be applied. A segment of the smaller circle rocks back and forth on the circular segment whose radius is twice as large. Both the points at which the input and output rods are attached to the small circle segment, describe straight lines. The guide of the valve rod prevents the rocking member from slipping. 
+$
+
+
+PICTURE
+
+{
+ADB/CARDAN/CARDAN05/cardan05.jpg	$ Cardan Gear	$
+}
+
+
+CLIP
+
+{
+ADB/CARDAN/CARDAN05/cardan05.avi	$ Cardan Gear	$
+}
+
+SUMMARY
+$
+This mechanism can be used to generate straight-line motion. This can be interpreted as a change of state from rest to straight-line motion. This can be described as follows:
+
+The rod 1 (part) rotates eccentrically about the hinged point (physical phenomenon). This is due to the torque applied (input) by the input shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the rod (organ).
+
+The circular segment (part) rocks on another circular surface (physical phenomenon). This is due to the rotation of the input rod (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the rod and the circular segment (organ).
+
+The ends (part) of the circular segment move along a straight-line motion (physical phenomenon). This is due to the rocking motion of the circular segment (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the radius of the circular segment is half of the circular surface (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To generate straight-line motion.
+$
+
+STATE
+
+$
+The end connected to the output link moves along a straight-line motion.
+
+The end connected to the input link moves along a straight-line motion
+
+$
+
+PHYPHENOMENON
+
+$
+The rod 1 rotates eccentrically about the hinged point.
+
+The circular segment rocks on another circular surface.
+ 
+The ends of the circular segment move along a straight-line motion.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of the input rod.
+
+The rocking motion of the circular segment.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the rod.
+
+Presence of one degree of freedom between the rod and the circular segment.
+
+Necessary that the radius of the circular segment is half of the circular surface.
+
+$
+
+
+
+PARTS
+$
+The input rod forms a revolute pair with the frame.
+
+The circular segment forms a revolute pair with the input rod.
+
+The end connected to output link forms a sliding pair with the guide.
+
+$
+
+
+
+

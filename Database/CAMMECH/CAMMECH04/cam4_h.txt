@@ -1,0 +1,104 @@
+SUMMARY
+$
+This mechanism can be used to convert rotary motion into reciprocating motion. The whole process can be accomplished in a series of steps as described below:
+	
+
+The follower (part) that is mounted on the input shaft rotates continuously (physical phenomenon). This is due to the torque (input) applied by the input shaft, which activates the Newtonian laws of motion (physical effect) and requires that there is zero degree of freedom between input shaft and the crank (organ).
+
+The pin (part) of the follower slides (physical phenomenon) continuously in the grooved cam. This is due to the rotation (physical phenomenon) of the follower, which activates the Newtonian laws (physical effect) and requires that there is zero degree of freedom between the follower and pin (organ).
+
+The grooved cam (part) oscillates about fixed pivot (physical phenomenon). This is due to the sliding motion (input) of the pin of the follower, which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a proper profile of the grooved cam (organ).
+
+The lever (part) oscillates with respect to the grooved cam
+(Physical phenomenon). This is due to the oscillation (input) of the grooved lever, which activates Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the grooved cam and the lever (organ).
+
+The slide (part) reciprocates (physical phenomenon). This is due to the oscillation (input) of the lever, which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between slide and the lever (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ Using mechanism rotary motion can be converted into reciprocating motion.
+$
+}
+STATE
+{
+$
+The absence of input torque at the input shaft.
+$
+The presence of input torque at the input shaft.
+$
+}
+PHYPHENOMENON
+{
+$
+The follower mounted on the input shaft rotates continuously.
+$
+The pin of the follower slides continuously in the grooved cam.
+$ 
+The grooved cam oscillates continuously about the fixed pivot. 
+$
+The lever oscillates continuously with respect to the grooved cam.
+$
+The slide reciprocates continuously.
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+No two bodies can occupy the same space at the same time.
+$
+
+$
+}
+
+INPUT
+{
+$
+Torque applied by the input shaft.
+$
+Rotation of the follower.
+$
+Sliding motion of the follower.
+$
+The oscillation of the grooved cam.
+$
+The oscillation of the lever with respect to the grooved cam.
+$
+}
+
+ORGAN
+{
+$
+Zero degree of freedom between the input shaft and the follower.
+$
+Zero degree of freedom between the follower and pin in the direction of motion.
+$
+Proper profile of the grooved cam.
+$
+Presence of one degree of freedom between the lever and the grooved cam.
+$
+Presence of one degree of freedom between slide and the lever. 
+}
+
+STUCTURE1
+{
+$
+The follower along with the input shaft forms a revolute pair with the frame. 
+$
+The pin of the follower forms a sliding pair with the grooved cam.
+$
+The grooved cam forms a revolute pair with the fixed pivot.
+$
+The lever forms a revolute pair with the grooved cam.
+$
+the slide forms a sliding pair with the frame.
+$
+}
+

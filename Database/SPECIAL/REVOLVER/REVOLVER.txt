@@ -1,0 +1,311 @@
+
+MACTION
+{
+A1 $ V < fire > N < X > A < bullet > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < projectile > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to projectile motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < trigger > A < x > $
+PP2 $ V < move > N < hammer > A < backward > $
+PP3 $ V < compress > N < spring > A < X > $
+PP4 $ V < rotate > N < pawl > A < X > $
+PP5 $ V < rotate > N < ratchet > A < X > $
+PP6 $ V < rotate > N < cylinder > A < X > $
+PP7 $ V < stop > N < cylinder > A < X > $
+PP8 $ V < expand > N < spring > A < X > $
+PP9 $ V < hit > N < primer > A < X > $
+PP10 $ V < move > N < bullet > A < ahead > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Hooks law $
+PE3 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < X > $
+I2 $ V < move > N < trigger > A < X > $
+I3 $ V < move > N < hammer > A < X > $
+I4 $ V < move > N < pawl > A < X > $
+I5 $ V < rotate > N < ratchet > A < X > $
+I6 $ V < move > N < pawl > A < X > $
+I7 $ V < move > N < trigger > A < X > $
+I8 $ V < expand > N < spring > A < X > $
+I9 $ V < develop > N < pressure > A < gas > $
+}
+
+MORGAN
+{
+01 $ Necessary that the trigger forms a revolute pair with the frame $
+O2 $ Presence of contact between the hammer and the trigger $
+O3 $ Requires that the spring have some stiffness $
+04 $ Presence of one degree of freedom between the trigger and the pawl $
+O5 $ presence of contact between the ratchet and the pawl $
+O6 $ Presence of zero degree of freedom between the ratchet and the cylinder $
+O7 $ requires that the pawl should lodge a small depression in the cylinder $
+O8 $ Presence of stiffness in the spring $
+O9 $ requires that the firing pin on the hammer extends through the body of the gun $
+O10 $ requires the gas pressure to act in the forward direction $
+
+
+
+}
+
+MPART
+{
+P1 $ trigger $
+P2 $ hammer $
+P3 $ pawl $
+P4 $ ratchet $
+P5 $ cylinder $
+P6 $ bullet $
+P7 $ revolute-pair $
+P8 $ sliding-pair $
+P9 $ frame $
+P10 $ spring $
+P11 $ fixed pair $
+P12 $ ratchet-pawl pair $
+P13 $ barrel $
+
+
+}
+LINK
+{
+
+ < A1 IS1 OS1 CS1 PP1 PE3 I1 O1 P1 P7 P9 >
+ < A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P7 >
+ < A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P2 P10 P11 >
+ < A1 IS1 OS1 CS1 PP4 PE1 I2 O4 P1 P3 P7 >
+ < A1 IS1 OS1 CS1 PP5 PE1 I4 O5 P3 P4 P12 >
+ < A1 IS1 OS1 CS1 PP6 PE3 I5 O6 P4 P5 P11 >
+ < A1 IS1 OS1 CS1 PP7 PE1 I6 O7 P3 P7 P9 >
+ < A1 IS1 OS1 CS1 PP8 PE2 I7 O8 P9 P10 P11 >
+ < A1 IS1 OS1 CS1 PP9 PE1 I8 O9 P2 P7 P9 >
+ < A1 IS1 OS1 CS1 PP10 PE3 I9 O10 P6 P8 P13 >
+
+}
+
+FUNCTION
+
+$
+The revolver was invented by Samuel Colt, who was inspired by a capstan mechanism on a ship. A revolver is a multishot firearm, usually a handgun, in which the rounds are held in a revolving cylinder that rotates to fire them through a single barrel. 
+$
+
+
+STRUCTURE
+
+$
+
+This gun has a revolving cylinder, with six breeches for six cartridges. Cartridges are a combination of a projectile (the bullet), a propellant (gunpowder, for example) and a primer (the explosive cap), all contained in one metal package. In a modern revolver, cartridges are loaded into six chambers, each of which can be positioned in front of the gun's barrel. A spring-loaded hammer is positioned on the other side of the cylinder, in line with the barrel. The inside of the barrel is lined with spiralling grooves, which spin the bullet to give it stability. A longer barrel improves stability, since it spins the bullet for longer. Extending the barrel also increases the speed of the bullet, since the gas pressure accelerates the bullet for a longer period of time.
+$
+
+
+BEHAVIOUR
+
+$
+The basic idea of the gun is to cock the hammer back, line up a new cartridge in between the hammer and the barrel and then release the hammer by pulling a trigger. The spring throws the hammer forward so it hits the primer. The primer explodes, igniting the propellant, which drives the bullet down the barrel.
+
+When trigger on a revolver is pulled, several things happen: 
+Initially, the trigger lever pushes the hammer backward. 
+As it moves backward, the hammer compresses a metal spring in the gun stock (the handle). 
+At the same time, a pawl attached to the trigger pushes on a ratchet to rotate the cylinder. This positions the next breech chamber in front of the gun barrel. 
+Another pawl lodges in a small depression on the cylinder. This stops the cylinder in a particular position so it is perfectly lined up with the barrel. 
+When the trigger lever is pushed all the way back, it releases the hammer. 
+The compressed spring drives the hammer forward. The firing pin on the hammer extends through the body of the gun and hits the primer. The primer explodes, igniting the propellant. 
+The propellant burns, releasing a large volume of gas. The gas pressure drives the bullet down the barrel. The gas pressure also causes the cartridge case to expand, temporarily sealing the breech. All of the expanding gas pushes forward rather than backward.
+To reload the gun, the shooter swings the cylinder out and pushes on the ejector rod to operate the extractor in the middle of the cylinder. The extractor grabs the base of the spent shells and removes them from the cylinders. 
+To reload, the shooter can place individual cartridges into the chambers or load six at once with a speed loader (basically, a small metal holder with cartridges secured in the right position). 
+
+In double-action revolvers, the shooter can either pull the trigger to cock and fire or pull the hammer back ahead of time. The advantage of cocking the hammer first is that the trigger moves more easily when it is time to fire.
+
+Six shots can be loaded at a time, and trigger needs to be pulled only once to fire. However it’s still fairly limited: the trigger has to be pulled for every shot, and needs to be reloaded after six shots. The empty shells also have to be ejected from the cylinders manually. 
+$
+
+PICTURE
+{
+ADB/SPECIAL/REVOLVER/revolver01.jpg	$ 01. Revolver	$
+ADB/SPECIAL/REVOLVER/firingpin.jpg	$ 02. Firing Pin $
+ADB/SPECIAL/REVOLVER/ratchet.jpg	$ 03. Ratchet	$
+ADB/SPECIAL/REVOLVER/bullet.jpg	        $ 04. Bullet	$
+ADB/SPECIAL/REVOLVER/working.jpg	$ 05. Working	$
+ADB/SPECIAL/REVOLVER/revolvers.jpg	$ 06. Revolvers	$
+}
+
+
+CLIP
+{
+}
+
+SUMMARY
+$
+A revolver is a multishot firearm, usually a handgun, in which the rounds are held in a revolving cylinder that rotates to fire them through a single barrel. This can be described as follows:
+
+The trigger (part) moves backward (physical phenomenon). This is due to the force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that there is one degree of freedom between the trigger and the frame (organ).
+
+The hammer (part) moves backward (physical phenomenon). This is due to the movement of the trigger (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the hammer and the trigger (organ).
+
+The spring (part) present in the handle of the revolver is compressed (physical phenomenon). This is due to the movement of the hammer (input), which activates the hooks law (physical effect) and requires that the spring have some stiffness (organ).
+
+The pawl (pawl) rotates (physical phenomenon). This is due to the movement of the trigger (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the trigger and the pawl (organ).
+
+The ratchet (part) rotates (physical phenomenon). This is due to the movement of the pawl (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the ratchet and the pawl (organ).
+
+The cylinder (part) rotates (physical phenomenon). This is due to the rotation of the ratchet (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the ratchet and the cylinder (organ).
+
+The cylinder (part) stops in a particular position so that it is perfectly inline with the barrel (physical phenomenon). This is due to the movement of another pawl, which is beneath the cylinder (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the pawl should lodge a small depression in the cylinder (organ).
+ 
+
+Now the spring (part) expands (physical phenomenon). This is due to the backward movement of the trigger (input), which activates the hooks law (physical effect) and requires the presence of stiffness in the spring (organ).
+
+The firing pin (part) on the hammer hits the primer (physical phenomenon). This is due to the expansion of the spring (input) which the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the firing pin on the hammer extends through the body of the gun (organ).
+
+The bullet (part) moves ahead in the barrel (physical phenomenon). This is due to the gas pressure developed in the cartridge (input), which activates the Newtonian laws of motion (physical effect) and requires the gas pressure to acts in the forward direction (organ).
+
+$
+
+ACTION
+$
+ 
+ To fire bullets.
+
+$
+STATE
+$
+
+Presence of bullet within the revolver.
+
+Projectile motion of the bullet.
+
+$
+PHYPHENOMENON
+$
+
+The trigger moves backward.
+
+The hammer moves backward.
+
+The spring present in the handle of the revolver is compressed.
+
+The pawl rotates.
+ 
+The ratchet rotates.
+
+The cylinder rotates.
+
+The cylinder stops in a particular position so that it is perfectly inline with the barrel.
+
+The spring expands.
+
+The firing pin on the hammer hits the primer.
+
+The bullet moves ahead in the barrel.
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+Hooks law.
+
+Newtonian laws of motion.
+
+$
+
+INPUT
+$
+
+Force applied on to it.
+
+Movement of the trigger.
+
+Movement of the hammer.
+
+Movement of the pawl.
+
+Rotation of the ratchet.
+
+Movement of another pawl, which is beneath the cylinder.
+
+Backward movement of the trigger.
+
+Expansion of the spring.
+
+Gas pressure developed in the cartridge.
+
+$
+
+ORGAN
+$
+
+Necessary that the trigger forms a revolute pair with the frame.
+
+Presence of contact between the hammer and the trigger.
+
+Requires that the spring have some stiffness.
+
+Presence of one degree of freedom between the trigger and the pawl.
+
+
+Requires the presence of contact between the ratchet and the pawl.
+
+Presence of zero degree of freedom between the ratchet and the cylinder.
+
+Requires that the pawl should lodge a small depression in the cylinder.
+
+Presence of stiffness in the spring.
+
+Requires that the firing pin on the hammer extends through the body of the gun.
+
+Requires the gas pressure to act in the forward direction.
+
+
+$
+PARTS
+$
+
+The trigger forms a revolute pair with the frame.
+
+The hammer forms a revolute pair with trigger.
+
+The spring forms a fixed pair with the hammer.
+
+The pawl forms a revolute pair with the trigger.
+
+The ratchet forms a ratchet-pawl pair with the pawl.
+
+The cylinder forms a fixed pair with the ratchet.
+
+The pawl forms a revolute pair with the frame.
+
+The spring forms a fixed pair with the frame.
+
+The hammer forms a revolute pair with the frame.
+
+The bullet forms a sliding pair with the barrel.
+
+$
+
+

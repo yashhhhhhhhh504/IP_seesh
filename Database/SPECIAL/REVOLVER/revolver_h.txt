@@ -1,0 +1,160 @@
+SUMMARY
+$
+A revolver is a multishot firearm, usually a handgun, in which the rounds are held in a revolving cylinder that rotates to fire them through a single barrel. This can be described as follows:
+
+The trigger (part) moves backward (physical phenomenon). This is due to the force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that there is one degree of freedom between the trigger and the frame (organ).
+
+The hammer (part) moves backward (physical phenomenon). This is due to the movement of the trigger (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the hammer and the trigger (organ).
+
+The spring (part) present in the handle of the revolver is compressed (physical phenomenon). This is due to the movement of the hammer (input), which activates the hooks law (physical effect) and requires that the spring have some stiffness (organ).
+
+The pawl (pawl) rotates (physical phenomenon). This is due to the movement of the trigger (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the trigger and the pawl (organ).
+
+The ratchet (part) rotates (physical phenomenon). This is due to the movement of the pawl (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the ratchet and the pawl (organ).
+
+The cylinder (part) rotates (physical phenomenon). This is due to the rotation of the ratchet (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the ratchet and the cylinder (organ).
+
+The cylinder (part) stops in a particular position so that it is perfectly inline with the barrel (physical phenomenon). This is due to the movement of another pawl, which is beneath the cylinder (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the pawl should lodge a small depression in the cylinder (organ).
+ 
+
+Now the spring (part) expands (physical phenomenon). This is due to the backward movement of the trigger (input), which activates the hooks law (physical effect) and requires the presence of stiffness in the spring (organ).
+
+The firing pin (part) on the hammer hits the primer (physical phenomenon). This is due to the expansion of the spring (input) which the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the firing pin on the hammer extends through the body of the gun (organ).
+
+The bullet (part) moves ahead in the barrel (physical phenomenon). This is due to the gas pressure developed in the cartridge (input), which activates the Newtonian laws of motion (physical effect) and requires the gas pressure to acts in the forward direction (organ).
+
+$
+
+ACTION
+{
+$ 
+ To fire bullets.
+$
+}
+STATE
+{
+$
+Presence of bullet within the revolver.
+$
+Projectile motion of the bullet.
+$
+}
+PHYPHENOMENON
+{
+$
+The trigger moves backward.
+$
+The hammer moves backward.
+$
+The spring present in the handle of the revolver is compressed.
+$
+The pawl rotates.
+$ 
+The ratchet rotates.
+$
+The cylinder rotates.
+$
+The cylinder stops in a particular position so that it is perfectly inline with the barrel.
+$
+The spring expands.
+$
+The firing pin on the hammer hits the primer.
+$
+The bullet moves ahead in the barrel.
+
+$
+}
+
+PHYEFFECT
+{
+$
+No two bodies can occupy the same space at the same time.
+$
+Hooks law.
+$
+Newtonian laws of motion.
+$
+}
+
+INPUT
+{
+$
+Force applied on to it.
+$
+Movement of the trigger.
+$
+Movement of the hammer.
+$
+Movement of the pawl.
+$
+Rotation of the ratchet.
+$
+Movement of another pawl, which is beneath the cylinder.
+$
+Backward movement of the trigger.
+$
+Expansion of the spring.
+$
+Gas pressure developed in the cartridge.
+$
+}
+
+ORGAN
+{
+$
+Necessary that the trigger forms a revolute pair with the frame.
+$
+Presence of contact between the hammer and the trigger.
+$
+Requires that the spring have some stiffness.
+$
+Presence of one degree of freedom between the trigger and the pawl.
+$
+
+Requires the presence of contact between the ratchet and the pawl.
+$
+Presence of zero degree of freedom between the ratchet and the cylinder.
+$
+Requires that the pawl should lodge a small depression in the cylinder.
+$
+Presence of stiffness in the spring.
+$
+Requires that the firing pin on the hammer extends through the body of the gun.
+$
+Requires the gas pressure to act in the forward direction.
+$
+
+}
+
+STUCTURE1
+{
+$
+The trigger forms a revolute pair with the frame.
+$
+The hammer forms a revolute pair with trigger.
+$
+The spring forms a fixed pair with the hammer.
+$
+The pawl forms a revolute pair with the trigger.
+$
+The ratchet forms a ratchet-pawl pair with the pawl.
+$
+The cylinder forms a fixed pair with the ratchet.
+$
+The pawl forms a revolute pair with the frame.
+$
+The spring forms a fixed pair with the frame.
+$
+The hammer forms a revolute pair with the frame.
+$
+The bullet forms a sliding pair with the barrel.
+$
+}
+
+
+
+
+
+
+
+

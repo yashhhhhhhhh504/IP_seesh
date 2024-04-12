@@ -1,0 +1,87 @@
+SUMMARY	
+$
+This can be used to connect two pulleys. This can be described as follows:
+
+The rope (part) wraps around the circumference of the two pulleys mounted on their respective shafts (physical phenomenon). This is due to the tensile force applied on to it (input), which activates the hook’s law (physical effect) and is necessary for the rope to have the necessary tensile strength (organ).
+
+
+The rope (part) moves over the pulley surface (physical phenomenon). This is due to the tensile force applied by the pulley mounted on the input shaft, which in turn is due to the friction (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the rope (organ).
+
+
+The pulley mounted on the output shaft (part) rotates (physical phenomenon). This is due to the friction between the rope and the pulley (input) which activates the friction effect (physical effect) and requires the presence of friction surface between the rope and the pulley and hence the absence of slip (organ).
+
+
+
+$
+
+ACTION
+{
+$ 
+ To connect two pulleys and to transmit motion between them.
+$
+}
+STATE
+{
+$
+Rope is at rest on the two pulleys.
+
+Rope is under going linear motion.
+$
+}
+PHYPHENOMENON
+{
+$
+The rope wraps around the circumference of two pulleys mounted on their respective shafts.
+
+The rope moves over the pulley surface.
+ 
+The pulley mounted on the output shaft rotates.
+
+$
+}
+
+PHYEFFECT
+{
+$
+Hook’s law.
+
+$
+}
+
+INPUT
+{
+$
+Tensile force applied on to it.
+
+Tensile force applied by the pulley mounted on the input shaft, which in turn is due to the friction.
+
+The friction between the rope and the pulley.
+$
+}
+
+ORGAN
+
+$
+Requires that the rope have the necessary tensile strength.
+
+Presence of friction surface between the pulley and the rope.
+
+Presence of friction surface between the rope and the pulley and hence the absence of slip.
+
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The rope forms a wrapping pair with the pulleys.
+
+the input pulley forms a revolute pair with the frame.
+
+the output pulley forms a revolute pair with the frame.
+
+$
+}
+

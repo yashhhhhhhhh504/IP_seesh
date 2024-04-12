@@ -1,0 +1,107 @@
+SUMMARY
+$
+Using this mechanism materials can be transported. This mechanism can be described as follows:
+
+The driven arms (part) mounted on the input shafts rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shafts and the driven arms (organ).
+
+
+The connecting link (part) rotates (physical phenomenon). This is due to the rotation of the driven arm (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the driven arm and the connecting link (organ).
+
+The swivel-arm (part) swivels (physical phenomenon). This is due to the rotation of the connecting link (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the connecting link and the swivel arm (organ).
+
+The moving member (part) follows a somewhat an egg shaped path (physical phenomenon). This is due to the rotation of the connecting link  (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the connecting link and the moving member (organ).
+
+The material (part) placed on the fixed rails (physical phenomenon). This is due to the forward motion of the moving member (input), which activates the law “no two bodies can occupy the same space at the same time,” (physical effect) and requires the presence of projections on the moving member (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism material can be transported intermittently.
+$
+}
+STATE
+{
+$
+Absence of torque at the input shafts.
+$
+Presence of torque at the input shafts.
+$
+}
+PHYPHENOMENON
+{
+$
+The driven arms mounted on the input shafts rotates
+$
+The connecting link rotates.
+$ 
+The swivel-arm swivels.
+$
+The moving member follows a somewhat an egg shaped path.
+$
+
+The material placed on the fixed rails.
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+No two bodies can occupy the same space at the same time.
+$
+
+$
+}
+
+INPUT
+{
+$
+The rotation of the input shaft.
+$
+The rotation of the driven arm.
+$
+The rotation of the connecting link.
+$
+The rotation of the connecting link.
+$
+The forward motion of the moving member.
+
+
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the shafts and the driven arms.
+$
+Presence of one degree of freedom between the driven arm and the connecting link.
+$
+Presence of one degree of freedom between the connecting link and the moving member.
+$
+Presence of projections on the moving member.
+$
+
+}
+
+STUCTURE1
+{
+$
+The driven arm along with the input shafts forms a revolute pair with the frame.
+$
+The connecting link forms a revolute pair with the driven arm.
+$
+The moving member forms a revolute pair with the connecting link.
+$
+The materials that are being transported form a sliding pair with the fixed rails.
+$
+
+$
+}
+
+
+

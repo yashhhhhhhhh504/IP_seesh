@@ -1,0 +1,97 @@
+SUMMARY
+$
+This can be used to connect two sprockets and to transmit motion between them. It can be described as follows:
+
+The chain (part) connects the two sprockets (physical phenomenon). This is due to the initial tension with which it is placed on the sprockets (input) which  activates the hook’s law (physical effect) and is necessary that the projections on the sprocket fits into the recess of the chain (organ).
+
+The sprocket (part) mounted on the input shaft rotates (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the sprocket (organ).
+
+The chain (part) moves (physical phenomenon). This is due to the tensile force applied by the sprocket mounted on the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires that the there is enough initial tension in the chain (organ).
+
+
+The sprocket (part) on the output shaft rotates (physical phenomenon). This is due to the movement of the chain (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of close contact between the sprocket and the chain (organ).
+$
+
+ACTION
+{
+$ 
+ To connect two sprockets and to transmit motion between them.
+$
+}
+STATE
+{
+$
+Chain is at rest.
+
+Chain is undergoing linear motion.
+$
+}
+PHYPHENOMENON
+{
+$
+The chain wraps around the circumference of the two sprockets.
+
+The sprocket mounted on the input shaft rotates.
+
+The chain moves.
+
+The sprocket on the output shaft rotates.
+
+$
+}
+
+PHYEFFECT
+{
+$
+Hook’s law.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+Initial tension with which it is placed on the sprockets.
+
+Torque applied by the input shaft.
+
+Tensile force applied by the sprocket mounted on the input shaft.
+
+Movement of the chain.
+$
+}
+
+ORGAN
+{
+$
+Necessary that the projections on the sprocket fits into the recess of the chain.
+
+Presence of zero degree of freedom between the input shaft and the sprocket.
+
+Requires that the there is enough initial tension in the chain.
+
+Presence of close contact between the sprocket and the chain.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The chain forms a gear pair with the sprockets.
+
+The sprocket forms a revolute pair with the frame.
+
+The chain forms a gear pair with the input sprocket.
+
+The chain forms a gear pair with the output sprocket.
+
+
+
+$
+}
+

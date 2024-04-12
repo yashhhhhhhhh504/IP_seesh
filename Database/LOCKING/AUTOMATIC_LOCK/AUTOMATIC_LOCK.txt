@@ -1,0 +1,208 @@
+MACTION
+{
+A1 $ V < lock > N < object > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < open > N < part > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < closed > N < part > $
+} 
+MCHANGESTATE
+{
+CS1 $ from open part to closed part $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < project > N < part > A < X > $
+PP2 $ V < pull > N < part > A < X > $
+PP3 $ V < lock > N < part > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Newtonian laws of motion $
+PE3 $ Spring effect $
+}
+
+MINPUT
+{
+I1 $ V < move > N < part > A < x > $
+I2 $ V < x > N < moment > A < x > $
+I3 $ V < x > N < force > A < spring > $
+}
+
+MORGAN
+{
+O1 $ smooth sliding surface between the sliding block and the guide ways $
+O2 $ door is hinged at one of its end $
+O3 $ sliding block fits into the slot provided $
+
+}
+
+MPART
+{
+P1 $ Sliding block $
+P2 $ Door $
+P3 $ Sliding block $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P1 >
+
+
+}
+
+
+
+
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to lock the door. 
+$
+
+
+STRUCTURE
+
+$
+It consists of a sliding block and it also has a provision for the insertion of the key.
+$
+
+
+BEHAVIOUR
+
+$
+The door is just pulled with sliding block being outside frame of the lock.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/AUTOMATIC_LOCK/01.GIF	$ Automatic Lock Mechanism $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to lock doors.
+$
+
+ACTION
+
+$ 
+ To lock doors.
+$
+
+STATE
+
+$
+The doors are open.
+
+The doors are closed.
+
+$
+
+PHYPHENOMENON
+
+$
+The sliding block of the lock is made to project out of the frame of the lock and it is made movable.
+
+The door is pulled.
+
+The door is locked.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion.
+
+Spring effect.
+
+
+$
+
+
+INPUT
+
+$
+The movement of the knob.
+
+Moment applied.
+
+Spring force.
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the sliding block and the guide ways.
+
+Necessary that the door is hinged at one of its end.
+
+Necessary that the sliding block fits into the slot provided.
+
+$
+
+
+
+PARTS
+$
+Sliding block.
+
+Door.
+
+Sliding block.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

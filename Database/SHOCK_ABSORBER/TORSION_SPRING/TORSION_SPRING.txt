@@ -1,0 +1,150 @@
+MACTION
+{
+A1 $ V < absorb > N < shock > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ without torsion to torsion of spring $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < twist > N < spring > A < X > $
+PP2 $ V < store > N < energy > A < X > $
+PP3 $ V < release > N < energy > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ spring effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < twist > N < spring > A < x > $
+I3 $ V < release > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ the applied force is within proportional limit of spring $
+}
+
+MPART
+{
+P1 $ spring $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O1 P1 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O1 P1 >
+}
+FUNCTION
+
+$
+A torsion spring is a spring that works by torsion or twisting; that is, a flexible elastic object that stores mechanical energy when it is twisted.
+$
+
+
+STRUCTURE
+
+$
+A torsion spring is often made from a wire, ribbon, or bar of metal or rubber, while more delicate ones are made of silk, glass, or quartz fibers.
+$
+
+BEHAVIOUR
+
+$
+A torsion spring is a spring that works by torsion or twisting; that is, a flexible elastic object that stores mechanical energy when it is twisted.
+$
+
+PICTURE
+
+{
+ADB/SHOCK_ABSORBER/TORSION_SPRING/01.jpg  $ 01.TORSION_SPRING $
+ADB/SHOCK_ABSORBER/TORSION_SPRING/02.bmp  $ 02.TORSION_SPRING $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+A torsion spring is a spring that works by torsion or twisting; that is, a flexible elastic object that stores mechanical energy when it is twisted. That can be described as; Spring (part) twists (physical phenomena). This is due to torque applied on it (input) which activates spring effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+
+Spring (part) stores energy (physical phenomena). This is due to twisting of spring (input) which activates spring effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+
+Spring (part) releases energy (physical phenomena). This is due to release of torque applied on it (input) which spring effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+$
+
+ACTION
+
+$ 
+ To absorb shock
+$
+
+STATE
+
+$
+Without torsion to torsion of spring
+$
+
+
+
+PHYPHENOMENON
+
+$
+Spring twists
+
+Spring stores energy
+
+Spring releases energy
+$
+
+
+PHYEFFECT
+
+$
+Spring effect
+$
+
+
+INPUT
+
+$
+Torque applied on spring
+
+Twisting of spring
+
+Release of torque applied on it
+$
+
+
+ORGAN
+
+$
+The applied force is within proportional limit of spring
+$
+
+
+
+PARTS
+$
+Spring
+$

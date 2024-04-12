@@ -1,0 +1,267 @@
+
+MACTION
+{
+A1 $ V < sprinkle > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to motion of the sprinkler $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < flow > A < water > $
+PP2 $ V < apply > N < force > A < reaction > $
+PP3 $ V < rotate > N < arm > A < x > $
+PP4 $ V < rotate > N < worm > A < x > $
+PP5 $ V < rotate > N < gear > A < X > $
+PP6 $ V < rotate > N < wheel > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s effect $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < differential > A < pressure > $
+I2 $ V < x > N < force > A < reaction > $
+I3 $ V < x > N < force > A < reaction > $
+I4 $ V < rotate > N < arm > A < X > $
+I5 $ V < rotate > N < worm > A < X > $
+I6 $ V < rotate > N < shaft > A < X > $
+}
+
+MORGAN
+{
+O1 $ the inlet of the pipe is at a higher pressure $
+O2 $ the water flows out of the arms with sufficient force $
+O3 $ the arms be bent at the ends $
+O4 $ zero degree of freedom between the worm and the arms $
+O5 $ contact between the gear train and the worm $
+O6 $ zero degree of freedom between the wheel and the shaft $
+}
+
+MPART
+{
+P1 $ water $
+P2 $ arm $
+P3 $ revolute pair $
+P4 $ frame $
+P5 $ worm $
+P6 $ gear $
+P7 $ wheel $
+P8 $ gear pair $
+P9 $ rolling pair $
+P10 $ land $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP5 PE3 I5 O5 P5 P6 P8 >
+< A1 IS1 OS1 CS1 PP6 PE1 I6 O6 P7 P9 P10 >
+
+
+}
+
+
+FUNCTION
+
+$
+This device is used for watering the gardens automatically.
+$
+
+STRUCTURE
+
+$
+A traveling sprinkler like this one has only seven essential parts: A sprinkler arm assembly When you open the spigot, water pressure forces the water down the hose to the sprinkler. The water flows through a pipe in the sprinkler and out through two connected sprinkler arms. 
+$
+BEHAVIOUR
+
+$
+As the water pushes out, it exerts an equal and opposite force back on the arms (this is the same principle behind rockets and jet engines. The two arms are bent at the end so that the force pushes on each arm at an angle. The arms are bent to point in opposite directions, so the force acting on both arms combines to generate torque-- a rotational force. It's like a merry-go-round with water rockets on each side. The arms are connected to a plastic worm gear inside the tractor body. The spinning arms rotate the worm gear, which engages a gear in the transmission. The transmission is a simple gear train that transmits the rotational force of the worm gear to the drive axle that turns the tractor's back wheels. 
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/WATER_SPRINKLER/01.JPG		$ 01.WATER SPRINKLER $
+ADB/SPECIAL/WATER_SPRINKLER/02.GIF		$ 02.WATER SPRINKLER $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to sprinkle water throughout the field as it moves. This can be interpreted as a change of state from rest to motion of the sprinkler. This can be discussed as follows:
+
+The water (part) flows through the pipe towards the end of the sprinkler (physical phenomenon). This is due to the pressure differential (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the inlet of the pipe is at a higher pressure (organ).
+
+The water (part) applies an opposite force on the arms carrying water (physical phenomenon). This is due to the reaction force (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the water flows out of the arms with sufficient force (organ).
+
+The arms (part) rotate (physical phenomenon). This is due to the reaction force (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the arms be bent at the ends (organ).
+
+The worm (part) rotates (physical phenomenon). This is due to the rotation of the arms (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the worm and the arms (organ).
+
+The gear train (part) rotates (physical phenomenon). This is due to the rotation of the worm (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and it requires the presence of contact between the gear train and the worm (organ).
+
+The wheel (part) rotates (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the wheel and the shaft (organ).
+
+$
+
+ACTION
+
+$ 
+ To sprinkle water.
+$
+
+STATE
+
+$
+
+The sprinkler is at rest.
+
+The sprinkler is moving.
+
+$
+
+PHYPHENOMENON
+
+$
+The water flows through the pipe towards the end of the sprinkler.
+
+The water applies an opposite force on the arms carrying water.
+
+The arms rotate.
+
+The worm rotates.
+
+The gear train rotates.
+
+The wheel rotates
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s effect.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The pressure differential.
+
+The reaction force.
+
+The reaction force.
+
+The rotation of the arms.
+
+The rotation of the worm.
+
+The rotation of the shaft.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the inlet of the pipe is at a higher pressure.
+
+Necessary that the water flows out of the arms with sufficient force.
+
+Necessary that the arms be bent at the ends.
+
+Presence of zero degree of freedom between the worm and the arms.
+
+Presence of contact between the gear train and the worm.
+
+Presence of zero degree of freedom between the wheel and the shaft.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Water.
+
+Water.
+
+Arms form a revolute pair with the frame.
+
+Worm forms a revolute pair with the frame.
+
+Gear forms a gear pair with the worm.
+
+Wheel forms a rolling pair with the land.
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+link 
+$ 
+Link is a material body which will be connected to several other bodies to 
+transmit power or force and to transform one form of motion to another form. 
+A link which is connected to only one other link is known as a singular link. 
+If it is connected to two other links, it is called a binary link. Similarly if a 
+link is connected to three other links , it is referred to as a ternary link.
+$ 
+mechanism
+$ 
+Mechanism: Is a combination of rigid bodies or restraint bodies so shaped and 
+connected that they move upon each other with definite relative motion 
+$ 
+dof 
+$ 
+Degree of freedom: The number of independent  coordinates required to 
+completely specify the mechanism. 
+$ 
+kc 
+$ 
+Kinematic chain: A kinematic chain is a series of links connected by kinematic pairs. 
+The chain said to to be closed if every link is connected to at least two other 
+links, otherwise it is termed an open chain. 
+$ 
+crank
+$
+A link which makes a complete revolution and is pivoted to ground.
+$
+coupler
+$
+A connecting rod which has complex motion and is not pivoted to ground.
+$
+rocker
+$
+A link which has oscillatory (back & forth) rotation & is pivoted to ground.
+$
+ground link
+$
+Any link or links that are fixed (non-moving) with respect to the reference frame.
+$

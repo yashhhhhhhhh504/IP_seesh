@@ -1,0 +1,110 @@
+MACTION
+{
+A1 $ V < increase > N < length > A < horizontal > $
+A2 $ V < decrease > N < length > A < horizontal > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < large horizontal > N < distance > $
+IS2 $ V < x > A < small horizontal > N < distance > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small horizontal > N < distance > $
+OS2 $ V < x > A < large horizontal > N < distance > $
+} 
+MCHANGESTATE
+{
+CS1 $ from large horizontal distance to small horizontal distance  $
+CS2 $ from small horizontal distance to large horizontal distance. $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link 1 > A < X > $
+PP2 $ V < slide > N < pin slot > A < X > $
+PP3 $ V < slide > N < pin slot > A < x > $
+PP4 $ V < move > N < link 1 > A < x > $
+PP5 $ V < slide > N < pin slot> A < X > $
+PP6 $ V < slide > N < pin slot > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time  $
+PE3 $ Lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < Force > A < x > $
+I2 $ V < move > N < link 1 > A < x > $
+I3 $ V < move > N < link 9 > A < x > $
+I4 $ V < x > N < force > A < X > $
+I5 $ V < move > N < link 1 > A < X > $
+I6 $ V < move > N < link 9 > A < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of guide ways for the movement of link  $
+O2 $ Presence of a smooth sliding surface between the pin on the link 9 and the slot in the link 2.   $
+O3 $ Presence of a hinged joint between the links 9 and 10. $
+O4 $ Presence of guide ways. $
+O5 $ Presence of a smooth sliding surface between the pin of the link 9 and the slot of the link 2. $
+O6 $ Presence of a hinged joint between the link 9 and link 10. $
+}
+
+MPART
+{
+P1 $ link 1  $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ pin of the link 9  $
+P5 $ slot provided on the link 2. $
+P6 $ pin of the link 10  $
+P7 $ slot of the link 4 $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P2 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P6 P2 P7 >
+< A2 IS2 OS2 CS2 PP4 PE1 I4 O4 P1 P2 P3 >
+< A2 IS2 OS2 CS2 PP5 PE1 I5 O5 P4 P2 P5 >
+< A2 IS2 OS2 CS2 PP6 PE1 I6 O6 P6 P2 P7 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

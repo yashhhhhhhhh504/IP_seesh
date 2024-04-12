@@ -1,0 +1,207 @@
+MACTION
+{
+A1 $ V < transmit > N < power motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < X > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < gear > A < input > $
+PP2 $ V < push > N < tooth > A < X > $
+PP3 $ V < rotate > N < gear > A < output > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < torque > A < X > $
+I2 $ V < X >  N < inertia > A < rotational > $
+I3 $ V < move >  N < tooth > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the gear $
+O2 $ tooth on the input gear engages with the tooth on the output gear $
+O3 $ tooth on the input gear engages with the tooth on the output gear $
+
+}
+
+MPART
+{
+P1 $ input gear $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ input tooth $
+P5 $ output tooth $
+P6 $ higher pair $
+P7 $ output gear $
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P7 > 
+}
+
+
+
+FUNCTION
+
+$
+These gears have teeth cut on a cone instead of a cylinder blank. Bevel gears are primarily used in pairs to transmit rotary motion and torque between intersecting shafts. They are usually mounted on shafts that are 90° apart, but can be designed to work at other angles as well. 
+$
+
+
+BEHAVIOUR
+$
+Straight tool bevel gears are generally considered the best choice for systems with speeds lower than 1000 feet per minute: they commonly become noisy above this point. 
+
+When it is necessary to transmit quietly and smoothly a large torque through a right angle at high velocities, spiral bevel gears can be used. Spiral bevel gears have teeth cut in a helix spiral form on the surface of a cone. They are quieter running than straight bevel gears and have a longer life. Spiral bevel gears are used in motorcar rear axle gearboxes. 
+
+Hypoid bevel gears can engage with the axes in different planes. This feature is used in many car differentials. The ring gear of the differential and the input pinion gear are both hypoid. This allows the input pinion to be mounted lower than the axis of the ring gear. Figure 6 shows the input pinion engaging the ring gear of the differential. Since the driveshaft of the car is connected to the input pinion, this also lowers the driveshaft. This means that the driveshaft doesn't intrude into the passenger compartment of the car as much, making more room for people and cargo. 
+$
+
+
+STRUCTURE
+$
+The teeth of these gears are tapered and arranged on truncated cones. The teeth on bevel gears can be straight, spiral or hypoid.
+Straight bevel gears have teeth which are all parallel to the line pointing the apex of the cone on which the teeth are based and have the same problem as straight spur gear teeth. As each tooth engages, it impacts the corresponding tooth all at once. 
+Spiral bevel gears have teeth that form arcs. These spiral teeth engage just like helical teeth, the contact starts at one end of the gear and progressively spreads across the whole tooth. 
+On straight and spiral bevel gears, the shafts must be perpendicular to each other, but they must also be in the same plane. If you were to extend the two shafts past the gears, they would intersect. The hypoid gear, on the other hand, can engage with the axes in different planes
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/01bevel.jpg  	$ 01.Bevel Gear		$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/02bevel.gif		$ 02.Bevel Gear		$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/03bevel.jpg		$ 03.Bevel Gear		$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/01spiralbevel.jpg	$ 04.Spiral Bevel Gear	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/02spiralbevel.gif	$ 05.Spiral Bevel Gear	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/01hypoidbevel.jpg	$ 06.Hypoid Bevel Gear	$
+}
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/02.GEAR/BEVEL/bevel.avi  		$ 01.Bevel Gear		$
+}
+
+
+SUMMARY
+
+$
+
+To transmit power and motion between two perpendicular shafts. This can be interpreted as a change of state from rest to rotation of the output gear. This can be interpreted as follows:
+
+The input gear (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (input) and requires the presence of zero degree of freedom between the input shaft and the gear (organ).
+
+A tooth (part) on the input gear pushes the tooth on the output gear (physical phenomenon). This is due to its rotational inertia of the input gear (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the tooth on the input gear engages with the tooth on the output gear (organ).
+
+The output gear (part) mounted on the output shaft that is at right angles to the input shaft rotates (physical phenomenon). This is due to the movement of the tooth (input), which activates the lever effect (physical effect) and is necessary that the teeth are cut on a conical surface (organ).
+
+Now, the next pair of teeth engages and the same process repeats and this leads to the continuous rotation of the output gear.
+
+$
+
+
+ACTION
+$
+ 
+ To transmit power and motion between two perpendicular shafts.
+
+$
+STATE
+$
+
+The output gear is at rest.
+
+The output gear is rotating.
+
+
+$
+PHYPHENOMENON
+$
+
+The input gear rotates.
+
+A tooth on the input gear pushes the tooth on the output gear.
+
+The output gear mounted on the output shaft that is at right angles to the input shaft rotates smoothly.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+
+
+$
+
+INPUT
+$
+
+The torque applied by the input shaft.
+
+Rotational inertia of the input gear.
+
+Movement of the tooth.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the gear.
+
+Necessary that the tooth on the input gear engages with the tooth on the output gear.
+
+Necessary that the tooth on the input gear engages with the tooth on the output gear.
+
+
+$
+PARTS
+
+$
+
+The input gear forms a revolute pair with the frame.
+
+The tooth on the input gear forms a higher pair with the tooth on the output gear.
+
+The output gear forms a revolute pair with the frame.
+
+
+$
+

@@ -1,0 +1,250 @@
+
+MACTION
+{
+A1 $ V < monitor > N < switch > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < off > N < switch > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < on > N < position > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ From off to on position $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < press > N < keycap > A < X > $
+PP2 $ V < press > N < flexible > A < rubber dome > $
+PP3 $ V < make > N < carbon center > A < x > $
+PP4 $ V < break > N < dome > A < rubber > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Newtonian laws of motion $
+PE3 $ Newtonian laws of motion $
+PE4 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < transmit > N < force > A < x > $
+I3 $ V < move > N < direction > A < downward > $
+I4 $ V < release > N < key cap > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ Physical connection between plunger and key cap $
+O2 $ Contact between rubber dome and plunger $
+O3 $ Perfect electrical connection for the contact $
+O4 $ Good spring action of the rubber dome $
+}
+
+MPART
+{
+P1 $ Key cap $
+P2 $ Flexible rubber dome $
+P3 $ Carbon center $
+P4 $ Human finger $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+
+}
+
+FUNCTION
+
+$
+Computer keyboards monitor the state of switches.
+$
+
+
+STRUCTURE
+
+$
+Computer keyboards monitor the state of switches. They key caps, plunger, and rubber dome with carbon center. Force applied by human finger is transmitted through plunger to rubber dome, which acts as a spring to come back to original position when the force on the key cap is released.
+$
+
+
+BEHAVIOUR
+
+$
+
+Key cap presses down the plunger. This is because of the force applied by user. The plunger presses flexible rubber dome down. This is due to the transmission of force from plunger to rubber dome, which actuates the Newtonian laws of motion and requires contact between rubber dome and plunger. Carbon center of the rubber dome makes the contact. This is due to movement in the downward direction towards contacts, which actuates the Newtonian laws of motion and requires perfect electrical connection for the contact. Human finger moves and so rubber dome moves up and the contact breaks. This is due to release of force on key cap from human finger, which actuates the Newtonian laws of motion and requires good spring action of the rubber dome.
+
+
+$
+
+PICTURE
+
+{
+ADB/ACTUATOR/COMPUTER-KEYBOARD/COMPUTER-KEYBOARD01.JPG		$ 01.COMPUTER-KEYBOARD $
+ADB/ACTUATOR/COMPUTER-KEYBOARD/COMPUTER-KEYBOARD02.JPG		$ 02.COMPUTER-KEYBOARD $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+SUMMARY
+$
+Computer keyboards monitor the state of switches. They key caps, plunger, rubber dome with carbon center. It is explained below,
+
+Key cap (part) presses down the plunger (physical phenomenon). This is due to force (input) applied by key cap on the plunger, which actuates the Newtonian laws of motion (physical effect) and requires physical connection between plunger and key cap (organ).
+
+Flexible rubber dome (part) is pressed down by the plunger (physical phenomenon). This is due to the transmission of force (input) from plunger to rubber dome, which actuates the Newtonian laws of motion (physical effect) and requires contact between rubber dome and plunger (organ).
+
+Carbon center (part) of the rubber dome makes the contact (physical phenomenon). This is due to movement (input) in the downward direction towards contacts, which actuates the Newtonian laws of motion (physical effect) and requires perfect electrical connection for the contact (organ).
+
+Human finger (part) moves and so rubber dome moves up and the contact breaks (physical phenomenon). This is due to release of force (input) on key cap from human finger, which actuates the Newtonian laws of motion (physical effect) and requires good spring action of the rubber dome (organ).
+
+$
+
+ACTION
+
+$ 
+ To monitor the state of switches.
+$
+
+STATE
+
+$
+Switch in off position.
+
+Switch in on position.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+Key cap presses down the plunger
+
+Flexible rubber dome is pressed down by the plunger
+ 
+Carbon center of the rubber dome makes the contact
+
+Rubber dome moves up and the contact breaks
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+Newtonian laws of motion
+
+Newtonian laws of motion
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+Force applied by key cap on the plunger
+
+Transmission of force from plunger to rubber dome
+
+Movement in the downward direction towards contacts
+
+Release of force on key cap from human finger
+$
+
+
+ORGAN
+
+$
+Physical connection between plunger and key cap
+
+Contact between rubber dome and plunger
+
+Perfect electrical connection for the contact
+
+Good spring action of the rubber dome
+$
+
+
+
+PARTS
+$
+
+Key cap
+
+Flexible rubber dome
+
+Carbon center
+
+Human finger
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+MACTION
+{
+A1 $ V < hold > N < object > A < X > $
+A2 $ V < lock > N < object > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < release > A < x > N < object > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < hold > A < x > N < object > $
+} 
+MCHANGESTATE
+{
+CS1 $ from released object to hold object  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < oscillate > N < follower > A < X > $
+PP3 $ V < rotate > N < clamping-link > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < move > N < connecting-rod > A < x > $
+I3 $ V < rotate > N < follower > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the crank  $
+O2 $ one degree of freedom between the connecting rod and the follower $
+O3 $ zero degree of freedom between the clamping link and the follower $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ follower $
+P5 $ clamping link $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P2 P3 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P5 P2 P3 >
+
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P2 P3 >
+< A2 IS1 OS1 CS1 PP3 PE3 I3 O3 P5 P2 P3 >
+
+
+
+
+
+}
+
+
+FUNCTION
+
+$
+This mechanism can be used to hold objects while some operations are being performed on the objects.
+$
+
+
+STRUCTURE
+
+$
+It consists of a 4 bar chain. In this mechanism the follower has an extension.
+$
+
+
+BEHAVIOUR
+
+$
+In this mechanism the input is given to one of the links and the movement of the other links takes place due to the movement of the input link.
+$
+
+PICTURE
+{
+}
+CLIP
+{
+ADB/LOCKING/CLAMP/CLAMP.MOV		$ Clamp $
+}
+
+
+SUMMARY
+$
+This mechanism can be used to hold objects. This can be interpreted as a change of state from release object to hold object. This can be described as follows:
+
+The crank (part) rotates (physical phenomenon). This is due to the torque applied on it (input), which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the crank (organ).
+
+The follower (part) oscillates (physical phenomenon). This is due to the movement of connecting rod (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the connecting rod and the follower (organ).
+
+The clamping link (part) rotates with respect to the follower (physical phenomenon). This is due to the rotation of the follower (input), which activates the lever effect (physical effect) and requires the presence of zero degree of freedom between the clamping link and the follower (organ).
+ 
+$
+
+ACTION
+
+$ 
+To hold objects.
+ 
+$
+
+STATE
+
+$
+The clamp has released the object.
+
+The clamp is holding the object.
+
+$
+
+PHYPHENOMENON
+
+$
+The crank rotates.
+
+The follower oscillates.
+ 
+The clamping link rotates with respect to the frame.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+$
+
+
+INPUT
+
+$
+Torque applied on it.
+
+Movement of connecting rod.
+
+Rotation of the follower.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the crank.
+
+Presence of one degree of freedom between the connecting rod and the follower.
+
+Presence of zero degree of freedom between the clamping link and the follower.
+
+$
+
+
+
+PARTS
+$
+Crank forms a revolute pair with the frame.
+
+The follower forms a revolute pair with frame.
+
+The clamping link forms a revolute pair with frame.
+
+
+$
+
+
+
+
+
+
+
+
+

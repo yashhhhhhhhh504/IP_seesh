@@ -1,0 +1,68 @@
+MACTION
+{
+A1 $ V=rotate N=member $
+A2 $ V=translate N=member $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < small angular > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+OS2 $ V < x > A < translation > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+CS2 $ from small angular rotation to translation
+motion $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=turn N=member $
+PP2 $ V=transfer N=motion $
+PP3 $ V=restrain N=motion $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=move N=member $
+I3 $ V=x N=x $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+O2 $ thread profile $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P3 $ straight-line motion not possible $
+P4 $ screw pair $
+P5 $ fixed pair $
+}
+LINK
+{
+A1 IS1 OS1 CS1  PP1  PE1  I1  O1  P1  P2  P4
+A1 IS1 OS1 CS1  PP2  PE1  I2  O1  P1  P1  P5
+A1 IS1 OS1 CS1  PP3  PE2  I3  O2  P1  P2  P3
+
+A2 IS2 OS2 CS2  PP1  PE1  I1  O1  P1  P2  P4
+A2 IS2 OS2 CS2  PP2  PE1  I2  O1  P1  P1  P5
+A2 IS2 OS2 CS2  PP3  PE2  I3  O2  P1  P2  P3
+}

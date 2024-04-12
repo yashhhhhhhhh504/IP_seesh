@@ -1,0 +1,199 @@
+MACTION
+{
+A1 $ V < reverse > N < direction > A < rotational > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < rotate > A < counter clockwise > N < gear > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < rotate > A < clockwise > N < gear > $
+} 
+MCHANGESTATE
+{
+CS1 $ from counter clock wise rotation to clock wise rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > N < connecting rod > A < X > $
+PP2 $ V < rotate > N < input link > A < X > $
+PP3 $ V < oscillate > N < out put shaft > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < Move > N < slider > A < x > $
+I2 $ V < oscillate > N < connecting rod > A < x > $
+I3 $ V < revolve > N < idler gear > A < x > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ one degree of freedom $
+O3 $ contact between the idler gear and the output gear $
+}
+
+MPART
+{
+P1 $ connecting rod $
+P2 $ revolute pair $
+P3 $ slider $
+P4 $ input crank $
+P5 $ frame $
+P6 $ output gear $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P2 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P6 P2 P5 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+This mechanism is called the Modified-Watt's Reverser and is a modification of the well known Watt crank mechanism. The mechanism is used to transmit motion between shafts that are inline with each other. For each rotation of the input crank the output shaft (or gear) oscillates. The output torque in a particular direction may not be uniform.
+$
+
+
+STRUCTURE
+
+$
+It is a simple slider-crank mechanism. One planet gear is fixed to the connecting rod and one idle gear is fixed to the input crank, which will rotate freely in either direction. The axis of the output gear, which is mounted on the shaft, is inline with the crank pin.  
+$
+
+
+BEHAVIOUR
+
+$
+The input crank causes  the plant gear to revolve around the output gear. But because the plant gear is fixed to the connecting rod, it causes the output gear to continually reverse itself. If the radii of the two gears are equal, each full rotation of the input link will cause the output gear to oscillate through the same angle as the rod.
+$
+
+
+PICTURE
+
+{
+ADB/REVERSE/03.MODIWATTS/modiwatts.jpg		$ Modified Watt's Reverser $
+}
+
+
+CLIP
+
+{
+ADB/REVERSE/03.MODIWATTS/modiwatts.avi		$ Modified Watt's Reverser $
+}
+SUMMARY
+$
+This can mechanism can be used to reverse the direction of rotation of the out put gear. It can be interpreted as a change of state from counter clock wise rotation to clock wise rotation. This can be described as follows:
+
+The connecting rod (part) oscillates (physical phenomenon). This is due to the movement of the slider (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the connecting rod and the slider (organ).
+
+
+The input link (part) rotates continuously about the axis of the output gear (physical phenomenon). This is due to the oscillation of the connecting rod (input) which the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the connecting rod and the input gear (organ).
+
+The out put shaft (part) oscillates (physical phenomenon). This is due to the revolution of the idler gear (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the idler gear and the output gear (organ).
+$
+
+ACTION
+
+$ 
+ This can mechanism can be used to reverse the direction of rotation of the out put gear.
+$
+
+STATE
+
+$
+The out put gear rotates in the counter clockwise direction
+
+The output gear rotates in the clockwise rotation.
+$
+
+PHYPHENOMENON
+
+$
+The connecting rod oscillates.
+
+The input link rotates continuously about the axis of the output gear.
+ 
+The out put shaft oscillates.
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Movement of the slider.
+
+The oscillation of the connecting rod.
+
+The revolution of the idler gear.
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the connecting rod and the slider.
+
+Presence of one degree of freedom between the connecting rod and the input gear.
+
+Presence of contact between the idler gear and the output gear.
+
+
+
+$
+
+
+
+PARTS
+$
+The connecting rod forms a revolute pair with the slider.
+
+The input crank forms a revolute pair with the frame.
+
+The output gear forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+

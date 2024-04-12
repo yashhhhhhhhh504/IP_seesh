@@ -1,0 +1,61 @@
+ADB/CUTTING/PLASMA/PLASMA.TXT		$ Plasma Cutter	$
+
+LABEL
+$ Differential Motion Mechanisms $	
+{
+ADB/DIFFERENTIAL/DIFFBEVEL/DIFFBEVEL.TXT	$ Differential Bevel Gearing	$
+}
+
+LABEL
+$ Computing Devices $
+{
+ADB/COMPUTE/BEVELDIFF/BEVELDIFF.TXT	$ Bevel Gear Differential	$
+ADB/COMPUTE/SLIDLINK/SLIDLINK.TXT	$ Sliding Link Differential	$
+ADB/COMPUTE/ROTATLINK/ROTATLINK.TXT	$ Rotating Link Differential	$
+ADB/COMPUTE/RECIPROCAM/RECIPROCAM.TXT	$ Reciprocal Cam $
+ADB/COMPUTE/FSLOTCAM/FSLOTCAM.TXT	$ Function Slot Cam $
+}
+
+LABEL
+$ Seperating Devices $	
+{
+
+}
+LABEL
+$ Interlocking Mechanisms $
+{
+}
+LABEL
+$ Reciprocating to Rotary Mechanisms $
+{
+}
+
+LABEL
+$ Automatic Feeding Mechanisms $	
+{
+}
+
+LABEL 
+$ Supporting cum Orientation Mechanisms $	
+{
+}
+
+
+LABEL
+$ Machine Tools	$
+{
+}
+
+LABEL
+$ Overload Relief Mechanisms $
+{
+}
+
+LABEL 
+$ Selectors $
+{
+}
+LABEL
+$ Conveyor Systems $	
+{
+}

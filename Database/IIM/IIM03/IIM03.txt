@@ -1,0 +1,234 @@
+MACTION
+{
+A1 $ V < transmit > A < intermittent > N < motion > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < cam > $
+PP2 $ V < oscillate > A < X > N < rack > $
+PP3 $ V < reduce > A < X > N < friction > $
+PP4 $ V < lift > A < X > N < arm > $
+PP5 $ V < drop > A < X > N < coulisse > $
+PP6 $ V < rotate > N < gear > A < intermittently > $
+PP7 $ V < drop > A < X > N < arm > $
+PP8 $ V < lift > A < X > N < coulisse > $
+PP9 $ V < disengage > A < X > N < gear > $
+PP10 $ V < lock > A < X > N < gear > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ two bodies can't occupy the same space at the same time $
+PE3 $ friction $
+PE4 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < cam > $
+I3 $ V < rotate > A < X > N < roller > $
+I4 $ V < lift > A < X > N < arm > $
+I5 $ V < oscillate > A < X > N < rack > $
+I6 $ V < disengage > A < X > N < lock-teeth > $
+I7 $ V < lift > A < X > N < coulisse > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ eccentricity of the rack on the cam $
+O3 $ zero degree of motion in the direction of motion $
+O4 $ contact : cam roller $
+O5 $ cam profile $
+O6 $ pivot $
+O7 $ contact : rack gear $
+O8 $ slot in the coulisse $
+O9 $ contact : lock-teeth gear $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ cam $
+P3 $ revolute pair $
+P4 $ rack $
+P5 $ cam pair $
+P6 $ roller $
+P7 $ arm $
+P8 $ coulisse $
+P9 $ gear $
+P10 $ gear pair $
+P11 $ prismatic pair $
+P12 $ lock-teeth $
+}
+
+LINK
+{
+< A1   IS1  OS1  CS1  PP1   PE1   I1   O1   P1   P2   P3 >
+< A1   IS1  OS1  CS1  PP2   PE1   I2   O2   P2   P4   P3 >
+< A1   IS1  OS1  CS1  PP3   PE3   I3   O4   P2   P6   P5 >
+< A1   IS1  OS1  CS1  PP4   PE2   I2   O5   P2   P7   P5 >
+< A1   IS1  OS1  CS1  PP5   PE4   I4   O6   P7   P8   P3 >
+< A1   IS1  OS1  CS1  PP6   PE2   I5   O7   P4   P9   P10 >
+< A1   IS1  OS1  CS1  PP6   PE2   I6   O8   P9   P8   P11 >
+< A1   IS1  OS1  CS1  PP7   PE2   I2   O5   P2   P7   P5 >
+< A1   IS1  OS1  CS1  PP8   PE4   I4   O6   P7   P8   P3 >
+< A1   IS1  OS1  CS1  PP9   PE1   I5   O5   P9   P8   P11 >
+< A1   IS1  OS1  CS1  PP10  PE1   I7   O9   P9   P12   P10 >
+
+
+}
+
+
+FUNCTION
+
+$
+An operating cycle of 180 degrees motion and 180 degrees dwell is produced by this mechanism.
+$
+
+
+STRUCTURE
+
+$
+The input shaft drives a cam, to which is eccentrically connected a rack. This rack oscillates within a coulisse that has a slot cut in it in order to accommodate the output shaft. The coulisse is connected to the cam by means of a lever. The profile of the cam is such that the lever is raised for half the cycle of input rotation. The rack thus engages with a gear behind the coulisse during half the input cycle. This gear rotates the output shaft. 
+$
+
+
+BEHAVIOUR
+
+$
+The input shaft drives the rack, while it is engaged with the output shaft gear during half the cycle. When the rack engages, the lock teeth at the lower end of the coulisse are disengaged and, conversely, when the rack is disengaged, the coulisse teeth are engaged. This action locks the output shaft positively. The changeover points occur at the dead-center positions, so that the motion of the gear is continuously and positively governed. By varying the radius R and the diameter of the gear, the number of revolutions made by the output shaft during the operating half of the cycle can be varied to suit many differing requirements.
+$
+
+
+PICTURE
+
+{
+ADB/IIM/IIM03/intermittent03.JPG	$ Intermittent Drive $
+}
+
+CLIP
+
+{
+ADB/IIM/IIM03/intermittent03.avi	$ Intermittent Drive $
+}
+
+SUMMARY
+$
+This mechanism can be used to generate intermittent motion. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The cam (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the cam (organ).
+
+The rack (part) oscillates within the coulisse (physical phenomenon). This is due to the rotation of the cam (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one-degree of freedom between the cam and the rack (organ).
+
+The rack (part) meshes with the gear (physical phenomenon). This is due to the downward movement of the Coulisse (input), which activates the gravity effect (physical effect) and is necessary that the rack and the gear have the same module (organ).
+
+The gear (part) rotates (physical phenomenon). This is due to the movement of the rack (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the coulisse teeth have disengaged from the teeth on the gear (organ).
+$
+
+ACTION
+
+$ 
+ To generate intermittent motion.
+$
+
+STATE
+
+$
+The gear is at rest.
+
+The gear under goes a small angular rotation.
+
+$
+
+PHYPHENOMENON
+
+$
+The cam rotates.
+
+The rack oscillates within the coulisse.
+ 
+The rack meshes with the gear.
+
+The gear rotates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Gravity effect.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of the cam.
+
+The downward movement of the Coulisse.
+
+The movement of the rack.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the cam.
+
+Presence of one-degree of freedom between the cam and the rack.
+
+Necessary that the rack and the gear have the same module.
+
+Necessary that the coulisse teeth have disengaged from the teeth on the gear.
+
+$
+
+
+
+PARTS
+$
+The cam forms a revolute pair with the frame.
+
+The rack forms a revolute pair with the frame.
+
+The rack forms a higher pair with the gear.
+
+The gear forms a revolute pair with the frame.
+
+
+
+$
+
+
+
+
+
+
+
+

@@ -1,0 +1,189 @@
+MACTION
+{
+A1 $ V < provide > N < balance > A < tough > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < move > N < strap > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < torque > A < x > $
+I2 $ V < rotate > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the wheel and the input shaft $
+O2 $ contact between the wheel and the strap $
+}
+
+MPART
+{
+P1 $ Wheel $
+P2 $ Metal strap $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+The main purpose of this is that they can be made to move grounds that are uneven. 
+$
+
+
+STRUCTURE
+
+$
+It consists of a endless metal strap that has replaced the 
+Tyres and it can be used for very long period without puncture.
+$
+
+
+BEHAVIOUR
+
+$
+The endless metal strap slides over the wheel as the wheel rotates similar to belt and pulley arrangement.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/CRAWLER/01.JPG 	$ Crawler $
+ADB/DEPLOY/CRAWLER/02.JPG 	$ Crawler $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+To move on uneven surfaces.
+$
+
+ACTION
+
+$ 
+ To provide balance even in uneven surfaces.
+$
+
+STATE
+
+$
+The crawler is at rest.
+
+The crawler is moving.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the wheel.
+
+Move the strap.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Torque.
+
+Rotation the wheels.
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the wheel and the input shaft.
+
+Presence of contact between the wheel and the strap.
+
+
+
+$
+
+
+
+PARTS
+$
+Wheel.
+
+Metal strap.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

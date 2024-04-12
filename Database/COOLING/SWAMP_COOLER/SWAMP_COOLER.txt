@@ -1,0 +1,280 @@
+
+
+MACTION
+{
+A1 $ V < change > N < temperature > A < X > $
+A2 $ V < reduce > N < temperature > A < X > $
+A3 $ V < increase > N < humidity > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < high > N < air-temperature > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < low > N < air-temperature > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from higher temperature to lower temperature $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < fan > A < X > $
+PP2 $ V < draw > N < air > A < hot > $
+PP3 $ V < cool > N < air > A < x > $
+PP4 $ V < move > N < air > A < cool > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newton’s second law of motion $
+PE2 $ Bernoulli’s law $
+PE3 $ second law of thermodynamics $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < reduce > N < pressure > A < x > $
+I3 $ V < evaporate > N < water > A < x > $
+I4 $ V < x > N < pressure-difference > A < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom of rotation $
+O2 $ Presence of vents in the box for air to enter $
+O3 $ Pad is be made of porous material $
+O4 $ Presence of opening for hot air in the building to move outside $
+}
+
+MPART
+{
+P1 $ fan $
+P2 $ air $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A2 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 >
+< A2 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 >
+
+< A3 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A3 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A3 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 >
+< A3 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 >
+
+
+}
+
+FUNCTION
+
+$
+Swamp coolers are used to cool the air 
+$
+
+
+STRUCTURE
+
+$
+Swamp cooler is a box like structure that has a water reservoir at its bottom. It houses a big fan, driven by a motor. The fan is at the centre of the box. Another motor is mounted at the top. This motor drives the pump. There are porous pads hanging from the top of the box.
+$
+
+BEHAVIOUR
+
+$
+Motor in the box rotates the fan. This fan draws the hot and dry atmospheric air into the box through the openings in the box. This hot air gets cooled on passing through the wet porous pads. This cooled and humid air is circulated into the building through the ducts. Moisture in the pads is maintained by the pump placed at the top of the pads. Water is pumped from the reservoir at the bottom of the box.
+$
+
+ATTRIBUTE
+
+$
+An efficient swamp cooler operating in low humidity can cool air by 20 to 25OF (11 to 13OC). swamp cooler works best with temperatures above 80° F (27 °C) and humidity below 30%. This makes them ill suited for hot and wet climates. Under normal conditions, a swamp cooler can use between 3 to 15 gallons of water a day.
+The capacity of an evaporative cooler is measured in CFM, or cubic feet per minute. A small unit may be 2,500 CFM, while a whole house unit will be 6,000 CFM or larger. For example, a modest home with three bedrooms, living room and kitchen, may have 850 square feet of floor space with ceilings 7 feet high. The resulting volume is 5,950 cubic feet. A 6,000 CFM cooler would replace 100% of the air in this home each minute.
+
+With 6,000 cubic feet of air being continually forced into the home, several windows will have to be left partially open to provide an exit path. Opening a window 2 to 3 inches in each room will provide ample circulation.
+$
+
+
+
+
+
+PICTURE
+
+{
+ADB/COOLING/SWAMP_COOLER/02.gif        $ 01.Swamp Cooler $
+ADB/COOLING/SWAMP_COOLER/03.JPG        $ 02.Swamp Cooler $
+ADB/COOLING/SWAMP_COOLER/04.gif        $ 03.Swamp Cooler $
+ADB/COOLING/SWAMP_COOLER/05.gif        $ 04.Swamp Cooler $
+}
+
+
+CLIP
+
+{
+ADB/COOLING/SWAMP_COOLER/01.avi        $ Swamp Cooler $
+}
+
+
+SUMMARY
+
+$
+Swamp cooler, also called evaporative cooler works on the principle of cooling by evaporation. The process is similar to human body cooling. This may be interpreted as a change of state from air at a higher temperature to lower temperature.
+The process is explained in the following steps.
+
+The fan (part) rotates (physical phenomenon). This is due to the torque applied by the motor (input), which activates Newton’s second law of motion (physical effect) and it requires the presence of zero degree of freedom between the motor shaft and the fan (organ).
+
+Hot ambient air (part) is drawn into the swamp cooler (physical phenomenon). This is due to the rotation of the fan which creates a low pressure region in the cooler (input), which activates Bernoulli’s law (physical effect) and it requires the presence of vents in the box for the air to enter (organ).
+
+The hot air (part) is cooled (physical phenomenon). This is due to heat energy of the air expended in evaporating the water molecules from the wet pads (input), Which activates the convection effect (physical effect) and it requires that the pad is made of porous material (organ). 
+
+The cooled moist air (part) moves into the building (physical phenomenon). This is due to the pressure difference between the air inside the cooler and that inside the building (input), which activates the Bernoulli’s law (physical effect) and it requires the presence of opening for the hot air in the building to move outside (organ).
+
+At any given temperature, most of the water molecules are at room temperature. There are some water molecules that are near the freezing point, and some that are near the boiling point. Those that are near the boiling point absorb the heat energy of the air and get evaporated due to the increase in their kinetic energy, which is sufficient to overcome the surface tension and the cohesive forces between the water molecules. In the process, the air gets cooled. The remaining water molecules redistribute themselves and the distribution follows the Bell curve}
+$
+
+ACTION
+
+$ 
+ 
+To reduce the temperature of the air
+
+$
+
+STATE
+
+$
+
+Air temperature high
+
+Air temperature low
+
+$
+
+PHYPHENOMENON
+
+$
+
+The fan rotates
+
+Hot ambient air is drawn into the swamp cooler 
+
+The hot air is cooled
+
+Cooled moist air moves into the building
+
+$
+
+PHYEFFECT
+
+$
+
+Newton’s second law of motion
+
+Bernoulli’s law
+
+Convection effect
+
+$
+
+ 
+INPUT
+
+$                     		
+
+Torque applied by the motor
+
+Rotation of the fan, which creates a low pressure region
+
+Heat energy of the hot air used in evaporating water molecules
+
+Pressure difference between air inside the cooler and air inside the building
+
+$
+
+ORGAN
+
+$
+
+Presence of zero degrees of freedom between the motor shaft and the fan
+
+Presence of vents in the box for the air to enter
+
+Pad must be made of porous material
+
+Presence of opening for the hot air in the building to move outside
+
+$
+
+PARTS
+
+$
+
+Fan
+
+Air
+
+$
+
+
+REFERENCES 
+
+$
+http://en.wikipedia.org/wiki/Swamp_cooler#column-one
+http://www.air-n-water.com/swamp-coolers-evaporative.htm
+http://www.consumerenergycenter.org/home/heating_cooling/evaporative.html#cooling
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

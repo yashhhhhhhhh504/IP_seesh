@@ -1,0 +1,187 @@
+MACTION
+{
+A1 $ V < close > N < space > A < X > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < close > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth sliding surface between the sliding doors and the guide ways $
+}
+
+MPART
+{
+P1 $ Lift door $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+FUNCTION
+
+$
+These doors are used to close the lift while in operation. 
+$
+
+
+STRUCTURE
+
+$
+The doors are of sliding nature.
+$
+
+
+BEHAVIOUR
+
+$
+The doors are closed by a mere pressing of a button which activates the sliding doors and closes the lift.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/LIFTDOOR/01.JPG	$ 01.Lift Door $
+ADB/LOCKING/LIFTDOOR/02.GIF 	$ 02.Lift Door $
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+These are used to close the compartment of the lift while in operation.
+$
+
+ACTION
+
+$ 
+To close the space.
+
+To deploy.
+ 
+$
+
+STATE
+
+$
+The doors are open.
+
+The doors are closed.
+
+$
+
+PHYPHENOMENON
+
+$
+the doors close when the lift is not in operation.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+rotation of the crank, which in turn is rotated using a motor.
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the sliding doors and the guide ways.
+
+
+$
+
+
+
+PARTS
+$
+
+Lift door.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

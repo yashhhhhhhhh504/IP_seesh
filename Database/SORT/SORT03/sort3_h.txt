@@ -1,0 +1,92 @@
+SUMMARY
+$
+Using this device objects can be sorted out based on their heights. This device can be described as follows:
+
+The carrier (part) rotates in the horizontal plane (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the carrier (organ).
+
+The object (part) placed on the carrier passes through the bars of decreasing heights (physical phenomenon). This is due to the rotation of the carrier (input), which activates the friction effect (physical effect) and requires that the height of the object be lesser than the lowest bar (organ).
+
+The object (part) placed on the carrier falls down from the carrier (physical phenomenon). This is due to the contact between the object and the any one of the 3 bars (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the height of the object be more than that of  the heights of any of the 3 bars (organ).
+
+$
+
+
+ACTION
+{
+$ 
+ Using this device objects can be sorted out based on their heights.
+$
+}
+STATE
+{
+$
+The objects being shorter than the shortest bar.
+$
+The objects being longer than the shortest bar.
+$
+}
+PHYPHENOMENON
+{
+$
+The carrier rotates in the horizontal plane.
+$
+The object placed on the carrier passes through the bars.
+$ 
+The object placed on the carrier falls down from the carrier.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+No two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft.
+$
+Rotation of the carrier.
+$
+The contact between the object and the any one of the 3 bars.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the input shaft and the carrier.
+$
+Requires that the height of the object be lesser than that of the lowest bar.
+$
+Requires that the height of the object be more that the heights of any of the 3 bars.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The carrier along with the input shaft forms a revolute pair with the frame.
+$
+The 3 bars are fixed at different heights. The bar 1 being the highest and the bar 3 being the shortest. 
+$
+The object is simply supported on the carrier plate.
+$
+
+$
+
+$
+}
+
+

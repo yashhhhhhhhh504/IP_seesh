@@ -1,0 +1,101 @@
+MACTION
+{
+A1 $ V < transmit > A < intermittent > N < motion > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < cam > $
+PP2 $ V < oscillate > A < X > N < rack > $
+PP3 $ V < reduce > A < X > N < friction > $
+PP4 $ V < lift > A < X > N < arm > $
+PP5 $ V < drop > A < X > N < coulisse > $
+PP6 $ V < rotate > N < gear > A < intermittently > $
+PP7 $ V < drop > A < X > N < arm > $
+PP8 $ V < lift > A < X > N < coulisse > $
+PP9 $ V < disengage > A < X > N < gear > $
+PP10 $ V < lock > A < X > N < gear > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction $
+PE4 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < cam > $
+I3 $ V < rotate > A < X > N < roller > $
+I4 $ V < lift > A < X > N < arm > $
+I5 $ V < oscillate > A < X > N < rack > $
+I6 $ V < disengage > A < X > N < lock-teeth > $
+I7 $ V < lift > A < X > N < coulisse > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ eccentricity of the rack on the cam $
+O3 $ 0 dof of motion in the direction of motion $
+O4 $ contact : cam roller $
+O5 $ cam profile $
+O6 $ pivot $
+O7 $ contact : rack gear $
+O8 $ slot in the coulisse $
+O9 $ contact : lock-teeth gear $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ cam $
+P3 $ revolute pair $
+P4 $ rack $
+P5 $ cam pair $
+P6 $ roller $
+P7 $ arm $
+P8 $ coulisse $
+P9 $ gear $
+P10 $ gear pair $
+P11 $ prismatic pair $
+P12 $ lock-teeth $
+}
+
+LINK
+{
+< A1 IS1  OS1  CS1 PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1 PP2  PE1  I2  O2  P2  P4  P3 >
+< A1 IS1  OS1  CS1 PP3  PE3  I3  O4  P2  P6  P5 >
+< A1 IS1  OS1  CS1 PP4  PE2  I2  O5  P2  P7  P5 >
+< A1 IS1  OS1  CS1 PP5  PE4  I4  O6  P7  P8  P3 >
+< A1 IS1  OS1  CS1 PP6  PE2  I5  O7  P4  P9  P10 >
+< A1 IS1  OS1  CS1 PP6  PE2  I6  O8  P9  P8  P11 >
+< A1 IS1  OS1  CS1 PP7  PE2  I2  O5  P2  P7  P5 >
+< A1 IS1  OS1  CS1 PP8  PE4  I4  O6  P7  P8  P3 >
+< A1 IS1  OS1  CS1 PP9  PE1  I5  O5  P9  P8  P11 >
+< A1 IS1  OS1  CS1 PP10 PE1  I7  O9  P9  P12  P10 >
+
+
+}

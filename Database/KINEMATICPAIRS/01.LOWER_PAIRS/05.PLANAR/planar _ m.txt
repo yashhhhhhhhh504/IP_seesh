@@ -1,0 +1,68 @@
+MACTION
+{
+A1 $ V < produce > N < motion > A < plane > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < plane > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to plane motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < slide > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < apply > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of a smooth sliding surface between the two parts $
+O2 $ Presence of a smooth surface $
+}
+
+MPART
+{
+P1 $ part 1 $
+P2 $ sliding pair $
+P3 $ part 2 $
+P4 $ revolute pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P3 P4 >
+
+
+}
+
+
+
+
+
+
+
+
+
+

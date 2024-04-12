@@ -1,0 +1,71 @@
+SUMMARY
+$
+To transmit motion between two non-parallel and non-intersecting shafts. This can be described as follows:
+
+The worm (part) rotates about its axis (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom in the direction of motion (organ).
+
+The worm wheel mounted on the output shaft (part) rotates (physical phenomenon). This is due to the rotation of the worm (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the worm wheel meshes with the worm (organ).
+$
+
+ACTION
+{
+$ 
+ To transmit motion between two non-parallel and non-intersecting shafts.
+$
+}
+STATE
+{
+$
+The worm wheel is at rest.
+
+The worm wheel is rotating. 
+
+$
+}
+PHYPHENOMENON
+{
+$
+The worm rotates about its axis.
+
+The worm wheel mounted on the output shaft rotates.
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+The torque applied on it.
+
+The rotation of the worm.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom in the direction of motion.
+
+Necessary that the worm wheel meshes with the worm.
+$
+
+}
+
+PARTS
+{
+$
+The worm forms a revolute pair with the frame.
+
+The worm forms a gear pair with the worm wheel.
+
+The wheel forms a revolute pair with the frame.
+$
+}

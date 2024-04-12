@@ -1,0 +1,86 @@
+SUMMARY
+$
+This kind of pair can be used to rotate the movable member with respect to the fixed member. This can be described as follows:
+
+The movable member (part) rotates with respect to the fixed member (physical phenomenon). This is due to the force applied (input) on to the movable member, which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the fixed member and the movable member (organ).
+
+$
+
+ACTION
+{
+$ 
+ This kind of pair can be used to rotate the movable member with respect to the fixed member.
+$
+}
+STATE
+{
+$
+Absence of force at the movable member.
+$
+Presence of force at the movable member.
+$
+}
+PHYPHENOMENON
+{
+$
+The movable member rotates with respect to the fixed member.
+$
+
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Force applied on to the movable member.
+$
+
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of one degree of freedom between the fixed member and the movable member.
+$
+
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The movable member is joined to the fixed member through a hinged joint.
+$
+
+$
+
+$
+
+$
+
+$
+}
+

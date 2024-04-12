@@ -1,0 +1,237 @@
+MACTION
+{
+A1 $ V < produce > N < sound > A < large > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < unexploded > N < firecracker > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < explode > A < large > N < sound > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ explosion from unexploded state to get large sound $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < ignite > N < firecracker > A < X > $
+PP2 $ V < ignite > N < black powder > A < X > $
+PP3 $ V < burst > N < tube > A < tight > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Laws of thermodynamics, and combustion $
+PE2 $ Laws of thermodynamics, and combustion $
+PE3 $ Laws of thermodynamics, and combustion $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < energy > A < chemical > $
+I2 $ V < provide > N < energy > A < x > $
+I3 $ V < x > N < gas > A < high-pressure > $
+}
+
+MORGAN
+{
+O1 $ Ignition temperature reaches and there is continuity of black powder in the fuse $
+O2 $ Correct chemical composition of black powder and presence of oxidizer in it $
+O3 $ Correct thickness of paper tube and right chemical composition of black powder $
+}
+
+MPART
+{
+P1 $ Fuse $
+P2 $ Black powder $
+P3 $ Tight tub $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+FUNCTION
+
+$
+Firecrackers when explode produce loud sound. For this they use chemical energy of black powder, which is filled in a tight paper tube.
+$
+
+
+STRUCTURE
+
+$
+Firecrackers have black powder packed in a tight paper tube. This black powder is ignited with the help of a fuse, which is nothing, but a cotton thread coated with black powder, which can be ignited. This fuse gives required heat energy for starting the chemical reactions of the powder inside the tight tube.
+$
+
+BEHAVIOUR
+
+$
+Fuse of the firecracker is ignited by some external heat source. This is due to chemical energy getting converted into heat energy, which actuates the laws of thermodynamics, and combustion, which requires that ignition temperature reaches and there is continuity of black powder in the fuse. Black powder inside the tight paper tube gets ignited. This is due to energy provided by the fuse, which actuates the laws of thermodynamics, and combustion, and requires correct chemical composition of black powder and presence of oxidizer in it. Tight tube bursts and gives loud sound. This is due to generation of high-pressure gases due to combustion of black powder, which actuates the laws of thermodynamics, and combustion, and requires correct thickness of paper tube and right chemical composition of black powder.
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/FIRECRACKER/FIRECRACKER01.GIF	$ 01.FIRECRACKER $
+ADB/SPECIAL/FIRECRACKER/FIRECRACKER02.JPG	$ 02.FIRECRACKER $
+}
+
+
+CLIP
+
+{
+
+}
+
+
+SUMMARY
+$
+Firecrackers when explode produce loud sound. For this they use chemical energy of black powder, which is filled in a tight paper tube. Its working is explained below,
+
+Fuse (part) of the firecracker is ignited by some external heat source (physical phenomenon). This is due to chemical energy (input) getting converted into heat energy, which actuates the laws of thermodynamics, and combustion (physical effect), which requires that ignition temperature reaches and there is continuity of black powder in the fuse (organ).
+
+Black powder inside the tight paper tube (part) gets ignited (physical phenomenon). This is due to energy provided by the fuse (input), which actuates the laws of thermodynamics, and combustion (physical effect), and requires correct chemical composition of black powder and presence of oxidizer in it (organ).
+
+Tight tube (part) bursts and gives loud sound (physical phenomenon). This is due to generation of high-pressure gases (input) due to combustion of black powder, which actuates the laws of thermodynamics, and combustion (physical effect), and requires correct thickness of paper tube and right chemical composition of black powder (organ)
+
+$
+
+ACTION
+
+$ 
+ To produce loud sound.
+$
+
+
+
+STATE
+
+$
+Firecracker in unexploded state.
+Firecracker exploded to give loud sound.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Fuse of the firecracker is ignited by some external heat source
+
+Black powder inside the tight paper tube gets ignited
+ 
+Tight tube bursts and gives loud sound
+
+
+$
+
+
+PHYEFFECT
+
+$
+
+Laws of thermodynamics, and combustion
+
+Laws of thermodynamics, and combustion
+
+Laws of thermodynamics, and combustion
+$
+
+
+
+
+INPUT
+
+$
+
+Chemical energy
+
+Energy provided by the fuse
+
+High-pressure gases
+
+$
+
+
+
+ORGAN
+
+$
+
+Ignition temperature reaches and there is continuity of black powder in the fuse
+
+Correct chemical composition of black powder and presence of oxidizer in it
+
+Correct thickness of paper tube and right chemical composition of black powder
+
+$
+
+
+
+PARTS
+$
+Fuse
+
+Black powder 
+
+Tight tub
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

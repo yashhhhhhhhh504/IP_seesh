@@ -1,0 +1,92 @@
+SUMMARY
+$
+This mechanism can be used for grasping and releasing objects. This mechanism can be described as follows:
+
+The rack (part) being connected to the actuator moves away and towards the base plate alternately (physical phenomenon). This is due reciprocating motion of the actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of zero degree of freedom between the rack and actuator (organ).
+
+The links 3 and 4 (part) move outwards (physical phenomenon). This is due to the movement of the rack away from the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the meshing of the pinions of the links with the rack (organ).
+
+
+The links 3 and 4 (part) move inwards (physical phenomenon). This is due to the movement of the rack towards the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the meshing of the pinions of the links with the rack (organ).
+
+
+
+
+$
+
+ACTION
+$
+ 
+ Using this mechanism objects can be held and released as and when required.
+
+$
+STATE
+$
+
+Absence of force at the actuator.
+
+Presence of force at the actuator
+
+$
+PHYPHENOMENON
+$
+
+The rack being connected to the actuator moves away and towards the base plate alternately.
+
+The links 3 and 4 move outwards.
+ 
+The links 3 and 4 move inwards
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+
+$
+
+INPUT
+$
+
+Reciprocating motion of the actuator.
+
+Movement of the rack away from the base plate.
+
+Movement of the rack towards the base plate.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the rack and actuator.
+
+The meshing of the gears of the links with the rack.
+
+
+
+
+
+
+$
+PARTS
+$
+
+The actuator forms sliding pair with the base plate.
+
+The pinions of the links 3 and 4 form a rack and pinion pair with the rack.
+
+The pinions are mounted on either side of the base plate.
+
+
+
+
+
+$

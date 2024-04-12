@@ -1,0 +1,222 @@
+MACTION
+{
+A1 $ V < generate > A < intermittent > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < input-link > A < X > $
+PP2 $ V < reduce > N < friction > A < X > $
+PP3 $ V < transfer > N < motion > A < X > $
+PP4 $ V < reduce > N < acceleration > A < X > $
+PP5 $ V < rotate > N < geneva-wheel > A < X > $
+PP6 $ V < position > N < slot > A < X > $
+PP7 $ V < prevent > N < motion > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < rotate > N < roller > A < X > $
+I3 $ V < rotate > N < input-link > A < X > $
+I4 $ V < allow > A < radial > N < movement > $
+I5 $ V < provide > A < angular > N < rotation > $
+I6 $ V < apply > A < frictional > N < force > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom of motion in direction of motion $
+O2 $ contact : roller cam $
+O3 $ roller-slot interface $
+O4 $ zero degree of freedom $ 
+O5 $ cam profile $
+O6 $ ratio of diameters $
+O7 $ material of the locking surface $
+O8 $ contact : locking-surface geneva-wheel $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ input-link $
+P3 $ fixed pair $
+P4 $ roller $
+P5 $ cam pair $
+P6 $ allowance $
+P7 $ revolute pair $
+P8 $ cylindrical pair $
+P10 $ geneva-wheel $
+P11 $ locking surface $
+P12 $ sliding pair $
+P13 $ kinematic-pair $
+}
+LINK
+{
+< A1  IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P8 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P1  P4  P5 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P4  P10  P12 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O3  P4  P10  P12 >
+< A1  IS1  OS1  CS1 PP3  PE3  I3  O4  P4  P10  P12 >
+< A1  IS1  OS1  CS1 PP4  PE1  I4  O5  P1  P2  P6 >
+< A1  IS1  OS1  CS1 PP5  PE3  I3  O3  P4  P10  P12 >
+< A1 IS1  OS1  CS1  PP5  PE3  I3  O4  P4  P10  P12 >
+< A1  IS1  OS1  CS1 PP6  PE1  I5  O6  P1  P10  P7 >
+< A1  IS1  OS1  CS1 PP7  PE2  I6  O7  P1  P11  P3 >
+< A1  IS1  OS1  CS1 PP7  PE2  I6  O8  P10  P11  P13 >
+}
+
+FUNCTION
+
+$
+This mechanism is used to produce dwell motions. It transmits power intermittently to the output shaft. 
+$
+
+
+STRUCTURE
+
+$
+As shown in the figure, this mechanism consists of a stationary grooved cam, an input link, driving roller, roller follower and output Geneva. The input link is pivoted about the center of the grooved cam. However, it has a small slot so that it can move axially for a short distance. The driving roller is mounted on the input link and it fits into the slot of the geneva, driving it. The roller follower, which fits into the groove of the cam, is attached to the end of the input link. 
+$
+
+
+BEHAVIOUR
+
+$
+When a geneva is driven by a roller rotating at a constant speed, it tends to have very high acceleration and deceleration characteristics. In this modification, the input link, which contains the driving roller, can move radially while being rotated by the groove cam. Thus, as the driving roller enters the geneva slot, it moves radially inward. This action reduces the geneva acceleration force. 
+$
+
+
+PICTURE
+
+{
+ADB/GENEVA/GROOVECAM/groovecam.jpg	$ Groove Cam Geneva $
+}
+
+
+CLIP
+
+{
+ADB/GENEVA/GROOVECAM/groovecam.avi	$ Groove Cam Geneva $
+}
+
+SUMMARY
+$
+This can be used to generate intermittent motion. This can be interpreted as a change of state from rest to small angular rotation. This can be described as follows:
+
+The input link (part) rotates continuously (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input link (organ).
+
+The roller follower (part) slides along the groove of the stationary cam (physical phenomenon). This is due to the rotation of the input link (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the roller follower and the groove surface (organ).
+
+The driving roller (part) slides in the slot of the output Geneva as it rotates (physical phenomenon). This is due to the rotation of the input link (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the driving surface and the slot of the output Geneva (organ).
+
+The output Geneva (part) rotates intermittently (physical phenomenon). This is due to the rotation of the driving roller (input), which activates the law “no two bodies can occupy the same space at the same time”  (physical effect) and is necessary that the force applied by the driving roller is sufficient to overcome the inertia of the output Geneva (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To generate intermittent motion.
+$
+
+STATE
+
+$
+The output Geneva is at rest.
+
+The output Geneva rotates through a small angle.
+
+$
+
+PHYPHENOMENON
+
+$
+The input link rotates continuously.
+
+The roller follower slides along the groove of the stationary cam.
+ 
+The driving roller slides in the slot of the output Geneva as it rotates.
+
+The output Geneva rotates intermittently.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the input shaft.
+
+The rotation of the input link.
+
+The rotation of the input link.
+
+The rotation of the driving roller.
+
+$
+
+
+ORGAN
+
+$
+
+Presence of zero degree of freedom between the input shaft and the input link.
+
+Presence of a smooth surface between the roller follower and the groove surface.
+
+Presence of a smooth surface between the driving surface and the slot of the output Geneva.
+
+Necessary that the force applied by the driving roller is sufficient to overcome the inertia of the output Geneva.
+$
+
+
+
+PARTS
+$
+The input link forms a revolute pair with the frame.
+
+The roller follower forms a sliding pair with the groove of the stationary cam.
+
+The driving roller forms a sliding pair with the slot of output Geneva.
+
+The output Geneva forms a revolute pair with the frame.
+
+$
+
+
+
+
+

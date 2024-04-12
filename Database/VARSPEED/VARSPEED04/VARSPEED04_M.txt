@@ -1,0 +1,84 @@
+MACTION
+{
+
+A1 $ V < transmit > A < x > N < power > $
+A2 $ V < change > A < rapidly > N < speed > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < constant > N < speed > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < variable > N < speed > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ from constant speed to variable speed $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < disk1 > $
+PP2 $ V < rotate > A < x > N < roller > $
+PP3 $ V < rotate > A < x > N < shaft > $
+PP4 $ V < rotate > A < x > N < disk2 > $
+PP5 $ V < rotate > A < x > N < output > $
+PP6 $ V < change > A < x > N < position > $
+PP7 $ V < change > A < x > N < speed > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < maintain > A < x > N < contact > $
+I3 $ V < rotate > A < x > N < roller > $
+I4 $ V < apply > A < x > N < force > $
+I5 $ V < change > A < x > N < position > $
+I6 $ V < rotate > A < x > N < disk2 > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ friction material $
+O3 $ zero dof of motion in the dir of motion $
+O4 $ presence of a smooth sliding surface between the roller and the shaft $
+O5 $ ratio of diameters $
+}
+
+MPART
+{
+P1 $ disk1 $
+P2 $ frame $
+P3 $ roller $
+P4 $ shaft $
+P5 $ revolute pair $
+P6 $ prismatic pair $
+P7 $ contact $
+P8 $ disk2 $
+P9 $ output $
+P10 $ fixed pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P5 >
+< A1 IS1  OS1  CS1  PP2  PE3  I2  O2  P1  P3  P7 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P3  P4  P6 >
+< A1 IS1  OS1  CS1  PP4  PE3  I2  O2  P8  P3  P7 >
+< A1 IS1  OS1  CS1  PP5  PE1  I6  O1  P8  P9  P10 >
+< A1 IS1  OS1  CS1  PP6  PE1  I4  O4  P3  P4  P6 >
+< A2 IS2  OS2  CS2  PP7  PE1  I5  O5  P1  P3  P7 >
+< A2 IS2  OS2  CS2  PP7  PE1  I5  O5  P8  P3  P7 >
+}

@@ -1,0 +1,199 @@
+
+MACTION
+{
+A1 $ V < actuate > N < mechanism > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < material length > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < length material > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from length to large length of material $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < increase > N < length > A < material > $
+PP2 $ V < initiate > N < mechanism > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Magnetostriction effect $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < field > A < magnetic > $
+I2 $ V < provide > N < motion > A < x > $
+}
+
+MORGAN
+{
+O1 $ material has magnetostriction property $
+O2 $ the increase in the length of material is sufficient to cause the motion $
+}
+
+MPART
+{
+P1 $ material $
+P2 $ magnetostriction property $
+P3 $ mechanism $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 >
+
+}
+
+FUNCTION
+
+$
+Actuation can be provided by the means of magnetostriction. A bent iron rod will straighten a bit in a longitudinally directed magnetic field. This change of dimension can be used for actuation.
+$
+
+
+STRUCTURE
+
+$
+Terfenol actuators usually have a rod of Terfenol which is placed under compression in order to align the magnetic domains perpendicular to the length of the rod. A coil around the rod can then apply a field to the rod that will align the domains along its length. The schematic in figure 1 shows an actuator that has a permanent magnet to bias the Terfenol rod so that currents flowing in the coil in different directions will make the actuator decrease or increase in length. If the magnetic bias was not present then a current in either direction would cause the actuator to expand and if the actuator was being used as a loud speaker then the frequency of voltage applied to the coil would be doubled by the speaker.
+$
+
+
+BEHAVIOUR
+
+$
+Most magnetic materials exhibit magnetostriction, which is a change in physical dimension as a result of magnetic ordering. There are two types of magnetostriction: spontaneous magnetostriction which arises from the magnetic ordering of atomic moments below the Curie temperature (usually causing a volume expansion) and field induced magnetostriction which arises from the alignment of magnetic domains on application of an applied field.
+Spontaneous magnetostriction is exploited in the NiFe based alloy known as invar, which is noted for the fact that it shows zero thermal expansion up to its Curie temperature. As mentioned previously, the saturation magnetisation of a material decreases on heating towards the Curie temperature due to a decrease in the degree of alignment of the atomic magnetic moments. As this alignment and the saturation magnetisation decreases then so does the volume expansion caused by the spontaneous magnetostriction and hence the material contracts.  In the case of invar this contraction due to loss of spontaneous magnetostriction is equal to the expansion caused by normal thermal vibration processes, and hence the material shows no change in dimensions. However, above the Curie temperature there is no longer any magnetic ordering and thermal expansion occurs normally.
+
+Field induced magnetostriction occurs when magnetic domains align and the dimension change caused by the ordering of the atomic magnetic moments all combine to give a dimensional change to the block of material. The material that shows the largest useful magnetostriction is Terfenol, which is an alloy of Tb, Dy and Fe. Terfenol is used for position and field sensors, as well as mechanical actuators and speakers. Magnetostrictive position / load sensors work by the fact that when a magnetostrictive material experiences a strain then the magnetisation of the material will change.
+An iron rod placed in a magnetic field directed along its length stretches slightly in a weak magnetic field and contracts slightly in a strong magnetic field. Mechanically stretching and compressing a magnetized iron rod inversely produces fluctuations in the magnetization of the rod. This effect is utilized in nickel magnetostriction transducers that transmit and receive high-frequency sound vibrations. 
+$
+
+
+PICTURE
+
+{
+ADB/ACTUATOR/MAGNETOSTRICTION/terfenol.jpg	$ Terfenol Actuator	$
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This phenomenon can be used to provide actuation to some of the mechanisms. This can be interpreted as a change of state from original length to final length of the material. This can be discussed as follows:
+
+The material (part) expands in length (physical phenomenon). This is due to the application of magnetic field in the direction of the length (input), which activates the magnetostriction effect (physical effect) and is necessary the material has magnetostriction property (organ).
+
+The mechanism (part) is actuated (physical phenomenon). This is due to the slight motion given to the mechanism, which in turn is due to the increase in the length of the material  (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the increase in the length of material is sufficient to cause the motion (organ).
+
+
+ 
+$
+
+ACTION
+
+$ 
+ To actuate mechanism.
+$
+
+STATE
+
+$
+The length of the material is small.
+
+The length of the material is large.
+
+$
+
+PHYPHENOMENON
+
+$
+The material expands in length.
+
+The mechanism is actuated.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Magnetostriction effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The application of magnetic field in the direction of the length.
+
+The slight motion given to the mechanism, which in turn is due to the increase in the length of the material.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary the material has magnetostriction property.
+
+Necessary that the increase in the length of material is sufficient to cause the motion.
+
+
+
+
+$
+
+
+
+PARTS
+$
+The material with magnetostriction property.
+
+The mechanism that has to be actuated.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

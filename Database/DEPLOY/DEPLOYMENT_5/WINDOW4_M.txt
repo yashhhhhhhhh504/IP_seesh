@@ -1,0 +1,72 @@
+MACTION
+{
+A1 $ V < increase > N < area > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less space to occupying large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < slider > A < X > $
+PP2 $ V < rotate > N < links > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time.  $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < slider > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of a smooth surface between the slider and the slot. $
+O2 $ Presence of one degree of freedom between the links and the slider. $
+}
+
+MPART
+{
+P1 $ slider $
+P2 $ sliding pair $
+P3 $ slot $
+P4 $ links $
+P5 $ revolute-pair $
+P6 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

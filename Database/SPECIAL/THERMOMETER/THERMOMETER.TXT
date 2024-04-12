@@ -1,0 +1,252 @@
+
+
+MACTION
+{
+A1 $ V < measure > N < temperature > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < expansion > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < expand > A < x > N < mercury > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ contraction or expansion of mercury to measure temperature $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < keep > N < bulb > A < X > $
+PP2 $ V < expand > N < mercury > A < X > $
+PP3 $ V < increase > N < capillary > A < x > $
+}
+
+
+
+MPHYEFFECT
+{
+PE1 $ laws of heat transfer $
+PE2 $ some substances expand on heating $
+PE3 $ no two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < energy > A < heat > $
+I2 $ V < receive > N < energy > A < heat > $
+I3 $ V < expand > N < mercury > A < x > $
+
+}
+
+
+
+MORGAN
+{
+O1 $ environment has to be hotter than thermometer $
+O2 $ space for mercury to expand $
+O3 $ vacuum in capillary part of the thermometer $
+}
+
+
+MPART
+{
+P1 $ The bulb of thermometer $
+P2 $ The mercury $
+P3 $ Capillary of thermometer $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+Thermometers are used to measure temperature. Mercury Thermometers use expansion of mercury as a key idea for measuring temperature.
+
+$
+
+
+STRUCTURE
+
+$
+Thermometers are used to measure temperature. Mercury Thermometers use expansion of mercury as a key idea for measuring temperature. The bulb of thermometer has mercury, which expands, or contracts depending on the temperature of the environment. The change in volume id shown as change in length in capillary part of thermometer.
+$
+
+
+BEHAVIOUR
+
+$
+The bulb of thermometer is kept at a place at which temperature is to be measured. If the place is hot, the heat energy crosses the wall of thermometer, which actuates the laws of heat transfer. To receive heat the environment has to be hotter than thermometer. The mercury, which is in the bulb, expands. The energy received as heat expands which actuates the law that some substances expand on heating. There has to be space for mercury to expand. Capillary of thermometer shows increase in length of mercury. Expansion of mercury is shown in the capillary and used for temperature measurement, which actuates the law that no two bodies can occupy the same space at the same time. There has to be vacuum in capillary part of the thermometer.
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/THERMOMETER/THERMOMETER01.GIF		$ 01.THERMOMETER $
+ADB/SPECIAL/THERMOMETER/THERMOMETER02.JPG		$ 02.THERMOMETER $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+SUMMARY
+$
+Thermometers are used to measure temperature. Mercury Thermometers use expansion of mercury as a key idea for measuring temperature. It is as below,
+
+The bulb of thermometer (part) is kept at a place at which temperature is to be measured (physical phenomenon). If the place is hot, the heat energy (input) crosses the wall of thermometer, which actuates the laws of heat transfer (physical effect). To receive heat the environment has to be hotter than thermometer (organ).
+
+The mercury (part), which is in the bulb, expands (physical phenomenon). The energy received as heat (input) expands which actuates the law that some substances expand on heating (physical effect). There has to be space for mercury to expand (organ).
+
+Capillary (part) of thermometer shows increase in length of mercury (physical phenomenon). Expansion of mercury (input) is shown in the capillary and used for temperature measurement, which actuates the law that no two bodies can occupy the same space at the same time (physical effect). There has to be vacuum in capillary part of the thermometer (organ).
+$
+
+ACTION
+
+$ 
+
+To measure temperature.
+ 
+$
+
+
+STATE
+
+$
+Mercury in no expansion state.
+Mercury expanded or contracted.
+
+
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+The bulb of thermometer is kept at a place at which temperature is to be measured
+
+The mercury, which is in the bulb, expands 
+
+Capillary of thermometer shows increase in length of mercury
+
+$
+
+
+PHYEFFECT
+
+$
+
+laws of heat transfer
+
+some substances expand on heating
+
+no two bodies can occupy the same space at the same time
+
+$
+
+
+INPUT
+
+$
+
+Heat energy
+
+The energy received as heat
+
+Expansion of mercury
+$
+
+
+ORGAN
+
+$
+
+To receive heat the environment has to be hotter than thermometer
+
+There has to be space for mercury to expand
+
+There has to be vacuum in capillary part of the thermometer
+
+
+
+$
+
+
+
+PARTS
+$
+
+
+The bulb of thermometer
+
+The mercury
+
+Capillary of thermometer
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

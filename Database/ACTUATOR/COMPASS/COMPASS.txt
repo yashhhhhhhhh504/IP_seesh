@@ -1,0 +1,191 @@
+
+
+MACTION
+{
+A1 $ V < indicate > N < direction > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rest > N < magnetic-needle > $
+
+}
+MOUTPUTSTATE
+{
+
+OS1 $ V < show > A < direction > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ Rotation of the magnetic needle to indicate direction to show direction $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < attract > N < north > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Opposite poles of magnets which actuates the law that two different magnetic poles attract each other $
+}
+
+MINPUT
+{
+I1 $ V < attract > N < force > A < x > $
+}
+
+MORGAN
+{
+O1 $ Frictionless bearing and very small resistance to the rotation of the needle $
+}
+
+MPART
+{
+P1 $ needle of the compass $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+}
+
+
+
+
+FUNCTION
+
+$
+Compass shows the direction. Its needle aligns the north-south direction.
+$
+
+
+STRUCTURE
+
+$
+It has a magnetic needle mounted on a frictionless bearing. The needle is lightweight and is mounted on a frictionless bearing.
+$
+
+BEHAVIOUR
+
+$
+North marking on the magnetic needle of the compass is attracted towards North Pole of the earth. This is due to force of attraction between opposite poles of magnets that actuates the law that two different magnetic poles attract each other and requires the frictionless bearing and very small resistance to the rotation of the needle.
+
+$
+
+PICTURE
+
+{
+ADB/ACTUATOR/COMPASS/01.GIF		$ 01.COMPASS $
+ADB/ACTUATOR/COMPASS/02.JPG		$ 02.COMPASS $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+
+SUMMARY
+$
+
+Compass shows the direction. Its needle aligns the north-south direction. It has a magnetic needle mounted on a frictionless bearing. Its working is explained below,
+
+North marking on the magnetic needle of the compass (part) is attracted towards North Pole of the earth (physical phenomenon). This is due to force of attraction (input) between opposite poles of magnets which actuates the law that two different magnetic poles attract each other (physical effect) and requires the frictionless bearing and very small resistance to the rotation of the needle (organ).
+$
+
+ACTION
+
+$ 
+Indication of direction.
+
+ 
+$
+
+STATE
+
+$
+Needle at rest.
+Needle shows direction.
+$
+
+
+
+PHYPHENOMENON
+
+$
+North marking on the magnetic needle of the compass is attracted towards North Pole of the earth
+
+$
+
+
+PHYEFFECT
+
+$
+Opposite poles of magnets which actuates the law that two different magnetic poles attract each other
+
+$
+
+
+INPUT
+
+$
+Force of attraction
+$
+
+
+ORGAN
+
+$
+Frictionless bearing and very small resistance to the rotation of the needle
+$
+
+
+
+PARTS
+$
+needle of the compass
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < large > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < less > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying large area to less area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < fold > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the sheet has enough stiffness $
+}
+
+MPART
+{
+P1 $ Sheet $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+These boxes are used to carry materials since they provide protection to the materials carried.
+$
+
+
+STRUCTURE
+
+$
+The sheet is made up of cardboard. The sheet has prescored lines.
+$
+BEHAVIOUR
+
+$
+The sheet is folded to make up a box by folding it along prescored lines.
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/UTILITARIAN_CREASES/scan.jpg $ utilitarian creases $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This box is an example of deployment structures. The box occupies less space when it is made a box and occupies large area when spread to make a sheet. This can be discussed as follows:
+
+The sheet (part) is folded to form a box (physical phenomenon). This is due to a sequence of moments applied (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the sheet has enough stiffness (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The sheet is occupying large area.
+
+The sheet is occupying less area.
+
+$
+
+PHYPHENOMENON
+
+$
+The sheet is folded to form a box.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+A sequence of moments applied.
+$
+
+
+ORGAN
+
+$
+Necessary that the sheet has enough stiffness.
+
+
+
+$
+
+
+
+PARTS
+$
+Sheet.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+
+
+MACTION
+{
+A1 $ V < sort > N < object > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < free-falling > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to free-falling motion  $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < plane > A < horizontal > $
+PP2 $ V < pass > N < bar > A < X > $
+PP3 $ V < x > N < object > A < free-fall > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < carrier > A < x > $
+I3 $ V < contact > N < object bar > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the carrier $
+O2 $ the height of the object be lesser than that of the lowest bar $
+O3 $ the height of the object be more that the heights of any of the 3 bars $
+}
+
+MPART
+{
+P1 $ carrier $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ barrier $
+P5 $ fixed pair $
+P6 $ frame $
+P7 $ object $
+P8 $ free pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 P7 P8 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+} 
+MCHANGESTATE
+{
+CS1 $ from less space to large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < piston > A < X > $
+PP2 $ V < rotate > N < links > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < Pneumatic > $
+I2 $ V < move > N < piston > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of a smooth sliding surface between the cylinder and the piston. $
+O2 $ Presence of one degree of freedom between the links and the piston. $
+}
+
+MPART
+{
+P1 $ piston $
+P2 $ sliding pair $
+P3 $ cylinder $
+P4 $ output links $
+P5 $ revolute pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

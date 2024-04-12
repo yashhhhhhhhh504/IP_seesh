@@ -1,0 +1,94 @@
+SUMMARY
+$
+The camera stand employs a tripod. This can be interpreted as a change of state from small area to large area. This can be described as follows:
+
+The vertical links (part) are pulled upwards (physical phenomenon). This is due to the upward force (input) applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of smooth surface between the links (organ).
+
+
+The horizontal links (part) are rotated  (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the vertical links and the horizontal links (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The mechanism is occupying less space.
+
+The mechanism is occupying less space.
+$
+
+PHYPHENOMENON
+
+$
+The vertical links are pulled upwards.
+
+The horizontal links are rotated.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Upward force.
+
+Torque applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of smooth surface between the links.
+
+Presence of one degree of freedom between the vertical links and the horizontal links.
+
+
+$
+
+
+
+PARTS
+$
+The vertical links forms a sliding pair with each other.
+
+The horizontal links forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

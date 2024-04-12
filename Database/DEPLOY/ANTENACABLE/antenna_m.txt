@@ -1,0 +1,85 @@
+MACTION
+{
+A1 $ V < transmit > N < signals > A < television > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+PP2 $ V < transmit > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ x $
+PE2 $ x $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+I2 $ V < x > N < force > A < driving > $
+}
+
+MORGAN
+{
+O1 $ Presence of space for deployment $
+O2 $ presence of a suitable material for transmission of signals $
+}
+
+MPART
+{
+P1 $ Antenna $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

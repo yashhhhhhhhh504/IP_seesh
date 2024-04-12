@@ -1,0 +1,207 @@
+MACTION
+{
+A1 $ V < generate > N < motion > A < intermittent > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N < rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < cam > A < continuously > $
+PP2 $ V < rotate > N < link > A < input > $
+PP3 $ V < slide > N < roller > A < driving > $
+PP4 $ V < rotate > N < wheel > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < cam > A < x > $
+I3 $ V < rotate > N < link > A < input > $
+I4 $ V < rotate > N < roller > A < driving > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the cam  $
+O2 $ zero degree of freedom between the input link and cam $
+O3 $ smooth surface between the driving roller and the slot on the output wheel $
+O4 $ force applied by the driving roller is sufficient enough to overcome the inertia of the output wheel $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ input link $
+P5 $ pin $
+P6 $ sliding pair $
+P7 $ slot $
+P8 $ output wheel $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 P3 P8 >
+
+
+}
+FUNCTION
+
+$
+The mechanism is used when the indexing geneva must be prevented from shifting while it is not indexing.
+$
+
+
+STRUCTURE
+
+$
+The cam, input crank, locking arm as well as the geneva wheel are mounted on the base frame. The input crank has a driving roller attached at its end, which drives the geneva wheel. The locking arm is pivoted at its center to the base frame. A tension spring is employed to bring the locking arm back to its position.
+$
+
+
+BEHAVIOUR
+
+$
+As the input crank and the cam rotate, the driving roller enters the slot in the geneva wheel and rapidly indexes the output. The locking arm follows the profile of the cam as it rotates. The cam profile is such that when the driving roller leaves one slot of the geneva wheel, the locking arm enters another. Thus the geneva wheel is prevented from shifting when it is not indexing. The tension spring holds the locking arm in place and allows it to return to its position when the indexing starts again.
+$
+
+
+PICTURE
+
+{
+ADB/GENEVA/LOCKINGARM/lockingarm.jpg		$ Locking-arm Geneva	$
+}
+
+
+CLIP
+
+{
+ADB/GENEVA/LOCKINGARM/lockingarm.avi		$ Locking-arm Geneva	$
+}
+SUMMARY
+$
+This mechanism can be used to generate intermittent motion. This can be interpreted as a change of state from rest to small angular rotation. This can be described as follows:
+
+The cam (part) rotates continuously (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the cam (organ).
+
+The input link (part) rotates (physical phenomenon). This is due to the rotation of the cam (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input link and cam (organ).
+
+The driving roller (part) slides in the slot of the output wheel (physical phenomenon). This is due to the rotation of the input link (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the driving roller and the slot on the output wheel (organ).
+
+
+The output wheel (part) undergoes a small angular rotation (physical phenomenon). This is due to the rotation of the driving roller (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the force applied by the driving roller is sufficient enough to overcome the inertia of the output wheel (organ).
+
+ 
+$
+
+ACTION
+
+$ 
+ To generate intermittent motion.
+$
+
+STATE
+
+$
+The output wheel is at rest.
+
+The output wheel undergoes a small angular rotation.
+
+$
+
+PHYPHENOMENON
+
+$
+The cam rotates continuously.
+
+The input link rotates.
+ 
+The driving roller slides in the slot of the output wheel.
+
+The output wheel undergoes a small angular rotation.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The rotation of the input shaft.
+
+The rotation of the cam.
+
+The rotation of the input link.
+
+The rotation of the driving roller.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the cam.
+
+Presence of zero degree of freedom between the input link and cam.
+
+Presence of a smooth surface between the driving roller and the slot on the output wheel.
+
+Necessary that the force applied by the driving roller is sufficient enough to overcome the inertia of the output wheel.
+$
+
+
+
+PARTS
+$
+The cam forms revolute pair with the frame.
+
+The input link forms revolute pair with the frame.
+
+The pin forms a sliding pair with the slot on the output wheel.
+
+The output wheel forms a revolute pair with the frame.
+
+$
+
+
+
+
+
+
+
+

@@ -1,0 +1,224 @@
+
+MACTION
+{
+A1 $ V < displace pump > N < liquid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < liquid level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at lower level to liquid at higher level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < reciprocate > N < piston > A < X > $
+PP3 $ V < x > N < flow > A < liquid > $
+PP4 $ V < pressurize displace > N < liquid > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Newtonian laws of motion $
+PE3 $ Vacuum effect $
+PE4 $ No two bodies can occupy the same space at the same time $ 
+
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < x > N < force > A < suction > $
+I4 $ V < move > N < piston > A < outward > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the crank $
+O2 $ one degree of freedom between the piston and the connecting link $
+O3 $ the pressure outside the cylinder is greater than the pressure inside it $
+O4 $ the pressure inside the cylinder is greater than the pressure outside $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ piston $
+P5 $ sliding pair $
+P6 $ cylinder $
+P7 $ liquid $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P7 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P7 >
+
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+
+Vacuum pumps are simply compressors that take in gas at a pressure lower than atmospheric pressure, compress it, and discharge the gas at atmospheric pressure. 
+$
+
+
+STRUCTURE
+
+$
+They consist of a piston and a cylinder arrangement. The cylinder has an inlet and outlet valves that are operated on the basis of pressure difference.
+$
+BEHAVIOUR
+
+$
+Since gas at low pressures has a large volume, vacuum pumps tend to be bulky. Steam jet ejectors are extensively used industrially for creating vacuum. Reciprocating piston and rotary-vane pumps are also widely used for producing vacuum.
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/VACUUM_PUMP/01.GIF		$ 01.VACUUM PUMP $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to displace liquid from a lower level to a higher level. This can be interpreted as a change of state from liquid at lower level to liquid at higher level. This can be described as follows:
+
+The crank (part) rotates (physical phenomenon). This is due to rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the input shaft and the crank (organ).
+
+The piston (part) reciprocates within the cylinder (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the piston and the connecting link (organ).
+
+The liquid (part) enters the cylinder (physical phenomenon). This is due to the suction force, which is due to the inward motion of the piston (input), which activates the vacuum effect (physical effect) and is necessary that the pressure outside the cylinder is greater than the pressure inside it (organ).
+
+The liquid (part) is pressurized and then displaced out of the cylinder through the outlet (physical phenomenon). This is due to the outward motion of the piston (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the pressure inside the cylinder is greater than the pressure outside (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To displace liquid.
+
+
+To pump liquid.
+$
+
+STATE
+
+$
+The liquid is at lower level.
+
+The liquid is at higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The crank rotates.
+
+The piston reciprocates within the cylinder.
+
+The liquid enters the cylinder.
+
+The liquid is pressurized and then displaced out the cylinder through the outlet.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Vacuum effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Rotation of the input shaft.
+
+The rotation of the crank.
+
+The suction force.
+
+The outward motion of the piston.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the crank.
+
+Presence of one degree of freedom between the piston and the connecting link.
+
+Necessary that the pressure outside the cylinder is greater than the pressure inside it.
+
+Necessary that the pressure inside the cylinder is greater than the pressure outside.
+$
+
+
+
+PARTS
+$
+Crank forms a revolute pair with the frame.
+
+Piston forms a sliding pair with the cylinder.
+
+Liquid.
+
+Liquid.
+
+
+
+
+
+
+
+
+$

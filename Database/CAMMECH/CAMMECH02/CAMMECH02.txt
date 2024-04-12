@@ -1,0 +1,249 @@
+MACTION
+{
+A1 $ V < generate > A < non-uniform > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < uniform > N  < motion > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < non-uniform > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ From uniform motion to non-uniform motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < revolve > A < X > N < gear > $
+PP2 $ V < rotate > A < X > N < gear > $
+PP3 $ V < revolve > A < X > N < cam > $
+PP4 $ V < rotate > A < X > N < cam > $
+PP5 $ V < reduce > A < X > N < friction > $
+PP6 $ V < maintain > A < X > N < contact > $
+PP7 $ V < rotate > A < X > N < follower > $
+PP8 $ V < reciprocate > A < X > N < follower > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ two bodies cannot occupy the same space at the same time $
+PE3 $ friction $
+PE4 $ Hooke's Law $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < revolve > A < X > N < gear > $
+I3 $ V < apply > A < X > N < spring-force > $
+I4 $ V < apply > A < radial > N < force > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom of motion in direction of motion $
+O2 $ contact : fixed gear planet gear $
+O3 $ contact : roller cam $
+O4 $ spring stiffness $
+O5 $ cam profile $
+}
+
+MPART
+{
+P1 $ input shaft $
+P2 $ carrier $
+P3 $ fixed pair $
+P4 $ fixed gear $
+P5 $ revolute pair $
+P6 $ planet gear $
+P7 $ cam $
+P8 $ roller $
+P9 $ cam pair $
+P10 $ index arm $
+P11 $ spring $
+P12 $ flexible pair $
+}
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P6 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I1 O1 P6 P7 P3 >
+< A1 IS1 OS1 CS1 PP4 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE2 I2 O2 P6 P7 P3 >
+< A1 IS1 OS1 CS1 PP5 PE3 I2 O3 P7 P8 P9 >
+< A1 IS1 OS1 CS1 PP5 PE3 I2 O3 P8 P10 P5 >
+< A1 IS1 OS1 CS1 PP6 PE4 I3 O4 P2 P10 P5 >
+< A1 IS1 OS1 CS1 PP6 PE4 I3 O4 P2 P10 P12 >
+< A1 IS1 OS1 CS1 PP7 PE2 I2 O3 P1 P10 P5 >
+< A1 IS1 OS1 CS1 PP7 PE2 I2 O3 P7 P8 P9 >
+< A1 IS1 OS1 CS1 PP7 PE2 I2 O3 P8 P10 P5 >
+< A1 IS1 OS1 CS1 PP8 PE2 I4 O5 P7 P8 P9 >
+< A1 IS1 OS1 CS1 PP8 PE2 I4 O5 P8 P10 P5 >
+}
+
+
+FUNCTION
+
+$
+This mechanism is used to provide a nonuniform rotary motion, with dwell periods that can be used for indexing. 
+$
+
+
+STRUCTURE
+
+$
+This mechanism combines an epicyclic gear and cam. A planetary wheel and cam are fixed relative to one another. A carrier connects the planetary wheel and cam arrangement to the fixed gear. The index arm and the carrier are pivoted at the center of the fixed gear. The index arm carries the roller follower at a distance suitable to the position of the cam. A tension spring connected between the index arm and the carrier (not shown in the animation), restrains the follower from leaving the surface of the cam. 
+$
+
+
+BEHAVIOUR
+
+$
+As the input shaft rotates, the planet gear rotates around the fixed gear, along with the carrier and the cam. While the carrier rotates about the center of the fixed gear, the eccentric cam rotates about the center of the planet gear. The index arm also rotates about the center of the fixed gear, but unlike the carrier it has a nonuniform motion with dwell periods as it follows the profile of the cam.
+$
+
+
+PICTURE
+
+{
+ADB/CAMMECH/CAMMECH02/CAMMECH02.JPG	$ Indexing Cam $
+}
+
+
+CLIP
+
+{
+ADB/CAMMECH/CAMMECH02/CAMMECH02.AVI	$ Indexing Cam	$
+}
+SUMMARY
+$	
+This mechanism can be used to produce a non-uniform rotary motion with dwell periods.
+
+
+The carrier (part), which is mounted on the input shaft rotates (physical phenomenon). This is due to the torque (input) applied by the input shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the carrier (organ).
+
+The planetary wheel and the cam (part), which are mounted on a shaft on to which the other end of the carrier is mounted through a ball or a roller bearing. The planetary wheel and the cam revolve (physical phenomenon) around the circumference of the fixed wheel. This is due to the force (input) applied by the carrier, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the carrier and the bearing (organ).
+
+The planetary wheel (part) rotates (physical phenomenon). This is due to the tangential force (input) applied by the fixed gear, which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the wheel and the fixed gear (organ).
+
+The shaft (part) rotates (physical phenomenon). This is due to the torque (input) applied by the planetary wheel, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero of degree of freedom between the shaft and planetary wheel (organ)
+
+The eccentric cam (part) also rotates (physical phenomenon). This is due to the torque applied by the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the eccentric cam (organ).
+
+The roller follower (part), which is mounted on the index arm at a suitable distance rotates about its axis (physical phenomenon). This is due to the rotation of the cam (input), which activates the friction effect (physical effect) and requires the presence of contact between the cam and the roller follower (organ), which is achieved by employing a tension spring between the carrier and the index arm.
+
+The index arm (part), which is pivoted at the center of the fixed gear reciprocates with respect to the cam hence rotates non-uniformly with dwell periods about the center of the fixed gear (physical phenomenon). This is due to the rotation of the eccentric cam (input), which activates the law “ no two bodies can occupy the same space at the same time” (physical effect) and it requires the presence of proper profile on the eccentric cam (organ).
+$
+
+ACTION
+$
+ 
+ Using this mechanism non-uniform motion with dwell periods can be achieved.
+
+$
+STATE
+$
+
+unifrom motion.
+
+Non -uniform rotary motion of the index arm.
+
+
+$
+
+PHYPHENOMENON
+$
+
+Carrier mounted on the input shaft rotates continuously about the center of the fixed wheel.
+
+The planetary wheel and the cam revolve continuously around the center of the fixed wheel. 
+ 
+The planetary wheel rotates continuously about its axis.
+
+The shaft rotates continuously.
+
+The eccentric cam rotates continuously.
+
+The roller follower rotates continuously.
+
+The index arm reciprocates with respect to the cam and hence rotates non-uniformly about the center of the fixed gear.
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+No two bodies can occupy the same space at the same time
+
+$
+
+INPUT
+$
+
+Torque applied by the input shaft.
+
+Torque applied by the carrier.
+
+Tangential force applied by the fixed gear.
+
+Toque applied by the planetary wheel.
+
+The torque applied by the shaft.
+
+Rotation of the eccentric cam.
+
+$
+
+ORGAN
+$
+
+Zero degree of freedom between the input shaft and the carrier.
+
+Zero degree of freedom between the carrier and the bearing.
+
+Presence of contact between the planetary wheel and the fixed wheel.
+
+Zero of freedom between the shaft and the planetary wheel.
+
+Zero degree of freedom between the cam and the shaft.
+
+Presence of contact between the roller follower and the cam.
+
+Presence of a proper profile on the cam.
+$
+
+PARTS
+$
+
+The carrier forms a revolute pair with the frame.
+
+The planetary wheel forms a revolute pair with the frame
+
+The planetary wheel forms a gear pair with the fixed gear.
+
+The forms a revolute pair with the frame.
+
+The cam also forms a revolute pair with the frame.
+
+The roller follower forms a cam-follower pair with the cam.
+
+The index arm forms a revolute pair with the frame.
+
+
+
+
+$

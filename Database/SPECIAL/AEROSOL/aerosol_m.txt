@@ -1,0 +1,85 @@
+MACTION
+{
+A1 $ V < spray > AV < X > N < liquid > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < liquid-state > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < > N < gaseous-state> $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid to gas state $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > AV < X > N < push-button > AJ < X > $
+PP2 $ V < move > AV < X > N < stem-opening > AJ < > $
+PP3 $ V < move > AV < X > N < liquid > AJ < X > $
+PP4 $ V < spray > AV < X > N < liquid > AJ < > $
+PP5 $ V < > AV < X > N < > AJ < > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+PP7 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < apply > AV < X > N < force > AJ < > $
+I2 $ V < move > AV < X > N < push-button > AJ < X > $
+I3 $ V < > AV < X > N < pressure-gradient > AJ < > $
+I4 $ V < decrease > AV < X > N < boiling-point > AJ < > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of sliding contact between the valve push button and the valve stem $
+02 $ necessary that the stem opening is just above the valve $
+O3 $ Presence of sliding contact between the valve push button and the valve stem $
+O4 $ Presence of low pressure outside the dispenser $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < push-button > AJ < X > $
+P2 $ V < X > AV < X > N < nozzle > AJ < > $
+P3 $ V < X > AV < X > N < pair > AJ < fixed > $
+P4 $ V < X > AV < X > N < nozzle-stem > AJ < > $
+P5 $ V < X > AV < X > N < gasket > AJ < X > $
+P6 $ V < X > AV < X > N < sliding-pair > AJ < > $
+P7 $ V < X > AV < X > N < material > AJ < dispensable > $
+P8 $ V < X > AV < X > N < dispenser > AJ < > $
+P9 $ V < X > AV < X > N < liquid> AJ < X > $
+P10 $ V < X > AV < X > N < gas > AJ < X > $
+P11 $ V < X > AV < X > N < atmosphere > AJ < X > $
+
+
+}
+
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P7 P8 P9 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P7 P10 P11 >

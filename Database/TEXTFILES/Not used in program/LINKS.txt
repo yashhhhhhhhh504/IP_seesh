@@ -1,0 +1,8 @@
+LABEL
+$ Rigid link $
+{
+}
+LABEL
+$ Flexible links $
+{
+}

@@ -1,0 +1,87 @@
+MACTION
+{
+A1 $ V < join > N < parts > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < separate > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < joined > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from separate to joined. $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < apply > N < part > A < X > $
+PP2 $ V < apply > N < pressure > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Gravity effect $
+PE2 $ Adhesive effect. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Pressure > A < x > $
+I2 $ V < x > N < weight > A < self > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the pressure applied is high enough to cause the movement of the gum outside the tube. $
+O2 $ Necessary that the weight of the object is sufficient enough to apply the required pressure. $
+}
+
+MPART
+{
+P1 $ Gum $
+P2 $ Two objects to be joined $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

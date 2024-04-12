@@ -1,0 +1,90 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < regain > N < shape > A < original > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ occupying less space to large space $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < fold > N < part > A < X > $
+PP2 $ V < unfold > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Heat transfer effect $
+PE2 $ Transformation effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < energy > A < Chemical > $
+I2 $ V < x > N < energy > A < Heat > $
+}
+
+MORGAN
+{
+O1 $ Presence of oxygen in the surrounding to assist the burning of the fuel $
+O2 $ Necessary that the required temperature for the transformation has been reached $
+}
+
+MPART
+{
+P1 $ Flame $
+P2 $ Shape memory alloy $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

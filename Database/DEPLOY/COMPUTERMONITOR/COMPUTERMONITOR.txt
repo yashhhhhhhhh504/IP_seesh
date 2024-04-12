@@ -1,0 +1,188 @@
+MACTION
+{
+A1 $ V < change > N < orientation > A < X > $
+A2 $ V < rotate > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < change > A < x > N < orientation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from one direction to another $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ spherical joint between the monitor and its base $
+
+}
+
+MPART
+{
+P1 $ Monitor $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+FUNCTION
+
+$
+The monitor of the computer can be rotated on the base to orient it in the required direction. 
+$
+
+
+STRUCTURE
+
+$
+The monitor of the computer forms a spherical pair with the base. 
+$
+
+
+BEHAVIOUR
+
+$
+The monitor is oriented in the required direction to suit the user by rotating the monitor on the base.
+$
+
+
+
+PICTURE
+
+{
+ADB/DEPLOY/COMPUTERMONITOR/01.JPG		$ Computer Monitor $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+The orientation of the monitor is adjustable.
+$
+
+ACTION
+
+$ 
+To change the orientation of the monitor.
+$
+
+STATE
+
+$
+The orientation of the monitor is changed from one direction to another.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the monitor.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Torque.
+
+$
+
+
+ORGAN
+
+$
+Presence of a spherical joint between the monitor and its base.
+$
+
+
+
+PARTS
+$
+Monitor.
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

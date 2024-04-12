@@ -1,0 +1,238 @@
+MACTION
+{
+A1 $ V < produce > N < sound > A < electric > $
+}
+
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < silence > N < x > $
+
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < generate > A < x > N < sound > $
+
+} 
+
+MCHANGESTATE
+{
+CS1 $ from silence to sound generated $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < produce > N < voice coil > A < magnetic > $
+PP2 $ V < reciprocate > N < voice coil > A < X > $
+PP3 $ V < vibrate > N < cone > A < flexible > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Laws, related to electromagnets $
+PE2 $ Laws, related to electromagnets $
+PE3 $ Newtonian laws of motion $
+}
+
+
+MINPUT
+{
+I1 $ V < x > N < signal > A < electrical > $
+I2 $ V < attract > N < magnet > A < magnetic > $
+I3 $ V < move > N < voice coil > A < x > $
+}
+
+MORGAN
+{
+O1 $ Sufficient number of turns of wire in voice coil $
+O2 $ Interaction between permanent magnet's magnetic field and that produced by voice coil $
+O3 $ Connection between voice coil and cone $
+}
+
+
+MPART
+{
+P1 $ Vice coil $
+P2 $ Permanent magnet $
+P3 $ Flexible cone $
+}
+
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+FUNCTION
+
+$
+Speakers convert electrical signal into sound. 
+$
+
+
+STRUCTURE
+
+$
+Speakers convert electrical signal into sound. They have a flexible cone, spider, voice coil and permanent magnet as main parts. The vibration of cone generates sound waves.
+$
+
+BEHAVIOUR
+
+$
+Vice coil produces magnetic field. This is due to electric signal given to it, which actuates the laws, related to electromagnets and requires sufficient number of turns of wire in voice coil. With the help of permanent magnet voice coil reciprocates. This is due to attraction or repulsion between magnetic fields of voice coil and permanent magnet around it, which actuates the laws, related to electromagnets, and requires interaction between permanent magnet's magnetic field and that produced by voice coil. Flexible cone vibrates and generates. This is due to movement imparted by voice coil, which actuates Newtonian laws of motion, and requires connection between voice coil and cone, which has to be flexible.
+
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/SPEAKER/SPEAKER01.JPG		$ 01.SPEAKER $
+ADB/SPECIAL/SPEAKER/SPEAKER02.JPG		$ 02.SPEAKER $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+
+Speakers convert electrical signal into sound. They have a flexible cone, spider, voice coil and permanent magnet as main parts. The vibration of cone generates sound waves. It is as below,
+
+Vice coil (part) produces magnetic field (physical phenomenon). This is due to electric signal (input) given to it, which actuates the laws, related to electromagnets (physical effect) and requires sufficient number of turns of wire in voice coil (organ).
+With the help of permanent magnet (part) voice coil reciprocates (physical phenomenon). This is due to attraction or repulsion (input) between magnetic fields of voice coil and permanent magnet around it which actuates the laws, related to electromagnets (physical effect) and requires interaction between permanent magnet's magnetic field and that produced by voice coil (organ).
+
+Flexible cone (part) vibrates and generates (physical phenomenon). This is due to movement (input) imparted by voice coil, which actuates Newonian laws of motion (physical phenomenon), and requires connection between voice coil and cone, which has to be flexible (organ).
+
+
+$
+
+ACTION
+
+$ 
+To produce sound from electric signals.
+ 
+$
+
+STATE
+
+$
+No sound generated.
+Sound generated.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Vice coil produces magnetic field.
+
+Voice coil reciprocates.
+
+Flexible cone vibrates and generates
+ 
+$
+
+
+PHYEFFECT
+
+$
+
+Laws, related to electromagnets
+
+Laws, related to electromagnets
+
+Newtonian laws of motion
+
+$
+
+
+INPUT
+
+$
+Electric signal
+
+Attraction or repulsion between magnetic fields of voice coil and permanent magnet
+
+Movement imparted by voice coil
+$
+
+
+ORGAN
+
+$
+
+Sufficient number of turns of wire in voice coil
+
+Interaction between permanent magnet's magnetic field and that produced by voice coil
+
+Connection between voice coil and cone, which has to be flexible
+
+$
+
+
+
+PARTS
+$
+Vice coil
+
+Permanent magnet
+
+Flexible cone
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

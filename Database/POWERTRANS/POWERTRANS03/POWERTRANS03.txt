@@ -1,0 +1,209 @@
+MACTION
+{
+A1 $ V < transmit > A < x > N < motion > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < driver > A < x > $
+PP2 $ V < increase > A < friction > N < x > $
+PP3 $ V < pull > N < rope > A < x > $
+PP4 $ V < deliver > N < rope > A < x > $
+PP5 $ V < change > A < axial > N < direction > $
+PP6 $ V < rotate > N < driven > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < driver > A < x > $
+I3 $ V < increase > N < contact > A < x > $
+I4 $ V < select > N < configuration > A < x > $
+I5 $ V < apply > A < tangential > N < force > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ tension in the rope $
+O3 $ surface area $
+O4 $ arrangement of the rope $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ driver $
+P3 $ revolute pair $
+P4 $ driven $
+P5 $ rope $
+P6 $ rope pair $
+P7 $ idler-pulley $
+P8 $ right angle $
+}
+LINK
+{
+< A1  IS1 OS1  CS1 PP1  PE1  I1  O1  P1  P2  P3 >
+< A1  IS1 OS1  CS1 PP2  PE2  I3  O3  P2  P5  P6 >
+< A1  IS1 OS1  CS1 PP2  PE2  I3  O3  P4  P5  P6 >
+< A1  IS1 OS1  CS1 PP3  PE2  I2  O2  P2  P5  P6 >
+< A1  IS1 OS1  CS1 PP4  PE2  I2  O2  P2  P5  P6 >
+< A1  IS1 OS1  CS1 PP5  PE1  I4  O4  P7  P5  P6 >
+< A1  IS1 OS1  CS1 PP5  PE1  I4  O4  P2  P4  P8 >
+< A1  IS1 OS1  CS1 PP6  PE2  I5  O2  P4  P5  P6 >
+
+
+}
+
+FUNCTION
+
+$
+This device is used to transmit power from one shaft to another shaft, whose axes are perpendicular to each other. In this case, if the axis and direction of drive shaft is assumed as anticlockwise with respect to X-axis, then the driven shaft rotates in the clockwise direction with respect to the Z-axis.
+$
+
+
+STRUCTURE
+
+$
+The device consists of 2 pulleys, a drum and a rope. One pulley is mounted on the drive shaft while the other is just an idler pulley. The rope is twisted through 90 degrees and is connected to the pulley and drum. The idle pulley is pressed against the rope and is mounted on idle shaft, which is parallel to drive shaft. As shown in the figure, links 1, 2 are pulleys, link 3 is a rope and link 4 is a drum.
+$
+
+
+BEHAVIOUR
+
+$
+The pulley 1 gets the torque from the shaft to which it is connected. The pulley pulls the rope wrapped around it because of the frictional force created between the shaft and the pulley. The rope in turn produces the tangential force at the surface of the drum. This tangential force creates a torque on the drum, so that the drum rotates and in turn it rotates the output shaft. The efficiency of power transmission is high in this case because the surface of contact will be increased by the smaller idle or guide pulley. 
+$
+
+
+PICTURE
+
+{
+ADB/POWERTRANS/POWERTRANS03/powertrans03.jpg		$ Power Transmission $
+}
+CLIP
+{
+}
+
+SUMMARY
+$
+This device is used to transmit power from one shaft to another shaft, whose axes are perpendicular to each other. This device can be described as follows:
+
+The driver pulley (part) being mounted on the input shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver pulley (organ).
+
+The rope (part) wrapped around the driver pulley moves in the linear direction (physical phenomenon). This is due to the rotation of the pulley (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the rope (organ).
+
+
+The drum (part) whose axis is at 90 degrees to the axis of the driver pulley rotates (physical phenomenon). This is due to the movement of the rope (input), which activates the friction effect (physical effect) and requires the presence of tension in the rope (organ).
+
+$
+
+
+ACTION
+$
+ 
+This device is used to transmit power from one shaft to another shaft, whose axes are perpendicular to each other.
+
+$
+STATE
+$
+
+Absence of torque at the input shaft.
+
+Presence of torque at the input shaft.
+
+$
+PHYPHENOMENON
+$
+
+The driver pulley being mounted on the input shaft rotates.
+
+The rope wrapped around the driver pulley moves in the linear direction.
+ 
+The drum whose axis is at 90 degrees to the axis of the driver pulley rotates.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+
+
+$
+
+INPUT
+$
+
+The rotation of the input shaft.
+
+The rotation of the pulley.
+
+The movement of the rope.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the driver pulley.
+
+Presence of friction surface between the pulley and the rope.
+
+Presence of tension in the rope.
+
+
+
+
+$
+
+PARTS
+$
+
+The driver pulley along with the input shaft forms a revolute pair with the frame.
+
+The rope forms a sliding pair with the pulley surfaces.
+
+
+The drum along with the out put shaft forms a revolute pair with the frame.
+
+
+
+
+
+$
+
+
+
+
+
+
+

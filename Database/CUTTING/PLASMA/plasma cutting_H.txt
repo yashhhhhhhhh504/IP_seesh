@@ -1,0 +1,110 @@
+SUMMARY
+$
+This can be used for cutting of materials. This can be interpreted as a change of state from gaseous state to plasma state. This can be described as follows:
+
+The inert gas (part) flows through the nozzle with high pressure (physical phenomenon). This is due to the suction force applied on it (input), which activates the Bernoulli’s law (physical effect) and is necessary that the nozzle is of convergent type (organ).
+
+The electrode (part) maintains an arc between itself and the metal (physical phenomenon). This is due to the flow of electricity through the electrode (input), which activates the arc discharge effect (physical effect) and is necessary that the electrode has contacted the metal at least once (organ).
+
+The arc (part) converts the inert gas into the plasma state (physical phenomenon). This due to the increase in the temperature (input) of the inert gas, which activates the ionization effect (physical effect) and is necessary that the temperature rise is sufficient enough to cause the ionization (organ).
+
+The plasma (part) thus formed cuts the material (physical phenomenon). This is due to the melting of the material (input), which activates the melting effect (physical effect) and is necessary that the melting point of the material is reached (organ).
+
+$
+
+ACTION
+
+$ 
+To cut materials.
+ 
+$
+
+STATE
+
+$
+The inert gas is in the gaseous form.
+
+The inert gas is in the plasma state. 
+
+$
+
+PHYPHENOMENON
+
+$
+The inert gas flows through the nozzle with high pressure.
+
+The electrode maintains an arc between itself and the metal.
+ 
+The arc converts the inert gas into the plasma state.
+
+The plasma thus formed cuts the material.
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law.
+
+Arc discharge effect.
+
+Ionization effect.
+
+Melting effect.
+$
+
+
+INPUT
+
+$
+Suction force applied on it.
+
+The flow of electricity through the electrode.
+
+The increase in the temperature.
+
+The melting of the material.
+$
+
+
+ORGAN
+
+$
+Necessary that the nozzle is of convergent type.
+
+Necessary that the electrode has contacted the metal at least once.
+
+Necessary that the temperatures raise is sufficient enough to cause the ionization.
+
+Necessary that the melting point of the material is reached.
+$
+
+
+
+PARTS
+$
+The inert gas forms a sliding pair with the nozzle. 
+
+The electrode forms a fixed pair with the frame.
+
+The arc is in between the electrode and the metal.
+
+The material forms a fixed pair with the work table.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

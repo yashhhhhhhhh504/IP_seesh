@@ -1,0 +1,84 @@
+SUMMARY
+$
+This mechanism can be used to operate the door of a chamber automatically.
+$
+
+ACTION
+
+$ 
+ To operate door.
+
+$
+
+STATE
+
+$
+The door is clocked.
+
+The door is open.
+
+$
+
+PHYPHENOMENON
+
+$
+Reciprocate the piston in the cylinder.
+
+Rotate the crank and hence the door.
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion. 
+
+
+$
+
+
+INPUT
+
+$
+Pneumatic pressure.
+
+Reciprocating motion of the piston.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the piston and the cylinder.
+
+
+Presence of one degree of freedom between the connecting rod of the piston and the crank.
+
+
+$
+
+
+
+PARTS
+$
+Piston.
+
+Crank.
+
+$
+
+
+
+
+
+
+
+
+
+

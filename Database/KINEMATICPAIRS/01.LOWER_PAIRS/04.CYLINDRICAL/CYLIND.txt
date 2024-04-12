@@ -1,0 +1,149 @@
+MACTION
+{
+A1 $ V < rotate > N < member >  A < X > $
+A2 $ V < translate > N< member > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotaion > $
+OS2 $ V < x > A < translation > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ from rotation to translation motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < turn > N < member > A < X > $
+PP2 $ V < transfer > N < torque > A < X > $
+PP3 $ V < translate > N < member > A < X > $
+PP4 $ V < transfer > N < motion > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < turn > N < member > A < X > $
+I3 $ V < apply > N < force > A < X > $
+I4 $ V < translate > N < member > A < X > $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P4 $ cylindrical pair $
+P5 $ fixed pair $
+}
+LINK
+{
+< A1  IS1  OS1  CS1 PP1  PE1  I1  O1  P1  P2  P4 >
+< A1  IS1  OS1  CS1 PP2  PE1  I2  O1  P1  P1  P5 >
+< A2  IS2  OS2  CS2 PP3  PE1  I3  O1  P1  P2  P4 >
+< A2  IS2  OS2  CS2 PP4  PE1  I4  O1  P1  P1  P5 >
+}
+
+
+FUNCTION
+
+$
+A cylindrical pair allows only a relative rotation between two elements, which can be expressed by two coordinates. Thus, a cylindrical pair has a two degrees of freedom.
+$
+
+
+STRUCTURE
+
+$
+Lower pairs are differentiated from higher pairs by the type of contact between the two bodies of the pair. Lower pairs have a surface contact, whereas two bodies of a Higher pair have a line or a point contact. An example of a cylindrical pair is shown in the figure where a shaft can rotate as well as travese linearally within a coupling.
+$
+
+
+BEHAVIOUR
+$
+A cylindrical pair keeps two axes of two rigid bodies aligned. Two rigid bodies that are part of this kind of system will have an independent translational motion along the axis and a relative rotary motion around the axis. Therefore, a cylindrical pair removes four degrees of freedom from spatial mechanism. As can be seen from the figure, the shaft can rotate as well as traverse linearally within the coupling. Thus this pair has only one degree of freedom.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/04.CYLINDRICAL/cylind1.jpg	$ Cylindrical Pair $
+}
+
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/04.CYLINDRICAL/cylind1.avi	$ Cylindrical Pair $
+}
+
+SUMMARY
+$
+The moving member (part) rotates and simultaneously slides along the other fixed member (physical phenomenon). This is due to the force and torque applied on to the moving member (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of friction free surface between the moving and the fixed member (organ).
+$
+
+ACTION
+$
+ 
+ Using this the moving member can be made to rotate as well as translate along the fixed member.
+
+$
+STATE
+$
+
+Absence of force and torque at the moving member.
+
+Presence of force and torque at the moving member
+
+$
+PHYPHENOMENON
+$
+
+The moving member slides and rotates simultaneously along the fixed member.
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+$
+
+INPUT
+$
+
+The force and torque applied on to the moving member.
+$
+
+ORGAN
+$
+
+Presence of friction free surface between the moving and the fixed member.
+
+$
+
+PARTS
+$
+
+The moving pair forms a cylindrical pair with the fixed member.
+
+$
+
+

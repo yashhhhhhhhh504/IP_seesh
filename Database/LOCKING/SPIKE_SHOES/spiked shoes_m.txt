@@ -1,0 +1,82 @@
+MACTION
+{
+A1 $ V < provide > N < grip > A < X > $
+A2 $ V < lock > N < part > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < outside > N < soil > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < inside > N < soil > $
+} 
+MCHANGESTATE
+{
+CS1 $ from outside soil to inside soil $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < penetrate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Force concentration effect $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < load > A < point > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the spikes have very sharp and pointed tips $
+}
+
+MPART
+{
+P1 $ Spiked shoes $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+MACTION
+{
+A1 $ V < reduce > N < noise > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < loud > N < noise > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < light > N < noise > $
+} 
+MCHANGESTATE
+{
+CS1 $ from loud noise to light noise $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < flow > N < waves > A < sound > $
+PP2 $ V < interfere > N < waves > A < sound > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Law of continuity $
+PE2 $ Law of superimposition $
+}
+
+MINPUT
+{
+I1 $ V < increase > N < area > A < flow > $
+I2 $ V < produce > N < interference > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the sound waves follow the contour of the enlarged tube $
+O2 $ Presence of reflecting material in the tubes of the mufflers $
+}
+
+MPART
+{
+P1 $ sound waves $
+P2 $ sliding pair $
+P3 $ tubes of the mufflers $
+P4 $ reflecting material $
+P5 $ fixed pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 P4 P5 >
+
+}
+
+
+
+FUNCTION
+
+$
+A muffler dampens the sound of a car's operation by using several techniques together. These techniques are as follows: pressure pulse, destructive interference and backpressure. Without a muffler an engine can be painfully loud.
+$
+
+
+STRUCTURE
+
+$
+The entire set up consists of a resonance chamber and perforated pipes.
+
+$
+BEHAVIOUR
+
+$
+Pressure pulse: when a balloon pops, pressure inside the balloon escapes in an instant and creates a loud noise. Every time an exhaust valve opens in an engine, it is like a very loud noise balloon bursting.
+
+Destructive interference: another function of a muffler is to try to cancel out some of the noise.
+
+Backup pressure: all turns and tubes in the mufflers restrict the flow of exhaust gases and create some backup pressure in the exhaust system.
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/MUFFLERS/01.JPG		$ 01.MUFFLER $
+ADB/TRANSPORT/MUFFLERS/02.JPG		$ 02.MUFFLER $
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to reduce noise. This can be interpreted as a change of state from more noise to less noise. This can be described as follows:
+
+The sound waves (part) come out in an even stream (physical phenomenon). This is due to the increase in the area of flow (input), which activates the law of continuity (physical effect) and is necessary that the sound waves follow the contour of the enlarged tube (organ).
+
+The sound waves (part) undergo destructive interference (physical phenomenon). This due to the interference of sound waves which are out of phase (input) which activates the law of superimposition (physical effect) and requires the presence of reflecting material in the tubes of the mufflers (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To reduce noise.
+
+$
+STATE
+$
+
+Loud noise.
+
+Light noise.
+
+$
+PHYPHENOMENON
+$
+
+The sound waves come out in an even stream.
+
+The sound waves undergo destructive interference.
+ 
+
+
+
+
+$
+
+PHYEFFECT
+$
+
+Law of continuity.
+
+Law of superimposition.
+
+
+
+$
+
+INPUT
+$
+
+Increase in the area of flow.
+
+Interference of sound waves, which are out of phase.
+
+
+
+$
+
+ORGAN
+$
+
+Necessary that the sound waves follow the contour of the enlarged tube.
+
+Presence of reflecting material in the tubes of the mufflers.
+
+
+
+
+
+
+$
+
+PARTS
+$
+
+The sound waves forms a sliding pair with the tubes of the mufflers.
+
+The reflecting material forms a fixed pair with the tubes of the mufflers.
+$

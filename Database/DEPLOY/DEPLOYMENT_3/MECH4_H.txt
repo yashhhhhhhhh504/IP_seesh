@@ -1,0 +1,80 @@
+SUMMARY
+$
+This mechanism can be used for deployment. This can be described as follows:
+
+The rope (part) is pulled (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied on it sufficient to cause the motion (organ).
+
+The plates (part) move ahead (physical phenomenon). This is due to the movement of the rope (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the rope passes through the plates (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The plates are overlapping.
+
+The plates are moved away from each other.
+
+$
+
+PHYPHENOMENON
+
+$
+The rope is pulled.
+
+The plates move ahead.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the rope.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the force applied on it sufficient to cause the motion.
+
+Necessary that the rope passes through the plates.
+
+$
+
+
+
+PARTS
+$
+The rope forms a sliding pair with the plates.
+
+The plates form a sliding pair with each other.
+
+
+$
+
+
+
+
+
+
+

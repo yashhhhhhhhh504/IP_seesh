@@ -1,0 +1,48 @@
+Summary
+{
+This mechanism generates an approximate straight-line motion  as described below:
+
+The input link is connected to the frame by a revolute pair (Structure). The input link is made to rotate (Physical Phenomenon) by applying a torque to it (Input), activating Newtonian Laws of Motion (Physical Effect). This rotation occurs as there exists the zero degree of freedom of motion in the direction of motion (Organ)
+
+All the links in this mechanism are connected to each other by revolute joints (Structure). The rotation of the drive arm (Input) activates Newtonian Laws of motion (Physical Effect) resulting oscillatory motion of Arm 2 (Physical Phenomenon) made possible due to connecting link (Organ) and the single degree of freedom between the links (Organ).
+
+All the links in this mechanism are connected to each other by revolute joints (Structure). The rotation of arm 2 (Input) and the oscilation of arm 2 (Input) activates Newtonian Laws of motion (Physical Effect) straight-line motion of the stylus (Physical Phenomenon) made possible due to ratio of lengths of the links (Organ) and the single degree of freedom of motion of the links of the mechanism (Organ)
+}
+
+ACTION
+{
+$ This mechanism generates straight line motion $
+}
+
+PHYPHENOMENON
+{
+$ Rotation of input link $
+$ Oscillation of Arm 2 $
+$ Straight-line motion of the stylus $
+}
+
+PHYEFFECT
+{
+$ Newtonian laws of motion $
+$ The basic law that no two bodies can occupy the same space at the same time $
+}
+
+INPUT
+{
+$ Torque to input crank $
+$ The rotation of input-link $
+$ The oscillation of arm 2 $
+}
+
+ORGAN
+{
+$ zero degree of freedom of motion between the two bodies in the direction of motion $
+$ connecting link $
+$ ratio of lengths of the links $
+$ single degree of freedom of motion between the links in the mechanism $
+}
+
+STUCTURE
+{
+$ All the links are connected by revolute joints $
+}

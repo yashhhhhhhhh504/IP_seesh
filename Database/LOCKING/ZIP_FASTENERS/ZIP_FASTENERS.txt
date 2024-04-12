@@ -1,0 +1,200 @@
+
+MACTION
+{
+A1 $ V < fasten > N < fabric > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion of the slide $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < slide > A < X > $
+PP2 $ V < engage > N < chain > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Interlocking effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < x > N < movement slide > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the slide and the guide ways  $
+O2 $ the protrusions of one of the chains exactly match with the recesses of the other chain $
+}
+
+MPART
+{
+P1 $ slide $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ protrusion $
+P5 $ locking pair $
+P6 $ recess $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+These can be used to fasten two pieces of fabric.
+$
+
+
+STRUCTURE
+
+$
+The main parts of zip fasteners are the two chains of teeth, which are attached to strips of textile material and the slide, which opens and closes the fasteners. Each chain consists of a large number of teeth, usually of metal, which are provided with small protrusions on the top surface and with corresponding recesses on the underside.
+$
+BEHAVIOUR
+
+$
+The protrusions on each tooth engage accurately with the recess in the tooth above. The two chains of teeth are slightly staggered in relation to each other. To close the fastener, the two chains must be so brought into engagement that the teeth on the two chains interlock in pairs.
+$
+
+PICTURE
+
+{
+ADB/LOCKING/ZIP_FASTENERS/01.JPG	$ 01.ZIP FASTENERS $
+ADB/LOCKING/ZIP_FASTENERS/02.JPG	$ 02.ZIP FASTENERS $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to fasten two pieces of fabric. This can be interpreted as a change of state from rest to sliding motion of the slide. This can be discussed as follows:
+
+The slide (part) is made to slide over the two chains (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the slide and the guide ways (organ).
+
+The two chains (part) engage with each other thus locking tightly (physical phenomenon). This is due to the movement of the slide (input), which activates the interlocking effect (physical effect) and is necessary that the protrusions of one of the chains exactly match with the recesses of the other chain (organ).
+
+ The top and bottom end pieces prevent the slide from coming off.
+
+
+$
+
+ACTION
+
+$ 
+ To fasten two pieces of fabric.
+$
+
+STATE
+
+$
+The slide is at rest.
+
+The slide is sliding along the guide ways.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The slide is made to slide over the two chains.
+
+The two chains engage with each other thus locking tightly.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Interlocking effect.
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the slide.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the slide and the guide ways.
+
+Necessary that the protrusions of one of the chains exactly match with the recesses of the other chain.
+
+
+$
+
+
+
+PARTS
+$
+The slide forms a sliding pair with the guide ways.
+
+The protrusions on one side form a locking pair with the recesses on the other side.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+SUMMARY
+$
+This can be used for splitting. This can be described as follows:
+
+The wedge (part) exerts an impact force on to the material (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the wedge to fall from a suitable height (organ).
+
+The wedge (part) pierces into the materials (physical phenomenon). This is due to the motion of the wedge (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the wedge is harder than the material (organ).
+
+$
+
+ACTION
+{
+$ 
+ To split material.
+$
+}
+STATE
+{
+$
+The wedge is outside the material.
+
+The wedge is inside the material.
+$
+}
+PHYPHENOMENON
+{
+$
+ The wedge exerts an impact force on to the material.
+
+The wedge pierces into the materials.
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+Force applied on it.
+
+Motion of the wedge.
+$
+}
+
+ORGAN
+{
+$
+Requires that the wedge falls from a suitable height.
+
+Requires that the wedge is harder than the material.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The material forms a fixed pair with the ground.
+
+The wedge forms a sliding pair with the material.
+
+$
+}
+
+

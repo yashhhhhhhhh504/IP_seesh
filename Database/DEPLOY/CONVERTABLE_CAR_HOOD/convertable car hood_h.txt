@@ -1,0 +1,76 @@
+SUMMARY
+$
+This mechanism can be used serve as a roof for the cars. This can be described as follows:
+
+The folded roof (part) expands and covers the entire top portion of the car (physical phenomenon). This is due to the actuating force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied on it sufficient to spread the roof on the top of the car (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The roof is occupying less space.
+
+The roof is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The folded roof expands and covers the entire top portion of the car.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Actuating force applied on to it.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the force applied on it sufficient to spread the roof on the top of the car.
+
+$
+
+
+
+PARTS
+$
+Folded roof.
+
+Car frame.
+
+
+$
+
+
+
+
+
+
+
+
+

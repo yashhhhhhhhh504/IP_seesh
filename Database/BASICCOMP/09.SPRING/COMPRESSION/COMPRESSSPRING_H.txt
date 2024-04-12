@@ -1,0 +1,69 @@
+SUMMARY
+$
+This can be used to store readily recoverable mechanical energy; this can be described as follows:
+
+The spring (part) undergoes deformation that is its length decreases (physical phenomenon). This is due to load applied (input), which activates the hooks law (physical effect) and requires that the load applied is an axial compressive load (organ),
+
+The spring (part) regains its original shape (physical phenomenon). This is due to the absence of the load that was previously applied (input), which activates the hook’s law (physical effect) and requires that load applied is within the elastic limit (organ).
+
+$
+
+ACTION
+$
+ 
+ To store readily recoverable energy.
+
+$
+STATE
+$
+
+The spring is in a deformed shape.
+
+The spring is in its original shape.
+
+$
+PHYPHENOMENON
+$
+
+The spring undergoes deformation that is its length decreases.
+
+The spring regains its original shape.
+
+
+$
+
+PHYEFFECT
+$
+
+Hooks law.
+
+$
+
+INPUT
+
+$
+
+Load applied.
+
+Absence of the load.
+
+$
+ORGAN
+
+$
+
+Requires that the load applied is an axial compressive load.
+
+Requires that load applied is within the elastic limit.
+
+$
+
+PARTS
+
+$
+One end of the spring forms a fixed pair with the frame.
+
+The load forms a flexible pair with the frame.
+
+
+$

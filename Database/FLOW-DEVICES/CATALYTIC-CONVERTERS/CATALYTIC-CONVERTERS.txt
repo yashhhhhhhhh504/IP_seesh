@@ -1,0 +1,194 @@
+MACTION
+{
+A1 $ V < reduce > N < chemicals > A < harmful > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < polluted > N < exhaust > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < less polluted > N < exhaust > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from polluted exhaust to less polluted exhaust $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < pass > N < gas > A < exhaust > $
+PP2 $ V < absorb > N < oxygen > A < X > $
+PP3 $ V < burn > N < hydrocarbon > A < unburnt > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No bodies can occupy the same space at the same time $
+PE2 $ Chemical effect $
+PE3 $ Combustion law $
+}
+
+MINPUT
+{
+I1 $ V < move > N < part > A < x > $
+I2 $ V < x > N < affinity > A < x > $
+I3 $ V < x > N < oxygen > A < x > $
+}
+
+MORGAN
+{
+O1 $ valve in the cylinder $
+O2 $ suitable material on the inner surface of the tubes of the converter $
+O3 $ Presence of a burner $
+}
+
+MPART
+{
+P1 $ Exhaust gas $
+P2 $ Oxygen $
+P3 $ Unburnt hydrocarbons $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+Modern car engines carefully control the amount of fuel they burn. They try to keep the air -to- fuel ratio very close to the stoichiometric point - the calculated ideal ratio of air to fuel. At this ratio all the fuel will be burned using all the oxygen in the air.
+$
+
+
+STRUCTURE
+
+$
+A catalytic converter uses two different types of catalysts: a reduction catalysts and an oxidization catalyst. Both types appear as a ceramic honeycomb coated with a metal catalyst, usually platinum, rhodium and palladium. 
+$
+BEHAVIOUR
+
+$
+A control system monitors the exhaust stream and uses this information to control the fuel injection system. An oxygen sensor mounted between the engine and the catalytic converter tells the engine control unit how much oxygen in the exhaust.
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/CATALYTIC-CONVERTERS/01.JPG		$ 01.CATALYTIC CONVERTERS $
+ADB/FLOW-DEVICES/CATALYTIC-CONVERTERS/02.JPG		$ 02.CATALYTIC CONVERTERS $
+ADB/FLOW-DEVICES/CATALYTIC-CONVERTERS/03.JPG		$ 03.CATALYTIC CONVERTERS $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to reduce the harmful chemical in the exhaust of the automobiles. This can be described as a change of state from polluted exhaust to less polluted exhaust. This device can be described as follows:
+
+The exhaust gas (part) passes through the first stage of the converter (physical phenomenon). This is due to the movement of the piston (input), which activates the law “no bodies can occupy the same space at the same time” (physical effect) and requires the presence of a valve in the cylinder (organ).
+
+ The oxygen (part) is absorbed by the material (physical phenomenon). This is due to the affinity between the material and the oxygen (input), which activates the chemical effect (physical effect) and requires the presence of a suitable material on the inner surface of the tubes of the converter (organ).
+
+The unburnt hydrocarbons (part) are completely burnt in the next stage of the converter (physical phenomenon). This is due to the availability of the sufficient oxygen (input), which activates the combustion law (physical effect) and requires the presence of a burner (organ). 
+$
+
+ACTION
+
+$ 
+ To reduce harmful chemicals.
+$
+
+STATE
+
+$
+Polluted exhaust.
+
+Less polluted exhaust.
+
+$
+
+PHYPHENOMENON
+
+$
+The exhaust gas passes through the first stage of the converter.
+
+The oxygen is absorbed by the material.
+ 
+The unburnt hydrocarbons are completely burnt in the next stage of the converter.
+
+$
+
+
+PHYEFFECT
+
+$
+No bodies can occupy the same space at the same time.
+
+Chemical effect.
+
+Combustion law.
+$
+
+
+INPUT
+
+$
+The movement of the piston.
+
+The affinity between the material and the oxygen.
+
+The availability of the sufficient oxygen.
+$
+
+
+ORGAN
+
+$
+Presence of a valve in the cylinder.
+
+Presence of a suitable material on the inner surface of the tubes of the converter.
+
+Presence of a burner.
+
+
+$
+
+
+
+PARTS
+
+$
+Exhaust gas.	
+
+Oxygen.
+
+Unburnt hydrocarbons.
+$
+
+
+
+
+
+
+
+
+
+
+
+
+

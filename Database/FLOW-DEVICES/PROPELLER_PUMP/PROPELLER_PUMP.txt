@@ -1,0 +1,208 @@
+MACTION
+{
+A1 $ V < pump > N < liquid > A < X > $
+A2 $ V < displace > N < liquid > A < X > $
+
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < level liquid > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at low level to liquid at high level  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < blade > A < X > $
+PP2 $ V < displace > N < liquid > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < x > $
+I2 $ V < rotate > N < impeller > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shaft and the blades $
+O2 $ continuous rotation of the impeller $
+}
+
+MPART
+{
+P1 $ Blade $
+P2 $ Liquid $
+P3 $ revolute pair $
+P4 $ frame $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P3 P4 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P3 P4 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+This is similar to other impeller pumps, but the fluid being pumped is not sent in a circular path. Rather, it proceeds more or less in a straight direction up to the discharge elbow.
+$
+
+
+STRUCTURE
+
+$
+Here, the motor sits above the discharge shaft. The distance to the propeller is usually well under 100 feet and often between 10 and 20 feet. 
+The propeller can be placed below the surface of the liquid, where it will always be primed. 
+
+$
+BEHAVIOUR
+
+$
+Propeller pumps are generally high-speed but with low heads. They can be quite large, measuring over a dozen feet in diameter and moving over 50,000 gallons per minute. Some have adjustable-pitch blades.. 
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/PROPELLER_PUMP/01.GIF		$ 01.PROPELLER PUMP $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to pump liquid that is to displace liquid. This can be interpreted as a change of state from liquid at low level to liquid at higher level. This can be described as follows:
+
+The blades (part) rotate (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the shaft and the blades (organ).
+
+The liquid (part) is displaced to the discharge tube (physical phenomenon). This is due to the rotation of the impeller (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and it requires the continuous rotation of the impeller (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To displace liquid.
+
+To pump liquid.
+$
+
+STATE
+
+$
+The liquid is at a lower level.
+
+The liquid is at a higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The blades rotate.
+
+The water is displaced to the discharge tube.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the shaft.
+
+The rotation of the impeller.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the shaft and the blades.
+
+The continuous rotation of the impeller.
+
+
+$
+
+
+
+PARTS
+$
+Blades on the impeller form a revolute pair with the frame.
+
+Liquid.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

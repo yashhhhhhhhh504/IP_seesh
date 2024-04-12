@@ -1,0 +1,202 @@
+MACTION
+{	
+A1 $ V < connect > N < pulleys > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < X > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < linear > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < wrap >  N < pulleys > A < X > $
+PP2 $ V < move >  N < rope > A < X > $
+PP3 $ V < rotate >  N < pulley > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Hook’s law $
+
+}
+
+MINPUT
+{
+I1 $ V < X >  N < force > A < tensile > $
+I2 $ V < X >  N < force > A < tensile > $
+I3 $ V < X >  N < force > A < frictional > $
+
+}
+
+MORGAN
+{
+O1 $ the rope has the necessary tensile strength $
+O2 $ friction surface between the pulley and the rope $
+O3 $ friction surface between the rope and the pulley and hence the absence of slip $
+
+}
+
+MPART
+{
+P1 $ rope $
+P2 $ pulley $
+P3 $ sliding pair $
+P4 $ pulley $
+P5 $ wrapping pair $
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P4 P5  >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P3  >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P3 P4  >
+
+}
+
+
+
+
+FUNCTION
+$
+A rope is usually used in association with a pulley in order to transmit motion. Ropes are used where the distance between the shafts is large. For small distances, gears are preferred.
+Ropes are also used widely in different applications like climbing, tying, securing etc.
+
+$
+
+
+STRUCTURE
+$
+Ropes are flexible types of connectors, i.e. they are bent easily. The flexibility of belts is due to their property of their materials. A rope is a length of fibers woven together to improve strength. It has tensile strength but is too flexible to provide compressive strength (i.e., it can be used for pulling, not pushing).
+
+Climbing ropes are generally made from nylon and have kern mantle construction. There is a core, kern, of long twisted fibres in the middle, and an outer sheath, mantle, of woven coloured fibres. The kern provides most of the strength, the mantle protects the kern and generally affects the handling of the rope (how easy it is to hold, to tie knots in, and so on). Dynamic ropes are made by chopping the fibres in the kern to make them shorter which makes the rope more stretchy.
+
+$
+
+
+BEHAVIOUR
+$
+To transmit power from one shaft to another, pulleys are mounted on the two shafts. The pulleys are then connected by an endless rope passing over them. The connecting rope is kept in tension so that the motion of one pulley is transferred to the other without slip. Varying the diameters of the two pulleys can vary the speed of the driven shaft. However, there is slip involved, which prevents 100% transmission, & hence some power is lost. This means that ropes are not positive type of drives, i.e. their velocity ratios are not constant.
+
+Ropes used for climbing can be divided into two categories: dynamic ropes and static ropes. Static ropes have very low stretch properties, they are used for carrying equipment, hauling equipment, and attaching pieces of equipment together. Dynamic ropes are stretchy; being stretchy is crucial in order to limit the maximum force experienced by a climber that falls when using one (and also the maximum force experienced by any piece of gear securing the climber to the rock or ice). The main ropes (called "lead ropes" when the climber is leading) that a climber uses are dynamic. 
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/rope.jpg			$ 01. Rope	$
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/ropedrive.jpg		$ 02. Rope Drive	$
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/ropedrive1.jpg		$ 03. Rope Drive	$
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/steelrope.jpg		$ 04. Steel Rope	$
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/twistedrope.jpg		$ 05. Twisted Rope	$
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/braidedrope.jpg		$ 06. Braided Rope	$
+ADB/KINEMATICPAIRS/03.WRAPPING_PAIRS/08.Rope/ropetypes.jpg		$ 07. Rope Types	$
+
+}
+
+
+CLIP
+{
+}
+
+SUMMARY	
+$
+This can be used to connect two pulleys. This can be described as follows:
+
+The rope (part) wraps around the circumference of the two pulleys mounted on their respective shafts (physical phenomenon). This is due to the tensile force applied on to it (input), which activates the hook’s law (physical effect) and is necessary for the rope to have the necessary tensile strength (organ).
+
+
+The rope (part) moves over the pulley surface (physical phenomenon). This is due to the tensile force applied by the pulley mounted on the input shaft, which in turn is due to the friction (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the rope (organ).
+
+
+The pulley mounted on the output shaft (part) rotates (physical phenomenon). This is due to the friction between the rope and the pulley (input) which activates the friction effect (physical effect) and requires the presence of friction surface between the rope and the pulley and hence the absence of slip (organ).
+
+
+
+$
+
+ACTION
+$
+ 
+ To connect two pulleys and to transmit motion between them.
+
+$
+STATE
+$
+
+Rope is at rest on the two pulleys.
+
+Rope is under going linear motion.
+
+$
+PHYPHENOMENON
+$
+
+The rope wraps around the circumference of two pulleys mounted on their respective shafts.
+
+The rope moves over the pulley surface.
+ 
+The pulley mounted on the output shaft rotates.
+
+
+$
+
+PHYEFFECT
+$
+
+Hook’s law.
+
+
+$
+
+INPUT
+$
+
+Tensile force applied on to it.
+
+Tensile force applied by the pulley mounted on the input shaft, which in turn is due to the friction.
+
+The friction between the rope and the pulley.
+
+$
+
+ORGAN
+$
+
+Requires that the rope have the necessary tensile strength.
+
+Presence of friction surface between the pulley and the rope.
+
+Presence of friction surface between the rope and the pulley and hence the absence of slip.
+
+
+
+
+$
+PARTS
+
+$
+
+The rope forms a wrapping pair with the pulleys.
+
+The rope forms a sliding pair with the input pulley.
+
+The rope forms a sliding pair with the output pulley.
+
+
+$
+

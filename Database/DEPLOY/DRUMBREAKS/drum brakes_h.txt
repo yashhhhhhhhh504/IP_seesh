@@ -1,0 +1,104 @@
+SUMMARY
+$
+This mechanism can be used to stop the vehicles. This can be interpreted as a change of state from rest to outward motion. This can be described as follows:
+
+The piston (part) in the cylinder moves and also pushes the rubber bushes away from the center (physical phenomenon). This is due to the liquid pressure which acting on one inner side of the piston (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth surface between the piston and the cylinder (organ).
+
+The rubber shoes (part) stops the rotating disc (physical phenomenon). This is due to the friction force (input) between the rubber bushes, which activates the friction effect (physical effect) and requires the presence of a friction surface between the rubber bushing and the rotating disk (organ).
+
+$
+
+ACTION
+
+$ 
+To stop motion.
+
+To deploy.
+$
+
+STATE
+
+$
+The rubber shoes are close to the center.
+
+The rubber shoes are away from the center.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston in the cylinder moves and also pushes the rubber bushes away from the center.
+
+
+The rubber bushes stops the rotating disc.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Friction effect.
+
+
+$
+
+
+INPUT
+
+$
+Liquid pressure which acting on one inner side of the piston.
+
+Friction force.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the piston and the cylinder.
+
+
+Presence of a friction surface between the rubber bushing and the rotating disk.
+
+
+
+$
+
+
+
+PARTS
+$
+Piston cylinder arrangement.
+
+shoes.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

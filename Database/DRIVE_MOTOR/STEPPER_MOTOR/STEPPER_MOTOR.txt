@@ -1,0 +1,184 @@
+MACTION
+{
+A1 $ V < actuate > N < x > A < X > $
+A2 $ V < convert > N < energy > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rest > N < x > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < motion > N < x > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < become > N < magnet > A < X > $
+PP2 $ V < rotate > N < rotor > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Faraday’s law $
+PE2 $ Magnetic effect $
+}
+
+MINPUT
+{
+I1 $ V < flow > N < current > A < x > $
+I2 $ V < attract > N < stator > A < x > $
+}
+
+MORGAN
+{
+O1 $ the stator be electromagnetic $
+O2 $ the nearest end of rotor and stator are in opposite pole $
+}
+
+MPART
+{
+P1 $ Stator $
+P2 $ rotor $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+
+FUNCTION
+
+$
+A stepper motor is a brushless, synchronous electric motor that can divide a full rotation into a large number of steps. 
+$
+
+
+STRUCTURE
+
+$
+Stepper motors consist of a permanent magnet rotating shaft, called the rotor, and electromagnets on the stationary portion that surrounds the motor, called the stator.
+$
+
+BEHAVIOUR
+
+$
+The rotor is beginning at the upper electromagnet, which is currently active (has voltage applied to it).  To move the rotor clockwise (CW), the upper electromagnet is deactivated and the right electromagnet is activated, causing the rotor to move 90 degrees CW, aligning itself with the active magnet.  This process is repeated in the same manner at the south and west electromagnets until once again reach the starting position.
+$
+
+ATTRIBUTE
+
+$
+There are basically three types of stepping motors; variable reluctance, permanent magnet and hybrid. They differ in terms of construction based on the use of permanent magnets and/or iron rotors with laminated steel stators. The variable reluctance motor does not use a permanent magnet. 
+The variable reluctance motor has four "stator pole sets" set 15 degrees apart.
+The permanent magnet motor, also referred to as a "can stack" motor, has, as the name implies, a permanent magnet rotor. It is a relatively low speed, low torque device with large step angles of either 45 or 90 degrees. Unlike the other stepping motors, the PM motor rotor has no teeth and is designed to be magnetized at a right angle to its axis.
+Standard hybrid motors have 200 rotor teeth and rotate at 1.80 step angles. Other hybrid motors are available in 0.9ºand 3.6º step angle configurations. Standard (hybrid) stepping motors have 200 rotor teeth, or 200 full steps per revolution of the motor shaft. Dividing the 200 steps into the 360º's rotation equals a 1.8º full step angle. 
+Normally, full step mode is achieved by energizing both windings while reversing the current alternately. Essentially one digital input from the driver is equivalent to one step.
+Half step simply means that the motor is rotating at 400 steps per revolution. In this mode, one winding is energized and then two windings are energized alternately, causing the rotor to rotate at half the distance, or 0.9º's. (The same effect can be achieved by operating in full step mode with a 400 step per revolution motor). Half stepping is a more practical solution however, in industrial applications. Although it provides slightly less torque, half step mode reduces the amount "jumpiness" inherent in running in a full step mode.
+Step motors are designed to run hot (50º-90º C).
+
+$
+
+PICTURE
+
+{
+ADB/DRIVE_MOTOR/STEPPER_MOTOR/01.gif    $ 01.Stepper Motor $ 
+ADB/DRIVE_MOTOR/STEPPER_MOTOR/02.gif    $ 02.Stepper Motor $ 
+}
+
+
+CLIP
+
+{
+}
+ 
+SUMMARY
+$
+A stepper motor is a brushless, synchronous electric motor. It can be used as an actuator. This process can be described asbelow:
+
+Voltage applied to the upper most stator and the stator (part) becomes magnet (physical phenomenon). This is due to flow of current (input) which activates Faraday’s law (physical effect) and it requires that the stator be electromagnetic (organ).
+
+The one end of the stator becomes South Pole and another north pole.  When the next rotor is activated and previous is deactivated the rotor (part) rotates (physical phenomenon). This is due to attraction by the stator (input) which activates magnetic effect (physical effect) and it requires that the nearest end of rotor and stator are in opposite pole (organ).
+
+Then the stator is deactivated and next stator is activated and the process is continues and the rotor rotates.
+$
+
+ACTION
+
+$ 
+To actuate
+
+To convert energy
+$
+
+STATE
+
+$
+Rotor is at rest
+
+Rotor is in motion
+$
+
+
+
+PHYPHENOMENON
+
+$
+Stator becomes magnet
+
+Rotor rotates
+$
+
+
+PHYEFFECT
+
+$
+Faraday’s law
+
+Magnetic effect
+$
+
+
+INPUT
+
+$
+Flow of current
+
+Attraction by the stator
+$
+
+
+ORGAN
+
+$
+The stator be electromagnetic
+
+The nearest end of rotor and stator are in opposite pole
+$
+
+
+
+PARTS
+
+$
+Stator
+
+Rotor
+$
+
+REFERENCES
+
+$
+en.wikipedia.org/wiki/Stepper_motor
+$

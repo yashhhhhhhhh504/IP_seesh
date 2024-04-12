@@ -1,0 +1,106 @@
+SUMMARY
+$
+This mechanism can be used to lock doors.
+$
+
+ACTION
+
+$ 
+ To lock doors.
+$
+
+STATE
+
+$
+The doors are open.
+
+The doors are closed.
+
+$
+
+PHYPHENOMENON
+
+$
+The sliding block of the lock is made to project out of the frame of the lock and it is made movable.
+
+The door is pulled.
+
+The door is locked.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion.
+
+Spring effect.
+
+
+$
+
+
+INPUT
+
+$
+The movement of the knob.
+
+Moment applied.
+
+Spring force.
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the sliding block and the guide ways.
+
+Necessary that the door is hinged at one of its end.
+
+Necessary that the sliding block fits into the slot provided.
+
+$
+
+
+
+PARTS
+$
+Sliding block.
+
+Door.
+
+Sliding block.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

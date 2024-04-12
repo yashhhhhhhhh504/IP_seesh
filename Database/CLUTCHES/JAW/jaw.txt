@@ -1,0 +1,216 @@
+MACTION
+{
+
+A1 $ V < transmit > A < X > N < motion tough > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < x > N < rotaion > $
+
+}
+MPHYPHENOMENON
+{
+PP1 $ V < move > A < X > N < forward > $
+PP2 $ V < lock > A < X > N < object > $
+PP3 $ V < rotate > A < X > N < driven-shaft > $
+}
+
+MPHYEFFECT
+{
+PE1 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < lift > A < X > N < control-arm > $
+I2 $ V < apply > A < X > N < force > $
+I3 $ V < apply > A < X > N < torque > $
+I4 $ V < lock > A < X > N < object > $ 
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom in the direction of motion $
+O2 $ one degree of freedom in the direction of motion $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ control-arm $
+P3 $ revolute pair $
+P4 $ driving-shaft $
+P5 $ jaw $
+P6 $ prismatic pair $
+P7 $ jaw $
+P8 $ fixed pair $
+P9 $ cylindrical pair $
+P10 $ gear pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P4  P5  P6 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O1  P5  P7  P10 >
+< A1 IS1  OS1  CS1  PP3  PE1  I3  O2  P4  P5  P6 >
+< A1 IS1  OS1  CS1  PP3  PE1  I4  O1  P5  P7  P10 >
+< A1 IS1  OS1  CS1  PP3  PE1  I4  O1  P4  P7  P9 >
+}
+
+
+FUNCTION
+
+$
+The jaw clutch transmits power between two shafts using two elements that mesh with each other.
+$
+
+
+STRUCTURE
+
+$
+The left sliding half of this clutch is feathered to the driving shaft while the right half rotates freely. The control arm activates the sliding half to engage or disengage the drive.
+$
+
+
+BEHAVIOUR
+
+$
+Problems with the square teeth include difficulty of engagment. The clutch must be spinning for engagement to occur; however, if it is rotating too quickly, the teeth might “hop over” the engagement point. Therefore, this clutch is subject to high shock during engagement and the sliding half exhibits high inertia. Moreover, engagement requires long axial motion.
+$
+
+
+PICTURE
+
+{
+ADB/CLUTCHES/JAW/jaw01.jpg	$ 01.Jaw Clutch	$
+ADB/CLUTCHES/JAW/jaw02.jpg	$ 02.Jaw Clutch	$
+ADB/CLUTCHES/JAW/jaw03.jpg	$ 03.Jaw Clutch	$
+}
+
+
+CLIP
+
+{
+ADB/CLUTCHES/JAW/jaw.avi	$ Jaw Clutch	$
+}
+
+SUMMARY
+$
+
+This mechanism can be used to transmit motion between two shafts and can also be used to change gear.this can be interpreted as a change of state from rest to rotation of the output jaw.
+
+        The teeth of the sliding part of the clutch that is mounted on the input shaft (part) engages with the teeth of the freely rotating part of clutch (physical phenomenon). This is due to the spring force (input) that activates the spring effect (physical phenomenon) and requires the spring to have some stiffness (organ).
+
+         The sliding part of the clutch, which is mounted on the Input shaft (part) rotates (physical phenomenon). This is due to the torque (input) applied by the input shaft which activates Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the sliding part (organ).
+         The freely rotating part (part) of the clutch having teeth on it rotates (physical phenomenon). This is due to the rotation (input) of the sliding part of the clutch which activates the law “no two bodies can occupy the space at the same time’ (physical effect) and requires engagement of the two parts of the clutch (organ).
+
+
+          The gear (part) that is mounted the freely rotating part of the clutch Rotates (physical phenomenon). This due to the rotation (input) of the Part of the clutch, which activates the “Newtonian laws of motion” (physical effect) and requires the presence of zero degree of freedom between gear and the freely rotating part of the clutch (organ).
+
+
+        The gear that is mounted on the output shaft (part) rotates (physical phenomenon). This due to the tangential force (input) exerted by the  meshing gear, which activates the “no two bodies can occupy the same space at the same time (physical phenomenon) and requires the presence of contact between the two gears (organ).
+
+$
+
+
+
+ACTION
+$
+ 
+ Using mechanism power between two shafts can be transmitted.
+
+This mechanism can be used to change gears.
+
+$
+STATE
+$
+
+rest
+
+
+
+rotation.
+
+$
+PHYPHENOMENON
+$
+
+The teeth of the sliding part of the clutch engages with the teeth of the freely rotating part of the Clutch.
+
+The sliding part of the clutch, which is mounted on the input shaft, rotates continuously.
+ 
+The gear that is mounted on the freely rotating part of the clutch rotates Continuously.
+
+The gear that is mounted on the output shaft rotates continuously.
+
+$
+
+PHYEFFECT
+$
+
+Spring effect.
+
+Newtonian laws of motion.
+
+no two bodies can occupy the same place at the same time.
+
+$
+
+INPUT
+$
+
+Spring force exerted by the spring that is connected to the input shaft-Sliding part assembly.
+
+Torque applied by the input shaft.
+
+Rotation of the freely rotating part of the clutch.
+
+Tangential force exerted by the gear that is mounted on the freely rotating part of the clutch.
+
+
+$
+
+ORGAN
+$
+
+Stiffness of the spring.
+
+Zero degree of freedom between the input shaft and the sliding part of the clutch.
+
+Meshing of teeth between the sliding and rotating parts of the clutch.
+
+Zero degree of freedom between the freely rotating part of the clutch and the gear mounted on it.
+
+Meshing of the gear mounted on the rotating part of the clutch and the gear mounted on the output shaft.
+$
+
+PARTS
+$
+
+the spring is connected between the input shaft-sliding part assembly and the frame.
+
+The sliding part of the clutch forms a sliding as well as a rotating pair with the frame.
+
+The sliding part of the clutch forms a pair with the freely rotating part of the clutch.
+
+The gear that is mounted on the freely rotating part of the clutch forms a Gear pair with the gear that is mounted the output shaft.
+
+The gear that is mounted on the output shaft forms a revolute pair with the frame.
+
+
+
+$

@@ -1,0 +1,241 @@
+MACTION
+{
+A1 $ V < increase > N < length > A < horizontal > $
+A2 $ V < decrease > N < length > A < horizontal > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < large horizontal > N < distance > $
+IS2 $ V < x > A < small horizontal > N < distance > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small horizontal > N < distance > $
+OS2 $ V < x > A < large horizontal > N < distance > $
+} 
+MCHANGESTATE
+{
+CS1 $ from large horizontal distance to small horizontal distance $
+CS2 $ from small horizontal distance to large horizontal distance $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link 1 > A < X > $
+PP2 $ V < slide > N < pin slot > A < X > $
+PP3 $ V < slide > N < pin slot > A < x > $
+PP4 $ V < move > N < link 1 > A < x > $
+PP5 $ V < slide > N < pin slot > A < X > $
+PP6 $ V < slide > N < pin slot > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no bodies can occupy the same space at the same time $
+PE3 $ Lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < Force > A < x > $
+I2 $ V < move > N < link 1 > A < x > $
+I3 $ V < move > N < link 9 > A < x > $
+I4 $ V < x > N < force > A < X > $
+I5 $ V < move > N < link 1 > A < X > $
+I6 $ V < move > N < link 9 > A < X > $
+}
+
+MORGAN
+{
+O1 $ guide ways for the movement of link  $
+O2 $ smooth sliding surface between the pin on the link 9 and the slot in the link 2 $
+O3 $ hinged joint between the links 9 and 10. $
+O4 $ guide ways $
+O5 $ smooth sliding surface between the pin of the link 9 and the slot of the link 2 $
+O6 $ hinged joint between the link 9 and link 10 $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ sliding pair $
+P3 $ guide ways $
+P4 $ pin of the link $
+P5 $ slot provided on the link $
+P6 $ pin of the link $
+P7 $ slot of the link $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P2 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P6 P2 P7 >
+< A2 IS2 OS2 CS2 PP4 PE1 I4 O4 P1 P2 P3 >
+< A2 IS2 OS2 CS2 PP5 PE1 I5 O5 P4 P2 P5 >
+< A2 IS2 OS2 CS2 PP6 PE1 I6 O6 P6 P2 P7 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Multibar barriers such as shutters and gates can take various forms of this mechanism. 
+$
+
+
+STRUCTURE
+
+$
+This device consists of four equal links (7, 8, 9, 10) connected together by revolute pairs to make a parallelogram. There are six other links (1, 2, 3, 4, 5 & 6) of which four links have 2 slots each. Links 7, 8, 9 & 10 traverse in these slots. 
+$
+
+
+BEHAVIOUR
+
+$
+Links 7, 8, 9 & 10 act as a parallelogram. If the distance between the points where 7, 9 and 8, 10 are connected, is taken as a length of diagonal of the parallelogram, this length will be altered by changing the angle between links 7, 9 or 8, 10 and vice-versa. Links 1 to 6 will move parallel to each other when the angle between 7, 9 or 8, 10 changes. The slots allows for vertical adjustment. 
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/EXPGRILLE04/expgrille4.jpg	$ Expanding Grilles - 4 $
+}
+
+
+CLIP
+
+{
+
+}
+
+
+
+SUMMARY
+$
+This mechanism finds application in gates and shutters. This can be interpreted as change of from small horizontal distance to large horizontal distance and vice versa. This can be described as follows:
+
+The link 1 (part) moves towards the other links and it also remains parallel to it (physical phenomenon). This due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of guide ways for the movement of link (organ).
+
+The pin of the link 9 (part) slides in the slot provided in the link 2 (physical phenomenon). This is due to the movement of the link 1 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth sliding surface between the pin on the link 9 and the slot in the link 2 (organ).
+
+
+The pin of the link 10 (part) slides in the slot of the link 4 (physical phenomenon). This is due to the movement of the link 9 (input), which activates the lever effect (physical effect) and requires the presence of a hinged joint between the links 9 and 10 (organ).
+
+The link 1 (part) moves away from the other links (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of guide ways (organ).
+
+The pin of the link 9 (part) slides in the slot provided on the link 2 (physical phenomenon). This is due to the movement of the link 1 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth sliding surface between the pin of the link 9 and the slot of the link 2 (organ).
+
+The pin of the link 10 (part) slides in the slot of the link 4 (physical phenomenon). This is due to the movement of the link 9 (input), which activates the lever effect (physical effect) and requires the presence of a hinged joint between the link 9 and link 10 (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To increase the horizontal length.
+
+To decrease the horizontal length.
+$
+
+STATE
+
+$
+From large horizontal distance to small horizontal distance.
+
+From small horizontal distance to large horizontal distance.
+
+$
+
+PHYPHENOMENON
+
+$
+The link 1 moves towards the other links and it also remains parallel to it.
+
+The pin of the link 9 slides in the slot provided in the link 2.
+ 
+The pin of the link 10 slides in the slot of the link 4.
+
+The link 1 moves away from the other links.
+
+The pin of the link 9 slides in the slot provided on the link 2.
+
+The pin of the link 10 slides in the slot of the link 4.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The movement of the link 1.
+
+The movement of the link 9.
+
+The force applied on it.
+
+The movement of the link 1.
+
+The movement of the link 9.
+$
+
+
+ORGAN
+
+$
+Presence of guide ways for the movement of link.
+
+Presence of a smooth sliding surface between the pin on the link 9 and the slot in the link 2.
+
+Presence of a hinged joint between the links 9 and 10.
+
+Presence of guide ways.
+
+Presence of a smooth sliding surface between the pin of the link 9 and the slot of the link 2.
+
+Presence of a hinged joint between the link 9 and link 10.
+$
+
+
+
+PARTS
+$
+The link 1 forms a sliding pair with the guide ways.
+
+The pin of the link 9 forms a sliding pair with the slot provided on the link 2.
+
+The pin of the link 10 forms a sliding pair with the slot of the link 4 and the link 10 forms a revolute pair with the link 9.
+
+The link 1 forms a sliding pair with the guide ways.
+
+The pin of the link 9 forms a sliding pair with the slot provided on the link 2.
+
+The pin of the link 10 forms a sliding pair with the slot of the link 4 and the link 10 forms a revolute pair with the link 9.
+
+$
+
+
+

@@ -1,0 +1,48 @@
+MACTION
+{
+A1 $ V=hold N=object $
+A2 $ V=release N=object $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=move N=piston A=outward $
+PP2 $ V=move N=jaw A=apart $
+PP3 $ V=move N=piston A=inward $
+PP4 $ V=move N=jaw A=close $
+}
+
+MPHYEFFECT
+{
+PE1 $ no two objects can occupy the same space at the same time $
+PE2 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V=apply A=hydraulic N=pressure $
+I2 $ V=move N=piston A=outward $
+I3 $ V=move N=piston A=inward $
+}
+
+MORGAN
+{
+O1 $ viscosity of the liquid $
+O2 $ eccentricity $
+}
+
+MPART
+{
+P1 $ cylinder $
+P2 $ piston $
+P3 $ cylindrical pair $
+P4 $ jaw $
+P5 $ revolute pair $
+P6 $ fixed pair $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P2 - P4 - P5
+A2 - PP3 - PE1 - I1 - O1 - P1 - P2 - P3
+A2 - PP4 - PE2 - I3 - O2 - P2 - P4 - P5

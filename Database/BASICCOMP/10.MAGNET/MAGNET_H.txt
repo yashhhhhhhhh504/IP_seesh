@@ -1,0 +1,62 @@
+SUMMARY
+$
+This can be used to separate iron or steel materials from its ore. This can be described as follows:
+
+Iron or steel material (part) is attracted towards magnet (physical phenomenon).  This is due to the magnetic force applied by the magnet (input), which activates the Law of Magnetic Poles (physical effect) and requires the presence of the material within the magnetic field of the magnet (organ).
+
+
+ACTION
+{
+$ 
+ To separate iron or steel from its ore.
+$
+}
+STATE
+{
+$
+Iron or steel is along with its ore.
+
+Iron is separated from its ore.
+$
+}
+PHYPHENOMENON
+{
+$
+The iron or steel material is attracted towards magnet.
+
+
+$
+}
+
+PHYEFFECT
+{
+$
+Magnetic effect.
+
+$
+}
+
+INPUT
+{
+$
+The magnetic force applied by the magnet.
+$
+}
+
+ORGAN
+{
+$
+Presence of the material within the magnetic field of the magnet.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The magnet forms a fixed pair with the frame.
+
+$
+}
+

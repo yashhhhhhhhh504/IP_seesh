@@ -1,0 +1,103 @@
+SUMMARY
+$
+This device can be used to pump water from below the ground level. This can be interpreted as a change of state from water being at a lower level to water at higher level. This can be described as follows:
+
+The half of the water that reaches the impeller (part) is sent back through the pressure pipe (physical phenomenon). This is due to the gravitational force (input), which activates the gravity effect (physical effect) and requires the presence of a pipe that runs vertically downward (organ).
+
+The water’s (part) velocity increases (physical phenomenon). This is due to the decrease in the area of cross section (input), which activates the law of conservation of mass (physical effect) and requires the presence of a nozzle at the end of the pressure pipe (organ).
+
+The water’s (part) velocity further increases (physical phenomenon). This is due to the decrease in the cross sectional area (input), which activates the law of conservation of mass (physical effect) and requires the presence of a venturi and it also requires that the nozzle enters into the suction pipe (organ).
+
+ The water (part) rushes in the upward direction through the intake (physical phenomenon). This is due to the low-pressure region created above the venturi (input), which activates the Bernoulli’s effect (physical effect) and requires that the increase in the velocity should be sufficient enough to create the required pressure difference (organ).
+
+
+
+$
+
+ACTION
+{
+$ 
+ To displace water from a low level a higher level.
+$
+}
+STATE
+{
+$
+Water is at a low level.
+
+Water is at a high level.
+$
+}
+PHYPHENOMENON
+{
+$
+The half of the water that reaches the impeller is sent back through the pressure pipe.
+
+The water’s velocity increases.
+ 
+The water’s velocity further increases.
+
+The water rushes in the upward direction through the intake.
+$
+}
+
+PHYEFFECT
+{
+$
+Gravity effect.
+
+Conservation of mass.
+
+Bernoulli’s effect.
+$
+}
+
+INPUT
+{
+$
+Gravitational force.
+
+Decrease in the area of cross section.
+
+Decrease in the cross sectional area.
+
+Low-pressure region created above the venturi.
+$
+}
+
+ORGAN
+{
+$
+Presence of a pipe that runs vertically downward.
+
+Presence of a nozzle at the end of the pressure pipe.
+
+Presence of a venturi and it is also necessary that the nozzle enters into the suction pipe.
+
+Requires that the increase in the velocity should be sufficient enough to create the required pressure difference.
+$
+
+}
+
+STUCTURE1
+{
+$
+Water forms a sliding pair with the pressure pipe.
+
+The pressure pipe forms a fixed pair with the nozzle.
+
+The venturi forms a fixed pair with the suction pipe.
+
+Water forms a sliding pair with the suction pipe.
+
+
+$
+}
+
+
+
+
+
+
+
+

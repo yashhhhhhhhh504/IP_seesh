@@ -1,0 +1,84 @@
+MACTION
+{
+A1 $ V < generate > A < oscillating > N < motion > $
+}
+MSTATE
+{
+S1 $ V < X > A < rotary > N < motion >  $
+S2 $ V < X > A < oscillating > N < motion >  $
+S3 $ V < X > A < X > N < X >  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < input-crank > $
+PP2 $ V < oscillate > A < x > N < rack > $
+
+PP3 $ V < oscillate > A < x > N < link4 > $
+PP4 $ V < rotate > A < x > N < gear3 > $
+PP5 $ V < oscillate > A < x > N < link5 > $
+PP6 $ V < oscillate > A < x > N < link6 > $
+PP7 $ V < reciprocate > A < x > N < piston > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two objects can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+
+I2 $ V < rotate > A < x > N < input-gear > $
+I3 $ V < rotate > A < x >  N < gear2 > $
+I4 $ V < oscillate > A < x >  N < gear3 > $
+I5 $ V < rotate > A < x > N < gear3 > $
+I6 $ V < oscillate > A < x >  N < link6 > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ 0 dof $
+O3 $ eccentricity of link4 on gear2 $
+O4 $ eccentricity of link4 on gear2 $
+O5 $ eccentricity of link6 on gear3 $
+}
+
+MPART
+{
+P1 $ input-crank $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ rack $
+P5 $ support $
+P6 $ gear pair $
+P7 $ gear-segment $
+P8 $ prismatic pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P1 - P4 - P5
+A1 - PP3 - PE2 - I3 - O3 - P7 - P4 - P3
+A1 - PP4 - PE1 - I3 - O1 - P4 - P6 - P5
+A1 - PP5 - PE2 - I3 - O4 - P8 - P2 - P3
+A1 - PP5 - PE2 - I3 - O4 - P8 - P4 - P3
+A1 - PP6 - PE2 - I4 - O5 - P6 - P9 - P3
+A1 - PP6 - PE2 - I5 - O5 - P6 - P9 - P3
+A1 - PP7 - PE2 - I6 - O6 - P9 - P10 - P3 
+A1 - PP7 - PE2 - I6 - O6 - P10 - P2 - P11
+
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A2 - PP2 - PE2 - I2 - O2 - P1 - P4 - P5
+A2 - PP3 - PE2 - I3 - O3 - P7 - P4 - P3
+A2 - PP4 - PE1 - I3 - O1 - P4 - P6 - P5
+A2 - PP5 - PE2 - I3 - O4 - P8 - P2 - P3
+A2 - PP5 - PE2 - I3 - O4 - P8 - P4 - P3
+A2 - PP6 - PE2 - I4 - O5 - P6 - P9 - P3
+A2 - PP6 - PE2 - I5 - O5 - P6 - P9 - P3
+A2 - PP7 - PE2 - I6 - O6 - P9 - P10 - P3 
+A2 - PP7 - PE2 - I6 - O6 - P10 - P2 - P11
+}

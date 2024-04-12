@@ -1,0 +1,64 @@
+MACTION
+{
+A1 $ V=generate A=intermittent non-uniform N=motion $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=rotate N=driver-wheel $
+PP2 $ V=reduce N=friction $
+PP3 $ V=transfer N=motion $
+PP4 $ V=change N=duration $
+PP5 $ V=rotate N=geneva-wheel $
+PP6 $ V=position N=slot $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=rotate N=roller $
+I3 $ V=rotate N=driver-wheel $
+I4 $ V=allow A=radial N=movement $
+I5 $ V=provide A=angular N=rotation $
+}
+
+MORGAN
+{
+O1 $ 1 degree of freedom of motion in direction of motion $
+O2 $ contact : roller geneva $
+O3 $ roller-slot interface $
+O4 $ 0 dof $
+O5 $ angle between the two arms $
+O6 $ ratio of diameters $
+}
+
+MPART
+{
+P1 $ driver-wheel $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ roller $
+P5 $ geneva $
+P6 $ arm1 $
+P7 $ arm2 $
+P8 $ angle $
+P9 $ sliding pair $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P1 - P4 - P3
+A1 - PP2 - PE2 - I2 - O2 - P4 - P5 - P9
+A1 - PP3 - PE3 - I3 - O3 - P4 - P5 - P9
+A1 - PP3 - PE3 - I3 - O4 - P4 - P5 - P9
+A1 - PP4 - PE1 - I3 - O5 - P6 - P7 - P8
+A1 - PP5 - PE3 - I3 - O4 - P4 - P5 - P9
+A1 - PP5 - PE3 - I3 - O4 - P2 - P5 - P3
+A1 - PP6 - PE1 - I5 - O6 - P2 - P5 - P3

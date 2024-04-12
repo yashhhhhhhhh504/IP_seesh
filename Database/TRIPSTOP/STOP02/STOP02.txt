@@ -1,0 +1,217 @@
+
+MACTION
+{
+A1 $ V < stop > N < machine > A < X > $
+A2 $ V < prevent > N < damage > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < motion > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from motion to rest $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < reel > A < beamer > $
+PP2 $ V < maintain > N < gap > A < X > $
+PP3 $ V < rotate > N < package > A < yarn > $
+PP4 $ V < stop > N < rotation reel > A < beamer > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ Gravitational effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < x > A < x > $
+I2 $ V < x > N < tension > A < x > $
+I3 $ V < x > N < friction > A < x > $
+I4 $ V < break > N < thread > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the beamer reel $
+O2 $ tensile force that is greater than the gravitational force $
+O3 $ friction surface between the pulley and the thread $
+O4 $ contact between the contact bar and the electronic relay system $
+}
+
+MPART
+{
+P1 $ beamer reel $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ yarn package $
+P5 $ link $
+P6 $ electronic relay $
+P7 $ wrapping pair $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P5 P6 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P4 P7 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A2 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P5 P6 >
+< A2 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P4 P7 >
+}
+
+
+
+FUNCTION
+
+$
+Automatic stopping mechanisms prevent machines from damaging themselves or destroying work in progress. The device shown in the figure is used to stop the beamer reeling equipment from working in case the thread breaks during operation.
+$
+
+
+STRUCTURE
+
+$
+From the yarn package, the thread passes over a roller through the eyelet  of an L shaped link, and then finally it is rolled in the beamer reel. The pivoted L shaped link is positioned directly above a contact bar, which is connected to an electronic relay circuit.
+$
+
+
+BEHAVIOUR
+
+$
+The beamer reel is made to spin by an electric motor. As the reel rotates, it draws the thread from the yarn package. The L shaped link is held up by the force of the moving thread acting on it. In case the thread gets broken during the spinning operation, the L link will no longer be held by the thread. It therefore pivots downwards due to the force of gravity and comes into contact with the contact bar. This completes the electronic relay circuit, which stops the motor running the beamer reel.
+$
+
+
+PICTURE
+
+{
+ADB/TRIPSTOP/STOP02/stop02.jpg		$ Auto Stop Mechanism	$
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to the prevent machines from getting damaged. This mechanism can be described as follows :
+
+
+The beamer reel (part) rotates and rolls the thread on it (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the beamer reel (organ).
+
+
+The L shaped link (part), which is positioned just above the contact bar, is held up and thus the gap between the L shaped link and the contact bar maintained (physical phenomenon). This is due to the tension (input) in the thread that passes through the eyelet of the L shaped link, which activates Newtonian laws of motion (physical effect) and requires the presence of a tensile force that is greater than the gravitational force (organ).
+
+
+The yarn package (part) rotates (physical phenomenon). This is due to the friction between the moving thread and the pulley surface (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the pulley and the thread (organ).
+
+The beamer reel (part) stops rotating (physical phenomenon). This is due to the breaking of the thread, which in turn brings the L shaped link in contact with the contact bar (input) which activates the gravitational effect (physical effect) and requires the presence of contact between the contact bar and the electronic relay system (organ).
+$
+
+
+
+
+
+ACTION
+$
+ 
+ Using this mechanism machines can be prevented from getting damaged.
+
+$
+STATE
+$
+
+Absence of contact between the L shaped link and the contact bar.
+
+Presence of contact between the L shaped link and the contact bar
+
+$
+PHYPHENOMENON
+$
+
+Rotation of the beamer reel accompanied by the rolling up of the thread.
+
+Maintaining the gap between the L shaped link and the contact bar.
+ 
+Rotation of the yarn package.
+
+Stopping of the rotation of the beamer reel.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+Gravitational effect
+
+$
+
+INPUT
+$
+
+The rotation of the input shaft.
+
+The tension in the thread.
+
+The friction between the moving thread and the pulley surface.
+
+
+The breaking of the thread, which in turn brings the L shaped link in contact with the contact bar.
+
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the beamer reel.
+
+Presence of a tensile force that is greater than the gravitational force.
+
+Presence of friction surface between the pulley and the thread.
+
+Presence of contact between the contact bar and the electronic relay system.
+
+
+$
+PARTS
+$
+
+The beamer reel along with the input shaft forms a revolute pair with the frame.
+
+The yarn package forms a revolute pair with the frame.
+
+The L shaped link forms a revolute pair with the electronic relay.
+
+The yarn package forms a wrapping pair with the beamer reel.
+
+
+
+$

@@ -1,0 +1,94 @@
+SUMMARY
+$
+This device can be used to transmit power and motion from one shaft to another. This can be described as follows:
+
+The driver pulley (part) mounted on the input shaft rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver pulley (organ).
+
+The belt or the rope (part) moves linearly (physical phenomenon). This is due to the rotation of the driver pulley (input), which activates the friction effect (physical effect) and requires the presence of friction between the belt or the rope and the pulley surface (organ).
+
+
+The driven pulley being mounted on the out put shaft  (part) rotates in the same direction as that of the driver pulley (physical phenomenon). This is due to the movement of the belt or rope (input), which activates the friction effect (physical effect) and requires the presence of tension in the belt and it also requires that the tight side of the belt is below and the slack side is above (organ).
+
+
+
+$
+
+ACTION
+{
+$ 
+ This device can be used to transmit power and motion from one shaft to another.
+$
+}
+STATE
+{
+$
+
+$
+
+$
+}
+PHYPHENOMENON
+{
+$
+The driver pulley mounted on the input shaft rotates.
+$
+The belt or the rope moves linearly.
+$ 
+The driven pulley rotates in the same direction as that of the driver pulley.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+The rotation of the input shaft.
+$
+The rotation of the driver pulley.
+$
+The movement of the belt or rope (input), which activates the friction effect.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the input shaft and the driver pulley.
+$
+Presence of friction between the belt or the rope and the pulley surface.
+$
+Presence of tension in the belt and it also requires that the tight side of the belt is below and the slack side is above.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The driver pulley along with the input shaft forms a revolute pair with the frame.
+$
+The belt or the rope forms a wrapping pair with the driver and driven pulleys 
+$
+The driven pulley along with the out put shaft forms a revolute pair with the frame.
+$
+
+$
+
+$
+}
+
+

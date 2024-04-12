@@ -1,0 +1,70 @@
+SUMMARY
+$
+This can be used to store rotational energy. This can be interpreted as a change of state from original form to deformed form and again back to original form. This can be described as follows:
+
+The spring (part) deforms (physical phenomenon). This is due to the torque applied on it (input), which activates the hooks law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The spring (part) restores to its original form (physical phenomenon). This is due to the removal of torque (input), which activates the hooks law (physical effect) and is necessary that the torque applied is within the elastic limit of the material (organ).
+$
+
+ACTION
+
+$ 
+ To store recoverable form of rotational energy.
+$
+
+STATE
+
+$
+The spring is deformed.
+
+The spring regains its original shape and size.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring deforms in the shape. 
+
+The spring regains its original shape and thus does some work.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+The torque applied on it.
+
+Removal of torque.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spring has some stiffness.
+
+Necessary that the torque applied is within the elastic limit of the material.
+
+$
+
+
+
+PARTS
+$
+The ends of the spring are fixed to the frame.
+
+$

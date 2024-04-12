@@ -1,0 +1,357 @@
+LABEL
+$ Cam Mechanisms $
+{
+ADB/TRANSPORT/ROLLER-COASTER/ROLLER-COASTER.TXT		$ Roller-Coaster $
+
+ADB/CAMMECH/CAMMECH03/CAMMECH03.TXT	$ Mixing Roller $
+ADB/CAMMECH/CAMMECH01/CAMMECH01.TXT	$ Cam Mech - 1 $
+ADB/CAMMECH/CAMMECH02/CAMMECH02.TXT	$ Indexing Cam $
+ADB/CAMMECH/CAMMECH04/CAMMECH04.TXT	$ Cam Mech - 4 $
+ADB/CAMMECH/CAMMECH05/CAMMECH05.TXT	$ Swash Plate Cam $
+
+
+
+}
+LABEL
+$ Special $
+{
+ADB/SPECIAL/THERMOMETER/THERMOMETER.TXT		$ Thermometer $
+ADB/SPECIAL/THERMOSTAT/THERMOSTAT.TXT 	$ Thermostat $
+
+ADB/SPECIAL/TOASTER/TOASTER.TXT  				$ Toaster $
+ADB/SPECIAL/FIRECRACKER/FIRECRACKER.TXT  			$ Firecracker  $
+ADB/SPECIAL/MICROWAVE-OVEN/MICROWAVE-OVEN.TXT			$ Microwave-Oven $
+ADB/SPECIAL/SHOCK-ABSORBER/SHOCK-ABSORBER.TXT			$ Shock-Absorber $
+ADB/SPECIAL/SPEAKER/SPEAKER.TXT					$ Speaker $
+ADB/SPECIAL/TIRE-PRESSURE-GAUGE/TIRE-PRESSURE-GAUGE.TXT		$ Tire-Pressure-Gauge $
+
+}
+
+
+
+
+
+LABEL
+$ Transport Mechanisms $	
+{
+ADB/TRANSPORT/HYBRID-CARS/HYBRID-CARS.TXT	$ Hybrid cars $
+ADB/TRANSPORT/DIESEL-ENGINE/DIESEL-ENGINE.TXT		$ Diesel Engine $
+ADB/TRANSPORT/GASOLINE-ENGINE/GASOLINE-ENGINE.TXT	$ Gasoline Engine $
+
+ADB/TRANSPORT/ROCKET/ROCKET.txt			$ Rocket $
+ADB/TRANSPORT/BICYCLE/BICYCLE.TXT 		$ Bicycle $
+ADB/TRANSPORT/HELICOPTOR/HELICOPTOR.TXT		$ Helicoptor $
+ADB/TRANSPORT/ROLLER-COASTER/ROLLER-COASTER.TXT	$ Roller-Coaster $
+ADB/TRANSPORT/TRANS01/trans01.txt		$ Transport Mech - 1	$
+ADB/TRANSPORT/TRANS02/trans02.txt		$ Transport Mech - 2	$
+
+
+}
+
+
+
+
+
+LABEL
+$ Deploy $
+{
+ADB/DEPLOY/PNEUMATIC-HAMMER/PNEUMATIC-HAMMER.TXT		$ Pneumatic Hammer $
+ADB/DEPLOY/OVERHEADCABINET/OVERHEADCABINET.TXT			$ Over Head Cabinet $
+ADB/DEPLOY/PNEUMATIC/PNEUMATIC.TXT				$ Pneumatic $
+ADB/DEPLOY/UMBRELLA/UMBRELLA.TXT				$ Umbrella $
+ADB/DEPLOY/ELASTIC-BALLOON/ELASTIC-BALLOON.TXT			$ Elastic-Balloon $
+ADB/DEPLOY/HELIUM-BALLOON/HELIUM-BALLOON.TXT	 		$ Helium-Balloon $
+ADB/DEPLOY/HYDRAULIC-PRESS/HYDRAULIC-PRESS.TXT			$ Hydraulic-Press $
+ADB/DEPLOY/SPRING-BALANCE/SPRING-BALANCE.TXT			$ Spring-Balance $
+
+
+ADB/DEPLOY/ANTENACABLE/ANTENNA.txt				$ Antenna Cabel $
+ADB/DEPLOY/BUSDOOR/BUSDOOR.txt					$ Bus Door $
+ADB/DEPLOY/CALCULATOR/CALCULATOR.txt				$ Calculator $
+ADB/DEPLOY/CAMERASTAND/CAMERASTAND.txt				$ Camera Stand $
+ADB/DEPLOY/CHAIRFOLDING/CHAIRFOLDING.txt			$ Chair Folding $
+ADB/DEPLOY/CHAIRPAD/CHAIRPAD.txt				$ Chair Pad $
+ADB/DEPLOY/COMPUTERMONITOR/COMPUTERMONITOR.txt			$ Computer Monitor $
+ADB/DEPLOY/CONVERTABLE_CAR_HOOD/CONVERTABLE_CAR_HOOD.TXT 	$ Convertable car hood $
+ADB/DEPLOY/CONVERTABLEBED/CONVERTABLEBED.txt			$ Convertable Bed $
+ADB/DEPLOY/CRAWLER/CRAWLER.txt 					$ Crawler $
+ADB/DEPLOY/DRUMBREAKS/DRUMBREAKS.TXT				$ Drum Breaks $
+ADB/DEPLOY/DUSTBIN/DUSTBIN.TXT					$ Dustbin $
+ADB/DEPLOY/EXCAVATOR/EXCAVATOR.TXT				$ Excavator $
+ADB/DEPLOY/FAN/FAN.TXT						$ Fan $
+ADB/DEPLOY/FLYINGMACHINE/FLYINGMACHINE.TXT			$ Flying Machine $
+ADB/DEPLOY/FOLDABLE_BRIDGE/FOLDABLE_BRIDGE.TXT			$ Foldable Bridge $
+ADB/DEPLOY/FOLDABLE_FAN/FOLDABLE_FAN.TXT			$ Foldable Fan $
+ADB/DEPLOY/LAPTOP/LAPTOP.TXT					$ Laptop $
+ADB/DEPLOY/MINIDRAFTER/MINIDRAFTER.TXT				$ Minidrafter $
+ADB/DEPLOY/MOBILE_PHONE/MOBILE_PHONE.TXT			$ Mobile Phone $
+ADB/DEPLOY/NETWORK_BOX/NETWORK_BOX.TXT				$ Network Box $
+ADB/DEPLOY/ORIGAMI/ORIGAMI.TXT					$ Origami $
+ADB/DEPLOY/PARACHUTE/PARACHUTE.TXT				$ Parachute $
+ADB/DEPLOY/SCREW/SCREW.TXT					$ Screw $
+ADB/DEPLOY/SHOP_SHUTTER/SHOP_SHUTTER.TXT			$ Shop Sutter $
+ADB/DEPLOY/TENT/TENT.TXT					$ Tent $
+ADB/DEPLOY/WALLET/WALLET.TXT					$ Wallet $
+ADB/DEPLOY/ACTUATOR/ACTUATOR.TXT				$ Actuator $	
+ADB/DEPLOY/BALLOON/BALLOON.TXT					$ Ballon $
+ADB/DEPLOY/BASKET/BASKET.TXT					$ Basket $
+ADB/DEPLOY/BLIND_STICK/BLIND_STICK.TXT				$ Blind stick $
+ADB/DEPLOY/COLLAPSABLE_GATE_1/COLLAPSABLE_GATE_1.TXT		$ Collapsable Gate-1 $
+ADB/DEPLOY/COLLAPSABLE_GATE/COLLAPSABLE_GATE.TXT		$ Collapsable Gate-2 $
+ADB/DEPLOY/DEPLOYMENT_1/DEPLOYMENT_1.TXT			$ Deployment-1 $
+ADB/DEPLOY/DEPLOYMENT_2/DEPLOYMENT_2.TXT			$ Deployment-2 $
+ADB/DEPLOY/DEPLOYMENT_3/DEPLOYMENT_3.TXT			$ Deployment-3 $
+ADB/DEPLOY/DEPLOYMENT_4/DEPLOYMENT_4.TXT			$ Deployment-4 $
+ADB/DEPLOY/DEPLOYMENT_5/DEPLOYMENT_5.TXT			$ Deployment-5 $
+ADB/DEPLOY/FOLD2/FOLD2.TXT					$ Folding Mechanism $
+ADB/DEPLOY/FOLDABLE_TABLE/FOLDABLE_TABLE.TXT			$ Foldable Table $
+}
+
+LABEL
+$ Locking Mechanism $
+{
+ADB/LOCKING/POWER-WINDOW/POWER-WINDOW.TXT			$ Power window $
+ADB/LOCKING/BOTTLE_CAP/BOTTLE_CAP.TXT				$ Bottle Cap $
+ADB/LOCKING/WAISTBELT/WAISTBELT.TXT				$ Waist belt $
+ADB/LOCKING/VACUUM_LOCKING/VACUUM_LOCKING.TXT			$ Vacuum Locking mechanism $
+ADB/LOCKING/SPIKE_SHOES/SPIKE_SHOES.TXT				$ Spike Shoes $
+ADB/LOCKING/GUM/GUM.TXT						$ Gum $
+ADB/LOCKING/LOCK/LOCK.TXT					$ Lock $
+ADB/LOCKING/NUMBERLOCK/NUMBERLOCK.TXT				$ Number lock $
+ADB/LOCKING/CLAMP/CLAMP.TXT					$ Clamp $
+ADB/LOCKING/ELECTROMAGNET/ELECTROMAGNET.TXT			$ Electromagnet $
+ADB/LOCKING/LIFTDOOR/LIFTDOOR.TXT				$ Lift Door locking $
+ADB/LOCKING/HILL_CLIMBING_EQUIP/HILL_CLIMBING_EQUIP.TXT		$ Hill Climbing Equipment $
+ADB/LOCKING/AUTOMATIC_LOCK/AUTOMATIC_LOCK.TXT			$ Automatic lock $
+}
+LABEL
+$ Tripping or Stop Mechanisms $	
+{
+ADB/TRIPSTOP/POWER-BREAKS/POWER-BREAKS.TXT	$ POWER BREAKS $
+ADB/TRIPSTOP/PNEUMATIC-BREAKS/PNEUMATIC-BREAKS.TXT	$ PNEUMATIC BREAKS $
+ADB/TRIPSTOP/DISC-BREAKS/01.JPG		$ 01.DISC BREAKS $
+
+ADB/TRIPSTOP/STOP01/STOP01.TXT		$ Auto Stop Mechanism 1	$
+ADB/TRIPSTOP/STOP02/STOP02.TXT		$ Auto Stop Mechanism 2	$
+ADB/TRIPSTOP/STOP03/STOP03.TXT		$ Auto Stop Mechanism 3	$
+ADB/TRIPSTOP/STOP04/STOP04.TXT		$ Auto Stop Mechanism 4	$
+}
+
+
+LABEL
+$ Power Transmission $       
+{
+ADB/POWERTRANS/TORQUE-CONVERTERS/TORQUE-CONVERTERS.TXT		$ Torque Converters $
+ADB/POWERTRANS/TURBOCHARGERS/TURBOCHARGERS.TXT			$ Turbochagers $
+ADB/POWERTRANS/MANUAL-TRNASMISSION/MANUAL-TRNASMISSION.txt	$ Manual Transmission $
+
+ADB/POWERTRANS/POWERTRANS01/powertrans01.txt 			$ Simple Belt Drive    $
+ADB/POWERTRANS/POWERTRANS02/powertrans02.txt 			$ Crossed Belt Drive   $
+ADB/POWERTRANS/POWERTRANS03/powertrans03.txt 			$ Power Transmission 3 $
+ADB/POWERTRANS/POWERTRANS04/powertrans04.txt 			$ Power Transmission 4 $
+ADB/POWERTRANS/POWERTRANS05/powertrans05.txt 			$ Power Transmission 5 $
+
+}
+
+LABEL
+$ Cutting Mechanisms $	
+{
+ADB/CUTTING/QUICK-RETURN-MECHANISM/QUICK-RETURN-MECHANISM.JPG	$ Quick-Return-Mechanism  $
+
+
+ADB/CUTTING/4BARCUT1/4BARCUT1.TXT	$ Four-bar Cutter 1	$
+ADB/CUTTING/4BARCUT2/4BARCUT2.TXT	$ Four-bar Cutter 2	$
+ADB/CUTTING/PARALLEL/PARALLEL.TXT	$ Parallel Cutter	$
+ADB/CUTTING/VERTICAL/VERTICAL.TXT	$ Vertical Cutter	$
+ADB/CUTTING/SABERSAW/sabersaw.TXT	$ Sabersaw	$
+ADB/CUTTING/CHAIN-SAW/CHAIN-SAW.TXT 	$ CHAIN-SAW $
+}
+
+LABEL
+$ Cooling $
+{
+
+ADB/COOLING/AIR-CONDITIONER/AIR-CONDITIONER.TXT		$ Air-Conditioner  $
+ADB/COOLING/REFRIGERATOR/REFRIGERATOR.TXT		$ Refrigerator  $
+
+}
+LABEL
+$ Cardan Gear Mechanisms $
+{
+ADB/CARDAN/CARDAN01/cardan01.txt	$ Cardan Mech - 1 $
+ADB/CARDAN/CARDAN02/cardan02.txt	$ Cardan Mech - 2 $
+ADB/CARDAN/CARDAN03/cardan03.txt	$ Cardan Mech - 3 $
+ADB/CARDAN/CARDAN04/cardan04.txt	$ Cardan Mech - 4 $
+ADB/CARDAN/CARDAN05/cardan05.txt	$ Cardan Mech - 5 $
+}
+
+
+LABEL
+$ Clutches $
+{
+ADB/CLUTCHES/PLATE/PLATE.TXT		$ Plate Clutch	$
+ADB/CLUTCHES/JAW/JAW.TXT		$ Jaw Clutch	$
+ADB/CLUTCHES/CONE/CONE.TXT		$ Cone Clutch	$
+}
+
+LABEL
+$ Coupling Devices $
+{
+ADB/COUPLING/UNIVJOINT/univjoint.txt	$ Universal Joint Coupling $
+ADB/COUPLING/OLDHAM/oldham.txt		$ Oldham Coupling	$
+ADB/COUPLING/SCHMIDT/schmidt.txt	$ Schmidt Coupling	$
+}
+
+
+LABEL
+$ Deployment Mechanisms $
+{
+ADB/DEPLOYMENT/TELESCOPIC/telescopic.txt	$ Telescopic Cylinders $
+ADB/DEPLOYMENT/NESTED/nested.txt		$ Nested Slides $
+ADB/DEPLOYMENT/LAZYTONGS/lazytongs.txt		$ Lazy Tongs	$
+ADB/DEPLOYMENT/EXPWHEEL/expwheel.txt   		$ Expanding Wheel	$
+ADB/DEPLOYMENT/EXPGRILLE01/expgrille01.txt  	$ Expanding Grilles - 1 $
+ADB/DEPLOYMENT/EXPGRILLE02/expgrille02.TXT	$ Expanding Grilles - 2 $
+ADB/DEPLOYMENT/EXPGRILLE03/expgrille03.TXT	$ Expanding Grilles - 3 $
+ADB/DEPLOYMENT/EXPGRILLE04/expgrille04.TXT	$ Expanding Grilles - 4 $
+}
+
+LABEL
+$ Flipping Mechanisms $	
+{
+ADB/FLIP/FLIP01/FLIP01.TXT		$ Flipping Mechanism	$
+}
+
+LABEL	
+$ Geneva Mechanisms $
+{
+ADB/GENEVA/GENEVA/geneva.txt		$ Geneva Mechanism	$
+ADB/GENEVA/LOCKINGARM/lockingarm.txt	$ Locking-arm Geneva	$
+ADB/GENEVA/GROOVECAM/groovecam.txt	$ Groove Cam Geneva	$
+ADB/GENEVA/IRREGENEVA/irregeneva.txt	$ Irregular Geneva	$
+ADB/GENEVA/SPHERICAL/spherical.txt	$ Spherical Geneva	$
+}
+
+LABEL
+$ Gripping Mechanisms $	
+{
+ADB/GRIP/01.RECIPROCLEVER/RECIPROCLEVER.TXT	$ Reciprocating Lever Gripper $
+ADB/GRIP/02.RACKPINION/RACKPINION.TXT		$ Rack & Pinion Gripper $
+ADB/GRIP/03.HYDRAULIC/HYDRAULIC.TXT		$ Hydraulic Gipper $
+}
+
+LABEL
+$ Indexing or Intermittent Transmission	$	
+{
+ADB/IIM/IIM01/IIM01.txt			$ Intermittent transmission 1	$
+ADB/IIM/MUTILTOOTH/MUTILTOOTH.txt	$ Mutilated Tooth Drive	$
+ADB/IIM/IIM03/IIM03.txt			$ Intermittent transmission 2	$
+}
+
+
+LABEL
+$ Reaching Mechanisms $	
+{
+ADB/REACH/REACH01/REACH01.TXT		$ Reaching Mech 1 $
+ADB/REACH/REACH02/REACH02.TXT		$ Reaching Mech 2 $
+ADB/REACH/REACH03/REACH03.TXT		$ Reaching Mech 3 $
+}
+
+LABEL
+$ Reversing Mechanisms $	
+{
+ADB/REVERSE/01.DOUBLREV/doublrev.txt	$ Double Link Reverser $
+ADB/REVERSE/02.TOGGLREV/togglrev.txt	$ Toggle Link Reverser $
+ADB/REVERSE/03.MODIWATTS/modiwatts.txt	$ Modified Watt's Reverser $
+
+}
+
+LABEL
+$ Rotary to Reciprocating & Dwell Mechanisms $
+{
+ADB/ROTREC/01.4BARSLIDER/4barslider.TXT		$ 4-Bar slider $
+ADB/ROTREC/02.OSCILCHAIN/oscillchain.TXT	$ Oscillating Chain $
+ADB/ROTREC/03.STROKMULTI/strokmulti.TXT		$ 3 Gear Stroke Multiplier $
+ADB/ROTREC/04.RACKGEAR/rackgear.TXT		$ Rack & Gear Sector $
+}
+
+LABEL
+$ Straight Line Motion Generation $	
+{
+ADB/SLG/01.WATTS/watts.TXT		$ Watt's Linkage $
+ADB/SLG/02.PEAUCELLIER/peaucellier.TXT	$ Peaucellier Mechanism $
+ADB/SLG/03.EVANS/evans.TXT		$ Evan's Linkage $
+ADB/SLG/04.FOURBAR/fourbar.TXT		$ Four-bar Planar $
+ADB/SLG/05.DDRIVE/Ddrive.TXT		$ D-drive Mechanism $
+}
+
+
+
+
+LABEL
+$ Sorting Devices $	
+{
+ADB/SORT/SORT01/SORT01.TXT	$ Sorting Mechanism - 1	$
+ADB/SORT/SORT02/SORT02.TXT	$ Sorting Mechanism - 2	$
+ADB/SORT/SORT03/SORT03.TXT	$ Sorting Mechanism - 3	$
+}
+
+
+
+
+LABEL
+$ Computing Devices $
+{
+ADB/COMPUTE/BEVELDIFF/BEVELDIFF.TXT	$ Bevel Gear Differential	$
+ADB/COMPUTE/SLIDLINK/SLIDLINK.TXT	$ Sliding Link Differential	$
+ADB/COMPUTE/ROTATLINK/ROTATLINK.TXT	$ Rotating Link Differential	$
+ADB/COMPUTE/RECIPROCAM/RECIPROCAM.TXT	$ Reciprocal Cam $
+ADB/COMPUTE/FSLOTCAM/FSLOTCAM.TXT	$ Function Slot Cam $
+}
+
+
+
+
+
+
+LABEL
+$ Variable Speed Drive Without Gears $
+{
+ADB/VARSPEED/VARSPEED01/VARSPEED01.TXT	$ Adjustable Cone drive	$
+ADB/VARSPEED/VARSPEED02/VARSPEED02.TXT	$ Two Cone drive	$
+ADB/VARSPEED/VARSPEED03/VARSPEED03.TXT	$ Friction Drive 1	$
+ADB/VARSPEED/VARSPEED04/VARSPEED04.TXT	$ Friction Drive 2	$
+ADB/VARSPEED/VARSPEED05/VARSPEED05.TXT	$ Friction Drive 3	$
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LABEL
+$ Flow-Devices $
+{
+ADB/FLOW-DEVICES/WATER-TAP/WATER-TAP.TXT		$ Water-Tap $
+ADB/FLOW-DEVICES/CATALYTIC-CONVERTERS/CATALYTIC-CONVERTERS.txt		$ Catalytic Converters $
+ADB/FLOW-DEVICES/FLUSH-OUT-SYSTEMS/FLUSH-OUT-SYSTEM.TXT			$ Flush out system $
+ADB/FLOW-DEVICES/VACUUM-CLEANER/VACUUM-CLEANER.TXT		$ Vacuum Cleaner $
+
+ADB/FLOW-DEVICES/CARBURRETOR/CARBURRETOR.txt		$ Carburretor $
+ADB/FLOW-DEVICES/CENTRIFUGAL-PUMP/CENTRIFUGAL-PUMP.TXT	$ Centrifugal-Pump  $
+ADB/FLOW-DEVICES/FOUNTAIN-PEN/FOUNTAIN-PEN.TXT 		$ Fountain-Pen  $
+ADB/FLOW-DEVICES/FUEL-INJECTOR/FUEL-INJECTOR.TXT	$ Fuel-Injector $
+ADB/FLOW-DEVICES/GAS-TURBINE/GAS-TURBINE.TXT 		$ Gas-Turbine  $
+}
+
+
+
+

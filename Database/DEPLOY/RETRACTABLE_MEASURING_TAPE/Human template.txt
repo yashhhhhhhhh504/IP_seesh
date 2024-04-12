@@ -1,0 +1,90 @@
+
+SUMMARY
+$
+This type of tape saves space and organizes the tape. Finally it gives convenience to user in the measurement. Inside it, there is a drum to which a handle is attached. The rotations of drum results in the rolling of the tape on the drum. It as follows,
+
+Drum (part) rotates (physical phenomenon). This is due to force applied at the end of handle (input), which actuates Newtonian laws of motion (physical effect) and requires presence of hinge and one degree of freedom (organ).
+
+Tape winds on the drum and thus collapses (physical phenomenon). This is due to pulling force (input) given by the drum to one end of the tape, which actuates Newtonian laws of motion (physical effect) and requires flexible material of the tape (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To roll the tape on the drum to occupy less space.
+$
+
+STATE
+
+$
+Tape outside the casing.
+Tape rolled on the drum.
+$
+
+
+
+PHYPHENOMENON
+
+$
+Drum rotates.
+Tape winds on the drum and thus collapses.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+Force applied at the end of handle
+
+Pulling force given by the drum to one end of the tape.
+$
+
+
+ORGAN
+
+$
+Presence of hinge and one degree of freedom
+Flexible material of the tape
+
+$
+
+
+
+PARTS
+$
+
+Drum
+
+Tape
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

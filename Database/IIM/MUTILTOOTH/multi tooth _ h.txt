@@ -1,0 +1,84 @@
+SUMMARY
+$
+This mechanism can be used to generate intermittent motion. This can be interpreted as a change of state from rest to small angular motion. This can be 
+described as follows:
+
+The driver (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver (organ).
+
+The driven (part) rotates through a small angle (physical phenomenon). This is due to the tangential force applied by the pin mounted on the driver (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the pin and the half tooth on the driven (organ).
+
+The driven (part) rotates through a small angle (physical phenomenon). This is also due to the tangential force applied by the cut on the driver (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the size of the cut is appropriate (organ).
+$
+
+ACTION
+
+$ 
+ To generate intermittent motion.
+$
+
+STATE
+
+$
+From rest to small angular rotation.
+
+$
+
+PHYPHENOMENON
+
+$
+The driven rotates through a small angle.
+
+The driven rotates through a small angle.
+ 
+The driven rotates through a small angle.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Torque applied by the input shaft.
+
+The tangential force applied by the pin mounted on the driver.
+
+The tangential force applied by the cut on the driver.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the driver.
+
+Presence of contact between the pin and the half tooth on the driven.
+
+Necessary that the size of the cut is appropriate.
+
+
+$
+
+
+
+PARTS
+$
+The driver forms a revolute pair with the frame.
+
+The driven forms a revolute pair with the frame
+
+$
+
+
+

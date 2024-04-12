@@ -1,0 +1,86 @@
+MACTION
+{	
+A1 $ V < support > AV < X > N < shafts > AJ <  > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A <  > N  < rotation revolution > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation accompanied by the revolution  $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > AV < X > N < inner-race > AJ < X > $
+PP2 $ V < rotate revolve  > AV < X > N < rollers > AJ < X > $
+PP3 $ V < fix  > AV < X > N < outer-race > AJ < > $
+PP4 $ V < > AV < X > N < > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion.	  $
+PE2 $ Friction effect. $
+PE3 $ $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < apply > AV < X > N < torque > AJ < > $
+I2 $ V < rotate > AV < X > N < inner-race > AJ < > $
+I3 $ V < > AV < X > N < rollers > AJ < > $
+I4 $ V < > AV < X > N < > AJ < X > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the shaft and the inner race. $
+O2 $ Presence of friction surface between the inner race and the balls.  $
+O3 $ Presence of a smooth surface between the outer race and the rollers $
+O4 $ $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < race > AJ < inner  > $
+P2 $ V < X > AV < X > N < frame > AJ < > $
+P3 $ V < X > AV < X > N < revolute-pair > AJ < > $
+P4 $ V < X > AV < X > N < rollers > AJ < X > $
+P5 $ V < X > AV < X > N < race > AJ < outer > $
+P6 $ V < X > AV < X > N < pair > AJ < fixed > $
+P7 $ V < X > AV < X > N < > AJ < X > $
+P8 $ V < X > AV < X > N < X > AJ < X > $
+
+
+}
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P3 P4  >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P5 P6  >
+
+
+
+
+
+
+

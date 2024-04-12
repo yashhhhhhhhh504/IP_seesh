@@ -1,0 +1,95 @@
+SUMMARY
+$
+This mechanism can be used to accommodating the writing pad even without occupying large space. This can be described as follows: 
+
+The link (part) that is attached to the handle of the chair rotated through 180 degrees from its folded position (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of hinged joint between the link and the handle of the chair (organ).
+
+The writing pad (part) rotated through 90 degrees (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the link attached to the handle and the pad (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The writing pad is occupying less space.
+
+The writing pad is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The link that is attached to the handle of the chair rotated through 180 degrees from its folded position.
+
+The writing pad rotated through 90 degrees.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Force applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of hinged joint between the link and the handle of the chair.
+
+
+Presence of one degree of freedom between the links attached to the handle and the pad.
+
+
+
+$
+
+
+
+PARTS
+$
+Links attached to the handle of the chair.
+
+Writing pad.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

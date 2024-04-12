@@ -1,0 +1,200 @@
+MACTION
+{
+A1 $ V < transport > N < material > A < sequentially > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < x > $
+PP2 $ V < rotate > N < transport > A < x > $
+PP3 $ V < push > N < rail > A < forward > $
+PP4 $ V < move > N < material > A < forward > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < rotate > N < transport > A < x > $
+I4 $ V < move > N < rail > A < forward > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ zero degree of freedom $
+O3 $ slots in the rail $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ frame $
+P3 $ transport $
+P4 $ rail $
+P5 $ material $
+P6 $ revolute pair $
+P7 $ output-gear $
+P8 $ planar pair $
+P9 $ kinematic-pair $
+}
+
+
+LINK
+{
+
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P6 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P1  P3  P6 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P3  P4  P9 >
+< A1 IS1  OS1  CS1  PP4  PE2  I4  O3  P4  P5  P8 >
+}
+
+
+
+FUNCTION
+
+$
+Transport mechanisms generally move materials. The motion, although unidirectional, gives an intermittent advancement to the material being conveyed.
+$
+
+
+STRUCTURE
+
+$
+In this design, a rotary action is used. The shafts 'D' rotate in unison and also support the main moving member. The shafts are carried in the frame of the machine and can be connected by either a link, a chain and sprocket, or by an intermediate idler gear between the equal gears keyed on the shafts. The rail 'A-A' is fixed rigidly on the machine. A pressure friction plate can hold the material against the top of the rail and prevent any movement during the period of rest.
+$
+
+
+BEHAVIOUR
+
+$
+The essential characteristic of such a motion is that all points in the main moving members follow similar and equal paths. This is necessary so that the members can be subdivided into sections with projecting parts. The purpose of the projections is to push the articles during the forward motion of the material being transported. The transport returns by a different path from the one it follows in its advancement, and the material is left undistributed until the next cycle begins. During this period of rest, while the transport is returning to its starting position, various operations can be performed sequentially. The selection of the particular transport mechanism best suited to any situation depends, to some degree, on the arrangement that can be obtained for driving the materials and the path desired. A slight amount of over travel is always required so that the projection on the transport can clear the material when it is going into position for the advancement stroke.
+$
+
+
+PICTURE
+{
+ADB/TRANSPORT/TRANS01/trans01.jpg		$ Transport Mechanism	$
+}
+
+
+CLIP
+
+{
+ADB/TRANSPORT/TRANS01/trans01.avi		$ Transport Mechanism	$
+}
+
+
+SUMMARY
+$
+Using this mechanism material can be transported sequentially. This mechanism can be described as follows:
+
+The cranks (part) rotate continuously (physical phenomenon). This is due to the rotation of the input shafts (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shafts and the cranks (organ).
+
+The moving member (part), which is, actually sub divided into several parts oscillates (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the crank and the moving member (organ).
+
+
+The objects (part) that are placed on the fixed rails move ahead (physical phenomenon). This is due to the oscillation of the moving member (input) which the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of projections on the moving member (organ).
+$
+
+
+
+ACTION
+$
+ 
+ Using this mechanism, materials can be transported.
+
+$
+STATE
+$
+
+rest
+
+rotation
+$
+PHYPHENOMENON
+$
+
+The cranks rotate continuously.
+
+The moving member, which is, actually sub divided into several parts oscillates.
+ 
+The objects that are placed on the fixed rails move ahead.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the input shafts.
+
+Rotation of the crank.
+
+Oscillation of the moving member.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the shafts and the cranks.
+
+Presence of one degree of freedom between the crank and the moving member.
+
+Presence of projections on the moving member.
+
+
+
+
+$
+
+PARTS
+$
+
+The crank along with the shafts forms a revolute pair with the frame.
+
+The moving member forms a revolute pair with respect to the crank.
+
+The materials forms a sliding pair with the fixed rails.
+
+
+
+
+
+$
+

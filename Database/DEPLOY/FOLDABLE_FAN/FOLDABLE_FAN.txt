@@ -1,0 +1,187 @@
+MACTION
+{
+A1 $ V < circulate > N < air > A < tough > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+PP2 $ V < flap > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+I2 $ V < x > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ fan is made up of a flexible material $
+O2 $ fan material possesses the necessary stiffness to circulate the air $
+}
+
+MPART
+{
+P1 $ Folded fan $
+P2 $ Unfolded fan  $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+
+
+FUNCTION
+
+$
+The fans are usually used to circulate air in living room. 
+$
+
+
+STRUCTURE
+
+$
+It is actually made up of a flexible material with a little stiffness. The fan is folded when not in use so that is occupies less space and it unfolded during use.
+$
+
+
+BEHAVIOUR
+
+$
+X
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/FOLDABLE_FAN/01.JPG	$ Foldable Fan $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This is mainly used to circulate air. The advantage of having a foldable one is that it occupies less space when not in use.
+
+
+$
+
+ACTION
+
+$ 
+ To circulate air.
+
+$
+
+STATE
+
+$
+Occupies less area when in folded state.
+
+Occupies large area when in unfolded state.
+$
+
+PHYPHENOMENON
+
+$
+Unfold the fan.
+
+Flap the unfolded fan
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+Moment.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the fan is made up of a flexible material.
+
+Necessary that the fan material possesses the necessary stiffness to circulate the air.
+
+$
+
+
+
+PARTS
+$
+Folded fan.
+
+Unfolded fan
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

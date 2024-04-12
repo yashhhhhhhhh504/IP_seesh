@@ -1,0 +1,78 @@
+Summary
+{
+This mechanism transmits power from one shaft to another.This can also be interpreted as a change of state from the absence of contact to its presence, b/n the friction disc and the adjustable roller.
+The mechanism can also be used for obtaining variable output speeds. This can also be interpreted as a change of state from the absence of contact to its presence, b/n the adjustable roller and the friction disc at various points on the surface.
+The whole process is accomplished in a series of steps as described below:  
+
+The friction disk is fixed on the input shaft, which in turn is attached to the motor. Thus, the friction disk forms a revolute pair with the frame (Structure). The motor applies a torque to the shaft (Input), which activates Newtonian laws of motion (Physical effect), and rotates the friction disk (Physical Phenomenon). This requires a 1 degree-of-freedom of motion between the shaft and the friction disk in the direction of rotation (Organ).
+
+The friction disk forms a sliding pair with the adjustable roller (Structure). As the friction disk rotates (Input), the adjustable roller rotates as well (Physical Phenomenon) activating the friction effect (Physical Effect) and is due to the friction developed between the contacting friction surfaces (Organ)
+
+The adjustable roller forms a prismatic pair with the shaft (Structure). The rotation of the adjustable roller (Input) causes the shaft to rotate as well (Physical Phenomenon); which activates the basic law “No two bodies can occupy the same space at the same time” (Physical Effect). The rotation requires a zero degree-of-freedom of motion (in the direction of motion) to exist between the two bodies (Organ).
+
+Since the adjustable roller is connected to the shaft by a prismatic joint (Structure), the position of the roller on the shaft can be changed (Physical Phenomenon). This is achieved by applying a force on the roller (Input), which slides it along the spline, activating the Newtonian Laws of motion (Physical Effect).
+
+There is frictional contact between the friction disk and the adjustable roller (Structure). Thus, as the position of the adjustable roller on the shaft is changed (Input), there is a difference in the diameter of the disk at the point of contact with the adjustable roller (Organ). This activates Newtonian Laws of motion (Physical Effect) and thus the speed of the output shaft is altered (Physical Phenomenon).
+
+The friction disk is in contact with the adjustable roller (Structure). As the friction disk rotates, the adjustable roller rotates as well, due to the friction developed between the contacting surfaces. This activates the friction effect (Physical effect). If the adjustable roller is moved past the center of the rotating disk (Input), the direction of rotation of the roller will reverse (Physical Phenomenon). Therefore, the direction of rotation of the roller depends on its position on the disk, with respect to its center (Organ).
+}
+
+ACTION
+{
+$ Using this drive, the output speed can be changed easily $
+$ This drive also transmits power from the motor to the output shaft $
+$ This drive reverses the direction of rotation $
+}
+
+STATE
+{
+$
+Absence of contact b/n friction disc and adjustable roller
+$
+Presence of contact b/n friction disc and adjustable roller
+$
+Presence of contact b/n various points on the surface of friction disc and adjustable roller
+$
+}
+
+PHYPHENOMENON
+{
+$ The rotation of the friction disk which is attached to the motor shaft $
+$ The rotation of the adjustable roller which is in contact with the friction disk $
+$ The rotation of the output shaft on which the roller is mounted $
+$ The position of the adjustable roller is altered according to the speed requirement $
+$ The speed is changed depending on the position of the adjustable roller $
+$ The direction of rotation can be reversed if the roller’s position past the center of the disk $
+}
+
+PHYEFFECT
+{
+$ Newtonian laws of motion $
+$ The basic law “No two bodies can occupy the same space at the same time” $
+$ It is the friction generated between the bodies in contact that results in the motion being transferred $
+}
+
+INPUT
+{
+$ The motor applies a torque to the shaft which in turn rotates the friction disk $
+$ For rotation of the adjustable roller to be possible, contact between itself and the disk must be maintained $
+$ The rotation of the adjustable roller which is in contact with the friction disk $
+$ A force is applied to the adjustable roller in order to change its position on the shaft it is splined on $
+$ The position of the adjustable roller is altered according to the speed requirement $
+$ The position of the adjustable roller must be set on the other side of the center of the disk $
+}
+
+ORGAN
+{
+$ One degree-of-freedom of motion between the shaft and the first disk in the direction of motion $
+$ The friction material on the surface of the components $
+$ Zero degree-of-freedom of motion between the adjustable roller and the splined shaft in the direction of motion $
+$ The diameter of the disk at the point of contact of the adjustable roller and the disk $
+$ The relative position of the roller depending on the center of the disk $
+}
+PARTS
+{
+$ The friction disk forms a revolute pair with the frame $
+$ The friction disk is in contact with the adjustable roller $
+$ The adjustable roller forms a prismatic pair with the shaft $
+}

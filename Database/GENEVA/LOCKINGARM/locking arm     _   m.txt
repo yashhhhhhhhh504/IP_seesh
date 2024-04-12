@@ -1,0 +1,102 @@
+
+
+MACTION
+{
+A1 $ V < generate > N < motion > A < intermittent > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N < rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < cam > A < continuously > $
+PP2 $ V < rotate > N < link > A < input > $
+PP3 $ V < slide > N < roller > A < driving > $
+PP4 $ V < rotate > N < wheel > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < cam > A < x > $
+I3 $ V < rotate > N < link > A < input > $
+I4 $ V < rotate > N < roller > A < driving > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the cam  $
+O2 $ zero degree of freedom between the input link and cam $
+O3 $ smooth surface between the driving roller and the slot on the output wheel $
+O4 $ force applied by the driving roller is sufficient enough to overcome the inertia of the output wheel $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ input link $
+P5 $ pin $
+P6 $ sliding pair $
+P7 $ slot $
+P8 $ output wheel $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P2 P3 P8 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

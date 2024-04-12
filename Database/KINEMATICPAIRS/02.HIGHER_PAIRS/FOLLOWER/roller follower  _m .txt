@@ -1,0 +1,58 @@
+MACTION
+{
+A1 $ V < reduce > N < wear > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < roller > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ friction effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < cam > A < x > $
+}
+
+MORGAN
+{
+O1 $ presence of friction surface between the roller and the cam. $
+}
+
+MPART
+{
+P1 $ roller $
+P2 $ revolute -pair $
+P3 $ follower $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+
+
+}
+
+
+
+
+

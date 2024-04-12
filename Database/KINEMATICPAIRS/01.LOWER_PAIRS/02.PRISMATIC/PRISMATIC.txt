@@ -1,0 +1,151 @@
+MACTION
+{
+A1 $ V < reciprocate > N < member > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to reciprocating motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < member > A < X > $
+PP2 $ V < transfer > N < motion > A < X > $
+PP3 $ V < restrain > N < motion > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < X > $
+I2 $ V < move > N < member > A < X > $
+I3 $ V < set > N < boundary > A < X > $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+O2 $ correct shape $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P3 $ rotation not possible $
+P4 $ prismatic pair $
+P5 $ fixed pair $
+}
+LINKS
+{
+< A1  PP1  PE1  I1  O1  P1  P2  P4 >
+< A1  PP2  PE1  I2  O1  P1  P1  P5 >
+< A1  PP3  PE2  I3  O2  P1  P2  P3 >
+}
+
+
+
+
+
+FUNCTION
+
+$
+A Prismatic pair allows only a relative translation between two elements, which can be expressed by a single coordinate. Thus, a prismatic pair has a single degree of freedom.
+$
+
+
+STRUCTURE
+
+$
+Lower pairs are differentiated from higher pairs by the type of contact between the two bodies of the pair. Lower pairs have a surface contact, whereas two bodies of a Higher pair have a line or a point contact. An example of a prismatic pair is shown in the figure where a square shaft can traverse linearly within a housing.
+$
+
+
+BEHAVIOUR
+$
+A prismatic pair keeps two axes of two rigid bodies aligned and allows no relative rotation. Two rigid bodies constrained by this kind of constraint will be able to have an independent translational motion along the axis.  As can be seen from the figure, there is only linear motion possible. Thus this pair has only one degree of freedom.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/02.PRISMATIC/prismatic1.gif	$ Prismatic Pair $
+}
+
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/02.PRISMATIC/prismatic1.avi	$ Prismatic Pair $
+}
+
+SUMMARY
+$
+The sliding link (part) slides over the fixed link (physical phenomenon). This is due to the force applied on to it (input) that activates the Newtonian laws of motion (physical effect) and requires the presence of friction free surface between the sliding link and the fixed link (organ).
+$
+
+ACTION
+$
+ 
+ Using this the movable member can be made to slide with respect to the fixed member.
+
+$
+STATE
+$
+
+Absence of force at the movable member.
+
+Presence of force at the movable member.
+
+$
+PHYPHENOMENON
+$
+
+The sliding of link with respect to the fixed link.
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+$
+
+INPUT
+$
+
+Force applied on to it.
+$
+
+ORGAN
+$
+
+Presence of friction free surface between the sliding link and the fixed link.
+
+$
+
+PARTS
+$
+
+The link forms prismatic pair with the fixed link.
+$
+

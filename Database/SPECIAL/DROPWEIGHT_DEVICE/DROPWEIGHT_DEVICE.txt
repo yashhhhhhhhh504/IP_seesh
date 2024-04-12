@@ -1,0 +1,202 @@
+MACTION
+{
+A1 $ V < test > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < free falling > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to free falling motion of the body $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < lever > A < arresting > $
+PP2 $ V < x > N < motion weight > A < free falling > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Gravity effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < x > N < force > A < gravitational > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom between the arresting lever and the hinged joint $
+O2 $ the weight has some mass $
+}
+
+MPART
+{
+P1 $ arresting lever $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ weight $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 >
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+The drop weight device is used for certain mechanical testing purposes, $
+
+
+STRUCTURE
+
+$
+The mechanism consists of a spring, arresting lever and a drop weight.
+$
+BEHAVIOUR
+
+$
+The potential energy stored in the weight in its raised position is released when the lever is swung to the right, thereby disengaging the catch.
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/DROPWEIGHT_DEVICE/01.jpg		$ DROPWEIGHT DEVICE $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism is used for testing materials. This can be interpreted as a change of state from rest to free falling motion. This can be discussed as follows:
+
+The arresting lever (part) is moved away from the weight (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the arresting lever and the hinged joint (organ).
+
+The weight (part) falls freely (physical phenomenon). This is due to the gravitational force (input), which activates the gravity effect (physical effect) and is necessary that the weight has some mass (organ).
+
+$
+
+ACTION
+
+$ 
+ To test materials.
+
+$
+
+STATE
+
+$
+The weight is at rest.
+
+The weight is falling freely.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The arresting lever is moved away from the weight.
+
+The weight falls freely.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Gravity effect.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Gravitational force.
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the arresting lever and the hinged joint.
+
+Necessary that the weight has some mass.
+
+$
+
+
+
+PARTS
+$
+The arresting lever forms a revolute pair with the frame.
+
+The weight.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

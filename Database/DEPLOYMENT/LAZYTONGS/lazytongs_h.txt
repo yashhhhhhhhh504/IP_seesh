@@ -1,0 +1,97 @@
+SUMMARY
+$
+The use of such a mechanism can be made in supporting a bulb (of a table lamp) or telephone etc. this can be described as follows:
+
+The links (part) move apart (physical phenomenon). This is due to tensile force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a slide at the point ‘A’ (organ).
+
+The links (part) move closer to the fixed link ‘B’ (physical phenomenon). This is due to the compressive force applied (input) on to it, which activates the Newtonian laws of motion (physical effect) and requires that the links be of the same length (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ Using this bulbs or telephones can be supported.
+$
+}
+STATE
+{
+$
+Absence of force at the links.
+$
+Presence of tensile force at the links.
+$
+Presence of compressive force at the links.
+$
+}
+PHYPHENOMENON
+{
+$
+The links move apart.
+$
+The links move closer to the fixed link ‘B’.
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Tensile force applied on to it.
+$
+Compressive force applied on to it.
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of a slide at the point ‘A’.
+$
+Requires that the links be of the same length.
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The first link is hinged at the point ‘O’.
+$
+The links form revolute pairs with their hinged joints.
+$
+The slide ‘A’ slides with the vertical support.
+$
+
+$
+
+$
+}
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+MACTION
+{
+
+A1 $ V < transmit > A < x > N < power > $
+A2 $ V < change > A < x > N < speed > $
+A3 $ V < reverse > A < rotating > N < direction > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < constant > N < speed > $
+IS3 $ V < x > A < counter-clockwise > N < rotation > $
+}	
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < variable > N < speed > $
+OS3 $ V < x > A < clockwise > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ from constant speed to variable speed $
+CS3 $ from counter-clockwise rotation to clockwise rotation $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < disk > $
+PP2 $ V < rotate > A < x > N < roller > $
+PP3 $ V < rotate > A < x > N < shaft > $
+PP4 $ V < change > A < x > N < position > $
+PP5 $ V < change > A < x > N < speed > $
+PP6 $ V < reverse > A < rotating > N < direction > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < maintain > A < x > N < contact > $
+I3 $ V < rotate > A < x > N < roller > $
+I4 $ V < apply > A < x > N < force > $
+I5 $ V < change > A < x > N < position > $
+I6 $ V < move > A < past > N < center > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ friction material $
+O3 $ 0 dof of motion in the dir of motion $
+O4 $ position of roller on disc $
+O5 $ ratio of diameters $
+O6 $ position of roller depending on the center $
+}
+
+MPART
+{
+P1 $ disk $
+P2 $ frame $
+P3 $ roller $
+P4 $ shaft $
+P5 $ revolute pair $
+P6 $ prismatic pair $
+P7 $ contact $
+}
+LINK
+{
+< A1 IS1  OS1  CS1 PP1  PE1  I1  O1  P1  P2  P5 >
+< A1 IS1  OS1  CS1 PP2  PE3  I2  O2  P1  P3  P7 >
+< A1 IS1  OS1  CS1 PP3  PE2  I3  O3  P3  P4  P6 >
+< A2 IS2  OS2  CS2 PP4  PE1  I4  O4  P3  P4  P6 >
+< A2 IS2  OS2  CS2 PP5  PE1  I5  O5  P1  P3  P7 >
+< A3 IS3  OS3  CS3 PP6  PE1  I6  O6  P1  P3  P7 >
+}

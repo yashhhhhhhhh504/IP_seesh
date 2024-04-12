@@ -1,0 +1,106 @@
+SUMMARY
+$
+This mechanism can be used to rivet. It can be interpreted as a change of state from separate sheets to joined sheets. This can be described as follows:
+
+The clamp (part) wedges the mandrel shank against the grip (physical phenomenon). This is due to the force applied at the handle (input), which activates the lever effect (physical effect) and requires that the mandrel shank be held tightly in the rivet tool (organ). 
+
+
+The mandrel shank (part) is pulled (physical phenomenon). This is due to the upward force applied on it (input), Which activates the Newtonian laws of motion (physical effect) and requires the upward force is greater than the gravitational force (organ).
+
+
+The hollow rivet body (part) balloons out (physical phenomenon). This is due to the upward movement of the rivet head (input), which activates the law  “no two bodies can occupy the same space at the same time” (physical effect) and requires that the head is stronger enough to cause the bending of the hollow rivet body (organ).
+
+The rivet head (part) breaks (physical phenomenon). This is due to the resisting force applied on it by the hollow rivet body (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a weakened portion near the head region (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ To join two sheets.
+$
+}
+STATE
+{
+$
+Separate sheets.
+$
+Joined sheets.
+$
+}
+PHYPHENOMENON
+{
+$
+The clamp wedges the mandrel shank against the grip.
+$
+The mandrel shank is pulled.
+$ 
+The hollow rivet body balloons out.
+$
+The rivet head breaks.
+$
+}
+
+PHYEFFECT
+{
+$
+Lever effect.
+$
+Newtonian laws of motion.
+$
+No two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+Force applied at the handle.
+$
+The upward force applied on it.
+$
+The upward movement of the rivet head.
+$
+Resisting force applied on it by the hollow rivet body.
+$
+}
+
+ORGAN
+{
+$
+Requires that the mandrel shank be held tightly in the rivet tool.
+$
+Requires the upward force is greater than the gravitational force.
+$
+Requires that the head is stronger enough to cause the bending of the hollow rivet body.
+$
+Presence of a weakened portion near the head region.
+$
+
+}
+
+STUCTURE1
+{
+$
+The clamp forms a revolute pair with the frame.
+$
+The shank forms a sliding pair with the material.
+$
+The hollow rivet body forms a revolute pair with the material surface.
+$
+The rivet head forms a fixed pair with the mandrel shank.
+$
+
+$
+
+$
+}
+
+
+
+
+
+
+
+

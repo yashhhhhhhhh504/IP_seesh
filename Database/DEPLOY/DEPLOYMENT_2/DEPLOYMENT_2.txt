@@ -1,0 +1,178 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < change > N < area > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < unfold > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < fold > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from unfold to fold $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < fold > N < object > A < X > $
+PP2 $ V < unfold > N < object > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Hooks law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < x > N < force > A < elastic > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the force is large enough to overcome the elastic force $
+O2 $ Presence of elastic material within the hollow solid material  $
+}
+
+MPART
+{
+P1 $ foldable part $
+P2 $ revolute pair $
+P3 $ fixed part $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P3 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P3 >
+}
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to change the area occupied.
+$
+
+
+STRUCTURE
+
+$
+It consists of two parts, which are place on flexible materials and also connected by a flexible material.
+$
+
+
+BEHAVIOUR
+
+$
+One of the parts of the system is unwrapped with respect to the other part.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/DEPLOYMENT_2/01.JPG		$ 01.Deployment $
+ADB/DEPLOY/DEPLOYMENT_2/02.JPG		$ 02.Deployment $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+SUMMARY
+$
+This mechanism can be used to deploy. This can be described as follows:
+
+The hollow solid object (part) is folded (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the force is large enough to overcome the elastic force (organ).
+
+
+The hollow solid object (part) unfolds (physical phenomenon). This is due to the elastic force (input) which activates the hooks law (physical effect) and requires the presence of elastic material within the hollow solid material (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+It has less area.
+
+It has large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The hollow solid object is folded.
+
+The hollow solid object folds and unfolds.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Elastic force.
+
+$
+
+
+ORGAN
+
+$
+
+Necessary that the force is large enough to overcome the elastic force.
+
+Presence of elastic material within the hollow solid material.
+$
+
+
+
+PARTS
+$
+The part that folds forms a revolute pair with the fixed part.
+
+
+$
+
+
+
+
+
+
+

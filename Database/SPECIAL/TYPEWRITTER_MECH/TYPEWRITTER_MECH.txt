@@ -1,0 +1,214 @@
+
+MACTION
+{
+A1 $ V < type > N < document > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < type > N < bar rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < type > N < bar rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the type bar $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < press > N < key > A < X > $
+PP2 $ V < rotate > N < lever > A < key > $
+PP3 $ V < rotate > N < bar > A < type > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < key > A < x > $
+I3 $ V < move > N < lever > A < key > $
+}
+
+MORGAN
+{
+O1 $ the force applied is enough to cause the motion $
+O2 $ the force applied is sufficient enough to overcome the spring force $
+O3 $ the inked is a flexible material $
+}
+
+MPART
+{
+P1 $ Key $
+P2 $ Key lever $
+P3 $ revolute pair $
+P4 $ frame $
+P5 $ Key bar $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P3 P4 P5 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+This machine is used to get an imprint of the data on a paper.
+$
+
+
+STRUCTURE
+
+$
+It consists of type bars, key levers and keys.
+$
+BEHAVIOUR
+
+$
+The mechanical typewriter generally functions on the following principle: when any particular key is pressed, a system of levers and linkages causes the corresponding type bar to strike the paper through an inked ribbon. The imprint of the raised key is thereby formed on the paper, which is usually wrapped around the cylinder.
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/TYPEWRITTER_MECH/01.JPG		$ 01.TYPEWRITTER MECHANISM $
+ADB/SPECIAL/TYPEWRITTER_MECH/02.JPG		$ 02.TYPEWRITTER MECHANISM $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to type documents on the paper. This can be discussed as follows:
+
+The key (part) is pressed (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied is enough to cause the motion (organ).
+
+The key lever (part) rotates about the hinge (physical phenomenon). This is due to the movement of the key (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied is sufficient enough to overcome the spring force (organ).
+
+The type bar (part) rotates about the hinge and presses against the paper through the inked pad (physical phenomenon). This is due to the movement of the key lever (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the inked is a flexible material (organ).
+
+$
+
+ACTION
+
+$ 
+ To type documents.
+$
+
+STATE
+
+$
+
+The type bar is at rest.
+
+The type bar rotates about the hinged joint.
+
+$
+
+PHYPHENOMENON
+
+$
+The key is pressed.
+
+The key lever rotates about the hinge.
+
+The type bar rotates about the hinge and presses against the paper through the inked pad.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the key.
+
+The movement of the key lever.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the force applied is enough to cause the motion.
+
+Necessary that the force applied is sufficient enough to overcome the spring force.
+
+Necessary that the inked is a flexible material.
+
+
+$
+
+
+
+PARTS
+$
+Key.
+
+Key lever forms a revolute pair with the frame.
+
+Key bar forms a revolute pair with frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

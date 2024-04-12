@@ -1,0 +1,92 @@
+SUMMARY
+$
+The adjustable dog (part) rotates about the point where it is hinged on to the machine table (physical phenomenon). This is due to the movement of the member, which is overshooting (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the positioning of the dog in the path of the reciprocating member (organ).
+
+The latch (part) is displaced from its original position (physical phenomenon). This is due to the movement of the dog (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the proper positioning of the latch (organ).
+
+The clutch and brake -operating shaft (part) is released from the latch and is pulled back which in turn will bring the machine to a stop (physical phenomenon). This is due to the movement of the latch and also due to the pulling force applied by the spring attached to it (input), which activates the Newtonian laws of motion (physical effect) and requires that the spring have sufficient stiffness (organ). 
+
+
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism overrunning of reciprocating members on the machine tool can be prevented.
+$
+}
+STATE
+{
+$
+Absence of contact between the reciprocating member of the machine tool and the dog.
+$
+Presence of contact between the reciprocating member of the machine tool and the dog.
+$
+}
+PHYPHENOMENON
+{
+$
+The adjustable dog rotates about the point where it is hinged on to the machine table.
+$
+The latch is displaced from its original position.
+$ 
+The clutch and brake -operating shaft is released from the latch and is pulled back which in turn will bring the machine to a stop.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+No two bodies can occupy the same space at the same time.
+$
+Newtonian laws of motion.
+$
+
+$
+}
+
+INPUT
+{
+$
+The movement of the member, which is overrunning.
+$
+The movement of the dog.
+$
+The movement of the latch and also due to the pulling force applied by the spring attached to it.
+$
+}
+
+ORGAN
+{
+$
+Requires the positioning of the dog in the path of the reciprocating member.
+$
+Proper positioning of the latch.
+$
+Requires that the spring have sufficient stiffness.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The dog forms a revolute pair with the machine tool table.
+$
+The latch forms a revolute pair with the machine tool table and holds the clutch-brake operating shaft.
+$
+The clutch-brake operating shaft forms a revolute pair with respect to the frame.
+$
+
+$
+
+$
+}
+
+

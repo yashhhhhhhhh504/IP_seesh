@@ -1,0 +1,79 @@
+SUMMARY
+$
+This mechanism is basically used to rotate the camera that is fitted on it so that snaps can be taken in any required direction.
+$
+
+ACTION
+
+$ 
+ To enable rotation.
+$
+
+STATE
+
+$
+The camera is at rest.
+
+The camera is rotated.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the camera that is fitted on to the mobile phone.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Torque that is applied.
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the camera part of the phone and the keypad.
+
+
+$
+
+
+
+PARTS
+$
+Mobile phone.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

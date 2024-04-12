@@ -1,0 +1,181 @@
+MACTION
+{
+A1 $ V < absorb > N < energy > A < recoverable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < state > $
+IS2 $ V < x > A < deformed > N < state > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed > N < state > $
+OS2 $ V < x > A < original > N < state > $
+} 
+MCHANGESTATE
+{
+CS1 $ from original state to deformed state $
+CS2 $ from deformed state to original state $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < deform > N < spring > A < X > $
+PP2 $ V < regain > N < shape > A < original > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hooks law $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < load > A < x > $
+I2 $ V < remove > N < load > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the spring has some stiffness $
+O2 $ Necessary that the load applied is within the elastic limit of the material $
+
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ frame $
+P3 $ flexible pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS2 OS2 CS2 PP2 PE1 I2 O2 P1 P2 P3 >
+
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+They are used to provide rigid support (high spring constant) where there is limited space along the axis of support.  Leaf springs are often used as a rear shock absorber in trucks.
+$
+
+
+STRUCTURE
+
+$
+Leaf springs are constructed of one or more strips of long, narrow, spring steel. These strips are called leaves and are assembled with plastic or synthetic rubber insulators between the leaves allowing freedom of movement during spring operation. The ends of the spring are rolled or looped to form eyes where the springs mount to the frame of the vehicle. Rubber bushings are installed in the eyes of the spring and act as noise and vibration insulators. One end of the leaf spring is mounted to a hanger with a bolt and a rubber bushing directly to the frame. The other end of the leaf spring is attached to the frame with movable mounting hangers called shackles. Shackles allow the leaf spring to move as the suspension articulates. Rebound clips or spring alignment clips help prevent the leaves from separating whenever the leaf spring is rebounding from hitting a bump or rise in the roadway. Single-leaf steel springs are used on some vehicles and are called mono leafs. Some vehicles use a single fiberglass-reinforced epoxy plastic leaf spring between the rear wheels. This design saves weight and space but is not covered in this article due to its unique nature.
+$
+
+
+BEHAVIOUR
+
+$
+Springs are unlike other machine/structure components in that they undergo significant deformation when loaded - their compliance enables them to store readily recoverable mechanical energy. In a vehicle suspension, when the wheel meets an obstacle, the springing allows movement of the wheel over the obstacle and thereafter returns the wheel to its normal position. Another common duty is in cam follower return - rather than complicate the cam to provide positive drive in both directions, positive drive is provided in one sense only, and the spring is used to return the follower to its original position. Springs are common also in force- displacement transducers, for example, in weighing scales, where an easily discerned displacement is a measure of a change in force. 
+The shortcoming of most metal springs is that they rely on either bending or torsion to obtain significant deformations; the stress therefore varies throughout the material so that the material does not all contribute uniformly to energy storage. 
+$
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/09.Spring/LEAF_SPRING/leafsprings.jpg		$ 01.Leaf Springs $
+ADB/BASICCOMP/09.Spring/LEAF_SPRING/leafsprings1.jpg		$ 02.Leaf Springs $
+ADB/BASICCOMP/09.Spring/LEAF_SPRING/leafspringstypes.jpg	$ 03.Leaf Spring Types $
+ADB/BASICCOMP/09.Spring/LEAF_SPRING/leafends.jpg		$ 04.Leaf Springs Ends $
+ADB/BASICCOMP/09.Spring/LEAF_SPRING/suspension.jpg		$ 05.Suspension System $
+ADB/BASICCOMP/09.Spring/LEAF_SPRING/suspension1.jpg		$ 06.Suspension System $
+}
+
+
+CLIP
+{
+}
+SUMMARY
+$
+This can be used to provide support. This can be described as a change of state from original form to deformed form. This can be described as follows:
+
+The spring (part) deforms (physical phenomenon). This is due to the load applied on it (input), which activates the hooks law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The spring (part) restores to its original form (physical phenomenon). This is due to the removal of load (input), which activates the hooks law (physical effect) and is necessary that the load applied is within the elastic limit of the material (organ).
+$
+
+ACTION
+
+$ 
+ To store recoverable form of energy.
+$
+
+STATE
+
+$
+The spring is deformed.
+
+The spring regains its original shape and size.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring deforms in the shape. 
+
+The spring regains its original shape and thus does some work.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+The load applied on it.
+
+Removal of load.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spring has some stiffness.
+
+Necessary that the load applied is within the elastic limit of the material.
+
+$
+
+
+
+PARTS
+$
+The ends of the spring are fixed to the frame.
+
+$
+
+
+
+
+
+

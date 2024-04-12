@@ -1,0 +1,219 @@
+
+
+MACTION
+{
+A1 $ V < provide > N < actuation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < movable > N < shuttle rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < movable linear > N < shutter motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion of the movable shuttle $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < shuttle > A < Linearly > $
+PP2 $ V < deflect > N < beam > A < folded > $
+PP3 $ V < stop > N < anchor > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bending effect $
+PE3 $ Rigidity effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < shuttle > A < movable > $
+I3 $ V < rigidity > N < anchor > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the movable shuttle and the surface $
+O2 $ the folded beams are flexible $
+O3 $ anchor has some rigidity $
+}
+
+MPART
+{
+P1 $ movable shuttle $
+P2 $ sliding pair $
+P3 $ frame $
+P4 $ folded beams $
+P5 $ anchor $
+P6 $ fixed pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 P5 P6 >
+
+}
+
+
+
+
+FUNCTION
+
+$
+The electrostatic comb drives are sometimes used as actuators in micro mechanical devices. 
+$
+
+
+STRUCTURE
+
+$
+It consists of stationary electrode, folded beam, anchor, movable shuttle and comb fingers.
+$
+BEHAVIOUR
+
+$
+The actuation force comes from the electrostatic forces when a voltage difference is applied between the stationary electrode and the movable shuttle.
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/ELECTROSTATIC_COMB_DRIVE/01.JPG		$ ELECTROSTATIC COMB DRIVE $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This can be used to providing actuation. This can be interpreted as a change of state from rest to linear motion of the comb fingers. This can be described as follows:
+
+The movable shuttle (part) moves linearly (physical phenomenon). This is due to the force (input) applied on it, which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the movable shuttle and the surface (organ).
+
+The folded beams (part) deflect (physical phenomenon). This is due to the movement of the movable shuttle (input), which activates the bending effect (physical effect) and is necessary that the folded beams are flexible (organ).
+
+The anchor (part) remains in the same place (physical phenomenon). This is due to the rigidity of the anchor (input), which activates the rigidity effect (physical effect) and is necessary that anchor has some rigidity (organ).
+
+
+$
+
+ACTION
+
+$ 
+ Provide actuation.
+$
+
+STATE
+
+$
+The movable shuttle is at rest.
+
+The movable shuttle has linear motion.
+
+$
+
+PHYPHENOMENON
+
+$
+The movable shuttle moves linearly.
+
+The folded beams deflect.
+
+The anchor remains in the same place.
+
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bending effect.
+
+Rigidity effect.
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the movable shuttle.
+
+The rigidity of the anchor.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the movable shuttle and the surface.
+
+Necessary that the folded beams are flexible.
+
+Necessary that anchor has some rigidity.
+
+
+$
+
+
+
+PARTS
+$
+Movable shuttle forms a sliding pair with the frame.
+
+Folded beams.
+
+Anchor forms a fixed pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

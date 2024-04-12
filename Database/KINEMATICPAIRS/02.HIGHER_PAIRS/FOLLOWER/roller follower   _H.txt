@@ -1,0 +1,64 @@
+SUMMARY
+$
+This can be used to reduce wear on the cam and the follower. This can be interpreted as a change of rest to rotation of the roller. This can be described as follows:
+
+The roller (part) of the follower rotates (physical phenomenon). This is due to rotation of the cam (input), which activates the friction effect (physical effect) and requires the presence of a friction surface between the cam and the roller (organ). 
+$
+
+ACTION
+
+$ 
+ To reduce friction.
+$
+
+STATE
+
+$
+The roller is at rest.
+
+The roller is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The roller of the follower rotates.
+
+$
+
+
+PHYEFFECT
+
+$
+Friction effect.
+
+$
+
+
+INPUT
+
+$
+Rotation of the cam.
+
+$
+
+
+ORGAN
+
+$
+Presence of a friction surface between the cam and the roller.
+
+$
+
+
+
+PARTS
+$
+The roller forms a revolute pair with the follower.
+$
+
+
+
+
+

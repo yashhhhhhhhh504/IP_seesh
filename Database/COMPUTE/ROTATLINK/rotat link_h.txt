@@ -1,0 +1,89 @@
+SUMMARY
+$
+This can be used to perform computation. This can be interpreted as a change of state from rest to oscillating motion. This can be described as follows:
+
+The link x (part) oscillates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link x is hinged to the surface (organ).
+
+The link y (part) oscillates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link y is hinged to the surface (organ).
+
+The link z (part) oscillates (physical phenomenon). This is due to the oscillation of the links x and y (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the link z is hinged to the surface (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To perform computation.
+$
+
+STATE
+
+$
+The link z is at rest.
+
+The link z oscillates.
+
+$
+
+PHYPHENOMENON
+
+$
+
+The link x oscillates.
+
+The link y oscillates.
+
+The link z oscillates.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The oscillation of the links x and y.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the link x is hinged to the surface.
+
+Necessary that the link y is hinged to the surface.
+
+Necessary that the link z is hinged to the surface.
+
+
+$
+
+
+
+PARTS
+$
+The link x forms a revolute pair with the frame.
+
+The link y forms a revolute pair with the frame.
+
+The link z forms a revolute pair with the frame.
+
+
+
+$
+
+

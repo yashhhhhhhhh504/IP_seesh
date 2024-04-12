@@ -1,0 +1,230 @@
+
+
+MACTION
+{
+A1 $ V < bind > N < paper > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x  > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < handgrip > A < X > $
+PP2 $ V < pull > N < clamp face > A < apart > $
+PP3 $ V < hold > N < paper > A < tightly > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Lever effect $
+PE3 $ Spring effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+I2 $ V < bend > N < handgrip > A < x > $
+I3 $ V < release > N < handgrip > A < x > $
+}
+
+MORGAN
+{
+O1 $ moment applied is sufficient to cause the bending of the handgrips $
+O2 $ the base of the plastic forms a fulcrum $
+O3 $ the clamp is made up of a flexible material $
+}
+
+MPART
+{
+P1 $ handgrip $
+P2 $ revolute pair $
+P3 $ clamp face $
+P4 $ clamp base $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P4 >
+
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+This can be used to bind papers together.
+$
+
+
+STRUCTURE
+
+$
+It is made up of flexible material. 
+$
+
+
+BEHAVIOUR
+
+$
+The gap between the faces is varied.
+$
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/BINDER_CLIP/01.JPG		$ BINDER CLIP $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This device can be used to bind papers. This can be interpreted as a change of state from small gap between the faces of the clamp to large gap between the faces of the clamp. This can be described as follows:
+
+The hand grips (part) are rotated (physical phenomenon). This is due moment applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that moment applied is sufficient to cause the bending of the hand grips (organ).
+
+The faces (part) of the clamp are pulled apart (physical phenomenon). This is due to bending of the handgrips (input), which activates the lever effect (physical effect) and is necessary that the base of the plastic forms a fulcrum (organ).
+
+Now the papers that have to be kept together are kept in the gap between the two plastic faces. 
+
+The faces (part) of clamp hold on to the paper tightly (physical phenomenon). This is due to the release of the handgrips (input), which activates the spring effect (physical effect) and is necessary that the clamp is made up of a flexible material (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To bind papers.
+$
+
+STATE
+
+$
+The gap between faces of clamp is small.
+
+The gap between the faces of the clamp is large. 
+
+$
+
+PHYPHENOMENON
+
+$
+The handgrips are rotated.
+
+The faces of the clamp are pulled apart.
+
+The faces of clamp hold on to the paper tightly.
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Lever effect.
+
+Spring effect.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Moment applied on it.
+
+Bending of the handgrips.
+
+The release of the handgrips.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that moment applied is sufficient to cause the bending of the handgrips.
+
+Necessary that the base of the plastic forms a fulcrum.
+
+Necessary that the clamp is made up of a flexible material.
+
+
+$
+
+
+
+PARTS
+$
+The handgrips form revolute pair with the faces of the clamp.
+
+The faces of the clamp form a revolute pair with the base of the clamp.
+
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

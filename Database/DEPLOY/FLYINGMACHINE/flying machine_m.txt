@@ -1,0 +1,93 @@
+MACTION
+{
+A1 $ V < provide > N < transportation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < flying > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to flying $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < pedal > N < part > A < X > $
+PP2 $ V < rotate > N < part > A < X > $
+PP3 $ V < generate > N < lift > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Torque. > A < x > $
+I2 $ V < Rotate  > N < part > A < x > $
+I3 $ V < x > N < x > A < x > $
+I4 $ V < x > N < > A < X > $
+I5 $ V < X > N < X > A < X > $
+I6 $ V < X > N < X > A < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of a crank that is connected to the shaft. $
+O2 $ Presence of some kind of connection between the pedal and the fan $
+O3 $ Necessary that the speed of rotation of the fan is sufficient to generate the lift. $
+}
+
+MPART
+{
+P1 $ Pedal. $
+P2 $ Fan $
+P3 $ Air. $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

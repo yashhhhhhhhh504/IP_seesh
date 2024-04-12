@@ -1,0 +1,84 @@
+SUMMARY
+$
+This can be used to support shafts. This can be described as follows:
+
+The inner race (part) rotates (physical phenomenon). This is due to the torque applied (input) by the shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the inner race (organ).
+
+The rollers (part) rotate and as well as revolve about the center of the shaft (physical phenomenon). This is due to the rotation of the Inner race (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the inner race and the balls (organ).
+
+The outer race (part) remains fixed (physical phenomenon). This is due to the presence of rollers between them and the rotating inner race (input) which activates the ? effect (physical effect) and requires the presence of a smooth  surface between the outer race and the rollers (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ To support shafts.
+$
+}
+STATE
+{
+$
+The rollers at rest.
+
+The rollers are rotating and as well as revolving.
+$
+}
+PHYPHENOMENON
+{
+$
+The inner race rotates.
+
+The rollers rotate and as well as revolve about the center of the shaft
+
+The outer race remains fixed.
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.	
+
+Friction effect.
+$
+}
+
+INPUT
+{
+$
+Torque applied by the shaft.
+
+Rotation of the inner race.
+
+Presence of rollers between them and the rotating inner race.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the shaft and the inner race.
+
+Presence of friction surface between the inner race and the rollers.
+
+Presence of a smooth surface between the outer race and the rollers.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The inner race forms a revolute pair with the frame.
+
+The rollers form a revolute pair with the inner race.
+
+The outer race forms a fixed pair with the frame.
+$
+}
+
+

@@ -1,0 +1,89 @@
+SUMMARY
+$
+This mechanism provides intermittent motion between two shafts at right angles to each other. This can also be interpreted as a change of state from rest to small angular rotation. This can be described as follows:
+
+The driver wheel (part) rotates (physical phenomenon). This is due to torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver wheel (organ).
+
+The arm of the driving wheel (part) slides in the slot of the output Geneva (physical phenomenon). This is due to the rotation of the driver wheel (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the slot and the arm (organ).
+
+The output Geneva (part) rotates in the horizontal plane through a small angle (physical phenomenon). This is due to the movement of the arm (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the force applied by the arm is sufficient enough to overcome the inertial of output Geneva (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To provide intermittent motion between two shafts at right angles to each other.
+$
+
+STATE
+
+$
+The output Geneva is at rest.
+
+The output Geneva rotates through a small angle.
+
+$
+
+PHYPHENOMENON
+
+$
+The driver wheel rotates.
+
+The arm of the driving wheel slides in the slot of the output Geneva.
+ 
+The output Geneva rotates in the horizontal plane through a small angle.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Torque applied by the input shaft.
+
+The rotation of the driver wheel.
+
+The movement of the arm.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the driver wheel.
+
+Presence of a smooth surface between the slot and the arm.
+
+Necessary that the force applied by the arm is sufficient enough to overcome the inertial of output Geneva.
+
+
+$
+
+
+
+PARTS
+$
+The driver wheel forms a revolute pair with the frame.
+
+ The arm of the driver wheel forms a sliding pair with the slot of the output Geneva.
+
+The output Geneva forms a revolute pair with the frame.
+
+
+$
+
+
+

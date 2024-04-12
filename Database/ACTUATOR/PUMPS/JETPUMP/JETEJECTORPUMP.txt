@@ -1,0 +1,209 @@
+MACTION
+{
+A1 $ V < pump > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < water > A < x > N < low level > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < water > A < X > N  < high level > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ water from low level to high level $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < return >  N < water > A < X > $
+PP2 $ V < increase >  N < water velocity > A < X > $
+PP3 $ V < increase >  N < water velocity > A < X > $
+PP4 $ V < suck >  N < water > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Gravity effect $
+PE2 $ Conservation of mass $
+PE3 $ Bernoulli’s effect $
+
+}
+
+MINPUT
+{
+I1 $ V < x >  N < force > A < gravitational > $
+I2 $ V < decrease >  N < area > A < cross-section > $
+I3 $ V < further increase >  N < area > A < cross-section > $
+I4 $ V < create >  N < pressure region > A < low > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of a pipe that runs vertically downward $
+O2 $ Presence of a nozzle at the end of the pressure pipe $
+O3 $ nozzle enters into the suction pipe $
+O4 $ increase in the velocity should be sufficient enough to create the required pressure difference $
+
+}
+
+MPART
+{
+P1 $ water $
+P2 $ pressure-pipe $
+P3 $ sliding pair $
+P4 $ suction-pipe $
+P5 $ revolute-pair $
+P6 $ nozzle $
+P7 $ fixed-pair $
+P8 $ venturi $
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P6 P7 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P4 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P1 P3 P4 >
+
+}
+
+
+FUNCTION
+$
+A device that expends energy in order to raise, transport, or compress fluids.
+$
+BEHAVIOUR
+$
+A Jet Pump is a type of impeller-diffuser pump that is used to draw water from wells into residences. It can be used for both shallow (25 feet or less) and deep wells (up to about 200 feet.) 
+
+Shown here is the underwater part of a deep well jet pump. Above the surface is a standard impeller-diffuser type pump. The output of the diffuser is split, and half to three-fourths of the water is sent back down the well through the Pressure Pipe (shown on the right here). 
+
+At the end of the pressure pipe the water is accelerated through a cone-shaped nozzle at the end of the pressure pipe, shown here within a red cutaway section. Then the water goes through a Venturi in the Suction Pipe (the pipe on the left). 
+
+The venturi speeds up the water causing a pressure drop which sucks in more water through the intake at the very base of the unit. The water goes up the Suction Pipe and through the impeller -- most of it for another trip around to the venturi. 
+
+Hence,in the jet pump, fluid passes through a venturi nozzle and develops a suction that causes a second stream of fluid to be entrained. 
+$
+STRUCTURE
+$
+The pump consists of an impeller diffuser pump above the surface which is connected to a pressure pipe.The pressure pipe leads into a nozzle.The nozzle ends at the throat of the venturi which is part of the suction tube.
+
+$
+PICTURE
+{
+ADB/ACTUATOR/PUMPS/JETPUMP/01.JPG    $ Jet ejector pump $
+}
+CLIP
+{
+ADB/ACTUATOR/PUMPS/JETPUMP/02.MPG   $ Jet ejector pump $
+}
+
+
+SUMMARY
+$
+This device can be used to pump water from below the ground level. This can be interpreted as a change of state from water being at a lower level to water at higher level. This can be described as follows:
+
+The half of the water that reaches the impeller (part) is sent back through the pressure pipe (physical phenomenon). This is due to the gravitational force (input), which activates the gravity effect (physical effect) and requires the presence of a pipe that runs vertically downward (organ).
+
+The water’s (part) velocity increases (physical phenomenon). This is due to the decrease in the area of cross section (input), which activates the law of conservation of mass (physical effect) and requires the presence of a nozzle at the end of the pressure pipe (organ).
+
+The water’s (part) velocity further increases (physical phenomenon). This is due to the decrease in the cross sectional area (input), which activates the law of conservation of mass (physical effect) and requires the presence of a venturi and it also requires that the nozzle enters into the suction pipe (organ).
+
+ The water (part) rushes in the upward direction through the intake (physical phenomenon). This is due to the low-pressure region created above the venturi (input), which activates the Bernoulli’s effect (physical effect) and requires that the increase in the velocity should be sufficient enough to create the required pressure difference (organ).
+
+
+
+$
+
+ACTION
+$
+ 
+ To displace water from a low level a higher level.
+
+$
+STATE
+$
+
+Water is at a low level.
+
+Water is at a high level.
+
+$
+PHYPHENOMENON
+$
+
+The half of the water that reaches the impeller is sent back through the pressure pipe.
+
+The water’s velocity increases.
+ 
+The water’s velocity further increases.
+
+The water rushes in the upward direction through the intake.
+
+$
+
+PHYEFFECT
+$
+
+Gravity effect.
+
+Conservation of mass.
+
+Bernoulli’s effect.
+
+$
+
+INPUT
+$
+
+Gravitational force.
+
+Decrease in the area of cross section.
+
+Decrease in the cross sectional area.
+
+Low-pressure region created above the venturi.
+
+$
+
+ORGAN
+$
+
+Presence of a pipe that runs vertically downward.
+
+Presence of a nozzle at the end of the pressure pipe.
+
+Presence of a venturi and it is also necessary that the nozzle enters into the suction pipe.
+
+Requires that the increase in the velocity should be sufficient enough to create the required pressure difference.
+
+
+$
+
+PARTS
+
+$
+
+Water forms a sliding pair with the pressure pipe.
+
+The pressure pipe forms a fixed pair with the nozzle.
+
+The venturi forms a fixed pair with the suction pipe.
+
+Water forms a sliding pair with the suction pipe.
+
+
+
+$
+
+

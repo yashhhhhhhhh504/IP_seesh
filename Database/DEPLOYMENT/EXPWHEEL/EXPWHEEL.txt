@@ -1,0 +1,182 @@
+
+MACTION
+{
+A1 $ V < increase > N < diameter > A < wheel > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < diameter > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < diameter > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from small diameter to large diameter $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < wheel > A < base > $
+PP2 $ V < move > N < screw > A < adjustable upward > $
+PP3 $ V < move > N < screw > A < adjustable inward > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < apply > N < couple > A < clockwise > $
+I3 $ V < apply > N < couple > A < anti-clockwise > $
+}
+
+MORGAN
+{
+O1 $ Zero degree of freedom between the shaft and the base wheel $
+O2 $ requires that the base wheel is stationary $
+O3 $ requires that the base wheel is stationary $
+}
+
+MPART
+{
+P1 $ base wheel $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ adjustable section $
+P5 $ screw pair $
+P6 $ base wheel $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P4 P5 P6 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+An expanding wheel has various applications in addition to acting as a pulley or another conventional wheel. Examples include electrical contact on wheel surfaces that allow many repetitive electrical functions to be performed while the wheel turns. 
+$
+
+
+STRUCTURE
+
+$
+The expanding wheel consists of a base wheel and several adjustable sections. These adjustable sections will be connected to the wheel around the circumference. The number of sections required depends on the diameter of the wheel. 
+$
+
+
+BEHAVIOUR
+
+$
+Dynamic and static balancing is simplified when an expanding wheel is attached to a 
+non-expanding main wheel. As a pulley, an expanding wheel can have a steel band fastened to only one section and then passed twice around the circumference to allow for adjustment.
+The animation shown alongside illustrates the working of this mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/EXPWHEEL/expwheel.jpg		$ Expanding Wheel $
+}
+
+
+CLIP
+
+{
+ADB/DEPLOYMENT/EXPWHEEL/expwheel.avi		$ Expanding Wheel $
+}
+
+
+SUMMARY
+$
+Using this mechanism, the diameter of the wheel can be increased or decreased. This can be described as follows:
+
+The base wheel (part) rotates in a vertical plane (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the base wheel (organ).
+
+The adjustable screw section (part) moves outward (physical phenomenon). This is due to the clockwise couple applied on to the screw  (input), which activates the Newtonian laws of motion (physical effect) and requires that the base wheel is stationary (organ).
+
+The adjustable screw section (part) moves inward (physical phenomenon). This is due to the anti clockwise couple applied on to the screw (input), which activates the Newtonian laws of motion (physical effect) and requires that the base wheel is stationary (organ).
+
+$
+
+
+
+ACTION
+$
+ 
+Using this mechanism, the diameter of the wheel can be increased or decreased.
+
+$
+STATE
+$
+from large radius to large radius.
+
+from  small radius to small radius.
+$
+PHYPHENOMENON
+$
+
+The base wheel rotates in a vertical plane.
+
+The adjustable screw section moves outward.
+ 
+The adjustable screw section moves inward.
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+$
+
+INPUT
+$
+
+Rotation of the input shaft.
+
+Clockwise couple applied on to the screw.
+
+Anti clockwise couple applied on to the screw.
+
+$
+
+ORGAN
+$
+
+Zero degree of freedom between the shaft and the base wheel.
+
+Requires that the base wheel is stationary.
+
+Requires that the base wheel is stationary.
+$
+
+PARTS
+$
+
+The base wheel forms a revolute pair with the frame.
+
+The adjustable section forms a screw pair with the base wheel.
+
+$
+
+
+

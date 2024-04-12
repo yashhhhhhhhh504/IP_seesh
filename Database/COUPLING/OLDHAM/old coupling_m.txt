@@ -1,0 +1,77 @@
+MACTION
+{
+A1 $ V < transmit > AV < X > N < power > AJ < X > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > AV < X > N < member > AJ < input > $
+PP2 $ V < rotate > AV < X > N < member > AJ < floating > $
+PP3 $ V < slide > AV < X > N < member > AJ < floating > $
+PP4 $ V < rotate > AV < X > N < member > AJ < output > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion.  $
+PE2 $ Gravity effect. $
+PE3 $ $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < rotate > AV < X > N < shaft > AJ < input > $
+I2 $ V < rotate > AV < X > N < member > AJ < input  > $
+I3 $ V < > AV < X > N < force > AJ < gravitational  > $
+I4 $ V < rotate > AV < X > N < member > AJ < floating > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the shaft and the input member. $
+O2 $ Presence of zero degree of freedom between the floating member and the input member, which is achieved by providing slot on the input member and a corresponding projection on the floating member.   $
+O3 $ Presence of a smooth surface between the slot and the projection.  $
+O4 $ Presence of zero degree of freedom between the floating member and the output member, which is achieved by providing slot on the output member and a corresponding projection on the floating member.   $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < member > AJ < input > $
+P2 $ V < X > AV < X > N < frame > AJ < X > $
+P3 $ V < X > AV < X > N < revolute-pair > AJ < X > $
+P4 $ V < X > AV < X > N < floating-member > AJ < X > $
+P5 $ V < X > AV < X > N < pair > AJ < sliding > $
+P6 $ V < X > AV < X > N < member > AJ < output > $
+
+}
+
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 > 
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP2 PE2 I3 O3 P1 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP2 PE1 I4 O4 P2 P3 P6 >
+
+

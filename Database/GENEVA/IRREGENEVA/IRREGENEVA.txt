@@ -1,0 +1,217 @@
+MACTION
+{
+A1 $ V < generate > A < non-uniform intermittent > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < non-uniform intermittent > N  < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to non-uniform intermittent motion $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < driver-wheel > A < X > $
+PP2 $ V < reduce > N < friction > A < X > $
+PP3 $ V < transfer > N < motion > A < X > $
+PP4 $ V < change > N < duration > A < X > $
+PP5 $ V < rotate > N < geneva-wheel > A < X > $
+PP6 $ V < position > N < slot > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < rotate > N < roller > A < X > $
+I3 $ V < rotate > N < driver-wheel > A < X > $
+I4 $ V < allow > A < radial > N < movement > $
+I5 $ V < provide > A < angular > N < rotation > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom of motion in direction of motion $
+O2 $ contact : roller geneva $
+O3 $ roller-slot interface $
+O4 $ zero degree of freedom $
+O5 $ angle between the two arms $
+O6 $ ratio of diameters $
+}
+
+MPART
+{
+P1 $ driver-wheel $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ roller $
+P5 $ geneva $
+P6 $ arm1 $
+P7 $ arm2 $
+P8 $ angle $
+P9 $ sliding pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P1  P4  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O3  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O4  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP4  PE1  I3  O5  P6  P7  P8 >
+< A1 IS1  OS1  CS1  PP5  PE3  I3  O4  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP5  PE3  I3  O4  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP6  PE1  I5  O6  P2  P5  P3 >
+}
+
+FUNCTION
+
+$
+This type of geneva drive is used when unequal durations are required for the motion and dwell periods.
+$
+
+
+STRUCTURE
+
+$
+This geneva drive consists of an output geneva wheel and an input drive with two input cranks positioned asymmetrically. Both the input and output shaft lie on the same axis. The geneva wheel and the input drive are mounted on a base frame.
+$
+
+
+BEHAVIOUR
+
+$
+The duration of the dwell periods is changed by arranging the driving rollers asymmetrically around the input shaft. This does not affect the duration of the motion periods. If unequal motion periods and unequal dwell periods are desired, the roller crank-arms must be unequal in length and the star must be suitably modified. This mechanism is called an irregular geneva drive. 
+$
+
+
+PICTURE
+
+{
+ADB/GENEVA/IRREGENEVA/irregeneva.jpg	$ Irregular Geneva $
+}
+
+
+CLIP
+
+{
+ADB/GENEVA/IRREGENEVA/irregeneva.avi	$ Irregular Geneva $
+}
+
+SUMMARY
+$
+This mechanism can be used to generate irregular intermittent motion. This can also interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The input Geneva wheel (part) rotates continuously (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input wheel (organ).
+
+The crank (part) mounted on the input wheel rotates (physical phenomenon). This is due to the rotation of the input wheel (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input wheel and the crank (organ).
+
+The pin (part) mounted on the input crank slides in the slot provided on the output Geneva (physical phenomenon). This is due to the rotation of the input crank (input) and requires the presence of a smooth surface between the pin and the slot surface (organ).
+
+The pin (part) mounted on the input crank rotates (physical phenomenon). This is due to the rotation of the input crank (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input crank and the pin (organ).
+
+ The output wheel (part) rotates intermittently (physical phenomenon). This is due to the movement of the pin mounted on the input crank (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the force applied by the pin on the input crank is sufficient to over come the inertia of the output wheel (organ).
+
+$
+
+ACTION
+
+$ 
+ To generate irregular intermittent motion.
+$
+
+STATE
+
+$
+The output wheel is at rest.
+
+The output wheel undergoes a small angular rotation.
+
+$
+
+PHYPHENOMENON
+
+$
+The input Geneva wheel rotates continuously.
+
+The crank mounted on the input wheel rotates.
+ 
+The pin mounted on the input crank slides in the slot provided on the output Geneva.
+
+The pin mounted on the input crank rotates.
+
+The output wheel rotates intermittently.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The rotation of the input shaft.
+
+The rotation of the input wheel.
+
+The rotation of the input crank.
+
+The rotation of the input crank.
+
+The movement of the pin mounted on the input crank.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the input wheel.
+
+Presence of zero degree of freedom between the input wheel and the crank.
+
+Presence of a smooth surface between the pin and the slot surface.
+
+Presence of zero degree of freedom between the input crank and the pin.
+
+Necessary that the force applied by the pin on the input crank is sufficient to over come the inertia of the output wheel.
+$
+
+
+
+PARTS
+$
+The input wheel forms a revolute pair with the frame.
+
+The input crank forms a revolute pair with the frame.
+
+The pin on the input crank forms a sliding pair with the slot on the output wheel.
+
+The pin on the input crank forms a revolute pair with the frame.
+
+The output wheel forms a revolute pair with the frame.
+
+
+$
+
+
+

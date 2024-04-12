@@ -1,0 +1,95 @@
+
+
+MACTION
+{
+A1 $ V < increase > N < diameter > A < wheel > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < diameter > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < diameter > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small diameter to large diameter $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < wheel > A < base > $
+PP2 $ V < move > N < screw > A < adjustable upward > $
+PP3 $ V < move > N < screw > A < adjustable inward > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < apply > N < couple > A < clockwise > $
+I3 $ V < apply > N < couple > A < anti-clockwise > $
+}
+
+MORGAN
+{
+O1 $ Zero degree of freedom between the shaft and the base wheel $
+O2 $ requires that the base wheel is stationary $
+O3 $ requires that the base wheel is stationary $
+}
+
+MPART
+{
+P1 $ base wheel $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ adjustable section $
+P5 $ screw pair $
+P6 $ base wheel $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P4 P5 P6 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

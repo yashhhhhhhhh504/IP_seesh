@@ -1,0 +1,224 @@
+MACTION
+{
+A1 $ V < close > N < door > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < open > N < door > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < close > N < door > $
+} 
+MCHANGESTATE
+{
+CS1 $ from open door to close door  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < piston > A < X > $
+PP2 $ V < x > N < oil-flow > A < X > $
+PP3 $ V < close > N < ball-valve > A < x > $
+PP4 $ V < move > N < piston > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+PE3 $ Hooks law $
+PE4 $ Resistance to flow $ 
+
+}
+
+MINPUT
+{
+I1 $ V < open > N < door > A < x > $
+I2 $ V < x > N < door > A < open > $
+I3 $ V < x > N < force > A < spring > $
+I4 $ V < close > N < valve > A < ball > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the piston and the cylinder walls $
+O2 $ oil is able to flow through the passage $
+O3 $ spring has enough stiffness $
+O4 $ oil is not leaked out of the system $
+}
+
+MPART
+{
+P1 $ piston $
+P2 $ sliding pair $
+P3 $ cylinder $
+P4 $ oil  $
+P5 $ valve of the piston $
+P6 $ Ball valve $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P1 P2 P3 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+The door closer is familiar device that automatically closes the opened door. The simplest type works merely with a coil spring. It has the disadvantage of that the door is shut rather violently. For this reason a more sophisticated device is used, which develops a slow closing movement.
+$
+
+
+STRUCTURE
+
+$
+The entire set up consists of a cylinder arrangement and a regulating screw. It also consists of spring and spindle. A regulating screw provides the means of compensating for the differences in the viscosity of the oil at different temperatures.
+
+
+$
+BEHAVIOUR
+
+$
+When the door is opened, the piston withdrawn and the oil in the cylinder opens a ball valve in a passage provided in the piston and flows into the space provided on the right of the piston. The main arm connects the spindle to the door. 
+$
+
+PICTURE
+
+{
+ADB/ACTUATOR/DOOR-CLOSING-DEVICES/01.JPG		$ DOOR CLOSING DEVICES $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism is usually used to close the doors. This can be interpreted as a change of state from opening of door to closing of door. This can be described as follows:
+
+The piston (part) in the cylinder moves to the left (physical phenomenon). This is due to the opening of the door (input) which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the piston and the cylinder walls (organ).
+
+The oil (part) present in the cylinder moves to the right of the piston through the ball valve (physical phenomenon). This is due to the pressure difference (input) between the left of the piston and the right of the piston, which activates the Bernoulli’s effect (physical effect) and it is necessary that the oil is able to flow through the passage (organ).
+
+The ball valve (part) is closed (physical phenomenon). This is due spring force (input), which activates the hooks law (physical effect) and is necessary that the spring has enough stiffness (organ).
+
+The piston (part) moves to the right thus moving the oil out through the return passage (physical phenomenon).  This is due to the closing of the ball valve (input), which activates the resistance to flow (physical effect) and is necessary that the oil is not leaked out of the system (organ).
+$
+
+ACTION
+
+$ 
+ To close the doors.
+
+$
+
+STATE
+
+$
+The door is open.
+
+The door is closed.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston in the cylinder moves to the left.
+
+The oil present in the cylinder moves to the right of the piston through the ball valve.
+
+The ball valve is closed.
+
+The piston moves to the right thus moving the oil out through the return passage.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s effect.
+
+Hooks law.
+
+Resistance to flow.
+
+$
+
+
+INPUT
+
+$
+The opening of the door.
+
+The pressure difference between the left of the piston and the right of the piston.
+
+Spring force.
+
+The closing of the ball valve.
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the piston and the cylinder walls.
+
+Necessary that the oil is able to flow through the passage.
+
+Necessary that the spring has enough stiffness.
+
+Necessary that the oil is not leaked out of the system.
+$
+
+
+
+PARTS
+$
+The piston forms a sliding pair with the cylinder.
+
+The oil forms a sliding pair with the valve of the piston.
+
+Ball valve.
+
+The piston forms a sliding pair with the cylinder.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

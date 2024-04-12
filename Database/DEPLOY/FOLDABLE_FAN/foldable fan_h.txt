@@ -1,0 +1,90 @@
+SUMMARY
+$
+This is mainly used to circulate air. The advantage of having a foldable one is that it occupies less space when not in use.
+
+
+$
+
+ACTION
+
+$ 
+ To circulate air.
+
+$
+
+STATE
+
+$
+Occupies less area when in folded state.
+
+Occupies large area when in unfolded state.
+$
+
+PHYPHENOMENON
+
+$
+Unfold the fan.
+
+Flap the unfolded fan
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+Moment.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the fan is made up of a flexible material.
+
+Necessary that the fan material possesses the necessary stiffness to circulate the air.
+
+$
+
+
+
+PARTS
+$
+Folded fan.
+
+Unfolded fan
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

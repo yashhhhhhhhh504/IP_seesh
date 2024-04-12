@@ -1,0 +1,89 @@
+SUMMARY
+$
+This mechanism can be used for cutting materials. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows:
+
+The link 1 (part) rotates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link 1 is pivoted at one of its end (organ).
+
+The slider (part) slides in the guide ways (physical phenomenon). This is due to the force applied on it (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth surface between the slider and the guide ways (organ).
+
+The knife 1 (part) slides over the link perpendicular to the slider and intersects with the knife 2 and hence cuts the material (physical phenomenon). This is due to  the rotation of the link 1 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the link 1 and the knife 1 (organ).
+
+
+$
+
+ACTION
+
+$ 
+To cut material. 
+$
+
+STATE
+
+$
+The slider carrying the knife edge is at rest.
+
+The slider carrying the knife edge slides along the link that is perpendicular to the slider.
+
+$
+
+PHYPHENOMENON
+
+$
+The link 1 rotates.
+
+The slider slides in the guide ways.
+ 
+The knife 1 slides over the link perpendicular to the slider and intersects with the knife 2 and hence cuts the material.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Force applied on it.
+
+The rotation of the link 1.
+$
+
+
+ORGAN
+
+$
+Necessary that the link 1 is pivoted at one of its end.
+
+Presence of a smooth surface between the slider and the guide ways.
+
+Presence of one degree of freedom between the link 1 and the knife 1.
+
+
+$
+
+
+
+PARTS
+$
+The link 1 forms a revolute pair with the frame.
+
+The slider forms a sliding pair with the guide ways.
+
+The knife 1 forms a sliding pair with the frame.
+
+$
+
+
+

@@ -1,0 +1,62 @@
+MACTION
+{
+A1 $ V < calculate > N < reciprocal > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to reciprocating motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < cam > A < slotted > $
+PP2 $ V < reciprocate > N < pin > A < follower > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time.  $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < gear > A < input > $
+I2 $ V < rotate > N < cam > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of meshing between the input gear and the slotted cam.  $
+O2 $ Presence of zero degree of freedom between the slot and the follower pin.  $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ follower pin $
+P5 $ sliding pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P4 P5 >
+}
+
+
+
+

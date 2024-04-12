@@ -1,0 +1,81 @@
+SUMMARY
+$
+This is usually used to receive television signals.
+$
+
+ACTION
+
+$ 
+ It can be used as a deployment structure.
+$
+
+STATE
+
+$
+The structure is occupying less space when folded.
+
+The structure is occupying large space when unfolded.
+
+$
+
+PHYPHENOMENON
+
+$
+Unfold the antenna.
+
+Transmit television signals.
+ 
+$
+
+
+PHYEFFECT
+
+$
+
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+driving force.
+$
+
+
+ORGAN
+
+$
+Presence of space for deployment.
+
+presence of a suitable material for transmission of signals.
+$
+
+
+
+PARTS
+$
+Antenna.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

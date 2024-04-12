@@ -1,0 +1,190 @@
+MACTION
+{
+A1 $ V < detect > N < gas > A < flammable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ No change in resistance $
+CS2 $ Change in resistance $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < increase > N < temperature > A < X > $
+PP2 $ V < oxidize > N < gas > A < flammable > $
+PP3 $ V < change > N < resistance > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Jules’s heating effect $
+PE2 $ Heating effect $
+PE3 $ Combustion effect $
+}
+
+MINPUT
+{
+I1 $ V < pass > N < current > A < x > $
+I2 $ V < supply > N < heat > A < x > $
+I3 $ V < release > N < heat > A < x > $
+I4 $ V < increase > N < temperature > A < X > $
+}
+
+MORGAN
+{
+O1 $ the pallet must be thermally conductive $
+O2 $ the temperature of the pallet is greater than the burning temperature of flammable gas $
+O3 $ the reaction must be exothermic $
+O4 $ the coil must be thermally conductive $
+}
+
+MPART
+{
+P1 $ Pallet and catalyst layer $
+P2 $ Flammable gas $
+P3 $ Coil $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP1 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP3 PE1 I4 O4 P3 >
+}
+
+FUNCTION
+
+$
+Pellistors are solid-state devices used to detect gases which are either combustible or which have a significant difference in thermal conductivity to that of air.
+$
+
+
+STRUCTURE
+
+$
+A Pellistor consists of a very fine coil of platinum wire, embedded within a ceramic pellet. On the surface of the pellet is a layer of a high surface area which, when hot, acts as a catalyst to promote exothermic oxidation of flammable gases.
+$
+BEHAVIOUR
+
+$
+The pellet and the catalyst layer are heated by passing a current through the underlying coil. In the presence of a flammable gas or vapour, the hot catalyst allows oxidation to occur in a similar chemical reaction to combustion. When a flammable gas molecule comes into contact with the catalyst layer, the gas burns. The reaction occurs without a flame since the level is below the Lower Explosive Limit (or LEL) of the gas. Just as in combustion, the reaction releases heat, which causes the temperature of the catalyst together with its underlying pellet and coil to rise. This rise in temperature results in a change in the electrical resistance of the coil, and it is this change in electrical resistance which constitutes the signal from the sensor.  
+$
+
+PICTURE
+
+{
+ADB\MICRO_DEVICES\PELLISTOR\01.bmp    $ 01.Pellistor $
+ADB\MICRO_DEVICES\PELLISTOR\02.gif    $ 02.Pellistor $
+ADB\MICRO_DEVICES\PELLISTOR\03.jpg    $ 03.Pellistor $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+Pellistors are solid-state devices used to detect gases which are either combustible or which have a significant difference in thermal conductivity to that of air. It can be described as:
+Temperature of the pallet and catalyst layer (parts) get increase (Physical phenomena). This is due to current passed through coil (input) which activates Jules’s heating effect (Physical Effect) and its requires that the pallet must be thermally conductive (Organ). Flammable gas or vapour (part) get oxidized (physical Phenomena). This is due to heat supplied by the pallet (input) which activates combustion effect (Physical Effect) and it requires that the temperature of the pallet is greater than the burning temperature of flammable gas (Organ). Temperature of the catalyst together with its underlying pellet and coil (parts) get increase (Physical Phenomena). This is due to heat released during combustion (input) which activates Heating effect (Physical Effect) and it requires that the reaction must be exothermic (Organ). Electrical resistance of the coil (Parts) get changed (Physical Phenomena). This is due to increase in temperature (input) which activates Jules’s heating effect (Physical Effect) and it requires that the coil must be thermally conductive (Organ).
+
+$
+
+ACTION
+
+$ 
+ To detect flammable gas
+$
+
+STATE
+
+$
+Change in resistance of coil
+$
+
+
+
+PHYPHENOMENON
+
+$
+Temperature of the pallet and catalyst layer gets increase 
+Flammable gas or vapour get oxidized
+Temperature of the catalyst together with its underlying pellet and coil get increase
+Electrical resistance of the coil get changed
+$
+
+
+PHYEFFECT
+
+$
+Jules’s heating effect
+Heating effect
+Combustion effect
+$
+
+
+INPUT
+
+$
+Current passed through coil
+Heat supplied by the pallet
+Heat released during combustion
+Increase in temperature
+$
+
+
+ORGAN
+
+$
+The pallet must be thermally conductive
+The temperature of the pallet is greater than the burning temperature of flammable gas
+The reaction must be exothermic
+The coil must be thermally conductive
+$
+
+
+
+PARTS
+$
+Pallet and catalyst layer
+Flammable gas
+Coil
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,223 @@
+
+MACTION
+{
+A1 $ V < stop > N < machine > A < X > $
+A2 $ V < prevent > N < damage > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < operation > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from operation to rest $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < spool > A < X > $
+PP2 $ V < rotate > N < ratchet > A < X > $
+PP3 $ V < loose > N < contact > A < x > $
+PP4 $ V < move > N < idler > A < down > $
+PP5 $ V < move > N < standard > A < down > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Gravitational effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < shaft > A < input > $
+I3 $ V < x > N < idler motion > A < upward > $
+I4 $ V < x > N < loss > A < tension > $
+}
+
+MORGAN
+{
+O1 $ the ratchet is free to rotate $
+O2 $ absence of contact between the pawl and ratchet $
+O3 $ tension in the thread $
+O4 $ presence of gravity $
+}
+
+MPART
+{
+P1 $ spool $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ ratchet $
+P5 $ idler carrier $
+P6 $ sliding pair $
+P7 $ column $
+P8 $ pawl $
+P9 $ standard $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O3 P8 >
+< A1 IS1 OS1 CS1 PP4 PE3 I3 O4 P5 P6 P7 >
+< A1 IS1 OS1 CS1 PP5 PE2 I4 O4 P7 P6 P9 >
+
+
+
+}
+
+
+
+FUNCTION
+
+$
+This mechanism is used to arrest the functioning of a tubular braiding machine when the thread breaks during operation.
+$
+
+
+STRUCTURE
+
+$
+The spool over which the thread is initially wound is coupled to a ratchet wheel. From the spool, the thread runs over two idlers and finally through an opening in the standard to the final component. The two idlers are mounted on an idler carrier, which can traverse along the standard on a prismatic joint. A tension spring attached to the frame of the standard holds the pawl in position.
+$
+
+
+BEHAVIOUR
+
+$
+The machine braids by feeding thread in a circular fashion. This is achieved when the standard frame is made to follow a circular-like path, as shown by the arrows in the figure. When the machine is braiding, there exists a tension on the wire or thread. This tension causes the idler carrier to be lifted. The upward motion of the idler carrier causes the pawl to be released from the ratchet on the spool flange and allows the spool to turn and unwind. When the machine stops, the tension in the wire decreases again and the idler carrier falls, enabling the pawl to engage with the ratchet. If a wire breaks while the machine is running, the unsupported idler carrier falls to the base of the standard. When the standard arrives at the station in the raceway adjacent to the cam 'C', the lug on the idler carrier strikes the cam 'C', rotating it far enough to disengage a clutch on the driving shaft and thereby stopping the mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/TRIPSTOP/STOP03/stop03.jpg		$ Auto Stop Mechanism	$
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This mechanism can be used to arrest the functioning of the tubular braiding machine when the thread breaks during the operation. This mechanism can be described as follows:
+
+The spool (part) rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires that the ratchet is free to rotate (organ).
+
+The ratchet (part) freely rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the absence of contact between the pawl and ratchet (organ).
+
+
+The pawl (part) is not in contact with the ratchet (physical phenomenon). This is due to the upward motion of the idler carrier (input), which activates the law “ no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of tension in the thread (organ).
+
+
+The idler carrier (part) comes down (physical phenomenon). This is due to the loss of tension in the thread, which in turn is due to the breaking of the thread (input), which activates the gravitational effect (physical effect) and requires the presence of gravity (organ).
+
+
+The standard (part) comes down and makes contact with the clutch thus disengages it (physical phenomenon). This is due to the downward motion of the idler career (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of gravity (organ).
+
+$
+
+ACTION
+$
+ 
+ Using this mechanism machine parts can be prevented getting damaged.
+
+$
+STATE
+$
+
+Absence of contact between the standard and the clutch.
+
+Presence of contact between the standard and the clutch
+
+$
+PHYPHENOMENON
+$
+
+The spool being mounted on the input shaft rotates continuously.         
+The ratchet freely rotates.
+ 
+The pawl is not in contact with the ratchet.
+
+The idler carrier comes down.
+
+The standard down and makes contact with the clutch thus disengages it.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Gravitational effect.
+
+$
+
+INPUT
+$
+
+The rotation of the input shaft.
+
+The rotation of the input shaft.
+
+The upward motion of the idler carrier.
+
+The loss of tension in the thread, which in turn is due to the breaking of the thread.
+
+
+$
+
+ORGAN
+$
+
+Requires that the ratchet is free to rotate.
+
+Requires the absence of contact between the pawl and ratchet.
+
+Requires the presence of tension in the thread.
+
+Requires the presence of gravity.
+
+
+$
+
+PARTS
+$
+
+The spool forms a revolute pair with the frame.
+
+The ratchet forms a revolute pair with the frame.
+
+The idler carrier along with the standard forms a sliding pair with the column. 
+
+
+
+$
+
+
+
+
+
+

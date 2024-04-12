@@ -1,0 +1,217 @@
+MACTION
+{
+A1 $ V < trim > N < grass > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < oscillating > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to oscillating motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < pinion > A < X > $
+PP2 $ V < rotate > N < spur-gear > A < X > $
+PP3 $ V < oscillate > N < pin > A < eccentric > $
+PP4 $ V < oscillate > N < blade > A < upper > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < gear > A < pinion > $
+I3 $ V < rotate > N < gear > A < spur > $
+I4 $ V < oscillate > N < pin > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the pinion gear and the input shaft $
+O2 $ Presence of contact between the large spur gear and the pinion gear $
+O3 $ Presence of zero degree of freedom between the pin and the large spur gear $
+O4 $ Presence of one degree of freedom between the pin and the upper blade $
+
+}
+
+MPART
+{
+P1 $ pinion-gear $
+P2 $ spur-gear $
+P3 $ eccentric pin $
+P4 $ upper blade $
+P5 $ revolute-pair $
+P6 $ frame $
+P7 $ higher pair $
+P8 $ fixed pair $
+
+
+}
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P5 P6 > 
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P7 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P3 P8 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P4 P5 P6 >
+}
+
+
+FUNCTION
+
+$
+Trimming the grass around flower beds, fences and walks with a hand trimmer has long been the bane of gardeners. With either of two types of electric grass trimmers illustrated alongside, the chore is made easy.
+$
+
+
+STRUCTURE
+
+$
+One type of machine has a set of fork-like shears protruding from the front of the trimmer. The other employs a rotary blade located beneath the motor housing. The batteries of both machines are located in the handle and can be recharged by plugging the trimmers into a wall socket overnight.
+
+The clipping shears of the fork-blade type of electric trimmer are powered by a direct-current motor. A 1/2-inch pinion gear drives a series of gears terminating in a large spur gear with an off-center pin that engages a slot in the upper cutting blade. This upper blade is pivoted to the lower stationary blade at a point just above the forks.
+The rotary electric lawn clipper has a single sharp edged stainless-steel blade, which is driven by the electric motor. Below the blade is a metal loop, which is fastened to the frame of the machine.
+
+$
+
+
+BEHAVIOUR
+
+$
+Both machines run on battery power. 
+When the motor of the fork-blade type trimmer rotates, it drives the large spur gear. The rotation of this spur gear causes the eccentric pin to oscillate in the slot of the upper moving blade. The upper blade oscillates at a rate of 6,000 strokes per minute. The lower blade is stationary. This causes a shearing effect that is causal in the grass being cut. 
+
+In the rotary lawn clipper, the single blade whirls around, scything off the grass. The metal loop keeps the clipper at the desired height off the ground. The cutting blade is easily replaced. The6-volt motor operates at over 8,000 rpm.
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/GRASSTRIM/grasstrim01.jpg		$ Grass Trimmers $
+ADB/SPECIAL/GRASSTRIM/forkblade.jpg		$ Fork Blade $
+ADB/SPECIAL/GRASSTRIM/forkblade1.jpg		$ Fork Blade $
+ADB/SPECIAL/GRASSTRIM/rotary.jpg		$ Rotary Clipper $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to trim grass. It can be interpreted as a change of state from rest to oscillation. This device can be described as follows:
+
+The ½ inch pinion gear (part) rotates 
+(Physical phenomenon). This is due to rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the pinion gear and the input shaft (organ).
+
+The large spur gear (part) rotates (physical phenomenon). This is due to the rotation of the pinion gear (input), which activates the law “no bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the large spur gear and the Pinion gear (organ).
+
+The eccentric pin (part) on the large spur gear oscillates (physical phenomenon). This is due to the rotation of the spur gear (input), which activates the Newtonian law of motion (physical effect) and requires the presence of zero degree of freedom between the pin and the large spur gear (organ).
+
+
+The upper blade (part) oscillates (physical phenomenon). This is due to the oscillation of pin (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the pin and the upper blade (organ).
+
+$
+
+ACTION
+$
+ 
+ To trim grass.
+
+$
+STATE
+$
+
+Rest
+
+Oscillation.
+
+$
+PHYPHENOMENON
+$
+
+The ½ inch pinion gear rotates.
+
+
+The large spur gear rotates.
+ 
+The eccentric pin on the large spur gear oscillates.
+
+The upper blade oscillates.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the input shaft.
+
+Rotation of the pinion gear.
+
+Rotation of the spur gear.
+
+Oscillation of pin.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the pinion gear and the input shaft.
+
+Presence of contact between the large spur gear and the 
+Pinion gear.
+
+Presence of zero degree of freedom between the pin and the large spur gear.
+
+Presence of one degree of freedom between the pin and the upper blade.
+
+
+$
+PARTS
+
+$
+
+The pinion gear forms a revolute pair with the frame.
+
+The spur gear forms a higher pair with the pinion gear. 
+
+The eccentric pin forms a fixed pair with spur gear.
+
+The upper blade forms a revolute pair with the frame.
+
+
+
+$

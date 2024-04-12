@@ -1,0 +1,189 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+} 
+MCHANGESTATE
+{
+CS1 $ from less space to large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < piston > A < X > $
+PP2 $ V < rotate > N < links > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < Pneumatic > $
+I2 $ V < move > N < piston > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth sliding surface between the cylinder and the piston $
+O2 $ one degree of freedom between the links and the piston $
+}
+
+MPART
+{
+P1 $ piston $
+P2 $ sliding pair $
+P3 $ cylinder $
+P4 $ output links $
+P5 $ revolute pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+
+
+}
+
+FUNCTION
+
+$
+This is pneumatic actuator. This can be used to change area.
+$
+
+
+STRUCTURE
+
+$
+It consists of a cylinder and a piston. 
+$
+
+
+BEHAVIOUR
+
+$
+The piston is made to reciprocate in the cylinder and the input being the compressed air.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/PNEUMATIC/1.JPG	$ 01.Pneumatic $
+ADB/DEPLOY/PNEUMATIC/2.JPG	$ 02.Pneumatic $
+ADB/DEPLOY/PNEUMATIC/3.JPG	$ 03.Pneumatic $
+ADB/DEPLOY/PNEUMATIC/4.JPG	$ 04.Pneumatic $
+ADB/DEPLOY/PNEUMATIC/5.JPG	$ 05.Pneumatic $
+ADB/DEPLOY/PNEUMATIC/6.JPG	$ 06.Pneumatic $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+
+
+
+SUMMARY
+$
+This mechanism can be used for deployment. This can be described as follows:
+
+The piston (part) reciprocates in the cylinder (physical phenomenon). This is due to the pneumatic force applied on it (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth sliding surface between the cylinder and the piston (organ).
+
+The links (part) connected to the piston rotates with respect to the piston (physical phenomenon). This is due to the movement of the piston (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links and the piston (organ). 
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The output links are occupying less space.
+
+The output links are occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston reciprocates in the cylinder.
+
+The links connected to the piston rotates with respect to the piston.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Pneumatic force applied on it.
+
+Movement of the piston.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the cylinder and the piston.
+
+Presence of one degree of freedom between the links and the piston.
+
+$
+
+
+
+PARTS
+$
+The piston forms a sliding pair with the cylinder.
+
+The output links forms a revolute pair with the piston.
+
+
+
+$
+
+
+
+
+
+
+

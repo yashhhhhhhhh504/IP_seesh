@@ -1,0 +1,74 @@
+SUMMARY
+$
+The plates are unfolded and thus increased in the area that is occupied by the plates.
+$
+
+ACTION
+
+$ 
+ to deploy.
+$
+
+STATE
+
+$
+Occupying less area.
+
+Occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The plates are unfolded.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+$
+
+
+INPUT
+
+$
+Moment.
+
+$
+
+
+ORGAN
+
+$
+Presence of an elastic material between the two plates.
+
+
+
+$
+
+
+
+PARTS
+$
+Two parts of the deployable structure.
+
+
+
+
+
+
+
+
+$
+
+
+
+

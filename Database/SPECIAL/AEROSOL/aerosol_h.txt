@@ -1,0 +1,108 @@
+SUMMARY
+$
+An aerosol dispenser is a device designed to produce a fine spray of liquid or solid particles that can be suspended in a gas such as the atmosphere. This is can be interpreted as a change of state from liquid to gas follows:
+
+The push-button (part) moves down (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a gap between the valve push button and the surface of the bottle (organ).
+
+The stem opening (part) moves down into the expansion chamber (physical phenomenon). This is due to the downward motion of the valve push button (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the stem opening is just above the valve (organ).
+
+
+The liquid (part) in the expansion chamber moves in to the valve through the stem opening (physical phenomenon). This is due to the pressure gradient (input), which activates? (Physical effect) and requires the presence of high pressure within the dispenser (organ).
+
+The liquid (part) now comes out of the atomizing nozzle and becomes a fine spray (physical phenomenon). This is due to decrease in the boiling point of the liquid (input), which activates? (Physical effect) and requires the presence of low pressure outside the dispenser (organ).
+$
+
+ACTION
+$
+ 
+ To produce a fine spray of liquid or solid particles that can be suspended in a gas such as the atmosphere.
+
+$
+STATE
+$
+
+Dispensable in the form of liquid inside the dispenser.
+
+Dispensable in the form of gas outside the dispenser.
+
+
+$
+PHYPHENOMENON
+$
+
+The push-button moves down into the expansion chamber.
+
+The stem opening moves down into the expansion chamber.
+
+
+The liquid in the expansion chamber moves in to the valve through the opening.
+ 
+The liquid now comes out of the atomizing nozzle and becomes a fine spray.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion
+
+No two bodies can occupy the same space at the same time.
+
+?
+
+?
+
+$
+
+INPUT
+$
+
+Force applied on it.
+
+The downward motion of the valve push button.
+
+Pressure gradient.
+
+Decrease in the boiling point of the liquid.
+
+$
+
+ORGAN
+$
+
+
+Presence of a gap between the valve push button and the surface of the bottle.
+
+Necessary that the stem opening is just above the valve.
+
+
+Presence of high pressure within the dispenser.
+
+Presence of low pressure outside the dispenser.
+
+
+
+
+$
+
+STUCTURE1
+$
+
+The push button forms a fixed pair with the nozzle.
+
+The stem forms a sliding pair with the gasket.
+
+The dispensable is in the form of liquid inside the dispenser.
+
+The dispensable is in the form of gas outside the dispenser.
+
+
+
+
+
+$
+
+
+

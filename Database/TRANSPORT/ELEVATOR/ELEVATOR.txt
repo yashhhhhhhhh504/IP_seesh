@@ -1,0 +1,249 @@
+
+
+MACTION
+{
+A1 $ V < move > N < cabinet > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rest > N < cabinet > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < lower > A < lifted > N < cabinet > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to lower or lift the cabinet $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < drive > N < electric motor > A < X > $
+PP2 $ V < rotate > N < gearbox > A < X > $
+PP3 $ V < rotate > N < drum > A < x > $
+PP4 $ V < lift > N < rope > A < steel > $
+}
+
+
+MPHYEFFECT
+{
+PE1 $ Laws related to electric motors $
+PE2 $ No two bodies occupy the same space at the same time $
+PE3 $ Newtonian laws of motion $
+PE4 $ Newtonian laws of motion $
+}
+
+
+MINPUT
+{
+I1 $ V < take > N < energy > A < electric > $
+I2 $ V < engage > N < gears > A < x > $
+I3 $ V < transmit > N < power > A < x > $
+I4 $ V < transmit > N < transmit > A < X > $
+}
+
+MORGAN
+{
+O1 $ Correct voltage and current supply to motor $
+O2 $ Designed speed ration of the gears $
+O3 $ Perfect alignment between output shaft of gearbox and shaft of the drum $
+O4 $ Steel rope must have sufficient strength $
+}
+
+MPART
+{
+P1 $ Electric motor $
+P2 $ Gearbox $
+P3 $ Drum $
+P4 $ Steel rope and cabinet $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+}
+
+FUNCTION
+
+$
+Elevators are used to lift or lower the passengers or goods from one level to other.
+$
+
+
+STRUCTURE
+
+$
+Elevators are used to lift or lower the passengers or goods from one level to other. It has a drum on which a steel rope is wound. On end of rope is connected to cabinet in which people stand, while other end is connected to counterweight. The rotation of drum moves the cabinet.
+$
+BEHAVIOUR
+
+$
+Electric motor drives the input shaft of gearbox. This is due to electric energy taken by the motor, which actuates the laws, related to electric motors and requires correct voltage and current supply to motor. Gearbox rotates the output shaft at the set speed. This is due to engagement of gears with set velocity ratio, which actuates the law that no two bodies occupy the same space at the same time and requires the designed speed ration of the gears. 
+Drum rotates. This is due to mechanical coupling connection power transmission from gearbox output shaft, which actuates Newtonian laws of motion and requires perfect alignment between output shaft of gearbox and shaft of the drum. Steel rope wound on the drum lifts or lowers the cabinet. This is due to transmission of power through rope, which actuates Newtonian laws of motion and requires that steel rope must have sufficient strength.
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/ELEVATOR/ELEVATOR.JPG	$ ELEVATOR $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+
+Elevators are used to lift or lower the passengers or goods from one level to other. It has a drum on which a steel rope is wound. On end of rope is connected to cabinet in which passengers stand, while other end is connected to counterweight. Its working is explained below,
+
+Electric motor (part) drives the input shaft of gear box (physical phenomenon). This is due to electric energy (input) taken by the motor which actuates the laws related to electric motors (physical effect) and requires correct voltage and current supply to motor (organ).
+
+Gear box (part) rotates the output shaft at the set speed (physical phenomenon). This is due to engagement of gears with set velocity ratio, which actuates the law that no two bodies occupy the same space at the same time (physical effect) and requires the designed speed ration of the gears (organ)   
+
+Drum (part) rotates (physical phenomenon). This is due to mechanical coupling connection power transmission (input) from gearbox output shaft, which actuates Newtonian laws of motion (physical effect) and requires perfect alignment between output shaft of gearbox and shaft of the drum (organ).
+
+Steel rope (part) wound on the drum lifts or lowers the cabinet (physical phenomenon). This is due to transmission of power (input) through rope, which actuates Newtonian laws of motion (physical effect) and requires that steel rope must have sufficient strength (organ)
+ 
+ 
+$
+
+ACTION
+
+$ 
+To lower or lift the cabinet
+ 
+$
+
+STATE
+
+$
+Cabinet at rest.
+
+Cabinet lowered or lifted up.
+$
+
+
+
+PHYPHENOMENON
+
+$
+Electric motor drives the input shaft of gearbox
+
+Gearbox rotates the output shaft at the set speed
+ 
+Drum rotates
+
+Steel rope wound on the drum lifts or lowers the cabinet
+
+$
+
+
+PHYEFFECT
+
+$
+Laws related to electric motors
+
+No two bodies occupy the same space at the same time
+
+Newtonian laws of motion
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+Electric energy taken by the motor
+
+Engagement of gears with set velocity ratio
+
+Mechanical coupling connection power transmission
+
+Transmission of power through rope
+$
+
+
+ORGAN
+
+$
+
+Correct voltage and current supply to motor
+
+Designed speed ration of the gears
+
+Perfect alignment between output shaft of gearbox and shaft of the drum
+
+Steel rope must have sufficient strength
+$
+
+
+
+PARTS
+$
+
+Electric motor
+
+Gearbox
+
+Drum
+
+Steel rope and cabinet
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

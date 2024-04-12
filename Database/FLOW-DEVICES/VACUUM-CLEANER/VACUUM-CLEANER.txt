@@ -1,0 +1,205 @@
+MACTION
+{
+A1 $ V < clean > N < air > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < flow > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ rest to flow $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < fan > A < X > $
+PP2 $ V < suck > N < air > A < X > $
+PP3 $ V < filter > N < air > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Vacuum effect $
+PE3 $ Resistance to motion effect $
+
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < x > $
+I2 $ V < x > N < force > A < suction > $
+I3 $ V < x > N < force > A < blocking > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shaft and the fan $
+O2 $ pressure outside the vacuum cleaner is higher when compared to the pressure inside $
+O3 $ size of the perforations in the filter is lesser than the size of the dust particles $
+
+}
+
+MPART
+{
+P1 $ fan $
+P2 $ air $
+P3 $ filter $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+}
+
+
+FUNCTION
+
+$
+A modern vacuum cleaner develops its suction by means of a fan, which discharges a powerful stream of air from the rear end of the casing. This sets up a powerful inflowing current of air which carries along any dust particles from the carpet or floor to which the suction nozzle is applied.
+$
+
+
+STRUCTURE
+
+$
+Many vacuum cleaners have bag type of filters through which the air passes from the inside to the outside, the dust being collected in the bag. Here the dust is precipitated in the dust-collecting chamber in front of the filter.
+$
+BEHAVIOUR
+
+$
+A sufficiently powerful airflow to carry along the dust and the grit particles is set up. Such airflow can only be induced by the suction developed by the fan. In a well designed vacuum cleaner the various nozzle attachments should be so dimensioned and shaped that the resulting performance is within the suitable working range.
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/VACUUM-CLEANER/00.JPG		$ 01.VACUUM CLEANER $
+ADB/FLOW-DEVICES/VACUUM-CLEANER/02.JPG		$ 02.VACUUM CLEANER $
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to clean places and also air. This can be interpreted as a change of state from rest to flow of air. This can be described as follows:
+
+The fan (part) rotates (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the fan (organ).
+
+The air (part) along with the dust enters the vacuum cleaner (physical phenomenon). This is due to the suction force (input) created inside the vacuum cleaner which activates the vacuum effect (physical effect) and is necessary that the pressure outside the vacuum cleaner is higher when compared to the pressure inside (organ).
+
+The filter (part) filters the air (physical phenomenon). This is due to the blocking force (input) applied on the dust particles, which activates the resistance to motion effect (physical effect) and is necessary that the size of the perforations in the filter is lesser than the size of the dust particles (organ).
+          
+$
+
+ACTION
+
+$ 
+ To clean air.
+$
+
+STATE
+
+$
+The air is at rest.
+
+The air is flowing.
+
+$
+
+PHYPHENOMENON
+
+$
+The fan rotates.
+
+The air along with the dust enters the vacuum cleaner.
+
+ The filter filters the air.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Vacuum effect.
+
+Resistance to motion effect.
+$
+
+
+INPUT
+
+$
+The rotation of the shaft.
+
+The suction force.
+
+Blocking force.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the shaft and the fan.
+
+Necessary that the pressure outside the vacuum cleaner is higher when compared to the pressure inside.
+
+Necessary that the size of the perforations in the filter is lesser than the size of the dust particles.
+
+
+$
+
+
+
+PARTS
+$
+Fan.
+
+Air.
+
+Filter.
+
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+
+
+MACTION
+{
+A1 $ V < transport > N < material > A < sequentially > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < egg-shaped > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to egg-shaped motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < arm > A < driven > $
+PP2 $ V < rotate > N < link > A < connecting > $
+PP3 $ V < swivel > N < arm > A < swivel > $
+PP4 $ V < x > N < member path > A < egg-shaped > $
+PP5 $ V < move > N < material > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < arm > A < driven > $
+I3 $ V < rotate > N < link > A < connecting > $
+I4 $ V < rotate > N < link > A < connecting > $
+I5 $ V < x > N < motion member > A < forward moving > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shafts and the driven arms $
+O2 $ one degree of freedom between the driven arm and the connecting link $
+O3 $ one degree of freedom between the connecting link and the moving member $
+O4 $ one degree of freedom between the driven arm and the connecting link $
+O5 $ projections on the moving member $
+}
+
+MPART
+{
+P1 $ driven arm $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ connecting link $
+P5 $ moving member $
+P6 $ material $
+P7 $ sliding pair $
+P8 $ fixed rails $
+P9 $ swivel arm $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P3 P9 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P6 P7 P8 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

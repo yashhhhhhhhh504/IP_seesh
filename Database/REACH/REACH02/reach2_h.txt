@@ -1,0 +1,139 @@
+SUMMARY
+$
+This can be used to reach different positions in a three dimensional space. This is described as follows:
+
+
+The link B (part) rotates completely with respect to the link A (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom in the direction of motion (organ).
+
+The link C (part) rotates partially (not complete rotation) with respect to the link B (physical phenomenon). This is due to the rotation of the input shaft (input), which activates Newtonian laws of motion and requires the presence of zero degree of freedom between the shaft and the link C and also the presence of one degree of freedom between link C and the link B (organ).
+
+The link D (part) oscillates with respect to the link C (physical phenomenon). This is due to oscillation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft the link D (organ).
+
+
+The link E (part) rotates completely with respect to the link D (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link E and input shaft (organ).
+
+
+The link F (part) oscillates with respect to the link E (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link F and the input shaft (organ).
+
+The link G (part) rotates completely with respect to the link F (physical effect).
+This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link G and input shaft (organ).
+
+
+
+
+
+ 
+$
+
+ACTION
+{
+$ 
+ Using this, we can reach different positions in three-dimensional space.
+$
+}
+STATE
+{
+$
+Absence of torque at all the input shaft.
+$
+Presence of torque at input shaft of the link B. 
+$
+Presence of torque at input shaft of the link C.
+$
+Presence of torque at input shaft of the link D.
+$
+Presence of torque at input shaft of the link E.
+$
+Presence of torque at input shaft of the link F.
+$
+Presence of torque at input shaft of the link G.
+
+$
+}
+PHYPHENOMENON
+{
+$
+The link B rotates completely with respect to the link A.
+$
+The link C rotates partially (not complete rotation) with respect to the link B.
+$ 
+The link D oscillates with respect to the link C.
+$
+The link E rotates completely with respect to the link D.
+$
+The link F oscillates with respect to the link E.
+$
+The link G rotates completely with respect to the link F
+
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+The rotation of the input shaft of the link B.
+$
+The rotation of the input shaft of the link C. 
+$
+The rotation of the input shaft of the link D.
+$
+The rotation of the input shaft of the link E.
+$
+
+The rotation of the input shaft of the link F.
+$
+The rotation of the input shaft of the link G.
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom in the direction of motion.
+$
+Presence of zero degree of freedom between the shaft and the link C and also the presence of one degree of freedom between link C and the link B.
+
+
+$
+Presence of zero degree of freedom between the input shaft the link D.
+$
+Presence of zero degree of freedom between the link E and input shaft.
+$
+
+}
+
+STUCTURE1
+{
+$
+The link B forms a revolute pair with the fixed link A.
+$
+The link C forms a revolute pair with the link B.
+$
+The link D forms a revolute pair with the link C.
+$
+The link E forms a revolute with the link D.
+$
+The link F forms a revolute with the link E.
+$
+The link G forms a revolute with the link F.
+
+$
+}
+
+
+
+
+
+

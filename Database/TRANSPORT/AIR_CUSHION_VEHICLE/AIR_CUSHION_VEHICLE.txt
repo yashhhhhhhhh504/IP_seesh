@@ -1,0 +1,178 @@
+MACTION
+{
+A1 $ V < support > N < vehicle > A < X > $
+A2 $ V < provide > N < transportation > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to motion  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < support > N < vehicle > A < X > $
+PP2 $ V < move > N < vehicle > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < pressure > A < air > $
+I2 $ V < x > N < action > A < propelling > $
+}
+
+MORGAN
+{
+O1 $ skirt is made up of a flexible material $
+O2 $ vehicle has the required hover height $
+}
+
+MPART
+{
+P1 $ Air cushion $
+P2 $ Vehicle $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+
+}
+
+FUNCTION
+
+$
+Air cushion vehicles are used for both transportation and for support as such. These include air-cushion transporters, trains, and even beds. It can be used to provide transport on land as well as water.
+$
+
+
+STRUCTURE
+
+$
+They have large lift fans to push down air, which is trapped inside a heavy rubber skirt. The skirt gives the craft the hover height necessary to clear waves and other obstacles. It either has propellers mounted above the vehicle or small openings around the skirt, which give air exhaust.
+$
+BEHAVIOUR
+
+$
+They are any of the machines characterized by movement in which a significant portion of the weight is supported by forces arising from air pressures developed around the craft, as a result of which they hover in close proximity to the Earth's surface. It is this proximity to the surface that chiefly distinguishes such craft from aircraft, which derive their lift from aerodynamic forces created by movement through the air.
+
+The vehicle is supported on a cushion of air 1.2 to 2.4 m (4 to 8 ft) thick. The air cushion is provided by a large fan that pushes air downward within a flexible skirt attached to the perimeter of the vehicle. The skirt maintains the cushion by restraining the air. It makes the vehicle appear to be operating only a few inches above the surface. The vehicle is moved forward by propellers mounted above the vehicle or by control of the air exhaust through small openings around the skirt. Braking is controlled by reversing the pitch of the propeller or by changing the direction of airflow through the skirt vents. This phenomenon is also known in aerodynamics as ground effect.
+If their skirts or lift fans fail, the hovercraft settles onto the surface of the water and floats for the rest of the trip to port.
+
+Two main classes of air-cushion vehicles exist: those that generate their own pressure differential irrespective of forward speed; and those, more closely related to true aircraft, that require forward speed before the pressure differential can be generated. The former are classed as aerostatic craft (ACVs); the latter are called aerodynamic ground-effect machines (Gems).  
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/AIR_CUSHION_VEHICLE/01.BMP		$ 01.AIR CUSHION VEHICLE $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used for transportation and also to provide support. This can be interpreted as a change of state from rest to motion. This can be described as follows:
+
+The air cushion (part) supports the vehicle (physical phenomenon). This is due to the air pressure within the skirt that surrounds the perimeter of the vehicle (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the skirt is made up of a flexible material (organ).
+
+The vehicle (part) moves ahead (physical phenomenon). This is due to the 
+Propelling action (input) of the propellers, which activates the Newtonian laws of motion (physical effect) and is necessary that the vehicle has the required hover height (organ).
+$
+
+ACTION
+
+$ 
+ To support vehicle.
+
+To provide transportation.
+$
+
+STATE
+
+$
+The vehicle is at rest.
+
+The vehicle is moving.
+
+$
+
+PHYPHENOMENON
+
+$
+The air cushion supports the vehicle.
+
+The vehicle moves ahead.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Air pressure within the skirt that surrounds the perimeter of the vehicle
+
+Propelling action
+
+
+
+$
+
+
+ORGAN
+
+$
+The skirt is made up of a flexible material.
+
+The vehicle has the required hover height.
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Air cushion.
+
+Vehicle.
+
+
+
+
+
+
+$
+

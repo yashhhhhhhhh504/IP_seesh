@@ -1,0 +1,94 @@
+SUMMARY
+$
+This is used for digging.
+$
+
+ACTION
+
+$ 
+ To dig.
+
+To occupy less space when not in use.
+$
+
+STATE
+
+$
+Occupies less space.
+
+Occupies large space.
+
+$
+
+PHYPHENOMENON
+
+$
+Apply force against the ground.
+
+Displace the loose soil.
+
+$
+
+
+PHYEFFECT
+
+$
+
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion.
+
+
+
+$
+
+
+INPUT
+
+$
+Point force.
+
+Moment.
+
+$
+
+
+ORGAN
+
+$
+Presence of sharp claw like structure.
+
+Presence of cup like structure.
+
+$
+
+
+
+PARTS
+$
+claws.
+
+cup shaped structure.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

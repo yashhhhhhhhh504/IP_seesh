@@ -1,0 +1,227 @@
+
+
+MACTION
+{
+A1 $ V < change > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < open > A < x > N < tap > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < close > A < x > N < tap > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ tap is closed from open state or flow rate changed $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < handle > A < X > $
+PP2 $ V < move > N < stem > A < X > $
+PP3 $ V < touch > N < pad > A < sealing > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Newtonian laws of motion $
+PE3 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < threads > A < external > $
+I3 $ V < x > N < contact > A < physical > $
+}
+
+MORGAN
+{
+O1 $ resisting force of parts is overcome $
+O2 $ proper alignment and smooth contact of the threads $
+O3 $ sealing action must be perfect $
+}
+
+MPART
+{
+P1 $ handle $
+P2 $ stem $
+P3 $ sealing pad $
+}
+
+
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+
+
+FUNCTION
+
+$
+Water tap is used to change or stop flow rate of water, flowing through a pipe. The principle behind it is to change the area of cross section through which water is flowing.
+$
+
+
+STRUCTURE
+
+$
+Water tap has handle to which a stem is attached. Rotating the handle can move the stem. Stem has external threads, which engage, with internal threads on the valve body. The sealing pad at the end of the stem can seal by physical contact with its seat.
+$
+
+
+BEHAVIOUR
+
+$
+The handle of the tap is rotated clockwise. The torque applied rotates the handle, which actuate Newtonian laws of motion. The applied torque must be sufficient to overcome resisting force. The stem attached to handle moves downward. The rotation of the external threads on the stem inside the internal threads on the valve body makes it to go down which actuate Newtonian laws of motion. There has to be proper alignment and smooth contact of the threads. The sealing pad, which is, attached at the end of the stem touches the seat. The physical contact of sealing pad and valve seat closes the tap, which actuates Newtonian laws of motion. The sealing action must be perfect.
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/WATER-TAP/WATER-TAP01.GIF		$ 01.WATER-TAP $
+ADB/FLOW-DEVICES/WATER-TAP/WATER-TAP02.JPG 	$ 01.WATER-TAP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+Water tap is used to change or stop flow rate of water, flowing through a pipe. The principle behind it is to change the area of cross section through which water is flowing. The closing of the valve from the opened position is described below,
+
+The handle (part) of the tap is rotated clockwise (physical phenomenon). The torque applied (input) rotates the handle, which actuate Newtonian laws of motion (physical effect). The applied torque must be sufficient to overcome resisting force (organ).
+
+The stem (part) attached to handle moves downward (physical phenomenon). The rotation (input) of the external threads on the stem inside the internal threads on the valve body makes it to go down which actuate Newtonian laws of motion (physical effect). There has to be proper alignment and smooth contact of the threads (organ).
+
+The sealing pad (part), which is, attached at the end of the stem touches the seat (physical phenomenon). The physical contact (input) of sealing pad and valve seat closes the tap, which actuates Newtonian laws of motion (physical effect). The sealing action must be perfect (organ)
+
+$
+
+ACTION
+
+$ 
+ To change or stop the flow rate of water.
+$
+
+
+STATE
+
+$
+Tap in open state.
+Tap in closed or flow rate-changed state.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+The handle of the tap is rotated clockwise 
+
+The stem attached to handle moves downward
+
+The sealing pad, which is, attached at the end of the stem touches the seat
+
+$
+
+
+PHYEFFECT
+
+$
+
+Newtonian laws of motion
+
+Newtonian laws of motion
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+
+The torque applied
+
+The rotation of the external threads on the stem
+
+The physical contact of sealing pad
+
+$
+
+
+
+ORGAN
+
+$
+
+The applied torque must be sufficient to overcome resisting force
+
+There has to be proper alignment and smooth contact of the threads
+
+The sealing action must be perfect
+
+$
+
+
+
+PARTS
+$
+
+handle 
+
+stem 
+
+The sealing pad
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+MACTION
+{
+A1 $ V < support > N < shaft > A < X > $
+
+}
+
+MINPUTSTATE
+{
+CS1 $ V < rest > N < inner-race > A < X > $
+}
+MOUTPUTSTATE
+{
+OS2 $ V < rotate > N < inner race > A < X > $
+}
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < inner-race > A < X > $
+PP2 $ V < revolve > N < ball > A < X > $
+PP3 $ V < rest > N < race > A < outer > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Friction effect $
+PE3 $ rolling effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < rotate > N < inner-race > A < X > $
+I3 $ V < roll > N < ball > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shaft and the inner race $
+O2 $ friction surface between the balls and the inner race $
+O3 $ smooth rolling surface between the balls and the inner race $
+}
+
+MPART
+{
+P1 $ inner-race $
+P2 $ bearing $
+P3 $ revolute-pair $
+P4 $ balls $
+P5 $ rolling-pair $
+P6 $ outer-race $
+P7 $ frame $
+P8 $ fixed pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 P7 P8 >
+}
+
+
+FUNCTION
+$
+Bearings typically have to deal with two kinds of loading, radial and thrust. Depending on where the bearing is being used, it may be all radial loading, all thrust loading or a combination of both. 
+Ball bearings, as shown, are probably the most common type of bearing. They are found in everything from inline skates to hard drives. These bearings can handle both radial and thrust loads, and are usually found in applications where the load is relatively small.
+$
+
+
+BEHAVIOUR
+$
+In a ball bearing, the load is transmitted from the outer race to the ball, and from the ball to the inner race. Since the ball is a sphere, it only contacts the inner and outer race at a very small point, which helps it spin very smoothly.
+As the balls as well as the races are hard, distortion of each is little and the rolling friction is low. The friction of ball bearings is slightly higher when dry than when lubricated. This is because, when lubricated, a very thin film (molecular thickness) is formed. It adheres to the surface and is known as adsorbed film. It has been found that when two surfaces are placed in contact, the coefficient of friction between them is considerably reduced compared with when the surfaces are dry and unlubricated. However a small amount of lubrication is useful to prevent rust formation.
+
+Ball thrust bearings like the one shown are mostly used for low-speed applications and cannot handle much radial load. Barstools and Lazy Susan turntables use this type of bearing. 
+$
+
+
+STRUCTURE
+$
+A ball bearing consists of a number of hardened balls mounted between two hardened races. The inner race is fitted to the shaft and the outer race is a tight fit into the bearing housing. Thus there is no relative movement between the shaft and the inner race, and the outer race and the housing. There are shallow grooves in the races having a slight larger radius than that of the balls to accommodate the balls. A light brass cage keeps the balls at a fixed distance from one another.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.BEARING/BALL/ball.gif			$ 01.Ball Bearing	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.BEARING/BALL/ball1.jpg			$ 02.Ball Bearing	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.BEARING/BALL/bearing_parts.gif		$ 03.Bearing Parts	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.BEARING/BALL/ball2.jpg			$ 04.Ball Bearing	$
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.BEARING/BALL/ball_thrust.gif		$ 05.Thrust Bearing	$
+}
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/02.HIGHER_PAIRS/04.BEARING/BALL/BallBearing.avi		$ Ball Bearing	$
+}
+
+
+SUMMARY
+$	
+This can be used to support shafts. This can be described as follows:
+
+The inner race (part) rotates (physical phenomenon). This is due to the torque applied by the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the inner race (organ).
+
+The ball (part) in the bearing rotates and revolves (physical phenomenon). This is due to the rotation of the inner race (input) which friction effect (physical effect) and requires the presence of friction surface between the balls and the inner race (organ).
+
+The outer race (part) remains at rest (physical phenomenon). This is due to the presence of balls in between the inner race and the outer race (input) which activates rolling effect (physical effect) and requires the presence of a smooth rolling surface between the balls and the inner race (organ).
+
+
+$
+
+ACTION
+$
+ 
+ To support the shaft.
+
+$
+STATE
+$
+
+The inner race is at rest.
+
+The inner race is rotating.
+
+$
+PHYPHENOMENON
+$
+
+The inner race rotates.
+
+The ball in the bearing rotates and revolves.
+
+The outer race remains at rest.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+rolling effect.
+
+
+$
+
+INPUT
+$
+
+Torque applied by the shaft.
+
+Rotation of the inner race.
+
+The presence of balls in between the inner race and the outer race.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the shaft and the inner race.
+
+Presence of friction surface between the balls and the inner race.
+
+Presence of a smooth rolling surface between the balls and the inner race.
+
+
+$
+
+PARTS
+$
+
+The inner race forms a revolute pair with the bearing.
+
+The balls form a revolute pair with the inner race.
+
+The balls form a rolling pair with the inner race.
+
+The outer race is fixed.
+
+$
+

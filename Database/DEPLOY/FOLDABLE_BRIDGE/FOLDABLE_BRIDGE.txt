@@ -1,0 +1,185 @@
+MACTION
+{
+A1 $ V < aid > N < transportation > A < X > $
+A2 $ V < deploy > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < x > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unwrapping > $
+}
+
+MORGAN
+{
+O1 $ hinged joints between the various links in the bridge $
+}
+
+MPART
+{
+P1 $ Bridge $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+FUNCTION
+
+$
+This can be used to transport materials and tankers from one place to another if there is a gap in between the places.
+$
+
+
+STRUCTURE
+
+$
+It consists a number of foldable wooden planks that are connected by hinged joints.  
+$
+
+
+BEHAVIOUR
+
+$
+These hinged joints are activated at time of unfolding so that they can be deployed. After use they can be folded by activating the set of hinged joints and carried to any other place.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/FOLDABLE_BRIDGE/01.JPG	$ 01.Foldable Bridge $
+ADB/DEPLOY/FOLDABLE_BRIDGE/02.JPG	$ 02.Foldable Bridge $
+ADB/DEPLOY/FOLDABLE_BRIDGE/03.JPG	$ 03.Foldable Bridge $
+}
+
+
+CLIP
+
+{
+}
+
+PICTURE
+{
+}
+CLIP
+{
+}
+SUMMARY
+$
+This is mainly used in situations where heavy materials have to be moved from one place to another, places being separated by a river or trenches.
+$
+
+ACTION
+
+$ 
+To aid transportation.
+
+To deploy the bridge.
+$
+
+STATE
+
+$
+The bridge is occupying less space when in folded state.
+
+The bridge occupies large space when in use.
+
+
+
+$
+
+PHYPHENOMENON
+
+$
+To unfold.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of hinged joints between the various links in the bridge.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Bridge.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

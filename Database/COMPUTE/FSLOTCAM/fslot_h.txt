@@ -1,0 +1,94 @@
+SUMMARY
+$
+This device can be used to perform computation. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows: 
+
+The slide x (part) slides in the guide ways (physical phenomenon). This is due to the force (input) applied on it which activates the Newtonian laws of motion (physical effect) and requires the presence of frictionless surface between the slide and the guide ways (organ).
+
+The link 1 (part) rotates with the respect the slide x (physical phenomenon). This is due to the sliding motion of slide x (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a hinged joint between the link 1 and the slide x (organ).
+
+The joint (part) between the links 1 and 2 slides in the slot which follows the curve y=f(x) (physical phenomenon). This is due to the movement of the links 1 and 2 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the slide y slides in the guide ways provided for it (organ).
+
+ 
+$
+
+ACTION
+
+$ 
+ To perform computation.
+$
+
+STATE
+
+$
+The joint is at rest.
+
+The joint slides in the slot that follows the curve y=f(x).
+
+
+$
+
+PHYPHENOMENON
+
+$
+The slide x slides in the guide ways.
+
+The link 1 rotates with the respect the slide x.
+ 
+The joint between the links 1 and 2 slides in the slot which follows the curve y=f(x).
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+Sliding motion of slide x.
+
+The movement of the links 1 and 2.
+
+$
+
+
+ORGAN
+
+$
+Presence of frictionless surface between the slide and the guide ways.
+
+Presence of a hinged joint between the link 1 and the slide x.
+
+
+Necessary that the slide y slides in the guide ways provided for it.
+
+$
+
+
+
+PARTS
+$
+The slide x forms a sliding pair with the guide ways.
+
+The link 1 forms a revolute pair with the slide x.
+
+The joint of the links 1 and 2 forms a sliding pair with the slot that follows the curve y = f(x).
+
+
+
+
+
+
+$
+

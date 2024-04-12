@@ -1,0 +1,183 @@
+MACTION
+{
+A1 $ V < climb > N < part > A < tough > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < free > N < equipment > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < hooked > N < equipment > $
+} 
+MCHANGESTATE
+{
+CS1 $ from free equipment to hooked equipment $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < hook > N < part > A < X > $
+PP2 $ V < pull > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Friction effect $
+PE2 $ Newton’s third law $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < Frictional > $
+I2 $ V < x > N < force > A < reactional > $
+
+}
+
+MORGAN
+{
+O1 $ friction between the hook and the rocks of the hills $
+O2 $ force applied is sufficient to lift the body the trekkers $
+
+}
+
+MPART
+{
+P1 $ hook $
+P2 $ rope $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This used in trekking to get a grip while climbing. 
+$
+
+
+STRUCTURE
+
+$
+The equipment actually is made up of a curved rod. One end of the rod has a provision for tying the rope.
+$
+
+
+BEHAVIOUR
+
+$
+the curved rod is thrown upwards which clings on to a rock and then trekkers use the rope as a means to climb.
+$
+
+
+PICTURE
+
+{
+ADB/LOCKING/HILL_CLIMBING_EQUIP/01.GIF	$ 01.Hill climbing equipment $
+ADB/LOCKING/HILL_CLIMBING_EQUIP/02.JPG	$ 02.Hill climbing equipment $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This equipment can be used to climb hills.
+$
+
+ACTION
+
+$ 
+ To climb hills.
+$
+
+STATE
+
+$
+The equipment is freely hanging.
+
+The equipment is hooked on to the hills.
+
+$
+
+PHYPHENOMENON
+
+$
+Hook the equipment on to the rocks of the hills.
+
+Pull the rope attached to one end of the equipment.
+
+$
+
+
+PHYEFFECT
+
+$
+Friction effect.
+
+Newton’s third law.
+$
+
+
+INPUT
+
+$
+Frictional force between the hook of the equipment and the rocks of the hills.
+
+$
+
+
+ORGAN
+
+$
+Presence of friction between the hook and the rocks of the hills.
+
+Necessary that the force applied is sufficient to lift the body the trekkers.
+
+
+$
+
+
+
+PARTS
+$
+The hook of the equipment.
+
+The rope tied to one end of the equipment.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+MACTION
+{
+A1 $ V < sort > A < spherical > N < object > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A <  horizontal > N  < motion > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < vertical > N  < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from horizontal motion to vertical motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < roll > A < spherical > N < object > $
+PP2 $ V < drop > A < spherical > N < object > $
+}
+
+MPHYEFFECT
+{
+PE1 $ gravitational laws $
+}
+
+MINPUT
+{
+I1 $ V < allow > N < motion > $
+I2 $ V < set > N < divergence > $
+}
+
+MORGAN
+{
+O1 $ slope of the rail $
+O2 $ diameter $
+}
+
+MPART
+{
+P1 $ object $
+P2 $ rail $
+P3 $ roller pair $
+P4 $ sphere-diameter $
+P5 $ rail-distance $
+P6 $ less $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O2  P4  P5  P6 >
+}

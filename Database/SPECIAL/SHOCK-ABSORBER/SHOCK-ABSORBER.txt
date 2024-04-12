@@ -1,0 +1,227 @@
+MACTION
+{
+A1 $ V < damp > N < oscillation  > A < objectionable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < cylinder > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < Oil > A < small > N < oil > $
+
+} 
+MCHANGESTATE
+{
+CS1 $  from rest to damping oscillations $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < transmit > N < lever system > A < irregularities > $
+PP2 $ V < apply > N < piston > A < X > $
+PP3 $ V < force > N < oil > A < narrow hole > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Bernoulli's law $
+}
+
+MINPUT
+{
+I1 $ V < transmit > N < lever system  > A < x > $
+I2 $ V < force > N < piston > A < x > $
+I3 $ V < exert > N < oil > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ Stiff elements and perfect mechanical pairs of the lever system $
+O2 $ One degree of freedom between cylinder and the piston $
+O3 $ Proper dimensions of the hole and correct viscosity of oil $
+}
+
+MPART
+{
+P1 $ Lever system $
+P2 $ Piston $
+P3 $ Oil $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+}
+
+
+
+FUNCTION
+
+$
+Shock absorbers are used to damp the objectionable spring oscillations that may be caused by the irregularities of the road surface.
+$
+
+
+STRUCTURE
+
+$
+Shock absorbers damp the objectionable spring oscillations that may be caused by the irregularities of the road surface. In principle they have piston and cylinder arrangement. Cylinder is filled with oil and when piston moves this oil pass through a small hole, offering resistance and giving damping action.
+$
+
+
+BEHAVIOUR
+
+$
+Lever system transmits movements caused by road irregularities to the piston of shock absorber. This is due to force transmission through the lever system, which actuates Newtonian laws of motion and requires stiff elements and perfect mechanical pairs of the lever system. Piston applies pressure on the oil. This is due to force applied by the lever system on the piston, which actuates the law that no two bodies occupy the same space at the same time and requires one degree of freedom between cylinder and the piston. Oil is forced through a narrow hole and provides damping action by offering resistance on the other side. This is due to force exerted by the piston on the oil, which actuates Bernoulli's law and requires proper dimensions of the hole and correct viscosity of oil.
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/SHOCK-ABSORBER/SHOCK-ABSORBER.JPG		$ SHOCK-ABSORBER $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+They are used to damp the objectionable spring oscillations that may be caused by the irregularities of the road surface. In principle they have piston and cylinder arrangement. Cylinder is filled with oil and when piston moves this oil pass through a small hole, offering resistance and giving damping action. It is as follows,
+
+Lever system (part) transmits movements caused by road irregularities to the piston of shock absorber (physical phenomenon). This is due to force transmission (input) through the lever system, which actuates Newtonian laws of motion (physical effect) and requires stiff elements and perfect mechanical pairs of the lever system (organ).
+
+Piston (part) applies pressure on the oil (physical phenomenon). This is due to force applied by the lever system (input) on the piston, which actuates the law that no two bodies occupy the same space at the same time (physical effect) and requires one degree of freedom between cylinder and the piston (organ).
+
+Oil (part) is forced through a narrow hole and provides damping action by offering resistance on the other side (physical phenomenon). This is due to force exerted (input) by the piston on the oil, which actuates Bernoulli's law (physical effect) and requires proper dimensions of the hole and correct viscosity of oil (organ).
+
+$
+
+
+ACTION
+
+$ 
+ To damp objectionable spring oscillations.
+$
+
+STATE
+
+$
+Oil in the cylinder
+
+Oil flowing through a small hole, giving damping action.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Lever system transmits movements caused by road irregularities to the piston of shock absorber
+
+Piston applies pressure on the oil
+
+Oil is forced through a narrow hole and provides damping action by offering resistance on the other side
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+
+No two bodies occupy the same space at the same time
+
+Bernoulli's law
+$
+
+
+INPUT
+
+$
+Force transmission through the lever system
+
+Force applied by the lever system on the piston
+
+Force exerted by the piston on the oil
+$
+
+
+ORGAN
+
+$
+
+Stiff elements and perfect mechanical pairs of the lever system
+
+One degree of freedom between cylinder and the piston
+
+Proper dimensions of the hole and correct viscosity of oil
+
+$
+
+
+
+PARTS
+$
+
+Lever system
+
+Piston
+
+Oil
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

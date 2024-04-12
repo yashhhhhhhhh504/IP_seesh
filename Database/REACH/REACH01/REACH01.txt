@@ -1,0 +1,192 @@
+
+MACTION
+{
+A1 $ V < reach > N < positions > A < different > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rotation > N < small angular > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < rotation > N < large angular > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from small angular rotation to large angular rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < fixed > $
+PP2 $ V < rotate > N < link > A < partially > $
+PP3 $ V < rotate > N < link > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < shaft > A < input > $
+I3 $ V < rotate > N < shaft > A < input > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the link 2 and the input shaft and also the presence of one degree of freedom between the link 1 and link 2 $
+O2 $ zero degree of freedom between the shaft and the link 3 and also the presence of one degree of freedom between the link3 and the link2 $
+O3 $ zero degree of freedom between the link 4 and the input shaft and also the presence of one degree of freedom between the link 4 and the link 3 $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ revolute pair $
+P3 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 >
+
+
+}
+
+
+FUNCTION
+
+$
+The pendant link of this mechanism reaches different positions in a three dimensional space. 
+$
+
+
+STRUCTURE
+
+$
+The device consists of 4 links and is connected only by revolute pairs. 
+Link 1 is a base or ground link and link 4 is a pendant link as shown in the figure.
+$
+
+
+BEHAVIOUR
+
+$
+Link 2 rotates with respect to link 1. Link 2 does not have a complete rotation about link 1. Link 3 rotates relative to link 2. Link 3 doesn't have a complete rotation about link 2. The link 4 rotates relative to link 3. The link 4 can rotate 360 degrees about link 3. This is a three-degree of freedom open chain mechanism. The directions of rotations of links 2, 3, 4 are mutually perpendicular. The link 4 can make it a 3 dimensional workspace.
+$
+
+
+PICTURE
+
+{
+ADB/REACH/REACH01/REACH01.JPG		$ Reaching Mechanism $
+}
+
+
+CLIP
+
+{
+ADB/REACH/REACH01/REACH01.AVI		$ Reaching Mechanism $
+}
+
+SUMMARY
+$
+This mechanism can be used for reaching different positions in a three dimension. This mechanism can be described as follows:
+ 
+
+The link 2 (part) rotates partially (not complete rotation) with respect to the fixed link 1 (Physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link 2 and the input shaft and it also requires the presence of one degree of freedom between the link 2 and link 1 (organ). This motion of the link 2 is called pitch.
+
+The link 3 (part) rotates partially (not complete rotation) with respect to the link 2 (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the link 3 and it also requires the presence of one degree of freedom between the link3 and the link 2 (organ). This is motion is called yaw.
+
+
+The link 4 (part) rotates completely with respect to the link 3 (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) requires the presence zero degree of freedom between the link 4 and the input shaft and it also requires the presence of one degree of freedom between the link 4 and the link 3 (organ). This motion is called roll.
+$
+
+ACTION
+$
+ 
+ Using this mechanism different positions can be reached in a three dimension.
+
+$
+STATE
+$
+
+small angular rotation 
+
+large angular rotation
+
+$
+PHYPHENOMENON
+$
+
+The link 2 rotates partially with respect to the fixed link 1.
+
+The link 3 rotates partially with respect to the link 2.
+ 
+The link 4 rotates completely with respect to the link 3.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+
+
+$
+
+INPUT
+$
+
+The rotation of the input shaft of link 2.
+
+The rotation of the input shaft of link 3
+
+The rotation of the input shaft of link 4.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the link 2 and the input shaft and also the presence of one degree of freedom between the link 1 and link 2.
+
+Presence of zero degree of freedom between the shaft and the link 3 and also the presence of one degree of freedom between the link3 and the link2.
+
+Presence zero degree of freedom between the link 4 and the input shaft and also the presence of one degree of freedom between the link 4 and the link 3
+
+
+
+
+$
+PARTS
+$
+
+The link 2 along with the input shaft forms a revolute pair with the frame.
+
+The link 3 along with the input shaft forms a revolute pair with the link 2.
+
+The link 4 along with the input shaft forms a revolute pair with the link 3.
+
+
+
+
+
+
+$
+
+
+

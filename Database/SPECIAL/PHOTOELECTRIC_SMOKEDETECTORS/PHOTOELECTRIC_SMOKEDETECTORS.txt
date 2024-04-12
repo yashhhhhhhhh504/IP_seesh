@@ -1,0 +1,216 @@
+MACTION
+{
+A1 $ V < detect > N < smoke > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < emit > N < light > A < X > $
+PP2 $ V < deflect > N < light > A < X > $
+PP3 $ V < ring > N < bell > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Light propagation effect $
+PE2 $ Deflection effect $
+PE3 $ Photo conductivity effect $
+}
+
+MINPUT
+{
+I1 $ V < position > N < source > A < light > $
+I2 $ V < bounce > N < light > A < x > $
+I3 $ V < detect > N < light > A < x > $
+}
+
+MORGAN
+{
+O1 $ appropriate medium for the propagation of light $
+O2 $ there is sufficient amount of smoke in the chamber $
+O3 $ deflected light falls on the light detector in the smoke detector $
+}
+
+MPART
+{
+P1 $ Light emitter $
+P2 $ Light $
+P3 $ Smoke detector $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+X
+$
+
+
+STRUCTURE
+
+$
+X
+$
+BEHAVIOUR
+
+$
+X
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/PHOTOELECTRIC_SMOKEDETECTORS/01.jpg		$ 01. PHOTOELECTRIC SMOKE DETECTORS $
+ADB/SPECIAL/PHOTOELECTRIC_SMOKEDETECTORS/02.gif		        $ 02. PHOTOELECTRIC SMOKE DETECTORS $
+ADB/SPECIAL/PHOTOELECTRIC_SMOKEDETECTORS/03.gif		        $ 03. PHOTOELECTRIC SMOKE DETECTORS $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device is used to detect smoke. This can be discussed as follows:
+
+The light emitter (part) emits light in a direction perpendicular the smoke detector (physical phenomenon). This is due to the positioning of the light source in a direction perpendicular to the smoke detector (input), which activates the light propagation effect (physical effect) and it requires the presence of appropriate medium for the propagation of light (organ).
+
+When smoke fills the chamber, the light (part) is deflected towards the smoke detector (physical phenomenon). This is due to the bouncing of light (input) onto the smoke, which activates the deflection effect (physical effect) and is necessary that there is sufficient amount of smoke in the chamber (organ).
+
+The smoke detector (part) rings a bell (physical phenomenon). This is due to the detecting of light by the light detector (input), which activates the photoconductivity effect (physical effect) and is necessary that the deflected light falls on the light detector in the smoke detector (organ).
+
+  
+$
+
+ACTION
+
+$ 
+ To detect smoke.
+$
+
+STATE
+
+$
+X
+$
+
+
+
+PHYPHENOMENON
+
+$
+The light emitter emits light in a direction perpendicular the smoke detector.
+
+The light is deflected towards the smoke detector.
+
+The smoke detector rings a bell.
+
+$
+
+
+PHYEFFECT
+
+$
+Light propagation effect.
+
+Deflection effect.
+
+Photo conductivity effect.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Positioning of the light source in a direction perpendicular to the smoke detector.
+
+The bouncing of light onto the smoke.
+
+The detecting of light by the light detector.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of appropriate medium for the propagation of light.
+
+Necessary that there is sufficient amount of smoke in the chamber.
+
+Necessary that the deflected light falls on the light detector in the smoke detector.
+
+
+
+$
+
+
+
+PARTS
+$
+Light emitter.
+
+Light.
+
+Smoke detector.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

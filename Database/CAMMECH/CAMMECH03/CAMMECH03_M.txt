@@ -1,0 +1,62 @@
+MACTION
+{
+A1 $ V < mix > A < X > N < substance > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < rotary > N  < motion > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N  < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ From rotary motion to reciprocating motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < drum > $
+PP2 $ V < reciprocate > N < drum > A < horizontally > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < drum > $
+}
+
+MORGAN
+{
+O1 $ Newtonian Laws of motion $
+O2 $ cam profile $
+}
+
+MPART
+{
+P1 $ shaft $
+P2 $ drum $
+P3 $ fixed pair $
+P4 $ cam $
+P5 $ follower $
+P6 $ cam pair $
+P7 $ frame $
+P8 $ cylindrical pair $
+}
+LINK
+{
+< A1   IS1  OS1  CS1   PP1   PE1   I1   O1   P1   P2   P3 >
+< A1   IS1  OS1  CS1   PP2   PE2   I2   O2   P1   P4   P3 >
+< A1   IS1  OS1  CS1   PP2   PE2   I2   O2   P4   P5   P6 >
+< A1   IS1  OS1  CS1   PP2   PE2   I2   O2   P1   P7   P8 >
+}

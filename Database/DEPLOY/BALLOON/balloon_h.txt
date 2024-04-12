@@ -1,0 +1,97 @@
+SUMMARY
+$
+This can be used to travel from one place to another.
+$
+
+ACTION
+
+$ 
+ To travel from one place to another.
+$
+
+STATE
+
+$
+The balloon is occupying less area.
+
+The balloon is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The balloon is made to expand.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Increase in the volume of the hot air.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the balloon is made up of an elastic material.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Balloon.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

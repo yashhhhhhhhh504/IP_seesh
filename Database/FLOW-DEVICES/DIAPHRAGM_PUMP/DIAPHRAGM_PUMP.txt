@@ -1,0 +1,245 @@
+MACTION
+{
+A1 $ V < pump > N < liquid > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < level liquid > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at low level to liquid at high level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < spool > A < pilot > $
+PP2 $ V < reciprocate > N < rod > A < distributor > $
+PP3 $ V < move > N < diaphragm > A < x > $
+PP4 $ V < enter > N < liquid > A < x > $
+PP5 $ V < pressurize > N < liquid > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+PE4 $ Bernoulli’s effect $ 
+PE5 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < move > N < diaphragm > A < x > $
+I2 $ V < move > N < spool > A < pilot > $
+I3 $ V < x > N < flow > A < air > $
+I4 $ V < x > N < difference > A < pressure > $
+I5 $ V < move > N < diaphragm > A < X > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the pilot spool and the guide ways $
+O2 $ gear arrangement between the two rods $
+O3 $ gear arrangement between the two rods $
+O4 $ liquid while entering is greater than the weight of the valves $
+O5 $ diaphragm is not permeable to liquid $
+}
+
+MPART
+{
+P1 $ Pilot spool $
+P2 $ Air distributor rod $
+P3 $ Diaphragm $
+P4 $ Liquid $
+P5 $ Liquid $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P4 >
+< A1 IS1 OS1 CS1 PP5 PE4 I5 O5 P5 >
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+Double Diaphragm pumps offer smooth flow, reliable operation, and the ability to pump a wide variety of viscous and impure liquids. This pump uses a very simple valve system to move the DIAPHRAGM ROD.
+$
+
+
+STRUCTURE
+
+$
+The pump consists of pilot spool and two diaphragms. It also consists of a distributor rod. It also consists of floating ball valves, which operate on basis of pressure difference.
+
+$
+BEHAVIOUR
+
+$
+The PILOT SPOOL (the middle of the three horizontal rods) is pushed back and forth whenever the Diaphragm Rod reaches the end of its throw. The Pilot Spool allows air to move the Air Distribution Valve (the top rod in this drawing) back and forth. 
+The AIR DISTRIBUTION ROD controls airflow to the left or right air chamber, reversing on each stroke. 
+The four BALL VALVES are free-floating and operated by pressure differences in the pumped liquid. Flapper valves are also commonly used. In the pump shown, liquid flow is from the bottom to the top. 
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/DIAPHRAGM_PUMP/01.GIF		$ 01.DIAPHRAGM PUMP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device is used to pump liquid to higher altitude. This can be interpreted as a change of state from liquid at lower level to liquid at higher level. This can be discussed as follows:
+
+The pilot spool (part) reciprocates within the guide ways (physical phenomenon). This is due to the movement of the diaphragm (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the pilot spool and the guide ways (organ).
+
+The air distributor rod (part) reciprocates within the cylinder (physical phenomenon). This is due to the movement of the pilot spool (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a gear arrangement between the two rods (organ).
+
+The diaphragm (part) moves in and out (physical phenomenon). This is due to the inflow of air (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary the diaphragm is flexible (organ).
+
+The liquid (part) enters the pump from the bottom through the ball valves (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the pressure of the liquid while entering is greater than the weight of the valves (organ).
+
+The liquid (part) that enters the pump is pressurized (physical phenomenon). This is due to the decrease in the volume, which in turn is due to the movement of the diaphragm (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the diaphragm is not permeable to liquid (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To pump liquid.
+$
+
+STATE
+
+$
+The liquid is at a lower level.
+
+The liquid is at a higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The pilot spool reciprocates within the guide ways.
+
+The air distributor rod reciprocates within the cylinder.
+
+The diaphragm moves in and out.
+
+The liquid enters the pump from the bottom through the ball valves.
+
+The liquid that enters the pump is pressurized.
+
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Bernoulli’s effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Movement of the diaphragm.
+
+Movement of the pilot spool.
+
+Inflow of air.
+
+Pressure difference.
+
+The movement of the diaphragm.
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the pilot spool and the guide ways.
+
+Presence of a gear arrangement between the two rods.
+
+Presence of a gear arrangement between the two rods.
+
+The pressure of the liquid while entering is greater than the weight of the valves.
+
+Necessary that the diaphragm is not permeable to liquid.
+
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Pilot spool.
+
+Air distributor rod.
+
+Diaphragm.
+
+Liquid.
+
+Liquid.
+
+
+
+
+
+
+
+
+
+$
+
+

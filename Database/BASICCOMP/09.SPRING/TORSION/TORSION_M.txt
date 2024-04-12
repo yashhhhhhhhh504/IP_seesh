@@ -1,0 +1,83 @@
+MACTION
+{
+A1 $ V < store > N < energy > A < recoverable rotational > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < form > $
+IS2 $ V < x > A < deformed > N < form  > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed  > N < form > $
+OS2 $ V < x > A < original > N < form > $
+} 
+MCHANGESTATE
+{
+CS1 $ from original form to deformed form $
+CS2 $ from deformed form to original form $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < deform > N < spring > A < X > $
+PP2 $ V < regain > N < form > A < original > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hooks law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < remove > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the spring has some stiffness $
+O2 $ Necessary that the torque applied is within the elastic limit of the material  $
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ flexible pair  $
+P3 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS2 OS2 CS2 PP2 PE1 I2 O2 P1 P2 P3 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

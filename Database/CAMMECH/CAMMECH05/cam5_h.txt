@@ -1,0 +1,113 @@
+SUMMARY
+$
+
+This mechanism can be used to generate reciprocating motion. This can be interpreted as a change of state from the absence of torque at the input shaft to the presence of torque at the input shaft. The whole process can be accomplished in a series of  steps as described below :
+
+
+The cam (part) mounted on the input shaft rotates (physical phenomenon). This is due to the torque (input) applied by the input torque, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between cam and the input shaft (organ).
+
+The roller of the follower (part) rotates continuously (physical phenomenon). This is due to the rotation (input) of the cam, which activates the friction effect (physical effect) and requires the presence of contact between the roller of the follower and the cam (organ).
+
+The follower (part) reciprocates (physical phenomenon) in the guide ways. This is due to the rotation (input) of the 
+cam, which activates the law “ no two bodies can occupy the same space at the same time “ (physical effect) and requires the angular setting of the cam (organ).
+
+
+Since the adjustable follower (part) forms a sliding pair with the cam, the position of the roller can be changed (physical phenomenon) with respect to the center of the cam. This is achieved by applying a force (input) on the follower, which activates the Newtonian laws of motion (physical effect).
+
+There is contact between the follower and the cam (part). Thus as the position of the follower on the cam is changed (input), there is change in the distance between the follower and the center of the cam (organ). This activates the law “no two bodies can occupy the same space at the same time” (physical effect) and thus the length of the reciprocation changes (physical phenomenon).
+
+
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism reciprocating motion can be generated.
+$
+Multiple followers can be used in this mechanism.
+$
+Using this mechanism reciprocating motion can also be controlled.
+
+$
+}
+STATE
+{
+$
+Absence of torque at the input shaft.
+$
+Presence of torque at the input shaft.
+$
+Change of position of the follower.
+$
+
+}
+PHYPHENOMENON
+{
+$
+The cam rotates continuously.
+$
+The roller of the follower rotates continuously.
+$ 
+The follower reciprocates in the guide ways.
+$
+The position of the follower is changed continuously.
+$
+The length of reciprocation changes. 
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+No two bodies can occupy the same space at the same time.
+$
+}
+
+INPUT
+{
+$
+Torque applied by the input shaft.
+$
+Rotation of the cam.
+$
+Force applied to move the follower.
+$
+Change in the position of the roller.
+$
+}
+
+ORGAN
+{
+$
+Zero degree of freedom between the cam and the input shaft.
+$
+Presence of contact between the roller of the follower and cam.
+$
+Angular setting of the cam with respect to the horizontal plane.  
+$
+change in the distance between the follower and the center of the cam.
+$
+
+}
+
+STUCTURE1
+{
+$
+The cam along with the input shaft forms a revolute pair with the frame.
+$
+The roller of the follower forms a sliding pair with the cam.
+$
+The follower forms a cam pair with the cam.
+$
+The follower forms a sliding pair with the guide ways.
+$
+
+$
+}
+

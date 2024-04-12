@@ -1,0 +1,91 @@
+SUMMARY
+$
+This mechanism can be used for cutting materials. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows:
+
+
+The input cranks (part) rotate (physical phenomenon). This is due to rotation of the input shafts (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the cranks (organ).
+
+The knife edges (part) move parallel to each other and they cut the objects (physical phenomenon). This is due to the rotation of the input cranks (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the knife edges are opposite to each other (organ).
+
+ 
+$
+
+ACTION
+
+$ 
+ To cut materials.
+$
+
+STATE
+
+$
+The knife edges are at rest.
+
+The knife edges move parallel to each other
+
+$
+
+PHYPHENOMENON
+
+$
+The input cranks rotate.
+
+The knife edges move parallel to each other and they cut the objects.
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Rotation of the input shafts.
+
+
+The rotation of the input cranks.
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the cranks.
+
+Necessary that the knife edges are opposite to each other.
+
+$
+
+
+
+PARTS
+$
+The input cranks form a revolute pair with the frame.
+
+The knife edge 2 forms a sliding pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+

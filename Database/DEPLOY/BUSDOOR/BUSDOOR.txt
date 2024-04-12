@@ -1,0 +1,194 @@
+MACTION
+{
+A1 $ V < operate > N < door > A < tough > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < cylinder > A < X > $
+PP2 $ V < operate > N < door > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < object > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the piston and the cylinder $
+O2 $ contact of one degree of freedom between the doors and the piston $
+}
+
+MPART
+{
+P1 $ Piston $
+P2 $ Cylinder $
+P3 $ Doors $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P3 >
+}
+
+FUNCTION
+
+$
+These doors usually employ a deployment mechanism wherein the doors that are overlapping are made to unfold.
+$
+
+
+STRUCTURE
+
+$
+This employs a pneumatic actuator to operate the doors. The pneumatic actuators consist of a cylinder and piston arrangement.
+
+$
+
+
+BEHAVIOUR
+
+$
+The pneumatic actuator derives its power from the compressed air. The piston is connected to the connecting rod, which in turn is connected to doors.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/BUSDOOR/01.JPG	$ 01.Bus door mechanism	$
+ADB/DEPLOY/BUSDOOR/02.JPG	$ 02.Bus door mechanism	$
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism is usually used in doors of buses. This can be interpreted as change of state from small area to large area. This can be discussed as follows:
+
+The piston (part) reciprocates in the cylinder (physical phenomenon). This is due to force applied by the compressed air (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of smooth surface between the piston and the cylinder (organ).
+
+The door (part) operates (physical phenomenon). This is due to the movement of the piston (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact of one degree of freedom between the doors and the piston (organ).
+$
+
+ACTION
+
+$ 
+ To operate door.
+
+To deploy.
+$
+
+STATE
+
+$
+The door is occupying less area.
+
+The door is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston reciprocates in the cylinder.
+
+The door operates.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied by the compressed air.
+
+Movement of the piston.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of smooth surface between the piston and the cylinder.
+
+Presence of contact of one degree of freedom between the doors and the piston.
+
+$
+
+
+
+PARTS
+$
+Piston.
+
+Cylinder.
+
+Doors.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

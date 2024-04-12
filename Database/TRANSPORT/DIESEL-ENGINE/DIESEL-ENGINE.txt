@@ -1,0 +1,264 @@
+MACTION
+{
+A1 $ V < drive > N < transmission > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < air-flow > A < X > $
+PP2 $ V < move > N < part > A < X > $
+PP3 $ V < inject > N < part > A < x > $
+PP4 $ V < burn > N < mixture > A < fuel-air > $
+PP5 $ V < push > N < part > A < X > $
+PP6 $ V < reciprocate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s law $
+PE2 $ Newtonian laws of motion $
+PE3 $ Ignition effect $
+PE4 $ No two bodies can occupy the same space at the same time $ 
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < differential > A < pressure > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < move > N < part > A < x > $
+I4 $ V < increase > N < temperature > A < X > $
+I5 $ V < X > N < pressure > A < X > $
+I6 $ V < convert > N < motion > A < reciprocating rotary > $
+}
+
+MORGAN
+{
+O1 $ pressure outside the cylinder is higher  $
+O2 $ smooth surface between the cylinder and the piston $
+O3 $ pressure inside the injector is higher than the pressure in the cylinder $
+O4 $ temperature thus produced is at least equal to the ignition temperature of the fuel $
+O5 $ piston head can withstand such high temperatures $
+O6 $ one degree of freedom between the crank and the piston rod $
+}
+
+MPART
+{
+P1 $ air $
+P2 $ sliding pair $
+P3 $ cylinder $
+P4 $ piston $
+P5 $ fuel injector $
+P6 $ fixed pair $
+P7 $ fuel air mixture $
+P8 $ flexible pair $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P3 P5 P6 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P4 P7 P8 >
+< A1 IS1 OS1 CS1 PP5 PE4 I5 O5 P4 P7 P8 >
+< A1 IS1 OS1 CS1 PP6 PE2 I6 O6 P2 P3 P4 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+A diesel engine takes in air, compresses it, and then injects fuel into the compressed air. The heat of the compressed air lights the fuel spontaneously. A diesel engine doesn't need a spark plug.
+$
+
+
+STRUCTURE
+
+$
+The engine consists of a fuel injector, an inlet valve and an exhaust valve.
+The compression ratio in the engine varies from 14:1 to 25:1.
+$
+BEHAVIOUR
+
+$
+Diesel engines use direct fuel injection, which means the diesel fuel is injected directly to the cylinder. Gasoline engines generally use either carburetion, where the air and fuel is mixed long before they enter the cylinder. 
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/DIESEL-ENGINE/01.JPG		$ Diesel Engine $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used in automobiles to drive the transmission. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The air (part) enters the engine cylinder (physical phenomenon). This is due to the pressure differential (input), which activates the Bernoulli’s law (physical effect) and is necessary that the pressure outside the cylinder is higher (organ).
+
+The piston (part) moves towards the inner dead center and thus compresses the air within the cylinder to a very high pressure (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion  (physical effect) and requires the presence of a smooth surface between the cylinder and the piston (organ).
+
+The fuel injector (part) injects the fuel (physical phenomenon). This is due to the movement of the plunger in the fuel injector (input), which activates the Bernoulli’s law (physical effect) and is necessary that the pressure inside the injector is higher than the pressure in the cylinder (organ).
+
+
+The fuel-air mixture (part) undergoes combustion and thus produces large amount of hot gases (physical phenomenon). This is due to the increase in the temperature of the fuel (input), which activates the ignition effect (physical effect) and is necessary that the temperature thus produced is at least equal to the ignition temperature of the fuel (organ).
+
+The hot gases (part) thus produced push the piston towards the crank side (physical phenomenon). This is due to the high of the pressure of the hot gases (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the gap between the piston and the cylinder is as small as possible (organ).
+
+The piston (part) reciprocates in the engine cylinder and hence imparts rotary motion to the crank shaft (physical phenomenon). This is due to the conversion of the reciprocating motion of the piston to rotary motion (input) activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the crank and the piston rod (organ).
+$
+
+ACTION
+
+$ 
+ To drive the transmission of an automobile.
+$
+
+STATE
+
+$
+The crankshaft is at rest.
+
+The crankshaft is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The air enters the engine cylinder.
+
+The piston moves towards the inner dead center and thus compresses the air within the cylinder to a very high pressure.
+ 
+The fuel injector injects the fuel.
+
+The fuel-air mixture undergoes combustion and thus produces large amount of hot gases.
+
+The hot gases thus produced push the piston towards the crank side.
+
+The piston reciprocates in the engine cylinder and hence imparts rotary motion to the crankshaft.
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law.
+
+Newtonian laws of motion.
+
+Ignition effect.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Pressure differential.
+
+The rotation of the crank.
+
+The movement of the plunger in the fuel injector.
+
+The increase in the temperature of the fuel.
+
+The high of the pressure of the hot gases.
+
+The conversion of the reciprocating motion of the piston to rotary motion.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pressure outside the cylinder is higher.
+
+Presence of a smooth surface between the cylinder and the piston.
+
+Necessary that the pressure inside the injector is higher than the pressure in the cylinder.
+
+Necessary that the temperature thus produced is at least equal to the ignition temperature of the fuel.
+
+Necessary that the piston head can withstand such high temperatures.
+
+Presence of one degree of freedom between the crank and the piston rod.
+
+
+
+$
+
+
+
+PARTS
+$
+Air forms a sliding pair with the cylinder.
+
+Piston forms a sliding pair with the cylinder.
+
+Fuel injector forms a fixed pair with the cylinder.
+
+Fuel air forms a flexible pair with the piston.
+
+Fuel air forms a flexible pair with the piston
+
+Piston forms a sliding pair with the cylinder.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

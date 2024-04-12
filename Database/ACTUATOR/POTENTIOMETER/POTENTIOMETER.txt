@@ -1,0 +1,170 @@
+MACTION
+{
+A1 $ V < actuate > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rest > N < x > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < motion > N < x > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < movable-slider > A < X > $
+PP2 $ V < change > N < output-voltage > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newton’s second law of motion $
+PE2 $ Ohm’s law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < change > N < resistance > A < x > $
+}
+
+MORGAN
+{
+01 $ Presence of zero degree of freedom of rotation $
+O2 $ Presence of contact $
+}
+MPART
+{
+P1 $ Slider $
+P2 $ Voltage $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+
+FUNCTION
+
+$
+A potentiometer is a variable resistor that is commonly used as a sensor.
+$
+
+
+STRUCTURE
+
+$
+A potentiometer has three terminals one for power input, one for a ground and one for a variable power output and it has one resistance element and one movable slider. 
+$
+
+BEHAVIOUR
+
+$
+A potentiometer is a mechanical device whose resistance can be varied by the position of the movable contact on a fixed resistor. The movable slider slides across the resistance to vary the resistance and as a result vary the voltage output of the potentiometer. The output becomes higher or lower depending upon the movable contact is near the resistor’s supply or ground end.
+$
+
+ATTRIBUTE
+
+$
+A simple type of potentiometer consists of a length of uniform resistance wire (about 1 m/3 ft long) carrying a constant current provided by a battery connected across the ends of the wire. The source of potential difference (voltage) to be measured is connected (to oppose the cell) between one end of the wire, through a galvanometer (instrument for measuring small currents), to a contact free to slide along the wire. The sliding contact is moved until the galvanometer shows no deflection. The ratio of the length of potentiometer wire in the galvanometer circuit to the total length of wire is then equal to the ratio of the unknown potential difference to that of the battery.
+$
+
+PICTURE
+
+{
+ADB/ACTUATOR/POTENTIOMETER/01.JPG           $ 01.POTENTIOMETER $
+ADB/ACTUATOR/POTENTIOMETER/02.GIF           $ 02.POTENTIOMETER $
+}
+
+
+CLIP
+
+{
+ADB/ACTUATORS/POTENTIOMETER/01.AVI          $ POTENTIOMETER $
+}
+
+SUMMARY
+$
+A potentiometer is a mechanical device whose resistance can be varied by the position of the movable contact on a fixed resistor. This process can be described as:
+
+Movable Slider (part) rotates (physical phenomenon). This is due to torque is applied on the shaft (input) which activates Newton’s second law of motion (physical effect) and it requires that that there is zero degree of freedom between shaft and movable Slider (organ).
+
+Output voltage (part) is changed (physical phenomenon). This is due to change in resistance (input) which activates Ohm’s law (physical effect) and it requires that the movable slider is in contact with the resistance element (organ).
+$
+
+ACTION
+
+$ 
+ To actuate
+$
+
+STATE
+
+$
+Movable slider is at rest
+
+Movable slider is in motion
+$
+
+
+
+PHYPHENOMENON
+
+$
+Movable Slider rotates
+
+Output voltage is changed
+$
+
+
+PHYEFFECT
+
+$
+Newton’s second law of motion
+
+Ohm’s law
+$
+
+
+INPUT
+
+$
+Torque is applied on the shaft
+
+Change in resistance
+$
+
+
+ORGAN
+
+$
+There is zero degree of freedom between shaft and movable Slider
+
+Movable slider is in contact with the resistance element
+$
+
+
+
+PARTS
+
+$
+Movable Slider
+
+Voltage
+$
+
+REFERENCES
+
+$
+en.wikipedia.org/wiki/Potentiometer 
+www.webopedia.com/TERM/P/potentiometer.html
+$

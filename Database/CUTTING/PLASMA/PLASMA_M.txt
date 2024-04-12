@@ -1,0 +1,93 @@
+MACTION
+{
+A1 $ V  <  cut > A < X > N  <  material > $
+A2 $ V  <  weld > A < X > N  <  metal > $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < charge > A < X > N < electrode > $
+PP2 $ V < create > A < X > N < spark > $
+PP3 $ V < release > A < X > N < electron > $
+PP4 $ V < increase > A < X > N < temperature > $
+PP5 $ V < create > A < X > N < plasma > $
+PP6 $ V < melt > A < X > N < metal > $
+PP7 $ V < prevent > A < X > N < oxidation > $
+PP8 $ V < regulate > A < X > N < flow > $
+PP9 $ V < control > A < X > N < radius > $
+PP10 $ V < cut > A < X > N < metal > $
+}
+
+MPHYEFFECT
+{
+PE1 $ law of conservation of energy $
+PE2 $ conduction $
+PE3 $ electron theory $
+PE4 $ ionisation $
+PE5 $ ? $  y the same space at the same time $
+PE8 $ nozzle effect $
+}
+
+MINPUT
+{
+I1 $ V < supply > A < electrical > N < energy > $
+I2 $ V < make > A < X > N < contact > $
+I3 $ V < supply > A < X > N < heat > $ 
+I4 $ V < collide > A < X > N < electron > $
+I5 $ V < supply > A < X > N < plasma > $
+I6 $ V < create > A < X > N < barrier > $
+I7 $ V < surround > A < X > N < plasma > $
+I8 $ V < apply > A < X > N < pressure > $
+}
+
+MORGAN
+{
+O1 $ electrode $
+O2 $ conducting fluid between the electrode and metal $
+O3 $ electron bond $
+O4 $ ? $
+O5 $ ? $
+O6 $ applied voltage $
+O7 $ area within the shielding gas $
+O8 $ nozzle $
+}
+
+MPART
+{
+P1 $ electrode $
+P2 $ metal $
+P3 $ negative-charge $
+P4 $ positive-charge $
+P5 $ gap $
+P6 $ charge-difference $
+P7 $ atom $
+P8 $ electron $
+P9 $ electron bond $
+P10 $ electron1 $
+P11 $ electric-arc $
+P12 $ cutting-gas $
+P13 $ plasma $
+P14 $ shielding-gas $
+}
+LINK
+{
+A1  PP1  PE1  I1  O1  P1  P0  P3
+A1  PP2  PE2  I2  O2  P1  P2  P6
+A1  PP3  PE3  I3  O3  P11  P12  P0
+A1  PP4  PE1  I4  O4  P8  P10  P0
+A1  PP5  PE4  I3  O5  P12  P0  P0
+A1  PP6  PE5  I5  O6  P13  P2  P0
+A1  PP7  PE6  I6  O7  P14  P13  P0
+A1  PP8  PE7  I7  O7  P13  P14  P0
+A1  PP9  PE7  I7  O7  P13  P14  P0
+A1  PP10  PE8  I8  O8 P13  P2  P0
+
+A2  PP1  PE1  I1  O1  P1  P0  P3
+A2  PP2  PE2  I2  O2  P1  P2  P6
+A2  PP3  PE3  I3  O3  P11 P12 P0
+A2  PP4  PE1  I4  O4  P8  P10 P0
+A2  PP5  PE4  I3  O5  P12 P0  P0
+A2  PP6  PE5  I5  O6  P13 P2  P0
+A2  PP7  PE6  I6  O7  P14 P13 P0
+A2  PP8  PE7  I7  O7  P13 P14 P0
+A2  PP9  PE7  I7  O7  P13 P14 P0
+}

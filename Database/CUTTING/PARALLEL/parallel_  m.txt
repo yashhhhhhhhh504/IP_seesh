@@ -1,0 +1,67 @@
+MACTION
+{
+A1 $ V < cut > N < materials > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < parallel > N < movement > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to parallel movement $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < cranks > A < X > $
+PP2 $ V < move > N < knife-edges > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shafts > A < input > $
+I2 $ V < rotate > N < cranks > A < input > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the input shaft and the cranks. $
+O2 $ Necessary that the knife edges are opposite to each other. $
+}
+
+MPART
+{
+P1 $ input cranks $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ knife edge 2 $
+P5 $ sliding pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P5 P3 >
+
+
+}
+
+
+
+
+
+
+
+

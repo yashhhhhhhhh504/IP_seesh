@@ -1,0 +1,99 @@
+SUMMARY
+$
+This can mechanism can be used to reverse the direction of rotation of the out put gear. It can be interpreted as a change of state from counter clock wise rotation to clock wise rotation. This can be described as follows:
+
+The connecting rod (part) oscillates (physical phenomenon). This is due to the movement of the slider (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the connecting rod and the slider (organ).
+
+
+The input link (part) rotates continuously about the axis of the output gear (physical phenomenon). This is due to the oscillation of the connecting rod (input) which the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the connecting rod and the input gear (organ).
+
+The out put shaft (part) oscillates (physical phenomenon). This is due to the revolution of the idler gear (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the idler gear and the output gear (organ).
+$
+
+ACTION
+
+$ 
+ This can mechanism can be used to reverse the direction of rotation of the out put gear.
+$
+
+STATE
+
+$
+The out put gear rotates in the counter clockwise direction
+
+The output gear rotates in the clockwise rotation.
+$
+
+PHYPHENOMENON
+
+$
+The connecting rod oscillates.
+
+The input link rotates continuously about the axis of the output gear.
+ 
+The out put shaft oscillates.
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Movement of the slider.
+
+The oscillation of the connecting rod.
+
+The revolution of the idler gear.
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the connecting rod and the slider.
+
+Presence of one degree of freedom between the connecting rod and the input gear.
+
+Presence of contact between the idler gear and the output gear.
+
+
+
+$
+
+
+
+PARTS
+$
+The connecting rod forms a revolute pair with the slider.
+
+The input crank forms a revolute pair with the frame.
+
+The output gear forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+

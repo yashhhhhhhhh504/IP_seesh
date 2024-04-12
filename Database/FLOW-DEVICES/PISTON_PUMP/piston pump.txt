@@ -1,0 +1,6 @@
+The basic Piston Pump is very simple having just two valves and one stuffing box. 
+In this example the reciprocating piston is driven back and forth by a rotating mechanism. 
+
+This piston pump uses suction to raise water into the chamber. The lower valve can be placed below water level. 
+
+The piston must be within about 25 feet of the water level, but the water can then be raised quite high. 

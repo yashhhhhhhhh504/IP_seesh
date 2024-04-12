@@ -1,0 +1,97 @@
+SUMMARY
+$
+These are used to close the compartment of the lift while in operation.
+$
+
+ACTION
+
+$ 
+To close the space.
+
+To deploy.
+ 
+$
+
+STATE
+
+$
+The doors are open.
+
+The doors are closed.
+
+$
+
+PHYPHENOMENON
+
+$
+the doors close when the lift is not in operation.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+rotation of the crank, which in turn is rotated using a motor.
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the sliding doors and the guide ways.
+
+
+$
+
+
+
+PARTS
+$
+
+Lift door.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

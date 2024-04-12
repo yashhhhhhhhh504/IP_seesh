@@ -1,0 +1,202 @@
+MACTION
+{
+A1 $ V < stop > N < process > A < automatically > $
+}
+MINPUTSTATE
+{
+IS1 $ V < operate > A < x > N  < machine > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < stop > A < x > N  < machine > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from operation to rest $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < make > A < X > N < contact > $
+PP2 $ V < displace > A < X > N < dog > $
+PP3 $ V < displace > A < X > N < latch > $
+PP4 $ V < lose > A < X > N < contact > $
+PP5 $ V < release > A < X > N < clutch > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ hookes law $
+}
+
+MINPUT
+{
+I1 $ V < cross > A < X > N < limit > $
+I2 $ V < make > A < X > N < contact > $
+I3 $ V < displace > A < X > N < dog > $
+I4 $ V < displace > A < X > N < latch > $
+I5 $ V < lose > A < X > N < contact > $
+}
+
+MORGAN
+{
+O1 $ position of the dog $
+O2 $ pivot point $
+O3 $ contact : dog latch $
+O4 $ contact : latch clutch $
+O5 $ spring stiffness $
+}
+
+MPART
+{
+P1 $ dog $
+P2 $ latch $
+P3 $ frame $
+P4 $ clutch $
+P5 $ member $
+P6 $ revolute pair $
+P7 $ contact $
+P8 $ prismatic pair $
+P9 $ no contact $
+P10 $ flexible pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P5  P7 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P1  P3  P8 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P1  P2  P7 >
+< A1 IS1  OS1  CS1  PP4  PE1  I4  O4  P2  P4  P9 >
+< A1 IS1  OS1  CS1  PP5  PE3  I5  O5  P4  P3  P10 >
+}
+
+FUNCTION
+
+$
+Automatic stopping mechanisms prevent machines from damaging themselves or destroying work in progress. The mechanism shown in the figure is used to limit the stroke of a reciprocating machine member.
+$
+
+
+STRUCTURE
+
+$
+An adjustable dog is used in this mechanism to limit the stroke. The reciprocating member traverses along the T-slot in the machine table during normal operation. At the position where the stroke has to be limited, the adjustable dog is clamped into place. The far end of the dog is in contact with a latch, which is pivoted to the machine table. The latch in turn holds the clutch and brake operating shaft in place with the help of an extension spring.
+$
+
+
+BEHAVIOUR
+
+$
+During normal operation, the member reciprocates upto a position behind the dog continuously. However, in case the member overshoots, it will hit against the dog. This will push the dog out of place, which in turn will displace the pivoted latch. Thus the clutch operating shaft will no longer be held in position by the end of the latch, and the spring pulls it back, causing the machine to stop.
+$
+
+
+PICTURE
+
+{
+ADB/TRIPSTOP/STOP01/stop01.jpg		$ Auto Stop Mechanism	$
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+The adjustable dog (part) rotates about the point where it is hinged on to the machine table (physical phenomenon). This is due to the movement of the member, which is overshooting (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the positioning of the dog in the path of the reciprocating member (organ).
+
+The latch (part) is displaced from its original position (physical phenomenon). This is due to the movement of the dog (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the proper positioning of the latch (organ).
+
+The clutch and brake -operating shaft (part) is released from the latch and is pulled back which in turn will bring the machine to a stop (physical phenomenon). This is due to the movement of the latch and also due to the pulling force applied by the spring attached to it (input), which activates the Newtonian laws of motion (physical effect) and requires that the spring have sufficient stiffness (organ). 
+$
+
+
+
+
+
+ACTION
+$
+ 
+ Using this mechanism overrunning of reciprocating members on the machine tool can be prevented.
+
+$
+STATE
+$
+
+Absence of contact between the reciprocating member of the machine tool and the dog.
+
+Presence of contact between the reciprocating member of the machine tool and the dog.
+
+$
+PHYPHENOMENON
+$
+
+The adjustable dog rotates about the point where it is hinged on to the machine table.
+
+The latch is displaced from its original position.
+ 
+The clutch and brake -operating shaft is released from the latch and is pulled back which in turn will bring the machine to a stop.
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion.
+
+
+
+$
+
+INPUT
+$
+
+The movement of the member, which is overrunning.
+
+The movement of the dog.
+
+The movement of the latch and also due to the pulling force applied by the spring attached to it.
+
+$
+
+ORGAN
+$
+
+Requires the positioning of the dog in the path of the reciprocating member.
+
+Proper positioning of the latch.
+
+Requires that the spring have sufficient stiffness.
+
+
+
+
+$
+
+PARTS
+$
+
+The dog forms a revolute pair with the machine tool table.
+
+The latch forms a revolute pair with the machine tool table and holds the clutch-brake operating shaft.
+
+The clutch-brake operating shaft forms a revolute pair with respect to the frame.
+
+
+
+
+
+$
+
+

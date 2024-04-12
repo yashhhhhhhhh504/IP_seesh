@@ -1,0 +1,127 @@
+SUMMARY
+$	
+This mechanism can be used to produce a non-uniform rotary motion with dwell periods.
+
+
+The carrier (part), which is mounted on the input shaft rotates (physical phenomenon). This is due to the torque (input) applied by the input shaft, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the carrier (organ).
+
+The planetary wheel and the cam (part), which are mounted on a shaft on to which the other end of the carrier is mounted through a ball or a roller bearing. The planetary wheel and the cam revolve (physical phenomenon) around the circumference of the fixed wheel. This is due to the force (input) applied by the carrier, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the carrier and the bearing (organ).
+
+The planetary wheel (part) rotates (physical phenomenon). This is due to the tangential force (input) applied by the fixed gear, which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the wheel and the fixed gear (organ).
+
+The shaft (part) rotates (physical phenomenon). This is due to the torque (input) applied by the planetary wheel, which activates the Newtonian laws of motion (physical effect) and requires the presence of zero of degree of freedom between the shaft and planetary wheel (organ)
+
+The eccentric cam (part) also rotates (physical phenomenon). This is due to the torque applied by the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the eccentric cam (organ).
+
+The roller follower (part), which is mounted on the index arm at a suitable distance rotates about its axis (physical phenomenon). This is due to the rotation of the cam (input), which activates the friction effect (physical effect) and requires the presence of contact between the cam and the roller follower (organ), which is achieved by employing a tension spring between the carrier and the index arm.
+
+The index arm (part), which is pivoted at the center of the fixed gear reciprocates with respect to the cam hence rotates non-uniformly with dwell periods about the center of the fixed gear (physical phenomenon). This is due to the rotation of the eccentric cam (input), which activates the law “ no two bodies can occupy the same space at the same time” (physical effect) and it requires the presence of proper profile on the eccentric cam (organ).
+$
+
+ACTION
+{
+$ 
+ Using this mechanism non-uniform motion with dwell periods can be achieved.
+$
+}
+STATE
+{
+$
+Absence of torque at the input shaft.
+$
+Presence of torque at the input shaft.
+$
+Non -uniform rotary motion of the index arm.
+
+$
+
+}
+
+}
+PHYPHENOMENON
+{
+$
+Carrier mounted on the input shaft rotates continuously about the center of the fixed wheel.
+$
+The planetary wheel and the cam revolve continuously around the center of the fixed wheel. 
+$ 
+The planetary wheel rotates continuously about its axis.
+$
+The shaft rotates continuously.
+$
+The eccentric cam rotates continuously.
+$
+The roller follower rotates continuously.
+$
+The index arm reciprocates with respect to the cam and hence rotates non-uniformly about the center of the fixed gear.
+$
+
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Friction effect.
+$
+No two bodies can occupy the same space at the same time
+$
+}
+
+INPUT
+{
+$
+Torque applied by the input shaft.
+$
+Torque applied by the carrier.
+$
+Tangential force applied by the fixed gear.
+$
+Toque applied by the planetary wheel.
+$
+The torque applied by the shaft.
+$
+Rotation of the eccentric cam.
+
+}
+
+ORGAN
+{
+$
+Zero degree of freedom between the input shaft and the carrier.
+$
+Zero degree of freedom between the carrier and the bearing.
+$
+Presence of contact between the planetary wheel and the fixed wheel.
+$
+Zero of freedom between the shaft and the planetary wheel.
+$
+Zero degree of freedom between the cam and the shaft.
+$
+Presence of contact between the roller follower and the cam.
+$
+Presence of a proper profile on the cam.
+}
+
+STUCTURE1
+{
+$
+The carrier forms a revolute pair with the frame.
+$
+The planetary wheel forms a revolute pair with the frame
+$
+The planetary wheel forms a gear pair with the fixed gear.
+$
+The forms a revolute pair with the frame.
+$
+The cam also forms a revolute pair with the frame.
+$
+The roller follower forms a cam-follower pair with the cam.
+$
+The index arm forms a revolute pair with the frame.
+
+$
+
+
+}

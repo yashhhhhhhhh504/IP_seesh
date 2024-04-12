@@ -1,0 +1,88 @@
+MACTION
+{
+A1 $ V < pump > AV < X > N < water > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < water > A < x > N < low level > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < water > A <  > N  < high level > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ water from low level to high level  $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < return> AV < X > N < water > AJ < X > $
+PP2 $ V < increase > AV < X > N < water velocity > AJ < X > $
+PP3 $ V < increase > AV < X > N < water velocity > AJ < > $
+PP4 $ V < suck > AV < X > N < water > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Gravity effect $
+PE2 $ Conservation of mass.   $
+PE3 $ Bernoulli’s effect. $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < > AV < X > N < force > AJ < gravitational > $
+I2 $ V < decrease > AV < X > N < area > AJ < cross-section > $
+I3 $ V < further increase > AV < X > N < area > AJ < cross-section > $
+I4 $ V < create > AV < X > N < pressure region > AJ < low > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of a pipe that runs vertically downward. $
+O2 $ Presence of a nozzle at the end of the pressure pipe $
+O3 $ Presence of a venturi and it also requires that the nozzle enters into the suction pipe. $
+O4 $ requires that the increase in the velocity should be sufficient enough to create the required pressure difference. $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < water > AJ < X > $
+P2 $ V < X > AV < X > N < pressure-pipe > AJ < > $
+P3 $ V < X > AV < X > N < pair > AJ < sliding > $
+P4 $ V < X > AV < X > N < suction-pipe > AJ < > $
+P5 $ V < X > AV < X > N < revolute-pair > AJ < > $
+P6 $ V < X > AV < X > N < nozzle > AJ < X > $
+P7 $ V < X > AV < X > N < fixed-pair > AJ < > $
+P8 $ V < X > AV < X > N < venturi > AJ < X > $
+P9 $ V < X > AV < X > N < > AJ < X > $
+P10 $ V < X > AV < X > N < X > AJ < X > $
+
+
+}
+
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P6 P7 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P4 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P1 P3 P4 >
+
+
+
+
+

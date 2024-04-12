@@ -1,0 +1,86 @@
+SUMMARY
+$
+This device can be used to operate the clocks that are meant for closing the doors.
+$
+
+ACTION
+
+$ 
+To lock the doors.
+
+$
+
+STATE
+
+$
+The door is closed.
+
+The door is open.
+
+$
+
+PHYPHENOMENON
+
+$
+The key inserted in the slot provided for it in the lock and turned appropriately to open the clock.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Movement of the key.
+
+$
+
+
+ORGAN
+
+$
+Presence of contact between the key and the various links.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Key.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

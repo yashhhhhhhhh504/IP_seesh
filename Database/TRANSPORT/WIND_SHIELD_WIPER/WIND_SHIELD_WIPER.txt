@@ -1,0 +1,238 @@
+MACTION
+{
+A1 $ V < wipe > N < water > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the wiper $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < worm > A < X > $
+PP2 $ V < rotate > N < worm wheel > A < X > $
+PP3 $ V < rotate > N < arm > A < connecting > $
+PP4 $ V < rotate > N < arm > A < long > $
+PP5 $ V < rotate > N < wiper > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < worm > A < x > $
+I3 $ V < rotate > N < worm wheel > A < x > $
+I4 $ V < move > N < arm > A < connecting > $
+I5 $ V < move > N < arm > A < long > $
+}
+
+MORGAN
+{
+O1 $ One degree of freedom between the motor and the worm $
+O2 $ contact between the worm wheel and the worm $
+O3 $ one degree of freedom between the connecting arm and crank on the shaft carrying the worm wheel $
+O4 $ one degree of freedom between the long arm and the wiper $
+O5 $ one degree of freedom between the wiper and the long arm $
+}
+
+MPART
+{
+P1 $ worm $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ worm wheel $
+P5 $ connecting arm $
+P6 $ crank $
+P7 $ long arm $
+P8 $ wiper $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P5 P6 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P2 P5 P7 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P2 P3 P8 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+The wipers faithfully keep the window clear, moving back and forth across the windshield countless times as they sweep the water away. On their highest speed, they move impressively fast, sometimes shaking the car from side to side.
+$
+
+
+STRUCTURE
+
+$
+The wipers combine two mechanical technologies to perform their task: A combination electric motor and worm gear reduction provides power to the wipers. A neat linkage converts the rotational output of the motor into the back-and-forth motion of the wipers. 
+
+$
+BEHAVIOUR
+
+$
+It takes a lot of force to accelerate the wiper blades back and forth across the windshield so quickly. In order to generate this type of force, a worm gear is used on the output of a small electric motor. The worm gear reduction can multiply the torque of the motor by about 50 times, while slowing the output speed of the electric motor by 50 times as well. The output of the gear reduction operates a linkage that moves the wipers back and forth. Inside the motor/gear assembly is an electronic circuit that senses when the wipers are in their down position. The circuit maintains power to the wipers until they are parked at the bottom of the windshield, and then cuts the power to the motor. This circuit also parks the wipers between wipes when they are on their intermittent setting. A short cam is attached to the output shaft of the gear reduction. This cam spins around as the wiper motor turns. The cam is connected to a long rod; as the cam spins, it moves the rod back and forth. The long rod is connected to a short rod that actuates the wiper blade on the driver's side. Another long rod transmits the force from the driver-side to the passenger-side wiper blade. 
+
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/WIND_SHIELD_WIPER/01.GIF		$ 01.WIND SHIELD WIPER $
+ADB/TRANSPORT/WIND_SHIELD_WIPER/02.JPG		$ 02.WIND SHIELD WIPER $
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device is used to wipe out the water on the windshield. This can be interpreted as a change of state from rotation of the wipers. This can be discussed as follows:
+
+The worm (part) rotates (physical phenomenon). This is due to torque applied by the motor (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the motor and the worm (organ).
+
+The worm wheel (part) rotates (physical phenomenon). This is due to the rotation of the worm (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and it requires the presence of contact between the worm wheel and the worm (organ).
+
+The connecting arm (part) rotates (physical phenomenon). This is due to the rotation of the worm wheel (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the connecting arm and crank on the shaft carrying the worm wheel (organ).
+
+The long arm (part) carrying the wipers oscillates (physical phenomenon). This is due to motion of the connecting arm (input) which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the long arm and the wiper (organ).
+
+The wiper (part) rotates (physical phenomenon). This is due to the motion of the long arm (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of one degree of freedom between the wiper and the long arm (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To wipe out water from the windshield.
+$
+
+STATE
+
+$
+The wiper is at rest.
+
+The wiper is rotating.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+The worm rotates.
+
+The worm wheel rotates.
+
+The connecting arm rotates.
+
+ The long arm carrying the wipers oscillates.
+
+The wiper rotates.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Torque applied by the motor.
+
+The rotation of the worm.
+
+The rotation of the worm wheel.
+
+Motion of the connecting arm.
+
+The motion of the long arm.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+One degree of freedom between the motor and the worm.
+
+Presence of contact between the worm wheel and the worm.
+
+Presence of one degree of freedom between the connecting arm and crank on the shaft carrying the worm wheel.
+
+Presence of one degree of freedom between the long arm and the wiper.
+
+Presence of one degree of freedom between the wiper and the long arm.
+$
+
+
+
+PARTS
+$
+The worm forms a revolute pair with the frame.
+
+The worm wheel forms a revolute pair with the frame.
+
+The connecting arm forms a revolute pair with the cranks.
+
+The long arm forms a revolute pair with the connecting arm.
+
+The wiper forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+

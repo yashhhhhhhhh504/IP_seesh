@@ -1,0 +1,193 @@
+MACTION
+{
+A1 $ V < transmit > A < x > N < power > $
+A2 $ V < change > A < x > N < speed > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < constant > N < speed > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < variable > N < speed > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ from constant speed to variable speed $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < cone > $
+PP2 $ V < rotate > A < x > N < wheel > $
+PP3 $ V < rotate > A < x > N < output-shaft > $
+PP4 $ V < change > A < x > N < position > $
+PP5 $ V < change > A < x > N < speed > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < cone > $
+I3 $ V < rotate > A < x > N < wheel > $
+I4 $ V < apply > A < x > N < force > $
+I5 $ V < change > A < x > N < position > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ friction material $
+O3 $ zero degree of freedom in the direction of motion $
+O4 $ presence of smooth surface between the adjustable wheel and the output shaft $
+O5 $ diameter of the cone at point of contact $
+}
+
+MPART
+{
+P1 $ cone $
+P2 $ frame $
+P3 $ wheel $
+P4 $ output-part $
+P5 $ revolute pair $
+P6 $ prismatic pair $
+P7 $ contacted-body $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P5 >
+< A1 IS1  OS1  CS1  PP2  PE3  I2  O2  P1  P3  P7 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P3  P4  P6 >
+< A2 IS2  OS2  CS2  PP4  PE1  I4  O4  P3  P4  P6 >
+< A2 IS2  OS2  CS2  PP5  PE1  I5  O5  P1  P3  P7 >
+}
+
+
+
+FUNCTION
+
+$
+The Adjustable-cone drive is perhaps the oldest variable-speed friction system, and is usually custom built.
+$
+
+
+STRUCTURE
+
+$
+This variable speed drive consists of a motor driven cone and an adjustable wheel coupled to the output shaft. The adjustable wheel transfers the motion from the motor driven cone to the output shaft. Since this wheel's position can be changed, variable speed can be obtained.
+$
+
+
+BEHAVIOUR
+
+$
+Power from the motor-driven cone is transferred to the output shaft by the friction wheel, which is adjustable along the two cone sides to change the output speed. The adjustable wheel is the power transfer element. The speed depends upon the ratio of diameters at the point of contact.
+The animation shown along side demonstrates the functioning of this variable speed drive.
+$
+
+
+PICTURE
+
+{
+ADB/VARSPEED/VARSPEED01/adjcone.jpg	$ Adjustable Cone drive	$
+}
+
+
+CLIP
+
+{
+ADB/VARSPEED/VARSPEED01/VARSPEED01.avi	$ Adjustable Cone drive	$
+}
+
+
+SUMMARY
+$
+This mechanism transmits power and allows variable output speed in the following steps:
+
+The friction cone is fixed on the input shaft, which in turn is attached to the motor. Thus the friction cone forms a revolute pair with the frame (part). The motor applies a torque to the shaft (Input) which activates Newtonian laws of motion (Physical effect), and rotates the friction cone (Physical Phenomenon). This requires 1 degree of freedom of motion between the shaft and the first cone in the direction of rotation (Organ).
+
+The friction cone is in contact with the adjustable wheel (part). As the friction cone rotates (Input), the adjustable wheel rotates as well (Physical Phenomenon) due to the friction (Physical Effect) developed between the contacting friction surfaces (Organ)
+
+The adjustable wheel forms a prismatic pair with the output shaft (part). The rotation of the wheel (Input) causes the output shaft to rotate (Physical Phenomenon) because the basic law that no two bodies can occupy the same space at the same time (Physical Effect) has to be obeyed. The rotation requires a zero degree of freedom of motion in the direction of motion to exist between the two bodies(organ).
+
+Since the adjustable wheel is connected to the output shaft by a prismatic joint (part), the position of the wheel on the shaft can be changed (Physical Phenomenon). This is achieved by applying a force on the wheel (Input) which slides it along the spline, obeying the Newtonian Laws of motion (Physical Effect) and it requires the presence of smooth surface between the adjustable wheel and the output shaft (organ).
+
+There is frictional contact between the cone and the adjustable wheel (part). Thus, as the position of the wheel on the shaft is changed (Input), there is a difference in the diameter of the cone at the point of contact with the adjustable wheel (Organ). Newtonian Laws of motion (Physical Effect) apply and thus the speed of the output shaft is altered (Physical Phenomenon).
+$
+
+ACTION
+$
+ Using this drive, the output speed can be changed easily 
+ This drive also transmits power from the motor to the output shaft 
+$
+
+STATE
+$
+x
+$
+PHYPHENOMENON
+$
+The rotation of the friction cone which is attached to the motor shaft 
+
+The rotation of the adjustable wheel which is in contact with the first cone 
+
+The rotation of the output shaft on which the adjustable wheel is mounted 
+
+The position of the adjustable wheel is altered according to the speed requirement 
+ 
+The speed is changed depending on the position of the adjustable wheel 
+$
+
+PHYEFFECT
+$
+Newtonian laws of motion 
+
+The basic law that no two bodies can occupy the same space at the same time 
+
+It is the friction generated between the bodies in contact that results in the motion being transferred 
+$
+
+INPUT
+$
+
+The motor applies a torque to the shaft which in turn rotates the cone 
+
+For rotation of the adjustable wheel to be possible, contact between itself and the cone must be maintained 
+
+The rotation of the adjustable wheel which is in contact with the cone 
+
+A force is applied to the adjustable wheel in order to change its position on the shaft it is splined on 
+
+The position of the adjustable is altered according to the speed requirement 
+$
+
+ORGAN
+$
+one degree of freedom of motion between the shaft and the first cone in the direction of motion 
+
+The friction material on the surface of the components 
+
+zero degree of freedom of motion between the adjustable wheel and the splined shaft in the direction of motion 
+ 
+presence of smooth surface between the adjustable wheel and the output shaft 
+ 
+The diameter of the cone at the point of contact with the adjustable wheel 
+$
+PARTS
+$
+ The cone forms a revolute pair with the frame 
+
+ The cone is in contact with the adjustable wheel 
+
+ The adjustable wheel forms a prismatic pair with the output shaft 
+$

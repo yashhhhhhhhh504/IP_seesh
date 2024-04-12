@@ -1,0 +1,172 @@
+MACTION
+{
+A1 $ V < use > N < chair > A < foldable > $
+A2 $ V < deploy close > N < chair > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < chair > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < unfolding > $
+}
+
+MORGAN
+{
+O1 $ Presence of hinged joints between the links $
+}
+
+MPART
+{
+P1 $ Foldable chair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+}
+
+FUNCTION
+
+$
+The common foldable chairs that are used are good examples of deployment.  
+$
+
+
+STRUCTURE
+
+$
+It consists of seat and rest along with handles to rest the hands. 
+$
+
+
+BEHAVIOUR
+
+$
+The chair is foldable due to the presence of hinged joints that provide one degree of freedom between the various links.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/CHAIRFOLDING/01.JPG  $ Chair Folding Mechanism $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+These kinds of chairs are in high demand as they can be easily folded and as it occupies very less space after folding it can be carried easily from one place to another.
+$
+
+ACTION
+
+$ 
+ To fold and unfold foldable chair.
+
+To deploy when unfolded.
+$
+
+STATE
+
+$
+It occupies very less space when in folded state.
+
+It occupies very large space when in unfolded state.
+
+$
+
+PHYPHENOMENON
+
+$
+Unfold chair.
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Unfolding force.
+
+$
+
+
+ORGAN
+
+$
+Presence of hinged joints between the links.
+
+$
+
+
+
+PARTS
+$
+Foldable chair.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

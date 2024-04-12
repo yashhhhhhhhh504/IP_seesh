@@ -1,0 +1,215 @@
+MACTION
+{
+A1 $ V < cut > N < object > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < move > N < part > A < X > $
+PP3 $ V < cut > N < part > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < part > A < x > $
+I2 $ V < rotate > N < part > A < x > $
+I3 $ V < move > N < part > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the sprocket $
+O2 $ no slip between the chain and the sprocket $
+O3 $ cutter is sharp enough to cut the material and it should also possess the required hardness $
+
+}
+
+MPART
+{
+P1 $ Sprocket $
+P2 $ Chain $
+P3 $ Cutter $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+}
+
+FUNCTION
+
+$
+The purpose of a chain saw is to spin the chain so that the wood can be cut. This whole package might weigh only 5 to 10 pounds. 
+$
+
+
+STRUCTURE
+
+$
+The chain looks a lot like the chain on a bicycle, but every second or third link has a saw tooth on it. The rest of the saw is designed to make the chain go and to control the saw. This package contains the engine itself to which everything is attached.
+$
+BEHAVIOUR
+
+$
+The engine generates the power to spin the chain and the handles and the switches help the operator control the saw.
+$
+
+PICTURE
+
+{
+ADB/CUTTING/CHAIN-SAW/CHAIN-SAW.JPG	$ CHAIN-SAW $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to cut objects. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows:
+
+The sprocket (part) rotates (physical phenomenon). This due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the sprocket (organ).
+
+The chain (part) mounted on the sprocket moves linearly (physical phenomenon). This is due to the rotation of the sprocket (input), which activates the law "no two bodies can occupy the same space at the same time" (physical effect) and is necessary that there is no slip between the chain and the sprocket (organ).
+
+The cutter (part) cuts the material (physical phenomenon). This is due to the linear motion of the chain (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the cutter is sharp enough to cut the material and it should also possess the required hardness (organ). 
+$
+
+ACTION
+
+$ 
+ To cut objects.
+$
+
+STATE
+
+$
+The cutter is at rest.
+
+The cutter is undergoing sliding motion.
+
+$
+
+PHYPHENOMENON
+
+$
+The sprocket rotates.
+
+The chain mounted on the sprocket moves linearly.
+
+The cutter cuts the material.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+The rotation of the input shaft.
+
+The rotation of the sprocket.
+
+The linear motion of the chain.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the sprocket.
+
+Necessary that there is no slip between the chain and the sprocket.
+
+Necessary that the cutter is sharp enough to cut the material and it should also possess the required hardness.
+
+
+$
+
+
+
+PARTS
+
+$
+Sprocket.
+
+Chain.
+
+Cutter.
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

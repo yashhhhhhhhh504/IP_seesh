@@ -1,0 +1,75 @@
+MACTION
+{
+A1 $ V < store > AV < X > N < energy > AJ < recoverable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < shape > $
+IS2 $ V < x > A < deformed > N < shape > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed > N < shape > $
+OS2 $ V < x > A < original > N < shape > $
+} 
+MCHANGESTATE
+{
+CS1 $ from original shape to deformed size.$
+CS2 $ from deformed shape to original size.$
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < extend > AV < X > N < spring > AJ < X > $
+PP2 $ V < regain > AV < X > N < size > AJ < original > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Hook’s law $
+
+}
+
+MINPUT
+{
+I1 $ V < apply> AV < X > N < load > AJ < > $
+I2 $ V < remove > AV < X > N < load > AJ < > $
+
+}
+
+MORGAN
+{
+O1 $ requires that the load applied is an axial tensile force. $
+O2 $ requires that the load applied is within the elastic limit.  $
+
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ frame $
+P3 $ fixed-pair $
+P4 $ load $
+P5 $ flexible-pair $
+
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P4 P5 >
+
+}
+
+
+
+
+
+
+
+

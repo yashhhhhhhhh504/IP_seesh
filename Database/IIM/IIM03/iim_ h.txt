@@ -1,0 +1,101 @@
+SUMMARY
+$
+This mechanism can be used to generate intermittent motion. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The cam (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the cam (organ).
+
+The rack (part) oscillates within the coulisse (physical phenomenon). This is due to the rotation of the cam (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one-degree of freedom between the cam and the rack (organ).
+
+The rack (part) meshes with the gear (physical phenomenon). This is due to the downward movement of the Coulisse (input), which activates the gravity effect (physical effect) and is necessary that the rack and the gear have the same module (organ).
+
+The gear (part) rotates (physical phenomenon). This is due to the movement of the rack (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the coulisse teeth have disengaged from the teeth on the gear (organ).
+$
+
+ACTION
+
+$ 
+ To generate intermittent motion.
+$
+
+STATE
+
+$
+The gear is at rest.
+
+The gear under goes a small angular rotation.
+
+$
+
+PHYPHENOMENON
+
+$
+The cam rotates.
+
+The rack oscillates within the coulisse.
+ 
+The rack meshes with the gear.
+
+The gear rotates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Gravity effect.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of the cam.
+
+The downward movement of the Coulisse.
+
+The movement of the rack.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the cam.
+
+Presence of one-degree of freedom between the cam and the rack.
+
+Necessary that the rack and the gear have the same module.
+
+Necessary that the coulisse teeth have disengaged from the teeth on the gear.
+
+$
+
+
+
+PARTS
+$
+The cam forms a revolute pair with the frame.
+
+The rack forms a revolute pair with the frame.
+
+The rack forms a higher pair with the gear.
+
+The gear forms a revolute pair with the frame.
+
+
+
+$
+
+
+
+
+
+
+
+

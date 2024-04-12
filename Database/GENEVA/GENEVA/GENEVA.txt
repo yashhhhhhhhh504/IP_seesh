@@ -1,0 +1,184 @@
+
+MACTION
+{
+A1 $ V < generate > N < motion > A < intermittent > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < wheel > A < X > $
+PP2 $ V < rotate > N < wheel > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < pin > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and wheel $
+O2 $ smooth sliding surface between the slot on the wheel B and the pin on the wheel $
+}
+
+MPART
+{
+P1 $ wheel $
+P2 $ revolute pair $
+P3 $ frame $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P3 >
+
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+The Geneva mechanism is a timing device. This mechanism is used to produce dwell motions. The Geneva converts continuous rotary motion into intermittent rotary motion. 
+$
+
+
+STRUCTURE
+
+$
+Essentially, the Geneva mechanism consists of a rotating disk with a pin and another rotating disk with slots (usually four) into which the pin slides.
+In the figure the lower wheel 'A' carries a pin or roller 'R'. This drive pin engages with the slots on the Geneva wheel (B) and make it turn just enough so that it is in position when the pin (R) comes round again. 
+$
+
+
+BEHAVIOUR
+
+$
+
+A geneva mechanism is one of the most commonly used devices for producing intermittent rotary motion, characterized by alternate periods of motion and rest with no reversal in direction. It is also used for indexing (i.e., rotating a shaft through a prescribed angle). The rotational movement of the lower driver wheel 'A' is continuous but the geneva wheel 'B' only rotates intermittently (in steps). It takes four revolutions of the lower driver wheel to produce one revolution of the geneva wheel.
+The animation demonstrates the working of a basic Geneva mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/GENEVA/GENEVA/geneva.jpg		$ Geneva Mechanism $
+}
+
+
+CLIP
+
+{
+ADB/GENEVA/GENEVA/GENEVA.avi		$ Geneva Mechanism $
+}
+
+SUMMARY
+$
+This mechanism can be used to generate intermittent rotation. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The wheel A (part) rotates continuously (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and wheel A (organ).
+
+The wheel B (part) rotates intermittently (physical phenomenon). This is due to the rotation of pin mounted on the wheel A (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the smooth sliding surface between the slot on the wheel B and the pin on the wheel A (organ).
+
+$
+
+ACTION
+
+$ 
+ To generate intermittent rotation.
+$
+
+STATE
+
+$
+The wheel A is at rest.
+
+The wheel B is rotates through 90 degrees.
+
+$
+
+PHYPHENOMENON
+
+$
+The wheel A rotates continuously.
+
+The wheel B rotates intermittently.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of pin mounted on the wheel A.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and wheel A.
+
+Requires the smooth sliding surface between the slot on the wheel B and the pin on the wheel A.
+
+$
+
+
+
+PARTS
+$
+The wheel A forms a revolute pair with the frame.
+
+The wheel B forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+

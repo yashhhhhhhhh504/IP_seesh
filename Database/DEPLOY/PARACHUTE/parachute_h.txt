@@ -1,0 +1,97 @@
+SUMMARY
+$
+This is mainly used to reduce the speed of fall.
+$
+
+ACTION
+
+$ 
+ To reduce the speed of fall.
+$
+
+STATE
+
+$
+Occupy less space.
+
+Occupy large space.
+
+$
+
+PHYPHENOMENON
+
+$
+Press button.
+
+Open the balloon.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Pressing force.
+
+Gas pressure.
+
+$
+
+
+ORGAN
+
+$
+Presence of a button.
+
+Necessary that the balloon material is flexible.
+
+
+$
+
+
+
+PARTS
+$
+Button.
+
+Balloon.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

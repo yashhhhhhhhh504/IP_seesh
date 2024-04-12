@@ -1,0 +1,209 @@
+MACTION
+{
+A1 $ V < transmit > A < X >  N < motion > $
+
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < driver > $
+PP2 $ V < increase > A < x > N < friction > $
+PP3 $ V < pull > A < x > N < rope > $
+PP4 $ V < deliver >  A < x > N < rope > $
+PP5 $ V < change > A < axial > N < direction > $
+PP6 $ V < rotate > A < x > N < driven > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < driver > $
+I3 $ V < increase > A < x > N < contact > $
+I4 $ V < select > A < x > N < configuration > $
+I5 $ V < apply > A < tangential > N < force > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ tension in the rope $
+O3 $ surface area $
+O4 $ arrangement of the rope $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ driver $
+P3 $ revolute pair $
+P4 $ driven $
+P5 $ rope $
+P6 $ rope pair $
+P7 $ right angle $
+P8 $ idler-pulley $
+}
+LINK
+{
+< A1 IS1 OS1  CS1 PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1 OS1  CS1 PP2  PE2  I3  O3  P2  P5  P6 >
+< A1 IS1 OS1  CS1 PP2  PE2  I3  O3  P4  P5  P6 >
+< A1 IS1 OS1  CS1 PP3  PE2  I2  O2  P2  P5  P6 >
+< A1 IS1 OS1  CS1 PP4  PE2  I2  O2  P2  P5  P6 >
+< A1 IS1 OS1  CS1 PP5  PE1  I4  O4  P2  P4  P7 >
+< A1 IS1 OS1  CS1 PP5  PE1  I4  O4  P5  P8  P6 >
+< A1 IS1 OS1  CS1 PP6  PE2  I5  O2  P4  P5  P6 >
+}
+
+
+
+
+
+FUNCTION
+
+$
+This device is also used to transmit power from one shaft to another shaft, whose axes are perpendicular to each other, using two idle pulleys in between the drive and driven pulleys.
+$
+
+
+STRUCTURE
+
+$
+The device contains total 4 pulleys, and a rope. One pulley is mounted on drive shaft and one pulley is mounted on driven shaft. Remaining two pulleys are idle or guide pulleys. The rope is connected to drive and driven pulleys through guide pulleys. As shown in the figure, links 1, 4 are drive and driven pulleys respectively, and links 2, 3 are guide pulleys.
+$
+
+
+BEHAVIOUR
+
+$
+The pulley gets the torque from the drive shaft, to which it is connected. The pulley pulls the rope wrapped around it because of the frictional force created between shaft and pulley. The rope in turn produces the tangential force at the surface of the drum, which creates a torque on the drum. Thus the drum rotates and it in turn rotates the output shaft. The device shown in the figure is with a crossed belt. An open belt may be used, but the crossed one is preferable, as it gives more surface of contact.
+$
+
+
+PICTURE
+
+{
+ADB/POWERTRANS/POWERTRANS05/powertrans05.jpg	$ Power Transmission $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used to transmit power between the two shafts whose axes are perpendicular each other. This can be described as follows:
+
+
+The pulley 1 (part) rotates in a vertical plane (phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the pulley (organ)
+
+
+The belt or the rope (part) moves in a linear direction (physical phenomenon). This is due to the friction between the pulley surface and the belt (input), which activates the friction effect (physical effect) and requires the presence of tight surface contact between the pulley surface and the belt (organ), which is accomplished by the use of idler pulleys 2 and 3.
+
+The pulley 4 (part) rotates in a horizontal plane (physical phenomenon). This is due to the movement of the belt (input), which activates friction effect (physical effect) and requires the presence of tension in the belt (organ).
+$
+
+
+
+
+ACTION
+$
+
+This can be used to transmit power between the two shafts whose axes are perpendicular each other.
+
+
+$
+STATE
+$
+
+rest
+
+rotation.
+
+$
+PHYPHENOMENON
+$
+
+The pulley 1 rotates in a vertical plane.
+
+The belt or the rope moves in a linear direction.
+ 
+The pulley 4 rotates in a horizontal plane.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Friction effect.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the input shaft.
+
+Friction between the pulley surface and the belt.
+
+The movement of the belt.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the pulley.
+
+Presence of tight surface contact between the pulley surface and the belt.
+
+Presence of tension in the belt.
+
+
+
+
+$
+PARTS
+$
+
+The pulley 1 along with the input shaft forms a revolute pair with the frame.
+
+The belt forms a wrapping pair with the pulleys.
+
+The pulleys 2 and 3 form a revolute pair with the frame.
+
+The pulley 4 along with the output shaft forms a revolute pair with the frame.
+
+
+
+$
+
+

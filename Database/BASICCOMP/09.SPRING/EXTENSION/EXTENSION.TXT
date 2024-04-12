@@ -1,0 +1,179 @@
+MACTION
+{
+A1 $ V < store >  N < energy > A < recoverable > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < deformed > N < shape > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < original > N < shape > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from deformed shape to original size $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < extend >  N < spring > A < X > $
+PP2 $ V < regain >  N < size > A < original > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Hook’s law $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < load > A < X > $
+I2 $ V < remove > N < load > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ requires that the load applied is an axial tensile force $
+O2 $ requires that the load applied is within the elastic limit $
+
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ frame $
+P3 $ fixed-pair $
+P4 $ load $
+P5 $ flexible-pair $
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P4 P5 >
+}
+
+
+
+FUNCTION
+
+$
+Extension springs are springs, which absorb and store energy by offering resistance to a pulling force. Applications for extension springs include automotive interiors and exteriors, trampolines, washing devices, farm machinery, toys. Another common duty is in cam follower return - rather than complicate the cam to provide positive drive in both directions, positive drive is provided in one sense only, and the spring is used to return the follower to its original position.
+$
+
+
+STRUCTURE
+
+$
+Springs are unlike other machine/structure components in that they undergo significant deformation when loaded - their compliance enables them to store readily recoverable mechanical energy.
+Extension Springs are usually close wound with adjacent coils touching each other. They resist a pulling force that is applied axially. A wide variety of end configurations are available. The variety of ends that can be put on extension springs is limited only by imagination and may include threaded inserts, reduced and expanded eyes on the side or in the center of the spring, extended loops, hooks or eyes at varying positions or distances from the body of the spring, and even rectangular or teardrop-shapes ends. (The end is a loop when the opening is less than one wire size; the end is a hook when the opening is greater than one wire size.) By far the most common, however, are the machine loop and crossover loop.
+
+Material used for extension springs are spring steel, stainless steel, silicon-chrome, high carbon, beryllium-copper, inconnel, galvanised wire, mild steel, phosphor bronze, brass.
+$
+
+
+BEHAVIOUR
+
+$
+Extension springs are springs that absorb and store energy by offering resistance to a pulling force. The tension spring is similar to the compression spring however it requires special ends to permit application of the load - these ends assume many forms but they are all potential sources of weakness not present in compression springs. Rigorous duties thus usually call for compression rather than tension springs. 
+Most extension springs are wound with initial tension. This is the internal force that holds the coils tightly together. The measure of the initial tension is the load necessary to overcome the internal force and just start coil separation. Unlike a compression spring, which has zero load at zero deflection, an extension spring can have a preload at zero deflection. Springs which are loaded both in tension and in compression are rare and restricted to light duty.
+
+Most extension spring failures occur in the area of the end. To maximize the life of the spring, the path of the wire should be smooth and gradual as it flows into the end. Tool marks and other stress concentrations should be held to a minimum.
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/09.Spring/EXTENSION/extension.gif		$ 01.Extension Springs	$
+ADB/BASICCOMP/09.Spring/EXTENSION/extension1.jpg	$ 02.Extension Springs	$
+ADB/BASICCOMP/09.Spring/EXTENSION/extension2.jpg	$ 03.Extension Springs	$
+ADB/BASICCOMP/09.Spring/EXTENSION/extension3.gif	$ 04.Extension Springs	$
+ADB/BASICCOMP/09.Spring/EXTENSION/extensionends.jpg	$ 05.Extension Springs	$
+}
+
+
+CLIP
+{
+}
+
+SUMMARY
+$
+ These springs can be used to store readily recoverable energy. This can be interpreted as follows:
+ 
+The spring (part) extends in length (physical phenomenon). This is due to the load applied (input), which activates the hook’s law (physical effect) and requires that the load applied is an axial tensile force (organ). 
+
+
+The spring (part) regains its original shape and size (physical phenomenon). This is due to the absence of load (input), which activates the hook’s law (physical effect) and requires that the load applied be within the elastic limit (organ).
+
+$
+
+ACTION
+$
+ 
+ To store readily recoverable energy. 
+
+$
+STATE
+$
+
+The spring is in a deformed shape.
+
+The spring is in its original position.
+
+$
+PHYPHENOMENON
+$
+
+The spring extends in length.
+
+The spring regains its original size.
+ 
+
+$
+
+PHYEFFECT
+$
+
+Hook’s law
+
+
+$
+
+INPUT
+$
+
+Load applied.
+
+Absence of load.
+
+$
+
+ORGAN
+$
+
+Requires that the load applied is an axial tensile force.
+
+Requires that the load applied is within the elastic limit.
+
+
+
+$
+PARTS
+
+$
+
+The one end of the spring forms a fixed pair with the frame.
+
+The load forms a flexible pair with the spring.
+
+
+$
+

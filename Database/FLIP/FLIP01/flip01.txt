@@ -1,0 +1,216 @@
+
+MACTION
+{
+A1 $ V < turn > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < counter-clockwise > $
+PP2 $ V < rotate > N < connecting-rod > A < X > $
+PP3 $ V < rotate > N < flipper1 > A < clockwise > $
+PP4 $ V < rotate > N < flipper2 > A < counter-clockwise > $
+PP5 $ V < transfer > N < material > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < x > $
+I2 $ V < rotate > N < crank > A < x > $
+I3 $ V < rotate > N < connecting-rod > A < x > $
+I4 $ V < rotate > N < connecting-rod > A < X > $
+I5 $ V < inertia > N < material > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom $
+O2 $ zero degree of freedom $
+O3 $ zero degree of freedom $
+O4 $ links be of suitable lengths $
+O5 $ flipper 2 meet the flipper 1 at a straight line, which is slightly off the vertical $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ frame $
+P3 $ connecting-rod $
+P4 $ revolute-pair $
+P5 $ flipper1 $
+P6 $ flipper2 $
+P7 $ material $
+P8 $ sliding-pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P2 P4 P6 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P5 P6 P7 P8 >
+}
+
+
+
+FUNCTION
+
+$
+This mechanism can turn over a flat piece.
+$
+
+
+STRUCTURE
+
+$
+The basic structure is a four-bar linkage and a double crank. The two flippers are actually extensions of the fourth members of the four-bar linkages.
+$
+
+
+BEHAVIOUR
+
+$
+The input shaft drives the double crank, both of which are connected to connecting roads leading to each flipper. In this way, as the input shaft rotates counter-clockwise, flipper 1 turns clockwise, while flipper 2 turns counter-clockwise. Link proportions are selected so that both flippers rise up at the same time to meet a line slightly off the vertical to transfer the piece from one flipper to the other by the momentum of the piece. After the material is transferred, due to the lengths of the connecting rods, both the flippers return to the neutral position.
+$
+
+
+PICTURE
+
+{
+ADB/FLIP/FLIP01/FLIP01.JPG		$ Flipping Mechanism	$
+}
+
+
+CLIP
+
+{
+ADB/FLIP/FLIP01/FLIP01.AVI		$ Flipping Mechanism	$
+}
+
+SUMMARY
+$
+This can be used to turn over a flat piece. This can be interpreted as a change of state between from rest to rotation. This can be described as follows:
+
+The crank (part) rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the crank (organ). 
+
+The connecting rod (part), which is connected to it, also rotates (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the crank and the connecting rod (organ).
+
+The flipper 1 (part) rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the connecting rod (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the flipper and the connecting rod and also requires that the flipper be pivoted at a suitable point (organ).
+
+
+At the same time, the flipper 2 rotates in the counter clockwise direction and meets the flipper 1 (physical phenomenon). This is due to the rotation of the connecting rod, which in turn is connected to the crank (input), which activates the Newtonian laws of motion (physical effect) and requires that the links be of suitable lengths (organ). 
+
+
+The material (part) is transferred from the flipper 2 to the flipper 1 (physical phenomenon). This is due to the inertia of the material (input), which activates the Newtonian laws of motion (physical effect) and requires that the flipper 2 meet the flipper 1 at a straight line, which is slightly off the vertical (organ).
+
+$
+
+ACTION
+$
+ 
+ To turn a piece of material.
+
+$
+STATE
+$
+
+Rest.
+
+Rotation.
+
+$
+PHYPHENOMENON
+$
+
+The crank rotates in the counter clockwise direction.
+
+The connecting rod, which is connected to it, also rotates.
+ 
+The flipper 1 rotates in the clockwise direction.
+
+At the same time, the flipper 2 rotates in the counter-clockwise direction and meets the flipper 1.
+
+The material is transferred from the flipper 2 to the flipper 1.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the shaft.
+
+Rotation of the crank.
+
+Rotation of the connecting rod.
+
+Rotation of the connecting rod, which in turn is connected to the crank.
+
+Inertia of the material.
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the crank.
+
+Presence of zero degree of freedom between the crank and the connecting rod.
+
+Presence of zero degree of freedom between the flipper and the connecting rod and also requires that the flipper be pivoted at a suitable point.
+
+Requires that the links be of suitable lengths.
+
+Requires that the flipper 2 meet the flipper 1 at a straight line, which is slightly off the vertical.
+
+
+$
+PARTS
+$
+
+The crank forms a revolute pair with the frame.
+
+The connecting rod forms a revolute pair with the frame.
+
+The flipper 1 forms a revolute pair with the frame.
+
+The flipper 2 forms a revolute pair with the frame. 
+
+The piece of material forms a sliding pair with the flippers.
+
+
+
+$
+
+

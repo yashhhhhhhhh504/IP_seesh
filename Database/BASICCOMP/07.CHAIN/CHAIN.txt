@@ -1,0 +1,225 @@
+MACTION
+{
+A1 $ V < connect > N < sprockets > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < linear > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to linear motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < wrap > N < sprockets > A < X > $
+PP2 $ V < rotate > N < sprocket > A < input > $
+PP3 $ V < move > N < chain > A < X > $
+PP4 $ V < rotate > N < sprocket > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hook’s law $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < X >  N < tensile-force > A < initial > $
+I2 $ V < X >  N < torque > A < input > $
+I3 $ V < X >  N < force > A < tensile > $
+I4 $ V < move >  N < chain > A < X > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the projections on the sprocket fits into the recess of the chain $
+O2 $ presence of zero degree of freedom between the input shaft and the sprocket $
+O3 $ requires that the there is enough initial tension in the chain  $
+O4 $ Presence of close contact between the sprocket and the chain $
+}
+
+MPART
+{
+P1 $ input sprocket $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ chain $
+P5 $ gear-pair $
+P6 $ output sprocket $
+
+
+}
+LINK
+{
+
+< A1 S1 OS1 CS1 PP1 PE1 I1 O1 P1 P4 P5 P6 >
+< A1 S1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P3 >
+< A1 S1 OS1 CS1 PP3 PE2 I2 O2 P1 P4 P5 >
+< A1 S1 OS1 CS1 PP3 PE3 I3 O3 P4 P5 P6 >
+
+}
+
+
+
+
+
+FUNCTION
+$
+In contrast to a belt or rope drive, a chain drive gives a constant velocity ratio or a positive drive. This is not so in case of belt and rope drives due to slip, which may occur due to overloads or belt or pulley surfaces becoming slightly greasy. A chain is regarded in between the gear drive and the belt drive.
+$
+
+
+STRUCTURE
+$
+Like gears, chains are made of metal and, therefore, occupy lesser space and give constant velocity ratios. Like belts, they are used for longer center distances. The wheels over which the chains are run, correspond to the pulleys of a belt drive and are known as ‘sprockets’. The surfaces of the sprockets conform to the type of chain used. Usually, a sprocket has projected teeth that fit into the recesses in the chain. Thus the chain passes round the sprockets as a series of chordal links.
+$
+
+
+BEHAVIOUR
+$
+The disadvantages of a chain drive are that it is heavier when compared to the belt and there is a gradual stretching of it. Thus it increases in length so that from time to time some of its links have to be removed. Lubrication of its parts is also desired. 
+Chains have been classified into hoisting chains, conveyor chains and power transmission chains.
+
+1. Hoisting Chains
+Hoisting chains include oval link and stud link chains. An oval link chain is a common form of a hoisting chain (Fig 1a). It consists of oval links and is also known as coil chain. Such chains are used for lower speeds only.
+Fig 1b shows a stud link chain. This chain does not kink or tangle easily.
+
+2. Conveyor chains
+Conveyor chains may be of detachable or hook joint type (Fig 2a), or of the ‘closed-end pintle’ type (Fig 2b). The sprocket teeth are so shaped and spaced that the chain should run onto and off the sprocket smoothly and without interference. Such chains are used for low speed agricultural machinery. The material of the links is, usually, malleable cast iron. The motion of the chain is not very smooth.
+
+3. Power Transmission Chains
+These chains are made of steel in which the wearing parts are hardened. They are accurately machined and run on carefully designed sprockets.
+These are of 3 types:
+
+a. Block Chain: This type of chain (Fig 3a) is mainly used for transmission of power at low speeds. Sometimes, they are also used as conveyor chains in place of malleable conveyor chains.
+
+b. Roller Chain: A common form of a roller chain is shown in Fig 3b. A bushing is fixed to the inner link whereas the outer link has a pin fixed to it. There is only sliding motion between the pin and the bushing. The roller is made of hardened material and is free to turn on the bushing. A good roller chain is quieter and wears less when compared to a block chain.
+
+c. Silent Chain (Inverted tooth chain): Though roller chains can run quietly at fairly high speeds, the silent chains or inverted tooth chains are used where maximum quietness is desired. Silent chains do not have rollers. The links are so shaped as to engage directly with the sprocket teeth. The included angle is either 60 degrees or 75 degrees (Fig 3c).
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/07.Chain/chaindrive.jpg		$ 01.Chain Drive	$
+ADB/BASICCOMP/07.Chain/chain.jpg		$ 02.Chain Drive	$
+ADB/BASICCOMP/07.Chain/hoisting.jpg		$ 03.Hoisting		$
+ADB/BASICCOMP/07.Chain/conveyor.jpg		$ 04.Conveyor		$
+ADB/BASICCOMP/07.Chain/powertrans.jpg		$ 05.Power Transmission $
+}
+
+
+CLIP
+{
+ADB/BASICCOMP/07.Chain/chain_drive.avi	$ Chain Drive $
+}
+
+SUMMARY
+$
+This can be used to connect two sprockets and to transmit motion between them. It can be described as follows:
+
+The chain (part) connects the two sprockets (physical phenomenon). This is due to the initial tension with which it is placed on the sprockets (input) which  activates the hook’s law (physical effect) and is necessary that the projections on the sprocket fits into the recess of the chain (organ).
+
+The sprocket (part) mounted on the input shaft rotates (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the sprocket (organ).
+
+The chain (part) moves (physical phenomenon). This is due to the tensile force applied by the sprocket mounted on the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires that the there is enough initial tension in the chain (organ).
+
+
+The sprocket (part) on the output shaft rotates (physical phenomenon). This is due to the movement of the chain (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of close contact between the sprocket and the chain (organ).
+$
+
+ACTION
+$
+ 
+ To connect two sprockets and to transmit motion between them.
+
+$
+STATE
+$
+
+Chain is at rest.
+
+Chain is undergoing linear motion.
+
+$
+PHYPHENOMENON
+$
+
+The chain wraps around the circumference of the two sprockets.
+
+The sprocket mounted on the input shaft rotates.
+
+The chain moves.
+
+The sprocket on the output shaft rotates.
+
+
+$
+
+PHYEFFECT
+$
+
+Hook’s law.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+Initial tension with which it is placed on the sprockets.
+
+Torque applied by the input shaft.
+
+Tensile force applied by the sprocket mounted on the input shaft.
+
+Movement of the chain.
+
+$
+
+ORGAN
+$
+
+Necessary that the projections on the sprocket fits into the recess of the chain.
+
+Presence of zero degree of freedom between the input shaft and the sprocket.
+
+Requires that the there is enough initial tension in the chain.
+
+Presence of close contact between the sprocket and the chain.
+
+
+
+$
+
+PARTS
+
+$
+
+The chain forms a gear pair with the sprockets.
+
+The sprocket forms a revolute pair with the frame.
+
+The chain forms a gear pair with the input sprocket.
+
+The chain forms a gear pair with the output sprocket.
+
+
+
+
+$

@@ -1,0 +1,149 @@
+
+LABEL
+$ Flow-Devices $
+{
+ADB/FLOW-DEVICES/LIFT_PUMP/LIFT_PUMP.TXT		                $ Lift Pump $
+ADB/FLOW-DEVICES/PERISTALTIC_PUMP/PERISTALTIC_PUMP.TXT		        $ Peristaltic Pump $
+ADB/FLOW-DEVICES/PISTON_PUMP/PISTON_PUMP.TXT		                $ Piston Pump $
+ADB/FLOW-DEVICES/PROPELLER_PUMP/PROPELLER_PUMP.TXT		        $ Propeller Pump $
+ADB/FLOW-DEVICES/RADIAL_PISTON_PUMP/RADIAL_PISTON_PUMP.TXT		$ Radial Piston Pump $
+ADB/FLOW-DEVICES/RAM_PUMP/RAM_PUMP.TXT		                        $ Ram Pump $
+ADB/FLOW-DEVICES/VACUUM_PUMP/VACUUM_PUMP.TXT		                $ Vacuum Pump $
+ADB/FLOW-DEVICES/FOUNTAIN-PEN/FOUNTAIN-PEN.TXT 				$ Fountain-Pen  $
+ADB/FLOW-DEVICES/FUEL-INJECTOR/FUEL-INJECTOR.TXT			$ Fuel-Injector $
+ADB/FLOW-DEVICES/GAS-TURBINE/GAS-TURBINE.TXT 				$ Gas-Turbine  $
+
+}
+LABEL
+$ Flipping Mechanisms $	
+{
+ADB/FLIP/FLIP01/FLIP01.TXT		$ Flipping Mechanism	$
+}
+
+
+
+
+LABEL	
+$ Geneva Mechanisms $
+{
+ADB/GENEVA/GENEVA/geneva.txt		$ Geneva Mechanism	$
+ADB/GENEVA/LOCKINGARM/lockingarm.txt	$ Locking-arm Geneva	$
+ADB/GENEVA/GROOVECAM/groovecam.txt	$ Groove Cam Geneva	$
+ADB/GENEVA/IRREGENEVA/irregeneva.txt	$ Irregular Geneva	$
+ADB/GENEVA/SPHERICAL/spherical.txt	$ Spherical Geneva	$
+}
+
+LABEL
+$ Gripping Mechanisms $	
+{
+ADB/GRIP/01.RECIPROCLEVER/RECIPROCLEVER.TXT	$ Reciprocating Lever Gripper $
+ADB/GRIP/02.RACKPINION/RACKPINION.TXT		$ Rack & Pinion Gripper $
+ADB/GRIP/03.HYDRAULIC/HYDRAULIC.TXT		$ Hydraulic Gipper $
+}
+
+LABEL
+$ Indexing or Intermittent Transmission	$	
+{
+ADB/IIM/IIM01/IIM01.txt			$ Intermittent Transmission 1	$
+ADB/IIM/MUTILTOOTH/MUTILTOOTH.txt	$ Mutilated Tooth Drive	$
+ADB/IIM/IIM03/IIM03.txt			$ Intermittent Transmission 2	$
+ADB/IIM/ESCAPEMENT_DEVICE/ESCAPEMENT_DEVICE.TXT   	$ Escapment Device $
+}
+
+
+LABEL
+$ Locking Mechanism $
+{
+ADB/LOCKING/POWER-WINDOW/POWER-WINDOW.TXT			$ Power Window $
+ADB/LOCKING/BOTTLE_CAP/BOTTLE_CAP.TXT				$ Bottle Cap $
+ADB/LOCKING/WAISTBELT/WAISTBELT.TXT				$ Waist Belt $
+ADB/LOCKING/VACUUM_LOCKING/VACUUM_LOCKING.TXT			$ Vacuum Locking Mechanism $
+ADB/LOCKING/SPIKE_SHOES/SPIKE_SHOES.TXT				$ Spike Shoes $
+
+ADB/LOCKING/GUM/GUM.TXT						$ Gum $
+ADB/LOCKING/LOCK/LOCK.TXT					$ Lock $
+ADB/LOCKING/NUMBERLOCK/NUMBERLOCK.TXT				$ Number Lock $
+ADB/LOCKING/CLAMP/CLAMP.TXT					$ Clamp $
+ADB/LOCKING/ELECTROMAGNET/ELECTROMAGNET.TXT			$ Electromagnet $
+
+ADB/LOCKING/ZIP_FASTENERS/ZIP_FASTENERS.TXT	                $ Zip Fasteners $
+ADB/LOCKING/LIFTDOOR/LIFTDOOR.TXT				$ Lift Door Locking $
+ADB/LOCKING/HILL_CLIMBING_EQUIP/HILL_CLIMBING_EQUIP.TXT		$ Hill Climbing Equipment $
+ADB/LOCKING/AUTOMATIC_LOCK/AUTOMATIC_LOCK.TXT			$ Automatic Lock $
+}
+
+
+
+
+
+
+LABEL
+$ Power Transmission $       
+{
+ADB/POWERTRANS/MANUAL-TRANSMISSION/MANUAL-TRANSMISSION.txt	$ Manual Transmission $
+ADB/POWERTRANS/TORQUE-CONVERTERS/TORQUE-CONVERTERS.TXT		$ Torque Converters $
+ADB/POWERTRANS/TURBOCHARGERS/TURBOCHARGERS.TXT			$ Turbochagers $
+ADB/POWERTRANS/POWERTRANS01/powertrans01.txt 			$ Simple Belt Drive    $
+ADB/POWERTRANS/POWERTRANS02/powertrans02.txt 			$ Crossed Belt Drive   $
+
+ADB/POWERTRANS/POWERTRANS03/powertrans03.txt 			$ Power Transmission 3 $
+ADB/POWERTRANS/POWERTRANS04/powertrans04.txt 			$ Power Transmission 4 $
+ADB/POWERTRANS/POWERTRANS05/powertrans05.txt 			$ Power Transmission 5 $
+
+}
+
+
+
+
+
+
+LABEL
+$ Reaching Mechanisms $	
+{
+ADB/REACH/REACH01/REACH01.TXT		$ Reaching Mech 1 $
+ADB/REACH/REACH02/REACH02.TXT		$ Reaching Mech 2 $
+ADB/REACH/REACH03/REACH03.TXT		$ Reaching Mech 3 $
+}
+
+LABEL
+$ Reversing Mechanisms $	
+{
+ADB/REVERSE/01.DOUBLREV/doublrev.txt	$ Double Link Reverser $
+ADB/REVERSE/02.TOGGLREV/togglrev.txt	$ Toggle Link Reverser $
+ADB/REVERSE/03.MODIWATTS/modiwatts.txt	$ Modified Watt's Reverser $
+
+}
+
+LABEL
+$ Rotary to Reciprocating & Dwell Mechanisms $
+{
+ADB/ROTREC/01.4BARSLIDER/4barslider.TXT		$ 4-Bar slider $
+ADB/ROTREC/02.OSCILCHAIN/oscillchain.TXT	$ Oscillating Chain $
+ADB/ROTREC/03.STROKMULTI/strokmulti.TXT		$ 3 Gear Stroke Multiplier $
+ADB/ROTREC/04.RACKGEAR/rackgear.TXT		$ Rack & Gear Sector $
+}
+
+
+
+LABEL
+$ Straight Line Motion Generation $	
+{
+ADB/SLG/01.WATTS/watts.TXT		$ Watt's Linkage $
+ADB/SLG/02.PEAUCELLIER/peaucellier.TXT	$ Peaucellier Mechanism $
+ADB/SLG/03.EVANS/evans.TXT		$ Evan's Linkage $
+ADB/SLG/04.FOURBAR/fourbar.TXT		$ Four-bar Planar $
+ADB/SLG/05.DDRIVE/Ddrive.TXT		$ D-drive Mechanism $
+
+}
+
+
+
+LABEL
+$ Sorting Devices $	
+{
+ADB/SORT/SORT01/SORT01.TXT	$ Sorting Mechanism - 1	$
+ADB/SORT/SORT02/SORT02.TXT	$ Sorting Mechanism - 2	$
+ADB/SORT/SEPERATORS/SEPERATORS.TXT $ Separators $
+ADB/SORT/SORT03/SORT03.TXT	$ Sorting Mechanism - 3	$
+}
+

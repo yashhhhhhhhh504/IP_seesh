@@ -1,0 +1,204 @@
+MACTION
+{
+A1 $ V < prevent > N < skidding > A < X > $
+A2 $ V < prevent > N < locking > A < X > $
+A3 $ V < increase > N < increase > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < less > N < traction > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < traction > $
+} 
+MCHANGESTATE
+{
+CS1 $ from less traction to high traction $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < increase > N < pressure > A < X > $
+PP2 $ V < reduce > N < pressure > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Pressure effect $
+PE2 $ Vacuum effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < signal > A < input > $
+I2 $ V < x > N < signal > A < input > $
+
+}
+
+MORGAN
+{
+O1 $ volume of the brake lines remains constant $
+O2 $ volume of the brake lines remains constant $
+}
+
+MPART
+{
+P1 $ Pump $
+P2 $ Valve $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I1 O1 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I1 O1 P2 >
+
+< A3 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A3 IS1 OS1 CS1 PP2 PE2 I1 O1 P2 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+The theory behind anti-lock brakes is simple. A skidding wheel has much less traction than a non-skidding wheel. In addition, when front wheels of the your car lock up, you loose the ability to steer. ABS brakes improve traction by modulating the pressure.
+$
+
+
+STRUCTURE
+
+$
+
+There are four main components of an ABS: 
+SPEED SENSORS: the ABS needs some way of knowing when wheel is about to lock up.
+VALVES: a valve in the brake line of the each brake is controlled by the ABS.
+PUMP: because the valve is able to release the pressure from the brakes, there has to be some way to put that pressure back when needed.
+CONTROLLER: the ABS controller is one of the many computers in a car.
+
+
+$
+BEHAVIOUR
+
+$
+In a simple ABS, the controller monitors the speed sensors at all times. It is looking for decelerations in the wheel that are out of ordinary. Right before the wheel locks up, the wheel experiences a rapid deceleration. 
+$
+
+PICTURE
+
+{
+ADB/TRIPSTOP/ANTILOCK-BREAKS/01.JPG		$ 01.ANTILOCK BREAKS $
+ADB/TRIPSTOP/ANTILOCK-BREAKS/02.JPG		$ 02.ANTILOCK BREAKS $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This system can be used to prevent skidding. This can be interpreted as a change of state from low traction to high traction. This can be described as follows:
+
+The pump (part) increases the pressure in the brake line (physical phenomenon). This is due to the input signal (input) received by the controller, which activates the pressure effect (physical effect) and is necessary that the volume of the brake lines remains constant (organ).
+
+The valve (part) reduces the pressure in the brake line (physical phenomenon). This is due to the input signal (input) received by the controller, which activates the vacuum effect (physical effect) and is necessary that the volume of the brake lines remains constant (organ).
+
+$
+
+ACTION
+
+$ 
+ To prevent skidding.
+
+To prevent locking of wheels.
+
+To increase traction.
+$
+
+STATE
+
+$
+The wheel has less traction.
+
+The wheel has high traction.
+
+$
+
+PHYPHENOMENON
+
+$
+The pump increases the pressure in the brake line.
+
+The valve reduces the pressure in the brake line.
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Pressure effect.
+
+Vacuum effect.
+
+
+$
+
+
+INPUT
+
+$
+The input signal received by the controller.
+
+The input signal received by the controller.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the volume of the brake lines remains constant.
+
+Necessary that the volume of the brake lines remains constant.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Pump.
+
+Valve.
+
+
+
+
+
+
+$
+
+
+

@@ -1,0 +1,96 @@
+SUMMARY
+$
+This mechanism can be used to displace water from a lower level to a higher level. This can be interpreted as a change of state from liquid at a lower level to a higher level. This can be described as follows:
+
+The water (part) enters the pump (physical phenomenon). This is due to the partial vacuum created (input) which activates the Bernoulli’s law (physical effect) and requires the impeller to rotate at a high speed (organ).
+
+
+The impeller (part) rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the impeller (organ). 
+
+The water (part) rushes out of the casing with a high pressure (physical phenomenon). This is due to the rotation of the impeller at a high speed (input), which activates the law “no two bodies can occupy the same space at the same time”(physical effect) and requires that the impeller be offset in the volute and it also require that there is small clearance between the volute and the impeller at the cut water (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To displace water from a lower level to a higher level.
+$
+
+STATE
+
+$
+Water is at a low level.
+$
+Water is at a high level.
+$
+
+PHYPHENOMENON
+
+$
+The water enters the pump.
+
+The impeller rotates.
+ 
+The water rushes out of the casing with a high pressure.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s law.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+
+The partial vacuum created.
+
+Rotation of the input shaft.
+
+Rotation of the impeller at a high speed.
+
+$
+
+
+ORGAN
+
+$
+
+Requires the impeller to rotate at a high speed.
+
+Presence of zero degree of freedom between the input shaft and the impeller.
+
+The impeller be offset in the volute and it also require that there is small clearance between the volute and the impeller at the cut water
+
+$
+
+
+
+PARTS
+$
+Water forms a sliding pair with the suction pipe.
+
+The impeller forms a revolute pair with the casing.
+
+Water forms a sliding pair with the vanes of the impeller.
+
+
+
+
+
+$
+
+
+

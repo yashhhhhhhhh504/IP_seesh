@@ -1,0 +1,73 @@
+MACTION
+{
+A1 $ V < transmit > A < x > N < power > $
+A2 $ V < change > A < x > N < speed > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < constant > N < speed > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < variable > N < speed > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation  $
+CS2 $ from constant speed to variable speed $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < cone > $
+PP2 $ V < rotate > A < x > N < wheel > $
+PP3 $ V < rotate > A < x > N < output-shaft > $
+PP4 $ V < change > A < x > N < position > $
+PP5 $ V < change > A < x > N < speed > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < cone > $
+I3 $ V < rotate > A < x > N < wheel > $
+I4 $ V < apply > A < x > N < force > $
+I5 $ V < change > A < x > N < position > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ friction material $
+O3 $ 0 dof of motion in the dir of motion $
+O4 $ presence of smooth surface between the adjustable wheel and the output shaft $
+O5 $ diameter of the cone at point of contact $
+}
+
+MSTUCTURE
+{
+P1 $ cone $
+P2 $ frame $
+P3 $ wheel $
+P4 $ output $
+P5 $ revolute pair $
+P6 $ prismatic pair $
+P7 $ contact $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P5 >
+< A1 IS1  OS1  CS1  PP2  PE3  I2  O2  P1  P3  P7 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P3  P4  P6 >
+< A2 IS2  OS2  CS2  PP4  PE1  I4  O4  P3  P4  P6 >
+< A2 IS2  OS2  CS2  PP5  PE1  I5  O5  P1  P3  P7 >
+}

@@ -1,0 +1,197 @@
+MACTION
+{
+A1 $ V < carry > N < part > A < X > $
+A2 $ V < deploy > N < x > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less space to large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom between the various links in the basket $
+}
+
+MPART
+{
+P1 $ Basket $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+This can be used to carry materials.
+$
+
+
+STRUCTURE
+
+$
+It actually consists of a number of wires, which meshed to form a basket.
+$
+
+
+BEHAVIOUR
+
+$
+The basket can be made to occupy less space when not in use by folding it.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/BASKET/1.JPG		$ 01.Basket Deployment $
+ADB/DEPLOY/BASKET/2.JPG		$ 02.Basket Deployment $
+ADB/DEPLOY/BASKET/3.JPG		$ 03.Basket Deployment $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used to carry materials. Since they are made up of wire, which has high tensile strength, it can be made to carry heavy materials.
+$
+
+ACTION
+
+$ 
+ To carry materials.
+
+To deploy.
+$
+
+STATE
+
+$
+Occupy less space.
+
+Occupy large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The basket is unfolded.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Moment.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the various links in the basket.
+
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Basket.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

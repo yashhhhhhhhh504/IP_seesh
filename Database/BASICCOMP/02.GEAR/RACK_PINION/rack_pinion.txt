@@ -1,0 +1,201 @@
+MACTION
+{
+A1 $ V < generate > N < motion > A < straight-line > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < pinion > A < X > $
+PP2 $ V < rotate >  N < pinion > A < x > $
+PP3 $ V < x > N < motion > A < straight-line > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+PE3 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < force > A < X > $
+I2 $ V < mesh >  N < teeth > A < X > $
+I3 $ V < move > N < pinion > A < X > $
+}
+
+MORGAN
+{
+O1 $ absence of slip between the rack and the pinion $
+O2 $ engagement and disengagement between the rack and the pinion is of smooth nature $
+O3 $ requires that the rack is mounted on a flat surface $
+
+}
+
+MPART
+{
+P1 $ pinion $
+P2 $ rack $
+P3 $ rolling pair $
+P4 $ revolute pair $
+P5 $ frame $
+P6 $ fixed pair $
+
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P5 P6 >
+
+}
+
+FUNCTION
+
+$
+Rack and pinion gears are used to convert rotary motion into linear motion and vice-versa. A perfect example of this is the steering system on many cars. The steering wheel rotates a gear that engages the rack. As the gear turns, it slides the rack either to the right or left, depending on which way you turn the wheel. Rack and pinion gears are also used in some scales to turn the dial that displays the weight. 
+$
+
+
+BEHAVIOUR
+
+$
+Apart from converting rotation into linear motion, rack and pinion gears also change the angle of power flow with some degree of speed change. The rack and pinion can transform rotary motion into linear motion and visa versa in three ways: 
+
+01. Rotation of the pinion about a fixed center causes the rack to move in a straight line. 
+
+02. Movement of the rack in a straight line causes the pinion to rotate about a fixed center.
+
+03. If the rack is fixed and the pinion rotates, then the pinion's center moves in a straight line taking the pinion with it.
+
+Rack and pinion gears give a positive motion especially compared to the friction drive of a wheel in tarmac. In the rack and pinion railway a central rack between the two rails engages with a pinion on the engine allowing the train to be pulled up very steep slopes.
+$
+
+
+STRUCTURE
+
+$
+A round spur gear, the pinion, meshes with a spur gear, which has teeth set in a straight line, the rack. They are in theory a gear with an infinite pitch diameter. In theory, the torque and angular velocity of the pinion gear are related to the Force and the velocity of the rack by the radius of the pinion gear.
+$
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/02.Gear/RACK_PINION/01rack_pinion.gif	$ 01.Rack & Pinion	$
+ADB/BASICCOMP/02.Gear/RACK_PINION/02rack_pinion.jpg	$ 02.Rack & Pinion	$
+ADB/BASICCOMP/02.Gear/RACK_PINION/03rack_pinion.gif	$ 03.Rack & Pinion	$
+}
+
+
+CLIP
+
+{
+ADB/BASICCOMP/02.Gear/RACK_PINION/rack_pinion.avi	$ Rack & Pinion	$
+}
+
+SUMMARY
+$
+This can be used to generate straight-line motion. This can be interpreted as a change of state from rest to straight–line motion. This can be described as follows:
+ 
+The pinion (part) moves over the rack (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the absence of slip between the rack and the pinion (organ).
+
+The pinion (part) rotates as it moves over the rack (physical phenomenon). This is due to the meshing of the teeth of the pinion and the rack (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the engagement and disengagement between the rack and the pinion is of smooth nature (organ).
+
+The center of the pinion (part) moves along a straight-line (physical phenomenon). This is due to the movement of the pinion on the rack (input) which activates the ? and requires that the rack is mounted on a flat surface (organ). 
+
+
+$
+
+ACTION
+$
+ 
+ To generate straight-line.
+
+$
+STATE
+$
+
+The pinion is at rest.
+
+The center of the pinion moves along a straight-line motion.
+
+
+$
+PHYPHENOMENON
+$
+
+The pinion moves over the rack.
+
+The pinion rotates as it moves over the rack.
+
+The center of the pinion moves along a straight-line.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+?
+$
+
+INPUT
+$
+
+Force applied on it.
+
+The pinion rotates as it moves over the rack.
+
+The center of the pinion moves along a straight-line.
+
+$
+
+ORGAN
+$
+
+Absence of slip between the rack and the pinion.
+
+Necessary that the engagement and disengagement between the rack and the pinion is of smooth nature.
+
+Requires that the rack be mounted on a flat surface.
+
+
+
+$
+PARTS
+
+$
+
+The pinion forms a rolling pair with the rack.
+
+The pinion forms a revolute pair with the frame.
+
+The rack forms a fixed pair with the frame.
+
+
+$
+

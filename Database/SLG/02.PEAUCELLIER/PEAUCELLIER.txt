@@ -1,0 +1,149 @@
+MACTION
+{
+A1 $ V < generate > A < straight-line > N < motion > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < link > $
+PP2 $ V < expand > A < x > N < parallelogram > $
+PP3 $ V < contract > A < x > N < parallelogram > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < link > $
+}
+
+MORGAN
+{
+
+O1 $ zero degree of freedom $
+O2 $ one degree of freedom $
+O3 $ ratio of length $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ revolute pair $
+P4 $ frame $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P4  P3 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O2  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O3  P1  P2  P3 >
+}
+
+
+FUNCTION
+
+$
+This mechanism converts rotary to straight-line motion without the need for guides.
+$
+
+
+STRUCTURE
+
+$
+This is an eight bar single degree of freedom planar mechanism. In this mechanism six links form two 4-bar mechanisms, which have a common crank and ground link. A dyad is added to this six bar mechanism, which makes a parallelogram with coupler links of two 4-bars, to get the actual 8-bar mechanism
+$
+
+
+BEHAVIOUR
+
+$
+The Peaucellier cell was the first solution to the classical problem of generating a straight line with a linkage. Within the physical limits of the motion, AC X AF remains constant. The curves described by C and F are, therefore, inverse; if C describes a circle that goes through A, then F will describe a circle of infinite radius- a straight line , perpendicular to AB. The only requirements are that: AB = BC; AD = AE; and CD, DF, FE, EC be equal. The linkage can be used to generate circular arcs of large radius by locating A outside the circular path of C. 
+$
+
+
+PICTURE
+
+{
+ADB/SLG/02.PEAUCELLIER/peaucellier.jpg		$ Peaucellier Mechanism $
+}
+
+
+CLIP
+
+{
+ADB/SLG/02.PEAUCELLIER/peaucellier1.avi		$ Peaucellier Mechanism $
+ADB/SLG/02.PEAUCELLIER/peaucellier2.avi		$ Peaucellier Mechanism $
+}
+
+SUMMARY
+$
+This mechanism generates an approximate straight line motion  in the following steps:
+
+Link BC is connected to the frame by a revolute pair (Structure). Link BC is made to rotate partially (Physical Phenomenon) by applying a torque to it (Input), activating Newtonian Laws of Motion (Physical Effect). This partial rotation occurs as there exists the zero degree of freedom of motion in the direction of motion (Organ)
+
+All the links in this mechanism are connected to each other by revolute joints (Structure) and the requirements are that AB = BC; AD = AE; and CD, DF, FE, EC be equal (Structure). The rotation of Link BC (Input) activates Newtonian Laws of motion (Physical Effect) resulting in the expansion of ADFE / contraction of CDEF (Physical Phenomenon) made possible due to ratio of lengths of the links (Organ)
+
+All the links in this mechanism are connected to each other by revolute joints (Structure) and the requirements are that AB = BC; AD = AE; and CD, DF, FE, EC be equal (Structure). The rotation of Link BC (Input) activates Newtonian Laws of motion (Physical Effect) resulting in the contraction of ADFE / expansion of CDEF (Physical Phenomenon) made possible due to ratio of lengths of the links (Organ) and the single degree of freedom of motion of the links of the mechanism (Organ)
+$
+
+ACTION
+$
+ This mechanism generates straight line motion. 
+$
+STATE
+$
+From rest to Straight line motion 
+$
+
+PHYPHENOMENON
+$
+ Rotation of link BC. 
+ Expansion of ADFE / contraction of CDEF. 
+ Contraction of ADFE / expansion of CDEF. 
+$
+
+PHYEFFECT
+$
+ Newtonian laws of motion. 
+ Lever action.
+$
+
+INPUT
+$
+ Torque to input crank. 
+ The oscillation of Arm 1 .
+$
+
+ORGAN
+$
+zero degree of freedom of motion between the two bodies in the direction of motion .
+ratio of lengths of the links .
+single degree of freedom of motion between the links in the mechanism .
+$
+
+PARTS
+$
+ All the links are connected by revolute joints. 
+ The requirements are that AB = BC; AD = AE; and CD, DF, FE, EC be equal. 
+$

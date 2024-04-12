@@ -1,0 +1,162 @@
+MACTION
+{
+A1 $ V < absorb > N < shock > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ without compression to compression of fluid $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < piston > A < X > $
+PP2 $ V < compress > N < fluid > A < X > $
+PP3 $ V < store > N < energy > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newton’s second law of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Damping effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < piston > A < x > $
+I3 $ V < compress > N < fluid > A < x > $
+}
+
+MORGAN
+{
+O1 $ Piston has inertia $
+O2 $ Fluid is viscous $
+}
+
+MPART
+{
+P1 $ Piston $
+P2 $ Fluid $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O2 P2 >
+}
+FUNCTION
+
+$
+Viscous damper is used to absorb shock.
+$
+
+
+STRUCTURE
+
+$
+Viscous damper consists of one piston, one cylinder full of compressible fluid.
+$
+
+BEHAVIOUR
+
+$
+Viscous damper absorbs shocks by compressing fluid inside the piston.
+$
+
+PICTURE
+
+{
+ADB/SHOCK_ABSORBER/VISCOUS_DAMPER/01.bmp  $ 01.VISCOUS_DAMPER $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+Viscous damper is used to absorb shock. This can be described as; Piston (part) moves (physical phenomena). This is due to force applied on it (input) which activates Newton’s second law of motion (physical effect) and it requires piston has inertia (organ).
+
+Fluid (part) compresses (physical phenomena). This is due to movement of piston (input) which activates the effect no two bodies can occupy the same space at the same time (physical effect) and it requires that fluid is viscous (organ).
+
+Fluid (part) stores energy (physical phenomena). This is due to compression of fluid (input) which activates damping effect (physical effect) and it requires that fluid is viscous (organ).
+
+$
+
+ACTION
+
+$ 
+ To absorb shock
+$
+
+STATE
+
+$
+Without compression to compression of fluid
+$
+
+
+
+PHYPHENOMENON
+
+$
+Piston moves
+
+Fluid compresses
+ 
+Fluid stores energy
+$
+
+
+PHYEFFECT
+
+$
+Newton’s second law of motion
+
+No two bodies can occupy the same space at the same time
+
+Damping effect
+$
+
+
+INPUT
+
+$
+Force applied on piston
+
+Movement of piston
+
+Compression of fluid
+$
+
+
+ORGAN
+
+$
+Piston has inertia
+
+Fluid is viscous
+$
+
+
+
+PARTS
+$
+Piston
+
+Fluid
+$

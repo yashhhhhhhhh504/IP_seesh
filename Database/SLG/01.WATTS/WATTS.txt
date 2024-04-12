@@ -1,0 +1,158 @@
+MACTION
+{
+A1 $ V < generate > A < straight-line > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < oscillate > A < x > N < arm > $
+PP2 $ V < oscillate > A < x > N < arm > $
+PP3 $ V < describe > A < straight > N < line > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < oscillate > A < x > N < arm1 > $
+I3 $ V < x > A < combined > N < oscillation arm > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ connecting-link $
+O3 $ position of tracing point $
+
+}
+
+MPART
+{
+P1 $ arm $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ connecting-link $
+
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O2  P2  P1  P3 >
+< A1 IS1  OS1  CS1  PP3  PE1  I3  O3  P2  P4  P1 >
+
+}
+
+FUNCTION
+
+$
+
+This mechanism is known as a Simplified Watt's Linkage. This mechanism converts rotary to straight-line motion without the need for guides.
+$
+
+
+STRUCTURE
+
+$
+This is a simple four bar mechanism in which links are connected by only revolute pairs. Actually it is a rocker-rocker four-bar mechanism. The coupler link is the smallest link, which can make a complete revolution with respect to Arm 1 and Arm 2 as shown in the figure.
+$
+
+
+BEHAVIOUR
+
+$
+A simplified Watt's linkage generates an approximate straight line motion. If the two arms are of equal length, the tracing point describes a symmetrical figure 8 with an almost straight line throughout the stroke length. The straightest and longest stroke occurs when the connecting link length is about two thirds of the stroke, and arm length is 1.5 times the stroke length. Offset 'h', should equal half the connecting link length (a+b). If the arms are unequal, one branch of the figure 8 curve is straighter than the other. It is straightest when a/b equals Arm 2/Arm 1.
+$
+
+
+PICTURE
+
+{
+ADB/SLG/01.WATTS/watts1.jpg		$ 01.Watt's Linkage $
+ADB/SLG/01.WATTS/watts2.jpg		$ 02.Watt's Linkage $
+}
+
+
+CLIP
+
+{
+ADB/SLG/01.WATTS/watts.avi		$ Watt's Linkage $
+}
+
+SUMMARY
+$
+This mechanism generates an approximate straight line motion  in the following steps:
+
+Arm 1 is connected to the frame by a revolute pair (part). Arm 1 is made to oscillate (Physical Phenomenon) by applying a torque to it (Input), activating Newtonian Laws of Motion (Physical Effect). This oscillation occurs as there exists a single degree of freedom of motion in the direction of motion (Organ)
+
+Arm 1 is attached to one end of the connecting link by a revolute joint, while the other end forms a revolute pair with Arm 2 (part). The oscillation of Arm 1 (Input) activates Newtonian Laws of motion (Physical Effect) resulting in the oscillation of Arm 2 (Physical Phenomenon) made possible due to the connecting link (Organ)
+
+This combined oscillation (Input) activated by Newtonian Laws of Motion (Physical Effect) result in the tracing point on the connecting link describing an almost straight line along the entire stroke (Physical Phenomenon). This is due to the position of the tracing point (Organ) and the connecting link forms a revolute pair with the arms (part)
+$
+
+ACTION
+$
+ This mechanism generates an approximate straight line motion 
+$
+STATE
+$
+Rest to Straight-line motion 
+
+$
+PHYPHENOMENON
+$
+ The oscillation of Arm 1 
+
+ The oscillation of Arm 2 
+ 
+The tracing point on the connecting link describes a straight line 
+$
+
+PHYEFFECT
+$
+ Newtonian laws of motion 
+$
+
+INPUT
+$
+ A torque is applied to Arm 1 
+
+ The oscillation of Arm 1 
+
+combined oscillation
+$
+
+ORGAN
+$
+ one degree of freedom of motion between the two bodies in the direction of motion 
+ 
+presence of the connecting link
+ 
+ The proper positioning of the tracing point 
+$
+PARTS
+$
+ Arm 1 forms a revolute pair with the frame 
+ 
+ Arm 2 forms a revolute pair with the frame 
+ 
+the connecting link forms a revolute pair with the arms.
+$

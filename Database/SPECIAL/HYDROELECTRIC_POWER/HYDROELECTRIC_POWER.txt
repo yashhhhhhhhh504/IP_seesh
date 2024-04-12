@@ -1,0 +1,223 @@
+MACTION
+{
+A1 $ V < generate > N < electricity > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < turbine-blade > A < X > $
+PP2 $ V < rotate > N < shaft > A < X > $
+PP3 $ V < rotate > N < rotor > A < x > $
+PP4 $ V < generate > N < current > A < electric > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < flow > A < water > $
+I2 $ V < rotate > N < blade > A < x > $
+I3 $ V < rotate > N < shaft > A < x > $
+I4 $ V < rotate > N < rotor > A < x > $
+}
+
+MORGAN
+{
+O1 $ x $
+
+}
+
+MPART
+{
+P1 $ x $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+Worldwide, hydropower plants produce about 24 percent of the world's electricity and supply more than 1 billion people with power. The world's hydropower plants output a combined total of 675,000 megawatts, the energy equivalent of 3.6 billion barrels of oil, according to the national renewable energy laboratory. 
+$
+
+
+STRUCTURE
+
+$
+It consists of several components: Dam - Most hydropower plants rely on a dam that holds back water, creating a large reservoir. Often, this reservoir is used as a recreational lake, such as Lake Roosevelt at the Grand Coulee dam in Washington State, intake, turbine, generators, transformers, power lines and outflow.
+
+
+$
+BEHAVIOUR
+
+$
+The water in the reservoir is considered stored energy. When the gates open, the water flowing through the penstock becomes kinetic energy because it's in motion. The amount of electricity that is generated is determined by several factors. Two of those factors are the volume of water flow and the amount of hydraulic head. The head refers to the distance between the water surface and the turbines. As the head and flow increase, so does the electricity generated. The head is usually dependent upon the amount of water in the reservoir. 
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/HYDROELECTRIC_POWER/01.gif		$ HYDROELECTRIC POWER $
+}
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to generate electricity. This can be described as follows:
+
+The turbine blades (part) rotate (physical phenomenon). This is due to the flow of water (input), which activates Newtonian laws of motion (physical effect) and is necessary that the blades are free rotate (organ).
+
+The shaft (part) rotates (physical phenomenon). This is due to the rotation of the blades (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the shaft and the blades (organ).
+
+The rotor (part) rotates (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the shaft and the rotor (organ).
+
+The electric current (part) is generated (physical phenomenon). This is due to the rotation of the rotor within the stator (input), which activates the 
+
+$
+
+ACTION
+
+$ 
+ To generate electricity.
+$
+
+STATE
+
+$
+x
+
+$
+
+PHYPHENOMENON
+
+$
+The turbine blades rotate.
+
+The shaft rotates.
+
+The rotor rotates.
+
+The electric current is generated.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+$
+
+
+INPUT
+
+$
+The flow of water.
+
+The rotation of the blades.
+
+The rotation of the shaft.
+
+The rotation of the rotor within the stator.
+
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the blades are free rotate.
+
+Presence of zero degree of freedom between the shaft and the blades.
+
+Presence of zero degree of freedom between the shaft and the rotor.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+The turbine blades form a revolute pair with the frame.
+
+The shaft forms a revolute pair with the frame.
+
+The rotor forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

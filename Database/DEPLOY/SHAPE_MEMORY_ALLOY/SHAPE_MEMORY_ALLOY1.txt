@@ -1,0 +1,193 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < regain > N < shape > A < original > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < space > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ occupying less space to large space $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < fold > N < part > A < X > $
+PP2 $ V < unfold > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Heat transfer effect $
+PE2 $ Transformation effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < energy > A < Chemical > $
+I2 $ V < x > N < energy > A < Heat > $
+}
+
+MORGAN
+{
+O1 $ Presence of oxygen in the surrounding to assist the burning of the fuel $
+O2 $ Necessary that the required temperature for the transformation has been reached $
+}
+
+MPART
+{
+P1 $ Flame $
+P2 $ Shape memory alloy $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+FUNCTION
+
+
+$
+This alloy remembers its original shape even after is heated and its shape being changed.
+$
+
+
+
+STRUCTURE
+
+$
+It is material, which becomes flexible once heated. It has a unique property of remembering its original shape.
+
+$
+
+BEHAVIOUR
+
+$
+The material is heated using a flame and then it is twisted to a shape different from its original shape. Then it is cooled so that it gains its original shape.
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/SHAPE_MEMORY_ALLOY/01.gif  $ 01.shape memory alloy $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This can be used in situations where the material after some deformation has to regain its original shape and size.
+
+The folded material (part) is heated (physical phenomenon). This is due heat energy (input), which activates the heat transfer effect (physical effect) and it requires the presence of oxygen in the surrounding to assist the burning of the fuel (organ).
+
+The folded material (part) unfolds (physical phenomenon). This is due to the heating (input) of the material, which activates the transformation effect (physical effect) and is necessary that the required temperature for the transformation has been reached (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+ To regain its original shape.
+$
+
+STATE
+
+$
+The material is occupying less area.
+
+The material is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+The folded material, which is occupying less space, is heated.
+
+The folded material is unfolded and it occupies large area.
+ 
+$
+
+
+PHYEFFECT
+
+$
+Heat transfer effect.
+
+Transformation effect.
+
+$
+
+
+INPUT
+
+$
+Chemical energy of the fuel.
+
+Heat energy.
+$
+
+
+ORGAN
+
+$
+Presence of oxygen in the surrounding to assist the burning of the fuel.
+
+Necessary that the required temperature for the transformation has been reached.
+$
+
+
+
+PARTS
+$
+Flame.
+
+Shape memory alloy.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

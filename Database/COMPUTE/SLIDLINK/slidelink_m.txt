@@ -1,0 +1,67 @@
+MACTION
+{
+A1 $ V < perform > N < computation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < slide > N < link-x > A < input > $
+PP2 $ V < slide > N < link-y > A < input > $
+PP3 $ V < slide > N < link-z > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion. $
+PE2 $ No two bodies can occupy the same space at the same time. $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Force > A < x > $
+I2 $ V < x > N < Force > A < x > $
+I3 $ V < move > N < link-x > A < x > $
+I4 $ V < move > N < link-y > A < X > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the applied force is greater than the gravitational force.  $
+O2 $ Necessary that the applied force is greater than the gravitational force.  $
+O3 $ Necessary that the link z is hinged at the center of the link a.  $
+}
+
+MPART
+{
+P1 $ link x $
+P2 $ link y $
+P3 $ link z $
+P4 $ sliding pair $
+P5 $ guide ways $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I4 O4 P3 P4 P5 >
+
+
+}
+

@@ -1,0 +1,198 @@
+MACTION
+{
+A1 $ V < deploy increase > N < area > A < X > $
+A2 $ V < change close > N < area > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < slider > A < X > $
+PP2 $ V < rotate > N < links > A < intermediate > $
+PP3 $ V < move > N < links > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < slider > A < x > $
+I3 $ V < move > N < links > A < intermediate > $
+}
+
+MORGAN
+{
+O1 $ smooth sliding surface between the slider and the rod $
+O2 $ one degree of freedom between the links and the slider $
+O3 $ one degree of freedom between the links $
+}
+
+MPART
+{
+P1 $ slider $
+P2 $ cylindrical pair $
+P3 $ rod $
+P4 $ intermediate links $
+P5 $ revolute pair $
+P6 $ output links $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P4 P5 P6 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A2 IS1 OS1 CS1 PP3 PE2 I3 O3 P4 P5 P6 >
+}
+
+
+FUNCTION
+
+$
+This mechanism is a very good example of deployment mechanisms. This can be used to increase area.
+$
+
+
+STRUCTURE
+
+$
+This mechanism consists of a slider and a number of links. The slider can slide over a rod.
+$
+
+
+BEHAVIOUR
+
+$
+The input is given to the slider in the form movement. The links move due to the movement of the slider.
+$
+
+
+PICTURE
+{
+ADB/DEPLOY/UMBRELLA/01.JPG	$ Umbrella $
+}
+CLIP
+{
+}
+
+
+
+
+SUMMARY
+$
+This mechanism can be used to increase area. It can be interpreted as a change of state from small area to large area. This can be described as follows to 
+
+The slider (part) slides over the rod (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth sliding surface between the slider and the rod (organ).
+
+ The links (part) connected to the slider rotates (physical phenomenon). This is due to the movement of the slider (input) which activates the law “no two bodies can occupy the same space at the same time’ (physical effect) and requires the presence of one degree of freedom between the links and the slider (organ).
+
+The output links (part) moves rotates away from the rod (physical phenomenon). This is due to the movement of the links connected to the slider (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To increase area.
+$
+
+STATE
+
+$
+The mechanism has a small surface area.
+
+The mechanism has large surface area.
+
+$
+
+PHYPHENOMENON
+
+$
+The slider slides over the rod.
+
+The links connected to the slider rotates.
+ 
+
+The output links moves rotates away from the rod.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+The movement of the slider.
+
+The movement of the links connected to the slider.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the slider and the rod.
+
+Presence of one degree of freedom between the links and the slider.
+
+Presence of one degree of freedom between the links.
+
+
+$
+
+
+
+PARTS
+$
+The slider forms a cylindrical pair with the rod.
+
+The links forms a revolute pair with the slider.
+
+The output links forms a revolute pair with the intermediate links.
+
+
+
+$
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+SUMMARY
+$
+Using this device spherical objects can be sorted out based on their size. This can be described as follows:
+
+The spherical object (part) rolls down the slides, which are placed on the box having various compartments (physical phenomenon). This is due to the force applied on the object (input), which activates the Newtonian laws of motion (physical effect) and requires that slides are inclined (organ).
+
+The spherical objects (part) drop into different compartments based on their size (physical phenomenon). This is due to the gravitational force acting on the objects (input), which activates the gravitational effect (physical effect) and requires that the gap between the two slides increases (organ).
+$
+
+ACTION
+{
+$ 
+ Using this device spherical objects can be sorted out based on their size.
+$
+}
+STATE
+{
+$
+Absence of force applied on to the spherical objects.
+$
+Presence of force applied on to the spherical objects.
+$
+}
+PHYPHENOMENON
+{
+$
+The spherical object rolls down the diverging slides, which are placed on the box having various compartments.
+$
+The spherical objects drop into different compartments based on their size.
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Gravitational effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+The force applied on to the object.
+$
+The gravitational force acting on the objects and also due to the decreasing gap between the two slides.
+$
+
+$
+}
+
+ORGAN
+{
+$
+Requires that slides are inclined.
+$
+Requires that the gap between the two slides increases.
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The object forms a rolling pair with the slides.
+$
+
+$
+
+$
+
+$
+
+$
+}
+

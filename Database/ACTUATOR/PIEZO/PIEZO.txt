@@ -1,0 +1,245 @@
+
+
+MACTION
+{
+A1 $ V < actuate > N < mechanism > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < crystal shape > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed > N < crystal shape > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from original shape to deformed shape $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < change > N < shape > A < crystal > $
+PP2 $ V < actuate > N < mechanism > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Piezoelectric effect $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < voltage > A < x > $
+I2 $ V < change > N < shape > A < crystal > $
+}
+
+MORGAN
+{
+O1 $ crystal has piezoelectric properties $
+O2 $ change in shape is able to cause the displacement $
+}
+
+MPART
+{
+P1 $ Crystal $
+P2 $ Mechanism $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+FUNCTION
+
+$
+Piezoelectric actuators are devices that produce a small displacement with a high force capability when voltage is applied. The vice-versa is also true, that is, piezoelectric materials have the ability to produce electrical charges in response to externally applied forces. 
+Piezoelectric actuators are used for many functions, including ultra-precise positioning, cancelling vibration, tool adjustment and control, micro-pumps, mirror positioning, wave generation, structural deformation, inspection systems, scanning microscopes and in the generation and handling of high forces or pressures in static or in dynamic situations. An example of a piezoelectric material in everyday life is the airbag sensor in your car. The material senses the force of an impact on the car and sends and electric charge deploying the airbag. 
+$
+
+
+STRUCTURE
+
+$
+Piezoelectric materials are crystalline solids whose asymmetric structures create an electric dipole moment in the crystal lattice, which is sensitive to both elastic strain and applied electrical field. Fig 02 shows the Piezo effect on the crystal structure of quartz. PZT (lead titanium-zirconate) materials are ferroelectric materials under the Curie temperature: the poling process gives the material its remnant polarization. During the poling operation, the material is subjected to a high electric field at the Curie temperature. If the material is subjected to a temperature that is greater than its Curie temperature, it is no longer piezoelectric. It can be re-poled to be piezoelectric again in some conditions.
+Some piezoelectric materials are: 
+(1) Quartz 
+(2) Barium titanate 
+(3) Cadmium sulphide 
+(4) Lead zirconium titanate (PZT) 
+(5) Piezoelectric polymers (PVDF, PVC)
+
+Piezoelectric actuators are composed of a multilayer piezoelectric element and a mechanical preloading mechanism. 
+
+These actuators can be built from wide ranging piezoelectric materials, depending on the various end uses. 
+$
+
+
+BEHAVIOUR
+
+$
+Piezoelectric materials have two crystalline configurations. One structure is organized, while the other is not. Organization of the structure has to do with polarization of the molecules that make up the material. Hence, a non-polarized material has a non-organized structure, while the polarized material is organized. To polarize the material, voltage or electricity must be conducted through it. As a result of this electrical force, the molecules of the material reorient themselves, thus changing the shape of the material; this is called electrostriction. 
+The Fig 02 shows this process at a microscopic level. Change in shape can produce mechanical force, as well as changes in physical characteristics. Fig 02 (A) depicts how electricity is produced with input of shape change, while Fig 02 (B) depicts how shape change is produced with input of electricity. Similarly, if mechanical force is exerted on the material to change its shape, an electrical field is produced; this is called piezoelectric effect. Electrostriction and piezoelectric effect are opposite phenomena. 
+
+Piezoelectric elements have the advantages that they are small, light, and the generating force is strong. However, it has the disadvantage that the displacement range is small. To compensate for this weak point, the displacement is magnified with leverage. The piezoelectric actuator with displacement extension mechanism is shown in Figure 1. 
+
+The key features of piezoelectric actuators are that 
+(1) They are compact and lightweight, 
+(2) They are present in the solid state, 
+(3) They have 50% conversion efficiency, 
+(4) They have a fast response, 
+(5) The displacement is proportional to applied voltage, 
+(6) The force is large, 
+(7) They operate over a broad temperature range, 
+(8) They have excellent stability.
+
+All piezoelectric ceramics exhibit hysteresis. The magnitude of hysteresis depends on the type of ceramics and can vary from 3% to 20%.  Hard materials such as BM400 have lower hysteresis (3-5%) where as softer materials such as BM532 have hysteresis in the range of 15-20%. The linearity of response also shows similar tendencies. Figure 04 shows typical hysteresis characteristics for the two materials. 
+The stress-strain characteristics for the two materials are as shown in Figure 05. The slope of the stress-strain characteristic is the compliance of the piezoelectric material under the applied field.
+
+Multilayer Actuators (MLAs), derived from the high capacitor technology,have been on the market since 1988 (Figure 06). Because MLAs are easy to use, they have been increasingly used in various applications. The required excitation voltage of 200 Volts is well adapted to modern electronic.
+
+
+$
+
+
+PICTURE
+
+{
+ADB/ACTUATOR/PIEZO/piezoeffect.jpg	$ 01. Piezoelectric Effect $
+ADB/ACTUATOR/PIEZO/structure01.jpg	$ 02. Piezo structure	$
+ADB/ACTUATOR/PIEZO/structure02.jpg	$ 03. Piezo structure	$
+ADB/ACTUATOR/PIEZO/hysteresis.jpg	$ 04. Hysteresis	$
+ADB/ACTUATOR/PIEZO/forcechara.jpg	$ 05. Force Chara	$
+ADB/ACTUATOR/PIEZO/MLA.jpg		$ 06. MultiLayer Actuator $
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+These devices are used to provide actuation. This can be interpreted as a change of state from rest to displacement. This can be described as follows:
+
+The crystal (part) changes in shape (physical phenomenon). This is due to the application of the voltage (input), which activates the piezoelectric effect (physical effect) and is necessary that crystal has piezoelectric properties (organ).
+
+The mechanism (part) is actuated (physical phenomenon). This is due to the change in the shape of the crystal (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that change in shape is able to cause the displacement necessary to actuate the mechanism (organ).
+
+
+$
+
+ACTION
+
+$ 
+To actuate mechanism. 
+$
+
+STATE
+
+$
+The crystal has original shape.
+
+The crystal has deformed shape.
+
+$
+
+PHYPHENOMENON
+
+$
+The crystal changes in shape.
+
+The mechanism is actuated.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Piezoelectric effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The application of the voltage.
+
+The change in the shape of the crystal.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that crystal has piezoelectric properties.
+
+Necessary that change in shape is able to cause the displacement necessary to actuate the mechanism.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Crystal.
+
+Mechanism.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

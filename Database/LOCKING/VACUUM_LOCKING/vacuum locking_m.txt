@@ -1,0 +1,84 @@
+MACTION
+{
+A1 $ V < operate > N < door > A < X > $
+A2 $ V < change > N < area > A < X > $
+A3 $ V < increase > N < area > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < closed > N < door > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < open > N < door > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from closed to open door $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Bernoulli’s effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < Pressure-difference > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the pressure difference is sufficient to cause the opening of the door $
+}
+
+MPART
+{
+P1 $ Door of the chamber $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A3 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

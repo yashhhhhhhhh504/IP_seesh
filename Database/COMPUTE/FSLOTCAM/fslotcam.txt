@@ -1,0 +1,196 @@
+
+MACTION
+{
+A1 $ V < perform > N < computation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < slide > N < slide-x > A < X > $
+PP2 $ V < rotate > N < link-1 > A < X > $
+PP3 $ V < slide > N < joint > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < x > $
+I2 $ V < x > N < motion > A < Sliding > $
+I3 $ V < x > N < movement link1 link2 > A < x > $
+}
+
+MORGAN
+{
+O1 $ frictionless surface between the slide and the guide ways $
+O2 $ hinged joint between the link 1 and the slide x $
+O3 $ slide y slides in the guide ways provided for it $
+}
+
+MPART
+{
+P1 $ slide $
+P2 $ guide ways $
+P3 $ sliding pair $
+P4 $ link $
+P5 $ revolute pair $
+P6 $ joint of the links $
+P7 $ slot $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 p6 P7 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Analog computing mechanisms are capable of almost instantaneous response to minute variations in input. This functional generator, called a function-slot cam, is capable of performing complex functions involving one variable.
+$
+
+
+STRUCTURE
+
+$
+This functional generator makes use of a slotted cam, the profile of the slot corresponding to the function y = f(x). Two sliders 'x' and 'y' reciprocate in two slots. They are connected to each other by two links. These two links have a pin at their joint that slides in the slot of the cam.
+$
+
+
+BEHAVIOUR
+
+$
+AS seen from the figure and the animation, for each position of 'x', there is a corresponding position for 'y'. The position of 'y' can also be defined theoretically by the equation y = f(x). 
+$
+
+
+PICTURE
+
+{
+ADB/COMPUTE/FSLOTCAM/FSLOTCAM.jpg	$ Function Slot Cam	$
+}
+
+
+CLIP
+{
+ADB/COMPUTE/FSLOTCAM/FSLOTCAM.avi	$ Function Slot Cam	$
+}
+SUMMARY
+$
+This device can be used to perform computation. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows: 
+
+The slide x (part) slides in the guide ways (physical phenomenon). This is due to the force (input) applied on it which activates the Newtonian laws of motion (physical effect) and requires the presence of frictionless surface between the slide and the guide ways (organ).
+
+The link 1 (part) rotates with the respect the slide x (physical phenomenon). This is due to the sliding motion of slide x (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a hinged joint between the link 1 and the slide x (organ).
+
+The joint (part) between the links 1 and 2 slides in the slot which follows the curve y=f(x) (physical phenomenon). This is due to the movement of the links 1 and 2 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the slide y slides in the guide ways provided for it (organ).
+
+ 
+$
+
+ACTION
+
+$ 
+ To perform computation.
+$
+
+STATE
+
+$
+The joint is at rest.
+
+The joint slides in the slot that follows the curve y=f(x).
+
+
+$
+
+PHYPHENOMENON
+
+$
+The slide x slides in the guide ways.
+
+The link 1 rotates with the respect the slide x.
+ 
+The joint between the links 1 and 2 slides in the slot which follows the curve y=f(x).
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+Sliding motion of slide x.
+
+The movement of the links 1 and 2.
+
+$
+
+
+ORGAN
+
+$
+Presence of frictionless surface between the slide and the guide ways.
+
+Presence of a hinged joint between the link 1 and the slide x.
+
+
+Necessary that the slide y slides in the guide ways provided for it.
+
+$
+
+
+
+PARTS
+$
+The slide x forms a sliding pair with the guide ways.
+
+The link 1 forms a revolute pair with the slide x.
+
+The joint of the links 1 and 2 forms a sliding pair with the slot that follows the curve y = f(x).
+
+
+
+
+
+
+$
+

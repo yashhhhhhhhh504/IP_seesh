@@ -1,0 +1,103 @@
+
+
+MACTION
+{
+A1 $ V < reach > N < positions > A < different > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < initial > N < position > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < final > N < position > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from initial position to final position $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < X > $
+PP2 $ V < rotate > N < link > A < partially > $
+PP3 $ V < oscillate > N < link > A < x > $
+PP4 $ V < rotate > N < link > A < completely > $
+PP5 $ V < oscillate > N < link > A < X > $
+PP6 $ V < rotate > N < link > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < shaft > A < input > $
+I3 $ V < rotate > N < shaft > A < input > $
+I4 $ V < rotate > N < shaft > A < input > $
+I5 $ V < rotate > N < shaft > A < input > $
+I6 $ V < rotate > N < shaft > A < input > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom in the direction of motion $
+O2 $ zero degree of freedom between the shaft and the link C and also the presence of one degree of freedom between link C and the link B $
+O3 $ zero degree of freedom between the input shaft the link D $
+O4 $ zero degree of freedom between the link E and input shaft $
+O5 $ zero degree of freedom between the link F and the input shaft $
+O6 $ zero degree of freedom between the link G and input shaft $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ revolute pair $
+P3 $ fixed link $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P2 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P2 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P1 P2 >
+< A1 IS1 OS1 CS1 PP6 PE1 I6 O6 P1 P2 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

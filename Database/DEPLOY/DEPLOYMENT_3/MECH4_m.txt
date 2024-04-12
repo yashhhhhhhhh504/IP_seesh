@@ -1,0 +1,77 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < overlap > A < x > N < plates > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < move > A < x > N < plates > $
+} 
+MCHANGESTATE
+{
+CS1 $ from overlapping plates to separated plates $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < pull > N < rope > A < X > $
+PP2 $ V < move > N < plates > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < rope > A < x > $
+}
+
+MORGAN
+{
+O1 $ necessary that the force applied on it sufficient to cause the motion $
+O2 $ necessary that the rope passes through the plates $
+}
+
+MPART
+{
+P1 $ rope $
+P2 $ sliding pair $
+P3 $ plates $
+P4 $ sliding pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P3 P4  >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

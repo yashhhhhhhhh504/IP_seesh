@@ -1,0 +1,202 @@
+MACTION
+{
+A1 $ V < generate > A < intermittent > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < small angular > N  < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to small angular motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < driver-wheel > $
+PP2 $ V < reduce > A < X > N < friction > $
+PP3 $ V < transfer > A < X > N < motion > $
+PP4 $ V < change > A < X > N < direction > $
+PP5 $ V < rotate > A < X > N < geneva-wheel > $
+PP6 $ V < position > A < X > N < slot > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < roller > $
+I3 $ V < rotate > A < X > N < driver-wheel > $
+I4 $ V < allow > A < radial > N < movement > $
+I5 $ V < provide > A < angular > N < rotation > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom of motion in direction of motion $
+O2 $ contact : roller geneva $
+O3 $ roller-slot interface $
+O4 $ zero degree of freedom of motion $ 
+O5 $ spherical shape $
+O6 $ ratio of diameters $
+}
+
+MPART
+{
+P1 $ driver-wheel $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ roller $
+P5 $ geneva $
+P6 $ driver-wheel axis $
+P7 $ geneva axis $
+P8 $ right angle $
+P9 $ sliding pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P1  P4  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O3  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O4  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP4  PE1  I3  O5  P6  P7  P8 >
+< A1 IS1  OS1  CS1  PP5  PE3  I3  O4  P4  P5  P9 >
+< A1 IS1  OS1  CS1  PP5  PE3  I3  O4  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP6  PE1  I5  O6  P2  P5  P3 >
+}
+
+FUNCTION
+
+$
+This mechanism provides intermittent motion between two shafts at right angles to each other.
+$
+
+
+STRUCTURE
+
+$
+The driver wheel consists of a handle for turning and an arm that fits into the slot of the driven wheel. Alternatively, the driver wheel can also be driven by a motor. The driven wheel's structure is similar to that of a spherical bowl, with four slots cut into it at right angles to each other. The axis of the geneva drive is perpendicular to that of the input drive.
+$
+
+
+BEHAVIOUR
+
+$
+The driver rotates continuously and during each rotation, the arm enters a slot of the driven wheel, providing it rotation as it does so. Thus there is a duration of dwell for exactly 180º of driver rotation. The animation illustrates the working of a spherical geneva.
+$
+
+
+PICTURE
+
+{
+ADB/GENEVA/SPHERICAL/SPHERICAL.JPG		$ Spherical Geneva	$
+}
+
+
+CLIP
+
+{
+ADB/GENEVA/SPHERICAL/SPHERICAL.mpeg		$ Spherical Geneva	$
+}
+
+SUMMARY
+$
+This mechanism provides intermittent motion between two shafts at right angles to each other. This can also be interpreted as a change of state from rest to small angular rotation. This can be described as follows:
+
+The driver wheel (part) rotates (physical phenomenon). This is due to torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the driver wheel (organ).
+
+The arm of the driving wheel (part) slides in the slot of the output Geneva (physical phenomenon). This is due to the rotation of the driver wheel (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the slot and the arm (organ).
+
+The output Geneva (part) rotates in the horizontal plane through a small angle (physical phenomenon). This is due to the movement of the arm (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the force applied by the arm is sufficient enough to overcome the inertial of output Geneva (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To provide intermittent motion between two shafts at right angles to each other.
+$
+
+STATE
+
+$
+The output Geneva is at rest.
+
+The output Geneva rotates through a small angle.
+
+$
+
+PHYPHENOMENON
+
+$
+The driver wheel rotates.
+
+The arm of the driving wheel slides in the slot of the output Geneva.
+ 
+The output Geneva rotates in the horizontal plane through a small angle.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Torque applied by the input shaft.
+
+The rotation of the driver wheel.
+
+The movement of the arm.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the driver wheel.
+
+Presence of a smooth surface between the slot and the arm.
+
+Necessary that the force applied by the arm is sufficient enough to overcome the inertial of output Geneva.
+
+
+$
+
+
+
+PARTS
+$
+The driver wheel forms a revolute pair with the frame.
+
+ The arm of the driver wheel forms a sliding pair with the slot of the output Geneva.
+
+The output Geneva forms a revolute pair with the frame.
+
+
+$
+
+
+

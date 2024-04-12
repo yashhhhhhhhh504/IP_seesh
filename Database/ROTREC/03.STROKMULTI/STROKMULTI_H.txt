@@ -1,0 +1,66 @@
+3 GEAR STROKE MULTIPLIER
+
+ACTION
+$
+This device converts rotary motion to reciprocating motion, while multipling the input stroke
+$
+
+
+STUCTURE1
+$
+Input Gear 1 forms a revolute pair with the frame
+Input Gear 1 forms a gear pair with Gear 2
+Gear 2 forms a gear pair with Gear 3
+Link 4 forms revolute pairs with gears 1, 2 and 3
+Link 5 forms a revolute pair with the frame
+Link 5 forms a revolute pair with Gear 2
+Link 6 forms a revolute pair with Gear 3
+Link 6 forms a revolute pair with the piston
+The piston forms a prismatic pair with the frame
+$
+
+
+
+PHYPHENOMENON
+$
+Rotation of input Gear 1 (constant)
+a. Rotation of Gear 2
+b. Oscillation of Link 4
+c. Rotation of Gear 3
+d. Oscillation of Link 5
+e. Oscillation of Link 6
+f. Reciprocation of Piston
+$
+
+
+ORGAN
+$
+a. Interface between Gear 1 / Gear 2
+b. Eccentricity of Link 4 on Gear 2
+c. Interface between Gear 2 / Gear 3
+d. Eccentricity of Link 4 on Gear 2
+e. Eccentricity of Link 6 on Gear 3
+f. Slot in the frame
+$
+
+
+INPUT
+$
+a. Torque to input Gear 1
+b. Torque to Gear 2
+c. Torque to Gear 2
+d. Torque to Gear 2 and eccentricity of Link 4 on Gear 2
+e. Torque to Gear 3 and eccentricity of Link 6 on Gear 3
+f. Force provided by Link 6
+$
+
+
+PHYEFFECT
+$
+a. Force
+b. Lever action
+c. Force
+d. Lever action
+e. Lever action
+f. Force
+$

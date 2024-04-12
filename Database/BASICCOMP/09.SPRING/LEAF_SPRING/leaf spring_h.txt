@@ -1,0 +1,76 @@
+SUMMARY
+$
+This can be used to provide support. This can be described as a change of state from original form to deformed form. This can be described as follows:
+
+The spring (part) deforms (physical phenomenon). This is due to the load applied on it (input), which activates the hooks law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The spring (part) restores to its original form (physical phenomenon). This is due to the removal of load (input), which activates the hooks law (physical effect) and is necessary that the load applied is within the elastic limit of the material (organ).
+$
+
+ACTION
+
+$ 
+ To store recoverable form of energy.
+$
+
+STATE
+
+$
+The spring is deformed.
+
+The spring regains its original shape and size.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring deforms in the shape. 
+
+The spring regains its original shape and thus does some work.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+The load applied on it.
+
+Removal of load.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spring has some stiffness.
+
+Necessary that the load applied is within the elastic limit of the material.
+
+$
+
+
+
+PARTS
+$
+The ends of the spring are fixed to the frame.
+
+$
+
+
+
+
+
+

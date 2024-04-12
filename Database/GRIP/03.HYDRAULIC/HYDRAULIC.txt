@@ -1,0 +1,170 @@
+MACTION
+{
+A1 $ V < hold deploy > A < x >  N < object > $
+A2 $ V < release > A < x > N < object > $
+}
+MINPUTSTATE
+{	
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < outward > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < outward > N  < rotation > $
+OS2 $ V < x > A < inward > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to outward rotation $
+CS2 $ from outward rotation to inward rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < piston >  A < outward > $
+PP2 $ V < move > N < jaw > A < apart > $
+PP3 $ V < move > N < piston > A < inward > $
+PP4 $ V < move > N < jaw > A < close > $
+}
+
+MPHYEFFECT
+{
+PE1 $ no two bodies can occupy the same space at the same time $
+PE2 $ lever effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < hydraulic > N < pressure > $
+I2 $ V < move > N < piston > A < outward > $
+I3 $ V < move > N < piston > A < inward > $
+}
+
+MORGAN
+{
+O1 $ viscosity of the liquid $
+O2 $ eccentricity $
+}
+
+MPART
+{
+P1 $ cylinder $
+P2 $ piston $
+P3 $ cylindrical pair $
+P4 $ jaw $
+P5 $ revolute pair $
+P6 $ fixed pair $
+}
+LINK
+{
+< A1  IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1  IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P4  P5 >
+< A2  IS2  OS2  CS2  PP3  PE1  I1  O1  P1  P2  P3 >
+< A2  IS2  OS2  CS2  PP4  PE2  I3  O2  P2  P4  P5 >
+}
+
+FUNCTION
+
+$
+This device is used to grasp and release objects. The objects that this mechanism can hold depend on the shape of the jaws, which may be altered to suit the requirements. This device consists of only one movable jaw. 
+$
+
+
+STRUCTURE
+
+$
+As shown in the figure, this device comprises of only 4 links. Link 1 is a base plate. Link 2 is a hydraulic or pneumatic cylinder and link 3 is a piston, which moves in the  cylinder. Its one end is connected to the movable jaw (link 4). Link 4 is hinged to the base plate.
+$
+
+
+BEHAVIOUR
+
+$
+The device has one fixed jaw. The piston (link 3) is actuated by hydraulic or pneumatic pressure. The piston reciprocates in the cylinder and it rotates the movable jaw (link 4) about the hinge where it is connected to the base plate. The movable jaw moves closer to the fixed jaw to grasp objects and it acts vice-versa to release the objects.
+$
+
+
+PICTURE
+
+{
+ADB/GRIP/03.HYDRAULIC/hydraulic.jpg	$ Hydraulic Gripper $
+}
+
+
+CLIP
+
+{
+ADB/GRIP/03.HYDRAULIC/hydraulic.avi	$ Hydraulic Gripper $
+}
+VERB
+$
+Grip
+$
+
+SUMMARY
+$
+This mechanism can be used to hold and release objects. This mechanism can be described as follows:
+
+The movable jaw (part) rotates about the hinge thus moving away from the fixed jaw (physical phenomenon). This is due to the outward movement of the piston of the hydraulic actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the cylinder of the hydraulic actuator to be fixed (organ). 
+
+The movable jaw (part) rotates about the hinge thus moving towards the fixed jaw (physical phenomenon). This is due to the inward movement of the piston of the hydraulic actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the cylinder of the hydraulic actuator to be fixed (organ).
+$
+
+
+
+
+ACTION
+$
+ 
+ Using this mechanism objects can be grasped and released as and when required.
+
+$
+STATE
+$
+
+Absence of force at the piston in the cylinder of the actuator.
+
+Presence of force at the piston in the cylinder of the actuator
+
+$
+PHYPHENOMENON
+$
+
+The rotation of the movable jaw away from the fixed jaw.
+
+The rotation of the movable jaw towards the fixed jaw
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+The outward movement of the piston of the hydraulic actuator.
+
+The inward movement of the piston of the hydraulic actuator.
+
+$
+
+ORGAN
+$
+
+Requirement of the cylinder of the hydraulic actuator to be fixed.
+
+$
+
+PARTS
+$
+
+The piston forms a sliding pair with the cylinder of the actuator.
+
+The movable jaw forms revolute pair with the base plate.
+
+$
+
+

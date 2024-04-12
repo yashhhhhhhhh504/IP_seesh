@@ -1,0 +1,198 @@
+MACTION
+{
+A1 $ V < cut > A < X > N < material > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N  < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to reciprocating motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < gear > $
+PP2 $ V < revolve > A < X > N < pin > $
+PP3 $ V < reciprocate > A < X > N < blade > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Newtonian laws of motion $
+PE3 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < supply > A < electrical > N < energy > $
+I2 $ V < rotate > A < X > N < gear > $
+I3 $ V < revolve > A < X > N < pin > $ 
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the bevel gear $
+O2 $ eccentricity of the pin $
+O3 $ zero degree of freedom in the direction of motion $
+}
+
+MPART
+{
+P1 $ motor-shaft $
+P2 $ gear $
+P3 $ fixed pair $
+P4 $ pin $
+P5 $ drive-shaft $
+P6 $ sliding pair $
+P7 $ channel $
+P8 $ prismatic pair $
+P9 $ blade $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P4  P3 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O3  P4  P5  P6 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O3  P5  P7  P8 >
+< A1 IS1  OS1  CS1  PP3  PE3  I3  O3  P5  P9  P3 >
+}
+
+FUNCTION
+
+$
+The saber saw has two distinct qualities - portability and versatility. This lightweight machine can be accurately guided with just one hand. It is rugged enough to cut through hardwood planks, yet responsive enough to perform intricate cuts.
+$
+
+
+STRUCTURE
+
+$
+The saber saw employs an electric motor for actuation. The motor is connected to a helical gear, which is meshed with an eccentric pin. The eccentric pin on the helical gear nestles in the horizontal section of the T-shaped drive shaft (Fig 02). The shaft is free to slide in a well-lubricated channel.
+$
+
+
+BEHAVIOUR
+
+$
+When the power is switched on, the motor rotates the helical gear, which in turn rotates the eccentric pin. As the eccentric pin revolves (Fig 03), it pushes the drive shaft and the blade up and down in ½ inch strokes. This upward and downward stroke of the blade causes the cutting action to take place.
+$
+
+
+PICTURE
+
+{
+ADB/CUTTING/SABERSAW/sabersaw01.jpg		$ Saber saw	$
+ADB/CUTTING/SABERSAW/sabersaw.gif		$ Saber saw	$
+ADB/CUTTING/SABERSAW/sabersaw02.jpg		$ Saber saw	$
+ADB/CUTTING/SABERSAW/sabersaw03.jpg		$ Saber saw parts	$
+ADB/CUTTING/SABERSAW/motion.jpg			$ Saber saw motion	$
+ADB/CUTTING/SABERSAW/sawblade.jpg		$ Saber saw blades	$
+}
+
+
+CLIP
+
+{
+ADB/CUTTING/SABERSAW/sabersaw.avi		$ Saber Saw	$
+}
+SUMMARY
+$
+This mechanism can be used for cutting materials. This mechanism can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The bevel gear (part) mounted on the input shaft rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the bevel gear (organ).
+
+
+The pin (part) mounted on the bevel gear rotates (physical phenomenon). This is due to the rotation of the bevel gear (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the bevel gear and pin (organ).
+
+The blade (part) reciprocates in the vertical direction (physical phenomenon). This is due to the rotation of the pin (input), which activates the law “no two bodies can occupy the same space at the same time,” (physical effect) and is necessary that the pin slides in between the two parallel plates (organ).
+
+$
+
+ACTION
+
+$ 
+ To cut material.
+
+$
+STATE
+$
+
+The blade is at rest.
+
+The blade is reciprocating in the vertical direction.
+
+$
+PHYPHENOMENON
+$
+
+The bevel gear mounted on the input shaft rotates.
+
+The pin mounted on the bevel gear rotates.
+
+
+The blade reciprocates in the vertical direction.
+
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Torque applied by the input shaft.
+
+Rotation of the bevel gear.
+
+Rotation of the pin.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the bevel gear.
+
+Presence of zero degree of freedom between the bevel gear and pin.
+
+Necessary that the pin slides in between the two parallel plates.
+
+
+
+
+$
+
+PARTS
+$
+
+The bevel gear forms a revolute pair with the frame.
+
+The pin forms a fixed pair with the bevel gear.
+
+The pin forms a sliding pair with the material.
+
+
+
+
+
+$
+
+

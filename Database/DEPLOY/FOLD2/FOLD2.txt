@@ -1,0 +1,173 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < tough > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < apply > N < force > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < Push > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the links have one degree of freedom between them $
+
+}
+
+MPART
+{
+P1 $ Links $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+}
+
+FUNCTION
+
+$
+This mechanism can be used as a deployment structure.
+$
+
+
+STRUCTURE
+
+$
+It consists of two plates at the end of the long structure, which consists of a number of links.
+
+$
+BEHAVIOUR
+
+$
+The force is applied on to one side of the mechanism, which will compress the structure in between the plates.
+$
+PICTURE
+{
+ADB/DEPLOY/FOLD2/01.JPG		$ 01.Fold $
+ADB/DEPLOY/FOLD2/02.JPG		$ 02.Top View $
+}
+CLIP
+{
+}
+SUMMARY
+$
+This mechanism can be used as a deployment mechanism.
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The mechanism is occupying less area.
+
+The mechanism is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Apply force at the ends of the structure.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Push force.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the links have one degree of freedom between them.
+
+$
+
+
+
+PARTS
+$
+Links that form the structure in between the end plates.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

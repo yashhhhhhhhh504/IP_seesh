@@ -1,0 +1,87 @@
+
+SUMMARY
+$
+Pleated lanterns are easy to store when they are not in use. In collapsed state they occupy smaller space and also their damage possibility comes down.
+The folds in a paper make it possible. The way to collapse is as follows,
+
+Pleated paper lantern (part) gets collapsed (physical phenomenon). This is due to force applied at the on end (input) of it, which actuates Newtonian laws of motion (physical effect) and requires pleats in the paper and one degree of freedom (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+To collapse from deployed state.
+$
+
+STATE
+
+$
+Deployed state.
+Collapsed state.
+$
+
+
+
+PHYPHENOMENON
+
+$
+Pleated paper lantern gets collapsed.
+$
+
+
+PHYEFFECT
+
+$
+
+Newtonian laws of motion
+$
+
+
+INPUT
+
+$
+
+Force applied at the on end
+
+
+
+$
+
+
+ORGAN
+
+$
+Pleats in the paper and one degree of freedom.
+
+$
+
+
+
+PARTS
+$
+
+Pleated-paper-lantern
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

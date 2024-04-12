@@ -1,0 +1,177 @@
+MACTION
+{
+A1 $ V < expand > A < x > N  < x > $
+A2 $ V < contract > A < x > N  < x > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+IS2 $ V < x > A < large > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large  > N < area > $
+OS2 $ V < x > A < small > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+CS2 $ from large area to small area $
+}
+
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link > A < apart > $
+PP2 $ V < increase > N < distance > A < x > $
+PP3 $ V < slide > N < member > A < x > $
+PP5 $ V < move > N < link > A < together > $
+PP6 $ V < decrease > N < distance > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < X > $
+I2 $ V < move > N < link > A < apart > $
+I3 $ V < move > N < link > A < together > $
+}
+
+MORGAN
+{
+O1 $ empty space $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ link $
+P4 $ prismatic pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P2  P3  P4 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP2  PE1  I2  O1  P2  P3  P4 >
+< A1 IS1  OS1  CS1  PP3  PE1  I2  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1  PP3  PE1  I2  O1  P2  P3  P4 >
+
+< A2 IS2  OS2  CS2  PP5  PE1  I1  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2  PP5  PE1  I1  O1  P2  P3  P4 >
+< A2 IS2  OS2  CS2  PP6  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2  PP6  PE1  I3  O1  P2  P3  P4 >
+< A2 IS2  OS2  CS2  PP3  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2  PP3  PE1  I3  O1  P2  P3  P4 >
+}
+
+
+FUNCTION
+
+$
+Nested slides, as shown in the figure, can provide an extension for a machine tool table or other structures where accurate construction is necessary.
+$
+
+
+STRUCTURE
+
+$
+Nested slides consist of three or more links, which are connected by prismatic pairs.
+$
+
+
+BEHAVIOUR
+
+$
+Adjustments to obtain smooth sliding must be made first before the table surface is leveled. In both the cases, one link slides over the other. In nested tubes rotation between links also allowed.
+The animation shown alongside illustrates the working of nested slides.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/NESTED/nested.jpg		$ Nested Slides $
+}
+
+
+CLIP
+{
+ADB/DEPLOYMENT/NESTED/nested.avi		$ Nested Slides $
+}
+SUMMARY
+$
+The slide 2 (part) slides with respect to the slide 1 (physical phenomenon). This is due to the force applied on to the slide 2 (Input) which activates Newtonian laws of motion (physical effect) and requires the presence of smooth sliding surface between the slides 1 and 2 (organ).
+
+The slide 3 (part) slides with respect to the slide 2 (physical phenomenon). This is due to the movement of the slide 2 (input), which activates the inertia effect (physical effect) and requires the presence of a smooth sliding surface between the slides 2 and slides 3 (organ).
+
+$
+
+
+ACTION
+$
+ 
+ Using this mechanism extension can be provided for a machine tool table.
+
+$
+STATE
+$
+
+Absence of force at the slide 2. 
+
+Presence of force at the slide 2.
+
+$
+PHYPHENOMENON
+$
+
+The slide 2 slides with respect to the slide 1.
+
+The slide 3 slides with respect to the slide 2.
+ 
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Inertia effect.
+
+$
+
+INPUT
+$
+
+Force applied on to the slide 2.
+
+The movement of the slide 2.
+
+$
+
+ORGAN
+$
+
+Presence of smooth sliding surface between the slides 1 and 2.
+
+Presence of a smooth sliding surface between the slides 2 and slides 3.
+$
+
+PARTS
+$
+
+The slide 1 is fixed.
+
+The slide 2 forms a prismatic pair with the slide 1.
+
+The slide 3 forms a prismatic pair with the slide 2.
+$

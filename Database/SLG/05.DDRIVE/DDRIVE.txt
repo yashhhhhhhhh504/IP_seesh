@@ -1,0 +1,154 @@
+MACTION
+{
+A1 $ V < generate > A < approximate straight-line > N < motion > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N  < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate >  A < x > N < input-link > $
+PP2 $ V < oscillate > A < x > N < arm 2 > $
+PP3 $ V < describe > A < straight > N < line > $
+}
+
+MPHYEFFECT
+{
+PE1 $ newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < input-link > $
+I3 $ V < oscillate > A < x > N < arm2 > $
+}
+
+MORGAN
+{
+O1 $ one degree of freedom $
+O2 $ zero degree of freedom $
+O3 $ connecting link $
+O4 $ ratio of the links $
+}
+
+MPART
+{
+P1 $ input-link $
+P2 $ arm $
+P3 $ revolute pair $
+P4 $ output-link $
+P5 $ frame $
+}
+LINK
+{
+< A1 IS1  OS1  CS1  PP1  PE1  I1  O1  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O2  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP2  PE2  I2  O3  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O3  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O3  P2  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I2  O4  P1  P5  P3 >
+< A1 IS1  OS1  CS1  PP3  PE2  I3  O4  P2  P5  P3 >
+}
+
+FUNCTION
+
+$
+This mechanism converts rotary to straight-line motion without the need for guides.
+$
+
+
+STRUCTURE
+
+$
+This is a simple four bar planar mechanism in which revolute pairs connect all links. The input link can rotate through 360 degrees. 
+$
+
+
+BEHAVIOUR
+
+$
+A "D-drive" is the result when linkage arms are arranged as shown in figure 1. The output link point describes a path that resembles the letter 'D', so there is a straight part of its cycle. This motion is ideal for quick engagement and disengagement before and after a straight driving stroke. The animation illustrates this behaviour.
+$
+
+
+PICTURE
+
+{
+ADB/SLG/05.DDRIVE/Ddrive.jpg	$ D-drive Mechanism $
+}
+
+
+CLIP
+
+{
+ADB/SLG/05.DDRIVE/Ddrive.avi	$ D-drive Mechanism $
+}
+
+SUMMARY
+$
+This mechanism generates an approximate straight-line motion  as described below:
+
+The input link is connected to the frame by a revolute pair (Structure). The input link is made to rotate (Physical Phenomenon) by applying a torque to it (Input), activating Newtonian Laws of Motion (Physical Effect). This rotation occurs as there exists the zero degree of freedom of motion in the direction of motion (Organ)
+
+All the links in this mechanism are connected to each other by revolute joints (Structure). The rotation of the drive arm (Input) activates Newtonian Laws of motion (Physical Effect) resulting oscillatory motion of Arm 2 (Physical Phenomenon) made possible due to connecting link (Organ) and the single degree of freedom between the links (Organ).
+
+All the links in this mechanism are connected to each other by revolute joints (Structure). The rotation of arm 2 (Input) and the oscilation of arm 2 (Input) activates Newtonian Laws of motion (Physical Effect) straight-line motion of the stylus (Physical Phenomenon) made possible due to ratio of lengths of the links (Organ) and the single degree of freedom of motion of the links of the mechanism (Organ)
+$
+
+ACTION
+$
+ This mechanism generates straight line motion 
+$
+STATE
+$
+From rest to straight line motion
+$
+
+PHYPHENOMENON
+$
+ Rotation of input link 
+ Oscillation of Arm 2 
+ Straight-line motion of the stylus 
+$
+
+PHYEFFECT
+$
+ Newtonian laws of motion 
+ The basic law that no two bodies can occupy the same space at the same time 
+$
+
+INPUT
+$
+ Torque to input crank 
+ The rotation of input-link 
+ The oscillation of arm 2 
+$
+
+ORGAN
+$
+ zero degree of freedom of motion between the two bodies in the direction of motion 
+ connecting link 
+ ratio of lengths of the links 
+ single degree of freedom of motion between the links in the mechanism 
+$
+
+PARTS
+$
+ All the links are connected by revolute joints 
+$

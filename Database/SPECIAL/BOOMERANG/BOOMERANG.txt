@@ -1,0 +1,231 @@
+MACTION
+{
+A1 $ V < hunt > N < animal > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < move > A < forward > N < boomerang > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < move > A < backward > N < boomerang > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from motion in the forward direction to motion in the backward direction $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < throw > N < part > A < vertically > $
+PP2 $ V < lift > N < part > A < upward > $
+PP3 $ V < spin > N < part > A < x > $
+PP4 $ V < return > N < place > A < initial > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < projecting > $
+I2 $ V < x > N < difference > A < pressure > $
+I3 $ V < x > N < difference > A < pressure > $
+I4 $ V < x > N < force > A < uneven > $
+}
+
+MORGAN
+{
+O1 $ the projecting force enough to counter act the gravity force $
+O2 $ wings are have aerofoil design with a slight bend at the center $
+O3 $ the wings have a tilt and have an aerofoil design $
+O4 $ the boomerang is thrown in a proper manner $
+}
+
+MPART
+{
+P1 $ wing $
+P2 $ aerofoil design $
+P3 $ bend $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P1 P2 P3 >
+
+
+}
+
+FUNCTION
+
+$
+Boomerangs were initially used as hunting devices by the Aborigines of Australia. These sticks were usually used to hunt wild fowl and had been used for almost 12,000 years. The ancient hunters found that often when they flung the bent stick at their prey, it would fly back to them if it missed the bird. This was certainly very desirable, as they did not have to spend a great deal of time looking for lost weapons or having to create new ones. Boomeranging is now a sporting event with many competitions being held worldwide.
+$
+
+
+STRUCTURE
+
+$
+The returning boomerang has specialized components that make it behave a little differently than an ordinary bent stick. A classic banana-shaped boomerang is simply two wings joined together in a single unit. This is the key to its odd flight path. 
+The wings are set at a slight tilt and they have an airfoil design -- they are rounded on one side and flat on the other, just like an airplane wing.  As you can see in the diagram, the two wings are arranged so that the leading edges are facing in the same direction, like the blades of a propeller. At its heart, a boomerang is just a propeller that isn't attached to anything. 
+$
+
+
+BEHAVIOUR
+
+$
+When a boomerang is thrown, in addition to its spinning propeller motion, it also has the linear motion of the throw. 
+In the animation alongside, it can be observed that whichever wing is at the top of the spin at any one time moves in the same direction as the forward motion of the throw, while whichever wing is at the bottom of the spin moves in the opposite direction of the throw. This means that while the wing at the top is spinning at the same speed as the wing at the bottom, it is actually moving through the air at a higher rate of speed. The air particles move more quickly over the top of the wing than they do along the bottom of the wing, which creates a difference in air pressure. The wing has lift when it moves because there is greater pressure below it than above it. And the wing that is moving faster generates more lift.
+When one point of a spinning object, such as a wheel, an airplane propeller, or a boomerang, is pushed, the object doesn't react in the way expected. It reacts to the force as if it was pushed at a point 90 degrees from when where it was actually pushed. The same thing happens in a boomerang. The uneven force caused by the difference in speed between the two wings applies a constant force at the top of the spinning boomerang, which is actually felt at the leading side of the spin. So the boomerang constantly turns to the left or right. If it is thrown at the correct speed and angle, it travels in a circle and comes right back to the thrower!
+The five forces that act on a boomerang as it spins through the air are gravity, the force caused by the propeller motion, the force of the throw, the force caused by the uneven speed of the wings, and the force of any wind in the area.
+For a boomerang to actually travel in a circle and come back to its starting point, all five of these forces have to be balanced in just the right way. To accomplish this, a well-designed boomerang and a correct throw is required.
+The correct way to hold a boomerang is at a slight angle, say 15 to 20 degrees, (Fig 05) from the vertical. This will aim the force of the propeller up just enough to balance the force of gravity so that the boomerang isn't pulled to the ground before it can make a complete circle. The boomerang must be held as shown in Fig 05, with the V-point, called the elbow, pointing toward the thrower, and with the flat side facing out. Hold the boomerang at the end of the bottom wing, with a light pinch-like grip. To keep the wind from forcing the boomerang off course, the boomerang should be aimed at a point about 45 to 50 degrees to one side from the direction of the wind. The position of the boomerang should be adjusted depending on how much wind there is, as shown in the figure. Bring the boomerang back behind and snap it forward. It is very important to snap the wrist as the boomerang is released so that it has a good spin to it. Spin is the most important thing in a boomerang throw - it's what makes the boomerang travel in a curved path. 
+When the boomerang is thrown vertically, the uneven force on the top of the spin tilts the axis down gradually, so it comes back lying down horizontally, as a Frisbee would.
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/BOOMERANG/boomerang01.jpg		$ 01. Boomerang	$
+ADB/SPECIAL/BOOMERANG/boomerang02.jpg		$ 02. Boomerang	$
+ADB/SPECIAL/BOOMERANG/boomerangbio.jpg		$ 03. Boomerang	Biology $
+ADB/SPECIAL/BOOMERANG/leadingedge.jpg		$ 04. Leading Edge	$
+ADB/SPECIAL/BOOMERANG/holding.jpg		$ 05. Holding the Boomerang $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to hunt animals. This can be interpreted as a change of state from motion in the direction of throw to motion in a direction opposite to direction of throw. This can be discussed as follows:
+
+The boomerang (part) is thrown vertically (physical phenomenon). This is due to the projecting force (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the projecting force enough to counter act the gravity force (organ).
+
+The boomerang (part) lifts up in air (physical phenomenon). This is due to the pressure difference (input), which activates the Bernoulli’s effect (physical effect) and is necessary that wings are have aerofoil design with a slight bend at the center (organ).
+
+The boomerang (part) spins about its axis as it propels further (physical phenomenon). This is due to the pressure difference created (input) which activates the Bernoulli’s effect (physical effect) and is necessary that the wings have a tilt and have an aerofoil design (organ).
+ 
+The boomerang (part) comes back to the place from where it was projected thus completing a circle (physical phenomenon). This is due to the uneven force acting on the boomerang (input), which activates the Bernoulli’s effect (physical effect) and is necessary that the boomerang is thrown in a proper manner (organ).
+
+
+$
+
+ACTION
+
+$ 
+To hunt animals. 
+$
+
+STATE
+
+$
+The boomerang is moving in the direction of throw.
+
+The boomerang is moving in a direction opposite to that of the throw.
+
+$
+
+PHYPHENOMENON
+
+$
+The boomerang is thrown vertically.
+
+The boomerang lifts up in air.
+
+The boomerang spins about its axis as it propels further.
+
+The boomerang comes back to the place from where it was projected thus completing a circle.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s effect.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Projecting force.
+
+The pressure difference.
+
+The pressure difference.
+
+The uneven force acting on the boomerang.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the projecting force enough to counter act the gravity force.
+
+Necessary that wings are have aerofoil design with a slight bend at the center.
+
+Necessary that the wings have a tilt and have an aerofoil design.
+
+Necessary that the boomerang is thrown in a proper manner.
+$
+
+
+
+PARTS
+$
+Wings are of aerofoil design and are connected with a slight bend at the center.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

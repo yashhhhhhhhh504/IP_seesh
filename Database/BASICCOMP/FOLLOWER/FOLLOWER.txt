@@ -1,0 +1,182 @@
+
+MACTION
+{
+A1 $ V < reduce > N < wear > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < roller > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ friction effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < cam > A < x > $
+}
+
+MORGAN
+{
+O1 $ presence of friction surface between the roller and the cam $
+}
+MPART
+{
+P1 $ roller $
+P2 $ revolute -pair $
+P3 $ follower $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+
+
+}
+FUNCTION
+$
+A cam may be defined as a machine member having a curved outline or a curved groove, which, by its reciprocation or rotation motion, gives a predetermined specified motion to another element called the follower. A cam may also receive motion from such a roller or pin. Some cams do not move at all, but cause a change of motion in the contacting part. Cams are not ordinarily used to transmit power in the sense that gear trains are used. They are used to modify mechanical movement, the power for which is furnished through other means. They may control other mechanical units, or they may synchronize or lock together two or more engaging units.
+$
+
+
+
+
+
+
+BEHAVIOUR
+
+$
+In any class of machinery in which automatic control and accurate timing are paramount, the cam is an indispensable part of mechanism. Cam-follower mechanisms are particularly useful when a simple motion of one part of a machine is to be converted to a more complicated prescribed motion of another part, one that must be accurately timed with respect to the simple motion and may include periods of rest (dwells). 
+The motion of a cam depends not only on the shape and type of the cam profile but also on the configuration and arrangement of the follower.
+
+Follower Configurations : The different configurations are as shown in Figure 1. These are knife-edge, roller, flat-faced, offset and spherical-faced followers.
+
+Follower Arrangements... 
+IN-LINE FOLLOWER : The center line of the follower passes through the center line of the camshaft. 
+OFFSET FOLLOWER : The center line of the follower does not pass through the center line of the cam shaft. The amount of offset is the distance between these two center lines. The offset causes a reduction of the side thrust present in the roller follower.
+
+Depending on the shape and type of the cam and follower used, various motions can be obtained like
+1. Rotating cam-translating follower
+2. Rotating follower (The follower arm swings or oscillates in a circular arc with respect to the follower pivot)
+3. Translating cam-translating follower
+4. Stationary cam-rotating follower (The follower system revolves with respect to the center line of the vertical shaft)
+$
+
+
+STRUCTURE
+
+$
+A Cam mechanism usually consists of two moving elements, the Cam and the Follower, mounted on a fixed frame.The shape of the contacting surface of the cam is determined by the desired motion and the profile of the follower.
+
+There are three types of cam followers, and since the type of follower influences the profile of the cam it is worthwhile considering the advantages and disadvantages of each type. The three types are the knife-edge, the roller follower and the flatfoot or mushroom follower. 
+
+The knife edge follower: 
+This is the simplest type, is not often used due to the rapid rate of wear. When it is adopted, it is usually for reciprocating motion, running in slides and there is considerable side thrust, this being a component of the thrust from the cam. 
+
+The roller follower: 
+This eliminates the problem of rapid wear since the sliding effect is largely replaced by a roller action. Some sliding will still take place due to the varying peripheral speed of the cam profile, due to the changing radius of the point of contact. Note also that the radial position of the contact between the cam and the roller, relative to the follower center, will change according to whether a rise or fall motion is taken place: this fact has to be considered when constructing the cam profile. Again, with the roller follower, considerable side thrusts are present, a disadvantage when dealing with reciprocating motions. This side thrust will be increased when using small rollers. 
+
+The flat foot or mushroom follower: 
+This has the advantage that the only side thrust present is that due to the friction between the follower and the cam. The problem of wear is not so great as with the knife-edge follower, since the point of contact between the cam and follower will move across the face of the follower according to the change of shape of the cam. A trick to lessen further the effect of wear is to design the follower to be capable of axial rotation and arrange the axis of the follower to lie to one side of the cam. Thus the contact with the cam will tend to cause rotation of the follower. The cam profile, to work with a flatfoot follower, must be convex at all parts, in order to prevent the corners of the follower digging into the cam profile. The minimum cam radius should be as small as possible to minimize sliding velocity and friction. 
+$
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/FOLLOWER/follower.jpg	$ 01.Cam Follower $
+ADB/BASICCOMP/FOLLOWER/camfollower.gif	$ 02.Cam Followers $
+ADB/BASICCOMP/FOLLOWER/followertypes.jpg	$ 03.Follower Types $
+ADB/BASICCOMP/FOLLOWER/rollerfoll.jpg	$ 04.Roller Followers $
+}
+
+
+CLIP
+
+{
+ADB/BASICCOMP/FOLLOWER/cam.avi		$ Cam $
+ADB/BASICCOMP/FOLLOWER/heartcam.avi	$ Heart Shaped Cam $
+}
+SUMMARY
+$
+This can be used to reduce wear on the cam and the follower. This can be interpreted as a change of rest to rotation of the roller. This can be described as follows:
+
+The roller (part) of the follower rotates (physical phenomenon). This is due to rotation of the cam (input), which activates the friction effect (physical effect) and requires the presence of a friction surface between the cam and the roller (organ). 
+$
+
+ACTION
+
+$ 
+ To reduce friction.
+$
+
+STATE
+
+$
+The roller is at rest.
+
+The roller is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The roller of the follower rotates.
+
+$
+
+
+PHYEFFECT
+
+$
+Friction effect.
+
+$
+
+
+INPUT
+
+$
+Rotation of the cam.
+
+$
+
+
+ORGAN
+
+$
+Presence of a friction surface between the cam and the roller.
+
+$
+
+
+
+PARTS
+$
+The roller forms a revolute pair with the follower.
+$
+
+
+
+
+
+

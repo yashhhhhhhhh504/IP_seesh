@@ -1,0 +1,170 @@
+MACTION
+{
+A1 $ V < launch > AV < X > N < projectile > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A <  > N  < projectile-motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to projectile motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < project > N < projectile > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < ignite > N < gunpowder > A < x > $
+}
+
+MORGAN
+{
+O1 $ the pressure inside the barrel is greater than the atmospheric pressure $
+}
+
+MPART
+{
+P1 $ projectile $
+
+
+}
+LINK
+
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+A cannon is a large, smooth-bored, muzzle-loading gun used before the advent of breech-loading, rifled guns firing explosive shells. 
+$
+
+
+STRUCTURE
+
+$
+A cannon is just a metal tube with a closed end and an open end. The closed end has a small fuse hole. The gunpowder and cannonball sit in the breech, the rear part of the bore (the open space in the cannon). 
+The introduction of wheeled carriages for cannon did not occur until the 15th century. Prior to then the weapons were mounted on sturdy wooden frames. The largest siege bombards would be strapped down to large timber baulks on earthwork platforms and aimed with either the initial platform or by hammering wedges under the front. Timber props supporting thick wooden planks were positioned to absorb the recoil. 
+$
+
+
+BEHAVIOUR
+
+$
+The basic idea of a cannon is applying explosive pressure behind a projectile to launch it down a barrel. To load the cannon, the gunpowder (a mixture of charcoal, sulphur and potassium nitrate) is poured, and then a cannonball is inserted. In preparing for a shot, a fuse (a length of flammable material) is inserted through the hole so that it reaches down to the gunpowder. To fire the cannon, the fuse is lit. The flame travels along the fuse and finally reaches the gunpowder. When gunpowder is ignited, it burns rapidly, producing a lot of hot gas in the process. The hot gas applies much greater pressure on the powder side of the cannonball than the air in the atmosphere applies on the other side. This propels the cannonball out of the gun at high speed.
+
+The early cannon did not always fire spherical projectiles. For smaller cannon arrow-like rounds were used in the 14th century, sometimes with brass fin stabilisers or inflammable heads. Initially round shot was made of iron but this was soon replaced with stone balls, particularly for larger pieces due to the cost of metals in the 14th century (this situation lasted until the late 15th century). The round shot were sometimes covered in lead to reduce windage.
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/CANNON/cannon01.jpg	                  $ 01. Cannon	$
+ADB/SPECIAL/CANNON/cannon02.jpg	                  $ 02. Cannon	$
+ADB/SPECIAL/CANNON/cannon03.jpg	                  $ 03. Cannon	$
+ADB/SPECIAL/CANNON/cannon04.jpg	                  $ 04. Cannon	$
+ADB/SPECIAL/CANNON/flintlockcannon.jpg            $ 05. Working	$	
+ADB/SPECIAL/CANNON/cannonbarrel.jpg 	          $ 06. Cannon Barrel	$
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+The basic idea of cannon is applying explosive pressure behind a projectile to launch it down a barrel. It can be interpreted as a change of state from the presence of projectile in the cannon and the projectile motion of the projectile.
+
+The projectile (part) projects out of the barrel with a high speed (physical phenomenon). This is due to the pressure created by the hot gas, which in turn is due to the igniting of the gunpowder  (input), which activates the Newtonian laws of motion (physical effect) and requires that the pressure inside the barrel is greater than the atmospheric pressure (organ).
+
+$
+
+ACTION
+
+$ 
+To apply explosive pressure behind a projectile to launch it down a barrel.
+
+$
+
+STATE
+$
+
+The projectile is at rest.
+
+Projectile is in projectile motion.
+
+$
+PHYPHENOMENON
+$
+
+The projectile projects out of the barrel with a high speed.
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+$
+
+INPUT
+$
+
+The pressure created by the hot gas, which in turn is due to the igniting of the gunpowder.
+
+$
+
+ORGAN
+$
+
+Requires that the pressure inside the barrel is greater than the atmospheric pressure.
+
+
+
+$
+
+PARTS
+$
+
+Projectile part.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+

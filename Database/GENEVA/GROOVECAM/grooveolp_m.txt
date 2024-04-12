@@ -1,0 +1,79 @@
+MACTION
+{
+A1 $ V=generate A=intermittent N=motion $
+}
+MSTATE
+{
+S1 $ V < X > A < x > N < rest >  $
+S2 $ V < X > A < x > N < rotation >  $
+S3 $ V < X > A < large > N < acceleration >  $
+S4 $ V < X > A < small > N < acceleration >  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V=rotate N=input-link $
+PP2 $ V=reduce N=friction $
+PP3 $ V=transfer N=motion $
+PP4 $ V=reduce N=acceleration $
+PP5 $ V=rotate N=geneva-wheel $
+PP6 $ V=position N=slot $
+PP7 $ V=prevent A=motion $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=rotate N=roller $
+I3 $ V=rotate N=input-link $
+I4 $ V=allow A=radial N=movement $
+I5 $ V=provide A=angular N=rotation $
+I6 $ V=apply A=frictional N=force $
+}
+
+MORGAN
+{
+O1 $ 1 degree of freedom of motion in direction of motion $
+O2 $ contact : roller cam $
+O3 $ roller-slot interface $
+O4 $ 0 dof $ 
+O5 $ cam profile $
+O6 $ ratio of diameters $
+O7 $ material of the locking surface $
+O8 $ contact : locking-surface geneva-wheel $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ input-link $
+P3 $ fixed pair $
+P4 $ roller $
+P5 $ cam pair $
+P6 $ allowance $
+P7 $ revolute pair $
+P8 $ cylindrical pair $
+P10 $ geneva-wheel $
+P11 $ locking surface $
+P12 $ sliding pair $
+P13 $ ? pair $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P8
+A1 - PP2 - PE2 - I2 - O2 - P1 - P4 - P5
+A1 - PP2 - PE2 - I2 - O2 - P4 - P10 - P12
+A1 - PP3 - PE3 - I3 - O3 - P4 - P10 - P12
+A1 - PP3 - PE3 - I3 - O4 - P4 - P10 - P12
+A1 - PP4 - PE1 - I4 - O5 - P1 - P2 - P6
+A1 - PP5 - PE3 - I3 - O3 - P4 - P10 - P12
+A1 - PP5 - PE3 - I3 - O4 - P4 - P10 - P12
+A1 - PP6 - PE1 - I5 - O6 - P1 - P10 - P7
+A1 - PP7 - PE2 - I6 - O7 - P1 - P11 - P3
+A1 - PP7 - PE2 - I6 - O8 - P10 - P11 - P13

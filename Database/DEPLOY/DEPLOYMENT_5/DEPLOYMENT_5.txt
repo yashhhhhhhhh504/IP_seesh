@@ -1,0 +1,192 @@
+MACTION
+{
+A1 $ V < increase > N < area > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < space > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less space to occupying large space $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < slider > A < X > $
+PP2 $ V < rotate > N < links > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < slider > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the slider and the slot $
+O2 $ one degree of freedom between the links and the slider $
+}
+
+MPART
+{
+P1 $ slider $
+P2 $ sliding pair $
+P3 $ slot $
+P4 $ links $
+P5 $ revolute-pair $
+P6 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+This mechanism can be used to open and close windows.
+$
+
+
+STRUCTURE
+
+$
+This mechanism employs a number of links and a slider, which smoothly slides in the slot provided for it. The links are connected with hinged joints.
+$
+
+
+BEHAVIOUR
+
+$
+The input is given to the slider in the form of movement. The movement of the links is due to the movement of the slider. 
+$
+PICTURE
+{
+}
+CLIP
+{
+ADB/DEPLOY/DEPLOYMENT_5/WIND4.MOV	$ Deployment $
+
+}
+
+
+
+
+
+SUMMARY
+$
+This can be used to increase area. This can be interpreted as a change of state from small area to large area. This can be described as follows:
+
+The slider (part) slides in the slot provided (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the slider and the slot (organ).
+
+The links (part) rotate (physical phenomenon). This is due to the movement of the slider (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links and the slider (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To increase area.
+$
+
+STATE
+
+$
+The links are occupying less space.
+
+The links are occupying large space.
+$
+
+PHYPHENOMENON
+
+$
+The slider slides in the slot provided.
+
+The links rotate.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Movement of the slider.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the slider and the slot.
+
+Presence of one degree of freedom between the links and the slider.
+
+$
+
+
+
+PARTS
+$
+The slider forms a sliding pair with slot.
+
+The links form a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+

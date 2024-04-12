@@ -1,0 +1,147 @@
+MACTION
+{
+A1 $ V < rotate > A < x > N < member > $
+A2 $ V < revolve > A < x > N < member > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+IS2 $ V < x > A < x > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N  < rotation > $
+OS2 $ V < x > A < x > N < revolution > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+CS2 $ from rotation to revolution $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < turn > N < member > A < X > $
+PP2 $ V < transfer > N < torque > A < X > $
+PP3 $ V < translate > N < member > A < X > $
+PP4 $ V < transfer > N < motion > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < X > $
+I2 $ V < turn > N < member > A < X > $
+I3 $ V < apply > N < force > A < X >  $
+I4 $ V < translate > N < member > A < X > $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+}
+
+MPART
+{
+P1 $ member $
+P2 $ frame $
+P4 $ cylindrical pair $
+P5 $ fixed pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1 PP1  PE1  I1  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1 PP2  PE1  I2  O1  P1  P1  P5 >
+
+< A2 IS2  OS2  CS2 PP3  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2 PP4  PE1  I4  O1  P1  P1  P5 >
+}
+
+
+FUNCTION
+
+$
+A spherical pair allows a relative rotation between two elements, which can be expressed by three coordinates. Thus, a spherical pair has a three degrees of freedom.
+$
+
+
+STRUCTURE
+
+$
+Lower pairs are differentiated from higher pairs by the type of contact between the two bodies of the pair. Lower pairs have a surface contact, whereas two bodies of a higher pair have a line or a point contact. An example of a spherical pair is shown in the figure.
+$
+
+
+BEHAVIOUR
+$
+A spherical pair keeps two spherical centers together. Two rigid bodies connected by this constraint will be able to rotate relatively around x, y and z axes, but there will be no relative translation along any of these axes. Therefore, a spherical pair removes three degrees of freedom in spatial mechanism. The Spherical block represents three rotational degrees of freedom (DoFs) at a single pivot point, a "ball-in-socket" joint. Two rotational DoFs specify a directional axis, and a third rotational DoF specifies rotation about that directional axis.
+$
+
+
+PICTURE
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/06.SPHERICAL/spherical1.gif	$ Spherical Pair $
+}
+
+
+
+CLIP
+{
+ADB/KINEMATICPAIRS/01.LOWER_PAIRS/06.SPHERICAL/spherical1.avi	$ Spherical Pair $
+}
+
+
+SUMMARY
+$
+The movable member (part) rotates as well as revolves within the fixed member (physical phenomenon). This is due to the force and torque applied on to the movable member (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom in the direction of motion (organ). 
+$
+
+ACTION
+$
+ 
+ Using this the movable member can be rotated as well as revolved within the fixed member.
+
+$
+STATE
+$
+
+Absence of force and torque at the movable member.
+
+Presence of force and torque at the movable member.
+
+$
+PHYPHENOMENON
+$
+
+The movable member rotates as well as revolves within the fixed member.
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+$
+
+INPUT
+$
+
+Force and torque applied on to the movable member.
+$
+
+ORGAN
+$
+
+Presence of one degree of freedom in the direction of motion.
+$
+PARTS
+$
+
+The movable member forms a revolute pair with the fixed member.
+
+$

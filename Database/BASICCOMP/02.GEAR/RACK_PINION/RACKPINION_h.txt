@@ -1,0 +1,91 @@
+SUMMARY
+$
+This can be used to generate straight-line motion. This can be interpreted as a change of state from rest to straight–line motion. This can be described as follows:
+ 
+The pinion (part) moves over the rack (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the absence of slip between the rack and the pinion (organ).
+
+The pinion (part) rotates as it moves over the rack (physical phenomenon). This is due to the meshing of the teeth of the pinion and the rack (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the engagement and disengagement between the rack and the pinion is of smooth nature (organ).
+
+The center of the pinion (part) moves along a straight-line (physical phenomenon). This is due to the movement of the pinion on the rack (input) which activates the ? and requires that the rack is mounted on a flat surface (organ). 
+
+
+$
+
+ACTION
+{
+$ 
+ To generate straight-line.
+$
+}
+STATE
+{
+$
+The pinion is at rest.
+
+The center of the pinion moves along a straight-line motion.
+
+$
+}
+PHYPHENOMENON
+{
+$
+The pinion moves over the rack.
+
+The pinion rotates as it moves over the rack.
+
+The center of the pinion moves along a straight-line.
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+?
+
+$
+}
+
+INPUT
+{
+$
+Force applied on it.
+
+The pinion rotates as it moves over the rack.
+
+The center of the pinion moves along a straight-line.
+$
+}
+
+ORGAN
+{
+$
+Absence of slip between the rack and the pinion.
+
+Necessary that the engagement and disengagement between the rack and the pinion is of smooth nature.
+
+Requires that the rack be mounted on a flat surface.
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The pinion forms a rolling pair with the rack.
+
+The pinion forms a revolute pair with the frame.
+
+The rack forms a fixed pair with the frame.
+
+$
+}
+
+
+
+
+

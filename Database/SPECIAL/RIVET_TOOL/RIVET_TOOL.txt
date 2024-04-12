@@ -1,0 +1,224 @@
+MACTION
+{
+A1 $ V < join > N < sheets > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < separate > A < x > N < sheets > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < join > A < X > N < sheets > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from separate sheets to joined sheets $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < clamp > N < mandrel-shank > A < X > $
+PP2 $ V < pull > N < mandrel-shank > A < X > $
+PP3 $ V < balloon-out > N < rivet-body > A < X > $
+PP4 $ V < break > N < rivet-head > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Lever effect $
+PE2 $ Newtonian laws of motion $
+PE3 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force handle > A < X > $
+I2 $ V < apply > N < force > A < upward > $
+I3 $ V < move > N < rivet > A < upward > $
+I4 $ V < apply > N < force > A < resisting > $
+}
+
+MORGAN
+{
+O1 $ Requires that the mandrel shank be held tightly in the rivet tool $
+O2 $ requires the upward force is greater than the gravitational force $
+O3 $ requires that the head is stronger enough to cause the bending of the hollow rivet body $
+O4 $ Presence of a weakened portion near the head region $
+}
+
+MPART
+{
+P1 $ clamp $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ shank $
+P5 $ material $
+P6 $ sliding pair $
+P7 $ hollow rivet-body $
+P8 $ rivet-head $
+P9 $ fixed pair $
+
+}
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I1 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I1 O3 P3 P5 P7 >
+< A1 IS1 OS1 CS1 PP4 PE2 I1 O4 P4 P8 P9 >
+
+}
+
+
+FUNCTION
+
+
+$
+
+The "Pop" Rivetool is as easy to use stapling gun, ideal for light riveting tasks in industry and at home.
+
+$
+
+
+STRUCTURE
+
+$
+The "Pop" rivet consists of a hollow flanged-metal body with a solid mandrel held captive within. The mandrel head bears against the hollow body of the rivet while the shank of the mandrel protrudes from the flanged end. 
+On the mandrel shaft near its head is a purposely-weakened breakage area designed to shear when subjected to a specific amount of pressure.
+
+$
+
+
+BEHAVIOUR
+
+$
+The secret to "Pop" riveting lies in forming the rivet's second head by pulling rather than pounding. In action, the "Pop" Rivetool clamps onto the mandrel shank and, in a series of handle squeezes and releases, pulls it into the tool itself. The mandrel head follows, flaring the rivet body until it flattens fast against the metal surface being riveted. As the mandrel shears near the head where it is weakened, it makes a "pop" sound, giving the "Pop" Rivetool its name. 
+In working, the mandrel shank is slipped into the Rivetool's hollow nose-piece, and the mandrel head is inserted into the work surface. The shank is clenched between the clamp and the teeth of the gripper jaw. As the handle is compressed, the clamp engages the mandrel, wedging it against the gripper teeth. Further compression of the lever forces the clamp and the gripper upward.
+As the clamp and the gripper draw the mandrel into the tool, the mandrel head balloons the rivet body outwards. The handle lever reaches its maximum travel. When pressure on the handle is released, the U-spring returns the lever to the start position while forcing the clamp and gripper farther down the shank to re-engage it. This process continues inching the mandrel head up, until the rivet body is flattened to form “blind side” fastening.
+Once the rivet body is flattened, the clamp and the gripper wedge the mandrel head snugly into the rivet body. With increased hand pressure, the shank breaks away from its head, creating a "pop" sound. With release of pressure, the U-spring returns the mechanism to its starting position. The unused part of the mandrel shank is shaken out of the tool and discarded.
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/RIVET_TOOL/poprivetool.jpg		$ 01. Pop Rivetool $
+ADB/SPECIAL/RIVET_TOOL/working01.jpg		$ 02. Working	$
+ADB/SPECIAL/RIVET_TOOL/working02.jpg		$ 03. Working	$
+ADB/SPECIAL/RIVET_TOOL/working03.jpg		$ 04. Working	$
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This mechanism can be used to rivet. It can be interpreted as a change of state from separate sheets to joined sheets. This can be described as follows:
+
+The clamp (part) wedges the mandrel shank against the grip (physical phenomenon). This is due to the force applied at the handle (input), which activates the lever effect (physical effect) and requires that the mandrel shank be held tightly in the rivet tool (organ). 
+
+
+The mandrel shank (part) is pulled (physical phenomenon). This is due to the upward force applied on it (input), Which activates the Newtonian laws of motion (physical effect) and requires the upward force is greater than the gravitational force (organ).
+
+
+The hollow rivet body (part) balloons out (physical phenomenon). This is due to the upward movement of the rivet head (input), which activates the law  “no two bodies can occupy the same space at the same time” (physical effect) and requires that the head is stronger enough to cause the bending of the hollow rivet body (organ).
+
+The rivet head (part) breaks (physical phenomenon). This is due to the resisting force applied on it by the hollow rivet body (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a weakened portion near the head region (organ).
+
+
+$
+
+ACTION
+$
+ 
+ To join two sheets.
+
+$
+STATE
+$
+
+Separate sheets.
+
+Joined sheets.
+
+$
+PHYPHENOMENON
+$
+
+The clamp wedges the mandrel shank against the grip.
+
+The mandrel shank is pulled.
+
+The hollow rivet body balloons out.
+
+The rivet head breaks.
+
+$
+
+PHYEFFECT
+$
+
+Lever effect.
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+Force applied at the handle.
+
+The upward force applied on it.
+
+The upward movement of the rivet head.
+
+Resisting force applied on it by the hollow rivet body.
+
+$
+
+ORGAN
+$
+
+Requires that the mandrel shank be held tightly in the rivet tool.
+
+Requires the upward force is greater than the gravitational force.
+
+Requires that the head is stronger enough to cause the bending of the hollow rivet body.
+
+Presence of a weakened portion near the head region.
+
+
+$
+
+PARTS
+
+$
+
+The clamp forms a revolute pair with the frame.
+
+The shank forms a sliding pair with the material.
+
+The hollow rivet body forms a revolute pair with the material surface.
+
+The rivet head forms a fixed pair with the mandrel shank.
+
+
+
+
+
+$
+
+

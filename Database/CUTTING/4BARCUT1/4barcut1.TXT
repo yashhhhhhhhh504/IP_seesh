@@ -1,0 +1,202 @@
+MACTION
+{
+A1 $ V < cut close > N < materials > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < gear 2 gear 5 > A < X > $
+PP2 $ V < rotate > N < gear 1 gear 3 gear 4 gear 6 > A < X > $
+PP3 $ V < oscillate > N < link 8 link 11 > A < x > $
+PP4 $ V < move > N < knife-edge straight-line > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < gear 2 gear 5 > A < x > $
+I3 $ V < rotate > N < gears > A < x > $
+I4 $ V < oscillate > N < links > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the gears $
+O2 $ contact between parts $
+O3 $ one degree of freedom between the links and the gear $
+O4 $ Necessary that the links oscillate with the same speed $
+
+}
+
+MPART
+{
+P1 $ gears $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ links $
+P5 $ knife-edges $
+P6 $ sliding-pair $
+P7 $ object $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P5 P6 P7 >
+}
+
+
+
+FUNCTION
+
+$
+This four-bar cutter provides a stable, strong, cutting action by coupling two sets of links to chain four-bar arrangements.
+$
+
+
+STRUCTURE
+
+$
+Each knife is fixed rigidly at the center of a link. The two ends of this link form revolute pairs with two other links, which are in turn fixed to two gears. The two gears are driven by a smaller gear placed in between then forming a simple gear train. Thus the two larger gears rotate in the same direction. This arrangement is reproduced symmetrically on the other side of the knife such that the paths of both knives intersect.
+$
+
+
+BEHAVIOUR
+
+$
+The two driver gears rotate in opposite directions, so that the two knives move in the same direction. Thus the knives cut the material when they cross each other’s path.
+$
+
+
+PICTURE
+
+{
+ADB/CUTTING/4BARCUT1/4barcut1.jpg		$ Four-bar Cutter	$
+}
+
+
+CLIP
+
+{
+ADB/CUTTING/4BARCUT1/4barcut1.avi		$ Four-bar Cutter	$
+}
+SUMMARY
+$
+This four-bar cutter provides a stable, strong, cutting action by coupling two sets of links to chain four-bar arrangements. This can be interpreted as a change of state from rest to straight –line motion. This can be described as follows:
+
+The gear 5 and 2 (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the gears (organ).
+
+The gears 4,6,1,3 (parts) rotate (physical phenomenon). This is due to the rotation of the gears 2 and 5 (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between them (organ).
+
+The links 8 and 11 (part) oscillates (physical phenomenon). This is due to the rotation of the gears (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the links and the gear (organ).
+
+The knife edges (part) moves along a straight line (physical phenomenon). This is due to the oscillation of the links (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the links oscillate with the same speed (organ).
+$
+
+ACTION
+
+$ 
+ This four-bar cutter provides a stable, strong, cutting action by coupling two sets of links to chain four-bar arrangements.
+$
+
+STATE
+
+$
+The knife-edges are at rest.
+
+The knife-edges move along a straight-line.
+
+$
+
+PHYPHENOMENON
+
+$
+The gear 5 and 2 rotates.
+
+The gears 4,6,1,3 rotate.
+ 
+The links 8 and 11 oscillates.
+
+The knife edges moves along a straight line.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The rotation of the gears 2 and 5.
+
+The rotation of the gears.
+
+The oscillation of the links.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the gears.
+
+Presence of contact between them.
+
+Presence of one degree of freedom between the links and the gear.
+
+Necessary that the links oscillate with the same speed.
+$
+
+
+
+PARTS
+$
+The gears form a revolute pair with the frame.
+
+The links form a revolute pair with the frame
+
+The knife edges form a sliding pair with the object to be cut.
+
+
+
+
+
+
+$
+
+
+
+

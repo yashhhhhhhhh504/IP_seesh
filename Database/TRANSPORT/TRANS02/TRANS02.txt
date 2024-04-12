@@ -1,0 +1,228 @@
+
+MACTION
+{
+A1 $ V < transport > N < material > A < sequentially > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < egg-shaped > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to egg-shaped motion $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < arm > A < driven > $
+PP2 $ V < rotate > N < link > A < connecting > $
+PP3 $ V < swivel > N < arm > A < swivel > $
+PP4 $ V < x > N < member path > A < egg-shaped > $
+PP5 $ V < move > N < material > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < arm > A < driven > $
+I3 $ V < rotate > N < link > A < connecting > $
+I4 $ V < rotate > N < link > A < connecting > $
+I5 $ V < x > N < motion member > A < forward moving > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the shafts and the driven arms $
+O2 $ one degree of freedom between the driven arm and the connecting link $
+O3 $ one degree of freedom between the connecting link and the moving member $
+O4 $ one degree of freedom between the driven arm and the connecting link $
+O5 $ projections on the moving member $
+}
+
+MPART
+{
+P1 $ driven arm $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ connecting link $
+P5 $ moving member $
+P6 $ material $
+P7 $ sliding pair $
+P8 $ fixed rails $
+P9 $ swivel arm $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 P2 P4 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P2 P3 P9 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P6 P7 P8 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+Transport mechanisms generally move materials. The motion, although unidirectional, gives an intermittent advancement to the material being conveyed.
+$
+
+
+STRUCTURE
+
+$
+In this design, a rotary action is used. The shafts 'D' rotate in unison and support the connecting links, which are attached to the main moving member and the swivel arms. The transport is carried on the connecting links. The rail 'A-A' is fixed rigidly on the machine. The frame of the machine also supports bearings ‘E’. A pressure friction plate can hold the material against the top of the rail and prevent any movement during the period of rest.
+$
+
+
+BEHAVIOUR
+
+$
+
+This simple linkage imparts a somewhat "egg-shaped" motion to the transport. The forward stroke is almost a straight line. The essential characteristic of such a motion is that all points in the main moving members follow similar and equal paths. This is necessary so that the members can be subdivided into sections with projecting parts. The purpose of the projections is to push the articles during the forward motion of the material being transported. The transport returns by a different path from the one it follows in its advancement, and the material is left undistributed until the next cycle begins. During this period of rest, while the transport is returning to its starting position, various operations can be performed sequentially. The selection of the particular transport mechanism best suited to any situation depends, to some degree, on the arrangement that can be obtained for driving the materials and the path desired. A slight amount of over travel is always required so that the projection on the transport can clear the material when it is going into position for the advancement stroke.
+The path can be varied by changes in the cam, levers and associated paths.
+$
+
+
+PICTURE
+{
+ADB/TRANSPORT/TRANS02/trans02.jpg		$ Transport Mechanism	$
+}
+
+
+CLIP
+
+{
+ADB/TRANSPORT/TRANS02/trans02.avi		$ Transport Mechanism	$
+}
+
+
+SUMMARY
+$
+Using this mechanism materials can be transported. This mechanism can be described as follows:
+
+The driven arms (part) mounted on the input shafts rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shafts and the driven arms (organ).
+
+
+The connecting link (part) rotates (physical phenomenon). This is due to the rotation of the driven arm (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the driven arm and the connecting link (organ).
+
+The swivel-arm (part) swivels (physical phenomenon). This is due to the rotation of the connecting link (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the connecting link and the swivel arm (organ).
+
+The moving member (part) follows a somewhat an egg shaped path (physical phenomenon). This is due to the rotation of the connecting link  (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the connecting link and the moving member (organ).
+
+The material (part) placed on the fixed rails are transported (physical phenomenon). This is due to the forward motion of the moving member (input), which activates the law “no two bodies can occupy the same space at the same time,” (physical effect) and requires the presence of projections on the moving member (organ).
+$
+
+
+
+ACTION
+$
+ 
+ Using this mechanism material can be transported intermittently.
+
+$
+STATE
+$
+
+rest
+
+egg-shaped motion.
+
+$
+PHYPHENOMENON
+$
+
+The driven arms mounted on the input shafts rotates
+
+The connecting link rotates.
+ 
+The swivel-arm swivels.
+
+The moving member follows a somewhat an egg shaped path.
+
+The material placed on the fixed rails.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+The rotation of the input shaft.
+
+The rotation of the driven arm.
+
+The rotation of the connecting link.
+
+The rotation of the connecting link.
+
+The forward motion of the moving member.
+
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the shafts and the driven arms.
+
+Presence of one degree of freedom between the driven arm and the connecting link.
+
+Presence of one degree of freedom between the connecting link and the moving member.
+
+Presence of projections on the moving member.
+
+
+$
+
+PARTS
+$
+
+The driven arm along with the input shafts forms a revolute pair with the frame.
+
+The connecting link forms a revolute pair with the driven arm.
+
+the swivel arm forms a revolute pair with the frame.
+
+The moving member forms a revolute pair with the connecting link.
+
+The materials that are being transported form a sliding pair with the fixed rails.
+
+
+
+$
+
+
+

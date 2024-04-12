@@ -1,0 +1,80 @@
+SUMMARY
+$
+This is used to provide shelter. 
+$
+
+ACTION
+
+$ 
+ To provide shelter.
+$
+
+STATE
+
+$
+Occupying less area.
+
+Occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Spread out the canvas material.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+$
+
+
+ORGAN
+
+$
+Necessary that the material of the tent is flexible enough.
+
+
+
+$
+
+
+
+PARTS
+$
+Tent material.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

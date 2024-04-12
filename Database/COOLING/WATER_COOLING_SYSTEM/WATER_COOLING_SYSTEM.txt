@@ -1,0 +1,206 @@
+
+
+MACTION
+{
+A1 $ V < cool > N < machine-part > A < X > $
+A2 $ V < reduce > N < temperature > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < high > N < temperature > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < low > N < temperature > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from higher temperature to lower temperature $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < flow > N < water > A < X > $
+PP2 $ V < reduce > N < temperature > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ pumping effect $
+PE2 $ Second law of thermodynamics $
+}
+
+MINPUT
+{
+I1 $ V < x > N < pressure-difference > A < x > $
+I2 $ V < absorb > N < heat > A < x > $
+}
+
+MORGAN
+{
+O1 $ Water should have some pressure head $
+O2 $ Water supply pipe should be conductive $
+}
+
+MPART
+{
+P1 $ Water $
+P2 $ Machine part $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+FUNCTION
+
+$
+Water cooling system is used to cool the machine parts.
+$
+
+
+STRUCTURE
+
+$
+One pipe is provided to circulate the water and which is made by conductive material.
+$
+BEHAVIOUR
+
+$
+Water flows through the pipe and water gets heated. Machine parts get cooled and hot water gets cooled by a radiator.
+$
+
+
+ATTRIBUTE
+
+$
+The deep lake water cooling system is part of an integrated district cooling system that covers Toronto's financial district, and has a cooling power of 59,000 tons (207 MW).
+
+Water cooling has many advantages over air cooling. First of all, water has a thermal conductivity of 0.6062 W/ (m*K) whereas the thermal conductivity of air is only 0.0262. This means heat can be drawn away from components more efficiently with water. Water also has a much higher specific heat capacity than air (1.0 J/ (kg*K) versus 0.24), which allows the water cooling system to absorb a lot more energy before heating up. Using liquid to cool components allows the heat to be carried to a remote location, usually a radiator where the heat can be dissipated more effectively than with a heat sink. A water cooling radiator works identically to the radiator in your car: coolant is pumped through an array of tubes and fins, and air is blown across this array to remove heat. Because the radiator is mounted remotely, it can be larger than a chip-mounted heat sink, and therefore will be able to cool more effectively. Because all major components in the computer will be cooled by the same system, there will be fewer fans, and therefore less noise.
+
+$
+
+PICTURE
+
+{
+ADB/COOLING/WATER_COOLING_SYSTEM/01.JPG                $ 01.WATER COOLING SYSTEM $
+ADB/COOLING/WATER_COOLING_SYSTEM/02.JPG                $ 02.WATER COOLING SYSTEM $
+ADB/COOLING/WATER_COOLING_SYSTEM/03.JPG                $ 03.WATER COOLING SYSTEM $
+ADB/COOLING/WATER_COOLING_SYSTEM/04.JPG                $ 04.WATER COOLING SYSTEM $
+ADB/COOLING/WATER_COOLING_SYSTEM/05.JPG                $ 05.WATER COOLING SYSTEM $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+Water cooling system uses water to remove heat from machine parts. This is a cyclic process. Water takes heat from machine parts, gets heated and water is cooled by a radiator.  This process can be described as:
+
+Water (part) flows through a pipe (physical phenomenon). This is due to pump pumping the fluid (input) which activates pumping effect (physical effect) and it requires that the water should have some pressure head (organ).
+
+The pipe is in contact with machine parts and it absorbs heat from machine parts. 
+
+The temperature of machine parts (part) is reduced (physical phenomenon). This is due to absorption of heat by water (input) which activates second law of thermodynamics (physical effect) and it requires that water temperature is less than engine temperature and it also requires that water supply pipe should be conductive (organ).
+
+Temperature of water if increased and temperature of Water (part) is reduced (physical phenomenon).This is due to absorption of heat by radiator (input) which activates Second low of thermodynamics (physical effect) and it requires that radiator temperature is less than water temperature and it also requires that water supply pipe should be conductive (organ). 
+$
+
+ACTION
+
+$ 
+ To cool machine parts
+$
+
+STATE
+
+$
+Machine part is hot
+
+Machine part is cool
+$
+
+
+
+PHYPHENOMENON
+
+$
+Water flows
+
+The temperature machine part is reduced
+
+The temperature of water is reduced
+$
+
+
+PHYEFFECT
+
+$
+Pumping effect
+
+Second law of thermodynamics
+$
+
+
+INPUT
+
+$
+Pump pumping the fluid
+
+Absorption of heat from machine parts
+
+Absorption of heat from water
+$
+
+
+ORGAN
+
+$
+Water should have some pressure head
+
+Water supply pipe should be conductive
+$
+
+
+
+PARTS
+
+$
+Water
+
+Machine part
+$
+
+REFERENCES 
+
+$
+www.linuxhardware.org/article.pl?sid=04/ 02/16/1722243&mode=thread
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

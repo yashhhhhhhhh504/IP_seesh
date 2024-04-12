@@ -1,0 +1,85 @@
+SUMMARY
+$
+This mechanism can be used to grasp and release objects. This mechanism can be described as follows:
+
+The link 3 (part) moves away from the base plate and towards the base plate alternately (physical phenomenon). This is due to the reciprocating motion of the actuator (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and it requires the presence of zero degree of freedom between the actuator and the link 3 (organ).
+
+
+The links 4 and 5 (part) rotate outwards with respect to the links 6 and 7 respectively and simultaneously moves away from base plate (physical phenomenon). This is due to the movement of the link 3 away from the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links 4,5 and the links 6 and 7 (organ).
+
+The links 4 and 5 (part) rotate inwards with respect to the links 6 and 7 respectively and simultaneously moves towards the base plate (physical phenomenon). This is due to the movement of the link 3 towards the base plate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links 4,5 and the links 6 and 7 (organ).
+
+$
+
+ACTION
+$
+ 
+ Using this mechanism objects can be gripped and released.
+
+$
+STATE
+$
+
+Absence of force at actuator.
+
+Presence of force at actuator
+
+$
+PHYPHENOMENON
+$
+
+The link 3 moves away from the base plate and towards the base plate alternately.
+
+The links 4 and 5 rotate with the respect to the links 6 and 7 respectively and simultaneously moves away from base plate.
+ 
+The links 4 and 5 rotate with the respect to the links 6 and 7 respectively and simultaneously moves towards the base plate.
+
+
+
+$
+
+PHYEFFECT
+$
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+The reciprocating motion of the actuator.
+
+The movement of the link 3 away from the base plate.
+
+The movement of the link 3 towards the base plate.
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the actuator and the link 3.
+
+Presence of one degree of freedom between the links 4,5 and the links 6 and 7.
+
+
+
+$
+PARTS
+$
+
+The actuator forms a sliding pair with the base plate.
+
+The link 3 is fixed to the actuator.
+
+The links 6 and 7 form a revolute pair with the base plate. 
+
+The links 4 and 5 form a revolute pair with the links 6 and 7 respectively.
+
+
+
+$
+

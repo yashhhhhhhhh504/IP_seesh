@@ -1,0 +1,100 @@
+
+
+MACTION
+{
+A1 $ V < generate > N < motion > A < parallel > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < parallel > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to parallel motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link > A < X > $
+PP2 $ V < revolve > N < gear > A < spur fixed > $
+PP3 $ V < revolve > N < gear > A < spur fixed > $
+PP4 $ V < revolve remain > N < arm circle parallel > A <  > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < rotate > N < link > A < x > $
+I3 $ V < rotate > N < link > A < x > $
+I4 $ V < revolve > N < gear > A < spur > $
+}
+
+MORGAN
+{
+O1 $ link is hinged to the center of the fixed gear $
+O2 $ zero degree of freedom between the link and the spur gear 2 $
+O3 $ a fixed distance between the center of a spur gear and center of the fixed gear $
+O4 $ one degree of freedom between the spur gear 3 and the arm 5$
+}
+
+MPART
+{
+P1 $ link $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ spur gear $
+P5 $ gear pair $
+P6 $ fixed gear $
+P7 $ arm $
+P8 $ fixed pair $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P1 P7 P8 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

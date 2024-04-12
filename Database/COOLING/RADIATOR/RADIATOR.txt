@@ -1,0 +1,223 @@
+
+
+MACTION
+{
+A1 $ V < exchange > N < heat > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < high > N < temperature > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < low > N < temperature > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ from higher temperature to lower temperature $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rise > N < hot-water > A < X > $
+PP2 $ V < increase > N < temperature > A < X > $
+PP3 $ V < decrease > N < temperature > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Pumping effect $
+PE2 $ Second law of thermodynamics $
+}
+
+MINPUT
+{
+I1 $ V < pump > N < x > A < x > $
+I2 $ V < absorb > N < heat > A < x > $
+}
+
+MORGAN
+{
+O1 $ Pumping force is greater than gravitational force $
+O2 $ Temperature of radiator be less than temperature of water $
+O3 $ Radiator is made of conductive material $
+O4 $ Air temperature is less than radiator temperature $
+}
+
+MPART
+{
+P1 $ water $
+P2 $ radiator $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O3 P2 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O4 P2 >
+}
+
+
+
+
+FUNCTION
+
+$
+Radiator is a heat exchanger. It exchanges heat from hot water to air.
+$
+
+
+STRUCTURE
+
+$
+A  radiator consists of a sealed hollow metal container, flat in shape and there is a inlet and a outlet pipe.
+$
+BEHAVIOUR
+
+$
+Hot water enters at one end and rises to the top of the radiator by way of convection. As it gives out its heat, it cools and sinks to the bottom of the radiator and then is forced out of a pipe at the other end.
+$
+
+ATTRIBUTE
+$
+The radiator is designed to transfer the heat from this liquid to its metal coils, and then the heat is dispelled through ventilation. 
+1.	Radiators are manufactured of cold rolled low carbon steel and should be used only in closed closed hydronic systems to assure no corrosion of any system components.
+2.	Proper radiator operation depends on adequate flow of water to the panel, which can only be accomplished when all the system air has been fully vented from the panels.
+3.	Radiators should each be vented, with the system pressurized but in a static state (pumps off). Venting may need to be done periodically to assure a closed system.
+4.	DO NOT OVER-PRESSURIZE RADIATORS:
+Most radiators are standard pressure construction. Standard pressure radiators should be tested with NO MORE THAN 50 PSI.
+5.	Radiator Operating Pressure Ratings:
+Standard Pressure - 56 psi max (Tested at 74 psi)
+Medium Pressure - 85 psi max (Tested at 110 psi)
+High Pressure - 128 psi max (Tested at 184 psi)
+6.	Radiators expand a maximum of 0.016 inch per linear foot of length if heated to 215°F. Piping attached to the radiator must provide the necessary expansion compensation. 
+7.	Flexible piping and elbowed piping are two simple ways to provide the 1/8 inch to 1/2 inch (typical) of flexibility required in expansion situations (usually series piping). 
+8.	Radiators require less flow rate than other heating products. If flow noise is apparent, balance the system until the noise is reduced. 
+9.	Many levels of control are available today for different systems. Radiators will provide nice, even heating whether operated by a simple thermostat to baseboard loop system, or an advanced boiler reset controller with motorized mixing valves, constant circulation and 2-pipe distribution
+
+$
+
+
+
+
+PICTURE
+
+{
+ADB/COOLING/RADIATOR/01.JPG                                 $ 01.RADIATOR $
+ADB/COOLING/RADIATOR/02.JPG                                 $ 02.RADIATOR $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+Radiator is a heat exchanger which takes heat from water by convection. This process can be described as:
+
+Hot water (part) rises up to top of the radiator (physical phenomenon). This is due to a pump pumps the water (input) which activates pumping effect (physical effect) and it requires that pumping force is greater than gravitational force (organ).
+
+Temperature of radiator (part) is increased (physical phenomenon). This is due to absorption of heat from water (input) which activates second law of thermodynamics (physical effect) and it requires that temperature of radiator be less than temperature of water and radiator is made by conductive material (organ).
+
+Temperature of radiator (part) is decreased (physical phenomenon). This is due to absorption of heat by air (input) which activates second law of thermodynamics (physical effect) and it requires that air temperature is less than radiator temperature (organ).
+$
+
+ACTION
+
+$ 
+ To exchange heat
+$
+
+STATE
+
+$
+Water is at higher temperature
+
+Water is at lower temperature
+$
+
+
+
+PHYPHENOMENON
+
+$
+Hot water rises up to top of the radiator
+
+Radiator gets heated
+
+Radiator gets cooled
+$
+
+
+PHYEFFECT
+
+$
+Pumping effect
+
+Second law of thermodynamics
+$
+
+
+INPUT
+
+$
+Pump pumps the water
+
+Absorption of heat from water
+
+Absorption of heat by air
+$
+
+
+ORGAN
+
+$
+Pumping force is greater than gravitational force
+
+Temperature of radiator be less than temperature of water 
+
+Radiator is made by conductive material
+
+Air temperature is less than radiator temperature
+$
+
+
+
+PARTS
+$
+Hot water
+
+Radiator
+$
+
+REFERENCES 
+
+$
+http://en.wikipedia.org/wiki/Radiator
+http://auto.howstuffworks.com/cooling-system6.htm
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

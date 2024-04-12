@@ -1,0 +1,248 @@
+
+MACTION
+{
+A1 $ V < perform > N < machining > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small hole > N < diameter > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large hole > N < diameter > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from small hole diameter to large hole diameter $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < hold > N < tool > A < X > $
+PP2 $ V < hold > N < component > A < drilled > $
+PP3 $ V < rotate > N < component > A < drilled > $
+PP4 $ V < machine > N < component > A < drilled > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Resistance to motion effect $
+PE2 $ Resistance to motion effect $
+PE3 $ Newtonian laws of motion $
+PE4 $ Machining effect $ 
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < clamping > $
+I2 $ V < x > N < force > A < clamping > $
+I3 $ V < rotate > N < spindle > A < x > $
+I4 $ V < x > N < action > A < shearing > $
+}
+
+MORGAN
+{
+O1 $ friction surface between the tool and the clamp $
+O2 $ friction surface between the drilled component and the jaws of the lathe $
+O3 $ zero degree of freedom between the drilled component and the spindle $
+O4 $ the tool is harder than the drilled component $
+}
+
+MPART
+{
+P1 $ tool $
+P2 $ fixed pair $
+P3 $ tool post $
+P4 $ drilled component$
+P5 $ spindle $
+P6 $ revolute pair $
+P7 $ frame $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P4 P6 P7 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+
+
+}
+
+
+FUNCTION
+
+$
+the operation of boring is carried out to increase the diameter of a already drilled hole. This operation of boring is carried out on lathe machine.
+$
+
+
+STRUCTURE
+
+$
+The lathe consists of a bed on which the tailstock and headstock are mounted and the tool is held in the tail stock. 
+$
+BEHAVIOUR
+
+$
+The work piece is held in the headstock and rotated. The tool is moved along the axis of the lathe. The speed of the headstock is variable and is varied based on the necessity.
+
+$
+
+PICTURE
+
+{
+ADB/CUTTING/BORING/01.GIF	$ BORING $
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This operation can be performed to machine components. This can be described as follows:
+
+The tool (part) is held tightly on to the tool post (physical phenomenon). This is due to the clamping force (input) applied by the clamp, which activates the resistance to motion effect (physical effect) and it requires the presence of friction surface between the tool and the clamp (organ).
+
+The drilled component (part) is held in the spindle (physical phenomenon). This is due to the clamping force (input) of the jaws, which activates the resistance to motion effect (physical effect) and it requires the presence of friction surface between the drilled component and the jaws of the lathe (organ).
+
+The drilled component (part) is rotated (physical phenomenon). This is due to the rotation of the spindle (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the drilled component and the spindle (organ).
+
+The drilled component (part) is machined (physical phenomenon). This is due to the shearing action (input), which activates the machining effect (physical effect) and is necessary that the tool is harder than the drilled component (organ).
+
+
+
+
+
+$
+
+ACTION
+
+$ 
+ To perform machining.
+$
+
+STATE
+
+$
+The diameter of the hole is small.
+
+The diameter of the hole is large.
+
+$
+
+PHYPHENOMENON
+
+$
+The tool is held tightly on to the tool post.
+
+The drilled component is held in the spindle.
+
+The drilled component is rotated.
+
+The drilled component is machined.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Resistance to motion effect.
+
+Resistance to motion effect.
+
+Newtonian laws of motion.
+
+Machining effect.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The clamping force applied by the clamp.
+
+The clamping force of the jaws.
+
+The rotation of the spindle.
+
+The shearing action.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of friction surface between the tool and the clamp.
+
+Presence of friction surface between the drilled component and the jaws of the lathe.
+
+Presence of zero degree of freedom between the drilled component and the spindle.
+
+Necessary that the tool is harder than the drilled component.
+
+
+$
+
+
+
+PARTS
+$
+Tool forms a fixed pair with the tool post.
+
+Drilled component forms fixed pair with the spindle.
+
+Drilled component forms a revolute pair with the frame.
+
+Drilled component 
+
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

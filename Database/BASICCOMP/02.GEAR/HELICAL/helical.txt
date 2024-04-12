@@ -1,0 +1,205 @@
+MACTION
+{
+A1 $ V < transmit > N < motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < X > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate >  N < gear > A < input > $
+PP2 $ V < push >  N < tooth > A < output > $
+PP3 $ V < rotate  >  N < gear > A < output > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Lever effect $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < torque > A < X > $
+I2 $ V < X >  N < inertia > A < rotational > $
+I3 $ V < X >  N < tooth movement > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the input gear $
+O2 $ tooth on the input gear engages with the tooth on the output gear $
+O3 $ teeth are cut on a cylindrical surface $
+
+}
+
+MPART
+{
+P1 $ gear input $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ input tooth $
+P5 $ output tooth $
+P6 $ higher pair $
+P7 $ output gear $
+
+
+}
+
+LINK
+{
+
+<  A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+<  A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+<  A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P7 >
+}
+
+
+
+FUNCTION
+
+$
+This gear is used for applications that require very quiet and smooth running, at high rotational velocities. For this reason, helical gears are used in almost all car transmissions. Helical gears can be used on non-parallel and even perpendicular shafts, and can carry higher loads than can spur gears.
+$
+
+
+BEHAVIOUR
+
+$
+Because of the angle of the teeth on helical gears, they create a thrust load on the gear when they mesh. Devices that use helical gears usually have bearings that can support this thrust load.
+The resulting teeth in a helical gear are longer than the teeth on a spur gear of equivalent pitch diameter. The longer teeth cause helical gears to have higher tooth strength than a spur gear of same diameter. Also, the greater surface contact on the teeth allows a helical gear to carry more load than a spur gear. However, the longer surface of contact reduces the efficiency of a helical gear relative to a spur gear. 
+
+One interesting thing about helical gears is that if the angles of the gear teeth are correct, they can be mounted on perpendicular shafts, adjusting the rotation angle by 90°. This kind of a helical gear is called a crossed helical gear. (shown in pic 2)
+$
+
+
+STRUCTURE
+
+$
+The teeth on helical gears are cut at an angle to the face of the gear. When two teeth on a helical gear system engage, the contact starts at one end of the tooth and gradually spreads as the gears rotate, until the two teeth are in full engagement.
+Parallel helical gears have their teeth inclined at a small angle to their axis of rotation. Each tooth is part of a spiral or helix. Parallel shafts can be connected by or by gears with twisted, screw like teeth (helical gears).
+Based on the shape of the inclined teeth, helical gears can be of two sorts, single helical and double helical.
+Double helical gears give an efficient transfer of torque and smooth motion at very high rotational velocities. An example of a double helical gear is shown below
+The helical gears shown in the third picture have splines cut in their center holes. These gears can move along a splined (grooved) shaft, although they rotate with the shaft.
+$
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/02.GEAR/HELICAL/helical1.jpg  	$ 01.Helical Gear	$
+ADB/BASICCOMP/02.GEAR/HELICAL/helical2.gif	$ 02.Helical Gear	$
+ADB/BASICCOMP/02.GEAR/HELICAL/single_double.gif	$ 03.Helical types	$
+ADB/BASICCOMP/02.GEAR/HELICAL/crosshelical1.jpg	$ 04.Crossed Helical	$
+ADB/BASICCOMP/02.GEAR/HELICAL/crosshelical2.gif	$ 05.Crossed Helical	$
+}
+
+
+CLIP
+
+{
+ADB/BASICCOMP/02.GEAR/HELICAL/helical.avi	$ 01.Helical Gear	$
+}
+
+SUMMARY
+$
+To transmit the power and motion between two parallel shafts to each other. This can be interpreted as change of state from rest to rotation of the output gear. This can be described as follows:
+
+
+The input gear (part) mounted on the input shaft rotates (physical phenomenon). This is due the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input gear (organ).
+
+A tooth (part) on the input gear pushes the tooth on the output gear (physical phenomenon). This is due to the rotational inertia of the input gear (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the tooth on the input gear engages with the tooth on the output gear (organ).
+
+The output gear (part) rotates (physical phenomenon). This is due to the movement of the tooth (input), which activates lever effect (physical effect) and is necessary that the teeth are cut on a cylindrical surface (organ).
+$
+
+ACTION
+
+$ 
+ To transmit power and motion between two parallel shaft smoothly.
+$
+
+STATE
+
+$
+The output gear is at rest.
+
+The output gear is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The input gear mounted on the input shaft rotates.
+
+A tooth on the input gear pushes the tooth on the output gear.
+
+The output gear rotates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+Rotational inertia of the input gear.
+
+Movement of the tooth.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the input gear.
+
+Necessary that the tooth on the input gear engages with the tooth on the output gear.
+
+Necessary that the teeth are cut on a cylindrical surface.
+
+$
+
+
+
+PARTS
+
+$
+The input gear forms a revolute pair with the frame.
+
+The tooth on the input gear forms a higher pair with the tooth on the output gear.
+
+The output gear forms a revolute pair with the frame.
+$
+
+
+

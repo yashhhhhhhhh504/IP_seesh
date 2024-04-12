@@ -1,0 +1,80 @@
+
+SUMMARY
+$
+Pocket scissors are genuine collapsible. In collapsed state it occupies small space. Sometimes it is also used for key chains. In collapsed state, its handles cover its cutting part, which in turn provides safety. The way of collapsing is explained below,
+
+Handles of the scissors (part) get collapsed and cover the cutting part (physical phenomenon). This is due to force applied (input) at the ends of the handles, which actuates Newtonian laws of motion (physical effect) and requires presence of turning pair and one degree of freedom (organ).
+$
+
+ACTION
+
+$ 
+ To collapse from deployed state.
+$
+
+STATE
+
+$
+Scissors in deployed state.
+Scissors in collapsed state.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Handles of the scissors get collapsed and cover the cutting part.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Force applied at the ends of the handles
+
+$
+
+
+ORGAN
+
+$
+Presence of turning pair and one degree of freedom
+
+$
+
+
+
+PARTS
+$
+
+Handles of the scissors
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

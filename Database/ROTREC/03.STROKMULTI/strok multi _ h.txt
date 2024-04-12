@@ -1,0 +1,91 @@
+SUMMARY
+$
+This mechanism can be used to convert rotary motion into reciprocating motion. This can be interpreted as a change of state from rest to reciprocating motion. This can be described as follows:
+
+The input gear (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input gear (organ).
+
+The link 5 (part) that is connected to the frame oscillates (physical phenomenon). This is due to the movement of the gear 2 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the link 4 and the link 5 (organ).
+
+The slider (part) slides in the guide ways (physical phenomenon). This is due to the rotation of the gear 3 (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth sliding surface between the slider and the guide ways (organ). 
+
+$
+
+ACTION
+
+$ 
+ To convert rotary motion into reciprocating motion.
+$
+
+STATE
+
+$
+The slider is at rest.
+
+The slider reciprocates in the guide ways.
+
+$
+
+PHYPHENOMENON
+
+$
+The input gear rotates.
+
+The link 5 that is connected to the frame oscillates.
+ 
+The slider slides in the guide ways.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+The movement of the gear 2.
+
+Rotation of the gear 3.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the input gear.
+
+Presence of one degree of freedom between the link 4 and the link 5.
+
+Presence of a smooth sliding surface between the slider and the guide ways.
+
+
+$
+
+
+
+PARTS
+$
+The input gear forms a revolute pair with the frame.
+
+The link connected to the frame forms a revolute pair with the frame.
+
+
+The slider forms a sliding pair with the guide ways.
+
+
+
+
+
+$
+

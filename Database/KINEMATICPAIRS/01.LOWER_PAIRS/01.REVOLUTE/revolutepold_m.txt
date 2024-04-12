@@ -1,0 +1,52 @@
+MACTION
+{
+A1 $ V=rotate N=member $
+}
+MSTATE
+{
+S1 $ V < X > A < X > N < rest >  $
+S2 $ V < X > A < small angular > N < rotation >  $
+S3 $ V < X > A < X > N < X >  $
+}
+
+
+
+MPHYPHENOMENON
+{
+PP1 $ V=turn N=member $
+PP2 $ V=transfer N=torque $
+PP3 $ V=restrain N=motion $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=turn N=member $
+I3 $ V=set N=boundary $
+}
+
+MORGAN
+{
+O1 $ 1 dof of motion in the direction of motion $
+O2 $ ? $
+}
+
+MPART
+{
+P1 $ shaft $
+P2 $ frame $
+P3 $ collar $
+P4 $ revolute pair $
+P5 $ fixed pair $
+P6 $ contact $
+}
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P4
+A1 - PP2 - PE1 - I2 - O1 - P1 - P1 - P5
+A1 - PP3 - PE2 - I3 - O2 - P2 - P3 - P6

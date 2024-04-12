@@ -1,0 +1,200 @@
+MACTION
+{
+A1 $ V < sort > N < object > A < spherical > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rolling > N < motion > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < free-falling > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rolling motion to free-falling motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < roll > N < object > A < spherical > $
+PP2 $ V < pass > N < gate > A < X > $
+PP3 $ V < actuate operate > N < gate door > A < trap > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Inertia effect $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < conversion > N < energy > A < potential kinetic > $
+I2 $ V < contact > N < gate > A < x > $
+}
+
+MORGAN
+{
+O1 $ requires that the objects are spherical in shape $
+O2 $ requires that the spherical ball be of proper size $
+O3 $ requires that the object be of a larger size $
+}
+
+MPART
+{
+P1 $ spherical object $
+P2 $ rolling pair $
+P3 $ hopper $
+P4 $ gate $
+P5 $ revolute pair $
+P6 $ hinged support $
+P7 $ trap door $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O3 P5 P6 P7 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This device sorts spherical components according to their size.
+$
+
+
+STRUCTURE
+
+$
+This device consists of a hopper, a spring-loaded gate, a trapdoor and two troughs.  The gate acts as a latch for the trapdoor.
+$
+
+
+BEHAVIOUR
+
+$
+In this arrangement, the balls are loaded into the hopper and are compelled to pass the gate. The proper-size balls pass through without touching (actuating) the gate and fall into the trough at the end of the gate. Larger balls, however, brush against the gate, which releases the catch on the bottom of the trapdoor, and fall through into the special trough for the rejects. 
+$
+
+
+PICTURE
+
+{
+ADB/SORT/SORT02/SORT02.JPG	$ Sorting Mechanism - 2 $
+}
+
+
+CLIP
+
+{
+ADB/SORT/SORT02/SORT02.AVI	$ Sorting Mechanism - 2 $
+}
+
+
+SUMMARY
+$
+Using this device spherical object can be sorted out based on their sizes. This can be described as follows:
+
+The object (part) rolls down the hopper (physical phenomenon). This is due to the conversion of potential energy into kinetic energy of the object (input), which activates the inertia effect (physical effect) and requires that the objects are spherical in shape (organ).
+
+The spherical object (part) passes through the gate and falls into the trough (physical phenomenon). This is due to the conversion of potential energy into kinetic energy of the body (input), which activates the inertia effect (physical effect) and requires that the spherical ball be of proper size (organ).
+
+
+The spherical object (part) actuates the gate, which in turn operates the trap door and thus the object falls in a different trough (physical phenomenon). This is due to the contact between the object and the gate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the object be of a larger size (organ).
+
+$
+
+
+
+ACTION
+$
+ 
+ Using this device spherical object can be sorted based on their sizes.
+
+$
+STATE
+$
+rolling motion.
+
+free falling motion.
+
+
+$
+PHYPHENOMENON
+$
+
+The object rolls down the hopper.
+
+The spherical object passes through the gate and falls into the trough.
+ 
+The spherical object actuates the gate, which in turn operates the trap door and thus the object falls in a different trough.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Inertia effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Conversion of potential energy into kinetic energy of the object.
+
+The contact between the object and the gate.
+
+
+
+$
+
+ORGAN
+$
+
+Requires that the objects are spherical in shape.
+
+Requires that the spherical ball be of proper size.
+
+Requires that the object be of a larger size.
+
+
+
+
+$
+
+PARTS
+$
+
+The spherical objects form a rolling pair with the inner surface of the hopper.
+
+The gate forms a revolute pair with respect to the hinged support.
+
+The trap door forms a revolute pair with respect to the hinged joint.
+
+
+
+
+
+$
+
+

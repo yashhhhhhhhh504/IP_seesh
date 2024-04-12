@@ -1,0 +1,179 @@
+MACTION
+{
+A1 $ V < stop > N < motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < motion > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+} 
+MCHANGESTATE
+{
+CS1 $ from motion to rest $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < slide > N < piston > A < X > $
+PP2 $ V < pump > N < fluid > A < X > $
+PP3 $ V < hold > N < wheel > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < piston > A < x > $
+I3 $ V < x > N < fluid-flow > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth sliding surface between the cylinder and the piston $
+O2 $ pressure within the cylinder is greater than the pressure in the pipes $
+O3 $ smooth surface between the piston and the cylinder $
+}
+
+MPART
+{
+P1 $ Piston $
+P2 $ Fluid $
+P3 $ Friction pad $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P3 >
+}
+
+
+FUNCTION
+
+$
+The disc brakes are a lot like the brakes on a bicycle. But instead of squeezing the wheel directly the brake pads squeeze a rotor disc that is connected to the wheel.
+$
+
+
+STRUCTURE
+
+$
+The single piston floating caliper disc brake is the most common type. This design is self-centering and self-adjusting. The caliper is able to slide from side to side.
+$
+BEHAVIOUR
+
+$
+The caliper is able to slide from side to side, so it moves to the center each time the brakes are applied. Also there is no spring to pull the pads away from the disc.
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to stop the motion of the wheel. This can be interpreted as a change of state from motion to rest. This can be described as follows:
+
+The piston (part) in the master cylinder slides (physical phenomenon). This is due to the force applied on the brake pedal (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth sliding surface between the cylinder and the piston (organ).
+
+The fluid (part) is pumped out of the cylinder into the pipes (physical phenomenon). This is due to the movement of the piston (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the pressure within the cylinder is greater than the pressure in the pipes (organ).
+
+The friction pads (part) slides and holds the moving wheel (physical phenomenon). This is due to the flow of fluid (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth surface between the piston and the cylinder (organ).
+$
+
+ACTION
+
+$ 
+ To stop the motion.
+$
+
+STATE
+
+$
+The wheel is in motion.
+
+The wheel is at rest.
+
+$
+
+PHYPHENOMENON
+
+$
+The piston in the master cylinder slides.
+
+The fluid is pumped out of the cylinder into the pipes.
+
+The friction pads slides and holds the moving wheel.
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+The force applied on the brake pedal.
+
+The movement of the piston.
+
+The flow of fluid.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the cylinder and the piston.
+
+Necessary that the pressure within the cylinder is greater than the pressure in the pipes.
+
+Presence of a smooth surface between the piston and the cylinder.
+
+
+$
+
+
+
+PARTS
+$
+Piston.
+
+Fluid.
+
+Friction pads.
+
+
+$
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+MACTION
+{
+A1 $ V < stop > N < rotation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rotation > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rotation to rest $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < open > N < valve > A < X > $
+PP3 $ V < draw > N < fluid > A < x > $
+PP4 $ V < move > N < part > A < x > $
+PP5 $ V < move > N < diaphragm > A < X > $
+PP6 $ V < move > N < piston > A < X > $
+PP7 $ V < operate > N < part > A < X > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < move > N < pedal > A < x > $
+I3 $ V < x > N < force > A < suction > $
+I4 $ V < x > N < force > A < thrust > $
+I5 $ V < move > N < diaphragm > A < X > $
+I6 $ V < move > N < rod > A < X > $
+I7 $ V < move > N < piston > A < X > $
+
+
+}
+
+MORGAN
+{
+O1 $ one degree of freedom between the pedal and the hinge $
+O2 $ contact between the contact between the rod and the valve $
+O3 $ suction force is sufficient enough to the cause the flow of fluid $
+O4 $ diaphragm is leak proof $
+O5 $ contact between the diaphragm and the rod $
+O6 $ zero degree of freedom between the rod and the piston $
+O7 $ cylinder is leak proof $
+
+}
+
+MPART
+{
+P1 $ Brake pedal $
+P2 $ Rod $
+P3 $ Fluid $
+P4 $ Fluid $
+P5 $ Diaphragm $
+P6 $ Rod $
+P7 $ Piston $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P4 >
+< A1 IS1 OS1 CS1 PP5 PE2 I5 O5 P5 >
+< A1 IS1 OS1 CS1 PP6 PE2 I6 O6 P6 >
+< A1 IS1 OS1 CS1 PP7 PE2 I7 O7 P7 >
+
+
+
+}
+
+
+FUNCTION
+
+$
+The vacuum booster is a metal canister that contains a clever valve and a diaphragm. A rod going through the center of the canister connects to the master cylinder's piston on one side and to the pedal linkage on the other.
+$
+
+
+STRUCTURE
+
+$
+The vacuum booster is a very simple is a very simple elegant design. The device needs the vacuum source to operate. In gasoline powered cars the engine provides the vacuum.
+$
+BEHAVIOUR
+
+$
+If the engine is turned off, or if a leak forms in a vacuum hose, the check valve makes sure that air does not enter the vacuum booster. This is important because the vacuum booster has to be able to provide enough boost for a driver to make several stops in the event that the engine stops running -- you certainly don't want to lose brake function if you run out of gas on the highway. In the next section, we'll see how the booster works (and check out a cool animation!).
+$
+
+PICTURE
+
+{
+ADB/TRIPSTOP/POWER-BREAKS/01.JPG	$ 01.POWER BREAKS $
+ADB/TRIPSTOP/POWER-BREAKS/02.JPG	$ 02.POWER BREAKS $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to stop the wheels of the vehicle. This can interpreted as a change of state from rotation to rest. This can be described as follows:
+
+The brake pedal (part) rotates about the hinge (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the pedal and the hinge (organ).
+
+The rod (part) connected to the center of the pedal opens the valve (physical phenomenon). This is due to the movement of the pedal (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the contact between the rod and the valve (organ).
+
+The fluid (part) enters one side of the diaphragm (physical phenomenon). This is due to the suction force (input), which activates the vacuum effect (physical effect) and is necessary that the suction force is sufficient enough to the cause the flow of fluid (organ).
+
+The fluid (part) moves the diaphragm (physical phenomenon). This is due to the thrust force exerted by the fluid (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the diaphragm is leak proof (organ).
+
+The diaphragm (part) moves the rod connected to the piston further (physical phenomenon). This is due to the movement of the diaphragm (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of contact between the diaphragm and the rod (organ).
+
+The rod (part) moves the piston in the master cylinder (physical phenomenon). This is due to the movement of the rod (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of zero degree of freedom between the rod and the piston (organ).
+
+The piston (part) moves the fluid out of the master cylinder and which in turn operates another cylinder to move the friction plates (physical phenomenon). This is due to the movement of piston (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the cylinder is leak proof (organ).
+$
+
+ACTION
+
+$ 
+ To stop the rotation of the wheel.
+$
+
+STATE
+
+$
+The wheel is rotating.
+
+The wheel is at rest.
+
+$
+
+PHYPHENOMENON
+
+$
+The brake pedal rotates about the hinge.
+
+The rod connected to the center of the pedal opens the valve.
+ 
+The fluid enters one side of the diaphragm.
+
+The fluid moves the diaphragm.
+
+The diaphragm moves the rod connected to the piston further.
+
+The rod moves the piston in the master cylinder.
+
+The piston moves the fluid out of the master cylinder and which in turn operates another cylinder to move the friction plates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+The force applied on it.
+
+The movement of the pedal.
+
+The suction force.
+
+The thrust force exerted by the fluid.
+
+The movement of the diaphragm.
+
+The movement of the rod.
+
+The movement of piston.
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the pedal and the hinge.
+
+Presence of contact between the contact between the rod and the valve.
+
+Necessary that the suction force is sufficient enough to the cause the flow of fluid.
+
+Necessary that the diaphragm is leak proof.
+
+Presence of contact between the diaphragm and the rod.
+
+Presence of zero degree of freedom between the rod and the piston.
+
+Necessary that the cylinder is leak proof.
+$
+
+
+
+PARTS
+$
+Brake pedal.
+
+Rod.
+
+Fluid.
+
+Fluid.
+
+Diaphragm.
+
+Rod.
+
+Piston.
+
+
+$
+
+
+
+

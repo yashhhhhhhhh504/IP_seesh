@@ -1,0 +1,181 @@
+MACTION
+{
+A1 $ V < protect > N < body > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ x $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < net > A < backward > $
+PP2 $ V < distribute > N < force > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Force distribution effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < bullet motion > A < x > $
+I2 $ V < x > N < stretching wire > A < horizontal vertical > $
+}
+
+MORGAN
+{
+O1 $ the net is strong enough $
+O2 $ the wires are tightly woven $
+}
+
+MPART
+{
+P1 $ Woven net $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+Soft body armor is a fairly mystifying concept. The principle at work is actually quite simple. At its heart, a piece of bulletproof material is just a very strong net. 
+
+$
+
+
+STRUCTURE
+
+$
+If you were to put a piece of bulletproof material under a powerful microscope, you would see a similar structure. Long strands of fiber are interlaced to form a dense net. A bullet is traveling much faster than a soccer ball, of course, so the net needs to be made from stronger material. The most famous material used in body armor is Dupont's KEVLAR fiber. KEVLAR is lightweight, like a traditional clothing fiber, but it is five times stronger than a piece of steel of the same weight. When interwoven into a dense net, this material can absorb a great amount of energy. 
+
+$
+BEHAVIOUR
+
+$
+To see how this works, think of a soccer goal. The back of the goal consists of a net formed by many long lengths of tether, interlaced with each other and fastened to the goal frame. When you kick the soccer ball into the goal, the ball has a certain amount of energy, in the form of forward inertia. When the ball hits the net, it pushes back on the tether lines at that particular point. Each tether extends from one side of the frame to the other, dispersing the energy from the point of impact over a wide area. 
+The energy is further dispersed because the tethers are interlaced. When the ball pushes on a horizontal length of tether, that tether pulls on every interlaced vertical tether. These tethers in turn pull on all the connected horizontal tethers. In this way, the whole net works to absorb the ball's inertial energy, no matter where the ball hits. 
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/BODY_ARMOR/01.jpg		$ 01. BODY ARMOR $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device can be used to provide protection to the body. This can be described as follows:
+
+The woven net (part) moves backward and thus is stretched (physical phenomenon). This is due to the motion of the bullet (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the net is strong enough (organ).
+
+The net (part) that receives the impact distributes over an entire area (physical phenomenon). This is due to the successive stretching of the horizontal and vertical wires of the net (input), which activates the force distribution effect (physical effect) and is necessary that the wires are tightly woven (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To protect body.
+$
+
+STATE
+
+$
+X
+
+$
+
+PHYPHENOMENON
+
+$
+The woven net moves backward and thus is stretched.
+
+The net that receives the impact distributes over an entire area.
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Force distribution effect.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Motion of the bullet.
+
+Successive stretching of the horizontal and vertical wires of the net.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the net is strong enough.
+
+Necessary that the wires are tightly woven.
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Woven net.
+
+
+$
+
+
+

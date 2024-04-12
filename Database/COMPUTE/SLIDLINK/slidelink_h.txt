@@ -1,0 +1,88 @@
+SUMMARY
+$
+This can be used to perform computation. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows:
+
+The input link x (part) slides in the vertical direction (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the applied force is greater than the gravitational force (organ).
+
+The input link y (part) slides in the vertical direction (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the force applied is greater than the gravitational force (organ).
+
+The output link z (part) slides in the vertical direction in accordance to the law z=c(x+y) (physical phenomenon). This is due to the movement of the links x and y (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the link z is hinged at the center of the link a (organ).
+
+  
+$
+
+ACTION
+
+$ 
+ To perform computation.
+$
+
+STATE
+
+$
+From rest to sliding motion.
+
+$
+
+PHYPHENOMENON
+
+$
+The input link x slides in the vertical direction.
+
+The input link y slides in the vertical direction.
+ 
+The output link z slides in the vertical direction in accordance to the law z=c(x+y).
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Force applied on it
+
+The movement of the links x and y.
+$
+
+
+ORGAN
+
+$
+Necessary that the applied force is greater than the gravitational force.
+
+Necessary that the applied force is greater than the gravitational force.
+
+Necessary that the link z is hinged at the center of the link a.
+
+
+$
+
+
+
+PARTS
+$
+The link x forms a sliding pair with the guide ways.
+
+The link y forms a sliding pair with the guide ways.
+
+The link z forms a sliding pair with the guide ways.
+
+
+
+
+$
+

@@ -1,0 +1,84 @@
+MACTION
+{
+A1 $ V < hold > N < objects > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < release > A < x > N < objects > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < hold > A < x > N < objects > $
+} 
+MCHANGESTATE
+{
+CS1 $ from released object to hold object  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < oscillate > N < follower > A < X > $
+PP3 $ V < rotate > N < clamping-link > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time. $
+PE3 $ Lever effect. $
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < move > N < connecting rod > A < x > $
+I3 $ V < rotate > N < follower > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the input shaft and the crank.  $
+O2 $ Presence of one degree of freedom between the connecting rod and the follower. $
+O3 $ Presence of zero degree of freedom between the clamping link and the follower.  $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ follower $
+P5 $ clamping link $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P2 P3 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P5 P2 P3 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

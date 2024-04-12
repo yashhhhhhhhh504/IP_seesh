@@ -1,0 +1,90 @@
+SUMMARY
+$
+This mechanism can be used as bed and as a sofa. This can be described as follows:
+
+The vertical part (part) of sofa is made horizontal (physical phenomenon). This is due to the force applied on it (input) activates the Newtonian laws of motion (physical effect) and requires the presence of a hinged joint between the horizontal and the vertical part (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The furniture is occupying less space.
+
+The furniture is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The vertical part of sofa is made horizontal.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a hinged joint between the horizontal and the vertical part.
+
+
+$
+
+
+
+PARTS
+$
+Vertical part of sofa.
+
+Horizontal part of sofa.
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

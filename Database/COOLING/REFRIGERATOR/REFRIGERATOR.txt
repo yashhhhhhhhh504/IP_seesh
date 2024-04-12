@@ -1,0 +1,245 @@
+
+MACTION
+{
+A1 $ V < keep > N < space > A < cool > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < hot > N < space > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < cool > N < space > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from higher temperature space to lower temperature space $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < compress > N < refrigerant > A < X > $
+PP2 $ V < cool > N < condenser > A < X > $
+PP3 $ V < cool > N < device > A < expansion > $
+PP4 $ V < absorb > N < space > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ laws of conduction, convection and radiation $
+PE3 $ Bernoulli's equation $
+PE4 $ laws of heat transfer $
+
+}
+
+MINPUT
+{
+I1 $ V < provide > N < energy > A < x > $
+I2 $ V < release > N < heat > A < x > $
+I3 $ V < lose > N < x > A < frictional > $
+I4 $ V < evaporate > N < refrigerant > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ outlet pressure of the compressor smaller than that of the delivery pressure $
+O2 $ temperature of surrounding lower than that of condenser $
+O3 $ correct design of expansion device $
+O4 $ the cabinet space to be hotter than the refrigerant $
+
+}
+
+MPART
+{
+P1 $ Refrigerant and compressor $
+P2 $ Condenser $
+P3 $ Expansion device $
+P4 $ Evaporator $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 >
+
+}
+
+
+
+FUNCTION
+
+$
+Refrigerator is basically keeps the space, inside the cabinet, cool in order to keep food fresh for longer time. $
+
+
+STRUCTURE
+
+$
+It uses the fact that in the process of evaporation, liquids absorb heat. It has compressor, condenser, expansion device, evaporator and working fluid that is called as refrigerant.
+$
+
+BEHAVIOUR
+
+$
+The compressor compresses refrigerant. This is due to energy provided by the reciprocating pistons in the compressor, which actuates Newtonian laws of motion and requires the outlet pressure of the compressor smaller than that of the delivery pressure. Condenser cools the compressed refrigerant. This is due to heat released to the environment, which actuates the laws of conduction, convection and radiation and requires the temperature of surrounding lower than that of condenser. Expansion device reduces the pressure and cools the condensed refrigerant. This is due to frictional loss if the expansion device is capillary tube of longer length in the condenser, which actuates the Bernoulli's equation and requires correct design of expansion device. Evaporator absorbs heat from the space, which is to be cooled. This is due to the evaporation of the refrigerant, which actuates laws of heat transfer and requires the cabinet space to be hotter than the refrigerant.
+
+
+
+$
+
+PICTURE
+
+{
+ADB/COOLING/REFRIGERATOR/REFRIGERATOR01.GIF		$ 01.REFRIGERATOR $
+ADB/COOLING/REFRIGERATOR/REFRIGERATOR02.GIF		$ 02.REFRIGERATOR $
+
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+Refrigerator is basically keeps the space, inside the cabinet, cool in order to keep food fresh for longer time. It uses the fact that in the process of evaporation, liquids absorb heat. It has compressor, condenser, expansion device, evaporator	 and working fluid that is called as refrigerant. It is explained below,
+
+Refrigerant (part) is compressed by the compressor (physical phenomenon). This is due to energy provided (input) by the reciprocating pistons in the compressor, which actuates Newtonian laws of motion (physical effect) and requires the outlet pressure of the compressor smaller than that of the delivery pressure (organ).
+
+Condenser (part) cools the compressed refrigerant (physical phenomenon). This is due to heat released (input) to the environment, which actuates the laws of conduction, convection and radiation (physical effect) and requires the temperature of surrounding lower than that of condenser (organ).
+
+Expansion device (part) reduces the pressure and cools the condensed refrigerant (physical phenomenon). This is due to frictional loss (input) if the expansion device is capillary tube of longer length in the condenser, which actuates the Bernoulli's equation (physical effect) and requires correct design of expansion device (organ).
+
+Evaporator (part) absorbs heat from the space, which is to be cooled (physical phenomenon). This is due to the evaporation of the refrigerant (input) , which actuates laws of heat transfer (physical effect) and requires the cabinet space to be hotter than the refrigerant (organ).
+
+$
+
+ACTION
+
+$ 
+ To keep the space inside the refrigerator cool.
+$
+
+STATE
+
+$
+Space inside the refrigerator not cool.
+Space inside the refrigerator cool.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Refrigerant is compressed by the compressor
+
+Condenser cools the compressed refrigerant
+
+Expansion device reduces the pressure and cools the condensed refrigerant
+
+Evaporator absorbs heat from the space, which is to be cooled
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+laws of conduction, convection and radiation
+Bernoulli's equation
+laws of heat transfer
+
+$
+
+
+INPUT
+
+$
+energy provided by the reciprocating pistons
+heat released to the environment
+frictional loss
+evaporation of the refrigerant
+$
+
+
+ORGAN
+
+$
+
+outlet pressure of the compressor smaller than that of the delivery pressure
+
+temperature of surrounding lower than that of condenser
+
+correct design of expansion device
+
+the cabinet space to be hotter tan the refrigerant
+$
+
+
+
+PARTS
+$
+Refrigerant and compressor
+
+Condenser
+
+Expansion device
+
+Evaporator
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+SUMMARY
+$
+This mechanism is basically used for connecting two parts. This can also be used for deployment. This can be described as follows:
+
+The shank (part) slides as it rotates into the hole provided (physical phenomenon). This is due to the couple applied on it (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the thread on the screw fits into the threads provided in the hole (organ).
+$
+
+ACTION
+
+$ 
+To connect two parts.
+
+To deploy. 
+$
+
+STATE
+
+$
+small exposed area.
+
+large exposed area.
+
+$
+
+PHYPHENOMENON
+
+$
+The shank slides as it rotates into the hole provided.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Couple applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the thread on the screw fits into the threads provided in the hole.
+
+
+$
+
+
+
+PARTS
+$
+Screw.
+
+Hole.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

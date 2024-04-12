@@ -1,0 +1,174 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < occupy > A < less > N < area > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < occupy > A < large > N < area > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from occupying less area to large area  $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < unfold > N < part > A < flexible > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the flexible part has pleats on it $
+}
+
+MPART
+{
+P1 $ Flexible part $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+Bellow gate is used conveniently because the gate occupies less area when not in use and occupies more area when not in use.
+$
+
+
+STRUCTURE
+
+$
+The bellow gate is made up of flexible material, which is pleated at regular intervals, which aids in folding.
+$
+BEHAVIOUR
+
+$
+An airport bellows gate is used to provide weather proof, vertigo free access to the plane. 
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/BELLOWS_GATE/scan1.jpg $ bellows gate $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This is used to provide proof against weather. This occupies less space when not in use and occupies more space when in use. This can be discussed as follows:
+
+The flexible part (part) is unfolded (physical phenomenon). This is due to the moment applied (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the flexible part has pleats on it (organ).
+
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+$
+
+STATE
+
+$
+The part is occupying less space.
+
+The part is occupying large space.
+
+$
+
+PHYPHENOMENON
+
+$
+The flexible part is unfolded.
+
+
+ 
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Moment applied.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the flexible part has pleats on it.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Flexible part.
+
+
+
+
+
+$
+
+

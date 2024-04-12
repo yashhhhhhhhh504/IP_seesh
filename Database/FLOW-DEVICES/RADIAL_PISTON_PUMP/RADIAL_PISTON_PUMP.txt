@@ -1,0 +1,253 @@
+
+MACTION
+{
+A1 $ V < pump > N < liquid > A < X > $
+A2 $ V < displace > N < liquid > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < level liquid > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at low level to liquid at higher level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < shaft > A < X > $
+PP2 $ V < slide > N < piston > A < outward > $
+PP3 $ V < enter > N < liquid > A < x > $
+PP4 $ V < move > N < piston > A < inward > $
+PP5 $ V < expel > N < liquid > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Hooks law $
+PE3 $ Vacuum effect $
+PE4 $ No two bodies can occupy the same space at the same time $ 
+PE5 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < x > N < force > A < spring > $
+I3 $ V < move > N < piston > A < outward > $
+I4 $ V < apply > N < force > A < X > $
+I5 $ V < move > N < piston > A < inward > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the shaft carrying the rotating pistons $
+O2 $ the center of the casing is offset from the center of the shaft holding the rotating pistons $
+O3 $ the pressure outside the cylinder is greater than the pressure within the cylinder $
+O4 $ the center of the casing is offset from the center of the shaft holding the rotating pistons $
+O5 $ the pressure inside the cylinder is greater than the pressure in the outlet $
+}
+
+MPART
+{
+P1 $ shaft $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ piston $
+P5 $ sliding pair $
+P6 $ cylinder $
+P7 $ liquid $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P7 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP5 PE4 I5 O5 P7 >
+
+}
+
+
+
+
+
+
+
+FUNCTION
+
+$
+Radial Piston Pumps can produce a very smooth flow under extreme pressure. Generally they are variable-displacement pumps. 
+In variable models, flow rate changes when the shaft holding the rotating pistons is moved with relation to the casing (in different models either the shaft or the casing moves.) Output can also be varied by changing the rotation speed. 
+
+$
+
+
+STRUCTURE
+
+$
+
+
+$
+BEHAVIOUR
+
+$
+If the casing (shown in red) were moved to the left, the flow rate would decrease to zero. If it were moved even further to the left the flow would reverse. Input through the TOP two black holes near the center below the "Pintle" (shown in yellow). Output is through the BOTTOM two black holes, above the pintle. Higher-pressure areas are indicated with a DARKER blue fluid color. The pistons are usually forced out by springs. They are forced back in, expelling liquid, by the casing. 
+An odd number of pistons are always used to smooth the hydraulic balance. These pumps revolve at speeds up to about 1200 RPM. 
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/RADIAL_PISTON_PUMP/01.GIF		$ 01.RADIAL PISTON PUMP $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This device can be used to pump liquid that is to displace liquid. This can be interpreted as a change of state from liquid at low level to liquid at higher level. This can be described as follows:
+
+The shaft (part) carrying the rotating pistons rotates within the casing (physical phenomenon). This is due to the torque applied on to it (input) which activates the Newtonian laws of motion (physical effect) and It requires the presence of zero degree of freedom between the input shaft and the shaft carrying the rotating pistons (organ).
+
+The piston (part) within the cylinder moves away from the center of the casing (physical phenomenon). This is due to the spring force (input), which activates the hooks law (physical effect) and is necessary that the center of the casing is offset from the center of the shaft holding the rotating pistons (organ).
+
+The liquid (part) enters the cylinder (physical phenomenon).  This is due to the outward movement of the piston (input), which activates the vacuum effect (physical effect) and is necessary that the pressure outside the cylinder is greater than the pressure within the cylinder (organ).
+
+The piston (part) moves inward (physical phenomenon). This is due to the force applied by the casing (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the center of the casing is offset from the center of the shaft holding the rotating pistons (organ).
+
+The liquid (part) is expelled from the cylinder (physical phenomenon). This is due to the inward motion of the piston (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the pressure inside the cylinder is greater than the pressure in the outlet (organ).
+$
+
+ACTION
+
+$ 
+ To pump liquid.
+
+To displace liquid.
+$
+
+STATE
+
+$
+The liquid is at a lower level.
+
+The liquid is at higher level
+
+$
+
+PHYPHENOMENON
+
+$
+The shaft carrying the rotating pistons rotates within the casing.
+
+The piston within the cylinder moves away from the center of the casing.
+
+The water enters the cylinder.
+
+The piston moves inward.
+
+The liquid is expelled from the cylinder.
+ 
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Hooks law.
+
+Vacuum effect.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Torque applied on to it.
+
+Spring force.
+
+The outward movement of the piston.
+
+Force applied by the casing.
+
+Inward motion of the piston.
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the shaft carrying the rotating pistons.
+
+Necessary that the center of the casing is offset from the center of the shaft holding the rotating pistons.
+
+Necessary that the pressure outside the cylinder is greater than the pressure within the cylinder.
+
+Necessary that the center of the casing is offset from the center of the shaft holding the rotating pistons.
+
+Necessary that the pressure inside the cylinder is greater than the pressure in the outlet.
+$
+
+
+
+PARTS
+$
+The shaft forms a revolute pair with the frame.
+
+Piston forms a sliding pair with the cylinder.
+
+Liquid.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

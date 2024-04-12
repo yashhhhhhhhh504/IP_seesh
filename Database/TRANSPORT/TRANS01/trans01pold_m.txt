@@ -1,0 +1,62 @@
+MACTION
+{
+A1 $ V=transport N=material A=sequentially $
+}
+MSTATE
+{
+S1 $ V < X > A < X > N < rest >  $
+S2 $ V < X > A < X > N < rotation >  $
+S3 $ V < X > A < X > N < X >  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V=rotate N=crank $
+PP2 $ V=rotate N=transport $
+PP3 $ V=push N=rail A=forward $
+PP4 $ V=move N=material A=forward $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V=apply N=torque $
+I2 $ V=rotate N=crank $
+I3 $ V=rotate N=transport $
+I4 $ V=move N=rail A=forward $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ 0 dof $
+O3 $ slots in the rail $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ frame $
+P3 $ transport  $
+P4 $ rail $
+P5 $ material $
+P6 $ revolute pair $
+P7 $ output-gear $
+P8 $ planar pair $
+P9 $ ? pair $
+}
+
+
+LINK
+{
+
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P6
+A1 - PP2 - PE2 - I2 - O2 - P1 - P3 - P6
+A1 - PP3 - PE2 - I3 - O3 - P3 - P4 - P9
+A1 - PP4 - PE2 - I4 - O? - P4 - P5 - P8
+}

@@ -1,0 +1,219 @@
+MACTION
+{
+A1 $ V < support provide > N < vehicle traction > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < tire form > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed > N < tire form > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from original form to deformed form of the tire $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < x > N < portion tire > A < flat > $
+PP2 $ V < bend > N < portion tire > A < flat > $
+PP3 $ V < provide > N < traction > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Weight distribution effect $
+PE2 $ Hooks law $
+PE3 $ Friction effect $
+}
+
+MINPUT
+{
+I1 $ V < x > N < pressure > A < tire > $
+I2 $ V < x > N < loading > A < car > $
+I3 $ V < x > N < tread > A < x > $
+}
+
+MORGAN
+{
+O1 $ there is sufficient pressure within the tire there is sufficient pressure within the tire $
+O2 $ the tire is made up of a flexible material $
+O3 $ contact between the tire and the road surface $
+}
+
+MPART
+{
+P1 $ flat portion of the tire $
+P2 $ flat portion of the tire $
+P3 $ treads on the tire $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+A tire is a rubber casing that holds air. The air helps tires handle uneven road surface so that the car’s suspension does not have to handle every ripple and stone on the road.
+$
+
+
+STRUCTURE
+
+$
+The rubber casing includes the tread and the sidewalls. 
+$
+BEHAVIOUR
+
+$
+The tread determines the amount of traction the tire have on wet and dry roads. The side walls handle the cornering forces. Designing a tire that does everything well, lasts a long time and does not cost much is an interesting challenge.
+
+$
+
+PICTURE
+
+{
+ADB/TRANSPORT/TIRES/01.JPG		$ 01.TIRES $
+ADB/TRANSPORT/TIRES/02.JPG		$ 02.TIRES $
+}
+
+
+CLIP
+
+{
+}
+
+
+SUMMARY
+$
+This provides support for the vehicle and traction in regions like wet surfaces. This can be discussed as follows:
+
+The flat portion (part) of the tires that comes in contact with the road supports the weight of the car (physical phenomenon). This is due to tire pressure (input), which activates the weight distribution effect (physical effect) and is necessary that there is sufficient pressure within the tire (organ).
+
+The flat portion (part) of the tire bends (physical phenomenon). This is due to the overloading of the car (input), which activates the hooks law (physical effect) and is necessary that the tire is made up of a flexible material (organ).
+
+The tires (part) provide traction (physical phenomenon). This is due to the presence of tread (input), which activates the friction effect (physical effect) and it requires the presence of contact between the tire and the road surface (organ).
+
+$
+
+ACTION
+
+$ 
+ To support the vehicle weight and to provide traction.
+$
+
+STATE
+
+$
+The tire is in its original form.
+
+The tire is in the deformed shape.
+
+
+
+$
+
+PHYPHENOMENON
+
+$
+The flat portion of the tires that comes in contact with the road supports the weight of the car.
+
+The flat portion of the tire bends.
+
+The tires provide traction.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Weight distribution effect.
+
+Hooks law.
+
+Friction effect.
+
+
+$
+
+
+INPUT
+
+$
+Tire pressure.
+
+The overloading of the car.
+
+The presence of tread.
+
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that there is sufficient pressure within the tire.
+
+Necessary that the tire is made up of a flexible material.
+
+Presence of contact between the tire and the road surface.
+
+
+$
+
+
+
+PARTS
+$
+The flat portion of the tire.
+
+The flat portion of the tire.
+
+The treads on the tire.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

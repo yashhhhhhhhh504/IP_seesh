@@ -1,0 +1,177 @@
+MACTION
+{
+A1 $ V < store > N < energy > A < recoverable rotational > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < form > $
+IS2 $ V < x > A < deformed > N < form  > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < deformed  > N < form > $
+OS2 $ V < x > A < original > N < form > $
+} 
+MCHANGESTATE
+{
+CS1 $ from original form to deformed form $
+CS2 $ from deformed form to original form $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < deform > N < spring > A < X > $
+PP2 $ V < regain > N < form > A < original > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Hooks law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < remove > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ Necessary that the spring has some stiffness $
+O2 $ Necessary that the torque applied is within the elastic limit of the material  $
+}
+
+MPART
+{
+P1 $ spring $
+P2 $ flexible pair $
+P3 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS2 OS2 CS2 PP2 PE1 I2 O2 P1 P2 P3 >
+
+}
+
+
+
+FUNCTION
+
+$
+Torsion springs, whose ends are rotated in angular deflection, offer resistance to externally applied torque. Special types of torsion springs include double torsion springs and springs having a space between the coils to minimize friction. Torsional springs are used to move or support rotating objects such as hinges or levers.
+$
+
+
+STRUCTURE
+
+$
+Torsion springs are usually close wound. They reduce in coil diameter, and increase in body length when they are deflected. They offer resistance to externally applied torque and store rotational energy. Commonly made as single or double-bodied springs and mounted on a shaft or arbor, torsion springs must be supported at three points. It is preferred to have the spring loaded in a position that causes the body diameter to decrease, thus achieving a more favorable effect from the residual forming stresses. 
+
+
+As with extension springs the end configurations vary widely on torsion springs. Common end styles are Straight legs, Bend Offset, and Hinge.
+
+A unique type of torsion spring is a double torsion spring (Fig 7). This consists of one set of coils coiled right hand and one set of coils coiled left hand. These coils are connected and work in parallel. These sections are designed separately with the total torque being the sum of the two. 
+
+Materials commonly used for torsion springs are spring steel, stainless steel, silicon-chrome, high carbon, beryllium-copper, inconnel, galvanised wire, mild steel, phosphor bronze, brass. 
+$
+
+
+BEHAVIOUR
+
+$
+The ends of a torsion spring are rotated in an angular deflection. Although the name implies otherwise, a torsion spring is subjected to bending stress rather than torsional stress. A torsion spring performs at its best when supported by a rod or tube. This type of spring is normally close wound but can have pitch to reduce friction between the coils.
+
+Torsion springs, which are more compliant than the torsion bar, include the clock or spiral torsion spring (Fig 8) and the helical torsion spring. These rely on bending for their action. The helical torsion spring is similar to the helical tension spring in requiring specially formed ends to transmit the load. 
+$
+
+
+PICTURE
+{
+ADB/BASICCOMP/09.Spring/TORSION/torsion1.jpg		$ 01.Torsion Springs	$
+ADB/BASICCOMP/09.Spring/TORSION/torsion2.jpg		$ 02.Torsion Springs	$
+ADB/BASICCOMP/09.Spring/TORSION/torsion3.jpg		$ 03.Torsion Springs	$
+ADB/BASICCOMP/09.Spring/TORSION/drawing.jpg		$ 04.Torsion Springs	$
+ADB/BASICCOMP/09.Spring/TORSION/types.jpg		$ 05.Torsion Types	$
+ADB/BASICCOMP/09.Spring/TORSION/torsionends.jpg		$ 06.Torsion Spring Ends $
+ADB/BASICCOMP/09.Spring/TORSION/doubletorsion.jpg	$ 07.Double Torsion 	$
+ADB/BASICCOMP/09.Spring/TORSION/spiraltorsion.jpg	$ 08.Spiral Torsion	$
+}
+
+
+CLIP
+{
+}
+SUMMARY
+$
+This can be used to store rotational energy. This can be interpreted as a change of state from original form to deformed form and again back to original form. This can be described as follows:
+
+The spring (part) deforms (physical phenomenon). This is due to the torque applied on it (input), which activates the hooks law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The spring (part) restores to its original form (physical phenomenon). This is due to the removal of torque (input), which activates the hooks law (physical effect) and is necessary that the torque applied is within the elastic limit of the material (organ).
+$
+
+ACTION
+
+$ 
+ To store recoverable form of rotational energy.
+$
+
+STATE
+
+$
+The spring is deformed.
+
+The spring regains its original shape and size.
+
+$
+
+PHYPHENOMENON
+
+$
+The spring deforms in the shape. 
+
+The spring regains its original shape and thus does some work.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Hooks law.
+
+$
+
+
+INPUT
+
+$
+The torque applied on it.
+
+Removal of torque.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the spring has some stiffness.
+
+Necessary that the torque applied is within the elastic limit of the material.
+
+$
+
+
+
+PARTS
+$
+The ends of the spring are fixed to the frame.
+
+$

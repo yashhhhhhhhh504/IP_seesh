@@ -1,0 +1,96 @@
+SUMMARY
+$
+This mechanism can be used to circulate air.
+$
+
+ACTION
+
+$ 
+ To circulate air.
+$
+
+STATE
+
+$
+The air is at rest.
+
+The air is being circulated.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate fan.
+
+Push air.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+$
+
+
+INPUT
+
+$
+Torque.
+
+Rotation of the fan.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the fan.
+
+Necessary that the fan has the necessary stiffness to cause the movement of the air.
+
+
+
+
+$
+
+
+
+PARTS
+$
+Fan.
+
+Fan blades.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

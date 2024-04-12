@@ -1,0 +1,86 @@
+SUMMARY
+$
+The slide 2 (part) slides with respect to the slide 1 (physical phenomenon). This is due to the force applied on to the slide 2 (Input) which activates Newtonian laws of motion (physical effect) and requires the presence of smooth sliding surface between the slides 1 and 2 (organ).
+
+The slide 3 (part) slides with respect to the slide 2 (physical phenomenon). This is due to the movement of the slide 2 (input), which activates the inertia effect (physical effect) and requires the presence of a smooth sliding surface between the slides 2 and slides 3 (organ).
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism extension can be provided for a machine tool table.
+$
+}
+STATE
+{
+$
+Absence of force at the slide 2. 
+$
+Presence of force at the slide 2.
+$
+}
+PHYPHENOMENON
+{
+$
+The slide 2 slides with respect to the slide 1.
+$
+The slide 3 slides with respect to the slide 2.
+$ 
+
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+Inertia effect.
+$
+
+$
+}
+
+INPUT
+{
+$
+Force applied on to the slide 2.
+$
+The movement of the slide 2.
+$
+
+$
+}
+
+ORGAN
+{
+$
+Presence of smooth sliding surface between the slides 1 and 2.
+$
+Presence of a smooth sliding surface between the slides 2 and slides 3.
+$
+
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The slide 1 is fixed.
+$
+The slide 2 forms a prismatic pair with the slide 1.
+$
+The slide 3 forms a prismatic pair with the slide 2.
+$
+
+$
+
+$
+}

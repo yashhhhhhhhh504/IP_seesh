@@ -1,0 +1,155 @@
+SUMMARY
+$
+The mechanism is called as Toggle-link reverser. The mechanism can be used to transmit power between two parallel shafts, which are separated small to medium distances. This can be described as follows:
+
+The input gear (part) being mounted on the input shaft rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the gear and the input shaft (organ).
+
+The right follower gear (part) mounted the drive shaft rotates in the counter clockwise direction (physical phenomenon). This is due to the rotation of the input gear (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of meshing of the gears (organ).
+
+The drive shaft (part) rotates (physical phenomenon). This is due to the rotation of the right follower gear (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the shaft and the right follower gear (organ), which is accomplished by the engagement of the ratchet clutch with the gear.
+
+
+The bevel gear (part) mounted on the drive shaft rotates (physical phenomenon). This is due to the rotation of the drive shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the drive shaft and the gear (organ).
+
+The output gear (part) being mounted on the output shaft rotates in the clockwise direction (physical phenomenon). This is due to the rotation of the bevel gear (input), which activates the Newtonian laws of motion (physical effect) and requires the meshing of two gears (organ).
+
+The striking pin (part), which is mounted on the output gear, strikes against the reversing lever and displaces it (physical phenomenon). This is due to the rotation of the output gear (input), which activates the law “no two bodies can occupy the same space at the same time “ (Physical effect) and requires that the striking pin is longer than the gap between the out put gear and the reversing link (organ).
+
+The toggle link (part) operates that is it moves to the left (physical phenomenon). This is due to the movement of the reversing link (input), which activates the law “no two bodies can occupy the same space “ (physical effect) and requires that the toggle link be hinged to a certain point (organ).
+
+
+The ratchet clutch (part) now engages with the left follower gear (physical phenomenon). This is due to the movement of the toggle link and the spring (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the ratchet clutch form a sliding pair with the drive shaft and it also requires that the spring has some stiffness (organ).
+
+
+
+The output gear (part) along with the out put shaft rotates in the opposite direction (physical phenomenon). This is due to the rotation of the drive shaft (input), which activates the law “no two bodies can occupy the same space” (physical effect) and requires that the ratchet clutch engage with the left follower gear (organ).
+
+
+
+
+ 
+
+
+
+$
+
+ACTION
+
+$ 
+Using this mechanism the direction of rotation the out gear can be changed after every one revolution of the input gear.
+$
+STATE
+$
+
+Absence of torque at the input shaft.
+
+Presence of torque at the input shaft.
+
+The presence of contact between the right follower gear and the ratchet clutch.
+
+The presence of contact between the left follower gear and the ratchet clutch.
+
+$
+PHYPHENOMENON
+$
+
+The input gear being mounted on the input shaft rotates in the counter clockwise direction.
+
+The right follower gear mounted the drive shaft rotates in the counter clockwise direction.
+ 
+The drive shaft rotates.
+
+The bevel gear mounted on the drive shaft rotates.
+
+The output gear being mounted on the output shaft rotates in the clockwise direction.
+
+The striking pin, which is mounted on the output gear, strikes against the reversing lever and displaces it.  
+
+The toggle link operates that is it moves to the left.
+
+The ratchet clutch now engages with the left follower gear.
+
+
+The output gear rotates in the opposite direction.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+$
+
+INPUT
+$
+
+Rotation of the input shaft.
+
+Rotation of the input gear.
+
+Rotation of the right follower gear.
+
+Rotation of the drive shaft.
+
+Rotation of the bevel gear.
+
+Rotation of the output gear.
+
+Movement of the reversing link.
+
+Movement of the toggle link and the spring.
+
+Rotation of the drive shaft.
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the gear and the input shaft.
+
+Presence of meshing of the gears.
+
+Presence of zero degree of freedom between the shaft and the right follower gear.
+
+Presence of zero degree of freedom between the drive shaft and the gear.
+
+Requires the meshing of two gears.
+
+Requires that the striking pin is longer than the gap between the out put gear and the reversing link.
+
+Requires that the ratchet clutch form a sliding pair with the drive shaft and it also requires that the spring have some stiffness.
+
+Requires that the ratchet clutch engage with the left follower gear.
+
+
+
+$
+
+PARTS
+$
+
+The input gear along with the input shaft forms a revolute pair with the frame.
+
+The two bevel gears along with the shaft forms a revolute pair with the frame.
+
+The ratchet clutch forma a sliding pair with the drive shaft.
+
+The toggle link forms a revolute pair with the  frame.
+
+The gears form a gear pair with each other.
+
+The output gear forms a revolute pair with the frame.
+
+
+$
+
+
+
+

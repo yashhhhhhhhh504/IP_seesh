@@ -1,0 +1,80 @@
+SUMMARY
+$
+This is a portable form of personal computer. 
+$
+
+ACTION
+
+$ 
+ To reduce space occupied when not in use.
+$
+
+STATE
+
+$
+The laptop is in folded form.
+
+The laptop is in unfolded form.
+
+$
+
+PHYPHENOMENON
+
+$
+The monitor of the laptop is deployed to use the computer.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+$
+
+
+INPUT
+
+$
+Unwrapping force.
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a hinged joint between the monitor and the keyboard.
+
+
+$
+
+
+
+PARTS
+$
+Laptop.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+MACTION
+{
+A1 $ V < separate > AV < X > N < iron ore > AJ < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < ore > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A <  > N  < iron > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from ore to iron  $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < attract > AV < X > N < iron > AJ < X > $
+PP2 $ V < > AV < X > N < > AJ < X > $
+PP3 $ V < > AV < X > N < > AJ < > $
+PP4 $ V < > AV < X > N < > AJ < > $
+PP5 $ V < X > AV < X > N < X > AJ < X > $
+PP6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Magnetic effect. $
+PE2 $ $
+PE3 $ $
+PE4 $ $ 
+PE5 $ $
+PE6 $ $
+}
+
+MINPUT
+{
+I1 $ V < > AV < X > N < force > AJ < magnetic > $
+I2 $ V < > AV < X > N < > AJ < > $
+I3 $ V < > AV < X > N < > AJ < > $
+I4 $ V < > AV < X > N < > AJ < X > $
+I5 $ V < X > AV < X > N < X > AJ < X > $
+I6 $ V < X > AV < X > N < X > AJ < X > $
+}
+
+MORGAN
+{
+O1 $ Presence of the material within the magnetic field of the magnet. $
+O2 $  $
+O3 $ $
+O4 $ $
+O5 $ $
+O6 $ $
+}
+
+MPART
+{
+P1 $ V < X > AV < X > N < magnet > AJ < > $
+P2 $ V < X > AV < X > N < frame> AJ < > $
+P3 $ V < X > AV < X > N < fixed-pair > AJ < > $
+P4 $ V < X > AV < X > N < > AJ < X > $
+P5 $ V < X > AV < X > N < > AJ < > $
+P6 $ V < X > AV < X > N < > AJ < X > $
+P7 $ V < X > AV < X > N < > AJ < X > $
+P8 $ V < X > AV < X > N < X > AJ < X > $
+
+
+}
+
+LINKS
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+
+
+
+
+
+
+
+
+
+
+

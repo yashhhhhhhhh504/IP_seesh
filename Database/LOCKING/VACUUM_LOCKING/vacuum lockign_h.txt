@@ -1,0 +1,84 @@
+SUMMARY
+$
+The vacuum locking can be employed when there is pressure difference between the outside atmosphere and the chamber.
+$
+
+ACTION
+
+$ 
+ To operate the door of the chamber.
+$
+
+STATE
+
+$
+The door is closed.
+
+The door is opened.
+
+$
+
+PHYPHENOMENON
+
+$
+The door rotates with respect to the hinged joint, which connects the door to the chamber.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Bernoulli’s effect
+
+$
+
+
+INPUT
+
+$
+Pressure difference.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pressure difference is sufficient to cause the opening of the door.
+
+
+
+$
+
+
+
+PARTS
+$
+Door of the chamber.
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

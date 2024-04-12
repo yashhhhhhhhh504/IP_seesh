@@ -1,0 +1,197 @@
+MACTION
+{
+A1 $ V < enable close > N < rotation > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+
+}
+
+MINPUT
+{
+I1 $ V < x > N < torque > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of one degree of freedom between the camera part of the phone and the keypad $
+
+}
+
+MPART
+{
+P1 $ Mobile phone $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTION
+
+$
+The screen of the mobile phone is rotated about the vertical axis to orient the cameral to required position.  
+$
+
+
+STRUCTURE
+
+$
+It basically consists of two parts one is the screen and the other is the keypad to in the numbers.
+$
+
+
+BEHAVIOUR
+
+$
+The screen part can be rotated about the keypad when it is unfolded. This is possible due to the presence of a hinged joint between the screen and the key pad which assists the unfolding of the mobile phone.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/MOBILE_PHONE/01.jpg $ 01.Mobile Phone $
+ADB/DEPLOY/MOBILE_PHONE/02.jpg $ 02.Mobile Phone $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism is basically used to rotate the camera that is fitted on it so that snaps can be taken in any required direction.
+$
+
+ACTION
+
+$ 
+ To enable rotation.
+$
+
+STATE
+
+$
+The camera is at rest.
+
+The camera is rotated.
+
+$
+
+PHYPHENOMENON
+
+$
+Rotate the camera that is fitted on to the mobile phone.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+$
+
+
+INPUT
+
+$
+Torque that is applied.
+$
+
+
+ORGAN
+
+$
+Presence of one degree of freedom between the camera part of the phone and the keypad.
+
+
+$
+
+
+
+PARTS
+$
+Mobile phone.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

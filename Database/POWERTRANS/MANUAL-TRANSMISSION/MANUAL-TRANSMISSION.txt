@@ -1,0 +1,238 @@
+MACTION
+{
+A1 $ V < operate > N < part > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < gear > A < X > $
+PP2 $ V < rotate > N < lay-shaft > A < X > $
+PP3 $ V < rotate > N < gear > A < x > $
+PP4 $ V < operate > N < lever > A < shift > $
+PP5 $ V < mesh > N < part > A < X > $
+PP6 $ V < rotate > N < shaft > A < output > $
+}
+
+MPHYEFFECT
+{
+PE1 $ No two bodies can occupy the same space at the same time $
+PE2 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < gear > A < x > $
+I2 $ V < rotate > N < gear > A < x > $
+I3 $ V < rotate > N < gear > A < x > $
+I4 $ V < x > N < force > A < manual > $
+I5 $ V < move > N < rod > A < X > $
+I6 $ V < rotate > N < gear > A < X > $
+}
+
+MORGAN
+{
+O1 $ meshing between the gears $
+O2 $ zero degree of freedom between the gear and the lay shaft $
+O3 $ meshing between the gears $
+O4 $ one degree of freedom between the lever and the frame $
+O5 $ zero degree of freedom between the collar and the selector rod and it is also necessary that the output shaft is splined $
+O6 $ zero degree of freedom gear and the output shaft $
+}
+
+MPART
+{
+P1 $ gear $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ lay shaft $
+P5 $ fixed pair $
+P6 $ shift lever $
+P7 $ spherical pair $
+P8 $ selector rod $
+P9 $ collar $
+P10 $ sliding pair $
+P11 $ output shaft $
+
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP4 PE2 I4 O4 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP5 PE2 I5 O5 P9 P10 P11 >
+< A1 IS1 OS1 CS1 PP6 PE2 I6 O6 P11 P2 P3 >
+
+}
+
+
+
+FUNCTION
+
+$
+The key to manual transmission is the mechanism that selects the gear ratio. This is where the shifter's "H" pattern on most transmission comes from.
+When you select a gear, the transmission engages one of the freewheeling gears to the output shaft, and this picks the gear ratio. 
+$
+
+
+STRUCTURE
+
+$
+The output shaft is splined. Between each pair of gears on the output shaft is a collar that can slide along the splines. The collar has a set of teeth along the side that can mesh into the side of a freewheeling gear.
+$
+BEHAVIOUR
+
+$
+When you put the car into gear, you are sliding one of these collars into one of the gears on the output shaft. As collars slides into a gear, the teeth on the collar, called dog teeth, fit into holes on the sides of the gear, locking it to the output shaft. 
+$
+
+PICTURE
+
+{
+ADB/POWERTRANS/MANUAL-TRANSMISSION/00.JPG	$ 01.MANUAL TRNASMISSION $
+ADB/POWERTRANS/MANUAL-TRANSMISSION/01.JPG	$ 02.MANUAL TRNASMISSION $
+ADB/POWERTRANS/MANUAL-TRANSMISSION/02.JPG	$ 03.MANUAL TRNASMISSION $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This mechanism can be used to operate the engine in the power band. This can be described as follows:
+
+The gear (part) mounted on the lay shaft rotates continuously (physical phenomenon). This is due to the rotation of the gear mounted on the input shaft (input), which activates the “no two bodies can occupy the same space at the same time”  (physical effect) and requires the presence of meshing between the gears (organ).
+
+The lay shaft (part) rotates continuously (physical phenomenon). This is due to the rotation of the gear mounted on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the gear and the lay shaft (organ).
+
+The gears (part) mounted on the output shaft rotate (physical phenomenon). This is due to the rotation of the gears mounted on the lay shaft (input), which activates the law “no two bodies can occupy the same space at the same” (physical effect) and requires the presence of meshing between the gears (organ).
+
+The shift lever (part) is operated (physical phenomenon). This is due to the manual force (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the lever and the frame (organ).
+
+The collar (part) meshes with one of the gears mounted on the output shaft (physical phenomenon). This is due to the movement of the selector rod (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the collar and the selector rod and it is also necessary that the output shaft is splined (organ). 
+
+
+The output shaft (part) rotates (physical phenomenon). This is due to the rotation of the gear with which the collar has been meshed with (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom gear and the output shaft (organ).
+
+
+$
+
+ACTION
+
+$ 
+To operate the engine in the power band. 
+$
+
+STATE
+
+$
+The output shaft is rest.
+
+The output shaft is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The gear mounted on the lay shaft rotates continuously.
+
+The lay shaft rotates continuously.
+ 
+The gears mounted on the output shaft rotate.
+
+The shift lever is operated.
+
+The collar meshes with one of the gears mounted on the output shaft.
+
+The output shaft rotates.
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the gear mounted on the input shaft.
+
+The rotation of the gear mounted on it.
+
+The rotation of the gears mounted on the lay shaft.
+
+The manual force.
+
+The movement of the selector rod.
+
+The rotation of the gear with which the collar has meshed.
+
+$
+
+
+ORGAN
+
+$
+Presence of meshing between the gears.
+
+Presence of zero degree of freedom between the gear and the lay shaft.
+
+Presence of meshing between the gears.
+
+Presence of one degree of freedom between the lever and the frame.
+
+Presence of zero degree of freedom between the collar and the selector rod and it is also necessary that the output shaft is splined.
+
+Presence of zero degree of freedom gear and the output shaft.
+$
+
+
+
+PARTS
+$
+The gear forms a revolute pair with the frame.
+
+The lay shaft forms a fixed pair with the gear.
+
+The gears form a revolute pair with the frame.
+
+One end of the shift lever forms a spherical pair with the selector rod.
+
+The collar forms a sliding pair with the output shaft.
+
+The output shaft forms a revolute pair with the frame.
+
+
+
+
+
+
+$

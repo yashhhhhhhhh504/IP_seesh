@@ -1,0 +1,223 @@
+MACTION
+{
+A1 $ V < translate > N < hand motion cursor motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ X $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < roll > N < roller-ball > A < X > $
+PP2 $ V < rotate > N < shaft > A < x-direction > $
+PP3 $ V < rotate > N < y-direction > A < shaft > $
+PP4 $ V < rotate > N < encoder-disk > A < y-direction > $
+PP5 $ V < rotate > N < encoder-disk > A < x-direction > $
+
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Friction effect $
+PE2 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < move > N < mouse-assembly > A < X > $
+I2 $ V < roll > N < ball > A < X > $
+I3 $ V < rotate > N < shaft > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ friction surface between the roller and the flat surface $
+O2 $ friction surface between the shaft and the ball $
+O3 $ zero degree of freedom between the disk and the shaft $
+}
+
+MPART
+{
+P1 $ mouse-assembly $
+P2 $ flat-surface $
+P3 $ sliding-pair $
+P4 $ ball $
+P5 $ roller-pair $
+P6 $ shafts $
+P7 $ revolute-pair $
+P8 $ frame $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O1 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I2 O2 P2 P4 P5 >
+< A1 IS1 OS1 CS1 PP4 PE2 I3 O3 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP5 PE2 I3 O3 P6 P7 P8 >
+
+}
+
+FUNCTION
+
+$
+The main goal of a mouse is to translate the motion of your hand into a form that your computer can use to control the cursor’s position.
+$
+
+
+STRUCTURE
+
+$
+A mechanical mouse has a basic plastic housing, which contains a ball, two rollers and the electronics. The plastic housing has a hole on the bottom surface where the ball lies. The ball thus has contact with the surface over which the mouse is placed. The two rollers inside the mouse touch the ball. One of the rollers is oriented so that it detects motion in the X-direction, and the other is oriented 90 degrees to the first roller so that it detects motion in the Y-direction. Each roller connects to a shaft, and the shaft spins a disk with holes in it. On either side of the disk is an infrared light-emitting diode (LED) and an infrared sensor. 
+$
+
+
+BEHAVIOUR
+
+$
+The ball inside the mouse touches the desktop and rolls when the mouse moves. When the ball rolls, one or both of the rollers roll as well. When a roller rolls, its shaft and disk spin. The holes in the disk break the beam of light coming from the LED so that the infrared sensor sees pulses of light. The rate of the pulsing is directly related to the speed of the mouse. An on-board processor chip inside the mouse reads the pulses from the infrared sensors and turns them into binary data that the computer can understand. The chip sends the binary data to the computer through the mouse's cord.
+Most of the mice on personal computers use this opto-mechanical arrangement - the ball and disks move mechanically, and an optical system counts the pulses of light. Each encoder disk has two infrared LEDs and two infrared sensors, one on each side of the disk. This arrangement allows the processor to detect the disk's direction of rotation. There is a piece of plastic with a small, precisely located hole that sits between the encoder disk and each infrared sensor. This piece of plastic provides a window through which the infrared sensor can "see." The window on one side of the disk is located slightly higher than it is on the other; it is one-half the height of one of the holes in the encoder disk, to be exact. That difference causes the two infrared sensors to see pulses of light at slightly different times. At times, one of the sensors sees a pulse of light and the other does not. The mouse's processor chip decodes these differences to figure out the direction of rotation.
+$
+
+
+PICTURE
+
+{
+ADB/SPECIAL/COMPMOUSE/compmouse.jpg		$ 01. Computer Mouse	$
+ADB/SPECIAL/COMPMOUSE/mouse.jpg		        $ 02. Mouse Parts	$
+ADB/SPECIAL/COMPMOUSE/mouseball.jpg		$ 03. Mouse Mechanism	$
+ADB/SPECIAL/COMPMOUSE/simplemouse.gif		$ 04. Computer Mouse	$
+ADB/SPECIAL/COMPMOUSE/firstmouse.jpg		$ 05. First Mouse	$
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+The main goal of a mouse is to translate the motion of your hand into a form that your computer can use to control the cursor’s position. This can be described as follows:
+
+
+The roller ball (part) rolls within the plastic casing (physical phenomenon). This is due to the movement of the mouse assembly (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the roller and the flat surface (organ).
+
+
+The shaft (part) on to which the disk, which records the movement in the x- direction, rotates (physical phenomenon). This is due to the rolling of the ball (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the shaft and the ball (organ).
+
+The shaft (part) on to which the disk, which records the movement in the y-direction, rotates (physical phenomenon). This is due to the rolling of the ball (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the ball and the shaft (organ).
+
+ 
+The encoder disk (part), which detects the movement in the x-direction, rotates (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the disk and the shaft (organ).
+
+The encoder disk (part), which detects the movement in the y-direction, rotates (physical phenomenon). This is due to the rotation of the shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom the disk and the shaft (organ).
+
+The rotation of the encoding disks is converted into computer form by the led and the sensor assembly.
+
+
+$
+
+ACTION
+$
+ 
+ To translate the motion of your hand into a form that your computer can use to control the cursor’s position.
+
+
+$
+STATE
+$
+X
+
+
+$
+PHYPHENOMENON
+$
+
+The roller ball rolls within the plastic casing.
+
+The shaft on to which the disk, which records the movement in the x- direction, rotates.
+ 
+The shaft on to which the disk, which records the movement in the y-direction, rotates.
+
+The encoder disk, which detects the movement in the x-direction, rotates.
+
+The encoder disk, which detects the movement in the y-direction, rotates.
+
+
+$
+
+PHYEFFECT
+$
+
+Friction effect.
+
+Newtonian laws of motion.
+
+
+
+$
+
+INPUT
+$
+
+Movement of the mouse assembly.
+
+Rolling of the ball.
+
+The rotation of the shaft.
+
+$
+
+ORGAN
+$
+
+Presence of friction surface between the roller and the flat surface.
+
+Presence of friction surface between the shaft and the ball.
+
+Presence of zero degree of freedom between the disk and the shaft.
+
+
+
+
+$
+
+PARTS
+$
+
+The mouse assembly forms a sliding pair with the flat surface.
+
+The ball forms a roller pair with the surface.
+
+The shafts along with the disks form a revolute pair with the frame.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+

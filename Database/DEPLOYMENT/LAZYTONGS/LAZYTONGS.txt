@@ -1,0 +1,187 @@
+MACTION
+{
+A1 $ V < expand > A < X > N < X > $
+A2 $ V < contract > A < X > N < X > $
+
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < small horizantal > N < distance > $
+IS2 $ V < x > A < large horizantal > N < distance > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large horizantal > N < distance > $
+OS2 $ V < x > A < small horizantal > N < distance > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small horizantal distance to large horizantal distance $
+CS2 $ from large horizantal distance to small horizantal distance $
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < move > N < link > A < apart > $
+PP2 $ V < increase > A < X > N < distance > $
+PP3 $ V < slide > A < X > N < member > $
+PP5 $ V < move > N < link > A < together > $
+PP6 $ V < decrease > A < X > N < distance > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < force > $
+I2 $ V < move > N < link > A < apart > $
+I3 $ V < move > N < link > A < together > $
+}
+
+MORGAN
+{
+O1 $ empty space $
+}
+
+MPART
+{
+P1 $ link $
+P2 $ link $
+P3 $ link $
+P4 $ cylindrical pair $
+}
+LINK
+{
+< A1 IS1  OS1  CS1 PP1  PE1  I1  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1 PP1  PE1  I1  O1  P2  P3  P4 >
+< A1 IS1  OS1  CS1 PP2  PE1  I2  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1 PP2  PE1  I2  O1  P2  P3  P4 >
+< A1 IS1  OS1  CS1 PP3  PE1  I2  O1  P1  P2  P4 >
+< A1 IS1  OS1  CS1 PP3  PE1  I2  O1  P2  P3  P4 >
+
+< A2 IS2  OS2  CS2 PP5  PE1  I1  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2 PP5  PE1  I1  O1  P2  P3  P4 >
+< A2 IS2  OS2  CS2 PP6  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2 PP6  PE1  I3  O1  P2  P3  P4 >
+< A2 IS2  OS2  CS2 PP3  PE1  I3  O1  P1  P2  P4 >
+< A2 IS2  OS2  CS2 PP3  PE1  I3  O1  P2  P3  P4 >
+
+
+}
+
+FUNCTION
+
+$
+The use of such a mechanism can be made in supporting a bulb (of a table lamp) or telephone etc. The lazy tong principle is also made use of in Cockscrews as evident in Fig 02. Fig 03 shows the application of lazy tongs in a Rivet gun.
+$
+
+
+STRUCTURE
+
+$
+In this mechanism (Fig 01), 'O' is pin-jointed and is a fixed point. The point 'A' slides in the vertical guides while all other points are pin-jointed. All the links are of equal length.
+Fig 02 shows a lazy tong cockscrew. The screw is attached to a centre pin of the lowest pair of cross-bars of the lazy-tongs, and the ring, which passes over the bottle neck, is hinged to the side bars, suitable stops being provided to prevent lateral motion when the corkscrew is closed. A suitable handle is hinged at the other end of the lazy-tongs 
+$
+
+
+
+BEHAVIOUR
+
+$
+As "A' moves vertically, 'P' will move in a horizontal line. (Fig 01)
+As the handle of the cockscrew lazy tong is pulled, the gadget expands and this motion removes the cork from the bottle neck.
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOYMENT/LAZYTONGS/lazytongs.jpg	$ 01. Lazy Tongs $
+ADB/DEPLOYMENT/LAZYTONGS/cockscrew.jpg	$ 02. Cockscrew	$
+ADB/DEPLOYMENT/LAZYTONGS/rivetgun.jpg	$ 03. Rivet Gun	$
+}
+
+
+CLIP
+
+{
+ADB/DEPLOYMENT/LAZYTONGS/lazytongs.avi	$ Lazy Tongs	$
+}
+
+SUMMARY
+$
+The use of such a mechanism can be made in supporting a bulb (of a table lamp) or telephone etc. this can be described as follows:
+
+The links (part) move apart (physical phenomenon). This is due to tensile force applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a slide at the point ‘A’ (organ).
+
+The links (part) move closer to the fixed link ‘B’ (physical phenomenon). This is due to the compressive force applied (input) on to it, which activates the Newtonian laws of motion (physical effect) and requires that the links be of the same length (organ).
+$
+
+
+
+ACTION
+$
+ 
+ Using this bulbs or telephones can be supported.
+
+$
+STATE
+$
+
+Absence of force at the links.
+
+Presence of tensile force at the links.
+
+Presence of compressive force at the links.
+$
+PHYPHENOMENON
+$
+
+The links move apart.
+
+The links move closer to the fixed link ‘B’.
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+$
+
+INPUT
+$
+
+Tensile force applied on to it.
+
+Compressive force applied on to it.
+$
+
+ORGAN
+$
+
+Presence of a slide at the point ‘A’.
+
+Requires that the links be of the same length.
+$
+
+PARTS
+$
+
+The first link is hinged at the point ‘O’.
+
+The links form revolute pairs with their hinged joints.
+
+The slide ‘A’ slides with the vertical support.
+
+$
+
+
+
+
+
+
+

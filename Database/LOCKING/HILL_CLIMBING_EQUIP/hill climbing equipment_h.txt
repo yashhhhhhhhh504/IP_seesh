@@ -1,0 +1,87 @@
+SUMMARY
+$
+This equipment can be used to climb hills.
+$
+
+ACTION
+
+$ 
+ To climb hills.
+$
+
+STATE
+
+$
+The equipment is freely hanging.
+
+The equipment is hooked on to the hills.
+
+$
+
+PHYPHENOMENON
+
+$
+Hook the equipment on to the rocks of the hills.
+
+Pull the rope attached to one end of the equipment.
+
+$
+
+
+PHYEFFECT
+
+$
+Friction effect.
+
+Newton’s third law.
+$
+
+
+INPUT
+
+$
+Frictional force between the hook of the equipment and the rocks of the hills.
+
+$
+
+
+ORGAN
+
+$
+Presence of friction between the hook and the rocks of the hills.
+
+Necessary that the force applied is sufficient to lift the body the trekkers.
+
+
+$
+
+
+
+PARTS
+$
+The hook of the equipment.
+
+The rope tied to one end of the equipment.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

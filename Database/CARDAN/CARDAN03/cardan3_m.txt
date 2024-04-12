@@ -1,0 +1,104 @@
+
+
+MACTION
+{
+A1 $ V < generate > N < motion > A < straight-line > $
+A2 $ V < generate > N < motion > A < reciprocating > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < straight-line > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to straight-line motion  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < revolve > N < gear > A < spur fixed > $
+PP2 $ V < revolve > N < gear > A < spur > $
+PP3 $ V < oscillate > N < link > A < fixed > $
+PP4 $ V < move > N < link > A < linearly > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < revolve > N < gear > A < spur > $
+I3 $ V < rotate > N < link > A < x > $
+I4 $ V < oscillate > N < link > A < X > $
+}
+
+MORGAN
+{
+O1 $ a link which maintains a fixed distance of between the center of the spur gear and the fixed gear $
+O2 $ there is contact between the spur gears 2 and 3 $
+O3 $ a hinged joint between the link 5 and link 4 $
+O4 $ a hinged joint between the links $
+}
+
+MPART
+{
+P1 $ spur gear $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ higher pair $
+P5 $ link $
+P6 $ sliding pair $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P3 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P2 P3 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P5 P3 P6 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P3 >
+< A2 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P2 P3 >
+< A2 IS1 OS1 CS1 PP4 PE1 I4 O4 P5 P3 P6 >
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

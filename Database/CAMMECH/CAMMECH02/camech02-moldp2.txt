@@ -1,0 +1,74 @@
+MACTION
+{
+A1 $ V < generate > A < non-uniform > N < motion > $
+}
+MPHYPHENOMENON
+{
+PP1 $ V < revolve > A < X > N < gear > $
+PP2 $ V < rotate > A < X > N < gear > $
+PP3 $ V < revolve > A < X > N < cam > $
+PP4 $ V < rotate > A < X > N < cam > $
+PP5 $ V < reduce > A < X > N < friction > $
+PP6 $ V < maintain > A < X > N < contact > $
+PP7 $ V < rotate > A < X > N < follower > $
+PP8 $ V < reciprocate > A < X > N < follower > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ two bodies cannot occupy the same space at the same time $
+PE3 $ friction $
+PE4 $ Hooke's Law $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < revolve > A < X > N < gear > $
+I3 $ V < apply > A < X > N < spring-force > $
+I4 $ V < apply > A < radial > N < force > $
+}
+
+MORGAN
+{
+O1 $ 1 degree of freedom of motion in direction of motion $
+O2 $ contact : fixed gear planet gear $
+O3 $ contact : roller cam $
+O4 $ spring stiffness $
+O5 $ cam profile $
+}
+
+MPART
+{
+P1 $ input shaft $
+P2 $ carrier $
+P3 $ fixed pair $
+P4 $ fixed gear $
+P5 $ revolute pair $
+P6 $ planet gear $
+P7 $ cam $
+P8 $ roller $
+P9 $ cam pair $
+P10 $ index arm $
+P11 $ spring $
+P12 $ flexible pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P1 - P4 - P5
+A1 - PP2 - PE2 - I2 - O2 - P2 - P6 - P5
+A1 - PP3 - PE1 - I1 - O1 - P6 - P7 - P3
+A1 - PP4 - PE2 - I2 - O2 - P1 - P4 - P5
+A1 - PP4 - PE2 - I2 - O2 - P6 - P7 - P3
+A1 - PP5 - PE3 - I2 - O3 - P7 - P8 - P9
+A1 - PP5 - PE3 - I2 - O3 - P8 - P10 - P5
+A1 - PP6 - PE4 - I3 - O4 - P2 - P10 - P5
+A1 - PP6 - PE4 - I3 - O4 - P2 - P10 - P12
+A1 - PP7 - PE2 - I2 - O3 - P1 - P10 - P5
+A1 - PP7 - PE2 - I2 - O3 - P7 - P8 - P9
+A1 - PP7 - PE2 - I2 - O3 - P8 - P10 - P5
+A1 - PP8 - PE2 - I4 - O5 - P7 - P8 - P9
+A1 - PP8 - PE2 - I4 - O5 - P8 - P10 - P5
+}

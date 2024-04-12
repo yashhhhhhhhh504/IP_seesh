@@ -1,0 +1,91 @@
+SUMMARY
+$
+This can be used to adjust the size of the trousers without actually changing the waist size of the trousers.
+$
+
+ACTION
+
+$ 
+To adjust the waist size of the trousers.
+
+To provide locking.
+$
+
+STATE
+
+$
+The belt is open.
+
+The belt is locked.
+
+$
+
+PHYPHENOMENON
+
+$
+The belt is inserted into the loops of the trousers.
+
+The pin on side of the belt is inserted into the holes that are present on the other side of the belt.
+ 
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Moment.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the width of the belt is lesser than the width of the loop.
+
+Necessary that the pin is hinged at one of its ends.
+
+
+
+$
+
+
+
+PARTS
+$
+Belt.
+
+Pin.
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

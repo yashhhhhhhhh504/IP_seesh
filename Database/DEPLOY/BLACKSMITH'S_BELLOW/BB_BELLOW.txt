@@ -1,0 +1,185 @@
+
+MACTION
+{
+A1 $ V < keep > N < fire > A < alive > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < inside > N < air > $
+}
+
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < outside > N < air > $
+} 
+
+MCHANGESTATE
+{
+CS1 $ Air from inside of the bellow to fire $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < collapse > N < bellow > A < X > $
+PP2 $ V < flow > N < air > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli's law $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < increase  > N < pressure > A < x > $
+}
+
+MORGAN
+{
+O1 $ Presence of flexible material and one degree of freedom $
+O2 $ Pipe connected to bellow open to atmosphere $
+}
+
+MPART
+{
+P1 $ Bellow  $
+P2 $ Air $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+}
+
+
+
+FUNCTION
+
+$
+To keep the fire alive.
+$
+
+
+
+STRUCTURE
+
+$
+Blacksmith's bellow makes intelligent use of flexibility of the material used in it. The bellow is made up of flexible material with pleats in it. When the bellow is collapsed, it supplies air to get the fire. $
+
+
+
+BEHAVIOUR
+
+$
+Bellow gets collapsed. This is due to force applied and requires presence of flexible material and one degree of freedom. Air inside the bellow goes out and helps to augment and to keep the fire alive. This is due to pressure and requires pipe connected to bellow open to atmosphere.
+
+$
+
+PICTURE
+
+{
+ADB/DEPLOY/BLACKSMITH'S_BELLOW/01.jpg   $ Black Smith's Bellow $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+Blacksmith's bellow makes intelligent use of flexibility of the material used in it. The bellow is made up of flexible material with pleats in it. When the bellow is collapsed, it supplies air to get the fire. It is as follows,
+
+Bellow (part) gets collapsed (physical phenomenon). This is due to force applied (input), which actuates Newtonian laws of motion (physical effect) and requires presence of flexible material and one degree of freedom (organ).
+
+Air (part) inside the bellow goes out and helps to augment and to keep the fire alive (physical phenomenon). This is due to pressure increase (input) inside the bellow, which actuates Bernoulli's law (physical effect) and requires pipe connected to bellow open to atmosphere (organ).
+
+$
+
+ACTION
+
+$ 
+ To keep the fire alive.
+$
+
+STATE
+
+$
+Air inside the bellow.
+Air moving out to keep the fire alive.
+$
+
+
+
+PHYPHENOMENON
+
+$
+Bellow gets collapsed.
+
+Air inside the bellow goes out and helps to augment and to keep the fire alive
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+Bernoulli's law.
+$
+
+
+INPUT
+
+$
+Force applied
+
+Pressure increase
+
+
+$
+
+
+ORGAN
+
+$
+
+Presence of flexible material and one degree of freedom
+
+Pipe connected to bellow open to atmosphere
+
+$
+
+
+
+PARTS
+$
+
+Bellow
+
+Air
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

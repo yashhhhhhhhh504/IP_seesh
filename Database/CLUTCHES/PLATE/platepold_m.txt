@@ -1,0 +1,72 @@
+MACTION
+{
+A1 $ V < connect > A < X > N < shaft > $
+A2 $ V < transmit > A < X > N < motion > $
+}
+MSTATE
+{
+S1 $ V < X > A < x > N < rest > $
+S2 $ V < X > A < x > N < rotation > $
+
+}
+MPHYPHENOMENON
+{
+PP1 $ V < move > A < X > N < forward > $
+PP2 $ V < join > A < X > N < surface > $
+PP3 $ V < rotate > A < X > N < driven-shaft > $
+}
+
+MPHYEFFECT
+{
+PE1 $ two bodies cannot occupy the same space at the same time $
+PE2 $ friction $
+}
+
+MINPUT
+{
+I1 $ V < lift > A < X > N < control-arm > $
+I2 $ V < apply > A < X > N < force > $
+I3 $ V < apply > A < X > N < torque > $
+I4 $ V < join > A < X > N < surface > $ 
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the control arm and plate in the direction of motion $
+O2 $ surface of friction material $
+O3 $ one degree of freedom between the plate and driving-shaft in the direction of motion $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ control-arm $
+P3 $ revolute pair $
+P4 $ driving-shaft $
+P5 $ plate1 $
+P6 $ plate2 $
+P7 $ prismatic pair $
+P8 $ friction-material $
+P9 $ fixed pair $
+P10 $ driven-shaft $
+P11 $ ? pair $
+P12 $ cylindrical pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP1 - PE1 - I1 - O1 - P4 - P5 - P7
+A1 - PP2 - PE2 - I2 - O2 - P5 - P8 - P11
+A1 - PP2 - PE2 - I2 - O2 - P6 - P8 - P9
+A1 - PP3 - PE2 - I3 - O3 - P4 - P5 - P7
+A1 - PP3 - PE2 - I4 - O2 - P5 - P8 - P9
+A1 - PP3 - PE2 - I4 - O2 - P6 - P4 - P12
+
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A2 - PP1 - PE1 - I1 - O1 - P4 - P5 - P7
+A2 - PP2 - PE2 - I2 - O2 - P5 - P8 - P11
+A2 - PP2 - PE2 - I2 - O2 - P6 - P8 - P9
+A2 - PP3 - PE2 - I3 - O3 - P4 - P5 - P7
+A2 - PP3 - PE2 - I4 - O2 - P5 - P8 - P9
+A2 - PP3 - PE2 - I4 - O2 - P6 - P4 - P12
+}

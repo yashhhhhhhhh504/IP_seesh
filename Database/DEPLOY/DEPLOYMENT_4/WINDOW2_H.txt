@@ -1,0 +1,82 @@
+SUMMARY
+$
+This can be used to increase area. This can be interpreted as a change of state from small area to large area. This can be described as follows:
+
+The slider (part) slides in the slot provided (physical phenomenon). This is due to the force applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of a smooth surface between the slider and the slot (organ).
+
+The links (part) rotate (physical phenomenon). This is due to the movement of the slider (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the links and the slider (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To increase area.
+$
+
+STATE
+
+$
+The links are occupying less space.
+
+The links are occupying large space.
+$
+
+PHYPHENOMENON
+
+$
+The slider slides in the slot provided.
+
+The links rotate.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Movement of the slider.
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the slider and the slot.
+
+Presence of one degree of freedom between the links and the slider.
+
+$
+
+
+
+PARTS
+$
+The slider forms a sliding pair with slot.
+
+The links form a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+
+SUMMARY
+$
+Blacksmith's bellow makes intelligent use of flexibility of the material used in it. The bellow is made up of flexible material with pleats in it. When the bellow is collapsed, it supplies air to get the fire. It is as follows,
+
+Bellow (part) gets collapsed (physical phenomenon). This is due to force applied (input), which actuates Newtonian laws of motion (physical effect) and requires presence of flexible material and one degree of freedom (organ).
+
+Air (part) inside the bellow goes out and helps to augment and to keep the fire alive (physical phenomenon). This is due to pressure increase (input) inside the bellow, which actuates Bernoulli's law (physical effect) and requires pipe connected to bellow open to atmosphere (organ).
+
+$
+
+ACTION
+
+$ 
+ To keep the fire alive.
+$
+
+STATE
+
+$
+Air inside the bellow.
+Air moving out to keep the fire alive.
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Bellow gets collapsed.
+
+Air inside the bellow goes out and helps to augment and to keep the fire alive
+ $
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion
+Bernoulli's law.
+$
+
+
+INPUT
+
+$
+Force applied
+
+Pressure increase
+
+
+$
+
+
+ORGAN
+
+$
+
+Presence of flexible material and one degree of freedom
+
+Pipe connected to bellow open to atmosphere
+
+$
+
+
+
+PARTS
+$
+
+Bellow
+
+Air
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+SUMMARY
+$
+This can be used to open and the close the entrance of the building.
+$
+
+ACTION
+
+$ 
+ To deploy.
+
+To operate the entrance of the building.
+$
+
+STATE
+
+$
+The gate is open and hence it is occupying less area.
+
+The gate is closed and hence it is occupying large area.
+
+$
+
+PHYPHENOMENON
+
+$
+Increase the area occupied by closing the gate.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Pull force.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth sliding surface between the gate and the guide ways provided for it.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Collapsible gate.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

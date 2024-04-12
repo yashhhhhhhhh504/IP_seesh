@@ -1,0 +1,189 @@
+MACTION
+{
+A1 $ V < cut close > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank 1 crank 3 > A < X > $
+PP2 $ V < oscillate > N < link 4 link 5 > A < X > $
+PP3 $ V < rotate > N < knife-edge 1 knife-edge 2 > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < crank 4 crank 5 > A < x > $
+I3 $ V < rotate > N < crank > A < x > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the input shaft and the cranks $
+O2 $ coupling rod between the cranks and the oscillating links $
+O3 $ rotation of the knife-edges is timed appropriately $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ links $
+P5 $ knife-edges $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P2 P3 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P5 P2 P3 >
+
+
+}
+
+
+
+FUNCTION
+
+$
+This four-bar cutter provides a stable, strong, cutting action by coupling two sets of links to chain four-bar arrangements.
+$
+
+
+STRUCTURE
+
+$
+This device consists of two four-bar mechanisms working opposite each other. Each mechanism has  knife attached to it and placed such that the paths of the two knives intersect.
+$
+
+
+BEHAVIOUR
+
+$
+The mechanism behaves as a Four-bar arrangement would. When the crank is rotated, the pivoted link oscillates, while the knife rotates along with the crank. Cutting action takes place when the two knives are at their lowermost position.
+$
+
+
+PICTURE
+
+{
+ADB/CUTTING/4BARCUT2/4barcut2.jpg		$ Four-bar Cutter	$
+}
+
+
+CLIP
+
+{
+ADB/CUTTING/4BARCUT2/4barcut2.avi		$ Four-bar Cutter	$
+}
+SUMMARY
+$
+This mechanism can be used for cutting materials. It can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The cranks 1 and 3 (part) rotate (physical phenomenon). This is due to the rotation of the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the cranks (organ).
+
+
+The links 4 and 5 (part) oscillates about the pivot (physical phenomenon). This is due to the rotation of cranks 4 and 5 (input) that activates the Newtonian laws of motion (physical effect) and requires the presence of coupling rod between the cranks and the oscillating links (organ).
+
+The knife-edges 1 and 2 (part) rotate and they also intersect each other at a particular point (physical phenomenon). This is due to rotation of the cranks (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the rotation of the knife-edges is timed appropriately (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To cut materials.
+$
+
+STATE
+
+$
+The knife-edges are at rest.
+
+The knife-edges are rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The cranks 1 and 3 rotate.
+
+The links 4 and 5 oscillates about the pivot.
+ 
+The knife-edges 1 and 2 rotate and they also intersect each other at a particular point.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Torque applied by the input shaft.
+
+The rotation of cranks 4 and 5.
+
+Rotation of the cranks.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the cranks.
+
+Presence of coupling rod between the cranks and the oscillating links.
+
+Necessary that the rotation of the knife-edges is timed appropriately.
+
+
+$
+
+
+
+PARTS
+$
+The cranks form a revolute pair with the frame.
+
+The links form a revolute pair with the frame.
+
+The knife-edges form revolute pair with the frame.
+
+
+
+$
+
+
+
+

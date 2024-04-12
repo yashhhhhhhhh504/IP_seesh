@@ -1,0 +1,256 @@
+MACTION
+{
+A1 $ V < stop > N < wheel > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rotation > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rotation to rest $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < X > $
+PP2 $ V < attach > N < pipe > A < brake > $
+PP3 $ V < move > N < valve > A < brake > $
+PP4 $ V < x > N < air-flow > A < x > $
+PP5 $ V < slide > N < part > A < X > $
+PP6 $ V < stop > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s law $
+PE3 $ Vacuum effect $
+PE4 $ Friction effect $ 
+
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < hand wheel > A < x > $
+I3 $ V < x > N < difference > A < pressure > $
+I4 $ V < move > N < valve > A < X > $
+I5 $ V < apply > N < pressure > A < X > $
+I6 $ V < X > N < force > A < friction > $
+}
+
+MORGAN
+{
+O1 $ hand wheel has some inertia $
+O2 $ contact between the main brake pipe and the hand wheel $
+O3 $ pressure of the air inside the auxiliary cylinder is greater than the pressure in the brake pipe $
+O4 $ valve opening is sufficient enough for the air to flow $
+O5 $ gap between the piston and the cylinder is as small as possible $
+O6 $ friction surface between the brake block and the wheel $
+}
+
+MPART
+{
+P1 $ hand-wheel $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ main brake pipe $
+P5 $ fixed-pair $
+P6 $ brake valve $
+P7 $ sliding-pair $
+P8 $ brake pipe $
+P9 $ air $ 
+P10 $ piston $
+P11 $ cylinder $
+P12 $ wheels $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P3 P4 P5 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P6 P7 P8 >
+< A1 IS1 OS1 CS1 PP4 PE1 I4 O4 P7 P8 P9 >
+< A1 IS1 OS1 CS1 PP5 PE1 I5 O5 P7 P10 P11 >
+< A1 IS1 OS1 CS1 PP6 PE1 I6 O6 P2 P3 P12 >
+
+
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+This is employed to quickly stop the train in motion. This is one of the powerful means, it employs  compressed air.
+$
+
+
+STRUCTURE
+
+$
+This system comprises of a compressor, which supplies compressed air to the main air reservoir, and then via the drivers brake valve and the main brake pipe to the auxiliary air reservoirs. The main brake pipe extends through all the carriages of the train.
+$
+BEHAVIOUR
+
+$
+When driver wishes to apply the brake he moves the control lever of the brake valve to the appropriate position. As a result, the main brake pipe is put into communication with external air and the pressure in this pipe goes down to the atmospheric pressure. On completion of the braking operation the control lever of the drivers brake valve is returned to the initial position.
+$
+
+PICTURE
+
+{
+
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to stop the motion of the wheel. This can be interpreted as a change of state from rotation to rest. This can be interpreted as follows:
+
+The hand wheel (part) rotates in the vertical plane through a small angle (physical phenomenon). This is due to the torque (input) applied on it, which activates the Newtonian laws of motion (physical effect) and it is necessary that the hand wheel has some inertia (organ).
+
+The main brake pipe (part) communicates with the atmospheric air (physical phenomenon). This is due to the rotation of the hand wheel (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of contact between the main brake pipe and the hand wheel (organ).
+
+The brake valve (part) moves up thus opening the entry for the cylinder (physical phenomenon). This is due to the pressure difference (input) between the main brake pipe and the auxiliary reservoir, which activates the Bernoulli’s law (physical effect) and is necessary that the pressure of the air inside the auxiliary cylinder is greater than the pressure in the brake pipe (organ).
+
+The air (part) from the auxiliary reservoir into the cylinder (physical phenomenon). This is due to the movement of the valve (input), which activates the vacuum effect (physical effect) and is necessary that the valve opening is sufficient enough for the air to flow (organ).
+
+The piston (part) in the cylinder and thus causes the brake block to be pressed hard against the wheel (physical phenomenon). This is due to the pressure applied by the compressed air (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the gap between the piston and the cylinder is as small as possible (organ).
+
+
+The wheels (part) stop rotating (physical phenomenon). This is due to the friction force (input) between the wheels and the brake block which activates the friction effect (physical effect) and it requires the presence of a friction surface between the brake block and the wheel (organ).
+$
+
+ACTION
+
+$ 
+To stop the wheel from rotating. 
+$
+
+STATE
+
+$
+The wheels are rotating.
+
+The wheels are at rest.
+
+$
+
+PHYPHENOMENON
+
+$
+The hand wheel rotates in the vertical plane through a small angle.
+
+The main brake pipe communicates with the atmospheric air.
+
+The brake valve moves up thus opening the entry for the cylinder.
+
+The air from the auxiliary reservoir into the cylinder.
+
+The piston in the cylinder and thus causes the brake block to be pressed hard against the wheel.
+
+The wheels stop rotating.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+Bernoulli’s law.
+
+Vacuum effect.
+
+Friction effect.
+
+$
+
+
+INPUT
+
+$
+The torque applied on it.
+
+The rotation of the hand wheel.
+
+The pressure difference between the main brake pipe and the auxiliary reservoir.
+
+The movement of the valve.
+
+The pressure applied by the compressed air.
+
+The friction force between the wheels and the brake block.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the hand wheel has some inertia.
+
+Presence of contact between the main brake pipe and the hand wheel.
+
+Necessary that the pressure of the air inside the auxiliary cylinder is greater than the pressure in the brake pipe.
+
+Necessary that the valve opening is sufficient enough for the air to flow.
+
+Necessary that the gap between the piston and the cylinder is as small as possible.
+
+Presence of a friction surface between the brake block and the wheel.
+
+
+$
+
+
+
+PARTS
+$
+The hand wheel forms a revolute pair with the frame.
+
+The main brake pipe forms a fixed pair with the frame.
+
+The brake valve forms a sliding pair within the brake pipe.
+
+The air forms a sliding pair with the pipes.
+
+The piston forms a sliding pair with the cylinder.
+
+The wheels form a revolute pair with the frame.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+

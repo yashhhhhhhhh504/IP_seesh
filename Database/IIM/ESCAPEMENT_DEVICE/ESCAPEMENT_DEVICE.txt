@@ -1,0 +1,216 @@
+
+
+MACTION
+{
+A1 $ V < rotate > N < ratchet > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest ratchet > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rotation ratchet > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the ratchet $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < disengage > N < pawl ratchet > A < X > $
+PP2 $ V < rotate > N < ratchet > A < X > $
+PP3 $ V < engage > N < pawl ratchet > A < x > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Lever effect $
+PE2 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < x > N < motion > A < downward > $
+I2 $ V < rotate > N < shaft > A < input > $
+I3 $ V < x > N < motion > A < downward > $
+}
+
+MORGAN
+{
+O1 $ the pawl be hinged at the center of the lever $
+O2 $ zero degree of freedom between the input shaft and the ratchet $
+O3 $ the pawl be hinged at the center of the lever $
+}
+
+MPART
+{
+P1 $ pawl $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ ratchet $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE2 I3 O3 P1 P2 P3 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+This mechanism enables the force to be released and develop its action intermittently on the same principle as the ratchet-wheel and pawl mechanism.
+$
+
+
+STRUCTURE
+
+$
+This is more particularly a feature of clockwork drives. Mounted on the shaft, which is driven in the clockwise direction by a spring or a weight is the so-called escape wheel, which is in fact a ratchet.  		
+$
+BEHAVIOUR
+
+$
+When the lever H is released, the spring pulls the pawl B into the engagement with the escape wheel and prevents its rotation. When the lever H is pushed down B is disengaged so that the wheels can now rotate, but the time it has rotated a distance corresponding to half a tooth spacing, it is arrested by the pawl B, which has in the meanwhile come into engagement as before. So every time the button is pressed it allows the escape wheel to perform a movement corresponding to twice a half tooth spacing.
+$
+
+PICTURE
+
+{
+ADB/IIM/ESCAPEMENT_DEVICE/01.JPG   	$ ESCAPEMENT DEVICE $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to rotate the ratchet by twice the half tooth spacing. This can be interpreted as a change of state from rest to rotation of the ratchet. This can be described as follows:
+
+The left end of the pawl (part) disengages with the ratchet (physical phenomenon). This is due to the downward motion of the right button (input), which activates the lever effect (physical effect) and it is necessary that the pawl be hinged at the center of the lever (organ).
+
+The ratchet (part) rotates (physical phenomenon). This is due to the rotation of the input shaft (input), which activates Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the input shaft and the ratchet (organ).
+
+The right end of the pawl (part) engages with the ratchet (physical phenomenon). This due to the further downward motion (input) of the button, which activates the Newtonian laws of motion (physical effect) and is necessary that the pawl be hinged at the center of the lever (organ).
+
+
+
+
+$
+
+ACTION
+
+$ 
+ To rotate ratchet.
+$
+
+STATE
+
+$
+The ratchet is at rest.
+
+The ratchet is rotating.
+
+
+$
+
+PHYPHENOMENON
+
+$
+The left end of the pawl disengages with the ratchet.
+
+The ratchet rotates.
+
+The right end of the pawl engages with the ratchet.
+
+ $
+
+
+PHYEFFECT
+
+$
+Lever effect.
+
+Newtonian laws of motion.
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+The downward motion of the right.
+
+The rotation of the input shaft.
+
+The further downward motion.
+
+
+$
+
+
+ORGAN
+
+$
+Necessary that the pawl be hinged at the center of the lever.
+
+Presence of zero degree of freedom between the input shaft and the ratchet.
+
+Necessary that the pawl be hinged at the center of the lever.
+
+
+$
+
+
+
+PARTS
+$
+The pawl forms a revolute pair with the frame.
+
+The ratchet forms a revolute pair with the frame.
+
+The pawl forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

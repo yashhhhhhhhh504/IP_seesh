@@ -1,0 +1,220 @@
+MACTION
+{
+A1 $ V < cook > N < food > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < uncooked > N < food > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < cooked > N < food > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from uncooked to cooked condition $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < receive > N < radio waves > A < X > $
+PP2 $ V < excite > N < atoms > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Laws related to radiation heat transfer $
+PE2 $ Heat transfer and thermodynamic $
+}
+
+MINPUT
+{
+I1 $ V < transmit > N < radio waves > A < x > $
+I2 $ V < absorb > N < radio waves > A < x > $
+
+}
+
+MORGAN
+{
+O1 $ Temperature of food to be lower than that of the emitting elements $
+O2 $ Energy to be received by food in the form of radio waves $
+}
+
+MPART
+{
+P1 $ Water-fat $
+P2 $ Radio waves $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+}
+
+FUNCTION
+
+$
+Microwave ovens use radio waves for cooking food in kitchen.
+$
+
+
+STRUCTURE
+
+$
+Microwave ovens use radio waves for cooking food in kitchen. Instead of conducting hest, it excites the atoms of food. Excitation of food atoms in turn heats the food and cooks it. The air around the food does not get heated. Microwave heating is an efficient way of heating.
+$
+
+BEHAVIOUR
+
+$
+Water and fat content of the food receives radio waves. This is due to transmission of radio waves from radio wave emitting elements located in the oven, which actuates the laws, related to radiation heat transfer which require temperature of food to be lower than that of the emitting elements. Radio waves excite the atoms of the food. This is due to absorption of radio waves, which actuates the laws of heat transfer and thermodynamics and require sufficient amount of energy to be received by food in the form of radio waves.
+
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/MICROWAVE-OVEN/MICROWAVE-OVEN01.JPG		$ 01.MICROWAVE-OVEN $
+ADB/SPECIAL/MICROWAVE-OVEN/MICROWAVE-OVEN02.JPG		$ 01.MICROWAVE-OVEN $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Microwave ovens use radio waves for cooking food in kitchen. Instead of conducting hest, it excites the atoms of food. Its working is explained below,
+
+Water and fat content of the food (part) receives radio waves (physical phenomenon). This is due to transmission of radio waves (input) from radio wave emitting elements located in the oven which actuates the laws related to radiation heat transfer (physical effect) which require temperature of food to be lower than that of the emitting elements (organ).
+
+Radio waves (part) excite the atoms of the food (physical phenomenon). This is due to absorption of radio waves (input), which actuates the laws of heat transfer and thermodynamics (physical effect) and require sufficient amount of energy to be received by food in the form of radio waves (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To cook food.
+
+$
+
+STATE
+
+$
+
+Food in uncooked state.
+Food in cooked state.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Water and fat content of the food receives radio waves
+
+Atoms of the food get excited and in turn food gets heated 
+
+$
+
+
+PHYEFFECT
+
+$
+
+Laws related to radiation heat transfer
+
+Heat transfer and thermodynamic
+
+$
+
+
+INPUT
+
+$
+Transmission of radio waves from radio wave emitting elements
+
+Absorption of radio waves
+
+
+$
+
+
+ORGAN
+
+$
+
+Temperature of food to be lower than that of the emitting elements
+
+Energy to be received by food in the form of radio waves
+
+
+
+$
+
+
+
+PARTS
+$
+Water and fat content of the food
+
+Radio waves
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

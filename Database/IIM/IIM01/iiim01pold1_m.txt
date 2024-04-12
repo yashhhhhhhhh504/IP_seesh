@@ -1,0 +1,63 @@
+MACTION
+{
+A1 $ V < transmit > A < intermittent > N < motion > $
+A2 $ V < generate > A < indexing > N < motion > $
+}
+MSTATE
+{
+S1 $ V < X > A < X > N < rest >  $
+S2 $ V < X > A < small angular > N < rotation >  $
+S3 $ V < X > A < X > N < rest >  $
+S4 $ V < X > A < small angular > N < rotation >  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < x > N < diskA >  $
+PP2 $ V < make > A < x > N < contact > $
+PP3 $ V < rotate > A < intermittently > N < diskB > $
+PP4 $ V < lock > A < x > N < diskB > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ no two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < x > N < torque > $
+I2 $ V < rotate > A < x > N < diskA > $
+I3 $ V < apply > A < x > N < force > $
+I4 $ V < x > A < x > N < x > $
+}
+
+MORGAN
+{
+O1 $ 1 dof $
+O2 $ 0 dof of motion in the direction of motion $
+O3 $ length of the angular section $
+O4 $ distance between the groove $
+}
+
+MPART
+{
+P1 $ frame $
+P2 $ diskA $
+P3 $ revolute pair $
+P4 $ diskB $
+P5 $ cam pair $
+P6 $ fixed pair $
+}
+LINK
+{
+A1 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A1 - PP2 - PE2 - I2 - O2 - P2 - P4 - P5
+A1 - PP3 - PE2 - I3 - O3 - P2 - P4 - P5
+A1 - PP4 - PE2 - I4 - O4 - P2 - P4 - P5
+A2 - PP1 - PE1 - I1 - O1 - P1 - P2 - P3
+A2 - PP2 - PE2 - I2 - O2 - P2 - P4 - P5
+A2 - PP3 - PE2 - I3 - O3 - P2 - P4 - P5
+A2 - PP4 - PE2 - I4 - O4 - P2 - P4 - P5
+}

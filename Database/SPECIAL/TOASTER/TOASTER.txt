@@ -1,0 +1,219 @@
+MACTION
+{
+A1 $ V < make > N < toast > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < original > N < bread > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < convert > A < toast > N < bread > $
+} 
+MCHANGESTATE
+{
+CS1 $ From bread to toasr $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < emit > N < wire > A < nichrome > $
+PP2 $ V < dry > N < bread > A < surface > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Heat is generated due to electrical current passage through resisting elements $
+PE2 $ Laws of thermodynamics and substance phase transition $
+}
+
+MINPUT
+{
+I1 $ V < x > N < current > A < electrical > $
+I2 $ V < remove > N < water > A < x > $
+}
+
+MORGAN
+{
+O1 $ Correct length and resistance of nichrome wire $
+O2 $ Sufficient amount of heat to be received by the bread $
+}
+
+MPART
+{
+P1 $ Nichrome wire $
+P2 $ Bread $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+Toasters are used to make toasts from bread.
+$
+
+
+STRUCTURE
+
+$
+Toasters are used to make toasts. The idea is to remove water from bread and make it dry by using infrared radiations. Internally it has nichrome wire through which electrical current is passed to heat it. This wire gets heated and emits infrared waves, which are absorbed by the bread, Water from bread gets evaporated and it becomes dry and its surface gets charred.
+
+$
+BEHAVIOUR
+
+$
+Nichrome wire gets heated and emits infrared radiations. This is due to electrical current passing through it, which actuates the law that heat is generated due to electrical current passage through resisting elements and requires correct length and resistance of nichrome wire. Bread gets dried and its surface gets charred.  This is due to removal of water content from bread, which actuates the laws of thermodynamics and substance phase transition and requires sufficient amount of heat to be received by the bread.
+
+$
+
+PICTURE
+
+{
+ADB/SPECIAL/TOASTER/TOASTER.JPG		$ TOASTER $
+}
+
+
+CLIP
+
+{
+}
+
+
+
+SUMMARY
+$
+Toasters are used to make toasts. The idea is to remove water from bread and make it dry by using infrared radiations. Internally it has nichrome wire through which electrical current is passed to heat it. It works as follows,
+
+Nichrome wire (part) gets heated and emits infrared radiations (physical phenomenon). This is due to electrical current (input) passing through it, which actuates the law that heat is generated due to electrical current passage through resisting elements (physical effect) and requires correct length and resistance of nichrome wire (organ).
+
+Bread (part) gets dried and its surface gets charred (physical phenomenon).  This is due to removal of water content (input) from bread, which actuates the laws of thermodynamics and substance phase transition (physical effect) and requires sufficient amount of heat to be received by the bread (organ)
+
+$
+
+ACTION
+
+$ 
+ To make toasts.
+$
+
+STATE
+
+$
+Bread in original state.
+Bread converted in toast.
+
+$
+
+
+
+PHYPHENOMENON
+
+$
+
+Nichrome wire gets heated and emits infrared radiations
+
+Bread gets dried and its surface gets charred
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+
+Heat is generated due to electrical current passage through resisting elements
+
+Laws of thermodynamics and substance phase transition
+
+$
+
+
+INPUT
+
+$
+Electrical current
+
+Removal of water content from bread
+
+$
+
+
+ORGAN
+
+$
+
+Correct length and resistance of nichrome wire
+
+
+Sufficient amount of heat to be received by the bread
+
+
+$
+
+
+
+PARTS
+$
+
+
+Nichrome wire
+
+Bread
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

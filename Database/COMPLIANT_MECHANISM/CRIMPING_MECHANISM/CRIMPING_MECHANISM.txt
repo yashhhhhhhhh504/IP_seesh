@@ -1,0 +1,204 @@
+
+MACTION
+{
+A1 $ V < hold > N < object > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < output > N < port rest > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < output > N < port rotation > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the output port $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < handgrip > A < X > $
+PP2 $ V < hold > N < material > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < moment > A < bending > $
+I2 $ V < bend > N < handgrip > A < x > $
+}
+
+MORGAN
+{
+O1 $ the handgrips are hinged at one of their ends $
+O2 $ the output ports are hinged at one of their ends $
+}
+
+MPART
+{
+P1 $ handgrip $
+P2 $ revolute pair $
+P3 $ hinged joint $
+P4 $ output port $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+In this mechanism the input force is transferred to the output port, much like the vise grip, only some new energy is stored in the form of strain energy in the flexible members.
+$
+
+
+STRUCTURE
+
+$
+The compliant mechanism has fewer movable joints, such as pin and sliding joints. These results in reduced wear and need for lubrication.
+$
+BEHAVIOUR
+
+$
+A compliant mechanism also transfers or transforms motion, force or energy. Unlike rigid link mechanism, however, compliant mechanisms gain at least some their mobility from the deflection of flexible members rather than from movable joints only.
+$
+
+PICTURE
+
+{
+ADB/COMPLIANT_MECHANISM/CRIMPING_MECHANISM/01.JPG		$ CRIMPING MECHANISM $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+This mechanism can be used to grip materials. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The hand grips (part) are brought close each other (physical phenomenon). This is due to bending moment applied (input), which activates the Newtonian laws of motion (physical effect) and is necessary that the 
+Handgrips are hinged at one of their ends (organ).
+
+The output ports (part) hold the material tightly (physical phenomenon). This is due to the bending of the handgrips (input), which activates the 
+Newtonian laws of motion (physical effect) and is necessary that the output ports are hinged at one of their ends (organ).
+$
+
+ACTION
+
+$ 
+ To hold objects.
+$
+
+STATE
+
+$
+The output ports are at rest.
+
+The output ports rotate about their hinged point.
+
+$
+
+PHYPHENOMENON
+
+$
+The hand grips are brought close each other.
+
+The output ports hold the material tightly.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+
+
+$
+
+
+INPUT
+
+$
+Bending moment applied.
+
+Bending of the handgrips.
+
+$
+
+
+ORGAN
+
+$
+Necessary that the handgrips are hinged at one of their ends.
+
+Necessary that the output ports are hinged at one of their ends.
+
+
+
+
+
+
+$
+
+
+
+PARTS
+$
+Handgrips form a revolute pair with hinged joint.
+
+The output ports form a revolute pair with the hinged joint.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

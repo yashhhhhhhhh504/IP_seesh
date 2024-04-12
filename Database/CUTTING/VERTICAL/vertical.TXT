@@ -1,0 +1,193 @@
+MACTION
+{
+A1 $ V < cut close > N < material > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < sliding > N < motion > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to sliding motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < link 1 > A < X > $
+PP2 $ V < slide > N < slider > A < X > $
+PP3 $ V < slide > N < knife 1 > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < apply > N < force > A < x > $
+I3 $ V < rotate > N < link 1 > A < x > $
+}
+
+MORGAN
+{
+O1 $ link 1 is pivoted at one of its end $
+O2 $ smooth surface between the slider and the guide ways $
+O3 $ one degree of freedom between the link 1 and the knife 1 $
+}
+
+MPART
+{
+P1 $ link  $
+P2 $ frame $
+P3 $ revolute pair $
+P4 $ slider $
+P5 $ sliding pair $
+P6 $ guide ways $
+P7 $ knife  $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O3 P7 P5 P2 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+This mechanism is used to cut material using two knifes which are parallel to each other.
+$
+
+
+STRUCTURE
+
+$
+One knife is attached to the slider while the other is attached to a link, which forms a prismatic pair with the housing.
+$
+
+
+BEHAVIOUR
+
+$
+The top knife in this arrangement remains parallel to the bottom knife at all times during cutting to provide a true scissor-like action, but friction can limit the cutting force.
+As the crank rotates clockwise, the slider along with the knife attached to it moves downwards and towards the right at the same time. This causes the other knife attached to the second slider to move horizontally to the right. The cutting action takes place when the two knives slide against each other, as depicted by the animation.
+$
+
+
+PICTURE
+
+{
+ADB/CUTTING/VERTICAL/vertical.jpg		$ Vertical Cutter $
+}
+
+
+CLIP
+
+{
+ADB/CUTTING/VERTICAL/vertical.avi		$ Vertical Cutter $
+}
+SUMMARY
+$
+This mechanism can be used for cutting materials. This can be interpreted as a change of state from rest to sliding motion. This can be described as follows:
+
+The link 1 (part) rotates (physical phenomenon). This is due to the force applied on it (input) which activates the Newtonian laws of motion (physical effect) and is necessary that the link 1 is pivoted at one of its end (organ).
+
+The slider (part) slides in the guide ways (physical phenomenon). This is due to the force applied on it (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a smooth surface between the slider and the guide ways (organ).
+
+The knife 1 (part) slides over the link perpendicular to the slider and intersects with the knife 2 and hence cuts the material (physical phenomenon). This is due to  the rotation of the link 1 (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the link 1 and the knife 1 (organ).
+
+
+$
+
+ACTION
+
+$ 
+To cut material. 
+$
+
+STATE
+
+$
+The slider carrying the knife edge is at rest.
+
+The slider carrying the knife edge slides along the link that is perpendicular to the slider.
+
+$
+
+PHYPHENOMENON
+
+$
+The link 1 rotates.
+
+The slider slides in the guide ways.
+ 
+The knife 1 slides over the link perpendicular to the slider and intersects with the knife 2 and hence cuts the material.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+
+$
+
+
+INPUT
+
+$
+Force applied on it.
+
+Force applied on it.
+
+The rotation of the link 1.
+$
+
+
+ORGAN
+
+$
+Necessary that the link 1 is pivoted at one of its end.
+
+Presence of a smooth surface between the slider and the guide ways.
+
+Presence of one degree of freedom between the link 1 and the knife 1.
+
+
+$
+
+
+
+PARTS
+$
+The link 1 forms a revolute pair with the frame.
+
+The slider forms a sliding pair with the guide ways.
+
+The knife 1 forms a sliding pair with the frame.
+
+$
+
+
+

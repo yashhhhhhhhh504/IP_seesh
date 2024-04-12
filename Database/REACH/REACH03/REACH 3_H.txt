@@ -1,0 +1,130 @@
+SUMMARY
+$
+This mechanism can be used to reach different positions in a three dimensional space. This can be described as follows:
+
+The link B (part) rotates in a horizontal plane with respect to the fixed link A (physical phenomenon). This is due to the rotation of the input shaft of the link B (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the link B (organ).
+
+The link C (part) oscillates in a vertical plane with respect to the link B (physical phenomenon). This is due to the rotation of the input shaft of the link C (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the link C and the link A and the presence of one degree of freedom between the link C and the link B (organ).
+
+The link D (part) oscillates with respect to the link C (physical phenomenon). This is due to the rotation of the input shaft of the link D (input), which activates the Newtonian laws of motion  (physical effect) and requires the presence of zero degree of freedom between the link D and the input shaft and it also requires the presence of one degree of freedom between the link C and the link D (organ).
+
+
+The link E (part) oscillates with respect to the link D (physical phenomenon). This is due to rotation of the input shaft of the link E (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the link E and the link D and it also requires the presence of zero degree of freedom between the link E and the input shaft (organ).
+
+
+The link F that is the pendant (part) rotates completely with respect to the link E (physical phenomenon). This is due to the rotation of the input shaft of the link F (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft of the link F and the link F and it requires the presence of one degree of freedom between the link E and the link F (organ).
+
+
+
+
+
+
+
+$
+
+ACTION
+{
+$ 
+ Using this mechanism different positions can be reached in a three dimension.
+$
+}
+STATE
+{
+$
+Absence of torque at input shafts of all the links.
+$
+Presence of torque at the input shaft of the link B.
+$
+Presence of torque at the input shaft of the link C.
+$
+Presence of torque at the input shaft of the link D.
+$
+Presence of torque at the input shaft of the link E.
+$
+Presence of torque at the input shaft of the link F.
+
+$
+}
+PHYPHENOMENON
+{
+$
+The link B rotates in a horizontal plane with respect to the fixed link A.
+$
+The link C oscillates in a vertical plane with respect to the link B.
+$ 
+The link D oscillates with respect to the link C.
+$
+The link E oscillates with respect to the link D.
+$
+The link F that is the pendant rotates completely with respect to the link E.
+
+
+$
+}
+
+PHYEFFECT
+{
+$
+Newtonian laws of motion.
+$
+
+$
+
+$
+}
+
+INPUT
+{
+$
+Rotation of the input shaft of the link B.
+$
+Rotation of the input shaft of the link C.
+$
+Rotation of the input shaft of the link D.
+$
+Rotation of the input shaft of the link E.
+$
+Rotation of the input shaft of the link F.
+
+$
+}
+
+ORGAN
+{
+$
+Presence of zero degree of freedom between the input shaft and the link B.
+$
+Presence of zero degree of freedom between the link C and the input shaft and the presence of one degree of freedom between the link C and the link B.
+$
+Presence of zero degree of freedom between the link D and the input shaft and it also requires the presence of one degree of freedom between the link C and the link D.
+$
+Presence of one degree of freedom between the link E and the link D and it also requires the presence of zero degree of freedom between the link E and the input shaft of the link E.
+$
+Presence of zero degree of freedom between the input shaft of the link F and the link F and it requires the presence of one degree of freedom between the link E and the link F.
+
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The link A is fixed.
+$
+The link B forms a revolute pair with the fixed link A.
+$
+The link C forms a revolute pair with the link B.
+$
+The link D forms a revolute pair with the link C.
+$
+The link E forms a revolute pair with the link D.
+$
+The link F forms a revolute pair with the link E.
+
+$
+}
+
+
+
+

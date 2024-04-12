@@ -1,0 +1,181 @@
+
+MACTION
+{
+A1 $ V < increase > N < height > A < X > $
+A2 $ V < change > N < height > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < table low > N < surface level > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < table high > N < surface level > $
+} 
+MCHANGESTATE
+{
+CS1 $ from low level to high level  $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < crank > A < X > $
+PP2 $ V < oscillate > N < connecting-rod > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < move > N < crank > A < x > $
+}
+
+MORGAN
+{
+O1 $  zero degree of freedom between the input shaft and the crank $
+O2 $  degree of freedom between the crank and connecting rod $
+}
+
+MPART
+{
+P1 $ crank $
+P2 $ revolute-pair $
+P3 $ frame $
+P4 $ connecting rod $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P4 >
+
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P2 P4 >
+}
+
+
+
+
+FUNCTION
+
+$
+This mechanism employs a 4 bar chain. 
+$
+
+
+STRUCTURE
+
+$
+This mechanism consists of rigid links. The links are connected by hinged joints.
+$
+
+
+BEHAVIOUR
+
+$
+The link, which receives the input and undergoes one complete rotation, is called the crank. The follower rocks about the hinged point. The link that connects the input link to the output link is called the connecting rod.
+$
+
+PICTURE
+{
+}
+CLIP
+{
+ADB/DEPLOY/FOLDABLE_TABLE/CSPOI2.MOV 	$ Foldable Table $
+}
+SUMMARY
+$
+This can mechanism can be used to the increase height of the table. This is can be interpreted as a change of state from small height to large height. This can be described as follows:
+
+The crank (part) rotates (physical phenomenon). This is due to torque applied on to it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of the zero degree of freedom between the input shaft and the crank (organ).
+
+The connecting rod (part) oscillates and thus increases in height (physical phenomenon). This is due to the movement of the crank (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of one degree of freedom between the crank and connecting rod (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To increase height.
+$
+
+STATE
+
+$
+The table surface is at a lower level.
+
+The table surface is at a higher level.
+
+$
+
+PHYPHENOMENON
+
+$
+The crank rotates.
+
+The connecting rod oscillates and thus increases in height.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+
+INPUT
+
+$
+Torque applied on to it.
+
+Movement of the crank.
+
+$
+
+
+ORGAN
+
+$
+Presence of the zero degree of freedom between the input shaft and the crank.
+
+Presence of one degree of freedom between the crank and connecting rod.
+
+$
+
+
+
+PARTS
+$
+The crank forms a revolute pair with the frame.
+
+The oscillating rod forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+

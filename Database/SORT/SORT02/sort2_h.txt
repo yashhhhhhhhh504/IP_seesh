@@ -1,0 +1,94 @@
+SUMMARY
+$
+Using this device spherical object can be sorted out based on their sizes. This can be described as follows:
+
+The object (part) rolls down the hopper (physical phenomenon). This is due to the conversion of potential energy into kinetic energy of the object (input), which activates the inertia effect (physical effect) and requires that the objects are spherical in shape (organ).
+
+The spherical object (part) passes through the gate and falls into the trough (physical phenomenon). This is due to the conversion of potential energy into kinetic energy of the body (input), which activates the inertia effect (physical effect) and requires that the spherical ball be of proper size (organ).
+
+
+The spherical object (part) actuates the gate, which in turn operates the trap door and thus the object falls in a different trough (physical phenomenon). This is due to the contact between the object and the gate (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires that the object be of a larger size (organ).
+
+
+
+$
+
+ACTION
+{
+$ 
+ Using this device spherical object can be sorted based on their sizes.
+$
+}
+STATE
+{
+$
+
+$
+
+$
+}
+PHYPHENOMENON
+{
+$
+The object rolls down the hopper.
+$
+The spherical object passes through the gate and falls into the trough.
+$ 
+The spherical object actuates the gate, which in turn operates the trap door and thus the object falls in a different trough.
+$
+
+$
+}
+
+PHYEFFECT
+{
+$
+Inertia effect.
+$
+No two bodies can occupy the same space at the same time.
+$
+
+$
+}
+
+INPUT
+{
+$
+Conversion of potential energy into kinetic energy of the object.
+$
+The contact between the object and the gate.
+$
+
+$
+}
+
+ORGAN
+{
+$
+Requires that the objects are spherical in shape.
+$
+Requires that the spherical ball be of proper size.
+$
+Requires that the object be of a larger size.
+$
+
+$
+
+}
+
+STUCTURE1
+{
+$
+The spherical objects form a rolling pair with the inner surface of the hopper.
+$
+The gate forms a revolute pair with respect to the hinged support.
+$
+The trap door forms a revolute pair with respect to the hinged joint.
+$
+
+$
+
+$
+}
+
+

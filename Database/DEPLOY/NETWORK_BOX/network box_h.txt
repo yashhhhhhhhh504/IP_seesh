@@ -1,0 +1,83 @@
+SUMMARY
+$
+To close the space that provides the network connection.
+$
+
+ACTION
+
+$ 
+ To close the space when not in use.
+
+To open the space when in use.
+$
+
+STATE
+
+$
+Occupying large space when not in use.
+
+Occupying less space.
+
+$
+
+PHYPHENOMENON
+
+$
+Open the shutter of the network box.
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Pushing force.
+
+$
+
+
+ORGAN
+
+$
+Presence of a sliding surface between the shutter and the network box.
+
+
+$
+
+
+
+PARTS
+$
+Network box
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

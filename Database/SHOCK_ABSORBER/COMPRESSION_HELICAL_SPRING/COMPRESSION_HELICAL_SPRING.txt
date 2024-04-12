@@ -1,0 +1,149 @@
+MACTION
+{
+A1 $ V < absorb > N < shock > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < x > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < x > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ without compression to compression of spring $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < compress > N < spring > A < X > $
+PP2 $ V < store > N < energy > A < X > $
+PP3 $ V < release > N < energy > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ spring effect $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < x > $
+I2 $ V < compress > N < spring > A < x > $
+I3 $ V < expand > N < spring > A < x > $
+}
+
+MORGAN
+{
+O1 $ Force be compressive $
+O2 $ Applied force is within proportional limit of spring $
+}
+
+MPART
+{
+P1 $ spring $
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P1 >
+< A1 IS1 OS1 CS1 PP3 PE1 I3 O2 P1 >
+}
+
+FUNCTION
+$
+A compression helical spring is a mechanical device, which is typically used to store energy and subsequently release it.
+$
+
+STRUCTURE
+$
+Compression helical springs are made of an elastic material formed into the shape of a helix which returns to its natural length when unloaded.
+$
+
+BEHAVIOUR
+$
+A compression helical spring stores energy when compressive force applied on it and it release energy when unloaded.
+$
+
+PICTURE
+{
+ADB/SHOCK_ABSORBER/COMPRESSION_HELICAL_SPRING/01.jpg   $ 01.COMPRESSION_HELICAL_SPRING $
+ADB/SHOCK_ABSORBER/COMPRESSION_HELICAL_SPRING/02.jpg   $ 02.COMPRESSION_HELICAL_SPRING $
+}
+
+CLIP
+{
+}
+
+SUMMARY
+$
+A compression helical spring stores energy when compressive force applied on it and it release energy when unloaded.
+It can be described as; spring (part) compresses (physical phenomena). This is due to force applied on it (input) which activates spring effect (physical effect) and it requires that force be compressive (organ).
+
+Spring (part) stores energy (physical phenomena). This is due to compression of spring (input) which activates spring effect (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+
+Spring (part) releases energy (physical phenomena). This is due to expansion of spring (input) which activates laws of energy conservation (physical effect) and it requires that the applied force is within proportional limit of spring (organ).
+$
+
+ACTION
+
+$ 
+To absorb shock
+$
+
+STATE
+
+$
+Without compression to compression
+$
+
+
+
+PHYPHENOMENON
+
+$
+Spring compresses
+
+Spring stores energy
+
+Spring releases energy
+$
+
+
+PHYEFFECT
+
+$
+Spring effect
+$
+
+
+INPUT
+
+$
+Force applied on spring
+
+Compression of spring
+
+Expansion of spring
+$
+
+
+ORGAN
+
+$
+Force be compressive
+
+Applied force is within proportional limit of spring
+$
+
+
+
+PARTS
+$
+Spring
+$

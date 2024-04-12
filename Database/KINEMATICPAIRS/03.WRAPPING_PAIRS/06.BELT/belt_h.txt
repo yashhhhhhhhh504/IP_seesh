@@ -1,0 +1,87 @@
+SUMMARY
+$
+This can used to connect pulleys, which are mounted on shafts; those are far from each other. This can be interpreted as a change of state from rest to linear motion. This can be interpreted as follows:
+
+The belt (part) wraps the two pulleys (physical phenomenon). This is due to the initial tension in the belt (input), which activates hooks law (physical effect) and is necessary that the belt has some stiffness (organ).
+
+The belt (part) moves linearly (physical phenomenon). This is due to the rotation of the input pulley, which in turn is due to the rotation of the input shaft (input), which activates the friction effect (physical effect) and requires the presence of friction surface between the input pulley and belt surface (organ). 
+
+The output pulley (part) rotates (physical phenomenon). This is due to the linear movement of the belt (input), which activates the friction effect (physical effect) and requires the presence of a friction surface between the output pulley and the belt (organ). 
+
+$
+
+ACTION
+{
+$ 
+ To connect pulleys.
+$
+}
+STATE
+{
+$
+The belt is at rest that is it is wrapping the two pulleys.
+
+The belt is moving linearly.
+$
+}
+PHYPHENOMENON
+{
+$
+The belt wraps the two pulleys.
+
+The belt moves linearly.
+ 
+The output pulley rotates.
+
+
+$
+}
+
+PHYEFFECT
+{
+$
+Hooks law.
+
+Friction effect.
+
+
+$
+}
+
+INPUT
+{
+$
+Initial tension.
+
+Rotation of the input pulley.
+
+Linear movement of the belt.
+$
+}
+
+ORGAN
+{
+$
+Necessary that the belt has some stiffness.
+
+Presence of friction surface between the input pulley and belt surface.
+
+Presence of a friction surface between the output pulley and the belt.
+	
+
+$
+
+}
+
+PARTS
+{
+$
+The belt forms a wrapping pair with the pulleys.
+
+The input pulley forms a revolute pair with the frame.
+
+The output pulley forms a revolute pair with the frame.
+
+$
+}
+

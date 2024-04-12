@@ -1,0 +1,214 @@
+MACTION
+{
+A1 $ V < transmit > N < motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < rest > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < fin > A < X > $
+PP2 $ V < x > N < flow > A < fluid > $
+PP3 $ V < move > N < fluid > A < x > $
+PP4 $ V < rotate > N < part > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Bernoulli’s effect $
+PE3 $ No two bodies can occupy the same space at the same time $
+PE4 $ No two bodies can occupy the same space at the same time $ 
+
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < part > A < x > $
+I2 $ V < x > N < force > A < suction > $
+I3 $ V < x > N < force > A < centrifugal > $
+I4 $ V < change > N < direction > A < X > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the fins and the housing $
+O2 $ pump is an axial flow pump $
+O3 $ stator to guide the fluid $
+O4 $ turbine is a radial one $
+}
+
+MPART
+{
+P1 $ fins $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ fluid $
+P5 $ sliding pair $
+P6 $ turbine $
+P7 $ suction pipe $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P5 P7 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P4 P5 P1 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P6 P2 P3 >
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+Just like manual transmission cars, cars with automatic transmissions need a way to let the engine turn while the wheels and gears in the transmission come to a stop. Manual transmission cars use a clutch, which completely disconnects the engine from the transmission. Automated cars use a torque converter. A torque converter is a type of fluid coupling, which allows the engine to spin somewhat independently of the transmission. If the engine is turning slowly, such as when the car is idling at a stoplight, the amount of torque passed through the torque converter is very small, so keeping the car still requires only a light pressure on the brake pedal. 
+
+$
+
+
+STRUCTURE
+
+$
+As shown in the figure below, there are four components inside the very strong housing of the torque converter: 
+* Pump 
+* Turbine 
+* Stator 
+* Transmission fluid 
+The housing of the torque converter is bolted to the flywheel of the engine, so it turns at whatever speed the engine is running at. The fins that make up the pump of the torque converter are attached to the housing, so they also turn at the same speed as the engine. The cutaway below shows how everything is connected inside the torque converter. The pump inside a torque converter is a type of centrifugal pump. As it spins, fluid is flung to the outside, much as the spin cycle of a washing flings water and clothes to the outside of the wash tub. As fluid is flung to the outside, a vacuum is created that draws more fluid in at the center
+$
+BEHAVIOUR
+
+$
+The fluid then enters the blades of the turbine, which is connected to the transmission. The turbine causes the transmission to spin, which basically moves your car. You can see in the graphic below that the blades of the turbine are curved. This means that the fluid, which enters the turbine from the outside, has to change direction before it exits the center of the turbine. It is this directional change that causes the turbine to spin. The fluid exits the turbine at the center, moving in a different direction than when it entered. If you look at the arrows in the figure above, you can see that the fluid exits the turbine moving opposite the direction that the pump (and engine) are turning. If the fluid were allowed to hit the pump, it would slow the engine down, wasting power. This is why a torque converter has a stator. 
+
+
+$
+
+PICTURE
+
+{
+ADB/POWERTRANS/TORQUE-CONVERTERS/00.JPG		$ 01.TORQUE CONVERTERS $
+ADB/POWERTRANS/TORQUE-CONVERTERS/01.JPG		$ 02.TORQUE CONVERTERS $
+}
+
+
+CLIP
+
+{
+}
+
+SUMMARY
+$
+The torque converter can be used for automatic transmission. This can be interpreted as a change of state from rest to motion of the transmission. This can be described as follows:
+
+The fins (part) that make up the pump rotate (physical phenomenon). This is due to the rotation of the housing (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the fins and the housing (organ).  
+
+The fluid (part) enters the center of the pump (physical phenomenon). This is due to the suction force (input) which is created by the pump which activates the Bernoulli’s effect (physical effect) and requires is necessary that the pump is an axial flow pump (organ).
+
+The fluid (part) is passed on the turbine (physical phenomenon). This is due to the centrifugal force (input) applied by the fins of the pump, which activates the law “ no two bodies can occupy the same space at the same time” (physical effect) and requires the presence of a stator to guide the fluid (organ).
+
+The vanes (part) in the turbine rotate (physical phenomenon). This is due to the change in the direction of the movement of the fluid (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the turbine is a radial one (organ).
+
+$
+
+ACTION
+$
+ 
+ To transmit motion from the engine to the transmission automatically.
+
+$
+STATE
+$
+
+The transmission is at rest.
+
+The transmission is in motion.
+
+$
+PHYPHENOMENON
+$
+
+The fins that make up the pump rotate.
+
+The fluid enters the center of the pump.
+ 
+The fluid is passed on the turbine.
+
+The vanes in the turbine rotate.
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Bernoulli’s effect.
+
+No two bodies can occupy the same space at the same time.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+Rotation of the housing.
+
+Suction force
+
+Centrifugal force.
+
+Change in the direction of the movement of the fluid.
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the fins and the housing.
+
+Necessary that the pump is an axial flow pump.
+
+Presence of a stator to guide the fluid.
+
+Necessary that the turbine is a radial one.
+
+
+$
+
+PARTS
+$
+
+
+The fins form a revolute pair with the frame.
+
+The fluid forms a sliding pair with the suction pipe.
+
+The fluid forms a sliding pair with the fins of the pump.
+
+The turbine forms a revolute pair with the frame.
+
+$
+

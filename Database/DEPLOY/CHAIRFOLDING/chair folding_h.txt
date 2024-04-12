@@ -1,0 +1,84 @@
+SUMMARY
+$
+These kinds of chairs are in high demand as they can be easily folded and as it occupies very less space after folding it can be carried easily from one place to another.
+$
+
+ACTION
+
+$ 
+ To fold and unfold foldable chair.
+
+To deploy when unfolded.
+$
+
+STATE
+
+$
+It occupies very less space when in folded state.
+
+It occupies very large space when in unfolded state.
+
+$
+
+PHYPHENOMENON
+
+$
+Unfold chair.
+
+$
+
+
+PHYEFFECT
+
+$
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Unfolding force.
+
+$
+
+
+ORGAN
+
+$
+Presence of hinged joints between the links.
+
+$
+
+
+
+PARTS
+$
+Foldable chair.
+
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

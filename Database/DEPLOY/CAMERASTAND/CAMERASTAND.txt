@@ -1,0 +1,194 @@
+MACTION
+{
+A1 $ V < deploy > N < x > A < X > $
+A2 $ V < hold > N < object > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < small > N < area > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < large > N < area > $
+} 
+MCHANGESTATE
+{
+CS1 $ from small area to large area $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < pull > N < vertical-links > A < X > $
+PP2 $ V < rotate > N < horizontal-links > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < force > A < upward > $
+I2 $ V < apply > N < torque > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the links $
+O2 $ one degree of freedom between the vertical links and the horizontal links $
+}
+
+MPART
+{
+P1 $ vertical links $
+P2 $ sliding pair $
+P3 $ horizontal links $
+P4 $ revolute pair $
+P5 $ frame $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P3 P4 P5 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 >
+< A2 IS1 OS1 CS1 PP2 PE1 I2 O2 P3 P4 P5 >
+
+}
+
+FUNCTION
+
+$
+This mechanism can be used for holding camera. This mechanism can be described as follows:
+the mechanism can be placed in any location and used.
+
+$
+
+
+STRUCTURE
+
+$
+It consists of a number of links and the flat surface for placing the camera.
+ $
+
+
+BEHAVIOUR
+
+$
+The links are moved by the application of force and also provision for rotation is made.
+they are foldable.
+
+$
+
+
+PICTURE
+
+{
+ADB/DEPLOY/CAMERASTAND/01.JPG	$ Camera Stand	$
+ADB/DEPLOY/CAMERASTAND/02.JPG	$ Camera Stand	$
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+The camera stand employs a tripod. This can be interpreted as a change of state from small area to large area. This can be described as follows:
+
+The vertical links (part) are pulled upwards (physical phenomenon). This is due to the upward force (input) applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of smooth surface between the links (organ).
+
+
+The horizontal links (part) are rotated  (physical phenomenon). This is due to the torque applied on it (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of one degree of freedom between the vertical links and the horizontal links (organ).
+$
+
+ACTION
+
+$ 
+ To deploy.
+$
+
+STATE
+
+$
+The mechanism is occupying less space.
+
+The mechanism is occupying less space.
+$
+
+PHYPHENOMENON
+
+$
+The vertical links are pulled upwards.
+
+The horizontal links are rotated.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+$
+
+
+INPUT
+
+$
+Upward force.
+
+Torque applied on it.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of smooth surface between the links.
+
+Presence of one degree of freedom between the vertical links and the horizontal links.
+
+
+$
+
+
+
+PARTS
+$
+The vertical links forms a sliding pair with each other.
+
+The horizontal links forms a revolute pair with the frame.
+
+
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

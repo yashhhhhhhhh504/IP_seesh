@@ -1,0 +1,193 @@
+
+MACTION
+{
+A1 $ V < generate > A < reciprocating > N < motion > $
+}
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rest > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < reciprocating > N < motion > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ From rest to reciprocating motion $
+
+}
+
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > A < X > N < cam > $
+PP2 $ V < reduce > A < X > N < friction > $
+PP3 $ V < maintain > A < X > N < contact > $
+PP4 $ V < reciprocate > A < X > N < follower > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ friction $
+PE3 $ Hooke's Law $
+PE4 $ two bodies cannot occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < apply > A < X > N < torque > $
+I2 $ V < rotate > A < X > N < roller > $
+I3 $ V < apply > A < X > N < spring-force > $
+I4 $ V < apply > A < radial > N < force > $
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom of motion in direction of motion $
+O2 $ contact between roller and cam $
+O3 $ spring stiffness $
+O4 $ cam profile $
+}
+
+MPART
+{
+P1 $ cam $
+P2 $ input-shaft $
+P3 $ fixed pair $
+P4 $ roller $
+P5 $ cam pair $
+P6 $ follower $
+P7 $ revolute pair $
+P8 $ frame $
+P9 $ flexible pair $
+P10 $ slide guides $
+P11 $ prismatic pair $
+}
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P1 P4 P5 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P6 P7 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P6 P8 P9 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P1 P6 P5 >
+< A1 IS1 OS1 CS1 PP4 PE4 I4 O4 P6 P10 P11 >
+}
+
+
+
+FUNCTION
+
+$
+This mechanism enables a constant-speed rotary motion to be converted into a variable reciprocating motion, which can be used to provide valve-moving mechanisms for steam engines.
+$
+
+
+STRUCTURE
+
+$
+It consists of a cam, the profile of which is designed according to the application, a roller follower, and two slide guides to facilitate the follower in its reciprocating motion. There is also usually a spring present, above the follower, that keeps the follower in contact with the cam. However, in some cases gravity ensures the contact. The follower and the cam form a cam pair.
+$
+
+
+BEHAVIOUR
+
+$
+As the cam rotates, the follower, which is constrained by the slide guides, moves along the profile of the cam. It rises and falls whenever there is a protrusion or depression on the cam profile, which in this case is 3 times. The animation illustrates the motion of this mechanism.
+$
+
+
+PICTURE
+
+{
+ADB/CAMMECH/CAMMECH01/CAMMECH01.JPG	$ Cam Mech - 1 $
+}
+
+
+CLIP
+
+{
+ADB/CAMMECH/CAMMECH01/CAMMECH01.AVI	$ Cam Mech - 1 $
+}
+
+
+SUMMARY
+$
+This mechanism is used to convert rotary motion of the cam into reciprocating motion of the follower. This is achieved in the following method. 
+
+The cam forms a fixed pair with the input shaft (Structure). This structure creates 0 degree of freedom (Organ) between the input-shaft and the cam. When torque is applied to the input shaft (Input) due to Newtonian laws of motion (Physical Effect) the cam rotates (Physical Phenomenon).
+
+The roller forms a cam pair with the cam as well as a revolute pair with the follower (Structure). Thus there is a contact between the cam and the roller (Organ). Since the roller rotates (Input) due to friction (Physical Effect) it results in the reduction of friction (Physical Phenomenon) between the cam and the follower. That is, the friction would be much greater in case the roller were not present.
+
+The follower forms a flexible pair with the frame (structure). As the follower moves upward, the spring is compressed. When there is a depression on the cam’s surface, the spring exerts a force on the follower (Input) causing the follower to return downwards. This is achieved due to the spring stiffness (Organ) and Hooke's Law (Physical Effect). Thus contact is maintained between the follower and the cam (Physical Phenomenon).
+
+The follower forms a prismatic pair with the slide guides and a cam pair with the cam (Structure). When the cam is rotated (Input) due to the cam profile (Organ), the follower is forced to move upward or downward depending on the profile. This is due to the basic law that two bodies cannot occupy the same space at the same time (Physical Effect). This results in the reciprocating motion of the follower within the slide guides (Physical Phenomenon)
+$
+
+ACTION
+$
+Convert rotary motion into reciprocating motion
+$
+STATE
+$
+rest.
+
+reciprocating motion.
+$
+PHYPHENOMENON
+$
+
+The cam rotates continuously.
+
+Friction is reduced by the use of a roller follower.
+
+Contact between the cam and the follower is maintained by the use of a spring.
+
+The follower reciprocates due to the force imparted by the profile of the cam.
+
+$
+PHYEFFECT
+$
+Newtonian Laws of motion.
+Friction.
+Hooke's Law.
+The basic fact that two bodies cannot occupy the same space at the same time.
+$
+
+
+INPUT
+$
+Torque provided to the input shaft is used to rotate the cam continuously.
+
+The rotation of the cam causes the roller to rotate
+
+The spring forces the follower back downward to keep contact with the cam.
+
+The radial force offered by the cam tends to reciprocate the follower.
+$
+
+ORGAN
+$
+1 degree of freedom of motion in the direction of motion.
+
+Contact between the roller and the cam.
+
+The spring stiffness.
+
+The profile of the cam.
+$
+
+PARTS
+$
+The cam forms a fixed pair with the input shaft. 
+
+The cam forms a cam pair with the follower.
+
+The roller forms a revolute pair with the follower.
+
+The spring forms a flexible pair with the follower.
+
+The follower forms a prismatic pair with the slide guides
+$

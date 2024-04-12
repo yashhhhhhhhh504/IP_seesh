@@ -1,0 +1,107 @@
+
+
+MACTION
+{
+A1 $ V < stop > N < machine > A < X > $
+A2 $ V < prevent > N < damage > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N < operation > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < x > N < rest > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from operation to rest $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < spool > A < X > $
+PP2 $ V < rotate > N < ratchet > A < X > $
+PP3 $ V < loose > N < contact > A < x > $
+PP4 $ V < move > N < idler > A < down > $
+PP5 $ V < move > N < standard > A < down > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Gravitational effect $
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < shaft > A < input > $
+I2 $ V < rotate > N < shaft > A < input > $
+I3 $ V < x > N < idler motion > A < upward > $
+I4 $ V < x > N < loss > A < tension > $
+}
+
+MORGAN
+{
+O1 $ the ratchet is free to rotate  $
+O2 $ absence of contact between the pawl and ratchet $
+O3 $ tension in the thread $
+O4 $ presence of gravity $
+}
+
+MPART
+{
+P1 $ spool $
+P2 $ revolute pair $
+P3 $ frame $
+P4 $ ratchet $
+P5 $ idler carrier $
+P6 $ sliding pair $
+P7 $ column $
+P8 $ pawl $
+P9 $ standard $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O2 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O3 P8 >
+< A1 IS1 OS1 CS1 PP4 PE3 I3 O4 P5 P6 P7 >
+< A1 IS1 OS1 CS1 PP5 PE2 I4 O4 P7 P6 P9 >
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

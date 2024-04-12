@@ -1,0 +1,95 @@
+
+
+MACTION
+{
+A1 $ V < sort > N < object > A < spherical > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < rolling > N < motion > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < free-falling > N < motion > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from rolling motion to free-falling motion $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < roll > N < object > A < spherical > $
+PP2 $ V < pass > N < gate > A < X > $
+PP3 $ V < actuate operate > N < gate door > A < trap > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Inertia effect $
+PE2 $ No two bodies can occupy the same space at the same time $
+}
+
+MINPUT
+{
+I1 $ V < conversion > N < energy > A < potential kinetic > $
+I2 $ V < contact > N < gate > A < x > $
+}
+
+MORGAN
+{
+O1 $ requires that the objects are spherical in shape $
+O2 $ requires that the spherical ball be of proper size $
+O3 $ requires that the object be of a larger size $
+}
+
+MPART
+{
+P1 $ spherical object $
+P2 $ rolling pair $
+P3 $ hopper $
+P4 $ gate $
+P5 $ revolute pair $
+P6 $ hinged support $
+P7 $ trap door $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I1 O2 P4 P5 P6 >
+< A1 IS1 OS1 CS1 PP3 PE2 I2 O3 P5 P6 P7 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

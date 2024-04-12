@@ -1,0 +1,224 @@
+MACTION
+{
+A1 $ V < pump > N < liquid > A < X > $
+A2 $ V < displace > N < liquid > A < X > $
+
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < low > N < level liquid > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < high > N < level liquid > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from liquid at low level to liquid at higher level $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < reciprocate > N < arm > A < rocker > $
+PP2 $ V < reciprocate > N < piston > A < X > $
+PP3 $ V < pressurize > N < liquid > A < x > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ No two bodies can occupy the same space at the same time $
+PE3 $ Boyle’s law $
+
+}
+
+MINPUT
+{
+I1 $ V < rotate > N < crank > A < x > $
+I2 $ V < exert > N < pressure > A < x > $
+I3 $ V < reciprocate > N < piston > A < x > $
+}
+
+MORGAN
+{
+O1 $ smooth surface between the rocker arm and the valve steam chamber $
+O2 $ the gap between the piston and the cylinder is as small as possible $
+O3 $ the piston is strong enough to compress the liquid $
+}
+
+MPART
+{
+P1 $ Rocker arm $
+P2 $ Piston $
+P3 $ Piston $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+< A2 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A2 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+< A2 IS1 OS1 CS1 PP3 PE3 I3 O3 P3 >
+
+
+
+}
+
+
+
+
+
+FUNCTION
+
+$
+Henry R. Worthington invented the "direct acting reciprocating steam pump" in 1840. It is still used today, often powered by compressed air instead of steam. 
+DUPLEX PUMPS like the one shown here have two steam and two water cylinders. Only one of each is shown, the other cylinders being directly behind these. 
+Duplex pumps have no "dead spots" because one or the other steam piston is always under force of steam (or compressed air). The two pistons are about 1/4 cycle out of synchronization with each other. 
+
+$
+
+
+STRUCTURE
+
+$
+It consists of a steam chamber whose valves are operated by a rocker arm and a liquid chamber whose valves are operated on the basis of pressure.
+The liquid chamber also has an accumulator above it, which reduces the splash of the liquid.
+$
+BEHAVIOUR
+
+$
+The steam enters the system through the top chamber on the left where the steam valve slides back and forth over the various intake and exhaust pipes. The black hole just under the steam valve is the exhaust vent for used steam. 
+The back pump controls the steam valve for the pump shown which controls, through the rocker arm in the middle, the steam valve for the piston in back. 
+On the water end of the pump, on the right here, the lower two valves are the intake valves and the upper valves are the discharge valves. A hydraulic accumulator is usually located just above the pump to smooth the flow and prevent water hammer. 
+As many as five sets of steam and water cylinders are linked together in various types of reciprocating steam pumps. 
+
+$
+
+PICTURE
+
+{
+ADB/FLOW-DEVICES/DUPLEX_PUMP/01.GIF		$ 01.DUPLEX PUMP $
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This device is used to displace liquid from a lower level to a higher level. This can be interpreted as a change of state from liquid at lower level to liquid at higher level. This can be discussed as follows:
+
+
+The rocker arm (part) reciprocates in the guide ways (physical phenomenon). This is due to the rotation of the crank (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of a smooth surface between the rocker arm and the valve steam chamber (organ).
+
+The piston (part) in the steam chamber reciprocates (physical phenomenon). This is due to the pressure exerted by the steam (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and it is necessary that the gap between the piston and the cylinder is as small as possible (organ).
+
+The piston (part) in the liquid chamber reciprocates thus pressurizing the liquid in it and then displaces it to a higher altitude (physical phenomenon). This is due to the reciprocating motion of the piston (input), which activates the law “no two bodies can occupy the same space at the same time”, (physical effect) and is necessary that the piston is strong enough to compress the liquid (organ).
+
+
+
+$
+
+ACTION
+
+$ 
+ To pump liquid.
+
+
+$
+
+STATE
+
+$
+The liquid is at a lower level.
+
+The liquid is at a higher level.
+$
+
+$
+
+PHYPHENOMENON
+
+$
+The rocker arm reciprocates in the guide ways.
+
+The piston in the steam chamber reciprocates.
+
+The piston in the liquid chamber reciprocates thus pressurizing the liquid in it and then displaces it to a higher altitude.
+
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+No two bodies can occupy the same space at the same time.
+
+
+
+
+$
+
+
+INPUT
+
+$
+The rotation of the crank.
+
+The pressure exerted by the steam.
+
+The reciprocating motion of the piston.
+
+
+
+
+$
+
+
+ORGAN
+
+$
+Presence of a smooth surface between the rocker arm and the valve steam chamber.
+
+Necessary that the gap between the piston and the cylinder is as small as possible.
+
+Necessary that the piston is strong enough to compress the liquid.
+
+
+$
+
+
+
+PARTS
+$
+Rocker arm.
+
+Piston.
+
+Piston.
+
+
+
+
+
+
+
+
+$
+
+

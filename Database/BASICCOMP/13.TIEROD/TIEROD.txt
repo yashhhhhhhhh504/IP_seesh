@@ -1,0 +1,195 @@
+
+MACTION
+{
+A1 $ V < transmit > N < force motion > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < outer > N < rest tie rod > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < outer > N < rotation tie rod > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rest to rotation of the tie rod $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate > N < part > A < inner > $
+PP2 $ V < rotate > N < part > A < outer > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+}
+
+MINPUT
+{
+I1 $ V < apply > N < torque > A < x > $
+I2 $ V < rotate > N < part > A < inner > $
+
+}
+
+MORGAN
+{
+O1 $ zero degree of freedom between the steering center link and the tie rod $
+O2 $ zero degree of freedom between the inner tie rod and the second tie rod $
+}
+
+MPART
+{
+P1 $ inner tie rod $
+P2 $ revolute pair$
+P3 $ frame $
+P4 $ outer tie rod $
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE1 I2 O2 P2 P3 P4 >
+
+
+}
+
+
+
+
+FUNCTION
+
+$
+A Tie Rod is either of two metal rods or arms that transmit motion to the front axle in vehicular steering systems. The tie rod transmits force from the steering center link or the rack gear to the steering knuckle, causing the wheels to turn. The outer tie rod end connects with an adjusting sleeve, which allows the length of the tie rod to be adjustable. This adjustment is used to set a vehicle's 'toe', a critical alignment angle.
+$
+
+
+STRUCTURE
+
+$
+The Tie Rods connect the center link to the steering knuckle on cars with conventional suspension systems and recirculating ball steering gears. On cars with rack and pinion steering gears, the tie rods connect the end of the rack to the steering knuckle. A tie rod consists of an inner and an outer end. The inner tie rod ends are attached to either end of the center link and provides pivot points for the steering gear. From there it goes to the outer tie rod ends through an adjustment sleeve. This sleeve joins the inner and outer tie rod ends together and allows for adjustment when the front wheels are aligned. The outer tie rod ends are connected to the steering knuckle that actually turns the front wheels. The steering knuckle has an upper and lower ball joint that it pivots on and creates the geometry of the steering axis.The outer tie-rod (which connects the steering rack to the wheel) also moves in-and-out in an arc as it moves up and down. If the rate which the outer tie-rod arcs in or out does not match the rate the wheel moves in or out, the wheel will be turned by the tie-rod.
+$
+
+
+BEHAVIOUR
+
+$
+Regardless of the kind of steering a car makes use of, Tie Rods connect the steering to the steering knuckles. A Tie Rod is really an assembly that consists of two threaded pieces, called "Tie Rod Ends", and a sheath that connects the two. This sheath, when turned will either make the Tie Rod longer or shorter, and is used in setting 'toe' in your front alignment. On a ball and socket type steering system, two ends that are usually interchangeable are on each Tie Rod assembly. On a rack and pinion, there is only one end and the sheath. The sheath attaches the end to the rack directly.
+$      
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/13.Tierod/tierod1.jpg		$ Tie Rod	$
+ADB/BASICCOMP/13.Tierod/tierod2.jpg		$ Tie Rod	$
+ADB/BASICCOMP/13.Tierod/tierod3.jpg		$ Tie Rod	$
+ADB/BASICCOMP/13.Tierod/tierodend1.jpg		$ Tie Rod End	$
+ADB/BASICCOMP/13.Tierod/tierodend2.jpg		$ Tie Rod End	$
+ADB/BASICCOMP/13.Tierod/tierod6.jpg		$ Tie Rod	$
+}
+
+
+CLIP
+
+{
+}
+SUMMARY
+$
+This can be used to transmit force and thus motion. This can be interpreted as a change of state from rest to rotation. This can be described as follows:
+
+The inner tie rod (part) rotates (physical phenomenon). This is due to the torque applied on it by the steering center link (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the steering center link and the tie rod (organ).
+
+The outer tie rod (part) connected to the end of the inner tie rod rotates (physical phenomenon). This is due to the rotation of the inner tie rod (input), which activates the Newtonian laws of motion (physical effect) and it requires the presence of zero degree of freedom between the inner tie rod and the second tie rod (organ).
+
+
+$
+
+ACTION
+
+$ 
+ To transmit force and motion.
+$
+
+STATE
+
+$
+The outer tie rod is at rest.
+
+The outer tie rod is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The inner tie rod rotates.
+
+The outer tie rod connected to the end of the inner tie rod rotates.
+
+
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+
+
+
+$
+
+
+INPUT
+
+$
+Torque applied on it by the steering center link.
+
+The rotation of the inner tie rod.
+
+
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the steering center link and the tie rod.
+
+Presence of zero degree of freedom between the inner tie rod and the second tie rod.
+
+
+
+
+$
+
+
+
+PARTS
+$
+The inner tie rod forms a revolute pair with the frame.
+
+The outer tie rod forms a revolute pair with the frame.
+
+
+
+
+
+
+
+
+$
+
+
+
+
+

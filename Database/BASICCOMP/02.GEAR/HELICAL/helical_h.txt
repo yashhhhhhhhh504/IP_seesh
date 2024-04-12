@@ -1,0 +1,85 @@
+SUMMARY
+$
+To transmit the power and motion between two parallel shafts to each other. This can be interpreted as change of state from rest to rotation of the output gear. This can be described as follows:
+
+
+The input gear (part) mounted on the input shaft rotates (physical phenomenon). This is due the torque applied by the input shaft (input), which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the input gear (organ).
+
+A tooth (part) on the input gear pushes the tooth on the output gear (physical phenomenon). This is due to the rotational inertia of the input gear (input), which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and is necessary that the tooth on the input gear engages with the tooth on the output gear (organ).
+
+The output gear (part) rotates (physical phenomenon). This is due to the movement of the tooth (input), which activates lever effect (physical effect) and is necessary that the teeth are cut on a cylindrical surface (organ).
+$
+
+ACTION
+
+$ 
+ To transmit power and motion between two parallel shaft smoothly.
+$
+
+STATE
+
+$
+The output gear is at rest.
+
+The output gear is rotating.
+
+$
+
+PHYPHENOMENON
+
+$
+The input gear mounted on the input shaft rotates.
+
+A tooth on the input gear pushes the tooth on the output gear.
+
+The output gear rotates.
+$
+
+
+PHYEFFECT
+
+$
+Newtonian laws of motion.
+
+No two bodies can occupy the same space at the same time.
+
+Lever effect.
+$
+
+
+INPUT
+
+$
+The torque applied by the input shaft.
+
+Rotational inertia of the input gear.
+
+Movement of the tooth.
+$
+
+
+ORGAN
+
+$
+Presence of zero degree of freedom between the input shaft and the input gear.
+
+Necessary that the tooth on the input gear engages with the tooth on the output gear.
+
+Necessary that the teeth are cut on a cylindrical surface.
+
+$
+
+
+
+STUCTURE1
+
+$
+The input gear forms a revolute pair with the frame.
+
+The tooth on the input gear forms a higher pair with the tooth on the output gear.
+
+The output gear forms a revolute pair with the frame.
+$
+
+
+

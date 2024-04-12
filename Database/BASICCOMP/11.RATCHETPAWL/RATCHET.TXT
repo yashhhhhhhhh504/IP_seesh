@@ -1,0 +1,227 @@
+MACTION
+{
+A1 $ V < provide > N < rotation > A < uni-directional  > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < x > N  < rotation > $
+
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < uni-directional > N  < rotation > $
+
+} 
+MCHANGESTATE
+{
+CS1 $ from rotation to uni-directional rotation $
+
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < rotate >  N < ratchet > A < X > $
+PP2 $ V < contact >  N < ratchet pawl  > A < X > $
+PP3 $ V < oscillate >  N < pawl > A < X > $
+PP4 $ V < x > N < rotation > A < uni-directional > $
+
+}
+
+MPHYEFFECT
+{
+PE1 $ Newtonian laws of motion $
+PE2 $ Hook’s law $
+PE3 $ No two bodies can occupy the same space at the same time $
+
+}
+
+MINPUT
+{
+I1 $ V < apply >  N < torque > A < X > $
+I2 $ V < X >  N < spring-force > A < X > $
+I3 $ V < X >  N < rotation > A < uni-directional  > $
+I4 $ V < block > N < ratchet > A < X > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of zero degree of freedom between the input shaft and the ratchet $
+O2 $ Necessary that the spring has some stiffness $
+O3 $ requires the pawl to be hinged at a suitable point $
+O4 $ requires the pawl to be strong enough to prevent the rotation in the other direction $
+
+}
+
+MPART
+{
+P1 $ ratchet $
+P2 $ frame $
+P3 $ revolute-pair $
+P4 $ pawl $
+P5 $ gear-pair $
+P6 $ flexible pair $
+P7 $ spring $
+
+}
+
+LINK
+{
+
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 P2 P3 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P4 P6 P7 >
+< A1 IS1 OS1 CS1 PP3 PE3 I3 O3 P2 P3 P4 >
+< A1 IS1 OS1 CS1 PP4 PE3 I4 O4 P1 P4 P5 >
+}
+
+
+
+
+
+
+FUNCTION
+
+$
+The ratchet wheel is widely used in machinery, mainly to transmit intermittent motion. Ratchets are also used to ensure that motion only occurs in only one direction, useful for winding gear which must not be allowed to drop. Ratchets are also used in the freewheel mechanism of a bicycle
+$
+
+
+STRUCTURE
+
+$
+The ratchet is usually a wheel with slanting teeth. The pawl is a lever tangential to the wheel with one end resting on the teeth. Ratchet-wheel teeth can be either on the perimeter of a disk or on the inner edge of a ring. The pawl, which engages with the ratchet is a beam pivoted at one end; the other end is shaped to fit the rathcet-tooth flank. Usually a spring or a counterweight maintains constant between wheel and pawl.
+$
+
+
+BEHAVIOUR
+
+$
+The ratchet is really another form of gearing. Unlike gears which can be used to speed up or slow down movement, the ratchet can only be used to slow things down and it happens in a very jerky manner.
+
+A ratchet wheel can also be used to arrest motion. Fig 3 and the first animation show a ratchet wheel fixed to a shaft and winding drum. A rope is wound round the drum. Any load force applied to the rope (the fuse chain in a clock) is unable to unwind the drum because of the action of the ratchet and pawl. It is possible to wind up the rope becasue the ratchet can be rotated in an anticlockwise direction. Notice the pawl is held in position against the ratchet by a tension spring.
+
+The third animation shows how the ratchet wheel is driven by a torque that has an initial value of 50 Nmm. The torque is not sufficient to overcome the tension force exerted by a spring on the ratchet follower and the wheel comes to a stop (note that the spring changes colour from white to pink when the spring is in tension). The torque magnitude is then interactively increased by the user to determine the torque magnitude at which the wheel can rotate fully. The torque magnitude is then restored to 50 Nmm. This time the torque magnitude is kept constant and the follower's spring constant is modified to determine a value at which the wheel can rotate fully.
+
+In the second animation, two pawls are used allowing the yellow wheel to turn almost continually. In the above example the yellow wheel turns two teeth for every turn of the red wheel. By reducing the diameter of the red wheel it is possible to make the yellow wheel turn only one tooth per turn, each pawl turning the wheel half a tooth.
+$
+
+
+PICTURE
+
+{
+ADB/BASICCOMP/11.RATCHETPAWL/ratchet1.jpg	        $ Ratchet & Pawl $
+ADB/BASICCOMP/11.RATCHETPAWL/ratchet2.jpg		$ Ratchet & Pawl $
+ADB/BASICCOMP/11.RATCHETPAWL/ratchet3.jpg		$ Ratchet & Pawl $
+ADB/BASICCOMP/11.RATCHETPAWL/doubrat.gif		$ Ratchet & Pawl $
+}
+
+
+CLIP
+
+{
+ADB/BASICCOMP/11.RATCHETPAWL/ratchet1.avi		$ Ratchet & Pawl $
+ADB/BASICCOMP/11.RATCHETPAWL/ratchet2.avi		$ Ratchet & Pawl $
+ADB/BASICCOMP/11.RATCHETPAWL/ratchet3.avi		$ Ratchet & Pawl $
+
+}
+
+SUMMARY
+$
+Using this mechanism rotation can be restricted to one direction can be obtained. This can be interpreted as a change of state from rotation to rest. This can be described as follows:
+
+The ratchet (part) rotates (physical phenomenon). This is due to the torque applied by the input shaft (input) which activates the Newtonian laws of motion (physical effect) and requires the presence of zero degree of freedom between the input shaft and the ratchet (organ).
+
+The pawl (part) is in contact with the ratchet (physical phenomenon). This is due to the inward force (input) applied by the spring which activates the hook’s law (physical effect) and is necessary that the spring has some stiffness (organ).
+
+The pawl (part) oscillates about its center (physical phenomenon). This is due to the unidirectional rotation of the ratchet (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the pawl to be hinged at a suitable point (organ).
+
+
+The ratchet (part) rotates only in one direction (physical phenomenon). This is due to the blocking caused by the pawl (input) which activates the law “no two bodies can occupy the same space at the same time” (physical effect) and requires the pawl to be strong enough to prevent the rotation in the other direction (organ).
+
+$
+
+ACTION
+$
+ 
+ To restrict rotation to one direction.
+
+$
+STATE
+$
+
+The ratchet is rotating.
+
+The ratchet is at rest.
+
+$
+PHYPHENOMENON
+$
+
+The ratchet rotates.
+
+The pawl is in contact with the ratchet.
+ 
+The pawl oscillates about its center.
+
+The ratchet rotates only in one direction.
+
+
+
+$
+
+PHYEFFECT
+$
+
+Newtonian laws of motion.
+
+Hook’s law.
+
+No two bodies can occupy the same space at the same time.
+
+$
+
+INPUT
+$
+
+The torque applied by the input shaft.
+
+The inward force applied by the spring.
+
+Unidirectional rotation of the ratchet.
+
+ Blocking caused by the pawl.
+
+
+$
+
+ORGAN
+$
+
+Presence of zero degree of freedom between the input shaft and the ratchet.
+
+Necessary that the spring has some stiffness.
+
+Requires the pawl to be hinged at a suitable point.
+
+Requires the pawl to be strong enough to prevent the rotation in the other direction.
+
+
+
+
+$
+
+PARTS
+
+$
+
+The ratchet forms a revolute pair with the frame.
+
+Pawl forms a flexible pair with the spring.
+
+The pawl forms a revolute pair with the frame.
+
+The ratchet forms a gear pair with the pawl.
+
+
+$

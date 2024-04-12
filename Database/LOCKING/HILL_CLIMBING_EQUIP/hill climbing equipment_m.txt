@@ -1,0 +1,88 @@
+MACTION
+{
+A1 $ V < climb > N < parts > A < X > $
+}
+
+MINPUTSTATE
+{
+IS1 $ V < x > A < free > N < equipment > $
+IS2 $ V < x > A < x > N < x > $
+}
+MOUTPUTSTATE
+{
+OS1 $ V < x > A < hooked > N < equipment > $
+OS2 $ V < x > A < x > N < x > $
+} 
+MCHANGESTATE
+{
+CS1 $ from free equipment to hooked equipment  $
+CS2 $ $
+}
+
+MPHYPHENOMENON
+{
+PP1 $ V < hook > N < part > A < X > $
+PP2 $ V < pull > N < part > A < X > $
+}
+
+MPHYEFFECT
+{
+PE1 $ Friction effect  $
+PE2 $ Newton’s third law $
+}
+
+MINPUT
+{
+I1 $ V < x > N < force > A < Frictional > $
+I2 $ V < x > N < force > A < reactional > $
+
+}
+
+MORGAN
+{
+O1 $ Presence of friction between the hook and the rocks of the hills  $
+O2 $ Necessary that the force applied is sufficient to lift the body the trekkers $
+
+}
+
+MPART
+{
+P1 $ hook of the equipment $
+P2 $ rope tied to one end of the equipment  $
+
+
+}
+
+LINK
+{
+< A1 IS1 OS1 CS1 PP1 PE1 I1 O1 P1 >
+< A1 IS1 OS1 CS1 PP2 PE2 I2 O2 P2 >
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
